@@ -1,0 +1,369 @@
+fileFormatVersion: 2
+guid: 9ad3554775d5d9943a1412f7bb9998f7
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bacfd5882fd55b4d9a5815b752c4504
+      internalID: 283758892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_1
+      rect:
+        serializedVersion: 2
+        x: 1465
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c203313d9b77b594ca917fd34aef3845
+      internalID: 356537645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_2
+      rect:
+        serializedVersion: 2
+        x: 2930
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54541fecabfc90e499f1fa5326e9467d
+      internalID: 967063372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_3
+      rect:
+        serializedVersion: 2
+        x: 4395
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd94384eec54728418da51c20f7597e2
+      internalID: 1910202738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_4
+      rect:
+        serializedVersion: 2
+        x: 5860
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 909102c2ee3ee0443815e81f359985b2
+      internalID: 1563656447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_5
+      rect:
+        serializedVersion: 2
+        x: 7325
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 921411b325cf44e44b4ece38c6cf0dd1
+      internalID: 1593390223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_6
+      rect:
+        serializedVersion: 2
+        x: 8790
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ada94deb5134a9747b7318cb570a467d
+      internalID: -616607479
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_7
+      rect:
+        serializedVersion: 2
+        x: 10255
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf029f6a1d979e14d99dfdf7b3ab8ee0
+      internalID: -416124492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_8
+      rect:
+        serializedVersion: 2
+        x: 11720
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf4188ad0272f21448d73e455a4355d2
+      internalID: 92257725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_9
+      rect:
+        serializedVersion: 2
+        x: 13185
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50bbde0d44ead4b459f83f20e9635862
+      internalID: -2078999718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_Anna_IDLE_AKTIVITAS1_10
+      rect:
+        serializedVersion: 2
+        x: 14650
+        y: 0
+        width: 1465.7273
+        height: 3079
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f3e1704fc33374da37dd68b089fda2
+      internalID: 1063472834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_Anna_IDLE_AKTIVITAS1_0: 283758892
+      KGS_Anna_IDLE_AKTIVITAS1_1: 356537645
+      KGS_Anna_IDLE_AKTIVITAS1_10: 1063472834
+      KGS_Anna_IDLE_AKTIVITAS1_2: 967063372
+      KGS_Anna_IDLE_AKTIVITAS1_3: 1910202738
+      KGS_Anna_IDLE_AKTIVITAS1_4: 1563656447
+      KGS_Anna_IDLE_AKTIVITAS1_5: 1593390223
+      KGS_Anna_IDLE_AKTIVITAS1_6: -616607479
+      KGS_Anna_IDLE_AKTIVITAS1_7: -416124492
+      KGS_Anna_IDLE_AKTIVITAS1_8: 92257725
+      KGS_Anna_IDLE_AKTIVITAS1_9: -2078999718
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

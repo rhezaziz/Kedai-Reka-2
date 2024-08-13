@@ -1,0 +1,567 @@
+fileFormatVersion: 2
+guid: ccc014eb40b6cd341a4615a8eabb4c3d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c5b001ce9eaed445b8a5316da807e5b
+      internalID: 695100410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_1
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ae020d6583b99d45aa31312dfec3400
+      internalID: 1719287521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_2
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e5b5fd36cdc3d04cbe99205ab918fe3
+      internalID: -1207160057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_3
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a6e1d23c24f71745b35f866de836daf
+      internalID: 1787951787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_4
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d11457f4580a1d64e9cf9b1a5ae4c4e9
+      internalID: 1786307599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_5
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a53d5c41b83eb0f4a8059013e03f5cec
+      internalID: -1824927091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_6
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec07eadefcd1a504cbcfde0808813d35
+      internalID: -1504831867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_7
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5ef5259714689c43a88b100c5842b0a
+      internalID: -212568582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_8
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28d9f5337d5d74847973075632e0c26b
+      internalID: 1603704005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_9
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 774
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bce7f38a73b39849b68c5312dac1327
+      internalID: -196223371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1c3156283f39bb46b6db1692865e994
+      internalID: 403672903
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_11
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 166148ce107e36148952dfdeebf05b45
+      internalID: -1669976278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_12
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de247784c2fddf04e8a212629cbc2d3c
+      internalID: -2002633494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_13
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1028272ea2eeff6439709b9cfaf1b875
+      internalID: -1480025369
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_14
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0366e02148ec4347b45fa96a38a94ae
+      internalID: 1893931255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_15
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10296d1dfa22f5345bc637bc6da63007
+      internalID: 311538325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_16
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a880c0004886d164da063a35a3bb3001
+      internalID: 1718532541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_17
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa4ad54249b19ed47aff137a0cbb94ca
+      internalID: 778901765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_18
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e914ff0bb3b3a0c4d908cfcc38f1c19d
+      internalID: -779570505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_NGOMONG 1_19
+      rect:
+        serializedVersion: 2
+        x: 3771
+        y: 0
+        width: 419.2
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35567de1be130444c89d105ef792673a
+      internalID: 535274975
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_LAKI_NGOMONG 1_0: 695100410
+      KGS_UTAMA_LAKI_NGOMONG 1_1: 1719287521
+      KGS_UTAMA_LAKI_NGOMONG 1_10: 403672903
+      KGS_UTAMA_LAKI_NGOMONG 1_11: -1669976278
+      KGS_UTAMA_LAKI_NGOMONG 1_12: -2002633494
+      KGS_UTAMA_LAKI_NGOMONG 1_13: -1480025369
+      KGS_UTAMA_LAKI_NGOMONG 1_14: 1893931255
+      KGS_UTAMA_LAKI_NGOMONG 1_15: 311538325
+      KGS_UTAMA_LAKI_NGOMONG 1_16: 1718532541
+      KGS_UTAMA_LAKI_NGOMONG 1_17: 778901765
+      KGS_UTAMA_LAKI_NGOMONG 1_18: -779570505
+      KGS_UTAMA_LAKI_NGOMONG 1_19: 535274975
+      KGS_UTAMA_LAKI_NGOMONG 1_2: -1207160057
+      KGS_UTAMA_LAKI_NGOMONG 1_3: 1787951787
+      KGS_UTAMA_LAKI_NGOMONG 1_4: 1786307599
+      KGS_UTAMA_LAKI_NGOMONG 1_5: -1824927091
+      KGS_UTAMA_LAKI_NGOMONG 1_6: -1504831867
+      KGS_UTAMA_LAKI_NGOMONG 1_7: -212568582
+      KGS_UTAMA_LAKI_NGOMONG 1_8: 1603704005
+      KGS_UTAMA_LAKI_NGOMONG 1_9: -196223371
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,919 @@
+fileFormatVersion: 2
+guid: 6bfb9607db4bd15459a607b5006f2ae9
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3435604d1aadd742a5c93619eca14ac
+      internalID: -268102300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_1
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab894ec60124bf74aa4cf0477ae2471a
+      internalID: 198044599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_2
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dc03e6c448b40b479182253ef6ed1b9
+      internalID: 1984392521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_3
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48fef3ed1b6fda94f872c2fe7a443c02
+      internalID: -948624559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_4
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c86af34b46aeb74eb49884e5b717147
+      internalID: -1733238756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_5
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f517aedfd81619248b0ddeb910c36a52
+      internalID: -397838617
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_6
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0e83ed907f775a47b9ad5f320ca95ec
+      internalID: -1884093406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_7
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359af2be853a6a445830101d05c6a83a
+      internalID: -664912450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_8
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 715.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b19e68a1733b5e468e993b960931225
+      internalID: -427506916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cff7dea8adb1b1f4899c805e4f664ac8
+      internalID: -1129626054
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_10
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 307af9fc368bb1a4486ab9d7a06269e8
+      internalID: 1342345146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_11
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d2c73ff27d91e142960d0cf6160b318
+      internalID: -763524355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_12
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 800e831b2a2f27641898221b46a30e07
+      internalID: -1746381309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_13
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85d50f17eae94514ba118ab7fc13f2da
+      internalID: -1209972290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_14
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 682d97bc3597b344dbc8788c9ce3c3f3
+      internalID: -229827523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_15
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef54e936fd1077e46bb586afd750eddd
+      internalID: 1619711562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_16
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 470ee2fe3aad75449a11f8a8ca9a7e04
+      internalID: -171231322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_17
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 477.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a6b784e85ebb442ba8affaaa02f999
+      internalID: 1029779562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 093263dbc5cc85b4eb7f7f5fdf71cccb
+      internalID: -21705657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_19
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eab298cafbc8c5541bb98cb6c73482e2
+      internalID: -2019011736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_20
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89903953546635448bac82f9e42d6ec3
+      internalID: -1423402333
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_21
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1605a6394f38f49b2dbdd8195c5c7a
+      internalID: 1147721928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_22
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d35ec683c6f8bf429fe6a544ad949f8
+      internalID: -504674058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_23
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb1b99731bef744408d51eabdb3a6741
+      internalID: -392987921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_24
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba110ce903edeeb4cafd56dc6b92318c
+      internalID: 757348997
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_25
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9498584d556ed44c841fb61511858c1
+      internalID: 1374809570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_26
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 239.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59c8da3b147a319469e279163b520951
+      internalID: 557813885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_27
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bda26abc49a2924baaa4f691e90c5ae
+      internalID: 1551042444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_28
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc0ed5be95db82c489c5650521441f14
+      internalID: -594479012
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_29
+      rect:
+        serializedVersion: 2
+        x: 838
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99d1a786e6967934b9e0fd9f6e03ad9b
+      internalID: -447975614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_30
+      rect:
+        serializedVersion: 2
+        x: 1257
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cfa5680937b48f4da8cd9b1821fd82d
+      internalID: 1974615320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_31
+      rect:
+        serializedVersion: 2
+        x: 1676
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a035a16119dfc2b409c1f617aeadf324
+      internalID: 1612856529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_32
+      rect:
+        serializedVersion: 2
+        x: 2095
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5058a66bd261bf646b4a8af7f60b5938
+      internalID: 1119432109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_33
+      rect:
+        serializedVersion: 2
+        x: 2514
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6506830cd60bf24ab1e025f7d3b9a2d
+      internalID: 84881822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_34
+      rect:
+        serializedVersion: 2
+        x: 2933
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1eb2497e9f2f1946b398bb87824c19f
+      internalID: 810196581
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_35
+      rect:
+        serializedVersion: 2
+        x: 3352
+        y: 1.5
+        width: 419.33334
+        height: 238.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22ba9ebc761837341982b5c79c39f71a
+      internalID: -710392383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_0: -268102300
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_1: 198044599
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_10: 1342345146
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_11: -763524355
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_12: -1746381309
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_13: -1209972290
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_14: -229827523
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_15: 1619711562
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_16: -171231322
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_17: 1029779562
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_18: -21705657
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_19: -2019011736
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_2: 1984392521
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_20: -1423402333
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_21: 1147721928
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_22: -504674058
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_23: -392987921
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_24: 757348997
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_25: 1374809570
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_26: 557813885
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_27: 1551042444
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_28: -594479012
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_29: -447975614
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_3: -948624559
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_30: 1974615320
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_31: 1612856529
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_32: 1119432109
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_33: 84881822
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_34: 810196581
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_35: -710392383
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_4: -1733238756
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_5: -397838617
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_6: -1884093406
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_7: -664912450
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_8: -427506916
+      KGS_UTAMA_LAKI_INTERACT_CAT_kucing 1_9: -1129626054
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -1,0 +1,347 @@
+fileFormatVersion: 2
+guid: 2c4b099cf2021a14bad73da5435fe760
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 425
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3223.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e763a4f0c7aa774688908fe5850012a
+      internalID: -542447520
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_1
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 3223.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f97486c2e624ce4fb965356358fbb6a
+      internalID: 25689082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_2
+      rect:
+        serializedVersion: 2
+        x: 3488
+        y: 3223.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7537c70762972b41a6e5d795c170108
+      internalID: -2014410381
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_3
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 3223.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c5266f28c0a79541bbec1b890db8727
+      internalID: -592375788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_4
+      rect:
+        serializedVersion: 2
+        x: 6976
+        y: 3223.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af708c29901db704285a8ea9002eb0fd
+      internalID: 2127654105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e81c72d9188196d488ea79012a4a4635
+      internalID: 1245315397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_6
+      rect:
+        serializedVersion: 2
+        x: 1744
+        y: 0.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed530dc6a37a97a4dab940e342827ee3
+      internalID: 109391305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_7
+      rect:
+        serializedVersion: 2
+        x: 3488
+        y: 0.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7f0b703dc45f98459e4aa9f5bb39ac3
+      internalID: -1175076153
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_8
+      rect:
+        serializedVersion: 2
+        x: 5232
+        y: 0.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117c8189312c5a44bb528a995776ac40
+      internalID: 780337692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_JALAN_belakang_9
+      rect:
+        serializedVersion: 2
+        x: 6976
+        y: 0.5
+        width: 1744.4
+        height: 3223.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1d65c46b5aa4024985268ce1687e6c7
+      internalID: -222041413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_LAKI_JALAN_belakang_0: -542447520
+      KGS_UTAMA_LAKI_JALAN_belakang_1: 25689082
+      KGS_UTAMA_LAKI_JALAN_belakang_2: -2014410381
+      KGS_UTAMA_LAKI_JALAN_belakang_3: -592375788
+      KGS_UTAMA_LAKI_JALAN_belakang_4: 2127654105
+      KGS_UTAMA_LAKI_JALAN_belakang_5: 1245315397
+      KGS_UTAMA_LAKI_JALAN_belakang_6: 109391305
+      KGS_UTAMA_LAKI_JALAN_belakang_7: -1175076153
+      KGS_UTAMA_LAKI_JALAN_belakang_8: 780337692
+      KGS_UTAMA_LAKI_JALAN_belakang_9: -222041413
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

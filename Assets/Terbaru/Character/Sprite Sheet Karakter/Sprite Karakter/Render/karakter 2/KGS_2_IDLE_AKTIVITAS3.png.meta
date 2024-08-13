@@ -1,0 +1,435 @@
+fileFormatVersion: 2
+guid: 4a4b78e498f74f24ebb674cc16a0e2e0
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 425
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd23802ce7265104a93aa1d7e96a1dcc
+      internalID: 1173836309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_1
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df47330deb37e5c4b8eca3c11f123bcf
+      internalID: -2021983743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_2
+      rect:
+        serializedVersion: 2
+        x: 3494
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fd7e51fe3f8923468f395ebf4dccc70
+      internalID: -939345438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_3
+      rect:
+        serializedVersion: 2
+        x: 5241
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdd5b14c56ef0f243a238f1cabc95a87
+      internalID: 760857380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_4
+      rect:
+        serializedVersion: 2
+        x: 6988
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf0b0110161a6de48b3e5bf4361530c0
+      internalID: -342863867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_5
+      rect:
+        serializedVersion: 2
+        x: 8735
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbbe4c6be6a100d4e8221eccbc12e14d
+      internalID: -1428536822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_6
+      rect:
+        serializedVersion: 2
+        x: 10482
+        y: 3225.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31c7c59123b52c543a43e7facfeb4934
+      internalID: -957221178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0cca906540ba9644bd6d9cb98dff43b
+      internalID: -1886750860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_8
+      rect:
+        serializedVersion: 2
+        x: 1747
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 581a845ec084603408208a0b51cc0de0
+      internalID: 1194936640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_9
+      rect:
+        serializedVersion: 2
+        x: 3494
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99933f64ada87fe4c9ddb32eece89df1
+      internalID: 867541133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_10
+      rect:
+        serializedVersion: 2
+        x: 5241
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc4c0d8697636fb40b7517e964ded6e5
+      internalID: -781881232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_11
+      rect:
+        serializedVersion: 2
+        x: 6988
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21b0ae820aaf19542ae0be78510a7cc1
+      internalID: -835284747
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_12
+      rect:
+        serializedVersion: 2
+        x: 8735
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7deafd93ee9ce6e40bcd27787f69b97f
+      internalID: -1157470390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_2_IDLE_AKTIVITAS3_13
+      rect:
+        serializedVersion: 2
+        x: 10482
+        y: 0.5
+        width: 1747
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37772d5a31df92b40b9c325cc0622fbd
+      internalID: -1079137800
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_2_IDLE_AKTIVITAS3_0: 1173836309
+      KGS_2_IDLE_AKTIVITAS3_1: -2021983743
+      KGS_2_IDLE_AKTIVITAS3_10: -781881232
+      KGS_2_IDLE_AKTIVITAS3_11: -835284747
+      KGS_2_IDLE_AKTIVITAS3_12: -1157470390
+      KGS_2_IDLE_AKTIVITAS3_13: -1079137800
+      KGS_2_IDLE_AKTIVITAS3_2: -939345438
+      KGS_2_IDLE_AKTIVITAS3_3: 760857380
+      KGS_2_IDLE_AKTIVITAS3_4: -342863867
+      KGS_2_IDLE_AKTIVITAS3_5: -1428536822
+      KGS_2_IDLE_AKTIVITAS3_6: -957221178
+      KGS_2_IDLE_AKTIVITAS3_7: -1886750860
+      KGS_2_IDLE_AKTIVITAS3_8: 1194936640
+      KGS_2_IDLE_AKTIVITAS3_9: 867541133
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

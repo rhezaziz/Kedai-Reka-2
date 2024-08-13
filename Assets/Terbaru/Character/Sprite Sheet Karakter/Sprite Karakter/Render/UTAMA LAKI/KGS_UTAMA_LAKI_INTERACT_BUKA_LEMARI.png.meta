@@ -1,0 +1,391 @@
+fileFormatVersion: 2
+guid: 69a338b92eee9944f84a79edcc5e845d
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 425
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 017ae5b42ed79b84eb2c165a2c6bcdf4
+      internalID: -965817498
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_1
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9eb4a58045cd2094ab854f83a886a45c
+      internalID: 213243585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_2
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 548e8718e8d74964c821bc783f0f0546
+      internalID: -1590085776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_3
+      rect:
+        serializedVersion: 2
+        x: 5238
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f847dc7b61dc5641ac41c1494dd670c
+      internalID: -1053558908
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_4
+      rect:
+        serializedVersion: 2
+        x: 6984
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1414e41031eddb41bbdd725131aae91
+      internalID: -664641848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_5
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 3225.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57fc3fb688bdcbf4085a12875e1aa3ef
+      internalID: 985340420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec85db6de056e684782f90119dee56f8
+      internalID: 209549898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_7
+      rect:
+        serializedVersion: 2
+        x: 1746
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35bbcb10842c6d34b9ae82475a49f922
+      internalID: 2097662317
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_8
+      rect:
+        serializedVersion: 2
+        x: 3492
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edb612dfcdf146429d19aef1e8ea2d0
+      internalID: 1020339016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_9
+      rect:
+        serializedVersion: 2
+        x: 5238
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5fff764f7c3ada43af262a0cd4a91af
+      internalID: 1005308926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_10
+      rect:
+        serializedVersion: 2
+        x: 6984
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a617b10634604424186500050906f5f7
+      internalID: 1904247340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_11
+      rect:
+        serializedVersion: 2
+        x: 8730
+        y: 0.5
+        width: 1746.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cc1debffd4e6774bbafe447aa481798
+      internalID: 806529826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_0: -965817498
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_1: 213243585
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_10: 1904247340
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_11: 806529826
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_2: -1590085776
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_3: -1053558908
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_4: -664641848
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_5: 985340420
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_6: 209549898
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_7: 2097662317
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_8: 1020339016
+      KGS_UTAMA_LAKI_INTERACT_BUKA_LEMARI_9: 1005308926
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

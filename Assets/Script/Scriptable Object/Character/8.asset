@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1f60618dde2ea84e90a163ac4b251bb, type: 3}
+  m_Name: 8
+  m_EditorClassIdentifier: 
+  index: 0
+  skills: 0f0000001000000011000000
+  coba:
+  - A
+  - B
+  - C
+  Posisi: {x: 50, y: 4.41, z: 0}
+  objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}
+  hobbyCharacter: Membantu
+  titleCharacter: Penerus Keadilan
+  skillCharacter:
+  - Membaca
+  - Menulis
+  - Berhayal
+  namaCharacter: Karakter 11
+  deskripsiKarakter: 'Dia telah memenangkan perlombaan menulis tingkat nasional dengan
+    hasil yang memuaskan.
+
+
+'
+  imageCharacter: {fileID: 21300000, guid: 9d8ab54c47ba5984c82b5628436585a8, type: 3}
+  imageInfoCharacter: {fileID: 21300000, guid: bf4711c4cf4516e43bb192451a8e1941, type: 3}
+  isLockSkill: 1
+  characterLock: 0
+  info: 
+  cost: 30000

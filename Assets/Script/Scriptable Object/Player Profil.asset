@@ -1,0 +1,43 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 14bbe54c9ebf1a94c8fc8a8f4a6a4181, type: 3}
+  m_Name: Player Profil
+  m_EditorClassIdentifier: 
+  NamaKarakter: Reeee
+  position: {x: -90, y: 5, z: -125}
+  jmlHari: 1
+  Energy: 2
+  Saldo: 313000
+  item:
+  - {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
+  - {fileID: 11400000, guid: 17c4bf8cc02e7814f9ce3ebb87a23ef5, type: 2}
+  - {fileID: 11400000, guid: 81983b38e1528bd4e932c66c939ff04c, type: 2}
+  - {fileID: 11400000, guid: 224eb1524e1c8ab4da3c60cd10e1a42d, type: 2}
+  - {fileID: 11400000, guid: 77a92f9ab87129c46b0609c914b01d24, type: 2}
+  - {fileID: 11400000, guid: c3498e362da24cd479fcce965b3ad198, type: 2}
+  - {fileID: 11400000, guid: e1b356b65aeb0544b9b2e33a75956855, type: 2}
+  character:
+  - {fileID: 11400000, guid: 913bdf2a3572d1643a1cd26f4d2d6156, type: 2}
+  - {fileID: 11400000, guid: 01b0b5251e6b0a14abc35c90a1d49612, type: 2}
+  - {fileID: 11400000, guid: d44daf6aee98ae849a32ac97741ba763, type: 2}
+  - {fileID: 11400000, guid: 16959af5c1669e6458d732d6a6d6ca00, type: 2}
+  - {fileID: 11400000, guid: 0e6f6e738f260de4cb235b389f84898b, type: 2}
+  - {fileID: 11400000, guid: c65090ba361804b4d9ccefef78eb498c, type: 2}
+  - {fileID: 11400000, guid: 83280035b0ab8e04eaf5be888a722a95, type: 2}
+  - {fileID: 11400000, guid: 215e9669009f79b479a7f7968377285f, type: 2}
+  - {fileID: 11400000, guid: 4a408199e4d74c9479a7b38d2e26af96, type: 2}
+  - {fileID: 11400000, guid: bf1b054f8f3d06d4fafccbff7b13fb1d, type: 2}
+  - {fileID: 11400000, guid: fbeabdc41e65dc64cb13b79cfb1a3193, type: 2}
+  quest:
+  - {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
+  - {fileID: 11400000, guid: 11483a17ae555f64ca4ffd7531453be7, type: 2}
+  - {fileID: 11400000, guid: f7b120e138445814d9ae7fc7f9e5fac6, type: 2}
