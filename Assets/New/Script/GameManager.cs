@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 namespace Terbaru{
@@ -37,15 +38,33 @@ namespace Terbaru{
              }
         }
 
+        
+
+
+        List<GameObject> NPCs = new List<GameObject>();
         public void spawnNPC(int index){
-            var NPC = profil.character;
+            var NPC_Profil = profil.character;
             GameObject parent = GameObject.Find("NPC");
 
-            GameObject NPC_Object = Instantiate(NPC[index].objectNPC);
+            GameObject NPC_Object = Instantiate(NPC_Profil[index].objectNPC);
             NPC_Object.transform.SetParent(parent.transform);
-            NPC_Object.transform.localPosition = NPC[index].Posisi;
+            NPC_Object.transform.localPosition = NPC_Profil[index].Posisi;
+            NPC_Object.name = NPC_Profil[index].objectNPC.name;
+
+            NPCs.Add(NPC_Object);
         }
 
+        public void readyMission(GameObject[] NPC){
+            List<GameObject> NPC_Quest = new List<GameObject>();
+            foreach(var npc in NPC){
+                foreach(var temp in NPCs){
+                    if(npc.name == temp.name)
+                        NPC_Quest.Add(temp);
+                }   
+            }
+            FindObjectOfType<Misi_Manager>().setUpPositionNPC(NPC_Quest);
+
+        }
         public void pindahScene(){
             PlayerPrefs.SetString("Scene", "Asrama");
             SceneManager.LoadScene("Loading");

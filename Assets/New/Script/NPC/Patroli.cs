@@ -35,7 +35,8 @@ namespace Terbaru
             timer = 10f;
 
 
-            inisiasiDir();
+            //Invoke("inisiasiDir", 0.5f);
+            //inisiasiDir();
             //initialCoordinate();
         }
 
@@ -70,10 +71,7 @@ namespace Terbaru
             tempCoordinate = dir();
             //tempCoordinate = Coordinate[0];
         }
-        private void OnEnable()
-        {
-            Debug.Log("Enabled");
-        }
+
 
         float setCoordinateValue(float temp, int value)
         {
@@ -133,20 +131,20 @@ namespace Terbaru
 
         #region Vertical
 
-        void inisiasiDir()
+        public void inisiasiDir()
         {
-            Coordinate.Add(transform.position);
-            Coordinate.Add(new Vector3(transform.position.x + distance / 2, transform.position.y, transform.position.z));
+            Coordinate.Add(transform.localPosition);
+            Coordinate.Add(new Vector3(transform.localPosition.x + distance / 2, transform.localPosition.y, transform.localPosition.z));
         }
         int indexDir = 1;
         void jalan()
         {
             timer += Time.deltaTime;
-            
+            //Debug.Log($"Distance : {Vector3.Distance(transform.localPosition, Coordinate[indexDir])} result : ({Vector3.Distance(transform.localPosition, Coordinate[indexDir]) < .1f})");
             anim.SetFloat("Xinput", KananKiri());
             if (!_inCoordinate() && !GetComponent<NPC_Controller>().interupt)
             {
-                rb.MovePosition(rb.position + new Vector3(KananKiri(), 0f, 0f) * speed * Time.fixedDeltaTime);
+                rb.MovePosition(rb.position + new Vector3(KananKiri(), 0f, 0f) * speed * Time.deltaTime);
                 anim.SetBool("Jalan", true);
                 
                 sprite.flipX =  KananKiri() < 0;
@@ -162,7 +160,8 @@ namespace Terbaru
         }
         bool _inCoordinate()
         {
-            return transform.position == Coordinate[indexDir] || Vector3.Distance(transform.position, Coordinate[indexDir]) < 0.1f;
+            float tempDir = Vector3.Distance(transform.localPosition, Coordinate[indexDir]);
+            return transform.localPosition.x == Coordinate[indexDir].x || tempDir < .1f;
         }
         int KananKiri()
         {

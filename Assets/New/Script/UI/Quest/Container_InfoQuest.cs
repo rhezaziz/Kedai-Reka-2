@@ -2,7 +2,6 @@ using EasyTransition;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -123,6 +122,7 @@ namespace Terbaru{
             }
             karakter[karakter[0] == null ? 0 : 1] = characters;
             cKarakter[cKarakter[0] == null ? 0 : 1] = _Karakter;
+            
             selectedCharacter(selected - 1);
             updateListSkill();
             updateProfil();
@@ -132,6 +132,7 @@ namespace Terbaru{
                 Mulai.gameObject.SetActive(true);
                 
                 Mulai.onClick.AddListener(() => mulaiGame());
+                Mulai.onClick.AddListener(() => GameObject.Find("Quest Panel").SetActive(false));
                 for (int x = 1; x < parentListKarakter.transform.childCount; x++)
                 {
                     Container_Karakter karakterList = parentListKarakter.transform.GetChild(x).GetComponent<Container_Karakter>();
@@ -143,20 +144,26 @@ namespace Terbaru{
 
         public void mulaiGame()
         {
-            int indexQuest = quest.jmlEnergy;
-            if(player.Energy >= indexQuest)
-            {
+            GameObject[] NPC = {
+                karakter[0].objectNPC,
+                karakter[1].objectNPC
+            };
+            
+            GameManager.instance.readyMission(NPC);
+            // int indexQuest = quest.jmlEnergy;
+            // if(player.Energy >= indexQuest)
+            // {
                 
-                player.Energy -= indexQuest;
-                FindObjectOfType<DemoLoadScene>().LoadScene(quest.sceneGame);
-                quest.isDone = true;
-                player.Saldo += quest.Reward; 
-            }
-            else
-            {
-                Debug.Log("Energy Kurang");
-                //Mulai.enabled(false);
-            }
+            //     player.Energy -= indexQuest;
+            //     FindObjectOfType<DemoLoadScene>().LoadScene(quest.sceneGame);
+            //     quest.isDone = true;
+            //     player.Saldo += quest.Reward; 
+            // }
+            // else
+            // {
+            //     Debug.Log("Energy Kurang");
+            //     //Mulai.enabled(false);
+            // }
         }
 
         void updateProfil()
@@ -166,11 +173,14 @@ namespace Terbaru{
                 GameObject panelKarakter = characterSelected.transform.GetChild(i).gameObject;
                 Image imageKarakter = panelKarakter.transform.GetChild(0).GetChild(0).GetComponent<Image>();
                 GameObject cancelSelect = panelKarakter.transform.GetChild(1).gameObject;
-
+                var panelNama = characterSelected.transform.GetChild(i).GetChild(0).GetChild(1);
+            
                 if (karakter[i] != null)
                 {
                     imageKarakter.gameObject.SetActive(true);
                     imageKarakter.sprite = karakter[i].imageCharacter;
+                    panelNama.gameObject.SetActive(true);
+                    panelNama.GetComponentInChildren<TMP_Text>().text = karakter[i].namaCharacter;
                     cancelSelect.SetActive(true);
                 }
                 else
@@ -205,11 +215,11 @@ namespace Terbaru{
 
         void selectedCharacter(int index)
         {
-
             if (karakter[index] != null)
             {
                 index = 0;
             }
+
             var panelNama = characterSelected.transform.GetChild(index).GetChild(0).GetChild(1);
             Image imageCharacter = characterSelected.transform.GetChild(index).GetChild(0).GetChild(0).GetComponent<Image>();
             GameObject btnClose = characterSelected.transform.GetChild(index).GetChild(1).gameObject;

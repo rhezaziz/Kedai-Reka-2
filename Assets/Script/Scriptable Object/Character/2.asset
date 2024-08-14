@@ -18,8 +18,8 @@ MonoBehaviour:
   - A
   - B
   - C
-  Posisi: {x: 1, y: 4.41, z: 0}
-  objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}
+  Posisi: {x: 10, y: 5, z: 7}
+  objectNPC: {fileID: 5397218845697537900, guid: 694c579b199f88247bc119fecea39f76, type: 3}
   hobbyCharacter: Membuat Seni
   titleCharacter: Seniman Sejati
   skillCharacter:

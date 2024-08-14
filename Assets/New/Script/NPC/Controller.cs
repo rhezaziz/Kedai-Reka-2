@@ -8,6 +8,7 @@ namespace Terbaru
     public class NPC_Controller : MonoBehaviour
     {
         //Kondisi
+        public bool kanan;
         public bool isMove;
         public bool haveKegiatan;
         public bool haveObrol;
@@ -22,7 +23,7 @@ namespace Terbaru
         //Parameter
         public bool interupt = false;
         int jumlahState;
-        bool couting;
+        bool counting;
 
         WorldPos sorting = new WorldPos();
         float timer;
@@ -41,14 +42,22 @@ namespace Terbaru
             sprite = GetComponentInChildren<SpriteRenderer>();
         }
 
+        void mulai(){
+            GetComponent<Rigidbody>().isKinematic = true;
+
+            if(moving)
+                moving.inisiasiDir();
+        }
+
         private void Start()
         {
             currentCondition(animasi.Idle);
+            Invoke("mulai", 0.5f);
         }
 
         private void Update()
         {
-            if (couting)
+            if (counting)
             {
                 timer += Time.deltaTime;
                 currentCondition(state);
@@ -66,13 +75,13 @@ namespace Terbaru
                     state = animasi.Idle;
                     
                     resetAnimor();
-                    couting = true;
+                    counting = true;
                     interupt = false;
 
                     if (timer > 5)
                     {
                         timer = 0;
-                        couting = false;
+                        counting = false;
                         randomState();
                     }
 
@@ -94,7 +103,7 @@ namespace Terbaru
                     state = animasi.Kegiatan;
 
 
-                    couting = true;
+                    counting = true;
 
                     anim.SetBool("Kegiatan", true);
 
@@ -105,7 +114,7 @@ namespace Terbaru
                         {
                             timer = 0;
 
-                            couting = false;
+                            counting = false;
                             randomState();
                         }
                     }
@@ -118,7 +127,7 @@ namespace Terbaru
                         resetAnimor();
                         
                         interupt = true;
-                        couting = false;
+                        counting = false;
                         
                         anim.SetBool("Ngomong", true);
                         return;
@@ -129,6 +138,13 @@ namespace Terbaru
             }
         }
 
+        public void selectedQuest(bool flipX){
+            counting = false;
+            
+            anim.SetBool("Kegiatan", false);
+            currentCondition(animasi.Ngobrol);
+            sprite.flipX = flipX;
+        }
         void randomState()
         {
             int index = Random.Range(1, jumlahState - 1);
@@ -156,6 +172,6 @@ namespace Terbaru
         Idle,
         Walking,
         Kegiatan,
-        Ngobrol
+        Ngobrol,
     }
 }

@@ -18,8 +18,8 @@ MonoBehaviour:
   - A
   - B
   - C
-  Posisi: {x: 60, y: 4.41, z: 0}
-  objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}
+  Posisi: {x: 140, y: 5, z: 0}
+  objectNPC: {fileID: 390674655994116832, guid: 538abce8bc8fc334eb17416f3c45f3fa, type: 3}
   hobbyCharacter: Membantu
   titleCharacter: Penerus Keadilan
   skillCharacter:

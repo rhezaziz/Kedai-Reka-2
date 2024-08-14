@@ -18,8 +18,8 @@ MonoBehaviour:
   - A
   - B
   - C
-  Posisi: {x: 0, y: 4.41, z: 0}
-  objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}
+  Posisi: {x: 60, y: 5, z: 7}
+  objectNPC: {fileID: 930147155628118611, guid: e61059886f127da42a112203dd1d7c5e, type: 3}
   hobbyCharacter: Membuat Aplkasi
   titleCharacter: Proggramer
   skillCharacter:

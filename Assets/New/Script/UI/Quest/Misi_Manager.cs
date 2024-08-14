@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using Unity.VisualScripting;
 namespace Terbaru{
     public class Misi_Manager : MonoBehaviour
     {
@@ -13,6 +14,8 @@ namespace Terbaru{
         public GameObject prefabsKarakter;
         public GameObject parentListKarakter;
 
+        public Vector3 PosKiri;
+        public Vector3 PosKanan;
         public UnityEngine.UI.Button closeButton;
         private void Start()
         {
@@ -53,6 +56,23 @@ namespace Terbaru{
                 listKarakter.initKarkater(player.character[i], i);
                 GO_karakter.transform.SetParent(parentListKarakter.transform);
                 GO_karakter.transform.localScale = new Vector3(1f, 1f, 1f);
+            }
+        }
+
+        public void setUpPositionNPC(List<GameObject> NPC){
+            Vector3 player = GameObject.Find("Player").transform.position;
+            Debug.Log($"Posisi Player = {player}");
+            Vector3[] posisi = {
+                new Vector3(30f, 36f, -122.5f),
+                new Vector3(37.5f, 36f, -122.5f),
+                
+            };
+            for(int i = 0; i < NPC.Count; i++){
+
+                bool flip = i == 1 ;
+                Debug.Log($"Posisi {i} = {posisi[i]}");
+                NPC[i].transform.position = posisi[i];
+                NPC[i].GetComponent<NPC_Controller>().selectedQuest(flip);
             }
         }
 

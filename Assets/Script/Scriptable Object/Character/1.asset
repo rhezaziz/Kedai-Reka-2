@@ -18,8 +18,8 @@ MonoBehaviour:
   - A
   - B
   - C
-  Posisi: {x: 5, y: 4.41, z: 0}
-  objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}
+  Posisi: {x: 15, y: 5, z: 11}
+  objectNPC: {fileID: 5620995390642727474, guid: 1ed3bad7066c6f949a644df10e0aa10e, type: 3}
   hobbyCharacter: Menulis Buku
   titleCharacter: Penulis Hebat
   skillCharacter:
