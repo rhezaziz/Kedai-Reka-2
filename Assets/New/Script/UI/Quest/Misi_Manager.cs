@@ -61,7 +61,7 @@ namespace Terbaru{
 
         public void setUpPositionNPC(List<GameObject> NPC){
             Vector3 player = GameObject.Find("Player").transform.position;
-            Debug.Log($"Posisi Player = {player}");
+            //Debug.Log($"Posisi Player = {player}");
             Vector3[] posisi = {
                 new Vector3(30f, 36f, -122.5f),
                 new Vector3(37.5f, 36f, -122.5f),
@@ -70,10 +70,12 @@ namespace Terbaru{
             for(int i = 0; i < NPC.Count; i++){
 
                 bool flip = i == 1 ;
-                Debug.Log($"Posisi {i} = {posisi[i]}");
+                //Debug.Log($"Posisi {i} = {posisi[i]}");
                 NPC[i].transform.position = posisi[i];
                 NPC[i].GetComponent<NPC_Controller>().selectedQuest(flip);
             }
+
+            UiManager.instance.mulaiQuest(NPC);
         }
 
         public void UpdateListKarater(){

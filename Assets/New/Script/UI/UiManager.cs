@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
+using DG.Tweening;
 
 namespace Terbaru
 {
@@ -12,7 +13,11 @@ namespace Terbaru
         public RekrutManager rekrut;
 
         public Misi_Manager quest;
+
+        public GameObject ChinematicPanel;
+
         [Header("Profil")]
+        public GameObject panelUtama;
         public Image[] bar;
         public TMPro.TMP_Text Saldo;
         public TMPro.TMP_Text Nama;
@@ -43,6 +48,40 @@ namespace Terbaru
             quest.gameObject.SetActive(true);
 
             quest.UpdateListKarater();
+        }
+
+        public void mulaiQuest(List<GameObject> temp){
+            
+            StartCoroutine(Cutscene(temp));
+        }
+
+        IEnumerator Cutscene(List<GameObject> NPCs){
+            Animator anim = ChinematicPanel.GetComponent<Animator>();
+            var camera = Camera.main;
+            panelUtama.SetActive(false);
+            ChinematicPanel.SetActive(true);
+            camera.transform.DOLocalMoveZ(-7f, 1f);
+
+            anim.SetTrigger("Mulai");
+
+
+            yield return new WaitForSeconds(3f);
+
+            anim.SetTrigger("Mulai");
+            yield return new WaitForSeconds(2f);
+            foreach(var NPC in NPCs)
+                NPC.SetActive(false);
+
+            anim.SetTrigger("Mulai");
+            camera.transform.DOLocalMoveZ(-10f, 1f);
+            yield return new WaitForSeconds(1f);
+
+            panelUtama.SetActive(true);
+            ChinematicPanel.SetActive(false);
+            FindObjectOfType<Movement>().move = true;
+
+
+
         }
     }
 }
