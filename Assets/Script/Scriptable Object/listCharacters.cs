@@ -13,7 +13,7 @@ public class listCharacters : ScriptableObject
         "B",
         "C",
     };
-
+    public bool selected;
     public Vector3 Posisi;
     public GameObject objectNPC;
     public string hobbyCharacter;

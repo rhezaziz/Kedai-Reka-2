@@ -18,6 +18,7 @@ MonoBehaviour:
   - A
   - B
   - C
+  selected: 0
   Posisi: {x: 105, y: 5, z: 20}
   objectNPC: {fileID: 4507167804160485344, guid: fc74d0450d5112d4da6501e3c4551bee, type: 3}
   hobbyCharacter: Membantu

@@ -18,6 +18,7 @@ MonoBehaviour:
   - A
   - B
   - C
+  selected: 0
   Posisi: {x: 10, y: 5, z: 7}
   objectNPC: {fileID: 5397218845697537900, guid: 694c579b199f88247bc119fecea39f76, type: 3}
   hobbyCharacter: Membuat Seni

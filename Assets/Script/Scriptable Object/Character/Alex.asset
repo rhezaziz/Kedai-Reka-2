@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: c1f60618dde2ea84e90a163ac4b251bb, type: 3}
-  m_Name: 1
+  m_Name: Alex
   m_EditorClassIdentifier: 
   index: 0
   skills: 000000000100000002000000
@@ -18,6 +18,7 @@ MonoBehaviour:
   - A
   - B
   - C
+  selected: 0
   Posisi: {x: 15, y: 5, z: 11}
   objectNPC: {fileID: 5620995390642727474, guid: 1ed3bad7066c6f949a644df10e0aa10e, type: 3}
   hobbyCharacter: Menulis Buku

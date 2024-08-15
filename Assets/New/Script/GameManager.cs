@@ -52,6 +52,7 @@ namespace Terbaru{
             NPC_Object.name = NPC_Profil[index].objectNPC.name;
 
             NPCs.Add(NPC_Object);
+            NPC_Object.SetActive(!NPC_Profil[index].selected);
         }
 
         public void readyMission(GameObject[] NPC){

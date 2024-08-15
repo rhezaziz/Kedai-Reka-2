@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Player Profil
   m_EditorClassIdentifier: 
   NamaKarakter: Reeee
-  position: {x: 35, y: 5, z: -125}
+  position: {x: -90, y: 5, z: -150}
   jmlHari: 1
   Energy: 2
   Saldo: 283000

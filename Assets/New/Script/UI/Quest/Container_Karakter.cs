@@ -51,6 +51,12 @@ namespace Terbaru{
             else
             {
                 gameObject.SetActive(true);
+                if(karakter.selected){
+                    selected = true;
+                    btnKarakter.interactable = false;
+                    fotoKarakter.material = greyMat;
+                    return;
+                }
                 btnKarakter.onClick.AddListener(() => infoKarakter(karakter));
             }
         }
