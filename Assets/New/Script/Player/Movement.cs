@@ -7,6 +7,8 @@ namespace Terbaru
 {
     public class Movement : MonoBehaviour
     {
+        public float minZ = -150f;
+        public float maxZ = -120f;
         Animator anim;
         SpriteRenderer sp;
         Rigidbody rb;
@@ -42,11 +44,13 @@ namespace Terbaru
         {
             Direction.x = Mathf.RoundToInt(CrossPlatformInputManager.GetAxis("Horizontal"));
             Direction.z = Mathf.RoundToInt(CrossPlatformInputManager.GetAxis("Vertical"));
-
+            
+            Vector3 currentPos = rb.position;
+            currentPos.z = Mathf.Clamp(currentPos.z ,minZ, maxZ);
             //Direction.x = Input.GetAxisRaw("Horizontal");
             //Direction.z = Input.GetAxisRaw("Vertical");
 
-            rb.MovePosition(rb.position + Direction * moveSpeed * Time.fixedDeltaTime);
+            rb.MovePosition(currentPos + Direction * moveSpeed * Time.fixedDeltaTime);
 
             if (Direction.x != 0 || Direction.z != 0)
             {

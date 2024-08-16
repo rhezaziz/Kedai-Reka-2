@@ -7,7 +7,7 @@ namespace Terbaru{
     public class Misi_Manager : MonoBehaviour
     {
         public Transform parent;
-        public List<Quest> quests;
+        //public List<Quest> quests;
         public playerProfil player;
         public GameObject prefabsKarakter;
         public GameObject parentListKarakter;
@@ -19,6 +19,13 @@ namespace Terbaru{
         {
             player = FindObjectOfType<Controller>().profil;
             closeButton.onClick.AddListener(() => FindObjectOfType<Controller>().currentState(state.Default));
+            
+            //quests = new List<Quest>();
+            //quests = QuestManager.instance.getQuest(); 
+            
+            // for(int i = 0; i < getQuest.Length; i++){
+            //     quests.Add(getQuest[i]);
+            // }
             initQuestList();
             initKarakter();
         }
@@ -28,12 +35,12 @@ namespace Terbaru{
             for(int i = 0; i < parent.childCount; i++)
             {
                 Container_Quest container = parent.GetChild(i).GetComponent<Container_Quest>();
-            
-                if (!quests[i].isDone)
+                Quest temp = QuestManager.instance.getQuest(i);
+                if (!temp.isDone)
                 {
                     container.gameObject.SetActive(true);
 
-                    container.initContent(quests[i], i);
+                    container.initContent(temp, i);
 
                 }
                 else

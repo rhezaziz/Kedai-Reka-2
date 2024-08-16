@@ -15,6 +15,7 @@ namespace Terbaru
         public Misi_Manager quest;
 
         public GameObject ChinematicPanel;
+        public GameObject MarkPrefabs;
 
         [Header("Profil")]
         public GameObject panelUtama;
@@ -51,8 +52,25 @@ namespace Terbaru
         }
 
         public void mulaiQuest(List<GameObject> temp){
-            
+            QuestManager.instance.NPCs = temp;
             StartCoroutine(Cutscene(temp));
+        }
+
+        public void helperQuest(GameObject _object){
+            GameObject Mark = Instantiate(MarkPrefabs);
+            Mark.transform.SetParent(_object.transform);
+            Mark.name = "Mark";
+            
+
+            Mark.transform.localPosition = new Vector3(0f, 
+                                            0f,  
+                                            0.025f);
+        }
+
+        public void closeHelper(GameObject _object){
+            GameObject mark = _object.transform.Find("Mark").gameObject;
+            //mark.SetActive(false);
+            Destroy(mark);
         }
 
         IEnumerator Cutscene(List<GameObject> NPCs){
@@ -80,6 +98,7 @@ namespace Terbaru
             ChinematicPanel.SetActive(false);
             FindObjectOfType<Movement>().move = true;
 
+            //QuestManager.instance.StartProcessQuest();
 
 
         }

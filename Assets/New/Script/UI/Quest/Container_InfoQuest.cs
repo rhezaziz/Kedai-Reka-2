@@ -154,6 +154,7 @@ namespace Terbaru{
             GameObject.Find("Quest Panel").SetActive(false);
             
             GameManager.instance.readyMission(NPC);
+            QuestManager.instance.StartProcessQuest(quest);
             // int indexQuest = quest.jmlEnergy;
             // if(player.Energy >= indexQuest)
             // {

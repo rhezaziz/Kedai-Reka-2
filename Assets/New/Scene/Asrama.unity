@@ -8,8 +8,8 @@ OcclusionCullingSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
-  m_SceneGUID: 00000000000000000000000000000000
-  m_OcclusionCullingData: {fileID: 0}
+  m_SceneGUID: 46f0db2c6b751f54bbbf0f408fed359a
+  m_OcclusionCullingData: {fileID: 36300000, guid: 4b89e5041a1c5fc4e9bc3b008107ef15, type: 2}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
@@ -624,6 +624,7 @@ MonoBehaviour:
   rekrut: {fileID: 1251750978}
   quest: {fileID: 0}
   ChinematicPanel: {fileID: 1201917128}
+  MarkPrefabs: {fileID: 2345223020380172982, guid: dc2118c858505554d818c7057656ffa8, type: 3}
   panelUtama: {fileID: 1582947453}
   bar:
   - {fileID: 1886725237}
@@ -644,10 +645,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   parent: {fileID: 1092744689}
-  quests:
-  - {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
-  - {fileID: 11400000, guid: f7b120e138445814d9ae7fc7f9e5fac6, type: 2}
-  - {fileID: 11400000, guid: 11483a17ae555f64ca4ffd7531453be7, type: 2}
   player: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
   prefabsKarakter: {fileID: 802672784577036657}
   parentListKarakter: {fileID: 7894328247220425240}
@@ -2982,6 +2979,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1147744897}
     m_Modifications:
+    - target: {fileID: 2799538952906330135, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3320934861105965502, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
       propertyPath: m_Name
       value: Laki Utama
@@ -3016,7 +3017,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6494484127645595973, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -90
+      value: -61.8
       objectReference: {fileID: 0}
     - target: {fileID: 6494484127645595973, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
       propertyPath: m_LocalPosition.y
@@ -3024,7 +3025,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6494484127645595973, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -154.5
+      value: -151.4
       objectReference: {fileID: 0}
     - target: {fileID: 6494484127645595973, guid: 7768cec3bf3f6a744b835e8ffd6cba10, type: 3}
       propertyPath: m_LocalRotation.w
@@ -3663,7 +3664,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &217422201
 Transform:
   m_ObjectHideFlags: 0
@@ -6972,7 +6973,7 @@ Transform:
   m_GameObject: {fileID: 554053162}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.95, z: -0.85}
+  m_LocalPosition: {x: 0, y: -1.95, z: -2.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8431,8 +8432,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 7.18, y: 9.989778, z: 0.9594265}
-  m_Center: {x: 0, y: -2.689889, z: -0.37971324}
+  m_Size: {x: 7.18, y: 9.989778, z: 2.8535857}
+  m_Center: {x: 0, y: -2.689889, z: -1.326793}
 --- !u!212 &687654412
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -11013,32 +11014,32 @@ MonoBehaviour:
   - quest: {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
     Index: 0
     proses:
-    - Action: 
+    - Action: Item 1
       ProcessEventStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 1923541463}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
-              m_BoolArgument: 0
+              m_BoolArgument: 1
             m_CallState: 2
       ProcessEventHelper:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -11047,44 +11048,44 @@ MonoBehaviour:
       ProcessEnd:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
-    - Action: 
+    - Action: Item 2
       ProcessEventStart:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 961419904}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
-              m_BoolArgument: 0
+              m_BoolArgument: 1
             m_CallState: 2
       ProcessEventHelper:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -11093,13 +11094,13 @@ MonoBehaviour:
       ProcessEnd:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 0}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -11107,22 +11108,203 @@ MonoBehaviour:
             m_CallState: 2
   - quest: {fileID: 11400000, guid: f7b120e138445814d9ae7fc7f9e5fac6, type: 2}
     Index: 0
-    proses: []
+    proses:
+    - Action: Item 1
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1923541463}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    - Action: Item 2
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 961419904}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
   - quest: {fileID: 11400000, guid: 11483a17ae555f64ca4ffd7531453be7, type: 2}
     Index: 0
-    proses: []
+    proses:
+    - Action: Item 1
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 1923541463}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 1923541463}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+    - Action: Item 2
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 961419904}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  indexs:
+  - indexQuest: 000000000100000002000000
+  - indexQuest: 000000000100000002000000
+  - indexQuest: 000000000100000002000000
   currentQuest:
-    Action: 
-    ProcessEventStart:
-      m_PersistentCalls:
-        m_Calls: []
-    ProcessEventHelper:
-      m_PersistentCalls:
-        m_Calls: []
-    ProcessEnd:
-      m_PersistentCalls:
-        m_Calls: []
-  index: 0
+    quest: {fileID: 0}
+    Index: 0
+    proses: []
+  NPCs: []
 --- !u!1 &904463990
 GameObject:
   m_ObjectHideFlags: 0
@@ -11604,6 +11786,126 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 954713192}
   m_CullTransparentMesh: 1
+--- !u!1 &961419904
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 961419905}
+  - component: {fileID: 961419909}
+  - component: {fileID: 961419908}
+  - component: {fileID: 961419907}
+  - component: {fileID: 961419906}
+  m_Layer: 9
+  m_Name: Ambil Item
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &961419905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961419904}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
+  m_LocalPosition: {x: -20.14, y: -2.72, z: -12.12}
+  m_LocalScale: {x: 116.845215, y: 112.66311, z: 116.845215}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1155742866}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &961419906
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961419904}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02, y: 0.019999994, z: 0.019999998}
+  m_Center: {x: -0.000000059604645, y: 0, z: -0.000000029802322}
+--- !u!114 &961419907
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961419904}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa018992f8a733648a2e3d2089b4a5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
+  actionQuest: Item 2
+--- !u!23 &961419908
+MeshRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961419904}
+  m_Enabled: 1
+  m_CastShadows: 1
+  m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RayTracingMode: 2
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 0e875298c25d54248a89b28ecad663fc, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 3
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_AdditionalVertexStreams: {fileID: 0}
+--- !u!33 &961419909
+MeshFilter:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 961419904}
+  m_Mesh: {fileID: 8552134717624371188, guid: a09a83a48332faa439ea515cb6ab98c4, type: 3}
 --- !u!1 &966099294
 GameObject:
   m_ObjectHideFlags: 0
@@ -12989,7 +13291,7 @@ Transform:
   m_GameObject: {fileID: 1147744896}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 31.05, z: 0}
+  m_LocalPosition: {x: 81.6, y: 31.05, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -13125,6 +13427,7 @@ Transform:
   - {fileID: 567364662}
   - {fileID: 616221018}
   - {fileID: 1923541464}
+  - {fileID: 961419905}
   - {fileID: 1614203457}
   - {fileID: 49038330}
   - {fileID: 648240308}
@@ -13132,6 +13435,7 @@ Transform:
   - {fileID: 7354924667976246464}
   - {fileID: 396050795}
   - {fileID: 7852956}
+  - {fileID: 6374272855675940603}
   m_Father: {fileID: 383945600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1159024624
@@ -14066,8 +14370,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 1, z: 151.52827}
-  m_Center: {x: -4.1270622e-16, y: 0, z: -76.26421}
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1354193929
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -15080,7 +15384,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 961
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -21257,13 +21561,15 @@ GameObject:
   - component: {fileID: 1923541464}
   - component: {fileID: 1923541466}
   - component: {fileID: 1923541465}
+  - component: {fileID: 1923541468}
+  - component: {fileID: 1923541467}
   m_Layer: 9
-  m_Name: Paket
+  m_Name: Ambil Item
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1923541464
 Transform:
   m_ObjectHideFlags: 0
@@ -21273,7 +21579,7 @@ Transform:
   m_GameObject: {fileID: 1923541463}
   serializedVersion: 2
   m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -13.290009, y: -2.7223363, z: 15.16}
+  m_LocalPosition: {x: -7.16, y: -2.72, z: -12.12}
   m_LocalScale: {x: 116.845215, y: 112.66311, z: 116.845215}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -21329,6 +21635,41 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1923541463}
   m_Mesh: {fileID: 8552134717624371188, guid: a09a83a48332faa439ea515cb6ab98c4, type: 3}
+--- !u!65 &1923541467
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923541463}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.02, y: 0.019999994, z: 0.019999998}
+  m_Center: {x: 0, y: 0, z: -0.000000029802322}
+--- !u!114 &1923541468
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1923541463}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa018992f8a733648a2e3d2089b4a5ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  item: {fileID: 11400000, guid: 81983b38e1528bd4e932c66c939ff04c, type: 2}
+  actionQuest: Item 1
 --- !u!1 &1926157239
 GameObject:
   m_ObjectHideFlags: 0
@@ -21449,7 +21790,7 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 3
   m_Size: {x: 2.323163, y: 6.715442, z: 1}
-  m_Center: {x: 0.2033039, y: 0.02467085, z: 0}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!54 &1939524301
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21489,7 +21830,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e9311631fbcc2c74cb461799a6966961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
+  minZ: -150
+  maxZ: -122.5
+  moveSpeed: 6.5
   move: 1
 --- !u!114 &1939524305
 MonoBehaviour:
@@ -36665,8 +37008,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5998275525146768449}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.79, y: 34.09, z: -151.59}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 84.65047, y: -0.9673352, z: -15.246755}
   m_LocalScale: {x: 3.75, y: 3.75, z: 3.75}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -36675,7 +37018,7 @@ Transform:
   - {fileID: 1060007659}
   - {fileID: 162634194}
   - {fileID: 545006397}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1155742866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!65 &6374272855675940604
 BoxCollider:
@@ -36696,8 +37039,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 2.558011, y: 1, z: 2.851937}
-  m_Center: {x: 0.04515966, y: 0, z: 0.9259684}
+  m_Size: {x: 2.558012, y: 1, z: 2.6096473}
+  m_Center: {x: 0.04515966, y: 0, z: 1.0471209}
 --- !u!114 &6384760885655202561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -43096,4 +43439,3 @@ SceneRoots:
   - {fileID: 1147744897}
   - {fileID: 273560741}
   - {fileID: 383945600}
-  - {fileID: 6374272855675940603}

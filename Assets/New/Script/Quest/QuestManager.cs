@@ -6,46 +6,74 @@ using UnityEngine.Events;
 namespace Terbaru{
     public class QuestManager : MonoBehaviour
     {
+
+        public static QuestManager instance ;
         public List<listQuest> quests = new List<listQuest>();
+        public List<QuestHarian> indexs = new List<QuestHarian>();
 
-        public questProses currentQuest;
+        public listQuest currentQuest;
+        public List<GameObject> NPCs = new List<GameObject>();
+        //public int index;
 
-        public int index;
-
-        public void StartProcessQuest(){
-            Debug.Log($"Start Process Quest {index}");
-            int processIndex = quests[index].Index;
-            currentQuest = quests[index].proses[processIndex];
-
-            StartProcess(processIndex);
-
-            HelperProcess(processIndex);
+        void Awake(){
+            instance = this;
         }
 
-        void StartProcess(int noIndex) => quests[index].proses[noIndex].ProcessEventStart?.Invoke();
+        public void StartProcessQuest(Quest quest){
+            int index = 0;
+            
+            foreach(var _quest in quests){
+                if(_quest.quest == quest){
+                    index = _quest.Index;
+                    currentQuest = _quest;
+                    break;
+                }
+            }
+            Debug.Log($"Start Process Quest {index}"); 
+            StartProcess(index);
+
+            HelperProcess(index);
+        }
+
+        public Quest getQuest(int index){
+            Debug.Log(index);
+            int hari = FindObjectOfType<Controller>().profil.GetHari();
+            int temp = indexs[hari].indexQuest[index];
+            Debug.Log(quests[temp].quest.judulMisi);
+            return quests[temp].quest;
+            
+
+            
+        }
+
+
+        void StartProcess(int noIndex) => currentQuest.proses[noIndex].ProcessEventStart?.Invoke();
         
-        void CloseProses(int noIndex) => quests[index].proses[noIndex].ProcessEnd?.Invoke();
+        void CloseProses(int noIndex) => currentQuest.proses[noIndex].ProcessEnd?.Invoke();
         
-        void HelperProcess(int noIndex) => quests[index].proses[noIndex].ProcessEventHelper?.Invoke();
+        void HelperProcess(int noIndex) => currentQuest.proses[noIndex].ProcessEventHelper?.Invoke();
         
 
         public void CheckAction(string Action){
-            if(currentQuest.Action != Action){
+            int currentIndex = currentQuest.Index;
+            if(currentQuest.proses[currentIndex].Action != Action){
                 return;
             }
 
-            CloseProses(quests[index].Index);
+            CloseProses(currentIndex);
             NextProcess();
         }
 
         void NextProcess(){
-            int tempIndex = quests[index].Index;
-            int jumlahProses = quests[index].proses.Length - 1;
+            int tempIndex = currentQuest.Index;
+            int jumlahProses = currentQuest.proses.Length - 1;
             
             if(tempIndex < jumlahProses){
                 
-                quests[index].Index += 1;
-                StartProcess(quests[index].Index);
+                currentQuest.Index += 1;
+                StartProcessQuest(currentQuest.quest);
+                // StartProcess(currentQuest.Index);
+                // HelperProcess(currentQuest.Index);
             }
             else{
                 EndProcess();
@@ -55,33 +83,43 @@ namespace Terbaru{
         void EndProcess(){
             var playerProfil = GameManager.instance.profil;
 
-            playerProfil.Saldo += quests[index].quest.Reward;
+
+            foreach(var lists in NPCs){
+                lists.gameObject.SetActive(true);
+                lists.GetComponent<NPC_Controller>().setPosition();
+                
+                foreach(var npc in playerProfil.character){
+                    if(npc.objectNPC.name == lists.name){
+                        npc.selected = false;
+                    }
+                }
+            }
+            currentQuest.quest.isDone = true;
+
+            playerProfil.Saldo += currentQuest.quest.Reward;
+
+            UiManager.instance.UpdateSaldo(playerProfil.Saldo);
         }
     }
 
     [System.Serializable]
-        public class questProses{
-            public string Action;
-            public UnityEvent ProcessEventStart;
-            public UnityEvent ProcessEventHelper;
-            public UnityEvent ProcessEnd;
+    public class questProses{
+        public string Action;
+        public UnityEvent ProcessEventStart;
+        public UnityEvent ProcessEventHelper;
+        public UnityEvent ProcessEnd;
             
         }
 
         [System.Serializable]
         public class listQuest{
-            // public string ProcessTittle;
-            // public int Index;
-            // public Kemampuan[] skills;
-            // public Items item;
-            // [TextArea(5,10)]
-            // public string Deskripsi;
-            // public int jumlahEnergy;
-            // public int level;
-            // public bool isDone;
-            // public int hadiah;
             public Quest quest;
             public int Index;
             public questProses[] proses;
+        }
+
+        [System.Serializable]
+        public class QuestHarian{
+            public int[] indexQuest;
         }
 }

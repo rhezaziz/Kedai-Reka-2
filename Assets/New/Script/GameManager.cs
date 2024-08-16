@@ -50,7 +50,7 @@ namespace Terbaru{
             NPC_Object.transform.SetParent(parent.transform);
             NPC_Object.transform.localPosition = NPC_Profil[index].Posisi;
             NPC_Object.name = NPC_Profil[index].objectNPC.name;
-
+            NPC_Object.GetComponent<NPC_Controller>().Posisi = NPC_Profil[index].Posisi;
             NPCs.Add(NPC_Object);
             NPC_Object.SetActive(!NPC_Profil[index].selected);
         }
@@ -65,6 +65,10 @@ namespace Terbaru{
             }
             FindObjectOfType<Misi_Manager>().setUpPositionNPC(NPC_Quest);
 
+        }
+
+        public void questEnd(){
+            
         }
         public void pindahScene(){
             PlayerPrefs.SetString("Scene", "Asrama");

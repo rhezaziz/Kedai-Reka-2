@@ -8,6 +8,7 @@ namespace Terbaru
     public class NPC_Controller : MonoBehaviour
     {
         //Kondisi
+        public Vector3 Posisi;
         public bool kanan;
         public bool isMove;
         public bool haveKegiatan;
@@ -65,6 +66,11 @@ namespace Terbaru
 
             sprite.sortingOrder = sorting.valueLayer(transform.position.z);
 
+        }
+
+
+        public void setPosition(){
+            transform.localPosition = Posisi;
         }
 
         public void currentCondition(animasi temp)

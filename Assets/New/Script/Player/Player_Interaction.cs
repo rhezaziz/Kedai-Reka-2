@@ -22,26 +22,25 @@ namespace Terbaru
             controller = GetComponent<Controller>();
 
         }
+        
         void OnCollisionEnter(Collision other){
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
-                interactButton.SetActive(true);
-                interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
-                interaksi = true;
-                ObjectGame = other.gameObject;
+                onInteraction(true, other.gameObject);
+                // Debug.Log("Kena");
+                // interactButton.SetActive(true);
+                // interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
+                // interaksi = true;
+                // ObjectGame = other.gameObject;
 
-                interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
+                // interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
             }
         }
 
         void OnCollisionExit(Collision other){
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
-                interactButton.SetActive(false);
-                interaksi = false;
-                ObjectGame = null;
-
-                interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
+                onInteraction(false, other.gameObject);
             }
         }
         // //public List<Interaksi> list_Interaksi;
@@ -79,13 +78,24 @@ namespace Terbaru
 
         public void interaksiAction()
         {
-
-            ObjectGame.GetComponent<Interaction>().action(transform);
             controller.currentState(state.Interaction);
+            ObjectGame.GetComponent<Interaction>().action(transform);
+
+            
             /*if (Input.GetKeyDown(KeyCode.Space) && interaksi)
             {
                 //Debug.Log("Kena");
             }*/
+        }
+
+        public void onInteraction(bool interact, GameObject other){
+            interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
+            interactButton.SetActive(interact);
+            interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
+            interaksi = interact;
+            ObjectGame = interact ? other.gameObject : null;
+
+            interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
         }
 
         public void ChangeAnimation(string boolean, string trigger)
