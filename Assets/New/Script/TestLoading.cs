@@ -8,19 +8,29 @@ namespace  Terbaru
 { 
     public class TestLoading : MonoBehaviour
     {
-        [Header("UI GameObject")]
-        [SerializeField] private GameObject MainMenuScreen;
-        [SerializeField] private GameObject LoadingScreen;
+        //[Header("UI GameObject")]
+        //[SerializeField] private GameObject MainMenuScreen;
+        //[SerializeField] private GameObject LoadingScreen;
 
         [Header("Slider")]
         public Slider loadingSlader;
+        string namaScene;
 
-        public void loadSceneBtn(string sceneName){
-            MainMenuScreen.SetActive(false);
-            LoadingScreen.SetActive(true);
+        void Awake(){
+            namaScene = PlayerPrefs.GetString("Scene");
+        }
+
+        void Start(){
+            Invoke("loadSceneBtn", 2f);
+        }
+
+        public void loadSceneBtn(){
+            //MainMenuScreen.SetActive(false);
+            //LoadingScreen.SetActive(true);
 
             //pindahScene(sceneName);
-            StartCoroutine(LoadNewScene(sceneName));
+
+            StartCoroutine(LoadNewScene(namaScene));
         }
 
         void pindahScene(string sceneName){
@@ -29,7 +39,7 @@ namespace  Terbaru
 
         IEnumerator LoadNewScene(string SceneName){
 
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
 
             //asyncLoad.allowSceneActivation = false;
 
@@ -40,6 +50,16 @@ namespace  Terbaru
                 
                 yield return null;
             }
+
+            Scene currentScene = SceneManager.GetActiveScene();
+
+            GameObject[] rootObject = currentScene.GetRootGameObjects();
+
+            foreach(GameObject obj in rootObject){
+                obj.SetActive(false);
+            }
+
+            Destroy(this.gameObject);
 
         }
     }   
