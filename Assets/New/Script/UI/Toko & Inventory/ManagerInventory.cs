@@ -3,26 +3,31 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using Terbaru;
+
+namespace Terbaru{
+ 
 public class ManagerInventory : MonoBehaviour
 {
     public GameObject prefabs;
     public Transform parent;
 
-    public playerProfil profil;
+     //playerProfil profil;
 
 
     public void mulai()
     {
+        playerProfil profil =GameManager.instance.profil;
         if(parent.transform.childCount > 1)
         {
-            lihatItem();
+            lihatItem(profil);
         }
         else
         {
-            initInventory();
+            initInventory(profil);
         }
     }
-    void initInventory()
+    void initInventory(playerProfil profil)
     {
         GameObject item;
 
@@ -39,7 +44,7 @@ public class ManagerInventory : MonoBehaviour
             item.transform.SetParent(parent);
             item.transform.localScale = new Vector2(1f, 1f);
             item.transform.Rotate(0f, 0f, -90, Space.Self);
-            if (profil.item[i].isShop)
+            if (!profil.item[i].isInventory)
             {
                 item.SetActive(false);
             }
@@ -50,7 +55,7 @@ public class ManagerInventory : MonoBehaviour
         }
     }
 
-    void lihatItem()
+    void lihatItem(playerProfil profil)
     {
         for(int i = 0; i < parent.childCount - 1; i++)
         {
@@ -61,4 +66,6 @@ public class ManagerInventory : MonoBehaviour
                 parent.GetChild(i + 1).gameObject.SetActive(true);
         }
     }
+}
+   
 }

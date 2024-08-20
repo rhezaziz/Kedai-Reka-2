@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
-using Unity.VisualScripting;
+
 namespace Terbaru{
     public class Misi_Manager : MonoBehaviour
     {
@@ -31,7 +31,6 @@ namespace Terbaru{
         }
         public void initQuestList()
         {
-        
             for(int i = 0; i < parent.childCount; i++)
             {
                 Container_Quest container = parent.GetChild(i).GetComponent<Container_Quest>();

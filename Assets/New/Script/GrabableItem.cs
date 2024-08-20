@@ -7,15 +7,19 @@ namespace Terbaru{
 
     public class GrabableItem : MonoBehaviour, Interaction
     {
-        public Items item;
+        public List<Items> item;
         public string actionQuest;
         public void action(Transform Player){
             //var profil = GameManager.instance.profil;
 
             //var temp = profil.item.Contains(item);
-            item.isInventory = true;
+            foreach(var i in item){
+                i.isInventory = true;
+                QuestManager.instance.CheckAction($"{actionQuest} {i.namaItem}");
+               
+            }
+             
             Player.GetComponent<Controller>().currentState(state.Default);
-            QuestManager.instance.CheckAction(actionQuest);
             gameObject.SetActive(false);
             //Destroy(this);
         }
