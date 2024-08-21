@@ -8,12 +8,11 @@ namespace Terbaru
 {
     public class Player_Interaction : MonoBehaviour
     {
-        bool interaksi;
         Controller controller;
 
         public GameObject interactButton;
 
-        GameObject ObjectGame;
+        //GameObject ObjectGame;
         bool animasi = false;
         public static bool Interaksi;
 
@@ -27,13 +26,6 @@ namespace Terbaru
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
                 onInteraction(true, other.gameObject);
-                // Debug.Log("Kena");
-                // interactButton.SetActive(true);
-                // interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
-                // interaksi = true;
-                // ObjectGame = other.gameObject;
-
-                // interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
             }
         }
 
@@ -43,40 +35,8 @@ namespace Terbaru
                 onInteraction(false, other.gameObject);
             }
         }
-        // //public List<Interaksi> list_Interaksi;
-        // private void OnTriggerEnter(Collider other)
-        // {
-        //     if (other != null && other.GetComponent<Interaction>() != null)
-        //     {
-        //         interactButton.SetActive(true);
-        //         interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.name;
-        //         interaksi = true;
-        //         ObjectGame = other.gameObject;
 
-        //         interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
-        //     }
-        // }
-
-        // private void OnTriggerExit(Collider other)
-        // {
-        //     if (other != null && other.GetComponent<Interaction>() != null)
-        //     {
-        //         interactButton.SetActive(false);
-        //         interaksi = false;
-        //         ObjectGame = null;
-
-        //         interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-        //     }
-        // }
-
-
-
-        private void Update()
-        {
-            //interaksiAction();
-        }
-
-        public void interaksiAction()
+        public void interaksiAction(GameObject ObjectGame)
         {
             controller.currentState(state.Interaction);
             ObjectGame.GetComponent<Interaction>().action(transform);
@@ -90,12 +50,17 @@ namespace Terbaru
 
         public void onInteraction(bool interact, GameObject other){
             interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-            interactButton.SetActive(interact);
-            interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
-            interaksi = interact;
-            ObjectGame = interact ? other.gameObject : null;
+            
+            //interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
+            
+            if(other != null){
+                other.GetComponent<Interaction>().btnActive(interactButton, interact);
 
-            interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction());
+                interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction(other));
+                return;
+            }
+
+            interactButton.SetActive(interact);
         }
 
         public void ChangeAnimation(string boolean, string trigger)

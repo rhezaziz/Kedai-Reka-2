@@ -39,29 +39,9 @@ namespace Terbaru
     
         }
 
-        public void BukaPintu()
-        {
-
-        }
-
-        /*public void TutupPintu()
-        {
-
-        }*/
-
-        public void Pintu_Utama()
-        {
-
-        }
-
-        public void Pintu_Kamar()
-        {
-
-        }
-
-        public void Pintu_WC()
-        {
-
+        public void btnActive(GameObject btn, bool interactable){
+            btn.SetActive(interactable);
+            btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Buka Pintu";
         }
     }
 

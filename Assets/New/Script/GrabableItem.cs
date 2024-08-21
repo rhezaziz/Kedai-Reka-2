@@ -15,17 +15,22 @@ namespace Terbaru{
             //var temp = profil.item.Contains(item);
             foreach(var i in item){
                 i.isInventory = true;
-                QuestManager.instance.CheckAction($"{actionQuest} {i.namaItem}");
-               
+                string action = $"{actionQuest} {i.namaItem}";
+                QuestManager.instance.CheckAction(action);
             }
              
             Player.GetComponent<Controller>().currentState(state.Default);
             gameObject.SetActive(false);
             //Destroy(this);
         }
+
+        public void btnActive(GameObject btn, bool interactable){
+            btn.SetActive(interactable);
+            btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Ambil Barang";
+        }
         
         void OnDisable(){
-            FindObjectOfType<Player_Interaction>().onInteraction(false, this.gameObject);
+            FindObjectOfType<Player_Interaction>().onInteraction(false, null);
         }
     }
 

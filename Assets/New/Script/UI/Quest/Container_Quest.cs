@@ -16,11 +16,6 @@ namespace Terbaru{
 
         NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
 
-        private void Start()
-        {
-            
-        }
-        
         public void initContent(Quest quest, int value)
         {
             index = value;

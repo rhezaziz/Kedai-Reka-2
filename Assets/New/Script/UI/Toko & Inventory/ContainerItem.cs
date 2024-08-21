@@ -8,14 +8,16 @@ using System.Globalization;
 namespace Terbaru{
     public class ContainerItem : MonoBehaviour
     {
+        
+        [Header("Universal")]
         public Image gambarItem;
         public TMP_Text namaItem;
+
+        [Header("Item di Shop")]
         public TMP_Text hargaItem;
         public Button btnBeli;
-        Items _item;
 
         public void ItemInShop(Items item, NumberFormatInfo info){
-            _item = item;
             gambarItem.sprite = item.gambarItem;
             namaItem.text = item.namaItem;
             hargaItem.text = "Rp" + item.Harga.ToString("n0",info);
@@ -32,6 +34,20 @@ namespace Terbaru{
                 btnBeli.GetComponent<Image>().enabled = true;
                 btnBeli.interactable = true;
                 btnBeli.onClick.AddListener(() => shopManager.instance.buyItem(item, btnBeli));
+            }
+        }
+
+        public void ItemInInventory(Items item){
+            gambarItem.sprite = item.gambarItem;
+            namaItem.text = item.namaItem;
+
+            if (!item.isInventory)
+            {
+                gameObject.SetActive(false);
+            }
+            else
+            {
+                gameObject.SetActive(true);
             }
         }
     }

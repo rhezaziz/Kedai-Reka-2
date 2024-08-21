@@ -69,7 +69,6 @@ namespace Terbaru
 
         public void closeHelper(GameObject _object){
             GameObject mark = _object.transform.Find("Mark").gameObject;
-            //mark.SetActive(false);
             Destroy(mark);
         }
 
@@ -97,10 +96,6 @@ namespace Terbaru
             panelUtama.SetActive(true);
             ChinematicPanel.SetActive(false);
             FindObjectOfType<Movement>().move = true;
-
-            //QuestManager.instance.StartProcessQuest();
-
-
         }
     }
 }

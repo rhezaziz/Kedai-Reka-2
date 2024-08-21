@@ -14,5 +14,10 @@ namespace Terbaru
         {
             UiManager.instance.displayRekrut(player.GetComponent<Controller>().profil);
         }
+
+        public void btnActive(GameObject btn, bool interactable){
+            btn.SetActive(interactable);
+            btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Lihat Komputer";
+        }
     }
 }

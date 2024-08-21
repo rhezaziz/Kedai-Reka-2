@@ -12,6 +12,7 @@ namespace Terbaru{
         public List<QuestHarian> indexs = new List<QuestHarian>();
 
         public listQuest currentQuest;
+        public bool isActive = false;
         public List<GameObject> NPCs = new List<GameObject>();
         //public int index;
 
@@ -21,7 +22,7 @@ namespace Terbaru{
 
         public void StartProcessQuest(Quest quest){
             int index = 0;
-            
+            isActive = true;
             foreach(var _quest in quests){
                 if(_quest.quest == quest){
                     index = _quest.Index;
@@ -55,6 +56,10 @@ namespace Terbaru{
         
 
         public void CheckAction(string Action){
+            Debug.Log(Action);
+            if(!isActive)
+                return;
+
             int currentIndex = currentQuest.Index;
             if(currentQuest.proses[currentIndex].Action != Action){
                 return;
@@ -99,6 +104,7 @@ namespace Terbaru{
             playerProfil.Saldo += currentQuest.quest.Reward;
 
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
+            isActive = false;
         }
     }
 

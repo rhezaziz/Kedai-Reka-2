@@ -3,8 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
-using food;
-using Unity.VisualScripting;
 
 namespace  Terbaru
 {
@@ -18,6 +16,15 @@ namespace  Terbaru
         public TMP_Text text_Tanggal;
 
         playerProfil profil;
+
+        public void closeIpad(){
+            RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();
+            //FindObjectOfType<swipeUI>().slide.value = 0f;
+            iPad.DOScaleY(0f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
+
+        }
+
+        
         public void animasiUI_Ipad()
         {
             profil = GameManager.instance.profil;
@@ -31,6 +38,7 @@ namespace  Terbaru
         void initQuest(){
             for(int i = 0; i < questList.Length; i++){
                 Quest temp = QuestManager.instance.getQuest(i);
+                
                 TMP_Text textQuest = questList[i].transform.GetChild(0).GetComponent<TMP_Text>();
                 questList[i].SetActive(!temp.isDone);
                 textQuest.text = temp.isDone ? "" : temp.judulMisi;

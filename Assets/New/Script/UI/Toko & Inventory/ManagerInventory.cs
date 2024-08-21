@@ -6,66 +6,49 @@ using TMPro;
 using Terbaru;
 
 namespace Terbaru{
- 
-public class ManagerInventory : MonoBehaviour
-{
-    public GameObject prefabs;
-    public Transform parent;
-
-     //playerProfil profil;
-
-
-    public void mulai()
+    public class ManagerInventory : MonoBehaviour
     {
-        playerProfil profil =GameManager.instance.profil;
-        if(parent.transform.childCount > 1)
+        public GameObject prefabs;
+        public Transform parent;
+        public void mulai()
         {
-            lihatItem(profil);
-        }
-        else
-        {
-            initInventory(profil);
-        }
-    }
-    void initInventory(playerProfil profil)
-    {
-        GameObject item;
-
-        for(int i = 0; i < profil.item.Count; i++)
-        {
-            //profil.name = profil.item[i].name;
-            item = Instantiate(prefabs);
-            item.name = profil.item[i].namaItem;
-            Image gambarItem = item.transform.GetChild(0).GetChild(0).GetComponent<Image>();
-            TMP_Text namaItem = item.transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>();
-
-            gambarItem.sprite = profil.item[i].gambarItem;
-            namaItem.text = profil.item[i].namaItem;
-            item.transform.SetParent(parent);
-            item.transform.localScale = new Vector2(1f, 1f);
-            item.transform.Rotate(0f, 0f, -90, Space.Self);
-            if (!profil.item[i].isInventory)
+            playerProfil profil = GameManager.instance.profil;
+            if(parent.transform.childCount > 1)
             {
-                item.SetActive(false);
+                lihatItem(profil);
             }
             else
             {
-                item.SetActive(true);
+                initInventory(profil);
+            }
+        }
+        List<GameObject> container = new List<GameObject>();
+        void initInventory(playerProfil profil)
+        {
+            container.Clear();
+            //GameObject item;
+            foreach(var item in profil.item){
+                GameObject temp = Instantiate(prefabs);
+                temp.name = item.namaItem;
+                temp.GetComponent<ContainerItem>().ItemInInventory(item);
+                temp.transform.SetParent(parent);
+                temp.transform.localScale = new Vector2(1f, 1f);
+                temp.transform.Rotate(0f, 0f, -90, Space.Self);
+                container.Add(temp);
+            }
+        }
+
+        void lihatItem(playerProfil profil)
+        {
+            for(int i = 0; i < container.Count; i++){
+                Items item = profil.item[i];
+
+                if(item.isInventory){
+                    container[i].SetActive(true);
+                }else{
+                    container[i].SetActive(false);
+                }
             }
         }
     }
-
-    void lihatItem(playerProfil profil)
-    {
-        for(int i = 0; i < parent.childCount - 1; i++)
-        {
-            if (profil.item[i].isShop)
-                parent.GetChild(i + 1).gameObject.SetActive(false);
-        
-            else
-                parent.GetChild(i + 1).gameObject.SetActive(true);
-        }
-    }
-}
-   
 }

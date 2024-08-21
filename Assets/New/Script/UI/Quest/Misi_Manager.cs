@@ -20,12 +20,6 @@ namespace Terbaru{
             player = FindObjectOfType<Controller>().profil;
             closeButton.onClick.AddListener(() => FindObjectOfType<Controller>().currentState(state.Default));
             
-            //quests = new List<Quest>();
-            //quests = QuestManager.instance.getQuest(); 
-            
-            // for(int i = 0; i < getQuest.Length; i++){
-            //     quests.Add(getQuest[i]);
-            // }
             initQuestList();
             initKarakter();
         }
@@ -40,7 +34,6 @@ namespace Terbaru{
                     container.gameObject.SetActive(true);
 
                     container.initContent(temp, i);
-
                 }
                 else
                 {

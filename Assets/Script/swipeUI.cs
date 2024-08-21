@@ -27,6 +27,7 @@ public class swipeUI : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
             Tangan.SetActive(true);
             lockScreen.SetActive(false);
             MainMenu.SetActive(true);
+            slide.value = 0;
             //Debug.Log("Selesai");
         }
     }
@@ -54,7 +55,7 @@ public class swipeUI : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
             anim.SetLoops(-1, LoopType.Yoyo);
             slideText.DOScaleX(1f, 1.5f);
             yield return new WaitForSeconds(2.5f);
-            Debug.Log("Animasi");
+           // Debug.Log("Animasi");
             slideText.localScale = new Vector2(0f, 1f);
         }
     }

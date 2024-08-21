@@ -1,8 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Linq;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+
 namespace Terbaru{
 
     public class GameManager : MonoBehaviour
@@ -37,9 +37,6 @@ namespace Terbaru{
                 }
              }
         }
-
-        
-
 
         List<GameObject> NPCs = new List<GameObject>();
         public void spawnNPC(int index){

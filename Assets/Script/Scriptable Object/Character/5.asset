@@ -18,7 +18,7 @@ MonoBehaviour:
   - A
   - B
   - C
-  selected: 0
+  selected: 1
   Posisi: {x: 160, y: 5, z: 0}
   objectNPC: {fileID: 3270271406074976547, guid: c413c18a63c465443922fd31f9e9326d, type: 3}
   hobbyCharacter: Mancing

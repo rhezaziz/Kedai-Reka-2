@@ -24,22 +24,14 @@ namespace Terbaru{
             null,
             null
         };
-
         int selected;
-
         public Button Mulai;
-
         List<Kemampuan> allSkill = new List<Kemampuan>();
-
         public playerProfil player;
-
         Quest quest;
-
-        //listCharacters[2] chara; 
         public void initKonten(Quest _quest)
         {
             this.quest = _quest;
-            //Debug.Log(quest);
             initBarang();
             spawnListKarakter();
             initListSkill();
@@ -48,7 +40,6 @@ namespace Terbaru{
         void initBarang()
         {
             Items item = quest.item;
-            //Debug.Log(item);
             if (item == null)
             {
                 itemPanel.SetActive(false);
@@ -152,23 +143,10 @@ namespace Terbaru{
             cloaseInfoQuest();
             GameObject.Find("pilih karakter").SetActive(false);
             GameObject.Find("Quest Panel").SetActive(false);
+            FindObjectOfType<Player_Interaction>().onInteraction(false, null);
             
             GameManager.instance.readyMission(NPC);
             QuestManager.instance.StartProcessQuest(quest);
-            // int indexQuest = quest.jmlEnergy;
-            // if(player.Energy >= indexQuest)
-            // {
-                
-            //     player.Energy -= indexQuest;
-            //     FindObjectOfType<DemoLoadScene>().LoadScene(quest.sceneGame);
-            //     quest.isDone = true;
-            //     player.Saldo += quest.Reward; 
-            // }
-            // else
-            // {
-            //     Debug.Log("Energy Kurang");
-            //     //Mulai.enabled(false);
-            // }
         }
 
         void updateProfil()
@@ -193,7 +171,6 @@ namespace Terbaru{
                 {
                     imageKarakter.gameObject.SetActive(false);
                     panelNama.gameObject.SetActive(false);
-                    //imageKarakter.sprite = karakter[i].imageCharacter;
                     cancelSelect.SetActive(false); ;
 
                 }
@@ -227,17 +204,12 @@ namespace Terbaru{
             {
                 index = 0;
             }
-
-            //var panelNama = characterSelected.transform.GetChild(index).GetChild(0).GetChild(1);
             Image imageCharacter = characterSelected.transform.GetChild(index).GetChild(0).GetChild(0).GetComponent<Image>();
             GameObject btnClose = characterSelected.transform.GetChild(index).GetChild(1).gameObject;
             bool isActive = karakter[index] != null;
 
             btnClose.gameObject.SetActive(isActive);
             imageCharacter.gameObject.SetActive(isActive);
-            //karakter[index].selected = true;
-            //panelNama.gameObject.SetActive(isActive);
-            //panelNama.GetComponentInChildren<TMP_Text>().text = isActive ? karakter[index].namaCharacter : null;
             imageCharacter.sprite = isActive ?  karakter[index].imageCharacter : null;
 
         }
