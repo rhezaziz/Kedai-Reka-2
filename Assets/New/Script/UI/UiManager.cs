@@ -9,6 +9,7 @@ namespace Terbaru
 {
     public class UiManager : MonoBehaviour
     {
+        public string test;
         public static UiManager instance;
         public RekrutManager rekrut;
 
@@ -28,11 +29,25 @@ namespace Terbaru
             Nama.text = profil.NamaKarakter;
 
             UpdateSaldo(profil.Saldo);
+            updateEnergy(0);
+
+            string temp = string.Format(test, "Rheza");
+            Debug.Log(temp);
         }
 
         public void UpdateSaldo(int saldo){
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
             Saldo.text = "Rp" + saldo.ToString("n0", info);
+        }
+
+        public void updateEnergy(int value){
+            var profil = GameManager.instance.profil;
+            profil.Energy -= value;
+            int jmlEnergy = profil.Energy;
+            Debug.Log(jmlEnergy);
+            for(int i = 0; i < bar.Length; i++){
+                bar[i].gameObject.SetActive(i < jmlEnergy);
+            }
         }
 
         void Awake(){

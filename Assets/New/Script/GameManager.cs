@@ -63,10 +63,7 @@ namespace Terbaru{
             FindObjectOfType<Misi_Manager>().setUpPositionNPC(NPC_Quest);
 
         }
-
-        public void questEnd(){
-            
-        }
+        
         public void pindahScene(){
             PlayerPrefs.SetString("Scene", "Asrama");
             SceneManager.LoadScene("Loading");

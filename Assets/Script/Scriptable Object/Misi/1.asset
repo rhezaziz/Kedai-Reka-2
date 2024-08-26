@@ -21,4 +21,4 @@ MonoBehaviour:
   jmlEnergy: 2
   sceneGame: 
   level: 0
-  isDone: 1
+  isDone: 0

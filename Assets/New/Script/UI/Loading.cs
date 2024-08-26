@@ -17,7 +17,15 @@ namespace Terbaru{
 
             async.allowSceneActivation = false;
 
+            //SceneManager.sceneLoaded += UnloadScene;
+
             StartCoroutine(LoadNewScene(async));
+        }
+        void UnloadScene(Scene scene, LoadSceneMode loadSceneMode)
+        {
+            SceneManager.sceneLoaded -= UnloadScene;
+            SceneManager.SetActiveScene(scene);
+            SceneManager.UnloadSceneAsync("Scene Main Menu");
         }
 
         IEnumerator LoadNewScene(AsyncOperation asyncLoad){

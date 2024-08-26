@@ -144,7 +144,7 @@ namespace Terbaru{
             GameObject.Find("pilih karakter").SetActive(false);
             GameObject.Find("Quest Panel").SetActive(false);
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
-            
+            UiManager.instance.updateEnergy(quest.jmlEnergy);
             GameManager.instance.readyMission(NPC);
             QuestManager.instance.StartProcessQuest(quest);
         }

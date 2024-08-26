@@ -18,7 +18,7 @@ MonoBehaviour:
   - A
   - B
   - C
-  selected: 0
+  selected: 1
   Posisi: {x: 15, y: 5, z: 11}
   objectNPC: {fileID: 5620995390642727474, guid: 1ed3bad7066c6f949a644df10e0aa10e, type: 3}
   hobbyCharacter: Menulis Buku
