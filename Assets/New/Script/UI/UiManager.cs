@@ -31,8 +31,6 @@ namespace Terbaru
             UpdateSaldo(profil.Saldo);
             updateEnergy(0);
 
-            string temp = string.Format(test, "Rheza");
-            Debug.Log(temp);
         }
 
         public void UpdateSaldo(int saldo){
@@ -87,6 +85,14 @@ namespace Terbaru
             Destroy(mark);
         }
 
+        public void Chinematic(bool isActive){
+            string _action = isActive ? "Mulai" : "Reverse";
+
+            var anim = ChinematicPanel.GetComponent<Animator>();
+            anim.SetTrigger(_action);
+            
+        }
+
         IEnumerator Cutscene(List<GameObject> NPCs){
             Animator anim = ChinematicPanel.GetComponent<Animator>();
             var camera = Camera.main;
@@ -109,7 +115,7 @@ namespace Terbaru
             yield return new WaitForSeconds(1f);
 
             panelUtama.SetActive(true);
-            ChinematicPanel.SetActive(false);
+            //ChinematicPanel.SetActive(false);
             FindObjectOfType<Movement>().move = true;
         }
     }
