@@ -9,6 +9,8 @@ namespace Terbaru
         public state state;
 
         public Movement playerMove;
+
+        public Player_Interaction interaction;
         public playerProfil profil;
 
 

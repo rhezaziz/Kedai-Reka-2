@@ -47,8 +47,6 @@ namespace Terbaru
             
             Vector3 currentPos = rb.position;
             currentPos.z = Mathf.Clamp(currentPos.z ,minZ, maxZ);
-            //Direction.x = Input.GetAxisRaw("Horizontal");
-            //Direction.z = Input.GetAxisRaw("Vertical");
 
             rb.MovePosition(currentPos + Direction * moveSpeed * Time.fixedDeltaTime);
 

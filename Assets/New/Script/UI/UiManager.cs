@@ -86,11 +86,26 @@ namespace Terbaru
         }
 
         public void Chinematic(bool isActive){
+            var camera = Camera.main;
+            float zoom = isActive ? -7f : -10f;
+            camera.transform.DOLocalMoveZ(zoom, 1f);
             string _action = isActive ? "Mulai" : "Reverse";
 
             var anim = ChinematicPanel.GetComponent<Animator>();
             anim.SetTrigger(_action);
+        }
+
+        public void Chinematic(bool isActive, float positionY){
+            var camera = Camera.main;
+            float zoom = isActive ? -7f : -10f;
             
+            string _action = isActive ? "Mulai" : "Reverse";
+
+            var anim = ChinematicPanel.GetComponent<Animator>();
+            anim.SetTrigger(_action);
+            Vector3 posCamera = new Vector3(camera.transform.localPosition.x, positionY, zoom);
+            camera.transform.DOLocalMove(posCamera, 1f);
+            panelUtama.SetActive(!isActive);            
         }
 
         IEnumerator Cutscene(List<GameObject> NPCs){

@@ -5,11 +5,11 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 public class TestPindahScene : MonoBehaviour
 {
-    public SceneAsset scene;
+
 
     public string namaScene;
     public void test(){
-        string temp = scene.name;
+       // string temp = scene.name;
         SceneManager.LoadScene(namaScene, LoadSceneMode.Additive);
     }
 

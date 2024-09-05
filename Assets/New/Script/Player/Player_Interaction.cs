@@ -8,9 +8,10 @@ namespace Terbaru
 {
     public class Player_Interaction : MonoBehaviour
     {
-        Controller controller;
+        public Controller controller;
 
         public GameObject interactButton;
+        public GameObject interactObject;
 
         //GameObject ObjectGame;
         bool animasi = false;
@@ -38,14 +39,11 @@ namespace Terbaru
 
         public void interaksiAction(GameObject ObjectGame)
         {
+            interactObject = ObjectGame;
             controller.currentState(state.Interaction);
             ObjectGame.GetComponent<Interaction>().action(transform);
-
             
-            /*if (Input.GetKeyDown(KeyCode.Space) && interaksi)
-            {
-                //Debug.Log("Kena");
-            }*/
+
         }
 
         public void onInteraction(bool interact, GameObject other){

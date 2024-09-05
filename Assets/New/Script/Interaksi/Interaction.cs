@@ -8,3 +8,9 @@ public interface Interaction
 
     public void btnActive(GameObject btn, bool interactable);
 }
+
+public interface IDialog{
+    public void endDialog();
+
+    public void startDialog();
+}

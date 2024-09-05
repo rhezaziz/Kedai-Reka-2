@@ -72,7 +72,7 @@ namespace Terbaru{
             texture.Create(); 
             video.gameObject.SetActive(false);
 
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.Chinematic(false);
             
             camera.transform.DOLocalMoveZ(-10f, 1f);
 
