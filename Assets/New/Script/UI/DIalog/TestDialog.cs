@@ -12,6 +12,7 @@ namespace Terbaru{
         NPC_Controller controller;
 
         GameObject Player;
+        public string tempAction;
 
 
         public void action(Transform player){
@@ -53,7 +54,7 @@ namespace Terbaru{
             Player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
             Player.GetComponent<Controller>().currentState(state.Default);
             UiManager.instance.panelUtama.SetActive(true);
+            FindObjectOfType<QuestManager>().CheckAction(tempAction);
         }
     }
-
 }

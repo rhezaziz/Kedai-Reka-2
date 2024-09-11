@@ -41,10 +41,7 @@ namespace Terbaru{
             int hari = FindObjectOfType<Controller>().profil.GetHari();
             int temp = indexs[hari].indexQuest[index];
             Debug.Log(quests[temp].quest.judulMisi);
-            return quests[temp].quest;
-            
-
-            
+            return quests[temp].quest; 
         }
 
 
@@ -88,7 +85,7 @@ namespace Terbaru{
         void EndProcess(){
             var playerProfil = GameManager.instance.profil;
 
-
+            Debug.Log("Selesai");
             foreach(var lists in NPCs){
                 lists.gameObject.SetActive(true);
                 lists.GetComponent<NPC_Controller>().setPosition();

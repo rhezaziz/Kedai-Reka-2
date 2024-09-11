@@ -25,10 +25,6 @@ namespace  Terbaru
         }
 
         public void loadSceneBtn(){
-            //MainMenuScreen.SetActive(false);
-            //LoadingScreen.SetActive(true);
-
-            //pindahScene(sceneName);
 
             StartCoroutine(LoadNewScene(namaScene));
         }
@@ -39,6 +35,8 @@ namespace  Terbaru
 
         IEnumerator LoadNewScene(string SceneName){
 
+            sceneActive = SceneManager.GetActiveScene().name;
+            SceneManager.sceneLoaded += UnloadScene;
             AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
 
             //asyncLoad.allowSceneActivation = false;
@@ -51,16 +49,30 @@ namespace  Terbaru
                 yield return null;
             }
 
-            Scene currentScene = SceneManager.GetActiveScene();
+            // Scene currentScene = SceneManager.GetActiveScene();
 
-            GameObject[] rootObject = currentScene.GetRootGameObjects();
+            // GameObject[] rootObject = currentScene.GetRootGameObjects();
 
-            foreach(GameObject obj in rootObject){
-                obj.SetActive(false);
-            }
+            // foreach(GameObject obj in rootObject){
+            //     obj.SetActive(false);
+            // }
 
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
 
+        }
+        public string sceneActive;
+        public void pindah(string namaScene){
+            sceneActive = SceneManager.GetActiveScene().name;
+            SceneManager.sceneLoaded += UnloadScene;
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+        }
+
+
+        void UnloadScene(Scene scene, LoadSceneMode loadScene)
+        {
+            SceneManager.sceneLoaded -= UnloadScene;
+            SceneManager.SetActiveScene(scene);
+            SceneManager.UnloadSceneAsync(sceneActive);
         }
     }   
 }
