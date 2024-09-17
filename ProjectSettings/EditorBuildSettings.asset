@@ -8,25 +8,31 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New/Scene/New Scene.unity
     guid: 2ef991398c3b4a149b79b5b0d43a4255
-  - enabled: 1
+  - enabled: 0
     path: Assets/New/Scene/Asrama.unity
     guid: 46f0db2c6b751f54bbbf0f408fed359a
   - enabled: 0
     path: Assets/New/Scene/Asrama Terbaru.unity
     guid: f5db8b3a6de8cfb4fbe2d0254a9b3520
-  - enabled: 1
+  - enabled: 0
     path: Assets/New/Scene/Loading.unity
     guid: ea021fe6bc6f3de4bbe43b2c097e1fb0
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/Food.unity
     guid: 47333842bb5c120439a4d40822c85ca1
   - enabled: 0
     path: Assets/New/Scene/Test.unity
     guid: a3a3acd23403a934a8437788539dd02b
-  - enabled: 1
+  - enabled: 0
     path: Assets/New/Scene/Test Scene/Scene/Scene 1.unity
     guid: 401ab32967e3e3349b7c9e6d569f9d8c
-  - enabled: 1
+  - enabled: 0
     path: Assets/New/Scene/Scene 2.unity
     guid: 283d22acc6fe85045afc703cbffc61e6
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/Memilih TIM/Scene/Kasus1_1.unity
+    guid: d2078729dba0b0e43947dfa1e0ac8b5e
+  - enabled: 1
+    path: Assets/New/Scene/Asrama BackUp.unity
+    guid: 0b41990bf7461e14ca6eafb1b2b2c634
   m_configObjects: {}

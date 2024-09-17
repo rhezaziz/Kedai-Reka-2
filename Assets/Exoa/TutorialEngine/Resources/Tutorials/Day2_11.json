@@ -1,0 +1,32 @@
+{"tutorial_steps":[{"target_obj":"","text":"Kita sudah di depan komputer","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Interaksi Button","text":"Klik untuk buka komputer","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Info Alex","text":"Klik untuk buka informasi karakter alex","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"ini informasi karakter alex","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Rekrut Karakter","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
+
+{"target_obj":"Iya Rekrut","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"Kita butuh satu anggota lagi","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Keluar info Karakter","text":"klik ini keluar rekrut","isClickable":true,"isReplacingNextButton":true},
+
+{"target_obj":"Info Andi","text":"Klik untuk buka informasi karakter Andi","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"ini informasi karakter Andi","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Rekrut Karakter","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Iya Rekrut","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"Oke kita sudah cukup anggota","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Keluar info Karakter","text":"klik ini keluar rekrut","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Close Rekurt","text":"Keluar dari rekrut","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"Kita butuh beli item","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Ipad Button","text":"Klik ini item","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"Ini tampilan Main menu","isClickable":false,"isReplacingNextButton":false},
+
+{"target_obj":"Shopee","text":"Klik ini item","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Item Spidol","text":"Ini item spidol","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Beli Spidol","text":"Beli item spidol","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Item Spidol","text":"Item sudah terbeli, ayo kita ambil item di depan pintu","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Keluar Ipad","text":"Klik ini untuk keluar","isClickable":true,"isReplacingNextButton":true}
+
+
+
+
+
+]}

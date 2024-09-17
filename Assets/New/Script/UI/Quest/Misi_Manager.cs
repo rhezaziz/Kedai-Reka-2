@@ -7,6 +7,8 @@ namespace Terbaru{
     public class Misi_Manager : MonoBehaviour
     {
         public Transform parent;
+
+        public bool Tutorial;
         //public List<Quest> quests;
         public playerProfil player;
         public GameObject prefabsKarakter;
@@ -23,7 +25,43 @@ namespace Terbaru{
             initQuestList();
             initKarakter();
         }
-        public void initQuestList()
+
+        #region  Tutorial
+        void initQuestTutorial(){
+            for(int i = 0; i < parent.childCount; i++)
+            {
+                Container_Quest container = parent.GetChild(i).GetComponent<Container_Quest>();
+                Quest temp = QuestManager.instance.getQuest(0);
+                 container.gameObject.SetActive(false);
+
+                 container.initContent(temp, 0);
+                // if (!temp.isDone)
+                // {
+                //     container.gameObject.SetActive(true);
+
+                //     container.initContent(temp, i);
+                // }
+                // else
+                // {
+                    
+                // }
+            }
+            initKarakter();
+        }
+
+        public void initKontenQuest(){
+
+            if(Tutorial){
+                initQuestTutorial();
+                return;
+            }
+
+            initQuestList();
+            UpdateListKarater();
+        }
+
+        #endregion
+        void initQuestList()
         {
             for(int i = 0; i < parent.childCount; i++)
             {
@@ -50,29 +88,17 @@ namespace Terbaru{
                 GameObject GO_karakter = Instantiate(prefabsKarakter);
                 Container_Karakter listKarakter = GO_karakter.GetComponent<Container_Karakter>();
                 Karakters.Add(GO_karakter);
+                GO_karakter.name = $"Karakter {player.character[i].objectNPC.name}";
                 listKarakter.initKarkater(player.character[i], i);
                 GO_karakter.transform.SetParent(parentListKarakter.transform);
                 GO_karakter.transform.localScale = new Vector3(1f, 1f, 1f);
             }
         }
 
-        public void setUpPositionNPC(List<GameObject> NPC){
-            Vector3[] posisi = {
-                new Vector3(30f, 36f, -122.5f),
-                new Vector3(37.5f, 36f, -122.5f),
-                
-            };
-            for(int i = 0; i < NPC.Count; i++){
+        
 
-                bool flip = i == 1 ;
-                NPC[i].transform.position = posisi[i];
-                NPC[i].GetComponent<NPC_Controller>().selectedQuest(flip);
-            }
-
-            UiManager.instance.mulaiQuest(NPC);
-        }
-
-        public void UpdateListKarater(){
+        void UpdateListKarater(){
+            Debug.Log("Quest ListKarakter");
             for(int i = 0; i < Karakters.Count; i++){
                 var temp = Karakters[i].GetComponent<Container_Karakter>();
 

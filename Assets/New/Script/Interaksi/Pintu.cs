@@ -23,7 +23,22 @@ namespace Terbaru
 
         public float rotateBuka;
 
+        public bool value;
 
+        public bool isTutorial(){
+            return value;
+        }
+        void OnDisable(){
+            value = false;
+        }
+        
+        void OnEnable(){
+            value = true;
+        }
+
+        void Start(){
+
+        }
         public void action(Transform Player)
         {
             Player.transform.position = new Vector3(spawn.position.x, Player.position.y, spawn.position.z);
@@ -43,8 +58,10 @@ namespace Terbaru
 
         public void tutupPintu(){
             
-            engselPintu.DOLocalRotate(Vector3.zero, 1.5f).OnComplete( () =>
-                FindObjectOfType<Controller>().currentState(state.Default));
+            engselPintu.DOLocalRotate(Vector3.zero, 1.5f)
+            .OnComplete( () =>
+                FindObjectOfType<Controller>().currentState(state.Default))
+                ;
 
             Trigger.GetComponent<Collider>().enabled = true;
         }
@@ -52,6 +69,12 @@ namespace Terbaru
         public void btnActive(GameObject btn, bool interactable){
             btn.SetActive(interactable);
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Buka Pintu";
+        }
+
+        public void tutup(){
+            var video = FindObjectOfType<VideoManager>();
+            float duration = (float)video.video.length;
+            Invoke("tutupPintu", duration + 6f);
         }
     }
 

@@ -1,0 +1,15 @@
+{"tutorial_steps":[{"target_obj":"Quest","text":"Pilih quest","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"","text":"Jadi ini tampilan Quest yang diambil","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"list skill","text":"Jadi ini skill yang dibutuhkan pada quest ","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Karakter Dinda","text":"Jadi ini tampilan Quest yang diambil","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Batal pilih","text":"Jika ingin batal memilih, bisa klik tombol ini","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Pilih","text":"klik ini untuk memilih karakter","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"karakter","text":"ini tampilan karakter yang telah dipilih","isClickable":false,"isReplacingNextButton":false},
+
+{"target_obj":"UnSelect Karakter","text":"Jika ingin batal memilih, bisa klik tombol ini","isClickable":false,"isReplacingNextButton":false},
+{"target_obj":"Tombol Mulai","text":"Ayoooooo mulai ","isClickable":true,"isReplacingNextButton":true}
+
+
+
+
+]}

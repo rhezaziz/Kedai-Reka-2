@@ -15,6 +15,8 @@ namespace Terbaru{
         public VideoClip testVideo;
         public VideoPlayer video;
 
+        public string namaTujuanScene;
+
         public RenderTexture texture;
         // Start is called before the first frame update
 
@@ -55,7 +57,7 @@ namespace Terbaru{
         void loading(){
         
             this.enabled = false;
-            FindObjectOfType<MainMenu>().PindahScene("Asrama");
+            FindObjectOfType<MainMenu>().PindahScene(namaTujuanScene);
             Debug.Log("Loading");
             
         }

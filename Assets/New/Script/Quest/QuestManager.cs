@@ -69,6 +69,7 @@ namespace Terbaru{
         void NextProcess(){
             int tempIndex = currentQuest.Index;
             int jumlahProses = currentQuest.proses.Length - 1;
+            Debug.Log($"tempIndex {tempIndex} == jumlahProses {jumlahProses}");
             
             if(tempIndex < jumlahProses){
                 
@@ -85,7 +86,7 @@ namespace Terbaru{
         void EndProcess(){
             var playerProfil = GameManager.instance.profil;
 
-            Debug.Log("Selesai");
+            Debug.Log("Quest Selesai");
             foreach(var lists in NPCs){
                 lists.gameObject.SetActive(true);
                 lists.GetComponent<NPC_Controller>().setPosition();

@@ -31,6 +31,7 @@ namespace Terbaru{
         Quest quest;
         public void initKonten(Quest _quest)
         {
+            NPC.Clear();
             this.quest = _quest;
             initBarang();
             spawnListKarakter();
@@ -113,12 +114,17 @@ namespace Terbaru{
             }
             karakter[karakter[0] == null ? 0 : 1] = characters;
             cKarakter[cKarakter[0] == null ? 0 : 1] = _Karakter;
-            
+            NPC.Add(characters.objectNPC);
             selectedCharacter(selected - 1);
             updateListSkill();
             updateProfil();
+            int jumlahSelected = 0;
+            for(int i = 0; i < characterSelected.transform.childCount; i++){
+                if(characterSelected.transform.GetChild(i).gameObject.activeInHierarchy)
+                    jumlahSelected += 1;
+            }
 
-            if (selected >= 2)
+            if (selected >= jumlahSelected)
             {
                 Mulai.gameObject.SetActive(true);
                 
@@ -131,13 +137,13 @@ namespace Terbaru{
             }
         }
 
-
+        List<GameObject> NPC = new List<GameObject>();
         public void mulaiGame()
         {
-            GameObject[] NPC = {
-                karakter[0].objectNPC,
-                karakter[1].objectNPC
-            };
+            // GameObject[] NPC = {
+            //     karakter[0].objectNPC,
+            //     karakter[1].objectNPC
+            // };
             
 
             cloaseInfoQuest();
@@ -145,8 +151,9 @@ namespace Terbaru{
             GameObject.Find("Quest Panel").SetActive(false);
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
             UiManager.instance.updateEnergy(quest.jmlEnergy);
-            GameManager.instance.readyMission(NPC);
-            QuestManager.instance.StartProcessQuest(quest);
+            GameManager.instance.readyMission(NPC, quest);
+            //NPC.Clear();
+            
         }
 
         void updateProfil()
@@ -193,7 +200,11 @@ namespace Terbaru{
             selected -= 1;
             Mulai.gameObject.SetActive(false);
             karakter[index].selected = false;
+            NPC.Remove(karakter[index].objectNPC);
+            
             karakter[index] = null;
+
+            
             updateListSkill();
             selectedCharacter(index);
         }

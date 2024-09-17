@@ -12,6 +12,12 @@ namespace Terbaru{
         public void pindahMiniGame(string namaScene){
             StartCoroutine(mulaiMiniGame(namaScene));
         }
+
+        public void pindahScene(string namaScene){
+
+            sceneActive = namaScene;
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+        }
     
         public void pindah(string namaScene){
             StartCoroutine(kembali(namaScene));
@@ -26,6 +32,7 @@ namespace Terbaru{
             UiManager.instance.Chinematic(true);
             yield return new WaitForSeconds(3f);
 
+            
             sceneActive = namaScene;
             SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
 
@@ -35,6 +42,8 @@ namespace Terbaru{
         
         }
 
+
+
         IEnumerator kembali(string value){
             UiManager.instance.Chinematic(true);
             yield return new WaitForSeconds(1f);
@@ -42,7 +51,7 @@ namespace Terbaru{
             UiManager.instance.Chinematic(true);
             yield return new WaitForSeconds(3f);
 
-            Scene scene = SceneManager.GetSceneByName("Asrama");
+            Scene scene = SceneManager.GetSceneByName("Asrama BackUp");
             SceneManager.SetActiveScene(scene);
             SceneManager.UnloadSceneAsync(value);
 

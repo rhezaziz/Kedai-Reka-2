@@ -105,7 +105,7 @@ namespace Terbaru{
 
 
         IEnumerator Cutscene(Vector3 posisi, bool value){
-            
+            Debug.Log(value);
             Animator anim = Chinematic.GetComponent<Animator>();
             //var camera = Camera.main;
             panelUtama.SetActive(false);

@@ -12,10 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c0f2f13c39fd86143b2f12cfa6c53a35, type: 3}
   m_Name: Item 7
   m_EditorClassIdentifier: 
-  namaItem: Sabun
+  namaItem: Buku
   indexItem: 0
   spawnPoint: []
-  gambarItem: {fileID: 21300000, guid: 20324f4461ae6d944aacd69ae42a5fb4, type: 3}
+  gambarItem: {fileID: 21300000, guid: 52ab38cf154f8794781af7bfb77ed39d, type: 3}
   isSpawn: 0
   isShop: 1
   isInventory: 0

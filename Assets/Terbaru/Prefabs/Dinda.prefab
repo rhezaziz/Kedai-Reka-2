@@ -203,6 +203,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3b99b36843d9d642b98d301475667df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Posisi: {x: 0, y: 0, z: 0}
   kanan: 0
   isMove: 0
   haveKegiatan: 1

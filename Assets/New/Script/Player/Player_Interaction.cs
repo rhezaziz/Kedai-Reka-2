@@ -1,6 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
-using Unity.VisualScripting;
+
 using UnityEngine;
 
 
@@ -26,7 +26,9 @@ namespace Terbaru
         void OnCollisionEnter(Collision other){
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
-                onInteraction(true, other.gameObject);
+                bool value = other.gameObject.GetComponent<Interaction>().isTutorial();
+                if(value)
+                    onInteraction(true, other.gameObject);
             }
         }
 

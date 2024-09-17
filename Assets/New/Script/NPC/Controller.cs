@@ -73,6 +73,10 @@ namespace Terbaru
             transform.localPosition = Posisi;
         }
 
+        public void resetCondition(){
+            currentCondition(animasi.Idle);
+        }
+
         public void currentCondition(animasi temp)
         {
             switch(temp)

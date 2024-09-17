@@ -10,6 +10,26 @@ namespace Terbaru
         public Transform position;
         public GameObject uiRekruit;
 
+        public bool value;
+
+        public bool isTutorial(){
+            return value;
+        }
+
+        
+        void OnDisable(){
+            value = false;
+        }
+        
+        void OnEnable(){
+            value = true;
+        }
+
+
+        void Start(){
+
+        }
+
         public void action(Transform player)
         {
             UiManager.instance.displayRekrut(player.GetComponent<Controller>().profil);

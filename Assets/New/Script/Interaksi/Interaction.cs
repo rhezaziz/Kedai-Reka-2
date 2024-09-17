@@ -7,6 +7,8 @@ public interface Interaction
     public void action(Transform Player);
 
     public void btnActive(GameObject btn, bool interactable);
+
+    public bool isTutorial();
 }
 
 public interface IDialog{

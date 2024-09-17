@@ -59,14 +59,15 @@ namespace Terbaru
         }
 
         public void displayQuest(){
+            Debug.Log("Display Quest");
             quest.gameObject.SetActive(true);
 
-            quest.UpdateListKarater();
+            //quest.UpdateListKarater();
         }
 
-        public void mulaiQuest(List<GameObject> temp){
+        public void mulaiQuest(List<GameObject> temp, Quest quest){
             QuestManager.instance.NPCs = temp;
-            StartCoroutine(Cutscene(temp));
+            StartCoroutine(Cutscene(temp, quest));
         }
 
         public void helperQuest(GameObject _object){
@@ -108,7 +109,36 @@ namespace Terbaru
             panelUtama.SetActive(!isActive);            
         }
 
-        IEnumerator Cutscene(List<GameObject> NPCs){
+        IEnumerator Cutscene(List<GameObject> NPCs, Quest quest){
+            Animator anim = ChinematicPanel.GetComponent<Animator>();
+            var camera = Camera.main;
+            panelUtama.SetActive(false);
+            ChinematicPanel.SetActive(true);
+            camera.transform.DOLocalMoveZ(-7f, 1f);
+
+            anim.SetTrigger("Mulai");
+
+
+            yield return new WaitForSeconds(3f);
+
+            anim.SetTrigger("Mulai");
+            yield return new WaitForSeconds(2f);
+            
+            QuestManager.instance.StartProcessQuest(quest);
+            foreach(var NPC in NPCs)
+                NPC.SetActive(false);
+
+            anim.SetTrigger("Mulai");
+            camera.transform.DOLocalMoveZ(-10f, 1f);
+            yield return new WaitForSeconds(1f);
+
+            panelUtama.SetActive(true);
+            //ChinematicPanel.SetActive(false);
+            FindObjectOfType<Movement>().move = true;
+        }
+
+
+        IEnumerator CutsceneMiniGame(List<GameObject> NPCs){
             Animator anim = ChinematicPanel.GetComponent<Animator>();
             var camera = Camera.main;
             panelUtama.SetActive(false);

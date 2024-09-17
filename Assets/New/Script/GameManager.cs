@@ -32,9 +32,7 @@ namespace Terbaru{
         void spawnAllNPC(){
              
              for(int i = 0; i < profil.character.Count; i++){
-                if(!profil.character[i].characterLock){
                     spawnNPC(i);
-                }
              }
         }
 
@@ -49,10 +47,12 @@ namespace Terbaru{
             NPC_Object.name = NPC_Profil[index].objectNPC.name;
             NPC_Object.GetComponent<NPC_Controller>().Posisi = NPC_Profil[index].Posisi;
             NPCs.Add(NPC_Object);
+            
             NPC_Object.SetActive(!NPC_Profil[index].selected);
+            NPC_Object.SetActive(!NPC_Profil[index].characterLock);
         }
 
-        public void readyMission(GameObject[] NPC){
+        public void readyMission(List<GameObject> NPC, Quest quest){
             List<GameObject> NPC_Quest = new List<GameObject>();
             foreach(var npc in NPC){
                 foreach(var temp in NPCs){
@@ -60,8 +60,35 @@ namespace Terbaru{
                         NPC_Quest.Add(temp);
                 }   
             }
-            FindObjectOfType<Misi_Manager>().setUpPositionNPC(NPC_Quest);
+            setUpPositionNPC(NPC_Quest, quest);
 
+        }
+
+        public void setUpPositionNPC(List<GameObject> NPC, Quest quest){
+            Vector3[] posisi = {
+                new Vector3(30f, 36f, -122.5f),
+                new Vector3(37.5f, 36f, -122.5f),
+                new Vector3(30f, 36f, -122.5f),
+                
+            };
+            for(int i = 0; i < NPC.Count - 1; i++){
+                Debug.Log(i);
+                bool flip = i == 1 ;
+                NPC[i].transform.position = posisi[i];
+                NPC[i].GetComponent<NPC_Controller>().selectedQuest(flip);
+            }
+
+            UiManager.instance.mulaiQuest(NPC, quest);
+        }
+
+        public GameObject npcCharacter(GameObject NPC){
+            foreach(var npc in NPCs){
+                if(NPC.name == npc.name){
+                    return npc;
+                }
+            }
+
+            return null;
         }
         
         public void pindahScene(){

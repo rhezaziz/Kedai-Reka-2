@@ -8,10 +8,30 @@ namespace Terbaru{
     {
         public Transform Berdiri;
 
+        
+
+        public bool value;
+
+        public bool isTutorial(){
+            return value;
+        }
+
+        void OnDisable(){
+            value = false;
+        }
+        
+        void OnEnable(){
+            value = true;
+        }
+
+
+        void Start(){
+
+        }
         public GameObject quest;
         public void action(Transform player){
             player.position = new Vector3(Berdiri.position.x, player.position.y, Berdiri.position.z);
-            FindObjectOfType<Misi_Manager>().initQuestList();
+            FindObjectOfType<Misi_Manager>().initKontenQuest();
             quest.SetActive(true);
         }
 

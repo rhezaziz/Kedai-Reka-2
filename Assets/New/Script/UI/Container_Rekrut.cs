@@ -20,7 +20,9 @@ namespace Terbaru{
             dataCharacter = data;
             Foto.sprite = data.imageCharacter;
             Nama.text = data.namaCharacter;
+            Foto.name = $"Character {data.namaCharacter}";
             skill.text = data.skillCharacter[0];
+            info.name = $"Info {data.namaCharacter}";
             isLock = data.characterLock;
             if(!data.characterLock){
                 Rekrut.GetComponent<Button>().interactable = false;

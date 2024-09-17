@@ -5,6 +5,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
 using DG.Tweening;
+using UnityEngine.Events;
 
 
 namespace Terbaru{
@@ -12,6 +13,7 @@ namespace Terbaru{
     public class Interaksi_CG : MonoBehaviour, Interaction
     {   
         public string namaAction;
+        public UnityEvent extendAction;
         public VideoClip testVideo;
         public VideoPlayer video;
 
@@ -19,6 +21,21 @@ namespace Terbaru{
 
 
         bool CG;
+
+        public bool value;
+
+        public bool isTutorial(){
+            return value;
+        }
+
+        
+        void OnDisable(){
+            value = false;
+        }
+        
+        void OnEnable(){
+            value = true;
+        }
 
         public void action(Transform player){
             UiManager.instance.ChinematicPanel.SetActive(true);
@@ -80,7 +97,7 @@ namespace Terbaru{
             PanelUtama.SetActive(true);
             
             FindObjectOfType<Controller>().currentState(state.Default);
-            
+            extendAction?.Invoke();
             
         }
 
