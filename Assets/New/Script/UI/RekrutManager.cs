@@ -119,7 +119,7 @@ public class RekrutManager : MonoBehaviour
                 //updateListCharacter(index);
                 UiManager.instance.UpdateSaldo(data.Saldo);
                 beliProfil.gameObject.SetActive(false);
-                GameManager.instance.spawnNPC(index);
+                GameManager.instance.updateCharacter(index);
                 //Debug.Log("Berhasil");
                 //FindObjectOfType<UIManager>().updateCoint();
                 display(data);

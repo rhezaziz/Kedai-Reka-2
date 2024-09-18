@@ -19,7 +19,7 @@
 {"target_obj":"Ipad Button","text":"Klik ini item","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"","text":"Ini tampilan Main menu","isClickable":false,"isReplacingNextButton":false},
 
-{"target_obj":"Shopee","text":"Klik ini item","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Pilih Shoope","text":"Klik ini item","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"Item Spidol","text":"Ini item spidol","isClickable":false,"isReplacingNextButton":false},
 {"target_obj":"Beli Spidol","text":"Beli item spidol","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"Item Spidol","text":"Item sudah terbeli, ayo kita ambil item di depan pintu","isClickable":false,"isReplacingNextButton":false},

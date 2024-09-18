@@ -9,6 +9,8 @@ namespace Terbaru{
     {
         public static GameManager instance;
 
+        public WaktuManager waktu;
+
         public playerProfil profil;
 
 
@@ -18,6 +20,8 @@ namespace Terbaru{
         }
         void Start(){
             DontDestroyOnLoad(this);
+
+            waktu.currentTime(0);
         }
         
         void OnEnable(){
@@ -51,6 +55,9 @@ namespace Terbaru{
             NPC_Object.SetActive(!NPC_Profil[index].selected);
             NPC_Object.SetActive(!NPC_Profil[index].characterLock);
         }
+        public void updateCharacter(int index){
+            NPCs[index].SetActive(!profil.character[index].characterLock);
+        }
 
         public void readyMission(List<GameObject> NPC, Quest quest){
             List<GameObject> NPC_Quest = new List<GameObject>();
@@ -71,7 +78,7 @@ namespace Terbaru{
                 new Vector3(30f, 36f, -122.5f),
                 
             };
-            for(int i = 0; i < NPC.Count - 1; i++){
+            for(int i = 0; i < NPC.Count; i++){
                 Debug.Log(i);
                 bool flip = i == 1 ;
                 NPC[i].transform.position = posisi[i];

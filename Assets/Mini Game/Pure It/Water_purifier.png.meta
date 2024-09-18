@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -106,9 +106,673 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Water_purifier_0
+      rect:
+        serializedVersion: 2
+        x: 20
+        y: 1420
+        width: 194
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 201d493e08b083c48a9cc815c2a9de36
+      internalID: 1478204190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_1
+      rect:
+        serializedVersion: 2
+        x: 270
+        y: 1420
+        width: 212
+        height: 81
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4aff505b830aff3459ee50ca2c798366
+      internalID: 1957239959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_2
+      rect:
+        serializedVersion: 2
+        x: 511
+        y: 1396
+        width: 267
+        height: 116
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20f52a3721a2b7644a786fc84f85d648
+      internalID: -206678104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_3
+      rect:
+        serializedVersion: 2
+        x: 804
+        y: 652
+        width: 285
+        height: 803
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1382e83ea260c354baf1ced58ddaa18e
+      internalID: -1168827624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_4
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 1354
+        width: 375
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a77d10f910da2d84da77f0163ce2083f
+      internalID: 1480816049
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_5
+      rect:
+        serializedVersion: 2
+        x: 1980
+        y: 796
+        width: 126
+        height: 696
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a8a6375777427d40a690d0353a658c9
+      internalID: -1408666476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_6
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 1325
+        width: 198
+        height: 72
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e4c7ee15bf96f84e972d88b6484d5e9
+      internalID: 49123778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_7
+      rect:
+        serializedVersion: 2
+        x: 312
+        y: 1037
+        width: 291
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dedd6ca5a5897594097e2b250d49b334
+      internalID: -1016658389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_8
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 1160
+        width: 228
+        height: 118
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74de122a181a6ca4eba1f3bed48a3df0
+      internalID: -1009603279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_9
+      rect:
+        serializedVersion: 2
+        x: 1524
+        y: 1149
+        width: 376
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf5c4244e1f5d974ab09bdf68a4c17ff
+      internalID: -2028882301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1021
+        width: 205
+        height: 101
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a50d30d750bf4b4498d72bb7030b9ddb
+      internalID: -662702582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_11
+      rect:
+        serializedVersion: 2
+        x: 1514
+        y: 951
+        width: 376
+        height: 174
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6856a85537f9cc7439c79da46697fda0
+      internalID: 187794276
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_12
+      rect:
+        serializedVersion: 2
+        x: 2174
+        y: 373
+        width: 334
+        height: 685
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7763bbbe2310bc9459aac0a81cfad934
+      internalID: 339999601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_13
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 795
+        width: 375
+        height: 171
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 739f9c239da0f504d8f2f3792f4e1870
+      internalID: -1940218935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_14
+      rect:
+        serializedVersion: 2
+        x: 1178
+        y: 811
+        width: 118
+        height: 67
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c610336760f00c24fa46bff29ea73891
+      internalID: -1386737264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_15
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 826
+        width: 273
+        height: 110
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7506b17dba034f348929fd465c484bed
+      internalID: 1092649277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_16
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 591
+        width: 375
+        height: 173
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8c3b5623ccb68d48a00194d40d97b31
+      internalID: -1107269050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_17
+      rect:
+        serializedVersion: 2
+        x: 1561
+        y: 673
+        width: 296
+        height: 131
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d5cac762142ff4e86bac2878651d16
+      internalID: 520582777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 471
+        width: 267
+        height: 98
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b73381c3d238d0943b9d623089e6f4c0
+      internalID: -1685325027
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_19
+      rect:
+        serializedVersion: 2
+        x: 628
+        y: 536
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 468e7d02f3df1044e9dad27960d672a1
+      internalID: 306840059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_20
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 531
+        width: 18
+        height: 64
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35dfe64314455f45b5d032dcd98dca6
+      internalID: -126350684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_21
+      rect:
+        serializedVersion: 2
+        x: 1579
+        y: 463
+        width: 269
+        height: 179
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5bab164823b84141a30ad43ca615bdf
+      internalID: 1252315178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_22
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 226
+        width: 283
+        height: 168
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2d864a5b92d4d349bda7c8b8e1dc6e1
+      internalID: -1403820987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_23
+      rect:
+        serializedVersion: 2
+        x: 405
+        y: 253
+        width: 226
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86f5bb33e948dce4b8e80ac5e74b935f
+      internalID: 341524655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_24
+      rect:
+        serializedVersion: 2
+        x: 733
+        y: 271
+        width: 116
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff134f365b226a44c949b456ba0e5353
+      internalID: -171421759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_25
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 271
+        width: 117
+        height: 122
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 558e571da2ec1ea42822926cca7b864c
+      internalID: -1410330955
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_26
+      rect:
+        serializedVersion: 2
+        x: 1197
+        y: 50
+        width: 256
+        height: 446
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bb8bde426399254a83685a37e0e1627
+      internalID: 1665777268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_27
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 40
+        width: 283
+        height: 145
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee849827177ba1744bd3020b3c370108
+      internalID: -1875784576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_28
+      rect:
+        serializedVersion: 2
+        x: 630
+        y: 9
+        width: 119
+        height: 219
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07e1b7a56902ed41aecaac71618272c
+      internalID: -787835725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_29
+      rect:
+        serializedVersion: 2
+        x: 819
+        y: 51
+        width: 160
+        height: 138
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144ff0bd064ebf0429b4b25214b630de
+      internalID: 1201574366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Water_purifier_30
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 111
+        width: 703
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2cb752a34acb86449ee8436623794bc
+      internalID: -1880026110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -119,7 +783,38 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Water_purifier_0: 1478204190
+      Water_purifier_1: 1957239959
+      Water_purifier_10: -662702582
+      Water_purifier_11: 187794276
+      Water_purifier_12: 339999601
+      Water_purifier_13: -1940218935
+      Water_purifier_14: -1386737264
+      Water_purifier_15: 1092649277
+      Water_purifier_16: -1107269050
+      Water_purifier_17: 520582777
+      Water_purifier_18: -1685325027
+      Water_purifier_19: 306840059
+      Water_purifier_2: -206678104
+      Water_purifier_20: -126350684
+      Water_purifier_21: 1252315178
+      Water_purifier_22: -1403820987
+      Water_purifier_23: 341524655
+      Water_purifier_24: -171421759
+      Water_purifier_25: -1410330955
+      Water_purifier_26: 1665777268
+      Water_purifier_27: -1875784576
+      Water_purifier_28: -787835725
+      Water_purifier_29: 1201574366
+      Water_purifier_3: -1168827624
+      Water_purifier_30: -1880026110
+      Water_purifier_4: 1480816049
+      Water_purifier_5: -1408666476
+      Water_purifier_6: 49123778
+      Water_purifier_7: -1016658389
+      Water_purifier_8: -1009603279
+      Water_purifier_9: -2028882301
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
