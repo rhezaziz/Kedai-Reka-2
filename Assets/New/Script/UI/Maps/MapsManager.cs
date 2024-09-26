@@ -9,6 +9,7 @@ namespace Terbaru{
 
     public class MapsManager : MonoBehaviour
     {
+        #region Komponent Value
         public Material shadow;
         [Header("UI")]
         public List<Button> btnMaps = new List<Button>();
@@ -33,9 +34,9 @@ namespace Terbaru{
         public class actionMaps : UnityEngine.Events.UnityEvent<int>{ }
 
         public Button NextBtn, PrevBtn;
-
+        #endregion
         void Start(){
-            listMaps();
+            //listMaps();
         }
 
         public void listMaps(){
@@ -54,6 +55,40 @@ namespace Terbaru{
             }
         }
 
+        public void updateDayKonten(List<id_Maps> IDs){
+            int jmlId = IDs.Count;
+
+            for(int i = 0; i < jmlId; i++){
+                for(int j = 0; j < maps.Count; j++){
+                    for(int x = 0; x < maps[j].maps.Count; x++){
+                        if(maps[j].maps[x].valueMaps.id == IDs[i]){
+                            Debug.Log(maps[j].maps[x].nama);
+                            maps[j].maps[x].valueMaps.active = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            listMaps();
+        }
+        public void updateDayKonten(ListMapsValue updateMaps){
+            List<mapsValue> tempValue = new List<mapsValue>();
+            tempValue = updateMaps.listValueMaps;
+
+            for(int i = 0; i < maps.Count; i++){
+                foreach(var _maps in maps[i].maps){
+                    if(_maps.valueMaps.id == tempValue[0].id){
+                        _maps.valueMaps = tempValue[0];
+                        tempValue.RemoveAt(0);
+                        
+                    }
+                    
+                }   
+            }
+
+            listMaps();
+        }
+    #region UI
         public void next(){
             index = index + 1 > maps.Count - 1 ? 0 : index + 1;
             //NextBtn.interactable = index == maps.Count - 1;
@@ -65,8 +100,19 @@ namespace Terbaru{
             //PrevBtn.interactable = index == 0;
             listMaps();
         }
+    #endregion
+        
 
+    #region  transisi
         GameObject lokasi;
+        
+
+        public void Kembali(){
+    
+            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(-500f, 1f).OnComplete(() =>
+            StartCoroutine(Cutscene(Vector3.zero, false)));
+            //pintu.tutupPintu();
+        }
         public void keliling(Maps temp){
             kembali.onClick.RemoveAllListeners();
             //Debug.Log(temp.mapLokasi.name);
@@ -94,13 +140,6 @@ namespace Terbaru{
             StartCoroutine(Cutscene(new Vector3(posX, posY, -9.5f), true));
             kembali.onClick.AddListener(() => Kembali());
 
-        }
-
-        public void Kembali(){
-            
-            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(-500f, 1f).OnComplete(() =>
-            StartCoroutine(Cutscene(Vector3.zero, false)));
-            //pintu.tutupPintu();
         }
 
 
@@ -148,6 +187,7 @@ namespace Terbaru{
             //FindObjectOfType<Movement>().move = true;
         }
     }
+    #endregion
 
     [System.Serializable]
     public class infoMaps{
@@ -157,12 +197,69 @@ namespace Terbaru{
 
     [System.Serializable]
     public class Maps{
+        
         public string nama;
+        public mapsValue valueMaps;
+
+        [Header("Maps Value")]
         public int index;
+        
+        public Sprite gambarMaps; 
+        public Transform mapLokasi;
+    }
+
+    [System.Serializable]
+    public class ListMapsValue{
+        public int  hari;
+        public List<mapsValue> listValueMaps;
+    }
+
+    [System.Serializable]
+    public class mapsValue{
+
+        public string namaTempat;
+        public id_Maps id;
+
         public bool active;
         public bool warning;
-        public Sprite gambarMaps;
 
-        public Transform mapLokasi;
+    }
+
+    public enum id_Maps{
+        //Bebas
+        B_Apotek,
+        B_jlnKota,
+        B_kantorRW,
+        B_kantorRT,
+        B_Mall,
+        B_Parkiran,
+        B_Komplek,
+
+        //Lantai 1
+        Lt1_Gudang,
+        Lt1_Kantin,
+        Lt1_Kelas,
+        Lt1_Lift,
+        LT1_Lobby,
+        Lt1_Pekarangan,
+        Lt1_Perpus,
+        Lt1_Toilet,
+
+        //Lantai 2
+        Lt2_Aula,
+        Lt2_Kelas,
+        Lt2_Lorong,
+        Lt2_Lift,
+        Lt2_R_Dosen,
+        Lt2_Toilet,
+
+        //Lantai 3
+
+        Lt3_Audio,
+        Lt3_Kelas,
+        Lt3_Labkom,
+        Lt3_Tangga,
+        LT3_Lorong,
+        Lt3_Toilet
     }
 }

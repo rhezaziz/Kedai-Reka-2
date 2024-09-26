@@ -824,171 +824,252 @@ MonoBehaviour:
   - namaMaps: Bebas
     maps:
     - nama: Apotek
+      valueMaps:
+        namaTempat: 
+        id: 0
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 974e2262d7ae9544296d08bcb290bd29, type: 3}
       mapLokasi: {fileID: 1943303167}
     - nama: Jalan Kota
+      valueMaps:
+        namaTempat: 
+        id: 1
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: ca8bc7a6ebd8950459e142445dc0638f, type: 3}
       mapLokasi: {fileID: 1700140804}
     - nama: Kantor RT
+      valueMaps:
+        namaTempat: 
+        id: 3
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 0cd6a29769df148489ae120ac66965cf, type: 3}
       mapLokasi: {fileID: 1332884909}
     - nama: Kantor RW
+      valueMaps:
+        namaTempat: 
+        id: 2
+        active: 0
+        warning: 0
       index: 0
-      active: 0
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: a23453accf22a66488448cee5b60271f, type: 3}
       mapLokasi: {fileID: 16808940}
     - nama: Mall Indoor
+      valueMaps:
+        namaTempat: 
+        id: 4
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 6173a24535a428c4ba7edf742b425755, type: 3}
       mapLokasi: {fileID: 2003275349}
     - nama: Parkiran
+      valueMaps:
+        namaTempat: 
+        id: 5
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 76eb85a92dfc19e458690f4143ea5625, type: 3}
       mapLokasi: {fileID: 20165288}
     - nama: Komplek
+      valueMaps:
+        namaTempat: 
+        id: 6
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: fa8c7d07d3424524dba299be6232127b, type: 3}
       mapLokasi: {fileID: 206455855}
   - namaMaps: Lantai 1
     maps:
     - nama: Gudang
+      valueMaps:
+        namaTempat: 
+        id: 7
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 4081d4a3bad66ff4dbf7cd91dd3d1a1d, type: 3}
       mapLokasi: {fileID: 7231340355751853969}
     - nama: Kantin
+      valueMaps:
+        namaTempat: 
+        id: 8
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: d9aa11fedd32e2a4c9f9927cf4b9f32c, type: 3}
       mapLokasi: {fileID: 6596681838604014714}
     - nama: Kelas
+      valueMaps:
+        namaTempat: 
+        id: 9
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 5a7e94797a090c945898c92f5242b707, type: 3}
       mapLokasi: {fileID: 1509679513534215920}
     - nama: Lift Tangga
+      valueMaps:
+        namaTempat: 
+        id: 10
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 6d84dc90d5d592246889bd17a3fc6c34, type: 3}
       mapLokasi: {fileID: 5678650729815050245}
     - nama: Lobby
+      valueMaps:
+        namaTempat: 
+        id: 11
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 6651d72a272985647965a11fcaeec886, type: 3}
       mapLokasi: {fileID: 2347009236783184855}
-    - nama: Perkarangan
+    - nama: Pekarangan
+      valueMaps:
+        namaTempat: 
+        id: 12
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: dc6c884215c0dac4fbe333605cb958c3, type: 3}
       mapLokasi: {fileID: 5843753146016491378}
     - nama: Perpustakaan
+      valueMaps:
+        namaTempat: 
+        id: 13
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 3d0ad7ee6563b9b4bbd26da5015e00a0, type: 3}
       mapLokasi: {fileID: 829596086366988462}
     - nama: Toilet
+      valueMaps:
+        namaTempat: 
+        id: 14
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 890671d1cdc698a49a07b879658279dc, type: 3}
       mapLokasi: {fileID: 9158071689987947610}
   - namaMaps: Lantai 2
     maps:
     - nama: Aula
+      valueMaps:
+        namaTempat: 
+        id: 15
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 378984d56b8b77e4f96d15ea1dd32429, type: 3}
       mapLokasi: {fileID: 6953435039546080366}
     - nama: Kelas
+      valueMaps:
+        namaTempat: 
+        id: 16
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 39c438eabcb73e04aa79a2c5da942e6b, type: 3}
       mapLokasi: {fileID: 7341842570590524451}
     - nama: Lift
+      valueMaps:
+        namaTempat: 
+        id: 18
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: abbc5b6d5fcdb4a49b6588cb87483028, type: 3}
       mapLokasi: {fileID: 256705184076971064}
     - nama: Lorong
+      valueMaps:
+        namaTempat: 
+        id: 17
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: f0c0cb91e7a54a6418efd71786d5aa13, type: 3}
       mapLokasi: {fileID: 4082261861180657958}
     - nama: Ruang Dosen
+      valueMaps:
+        namaTempat: 
+        id: 19
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: afd7aa73d04c5a443afa78372291703b, type: 3}
       mapLokasi: {fileID: 2549241462166869903}
     - nama: Toilet
+      valueMaps:
+        namaTempat: 
+        id: 20
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: d04e2f658042f5a4abb327e37dfc55a1, type: 3}
       mapLokasi: {fileID: 1790545407641550022}
   - namaMaps: Lantai 3
     maps:
-    - nama: Audio Visuak
+    - nama: Audio Visual
+      valueMaps:
+        namaTempat: 
+        id: 21
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 2fb02666052c5e04ebc875146edf133a, type: 3}
       mapLokasi: {fileID: 4977251662353148635}
     - nama: Kelas
+      valueMaps:
+        namaTempat: 
+        id: 22
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 593ec919d74d231429988589d9376115, type: 3}
       mapLokasi: {fileID: 3038710061455093841}
     - nama: Labkom
+      valueMaps:
+        namaTempat: 
+        id: 23
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 9f0a85a715cc12f479ae88e5625a72a2, type: 3}
       mapLokasi: {fileID: 4853544769222617498}
     - nama: Tangga
+      valueMaps:
+        namaTempat: 
+        id: 24
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: d43d4eb5405dde8459fa17f85831184b, type: 3}
       mapLokasi: {fileID: 6534171447406050459}
     - nama: Lorong
+      valueMaps:
+        namaTempat: 
+        id: 25
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: 4bfbb1b11adb8f64dbf71f8b9cf86c49, type: 3}
       mapLokasi: {fileID: 8990618426221228273}
     - nama: Toilet
+      valueMaps:
+        namaTempat: 
+        id: 26
+        active: 0
+        warning: 0
       index: 0
-      active: 1
-      warning: 0
       gambarMaps: {fileID: 21300000, guid: b58fdf4e3ea167d4994708770e0a164d, type: 3}
       mapLokasi: {fileID: 1311835366105259800}
   kembali: {fileID: 165267570}
@@ -3018,9 +3099,9 @@ RectTransform:
   - {fileID: 1505028630}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 87.5, y: -7.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 35, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &67783155
@@ -4255,9 +4336,9 @@ RectTransform:
   - {fileID: 157948514}
   m_Father: {fileID: 507555611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -70}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &139779202
@@ -4936,9 +5017,9 @@ RectTransform:
   - {fileID: 801086775}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 149.5, y: -12.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 89, y: 25}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &157948515
@@ -6793,9 +6874,9 @@ RectTransform:
   - {fileID: 1460609644}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 52.5, y: -7.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 35, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &250582011
@@ -9421,7 +9502,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &407955519
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9881,7 +9962,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 438926246}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32b0d6ba0b4c158479e51529fda1a0b4, type: 3}
   m_Name: 
@@ -11495,9 +11576,9 @@ RectTransform:
   - {fileID: 139779201}
   m_Father: {fileID: 2121729568}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 200, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 250, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &507555612
@@ -14001,9 +14082,9 @@ RectTransform:
   - {fileID: 1886725236}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 17.5, y: -7.5}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 35, y: 15}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652656207
@@ -14972,7 +15053,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 687654408}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: d520b0c3d05a5524bbfe78fd8b025b76, type: 3}
   m_Name: 
@@ -17880,9 +17961,9 @@ RectTransform:
   - {fileID: 601424830}
   m_Father: {fileID: 507555611}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 100, y: -35}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 200, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &819905887
@@ -18117,7 +18198,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad332e35e1e252a4cbd4cf2564b2e1b9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namaAction: Masak
+  namaAction: Nonton TV
   extendAction:
     m_PersistentCalls:
       m_Calls:
@@ -18145,7 +18226,7 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  testVideo: {fileID: 32900000, guid: 2ebd028d984feaa48971c5c6cbdbfa55, type: 3}
+  testVideo: {fileID: 32900000, guid: 3a52cb7728251f04e97c75a65ebf9f0f, type: 3}
   video: {fileID: 1103309652}
   texture: {fileID: 8400000, guid: 1beb1b7710900f144b14a7588e52bccc, type: 2}
   value: 0
@@ -19289,6 +19370,7 @@ GameObject:
   - component: {fileID: 894212847}
   - component: {fileID: 894212848}
   - component: {fileID: 894212849}
+  - component: {fileID: 894212850}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -19326,6 +19408,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
+  isTutorial: 0
+  interactions:
+  - {fileID: 687654408}
+  - {fileID: 919132148520195451}
+  - {fileID: 438926246}
+  - {fileID: 929148248}
+  - {fileID: 1496340965}
+  - {fileID: 1467882408}
+  controllerUI: {fileID: 1120554185}
+  infoUI: {fileID: 407955518}
+  UIAwal: {fileID: 1862653487}
+  tutorialUI: {fileID: 1947287192061641}
+  tutorialManager: {fileID: 1421431659}
 --- !u!114 &894212845
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19690,6 +19785,22 @@ MonoBehaviour:
     waktu: 3
     maxIntent: 0
     minIntent: 0.15
+--- !u!114 &894212850
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894212841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 124e2a720443ede43b908386313b4197, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  maps: {fileID: 21220969}
+  days:
+  - mapsId: 100000000a000000
+    itemSpawn: []
 --- !u!1 &898541272
 GameObject:
   m_ObjectHideFlags: 0
@@ -20162,7 +20273,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929148248}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32b0d6ba0b4c158479e51529fda1a0b4, type: 3}
   m_Name: 
@@ -20631,9 +20742,9 @@ RectTransform:
   - {fileID: 1926157240}
   m_Father: {fileID: 2121729568}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 1}
-  m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 0, y: -50}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &944101481
@@ -23633,7 +23744,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1120554186
 RectTransform:
   m_ObjectHideFlags: 0
@@ -28328,7 +28439,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &1421431660
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30374,7 +30485,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1496340965}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 32b0d6ba0b4c158479e51529fda1a0b4, type: 3}
   m_Name: 
@@ -37217,7 +37328,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1862653488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38818,7 +38929,7 @@ MonoBehaviour:
   minZ: -150
   maxZ: -122.5
   moveSpeed: 6.5
-  move: 0
+  move: 1
 --- !u!114 &1939524305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39797,7 +39908,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 919132148520195451}
-  m_Enabled: 0
+  m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 0d56ab0ac5cd383458ff444dd53d5e08, type: 3}
   m_Name: 
@@ -43627,7 +43738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1968375305695049
 GameObject:
   m_ObjectHideFlags: 0
@@ -45796,9 +45907,9 @@ RectTransform:
   - {fileID: 224020470437193801}
   m_Father: {fileID: 224290437945182463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 90, y: 0}
   m_SizeDelta: {x: 350, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224290437945182463
@@ -45821,7 +45932,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -135.37866}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224364559251965875
 RectTransform:
@@ -45840,7 +45951,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 162.5, y: -57.310665}
-  m_SizeDelta: {x: 205, y: 0}
+  m_SizeDelta: {x: 205, y: 34.62133}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224387844869785177
 RectTransform:
@@ -45857,9 +45968,9 @@ RectTransform:
   - {fileID: 224753466994928909}
   m_Father: {fileID: 224290437945182463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44.179993, y: -114.62133}
   m_SizeDelta: {x: 441.64, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224568064745603351
@@ -50114,7 +50225,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1010664260199679900
 GameObject:
   m_ObjectHideFlags: 0
@@ -67318,7 +67429,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: 392.39493, y: -196.4558}
-  m_SizeDelta: {x: 525.81, y: 0}
+  m_SizeDelta: {x: 525.81, y: 227.5116}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607115742343521038
 RectTransform:
@@ -67335,9 +67446,9 @@ RectTransform:
   - {fileID: 5607871691398498394}
   m_Father: {fileID: 5607407553978740136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 434.47998, y: -392.9116}
   m_SizeDelta: {x: 441.64, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607351594325069306
@@ -67375,9 +67486,9 @@ RectTransform:
   - {fileID: 5608869326125845790}
   m_Father: {fileID: 5607407553978740136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 419.34998, y: 0}
   m_SizeDelta: {x: 471.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607407553978740136
@@ -67400,7 +67511,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -108.70001, y: 0}
+  m_SizeDelta: {x: -108.70001, y: -7.7066956}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607871691398498394
 RectTransform:

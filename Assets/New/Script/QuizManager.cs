@@ -21,7 +21,8 @@ namespace Terbaru{
         soalData temp;
 
         void Awake(){
-            instance = this;
+            if(instance != null)
+                instance = this;
         }
         public void initSoal(soalData data){
             temp = data;

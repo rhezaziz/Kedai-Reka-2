@@ -12,8 +12,8 @@ namespace Terbaru
 
         public bool value;
 
-        public bool isTutorial(){
-            return value;
+        public void isTutorial(bool temp){
+            enabled = temp;
         }
 
         

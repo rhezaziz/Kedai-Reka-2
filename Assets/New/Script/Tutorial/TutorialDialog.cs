@@ -28,8 +28,8 @@ namespace Terbaru{
 
         }
 
-        public bool isTutorial(){
-            return value;
+        public void isTutorial(bool temp){
+            enabled = temp;
         }
 
         public void action(Transform player){

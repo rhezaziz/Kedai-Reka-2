@@ -13,6 +13,8 @@ TagManager:
   - customer
   - Place
   - Material
+  - Tas
+  - Mobil
   layers:
   - Default
   - TransparentFX
@@ -24,7 +26,7 @@ TagManager:
   - Player
   - Lantai
   - Dinding
-  - 
+  - Mobil
   - 
   - 
   - 

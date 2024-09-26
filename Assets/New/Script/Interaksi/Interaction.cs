@@ -8,7 +8,7 @@ public interface Interaction
 
     public void btnActive(GameObject btn, bool interactable);
 
-    public bool isTutorial();
+    public void isTutorial(bool value);
 }
 
 public interface IDialog{

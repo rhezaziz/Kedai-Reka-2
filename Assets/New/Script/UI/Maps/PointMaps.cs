@@ -21,16 +21,16 @@ namespace Terbaru{
             Gambar.sprite = info.gambarMaps;
             namaMaps.text = info.nama;
 
-            panelInfo.SetActive(!info.active || info.warning);
+            panelInfo.SetActive(!info.valueMaps.active || info.valueMaps.warning);
 
             //tnMap.onClick.AddListener((x) => {action(x);});
 
-            Lock.SetActive(!info.active);
-            warning.SetActive(info.warning);
-            namaMaps.color = info.active ? Color.black : Color.white;
-            GetComponent<Button>().interactable = info.active;
+            Lock.SetActive(!info.valueMaps.active);
+            warning.SetActive(info.valueMaps.warning);
+            namaMaps.color = info.valueMaps.active ? Color.black : Color.white;
+            GetComponent<Button>().interactable = info.valueMaps.active;
 
-            Gambar.material = info.active ? null : shadow;
+            Gambar.material = info.valueMaps.active ? null : shadow;
 
             btnMap.onClick.AddListener(() => manager.keliling(info));
         }

@@ -13,8 +13,7 @@ namespace Terbaru{
 
         GameObject Player;
         public string tempAction;
-        public bool isTutorial(){
-            return true;
+        public void isTutorial(bool temp){
         }
 
         public void action(Transform player){

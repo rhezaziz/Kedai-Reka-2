@@ -13,6 +13,15 @@ namespace Terbaru{
 
         public playerProfil profil;
 
+        [Header("Tutorial")]
+        public bool isTutorial;
+        public List<GameObject> interactions = new List<GameObject>();
+        public GameObject controllerUI;
+        public GameObject infoUI;
+        public GameObject UIAwal;
+        public GameObject tutorialUI;
+        public GameObject tutorialManager;
+
 
         void Awake(){
             instance = this;
@@ -22,6 +31,23 @@ namespace Terbaru{
             DontDestroyOnLoad(this);
 
             waktu.currentTime(0);
+            checkTutorial();
+        }
+
+        void checkTutorial(){
+            if(!isTutorial)
+                return;
+            
+            foreach(var interact in interactions){
+                interact.GetComponent<Interaction>().isTutorial(!isTutorial);
+            }
+            FindObjectOfType<Movement>().move = false;
+            controllerUI.SetActive(!isTutorial);
+            UIAwal.SetActive(isTutorial);
+            infoUI.SetActive(!isTutorial);
+            tutorialUI.SetActive(isTutorial);
+            tutorialManager.SetActive(isTutorial);
+
         }
         
         void OnEnable(){

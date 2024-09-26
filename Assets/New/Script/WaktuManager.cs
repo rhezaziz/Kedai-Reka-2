@@ -2,6 +2,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
+using Unity.VisualScripting;
 
 namespace Terbaru{
 
@@ -12,10 +14,7 @@ namespace Terbaru{
         public waktu thisWaktu;
 
         public List<dataWaktu> waktuData = new List<dataWaktu>();
-        void Start()
-        {
-            
-        }
+
 
         dataWaktu _waktu(waktu value){
             foreach(var _time in waktuData){
@@ -30,6 +29,9 @@ namespace Terbaru{
         public void gantiWaktu(int value){
             int index = (int)thisWaktu;
             index += 1;
+            if(index >= System.Enum.GetValues(typeof(waktu)).Length)
+                index = 0;
+                
             currentTime(index);
         }
 
@@ -37,14 +39,11 @@ namespace Terbaru{
             waktu tempWaktu = (waktu)value;
             thisWaktu = tempWaktu;
             Color color = _waktu(tempWaktu).warnaCahaya;
-            sun.color = color;
-            sun.intensity = _waktu(tempWaktu).getIntent();
-        }
+            //sun.color = color;
+            float intent = _waktu(tempWaktu).getIntent();
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+            sun.DOColor(color, 2f);
+            sun.DOIntensity(intent, 2f);
         }
     }
 

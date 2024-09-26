@@ -26,9 +26,10 @@ namespace Terbaru
         void OnCollisionEnter(Collision other){
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
-                bool value = other.gameObject.GetComponent<Interaction>().isTutorial();
-                if(value)
-                    onInteraction(true, other.gameObject);
+                onInteraction(true, other.gameObject);
+                // bool value = other.gameObject.GetComponent<Interaction>().isTutorial();
+                // if(value)
+                //     onInteraction(true, other.gameObject);
             }
         }
 

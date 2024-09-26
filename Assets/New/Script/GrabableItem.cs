@@ -10,8 +10,8 @@ namespace Terbaru{
         public List<Items> item;
         public string actionQuest;
 
-        public bool isTutorial(){
-            return true;
+        public void isTutorial(bool value){
+            
         }
         public void action(Transform Player){
             //var profil = GameManager.instance.profil;
