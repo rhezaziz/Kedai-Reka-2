@@ -26,6 +26,10 @@ namespace Terbaru{
             return null;
         }
 
+        public int indexTime(){
+            return (int)thisWaktu;
+        }
+
         public void gantiWaktu(int value){
             int index = (int)thisWaktu;
             index += 1;

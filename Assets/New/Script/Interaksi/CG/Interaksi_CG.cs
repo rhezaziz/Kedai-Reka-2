@@ -12,12 +12,21 @@ namespace Terbaru{
 
     public class Interaksi_CG : MonoBehaviour, Interaction
     {   
+        
         public string namaAction;
+        public string AnimationAction;
+        public string AnimationActionPerempuan;
         public UnityEvent extendAction;
-        public VideoClip testVideo;
+        public VideoClip[] testVideo;
         public VideoPlayer video;
 
         public RenderTexture texture;
+
+        public Transform pos;
+        public Transform posPerempuan;
+        public Collider col;
+
+        public Transform spanw;
 
 
         bool CG;
@@ -37,12 +46,42 @@ namespace Terbaru{
             value = true;
         }
 
-        public void action(Transform player){
+        public void action(Transform Player){
             UiManager.instance.ChinematicPanel.SetActive(true);
+            var Perempuan = Player.GetChild(1).transform;
+            Perempuan.gameObject.SetActive(true);
+            
+            if(col)
+                col.enabled = false;
+            // Player.GetComponent<Collider>().enabled = false;
+            // Player.GetComponent<Rigidbody>().isKinematic = true;
+            Player.GetComponentInChildren<Animator>().SetBool(AnimationAction, true);
+            extendAction.AddListener(()=>stopAnimation(Player));
+            
+            Player.transform.GetChild(0).GetComponent<SpriteRenderer>().flipX = false;
+            Player.position = new Vector3(pos.position.x, Player.position.y, pos.position.z);
+            Perempuan.position = new Vector3(posPerempuan.position.x, posPerempuan.position.y, posPerempuan.position.z);
+            Perempuan.GetComponentInChildren<Animator>().SetBool(AnimationActionPerempuan, true);
+
+
             texture.Release();
             texture.Create();
             StartCoroutine(cutScene());
+        }
 
+        void stopAnimation(Transform Player){
+            //Player.GetComponent<Collider>().enabled = true;
+            //Player.GetComponent<Rigidbody>().isKinematic = false;
+            var Perempuan = Player.GetChild(1).transform;
+            Perempuan.GetComponentInChildren<Animator>().SetBool(AnimationActionPerempuan, false);
+            Player.GetComponentInChildren<Animator>().SetBool(AnimationAction, false);
+            Perempuan.gameObject.SetActive(false);
+
+            
+
+            if(col) 
+                col.enabled = true;
+            extendAction.RemoveListener(() => stopAnimation(Player));
         }
 
         public void btnActive(GameObject btn, bool interactable){
@@ -51,14 +90,25 @@ namespace Terbaru{
             btn.GetComponentInChildren<Text>().text = namaAction;
         }
 
+        
+
 
         void Start(){
             texture.Release();
             texture.Create(); 
         }
 
+        VideoClip clips(){
+            if(testVideo.Length < 1)
+                return testVideo[0];
+            
+            int index = FindObjectOfType<WaktuManager>().indexTime();
+            return testVideo[index];
+        }
+
         public void playVideo(){
-            video.clip = testVideo;
+            
+            video.clip = clips();
 
             video.prepareCompleted += OnVideoPrepared;
 
@@ -67,7 +117,7 @@ namespace Terbaru{
 
         IEnumerator cutScene(){
             video.gameObject.SetActive(true);
-            video.clip = testVideo;
+            video.clip = clips();
             GameObject PanelUtama = UiManager.instance.panelUtama;
             float duration = (float)video.length;
             var camera = Camera.main;
@@ -94,10 +144,11 @@ namespace Terbaru{
             camera.transform.DOLocalMoveZ(-10f, 1f);
 
             yield return new WaitForSeconds(2f);
+            extendAction?.Invoke();
             PanelUtama.SetActive(true);
             
             FindObjectOfType<Controller>().currentState(state.Default);
-            extendAction?.Invoke();
+            
             
         }
 

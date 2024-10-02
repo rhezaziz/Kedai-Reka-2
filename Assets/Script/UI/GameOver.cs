@@ -23,6 +23,6 @@ public class GameOver : MonoBehaviour
     }
     public void pindahScene()
     {
-        SceneManager.LoadScene(scene);
+        FindObjectOfType<Terbaru.MiniGame>().pindah("Asrama BackUp");
     }
 }

@@ -68,7 +68,8 @@ public class NyapuManager : MonoBehaviour
     public void pindahScene()
     {
         PlayerPrefs.SetInt("indexAnimasi", 1);
-        FindObjectOfType<DemoLoadScene>().LoadScene("Animasi");
+        FindObjectOfType<Terbaru.MiniGame>().pindah("Nyapu");
+        FindObjectOfType<Terbaru.QuestManager>().CheckActionQuest("Nyapu");
     }
 
 

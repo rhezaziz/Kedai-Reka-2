@@ -7,6 +7,7 @@ namespace Terbaru{
 
     public class GrabableItem : MonoBehaviour, Interaction
     {
+        public bool clickAbleObject;
         public List<Items> item;
         public string actionQuest;
 
@@ -35,6 +36,11 @@ namespace Terbaru{
         
         void OnDisable(){
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
+        }
+
+        void OnMouseDown(){
+            if(clickAbleObject)
+                action(null);
         }
     }
 

@@ -27,6 +27,8 @@ namespace Terbaru{
 
         IEnumerator mulaiMiniGame(string namaScene){
             UiManager.instance.Chinematic(true);
+            FindObjectOfType<Controller>().currentState(state.Interaction);
+            FindObjectOfType<UiManager>().panelUtama.SetActive(false);
             yield return new WaitForSeconds(3f);
             
             UiManager.instance.Chinematic(true);
@@ -37,10 +39,45 @@ namespace Terbaru{
             SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
 
             yield return new WaitForSeconds(1f);
+            DeactivateObjectsInPreviousScene();
             UiManager.instance.Chinematic(true);
 
         
         }
+
+        public void DeactivateObjectsInPreviousScene()
+        {
+            Scene previousScene = SceneManager.GetSceneByName("Asrama BackUp");
+
+            if (previousScene.isLoaded)
+            {
+                GameObject[] rootObjects = previousScene.GetRootGameObjects();
+
+                foreach (GameObject obj in rootObjects)
+                {
+                    obj.SetActive(false); // Nonaktifkan objek
+                }
+            }
+        }
+
+        public void ActivateObjectsInPreviousScene()
+        {
+            // Dapatkan scene yang sudah aktif sebelumnya (misalnya scene di index 0)
+            Scene previousScene = SceneManager.GetSceneByName("Asrama BackUp");
+
+            if (previousScene.isLoaded)
+            {
+                // Dapatkan semua root gameObject di scene sebelumnya
+                GameObject[] rootObjects = previousScene.GetRootGameObjects();
+
+                // Aktifkan semua root gameObject (atau pilih objek tertentu)
+                foreach (GameObject obj in rootObjects)
+                {
+                    obj.SetActive(true); // Aktifkan objek
+                }
+            }
+        }
+
 
 
 
@@ -52,12 +89,18 @@ namespace Terbaru{
             yield return new WaitForSeconds(3f);
 
             Scene scene = SceneManager.GetSceneByName("Asrama BackUp");
-            SceneManager.SetActiveScene(scene);
             SceneManager.UnloadSceneAsync(value);
+            SceneManager.SetActiveScene(scene);
+            
+            ActivateObjectsInPreviousScene();
+            
+            //yield return new WaitForSeconds(1f);
 
             yield return new WaitForSeconds(2f);
             UiManager.instance.Chinematic(false);
-            //yield return new WaitForSeconds(1f);
+            FindObjectOfType<UiManager>().panelUtama.SetActive(true);
+            FindObjectOfType<Controller>().currentState(state.Default);
+            //
             
         }
 

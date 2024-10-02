@@ -23,7 +23,10 @@ namespace Terbaru
         public Image[] bar;
         public TMPro.TMP_Text Saldo;
         public TMPro.TMP_Text Nama;
+
+        Camera camera;
         void Start(){
+            camera = Camera.main;
             var profil = GameManager.instance.profil; 
 
             Nama.text = profil.NamaKarakter;
@@ -87,12 +90,13 @@ namespace Terbaru
         }
 
         public void Chinematic(bool isActive){
-            var camera = Camera.main;
+            //var camera = Camera.main;
             float zoom = isActive ? -7f : -10f;
             camera.transform.DOLocalMoveZ(zoom, 1f);
             string _action = isActive ? "Mulai" : "Reverse";
 
             var anim = ChinematicPanel.GetComponent<Animator>();
+            Debug.Log("chinematic");
             anim.SetTrigger(_action);
         }
 
