@@ -1,0 +1,580 @@
+fileFormatVersion: 2
+guid: 7be5de8117f5c11409af01b6e8235a65
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c182b9bedd7de742a1e2cf7eaa018af
+      internalID: 822406343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_1
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7095d1384bd6c7b4b9a19641bb3ebdd2
+      internalID: 96815843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_2
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fde9bf077552c794391ce2df8d12ec58
+      internalID: 524537507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_3
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d192442931789ba4fb34544d57f756da
+      internalID: 631369804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_4
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c68a23dc3791624e905b5b97310bda1
+      internalID: -2079767799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_5
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84725f594bb4bac45805b2f4c6b4a2c9
+      internalID: 83499577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_6
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d177e1f4933f664498787df9a4b444c
+      internalID: 924597020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_7
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 931734e8ac6e83f4b86f5c09aebe746d
+      internalID: -1543807966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_8
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9488a4581a25d4792e397b3f50ddf8
+      internalID: 640527832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_9
+      rect:
+        serializedVersion: 2
+        x: 5355
+        y: 774
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5c10b80468394c42830974951b50dfe
+      internalID: 1962363725
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6276ca63bc18f14c83bc3dcfbd0d501
+      internalID: -350645613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_11
+      rect:
+        serializedVersion: 2
+        x: 595
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d617ffa9bba231a4eac834a81fbe3741
+      internalID: 1214194085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_12
+      rect:
+        serializedVersion: 2
+        x: 1190
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 776b5a09fd885074888ae9d431e15669
+      internalID: -70622641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_13
+      rect:
+        serializedVersion: 2
+        x: 1785
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e48c51b159036274d922515310a0b90a
+      internalID: 438631763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_14
+      rect:
+        serializedVersion: 2
+        x: 2380
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4268a2a14143ae34fb7c1843fc51f5e2
+      internalID: 986620988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_15
+      rect:
+        serializedVersion: 2
+        x: 2975
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d0ed9cb22d13b6e4e9e7827bf717b82f
+      internalID: 1977748178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_16
+      rect:
+        serializedVersion: 2
+        x: 3570
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a206e8b828b89e4280d73023d7c85bc
+      internalID: 808509007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_17
+      rect:
+        serializedVersion: 2
+        x: 4165
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a15381bab7f65894bb64409bdb1c1b51
+      internalID: -314734613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_18
+      rect:
+        serializedVersion: 2
+        x: 4760
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b903ca68233f10c47b14d3b05d584e69
+      internalID: 2118489715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_19
+      rect:
+        serializedVersion: 2
+        x: 5355
+        y: 0
+        width: 595.7
+        height: 774
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68becd31e0733e641b342e4f5d785740
+      internalID: 1361211368
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_0: 822406343
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_1: 96815843
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_10: -350645613
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_11: 1214194085
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_12: -70622641
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_13: 438631763
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_14: 986620988
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_15: 1977748178
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_16: 808509007
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_17: -314734613
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_18: 2118489715
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_19: 1361211368
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_2: 524537507
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_3: 631369804
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_4: -2079767799
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_5: 83499577
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_6: 924597020
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_7: -1543807966
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_8: 640527832
+      KGS_UTAMA_LAKI_INTERACT_BUKA_GORDEN 1_9: 1962363725
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

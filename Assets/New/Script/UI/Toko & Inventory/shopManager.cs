@@ -39,6 +39,10 @@ namespace Terbaru{
             textSaldo.text = "Saldo : " + "Rp" + profil.Saldo.ToString("n0", info);
 
             foreach(var item in profil.item){
+                if(!item.isShop){
+                    return;
+                }
+
                 GameObject itemShop = Instantiate(prefbas);
 
                 //itemShop.name = i.ToString();

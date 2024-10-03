@@ -16,6 +16,7 @@ namespace Terbaru{
         public GameObject MoveController;
         public GameObject panelValuePlayer;
         public Button IntearctButton;
+        public QuizManager qm;
 
         [Header("Interact Object")]
         public GameObject kucing;
@@ -55,7 +56,10 @@ namespace Terbaru{
         [Header("Dialog")]
         public TutorialDialog dialogDay2_10;
 
-
+        [Header("")]
+        public listCharacters[] dataCharacter;
+        public Items[] item;
+        public Quest[] quest;
 
         #endregion
         
@@ -67,6 +71,15 @@ namespace Terbaru{
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day1_1");
             kucing.SetActive(true);
+            //item.isInventory = false;
+            foreach(var i in item)
+                i.isInventory = false;
+            
+            foreach(var i in quest)
+                i.isDone = false;
+            
+            foreach(var i in dataCharacter)
+                i.characterLock = true;
             MoveController.SetActive(true);
             //TutorialController.instance.hiddenBtn.onClick.AddListener()
             panelValuePlayer.SetActive(true);
@@ -165,13 +178,19 @@ namespace Terbaru{
             action.animasiObj = NpcControl.gameObject;
             action.OnAction.AddListener(() =>NpcControl.currentCondition(animasi.Idle));
             //Vector3 posDinda = dindaData.Posisi;
-            action.OnAction.AddListener(() => actionEnd(dindaSpawn));
-
+            action.OnAction.AddListener(() =>
+            {
+                actionEnd(dindaSpawn);
+                dinda.SetActive(false);
+                dindaData.characterLock = false;
+            });
             //dinda.SetActive(true);
         }
-
+        GameObject tempDinda;
         void actionEnd(GameObject dinda){
+            tempDinda = dinda;
             Transform parent = GameObject.Find("NPC").transform;
+            //dinda.SetActive(false);
             dinda.transform.SetParent(parent); 
             dinda.transform.localPosition = dindaData.Posisi;
             FindObjectOfType<Controller>().currentState(state.Interaction);
@@ -206,6 +225,7 @@ namespace Terbaru{
             UiManager.instance.panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
             PintuKamar.extendAction.AddListener(initDay2_1);
+            tempDinda.SetActive(false);
         }
 
         #endregion
@@ -301,17 +321,18 @@ namespace Terbaru{
 
         void initDay2_8(){
             TutorialEvents.OnTutorialComplete -= initDay2_8;
-            QuizManager.instance.pilihanA.GetComponentInChildren<Button>().onClick.AddListener(Day2_8);
-            QuizManager.instance.pilihanB.GetComponentInChildren<Button>().onClick.AddListener(Day2_8);
-            QuizManager.instance.pilihanC.GetComponentInChildren<Button>().onClick.AddListener(Day2_8);
-            QuizManager.instance.pilihanD.GetComponentInChildren<Button>().onClick.AddListener(Day2_8);
+            qm.pilihanA.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(Day2_8);
+            qm.pilihanB.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(Day2_8);
+            qm.pilihanC.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(Day2_8);
+            qm.pilihanD.transform.GetChild(0).GetComponent<Button>().onClick.AddListener(Day2_8);
         }
 
         void Day2_8(){
-            QuizManager.instance.pilihanA.GetComponentInChildren<Button>().onClick.RemoveListener(Day2_8);
-            QuizManager.instance.pilihanB.GetComponentInChildren<Button>().onClick.RemoveListener(Day2_8);
-            QuizManager.instance.pilihanC.GetComponentInChildren<Button>().onClick.RemoveListener(Day2_8);
-            QuizManager.instance.pilihanD.GetComponentInChildren<Button>().onClick.RemoveListener(Day2_8);
+            Debug.Log("Day 2 - 8");
+            qm.pilihanA.transform.GetChild(0).GetComponent<Button>().onClick.RemoveListener(Day2_8);
+            qm.pilihanB.transform.GetChild(0).GetComponent<Button>().onClick.RemoveListener(Day2_8);
+            qm.pilihanC.transform.GetChild(0).GetComponent<Button>().onClick.RemoveListener(Day2_8);
+            qm.pilihanD.transform.GetChild(0).GetComponent<Button>().onClick.RemoveListener(Day2_8);
             TutorialController.IsSkippable = false;
             objDay2_8.SetActive(true);
             TutorialLoader.instance.Load("Day2_8");

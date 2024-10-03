@@ -1,0 +1,668 @@
+fileFormatVersion: 2
+guid: dea27437cc2a46b4eb94c9708ba55e5f
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_0
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 1601
+        width: 197
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbc4939242dd0b14d82e9ae6fd71c089
+      internalID: -1531612965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_1
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 1601
+        width: 196
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79af7e223112d2243a6d624962a5d645
+      internalID: -1185285735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_2
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 1601
+        width: 196
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c9fb6925e809e429a33ed3a4d7e58a
+      internalID: 897029305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_3
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 1601
+        width: 198
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b5719cf898430d43816d86780b71aa0
+      internalID: 911003670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_4
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 1601
+        width: 197
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e5df58689fb2cc489b065e73f586474
+      internalID: 1336865735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_5
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 1601
+        width: 198
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a6197e40f9fc724cb69a55686591f47
+      internalID: 685416837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_6
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 1601
+        width: 196
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdffeb5164e8e19418763ec73e5f059f
+      internalID: 571983076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_7
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 1601
+        width: 196
+        height: 636
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b25f00b86e00c34419426200655d8e54
+      internalID: -943165694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_8
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 828
+        width: 197
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 42fe9cbe11264fe4db46705b162dc8a9
+      internalID: -48941971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_9
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 828
+        width: 196
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 849d5d0a00fa6ea4481610e3e6e6f81c
+      internalID: 610337522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_10
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 828
+        width: 198
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 797657d944c553d43ab796ffcda86363
+      internalID: -2003967396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_11
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 828
+        width: 197
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65d48adaf323d6e4492101e5a799b580
+      internalID: -587429025
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_12
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 828
+        width: 198
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6074cc453a51d745a6adffce43119c6
+      internalID: 845871134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_13
+      rect:
+        serializedVersion: 2
+        x: 2152
+        y: 828
+        width: 196
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d460a2e868fbc41baef92436227d24
+      internalID: 1666155506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_14
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 828
+        width: 196
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1ea6c92ce3a9b94f97e524dbdff14f5
+      internalID: 793337730
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_15
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 828
+        width: 198
+        height: 635
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab3c334cf50f71468c117c379779863
+      internalID: -876735994
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_16
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 55
+        width: 197
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e76cd9d0e0992534c981a81e1ca00787
+      internalID: -1428492539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_17
+      rect:
+        serializedVersion: 2
+        x: 477
+        y: 55
+        width: 197
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8950c7e844ea03341a31a8ad73706bd1
+      internalID: -1674164418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_18
+      rect:
+        serializedVersion: 2
+        x: 894
+        y: 55
+        width: 198
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cea3e0108c9c724ebc14db43c515ee2
+      internalID: -1340861915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_19
+      rect:
+        serializedVersion: 2
+        x: 1313
+        y: 55
+        width: 198
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fa37fab5ed915b419b829e05b74babb
+      internalID: 895934553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_20
+      rect:
+        serializedVersion: 2
+        x: 1731
+        y: 55
+        width: 198
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17f2baf5a2131b14192d3e68ec3cbc02
+      internalID: 1783296572
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_21
+      rect:
+        serializedVersion: 2
+        x: 2150
+        y: 55
+        width: 198
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9c740ae55433234990d79fc6e2cd183
+      internalID: 310032048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_22
+      rect:
+        serializedVersion: 2
+        x: 2569
+        y: 55
+        width: 196
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10d1287319628484195836bf1a6456a6
+      internalID: 1500148984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_23
+      rect:
+        serializedVersion: 2
+        x: 2988
+        y: 55
+        width: 198
+        height: 634
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6cef4bea9913f404fb7c74e88a8f1eba
+      internalID: 674885164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_0: -1531612965
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_1: -1185285735
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_10: -2003967396
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_11: -587429025
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_12: 845871134
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_13: 1666155506
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_14: 793337730
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_15: -876735994
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_16: -1428492539
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_17: -1674164418
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_18: -1340861915
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_19: 895934553
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_2: 897029305
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_20: 1783296572
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_21: 310032048
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_22: 1500148984
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_23: 674885164
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_3: 911003670
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_4: 1336865735
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_5: 685416837
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_6: 571983076
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_7: -943165694
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_8: -48941971
+      KGS_UTAMA_PEREMPUAN_AKTIVITAS-01_9: 610337522
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

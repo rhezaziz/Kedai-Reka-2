@@ -15,35 +15,36 @@ EditorBuildSettings:
     path: Assets/New/MiniGame/Kasus/Kasus 1/M-1 Memilih TIM/Scene/Kasus1_1.unity
     guid: d2078729dba0b0e43947dfa1e0ac8b5e
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 1/Meluruskan Kesalahpahaman/Scene/Kasus1_5.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 1/S - 1 Meluruskan Kesalahpahaman/Scene/Kasus1_5.unity
     guid: 2e750b177eeb1cc4faf07de865724bff
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 2/Mendiskusikan desain/Kasus2_1.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 2/M - 1 Mendiskusikan desain/Kasus2_1.unity
     guid: 5116c5e9cb0f7424fa1e94799f06b523
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 2/Membuat daftar keperluan untuk membuat
-      desain/Kasus2_2.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 2/M - 2 Membuat daftar keperluan untuk
+      membuat desain/Kasus2_2.unity
     guid: 91c57b41183b1e7448dc04c1a66ba3db
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 2/Research desain bersama/Kasus2_3.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 2/S - 1 Reseach design bersama/Kasus2_3.unity
     guid: 86831520bf755e649971b8d306566e08
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 2/Memperbaiki laptop/Kasus2_4.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 2/S - 2 Memperbaiki laptop/Kasus2_4.unity
     guid: 79820affbe6615c4d8851b49a4162f82
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 3/Review rundown/Kasus3_2.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 3/M - 2 Review rundown/Kasus3_2.unity
     guid: 9da5c87deaab18347b109a6ced227721
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 3/Proses pengerjaan surat/Kasus3_3.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 3/S - 1 Proses pengerjaan surat/Kasus3_3.unity
     guid: 43210c86b52cb7a45a9f40845d533351
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 4/Menyiapkan perlangkapan survei/Kasus4_1.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 4/M - 1 Menyiapkan perlangkapan survei/Kasus4_1.unity
     guid: e3d4ed103e3dd78498f2e1085c26a593
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 4/Memilih kendaraan yang digunakan survey/Kasus4_2.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 4/M - 2 Memilih kendaraan yang digunakan
+      survey/Kasus4_2.unity
     guid: 92367649883e125419dc04f6e3d17f99
   - enabled: 1
-    path: Assets/New/MiniGame/Kasus/Kasus 4/Menyiapkan pertanyaan untuk survei/Kasus4_4.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 4/S - 2 Menyiapkan pertanyaan untuk survei/Kasus4_4.unity
     guid: 9ae905669d2c1314cb79f8052f44a8b0
   - enabled: 1
     path: Assets/New/MiniGame/Kasus/Kasus 5/M-2 Membeli barang keperluan/Kasus5_2.unity
@@ -56,6 +57,16 @@ EditorBuildSettings:
     path: Assets/New/MiniGame/Kasus/Kasus 5/S-2 Improve hasil pembuatan pertama/Kasus5_5.unity
     guid: 4d419f6e8aa1fca4c8e8afa6962446d5
   - enabled: 1
-    path: Assets/Scenes/Nyapu.unity
+    path: Assets/New/MiniGame/Kasus/Kasus 5/S-3 Menyiapkan takaran yang akan dipakai/Kasus5_6.unity
+    guid: 5791c0e857a8ca14f9efa20f626e7580
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Nyapu/Nyapu.unity
     guid: 39721b2c327fba248a6910bc74748449
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Siram Tanaman/Siram Tanaman.unity
+    guid: 6b119c45173d9224b8f0226452eb5704
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 6/M - 2 Memeriksa Hasil Produksi/Delivery
+      Food/Food.unity
+    guid: 47333842bb5c120439a4d40822c85ca1
   m_configObjects: {}

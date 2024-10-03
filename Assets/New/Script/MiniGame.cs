@@ -100,6 +100,7 @@ namespace Terbaru{
             UiManager.instance.Chinematic(false);
             FindObjectOfType<UiManager>().panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
+            Debug.Log("Selesai Quest");
             //
             
         }

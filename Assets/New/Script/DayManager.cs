@@ -19,10 +19,22 @@ namespace Terbaru{
         }
 
         public void updateDay(){
+            //FindObjectOfType<WaktuManager>().currentTime(0);
+            FindObjectOfType<VideoManager>().action(clipsTidur);
+            StartCoroutine(delayExecute());
+        }
+
+
+        IEnumerator delayExecute(){
+            yield return new WaitForSeconds(4f);
+            changeTime();
+        }
+
+        void changeTime(){
             day += 1;
             FindObjectOfType<UiManager>().updateEnergy(-3);
-
-            FindObjectOfType<VideoManager>().action(clipsTidur);
+            
+            FindObjectOfType<WaktuManager>().currentTime(0);
             maps.updateDayKonten(days[day].mapsId);
             if(days[day].itemSpawn.Count >= 1){
                 foreach(var item in days[day].itemSpawn){

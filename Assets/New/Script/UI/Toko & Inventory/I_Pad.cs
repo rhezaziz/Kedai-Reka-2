@@ -20,7 +20,8 @@ namespace  Terbaru
         public void closeIpad(){
             RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();
             //FindObjectOfType<swipeUI>().slide.value = 0f;
-            iPad.DOScaleY(0f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
+            iPad.DOPivotY(1f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
+            //iPad.DOScaleY(0f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
 
         }
 
@@ -30,7 +31,8 @@ namespace  Terbaru
             profil = GameManager.instance.profil;
             ipadUI.gameObject.SetActive(true);
             RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();
-            iPad.transform.DOScaleY(1f, 1.5f);
+            iPad.DOPivotY(0f, 1.5f);
+            //iPad.transform.DOScaleY(1f, 1.5f);
             text_Tanggal.text = $"{profil.jmlHari}/November/2024";
             initQuest();
         }

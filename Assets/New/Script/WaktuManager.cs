@@ -10,7 +10,7 @@ namespace Terbaru{
     public class WaktuManager : MonoBehaviour
     {
         // Start is called before the first frame update
-        public Light sun;
+        public Light[] lampu;
         public waktu thisWaktu;
 
         public List<dataWaktu> waktuData = new List<dataWaktu>();
@@ -45,9 +45,17 @@ namespace Terbaru{
             Color color = _waktu(tempWaktu).warnaCahaya;
             //sun.color = color;
             float intent = _waktu(tempWaktu).getIntent();
+            foreach(var light in lampu){
+                light.DOColor(color, 2f);
+            }
+            //sun.DOColor(color, 2f);
+            //sun.DOIntensity(intent, 2f);
+        }
 
-            sun.DOColor(color, 2f);
-            sun.DOIntensity(intent, 2f);
+        public void checkTime(){
+            if(thisWaktu == waktu.Malam){
+                Debug.Log("Sudah Malam");
+            }
         }
     }
 

@@ -30,7 +30,7 @@ namespace Terbaru{
         void Start(){
             DontDestroyOnLoad(this);
 
-            waktu.currentTime(0);
+            waktu.currentTime(3);
             checkTutorial();
         }
 

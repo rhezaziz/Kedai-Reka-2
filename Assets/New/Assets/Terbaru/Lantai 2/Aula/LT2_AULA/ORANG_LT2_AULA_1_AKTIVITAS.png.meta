@@ -1,0 +1,470 @@
+fileFormatVersion: 2
+guid: 7330fb718613b1443bdc351d5c9a4645
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 600
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5f28c0726f69164fa48bcb4ba9877ec
+      internalID: 121159224
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_1
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f401472857a4c4f8009b1780ea8364
+      internalID: -1844861076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_2
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcabc39c4e6ff7343b85d58a49771c04
+      internalID: -151981444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_3
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f821c350a20d154b8c17b2851433fe1
+      internalID: -161846134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_4
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9ebd1694ff56b44382162a9d57a58f4
+      internalID: -1990470750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_5
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b177597579641af4eb15a0cbbcb4a88d
+      internalID: -846028331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_6
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 3670.6665
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dd98910b87590b4494c71b113d8d7fc
+      internalID: -399389867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 970b72b551ff6c64d891321d145619a1
+      internalID: -1204334696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_8
+      rect:
+        serializedVersion: 2
+        x: 1365
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8446df1b4b1666478af2b0802543011
+      internalID: -938264858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_9
+      rect:
+        serializedVersion: 2
+        x: 2730
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e15a2df1eded71f438954829c2fdb56d
+      internalID: -430535149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_10
+      rect:
+        serializedVersion: 2
+        x: 4095
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1215cc71f876652419a461f20435226d
+      internalID: 1588426351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_11
+      rect:
+        serializedVersion: 2
+        x: 5460
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cf31196bd2e1874f808e2101f3b3c0c
+      internalID: -1209347959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_12
+      rect:
+        serializedVersion: 2
+        x: 6825
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3267f521b22034c4c933d163ec59c423
+      internalID: -45732690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_13
+      rect:
+        serializedVersion: 2
+        x: 8190
+        y: 1835.6666
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a0127c14afe764cb65a21d289d70ed
+      internalID: 1643138280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ORANG_LT2_AULA_1_AKTIVITAS_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.666626
+        width: 1365.7142
+        height: 1835.3334
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7410595b1f7cfc648bc8e6cc3a07eb67
+      internalID: 748113201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ORANG_LT2_AULA_1_AKTIVITAS_0: 121159224
+      ORANG_LT2_AULA_1_AKTIVITAS_1: -1844861076
+      ORANG_LT2_AULA_1_AKTIVITAS_10: 1588426351
+      ORANG_LT2_AULA_1_AKTIVITAS_11: -1209347959
+      ORANG_LT2_AULA_1_AKTIVITAS_12: -45732690
+      ORANG_LT2_AULA_1_AKTIVITAS_13: 1643138280
+      ORANG_LT2_AULA_1_AKTIVITAS_14: 748113201
+      ORANG_LT2_AULA_1_AKTIVITAS_2: -151981444
+      ORANG_LT2_AULA_1_AKTIVITAS_3: -161846134
+      ORANG_LT2_AULA_1_AKTIVITAS_4: -1990470750
+      ORANG_LT2_AULA_1_AKTIVITAS_5: -846028331
+      ORANG_LT2_AULA_1_AKTIVITAS_6: -399389867
+      ORANG_LT2_AULA_1_AKTIVITAS_7: -1204334696
+      ORANG_LT2_AULA_1_AKTIVITAS_8: -938264858
+      ORANG_LT2_AULA_1_AKTIVITAS_9: -430535149
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
