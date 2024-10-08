@@ -18,6 +18,7 @@ public class Quest : ScriptableObject
     public int jmlEnergy;
 
     public string sceneGame;
+    public bool firstChangeScene;
     public int level;
     public bool isDone;
 }

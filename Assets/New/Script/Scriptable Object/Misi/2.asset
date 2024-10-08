@@ -20,5 +20,6 @@ MonoBehaviour:
   Deskripsi: Menyapu Halaman Kampus
   jmlEnergy: 2
   sceneGame: Nyapu
+  firstChangeScene: 0
   level: 0
   isDone: 0

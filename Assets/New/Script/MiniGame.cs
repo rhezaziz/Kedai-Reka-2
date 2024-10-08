@@ -8,6 +8,8 @@ namespace Terbaru{
     {
         public string sceneActive;
 
+        public Controller control;
+
 
         public void pindahMiniGame(string namaScene){
             StartCoroutine(mulaiMiniGame(namaScene));
@@ -26,8 +28,10 @@ namespace Terbaru{
         }
 
         IEnumerator mulaiMiniGame(string namaScene){
+            control.currentState(state.Interaction);
+            control.playerMove.move = false;
             UiManager.instance.Chinematic(true);
-            FindObjectOfType<Controller>().currentState(state.Interaction);
+            
             FindObjectOfType<UiManager>().panelUtama.SetActive(false);
             yield return new WaitForSeconds(3f);
             
@@ -83,6 +87,7 @@ namespace Terbaru{
 
         IEnumerator kembali(string value){
             UiManager.instance.Chinematic(true);
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
             yield return new WaitForSeconds(1f);
             
             UiManager.instance.Chinematic(true);
@@ -98,8 +103,11 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(2f);
             UiManager.instance.Chinematic(false);
+            
+            
             FindObjectOfType<UiManager>().panelUtama.SetActive(true);
-            FindObjectOfType<Controller>().currentState(state.Default);
+            control.currentState(state.Default);
+            control.playerMove.move = true;
             Debug.Log("Selesai Quest");
             //
             

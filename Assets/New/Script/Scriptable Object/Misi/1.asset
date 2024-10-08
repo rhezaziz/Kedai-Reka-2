@@ -15,10 +15,11 @@ MonoBehaviour:
   index: 0
   Reward: 10000
   skills: 000000000200000006000000
-  judulMisi: Mencari Barang
+  judulMisi: Memilih Anggota Tim
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: ' Mencari Barang Yang Benar di area Toilet'
   jmlEnergy: 2
   sceneGame: 
+  firstChangeScene: 0
   level: 0
-  isDone: 0
+  isDone: 1

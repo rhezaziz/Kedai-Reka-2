@@ -16,7 +16,7 @@ namespace Terbaru{
         }
         public void action(Transform Player){
             //var profil = GameManager.instance.profil;
-
+            Player.GetComponent<Controller>().currentState(state.Default);
             //var temp = profil.item.Contains(item);
             foreach(var i in item){
                 i.isInventory = true;
@@ -24,7 +24,7 @@ namespace Terbaru{
                 QuestManager.instance.CheckAction(action);
             }
              
-            Player.GetComponent<Controller>().currentState(state.Default);
+            //
             gameObject.SetActive(false);
             //Destroy(this);
         }

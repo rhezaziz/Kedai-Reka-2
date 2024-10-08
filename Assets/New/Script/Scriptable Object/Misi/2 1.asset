@@ -20,5 +20,6 @@ MonoBehaviour:
   Deskripsi: Siram Tanamana
   jmlEnergy: 2
   sceneGame: Siram Tanaman
+  firstChangeScene: 0
   level: 0
   isDone: 0

@@ -4856,6 +4856,18 @@ MonoBehaviour:
               m_StringArgument: 
               m_BoolArgument: 0
             m_CallState: 2
+          - m_Target: {fileID: 894212847}
+            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+            m_MethodName: pindah
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Nyapu
+              m_BoolArgument: 0
+            m_CallState: 2
   miniGame: {fileID: 894212847}
   sceneName: Nyapu
   unityAction:
@@ -8462,6 +8474,40 @@ Transform:
   - {fileID: 1443636092}
   m_Father: {fileID: 383945600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &327114840
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 327114841}
+  m_Layer: 0
+  m_Name: Tutorial
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &327114841
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 327114840}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1421431661}
+  - {fileID: 394065331}
+  - {fileID: 1114839721}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335324209
 GameObject:
   m_ObjectHideFlags: 0
@@ -9846,6 +9892,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!4 &394065331 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7074305075669671163, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
+  m_PrefabInstance: {fileID: 1965575001}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &396050795 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 3222fe43769e42e499ca0445963d84e1, type: 3}
@@ -18802,8 +18853,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 8.402333, y: 10.8, z: 1.0602067}
-  m_Center: {x: -0.46284562, y: 0, z: -0.43009567}
+  m_Size: {x: 4.101299, y: 10.8, z: 1.0602067}
+  m_Center: {x: -2.07725, y: 0, z: -0.43009567}
 --- !u!114 &837817357
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20061,7 +20112,129 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quests:
-  - quest: {fileID: 11400000, guid: 9e26d0f82f5c59542a16313316b3f3ca, type: 2}
+  - quest: {fileID: 11400000, guid: 358bf48885ddf7a41aeea5655a636136, type: 2}
+    Index: 0
+    proses:
+    - Action: Mini Game
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 3320934860996001309}
+            m_TargetAssemblyTypeName: 
+            m_MethodName: 
+            m_Mode: 0
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: 
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 961419904}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 894212847}
+            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+            m_MethodName: pindah
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: Quiz
+              m_BoolArgument: 0
+            m_CallState: 2
+  - quest: {fileID: 11400000, guid: 5d0c5c84762b7c74488752c70f774b1e, type: 2}
+    Index: 0
+    proses:
+    - Action: Kamar Tidur
+      ProcessEventStart:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 157103309}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+          - m_Target: {fileID: 1385188478}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+      ProcessEventHelper:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: helperQuest
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 438926246}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      ProcessEnd:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: closeHelper
+            m_Mode: 2
+            m_Arguments:
+              m_ObjectArgument: {fileID: 438926246}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 1385188478}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+  - quest: {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
     Index: 0
     proses:
     - Action: Item Buku
@@ -20156,37 +20329,13 @@ MonoBehaviour:
               m_StringArgument: Kasus1_1
               m_BoolArgument: 0
             m_CallState: 2
-  - quest: {fileID: 11400000, guid: 5d0c5c84762b7c74488752c70f774b1e, type: 2}
+  - quest: {fileID: 11400000, guid: 9e26d0f82f5c59542a16313316b3f3ca, type: 2}
     Index: 0
     proses:
-    - Action: Kamar Tidur
+    - Action: Mini Game
       ProcessEventStart:
         m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 157103309}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
-          - m_Target: {fileID: 1385188478}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
+          m_Calls: []
       ProcessEventHelper:
         m_PersistentCalls:
           m_Calls:
@@ -20195,7 +20344,7 @@ MonoBehaviour:
             m_MethodName: helperQuest
             m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 438926246}
+              m_ObjectArgument: {fileID: 961419904}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
@@ -20205,28 +20354,16 @@ MonoBehaviour:
       ProcessEnd:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: closeHelper
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 438926246}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 1385188478}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
+          - m_Target: {fileID: 894212847}
+            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+            m_MethodName: pindah
+            m_Mode: 5
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
               m_IntArgument: 0
               m_FloatArgument: 0
-              m_StringArgument: 
+              m_StringArgument: Quiz
               m_BoolArgument: 0
             m_CallState: 2
   - quest: {fileID: 11400000, guid: 358bf48885ddf7a41aeea5655a636136, type: 2}
@@ -20364,6 +20501,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   sceneActive: 
+  control: {fileID: 1939524306}
 --- !u!114 &894212848
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20439,6 +20577,7 @@ MonoBehaviour:
   - mapsId: 1000000013000000
     itemSpawn:
     - item: {fileID: 1665247573}
+    - item: {fileID: 146596086}
   - mapsId: 100000000b000000
     itemSpawn: []
   - mapsId: 1000000019000000
@@ -24351,7 +24490,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1114839720}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 187.5, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -24361,7 +24500,7 @@ Transform:
   - {fileID: 2599385967627502159}
   - {fileID: 1085797872809287802}
   - {fileID: 2535688728520174007}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 327114841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116589070
 GameObject:
@@ -29424,7 +29563,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1421431659}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -29432,7 +29571,7 @@ Transform:
   - {fileID: 2014442921}
   - {fileID: 7335159039025778075}
   - {fileID: 2038347822}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 327114841}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1421431662
 MonoBehaviour:
@@ -41052,7 +41191,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 327114841}
     m_Modifications:
     - target: {fileID: 35201873268559582, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: m_Name
@@ -41080,15 +41219,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7074305075669671163, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7074305075669671163, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7074305075669671163, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0
+      value: -0
       objectReference: {fileID: 0}
     - target: {fileID: 7074305075669671163, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -84771,8 +84910,6 @@ SceneRoots:
   - {fileID: 21220966}
   - {fileID: 1147744897}
   - {fileID: 383945600}
-  - {fileID: 1114839721}
   - {fileID: 273560741}
   - {fileID: 894212843}
-  - {fileID: 1421431661}
-  - {fileID: 1965575001}
+  - {fileID: 327114841}

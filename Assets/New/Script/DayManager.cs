@@ -42,6 +42,10 @@ namespace Terbaru{
                 }
             }
         }
+
+        public void updateMaps(){
+            maps.afterQuiz(days[day].mapsId);
+        }
     }
 
     [System.Serializable]

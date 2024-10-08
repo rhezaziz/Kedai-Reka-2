@@ -24,9 +24,15 @@ namespace Terbaru
         public TMPro.TMP_Text Saldo;
         public TMPro.TMP_Text Nama;
 
-        Camera camera;
+        Camera cam;
+
+        void Awake(){
+            instance = this;
+
+            cam = Camera.main;
+        }
         void Start(){
-            camera = Camera.main;
+            //camera = Camera.main;
             var profil = GameManager.instance.profil; 
 
             Nama.text = profil.NamaKarakter;
@@ -51,10 +57,6 @@ namespace Terbaru
             }
         }
 
-        void Awake(){
-            instance = this;
-        }
-
         public void displayRekrut(playerProfil profil){
             rekrut.gameObject.SetActive(true);
 
@@ -70,7 +72,26 @@ namespace Terbaru
 
         public void mulaiQuest(List<GameObject> temp, Quest quest){
             QuestManager.instance.NPCs = temp;
-            StartCoroutine(Cutscene(temp, quest));
+
+            if(quest.firstChangeScene){
+            
+                StartCoroutine(cutMiniGame(temp, quest));
+                
+            }
+            else
+            {
+                StartCoroutine(Cutscene(temp, quest));
+            }
+
+        }
+
+        IEnumerator cutMiniGame(List<GameObject> temp, Quest quest){
+            FindObjectOfType<MiniGame>().pindahMiniGame(quest.sceneGame);
+
+            yield return new WaitForSeconds(4f);
+            QuestManager.instance.StartProcessQuest(quest); 
+            foreach(var NPC in temp)
+                    NPC.SetActive(false);
         }
 
         public void helperQuest(GameObject _object){
@@ -90,7 +111,7 @@ namespace Terbaru
         }
 
         public void Chinematic(bool isActive){
-            //var camera = Camera.main;
+            var camera = Camera.main;
             float zoom = isActive ? -7f : -10f;
             camera.transform.DOLocalMoveZ(zoom, 1f);
             string _action = isActive ? "Mulai" : "Reverse";
@@ -138,7 +159,8 @@ namespace Terbaru
 
             panelUtama.SetActive(true);
             //ChinematicPanel.SetActive(false);
-            FindObjectOfType<Movement>().move = true;
+            //FindObjectOfType<Movement>().move = true;
+            FindObjectOfType<Controller>().currentState(state.Default);
         }
 
 

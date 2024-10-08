@@ -49,6 +49,8 @@ namespace Terbaru{
                 panelQuiz.SetActive(false);
 
             }
+            FindObjectOfType<WaktuManager>().currentTime(1);
+            FindObjectOfType<DayManager>().updateMaps();
         }
 
                 

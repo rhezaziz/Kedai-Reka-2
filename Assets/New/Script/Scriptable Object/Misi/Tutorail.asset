@@ -20,5 +20,6 @@ MonoBehaviour:
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2
   sceneGame: 
+  firstChangeScene: 0
   level: 0
   isDone: 1

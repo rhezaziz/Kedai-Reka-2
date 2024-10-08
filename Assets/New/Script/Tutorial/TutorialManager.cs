@@ -247,6 +247,7 @@ namespace Terbaru{
             objDay2_2.SetActive(true);
             PintuKamar.extendAction.RemoveListener(initDay2_1);
             PintuKamar.enabled = false;
+            dindaData.selected = true;
         }
 
         public void Day2_2(){
@@ -286,8 +287,7 @@ namespace Terbaru{
         }
 
         void Day2_5(){
-            Debug.Log("Dapur aa");
-            
+
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_5");
             dapur.extendAction.RemoveListener(Day2_5);

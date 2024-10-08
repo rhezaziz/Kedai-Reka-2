@@ -24,6 +24,7 @@ namespace Terbaru{
         public void StartProcessQuest(Quest quest){
             int index = 0;
             isActive = true;
+            Debug.Log("Start Quest");
             foreach(var _quest in quests){
                 if(_quest.quest == quest){
                     index = _quest.Index;
@@ -54,14 +55,17 @@ namespace Terbaru{
         
 
         public void CheckAction(string Action){
-            Debug.Log(Action);
+            
             if(!isActive)
                 return;
 
             int currentIndex = currentQuest.Index;
             if(currentQuest.proses[currentIndex].Action != Action){
+                Debug.Log("Tidak Sesuai");
                 return;
             }
+
+            Debug.Log("Sesuai "+Action);
 
             CloseProses(currentIndex);
             NextProcess();
@@ -98,6 +102,7 @@ namespace Terbaru{
                     }
                 }
             }
+            Debug.Log("Selesai Quest");
             currentQuest.quest.isDone = true;
 
             playerProfil.Saldo += currentQuest.quest.Reward;

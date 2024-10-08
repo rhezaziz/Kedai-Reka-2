@@ -25,11 +25,13 @@ namespace Terbaru
                 case state.Interaction:
                     playerMove.move = false;
                     state = state.Interaction;
+                    Debug.Log("Player Move : "+ playerMove.move);
                     break;
 
                 case state.Default:
                     playerMove.move = true;
                     state = state.Default;
+                    Debug.Log("Player Move : "+ playerMove.move);
                     break;
             }
         }

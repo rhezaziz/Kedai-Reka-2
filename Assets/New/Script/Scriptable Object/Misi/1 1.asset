@@ -19,6 +19,7 @@ MonoBehaviour:
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Kerjakan soal
   jmlEnergy: 2
-  sceneGame: 
+  sceneGame: Quiz
+  firstChangeScene: 1
   level: 0
   isDone: 0

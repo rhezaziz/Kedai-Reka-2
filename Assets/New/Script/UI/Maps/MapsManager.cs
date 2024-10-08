@@ -71,6 +71,24 @@ namespace Terbaru{
             }
             listMaps();
         }
+
+        public void afterQuiz(List<id_Maps> IDs){
+            IDs.Remove(id_Maps.Lt2_Kelas);
+            int jmlId = IDs.Count;
+            
+            for(int i = 0; i < jmlId; i++){
+                for(int j = 0; j < maps.Count; j++){
+                    for(int x = 0; x < maps[j].maps.Count; x++){
+                        if(maps[j].maps[x].valueMaps.id == IDs[i]){
+                            Debug.Log(maps[j].maps[x].nama);
+                            maps[j].maps[x].valueMaps.active = true;
+                            break;
+                        }
+                    }
+                }
+            }
+            listMaps();
+        }
         public void updateDayKonten(ListMapsValue updateMaps){
             List<mapsValue> tempValue = new List<mapsValue>();
             tempValue = updateMaps.listValueMaps;
