@@ -13,7 +13,7 @@ namespace Terbaru{
 
         public UnityEngine.Video.VideoClip clipsTidur;
 
-        int day = 0;
+        public int day = 0;
         void Start(){
             maps.updateDayKonten(days[0].mapsId);
         }

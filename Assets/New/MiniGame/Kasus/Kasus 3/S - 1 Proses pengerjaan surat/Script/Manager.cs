@@ -59,6 +59,22 @@ namespace MiniGame3_3{
                 yield return new WaitForSeconds(1.75f);
             }
 
+            if(testGame)
+                balikMainMenu();
+
+            
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
             
         }
     }

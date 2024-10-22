@@ -8,13 +8,15 @@ namespace Terbaru{
     {
         public Transform Berdiri;
 
-        
+        public List<int> HariEvent = new List<int>();
 
         public bool value;
 
         public void isTutorial(bool temp){
             enabled = temp;
         }
+
+
 
         void OnDisable(){
             value = false;
@@ -31,8 +33,13 @@ namespace Terbaru{
         public GameObject quest;
         public void action(Transform player){
             player.position = new Vector3(Berdiri.position.x, player.position.y, Berdiri.position.z);
-            FindObjectOfType<Misi_Manager>().initKontenQuest();
-            quest.SetActive(true);
+            int hari = FindObjectOfType<DayManager>().day;
+            if(HariEvent.Contains(hari)){
+                FindObjectOfType<Narasi>().startDialog();
+            }else{    
+                FindObjectOfType<Misi_Manager>().initKontenQuest();
+                quest.SetActive(true);
+            }
         }
 
         public void btnActive(GameObject btn, bool interactable){

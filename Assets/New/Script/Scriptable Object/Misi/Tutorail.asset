@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3b5cb88f3cebdb04dada5ab78a875a83, type: 3}
   m_Name: Tutorail
   m_EditorClassIdentifier: 
+  iD_Quiz: 5
   index: 0
   Reward: 10000
   skills: 000000000000000000000000

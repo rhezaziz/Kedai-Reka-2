@@ -27,9 +27,6 @@ namespace Terbaru
             if (other != null && other.gameObject.GetComponent<Interaction>() != null)
             {
                 onInteraction(true, other.gameObject);
-                // bool value = other.gameObject.GetComponent<Interaction>().isTutorial();
-                // if(value)
-                //     onInteraction(true, other.gameObject);
             }
         }
 
@@ -45,15 +42,10 @@ namespace Terbaru
             interactObject = ObjectGame;
             controller.currentState(state.Interaction);
             ObjectGame.GetComponent<Interaction>().action(transform);
-            
-
         }
 
         public void onInteraction(bool interact, GameObject other){
             interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-            
-            //interactButton.GetComponentInChildren<UnityEngine.UI.Text>().text = other.gameObject.name;
-            
             if(other != null){
                 other.GetComponent<Interaction>().btnActive(interactButton, interact);
 

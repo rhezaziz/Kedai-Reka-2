@@ -12,6 +12,8 @@ namespace Terbaru{
         // Start is called before the first frame update
         public Sprite dialogKanan, dialogKiri;
         public UiComponent components;
+
+        public GameObject panelNarasi;
         Vector2 Atas, Bawah;
 
         public Color UnSelect;
@@ -30,6 +32,8 @@ namespace Terbaru{
         }
 
         
+
+        
         void Start()
         {
             Atas = components.panelDialog[1].transform.localPosition;
@@ -40,6 +44,7 @@ namespace Terbaru{
 
 
         public void startDialog(){
+            Debug.Log("Mulai");
             for(int i = 0; i < components.textNama.Length; i++){
                 components.textNama[i].text = "";
                 components.GambarCharacter[i].gameObject.SetActive(false);
@@ -55,7 +60,14 @@ namespace Terbaru{
             }
         }
 
+        public void VOActive(){
+            
+            foreach(var ui in components.GambarCharacter){
+                ui.color = UnSelect;
+            }
+        }
         public void displayBallonDialog(int value, dataDialog data){
+            SoundManager.instance.uiSFX(3);
             int index = value  % 2;
             int tempIndex = (value + 1) % 2;
             int activeIndex = data.Kiri ? 0 : 1;

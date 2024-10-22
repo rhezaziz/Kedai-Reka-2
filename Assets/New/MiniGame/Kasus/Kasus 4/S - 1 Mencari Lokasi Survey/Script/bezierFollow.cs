@@ -32,6 +32,7 @@ namespace MiniGame4_3{
 
         void OnMouseDown(){
             coroutineAllowed = true;
+            FindObjectOfType<Manager>().onClickCar(gameObject);
         }
 
         // Update is called once per frame
@@ -66,6 +67,9 @@ namespace MiniGame4_3{
 
             routeToGo += 1;
             coroutineAllowed = loop || routeToGo < routes.Length;
+
+            if(!coroutineAllowed)
+                FindObjectOfType<Manager>().GameOver();
             if(routeToGo > routes.Length - 1)
             {
                 routeToGo = 0;

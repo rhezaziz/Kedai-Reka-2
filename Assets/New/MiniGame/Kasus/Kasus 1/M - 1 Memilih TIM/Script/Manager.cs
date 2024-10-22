@@ -106,7 +106,7 @@ namespace MiniGame1_1{
                 item.GetComponent<Container_Character>().click.interactable = false;
             }
             selected.DOColor(new Color(Color.white.r, Color.white.g, Color.white.b, 1), .5f);
-            //selected.GetComponent<Image>()
+            selected.sprite = data.SelectedImage;
 
             StartCoroutine(animasiGanti());
         }
@@ -138,8 +138,23 @@ namespace MiniGame1_1{
             yield return new WaitForSeconds(1f);
             if(selesai){
                 yield return new WaitForSeconds(1f);
-                QuestManager.instance.CheckAction(action);
+                if(testGame)
+                    balikMainMenu();
+                else
+                    QuestManager.instance.CheckAction(action);
             }
+        }
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
 
         void Start(){
@@ -155,6 +170,8 @@ namespace MiniGame1_1{
         public class data{
             public string Nama;
             //public List<string> sifat;
+            public Sprite ImageInSelection;
+            public Sprite SelectedImage;
             public bool sesuai;
 
             public List<sifat> sifat = new List<sifat>();   

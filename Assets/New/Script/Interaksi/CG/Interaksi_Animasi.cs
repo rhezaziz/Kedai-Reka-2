@@ -18,8 +18,22 @@ namespace Terbaru{
 
         public bool value;
 
+        public AudioSource suara;
+
         public void isTutorial(bool temp){
             enabled = temp;
+        }
+
+        public void suaraPlay(){
+            suara.Play();
+        }
+
+        public void suaraStop(){
+            suara.Stop();
+        }
+
+        public void suaraObject(int index){
+            SoundManager.instance.sfx(index);
         }
 
         
@@ -35,6 +49,7 @@ namespace Terbaru{
         void Start(){
 
         }
+
 
         public void action(Transform Player){
             FindObjectOfType<Controller>().currentState(state.Interaction);

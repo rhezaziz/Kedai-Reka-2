@@ -806,6 +806,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cf3f2267a689df44999b081c37f0d135, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  ambienceSound: {fileID: 754811572}
   shadow: {fileID: 2100000, guid: 1f0711f4ff1719f40a58abf09bb3c0af, type: 2}
   btnMaps:
   - {fileID: 2071024180}
@@ -827,6 +828,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 0
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -836,6 +838,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 1
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -845,6 +848,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 3
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -854,6 +858,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 2
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -863,6 +868,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 4
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -872,6 +878,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 5
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -881,6 +888,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 6
+        ambience: {fileID: 8300000, guid: d696fdb701f9049448a018d4d26a9bb4, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -892,6 +900,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 7
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -901,6 +910,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 8
+        ambience: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -910,6 +920,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 9
+        ambience: {fileID: 8300000, guid: 420f3988fe4007e44ad6c9b99d5f49fd, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -919,6 +930,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 10
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -928,6 +940,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 11
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -937,6 +950,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 12
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -946,6 +960,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 13
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -955,6 +970,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 14
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -966,6 +982,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 15
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -975,6 +992,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 16
+        ambience: {fileID: 8300000, guid: 420f3988fe4007e44ad6c9b99d5f49fd, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -984,6 +1002,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 18
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -993,6 +1012,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 17
+        ambience: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -1002,6 +1022,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 19
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1011,6 +1032,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 20
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1022,6 +1044,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 21
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1031,6 +1054,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 22
+        ambience: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -1040,6 +1064,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 23
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1049,6 +1074,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 24
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1058,6 +1084,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 25
+        ambience: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
         active: 0
         warning: 0
       index: 0
@@ -1067,6 +1094,7 @@ MonoBehaviour:
       valueMaps:
         namaTempat: 
         id: 26
+        ambience: {fileID: 0}
         active: 0
         warning: 0
       index: 0
@@ -1285,7 +1313,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 23648512}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1293,11 +1321,11 @@ RectTransform:
   - {fileID: 861553770}
   - {fileID: 1582021212}
   - {fileID: 1465206425}
-  m_Father: {fileID: 1870862602}
+  m_Father: {fileID: 180747790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 75, y: -400}
+  m_AnchoredPosition: {x: 0, y: -175}
   m_SizeDelta: {x: 175, y: 175}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &23648514
@@ -2615,6 +2643,139 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 54886949}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &56216202
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 56216203}
+  - component: {fileID: 56216206}
+  - component: {fileID: 56216205}
+  - component: {fileID: 56216204}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &56216203
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56216202}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 534642615}
+  m_Father: {fileID: 1819304463}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -42.5}
+  m_SizeDelta: {x: 600, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &56216204
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56216202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 56216205}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1819304464}
+        m_TargetAssemblyTypeName: Terbaru.QuizNarasi, Assembly-CSharp
+        m_MethodName: jawab
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &56216205
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56216202}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &56216206
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 56216202}
+  m_CullTransparentMesh: 1
 --- !u!1 &56543977
 GameObject:
   m_ObjectHideFlags: 0
@@ -2721,6 +2882,82 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &57703304
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 57703305}
+  - component: {fileID: 57703307}
+  - component: {fileID: 57703306}
+  m_Layer: 5
+  m_Name: Quiz
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &57703305
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57703304}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1819304463}
+  m_Father: {fileID: 1870862602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 175}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &57703306
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57703304}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &57703307
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 57703304}
+  m_CullTransparentMesh: 1
 --- !u!1 &59921788
 GameObject:
   m_ObjectHideFlags: 0
@@ -3420,8 +3657,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 5
@@ -4819,6 +5056,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   quest:
+    id: 0
     quest: {fileID: 0}
     Index: 0
     proses:
@@ -4887,6 +5125,11 @@ MonoBehaviour:
         m_CallState: 2
   dialog:
     data: []
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
 --- !u!1 &147683856
 GameObject:
   m_ObjectHideFlags: 0
@@ -5951,6 +6194,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 488317233}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &173444923 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+  m_PrefabInstance: {fileID: 646248452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &173444924 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+  m_PrefabInstance: {fileID: 646248452}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &173444928
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173444923}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  isX: 0
+  isY: 1
+  isZ: 0
+  jarak: 0.75
+  timer1: 0.5
+  timer2: 0.5
 --- !u!1 &179628523
 GameObject:
   m_ObjectHideFlags: 0
@@ -6109,6 +6380,111 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179795754}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &180747789
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 180747790}
+  - component: {fileID: 180747793}
+  - component: {fileID: 180747792}
+  - component: {fileID: 180747791}
+  m_Layer: 5
+  m_Name: Dialog Manager (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &180747790
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180747789}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 23648513}
+  - {fileID: 2030410311}
+  - {fileID: 2115986980}
+  m_Father: {fileID: 1870862602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 175}
+  m_Pivot: {x: 0.5, y: 0}
+--- !u!114 &180747791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180747789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 7
+  m_Spacing: 0
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &180747792
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180747789}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.08627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &180747793
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 180747789}
+  m_CullTransparentMesh: 1
 --- !u!1 &185831637
 GameObject:
   m_ObjectHideFlags: 0
@@ -8154,6 +8530,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 295849699}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &299548814
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 299548817}
+  - component: {fileID: 299548816}
+  - component: {fileID: 299548815}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!114 &299548815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299548814}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &299548816
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299548814}
+  m_CullTransparentMesh: 1
+--- !u!224 &299548817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 299548814}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1445474456}
+  m_Father: {fileID: 1870862602}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 175}
+  m_Pivot: {x: 0.5, y: 1}
 --- !u!1 &317514406
 GameObject:
   m_ObjectHideFlags: 0
@@ -8404,6 +8856,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &323061370
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8489,7 +8953,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &327114841
 Transform:
   m_ObjectHideFlags: 0
@@ -8505,7 +8969,6 @@ Transform:
   m_Children:
   - {fileID: 1421431661}
   - {fileID: 394065331}
-  - {fileID: 1114839721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &335324209
@@ -9594,6 +10057,7 @@ Transform:
   - {fileID: 206474953}
   - {fileID: 324553243}
   - {fileID: 974323062}
+  - {fileID: 1114839721}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &387681051
@@ -12823,6 +13287,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 532022083}
   m_CullTransparentMesh: 1
+--- !u!1 &534642614
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 534642615}
+  - component: {fileID: 534642617}
+  - component: {fileID: 534642616}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &534642615
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534642614}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 56216203}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &534642616
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534642614}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Memihak pada Cici, idenya masuk akal dan dapat menghasilkan keuntungan
+    lebih
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &534642617
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 534642614}
+  m_CullTransparentMesh: 1
 --- !u!1 &536324703
 GameObject:
   m_ObjectHideFlags: 0
@@ -14570,6 +15169,83 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 629085065}
   m_CullTransparentMesh: 1
+--- !u!1001 &646248452
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1943761283}
+    m_Modifications:
+    - target: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_Name
+      value: Navigation Assets4
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.004
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.0013751942
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.005794844
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.0191
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 180
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9213879975723623846, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 173444928}
+  m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!4 &648240308 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 6be22a8cde91d574ca41007a9c04bb41, type: 3}
@@ -15719,6 +16395,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Berdiri: {fileID: 554053163}
+  HariEvent: 00000000
   value: 0
   quest: {fileID: 2864092457678429343}
 --- !u!1 &689225908
@@ -17465,6 +18142,134 @@ Transform:
   - {fileID: 1585595653}
   m_Father: {fileID: 1059647338}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &754811570
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 754811571}
+  - component: {fileID: 754811572}
+  m_Layer: 0
+  m_Name: Ambience
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &754811571
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754811570}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1114839721}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &754811572
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 754811570}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 0.75
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &761442848
 GameObject:
   m_ObjectHideFlags: 0
@@ -19308,6 +20113,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &848351813
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20049,6 +20866,8 @@ GameObject:
   - component: {fileID: 894212848}
   - component: {fileID: 894212849}
   - component: {fileID: 894212850}
+  - component: {fileID: 894212851}
+  - component: {fileID: 894212852}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -20070,6 +20889,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 287243549}
+  - {fileID: 1963150689}
+  - {fileID: 1292162614}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &894212844
@@ -20111,361 +20932,166 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 07bc7d6b4b501f5459685ed76ebaa3fd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quests:
-  - quest: {fileID: 11400000, guid: 358bf48885ddf7a41aeea5655a636136, type: 2}
-    Index: 0
-    proses:
-    - Action: Mini Game
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 3320934860996001309}
-            m_TargetAssemblyTypeName: 
-            m_MethodName: 
-            m_Mode: 0
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: 
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 961419904}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindah
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Quiz
-              m_BoolArgument: 0
-            m_CallState: 2
-  - quest: {fileID: 11400000, guid: 5d0c5c84762b7c74488752c70f774b1e, type: 2}
-    Index: 0
-    proses:
-    - Action: Kamar Tidur
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 157103309}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
-          - m_Target: {fileID: 1385188478}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 438926246}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: closeHelper
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 438926246}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-          - m_Target: {fileID: 1385188478}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-  - quest: {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
-    Index: 0
-    proses:
-    - Action: Item Buku
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1923541463}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 1923541463}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: closeHelper
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 1923541463}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - Action: Memilih TIM Anggran
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindahMiniGame
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Kasus1_1
-              m_BoolArgument: 1
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 961419904}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindah
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Kasus1_1
-              m_BoolArgument: 0
-            m_CallState: 2
-  - quest: {fileID: 11400000, guid: 9e26d0f82f5c59542a16313316b3f3ca, type: 2}
-    Index: 0
-    proses:
-    - Action: Mini Game
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls: []
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 961419904}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindah
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Quiz
-              m_BoolArgument: 0
-            m_CallState: 2
-  - quest: {fileID: 11400000, guid: 358bf48885ddf7a41aeea5655a636136, type: 2}
-    Index: 0
-    proses:
-    - Action: Item Buku
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 1923541463}
-            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-            m_MethodName: SetActive
-            m_Mode: 6
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 1
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 1923541463}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: closeHelper
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 1923541463}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-    - Action: Memilih TIM Anggran
-      ProcessEventStart:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindahMiniGame
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Kasus1_1
-              m_BoolArgument: 1
-            m_CallState: 2
-      ProcessEventHelper:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 21220967}
-            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-            m_MethodName: helperQuest
-            m_Mode: 2
-            m_Arguments:
-              m_ObjectArgument: {fileID: 961419904}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: 
-              m_BoolArgument: 0
-            m_CallState: 2
-      ProcessEnd:
-        m_PersistentCalls:
-          m_Calls:
-          - m_Target: {fileID: 894212847}
-            m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-            m_MethodName: pindah
-            m_Mode: 5
-            m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-              m_IntArgument: 0
-              m_FloatArgument: 0
-              m_StringArgument: Kasus1_1
-              m_BoolArgument: 0
-            m_CallState: 2
-  indexs:
-  - indexQuest: 000000000100000002000000
-  - indexQuest: 000000000100000002000000
-  - indexQuest: 000000000100000002000000
+  daily:
+  - quest:
+    - id: 0
+      quest: {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_M1
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_1
+                m_BoolArgument: 0
+              m_CallState: 2
+    - id: 1
+      quest: {fileID: 11400000, guid: 9e26d0f82f5c59542a16313316b3f3ca, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_M2
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_2
+                m_BoolArgument: 0
+              m_CallState: 2
+    - id: 2
+      quest: {fileID: 11400000, guid: 358bf48885ddf7a41aeea5655a636136, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_S3
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_3
+                m_BoolArgument: 0
+              m_CallState: 2
+    - id: 3
+      quest: {fileID: 11400000, guid: f7b120e138445814d9ae7fc7f9e5fac6, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_S1
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_4
+                m_BoolArgument: 0
+              m_CallState: 2
+    - id: 4
+      quest: {fileID: 11400000, guid: 11483a17ae555f64ca4ffd7531453be7, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_S2
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_5
+                m_BoolArgument: 0
+              m_CallState: 2
+    - id: 5
+      quest: {fileID: 11400000, guid: 81f05d66eaabc0f4e85a604cf64201ce, type: 2}
+      Index: 0
+      proses:
+      - Action: K1_S3
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus1_6
+                m_BoolArgument: 0
+              m_CallState: 2
   currentQuest:
+    id: 0
     quest: {fileID: 0}
     Index: 0
     proses: []
@@ -20485,9 +21111,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogText: {fileID: 0}
   uiDialog: {fileID: 1870862605}
+  narasiObj: {fileID: 299548814}
+  narasiText: {fileID: 1623065908}
   btnNextDialog: {fileID: 2030410314}
   jumlahDialog: 0
   animator: {fileID: 0}
+  testDialog:
+    data: []
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
 --- !u!114 &894212847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20593,6 +21228,237 @@ MonoBehaviour:
     itemSpawn:
     - item: {fileID: 689225908}
   clipsTidur: {fileID: 32900000, guid: 865f490cb283a85439b4d18907e5a9e0, type: 3}
+  day: 0
+--- !u!114 &894212851
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894212841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8e329f88039c542adf738eadfd1237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BacksoundSource: {fileID: 1963150690}
+  backsoundClip:
+  - {fileID: 8300000, guid: c1f64ae9e01ac6c49a3fdbd5813ebbf4, type: 3}
+  - {fileID: 8300000, guid: fd5d7e4141ebea148b717ea613569bbe, type: 3}
+  - {fileID: 8300000, guid: 99c883a64b8d9664dbf7dcfb5b5d871f, type: 3}
+  - {fileID: 8300000, guid: c912f27a8eed90a4d81affc3788a095a, type: 3}
+  - {fileID: 8300000, guid: 2f1e268398887e8448f4070176867ac6, type: 3}
+  - {fileID: 8300000, guid: 75ae53fae4089d946826c26e9edeede0, type: 3}
+  effectSource: {fileID: 1292162615}
+  InvorenmentClip:
+  - {fileID: 8300000, guid: 9bd7a107c56cc674eba9a61c98d555f4, type: 3}
+  - {fileID: 8300000, guid: 765c22d3013850b4582dd7338e95e784, type: 3}
+  - {fileID: 8300000, guid: d27e42aa38e198b458094345404fb733, type: 3}
+  - {fileID: 8300000, guid: a96df472013e2df4e9518d477d316f65, type: 3}
+  - {fileID: 8300000, guid: d0da0eff4068da04c812c5073dd49b4a, type: 3}
+  - {fileID: 8300000, guid: 79cf4c43420fefe4da5e4192fd3a3f2d, type: 3}
+  - {fileID: 8300000, guid: 99de24b58df71cc498c259b8c8112d28, type: 3}
+  - {fileID: 8300000, guid: 017f523c5250ff24e818fbb7b59381ca, type: 3}
+  - {fileID: 8300000, guid: 8c03cda5e461c28428e44983e5cd7c16, type: 3}
+  - {fileID: 8300000, guid: 6e4317eed4c8b2247a47a603840a47e5, type: 3}
+  - {fileID: 8300000, guid: 553bb52c1e9633e49bda49a801480c62, type: 3}
+  - {fileID: 8300000, guid: 8f03c4b69ce98cc429e0ccd05e0bb7a4, type: 3}
+  - {fileID: 8300000, guid: a59dfe7918b62064495e46b869995c74, type: 3}
+  - {fileID: 8300000, guid: 08fdbfc6f426e2543ac0fee35d6a7c34, type: 3}
+  - {fileID: 8300000, guid: 5d2356bb0ca4e6e4b836db8adfb7b434, type: 3}
+  - {fileID: 8300000, guid: 1ebba4f9f75ba8f46b5a28226dd3343d, type: 3}
+  - {fileID: 8300000, guid: 7b4e01a9a9b7e154a93328708e938f4f, type: 3}
+  - {fileID: 8300000, guid: 0e0963c1d7eb1964da236396155dca1b, type: 3}
+  - {fileID: 8300000, guid: 0db17b3a50e40584ab874e845efd9150, type: 3}
+  - {fileID: 8300000, guid: 7308ff49c2c780a488f7cb6068a97ef1, type: 3}
+  - {fileID: 8300000, guid: 2d066ba2e1b2edb4085230f5120ae067, type: 3}
+  - {fileID: 8300000, guid: 0f8ae8ed8eafdcc45bc43575d0468539, type: 3}
+  - {fileID: 8300000, guid: 555ed8eb49d96d64ead4f006eb085db2, type: 3}
+  - {fileID: 8300000, guid: f59cfef90adf66d4096cce82e6ab5b50, type: 3}
+  - {fileID: 8300000, guid: 0a170d0f85f9aba4588d60f1bc7a94c6, type: 3}
+  - {fileID: 8300000, guid: 43e6d6e83af5e404e8c3a15b6b6a0b82, type: 3}
+  - {fileID: 8300000, guid: d9dd10839468aee47982c67cafefccc4, type: 3}
+  - {fileID: 8300000, guid: 98e8dd6ecd768c24b86605e5174e0197, type: 3}
+  - {fileID: 8300000, guid: 72e9b743a91c44240bfc931f3410565c, type: 3}
+  - {fileID: 8300000, guid: 01c0f15248117374da99546cb202fd04, type: 3}
+  - {fileID: 8300000, guid: 52bfc5b2d3a66434b908fc3ec1cb442d, type: 3}
+  - {fileID: 8300000, guid: 9780d52187749e941b6b55bfe280e9ec, type: 3}
+  - {fileID: 8300000, guid: d3f3ce858931039428cb4de3c273457f, type: 3}
+  - {fileID: 8300000, guid: 9fe16816c41164f4db234e35b21b3019, type: 3}
+  - {fileID: 8300000, guid: c29c965e9d4ae274c94af35d7b82abb3, type: 3}
+  - {fileID: 8300000, guid: f54e0e309a3652e478fc0dd78aaf0057, type: 3}
+  - {fileID: 8300000, guid: e26cd911ccfee1f498e46619f13c26ee, type: 3}
+  - {fileID: 8300000, guid: e385ca6c08a9a484bb63a5272330d447, type: 3}
+  - {fileID: 8300000, guid: c2016d90b412c124da78328d1994420c, type: 3}
+  - {fileID: 8300000, guid: 72726933bc5f6c24691b6eeea5084f70, type: 3}
+  sfxUIClip:
+  - {fileID: 8300000, guid: 2cd7bef2372d7854aa571ca8e69e6285, type: 3}
+  - {fileID: 8300000, guid: 8b891d862f12ae94c8df5337147b58ff, type: 3}
+  - {fileID: 8300000, guid: 067bce330de2f8b4087220b194b0fef1, type: 3}
+  - {fileID: 8300000, guid: b7173d9e649c7b94e81ce3ab9a4a83f5, type: 3}
+  - {fileID: 8300000, guid: 5bdbc51572353624dbd6e4827268329d, type: 3}
+  - {fileID: 8300000, guid: 2a623c17fbab9fa4bb89edd52be9df2b, type: 3}
+  - {fileID: 8300000, guid: 4d667ec53b57c1b49a68741f3877baea, type: 3}
+  - {fileID: 8300000, guid: 60b1db06034fa014dba2e4c47363cb01, type: 3}
+  - {fileID: 8300000, guid: e4094ead01eceb546848774f4bd62037, type: 3}
+  - {fileID: 8300000, guid: 3916af57343c50b4a8545126ea183a77, type: 3}
+  - {fileID: 8300000, guid: fc8ef040a617c0a448b06801fda35cb1, type: 3}
+  - {fileID: 8300000, guid: 9f0c76538ebae584cbecf681a873fd5d, type: 3}
+  - {fileID: 8300000, guid: 2aa28b8fd2b8f8847b2ea83ee054e1bc, type: 3}
+  - {fileID: 8300000, guid: ce42712dc17d5fb4da65e5ed8f9afe2a, type: 3}
+  - {fileID: 8300000, guid: 1116d3229c7e6d6418e283f965201ad5, type: 3}
+  - {fileID: 8300000, guid: 0b6696df13ef874459bb43691276f38b, type: 3}
+  - {fileID: 8300000, guid: 803f24ebb57c0e74ca7e3fef8ae172b7, type: 3}
+--- !u!114 &894212852
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 894212841}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf39ca224d6918946aa0c027788862d4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogs:
+      data:
+      - narasi:
+          narasiText: 
+          VO: {fileID: 8300000, guid: ba7a8e03397638c41adc01152b3fa40a, type: 3}
+        GambarKarakter: {fileID: 21300000, guid: ff30f23f69d1e34429e2e20b6101ac02, type: 3}
+        Nama: asas
+        sentences: aaaaaa
+        Kiri: 0
+      - narasi:
+          narasiText: 
+          VO: {fileID: 8300000, guid: 41f2d573649b6be42bc115ed5b531e61, type: 3}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: "\u201CHalo semua, sebelumnya terimakasih banyak kalian sudah
+          bersedia meluangkan \r\nwaktu"
+        Kiri: 1
+      - narasi:
+          narasiText: 
+          VO: {fileID: 0}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: " untuk diskusi pertama kita hari ini mengenai program yang mungkin
+          sudah dijelaskan \r\noleh Angel secara singkat yah"
+        Kiri: 1
+      - narasi:
+          narasiText: 
+          VO: {fileID: 0}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: "\u201CYasudah kalau begitu kita langsung mulai saja diskusinya"
+        Kiri: 1
+      - narasi:
+          narasiText: 
+          VO: {fileID: 0}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: "Nanti yang bersedia untuk \r\nmenjadi notaris boleh minta tolong
+          untuk mencatat"
+        Kiri: 1
+      - narasi:
+          narasiText: 
+          VO: {fileID: 8300000, guid: 41f2d573649b6be42bc115ed5b531e61, type: 3}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: " keseluruhan hasil diskusi dan akan kita \r\nshare ke group sebagai
+          laporan harian"
+        Kiri: 1
+      - narasi:
+          narasiText: 
+          VO: {fileID: 0}
+        GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+        Nama: Elena
+        sentences: Kalau begitu aku saja. Aku kebetulan terbiasa di kesekretariatan
+        Kiri: 0
+      - narasi:
+          narasiText: 
+          VO: {fileID: 0}
+        GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+        Nama: Thomas
+        sentences: "Oh iya betul juga! kamu kan sekretaris Dema yah. Okay kalau begitu
+          Elena yang akan \r\nmencatat hasil diskusi hari ini. Jadi kita mulai saja
+          yah diskusi hari ini"
+        Kiri: 1
+      quest:
+        id: 0
+        quest: {fileID: 0}
+        Index: 0
+        proses:
+        - Action: Narasi
+          ProcessEventStart:
+            m_PersistentCalls:
+              m_Calls:
+              - m_Target: {fileID: 57703304}
+                m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+                m_MethodName: SetActive
+                m_Mode: 6
+                m_Arguments:
+                  m_ObjectArgument: {fileID: 0}
+                  m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                  m_IntArgument: 0
+                  m_FloatArgument: 0
+                  m_StringArgument: 
+                  m_BoolArgument: 1
+                m_CallState: 2
+              - m_Target: {fileID: 1819304462}
+                m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+                m_MethodName: SetActive
+                m_Mode: 6
+                m_Arguments:
+                  m_ObjectArgument: {fileID: 0}
+                  m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                  m_IntArgument: 0
+                  m_FloatArgument: 0
+                  m_StringArgument: 
+                  m_BoolArgument: 1
+                m_CallState: 2
+          ProcessEventHelper:
+            m_PersistentCalls:
+              m_Calls: []
+          ProcessEnd:
+            m_PersistentCalls:
+              m_Calls:
+              - m_Target: {fileID: 1819304462}
+                m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+                m_MethodName: SetActive
+                m_Mode: 6
+                m_Arguments:
+                  m_ObjectArgument: {fileID: 0}
+                  m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                  m_IntArgument: 0
+                  m_FloatArgument: 0
+                  m_StringArgument: 
+                  m_BoolArgument: 0
+                m_CallState: 2
+        - Action: hhhh
+          ProcessEventStart:
+            m_PersistentCalls:
+              m_Calls:
+              - m_Target: {fileID: 57703304}
+                m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+                m_MethodName: SetActive
+                m_Mode: 6
+                m_Arguments:
+                  m_ObjectArgument: {fileID: 0}
+                  m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                  m_IntArgument: 0
+                  m_FloatArgument: 0
+                  m_StringArgument: 
+                  m_BoolArgument: 0
+                m_CallState: 2
+          ProcessEventHelper:
+            m_PersistentCalls:
+              m_Calls: []
+          ProcessEnd:
+            m_PersistentCalls:
+              m_Calls: []
 --- !u!1 &898541272
 GameObject:
   m_ObjectHideFlags: 0
@@ -21247,6 +22113,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &929459725
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21897,6 +22775,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAbleObject: 0
+  paket: 0
   item:
   - {fileID: 11400000, guid: e1b356b65aeb0544b9b2e33a75956855, type: 2}
   actionQuest: Item
@@ -24491,7 +25370,7 @@ Transform:
   m_GameObject: {fileID: 1114839720}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 187.5, y: 0, z: 0}
+  m_LocalPosition: {x: 301.75574, y: -31.240788, z: 149.38857}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -24500,7 +25379,8 @@ Transform:
   - {fileID: 2599385967627502159}
   - {fileID: 1085797872809287802}
   - {fileID: 2535688728520174007}
-  m_Father: {fileID: 327114841}
+  - {fileID: 754811571}
+  m_Father: {fileID: 383945600}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1116589070
 GameObject:
@@ -25111,18 +25991,32 @@ MonoBehaviour:
         m_CallState: 2
   dialog:
     data:
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Akhirnya sampai di Asrama
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Yuk keiling asrama, penasaran aku hehehe
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: 
       Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
   distance: 0
   animasiObj: {fileID: 0}
 --- !u!114 &1147744899
@@ -25143,6 +26037,11 @@ MonoBehaviour:
       m_Calls: []
   dialog:
     data: []
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
   distance: 0
   animasiObj: {fileID: 0}
 --- !u!1 &1147764370
@@ -25456,7 +26355,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8114503825234664065}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1153755651
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -26255,6 +27166,139 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1215619955
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1215619956}
+  - component: {fileID: 1215619959}
+  - component: {fileID: 1215619958}
+  - component: {fileID: 1215619957}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1215619956
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215619955}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 2020800146}
+  m_Father: {fileID: 1819304463}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -87.5}
+  m_SizeDelta: {x: 600, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1215619957
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215619955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1215619958}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1819304464}
+        m_TargetAssemblyTypeName: Terbaru.QuizNarasi, Assembly-CSharp
+        m_MethodName: jawab
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1215619958
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215619955}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1215619959
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1215619955}
+  m_CullTransparentMesh: 1
 --- !u!1 &1217962107
 GameObject:
   m_ObjectHideFlags: 0
@@ -26329,6 +27373,140 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1217962107}
+  m_CullTransparentMesh: 1
+--- !u!1 &1218706352
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1218706353}
+  - component: {fileID: 1218706355}
+  - component: {fileID: 1218706354}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1218706353
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218706352}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1731159786}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1218706354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218706352}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Redakan debat, kita bisa diskusikan hal ini nanti
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1218706355
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1218706352}
   m_CullTransparentMesh: 1
 --- !u!1 &1231749033
 GameObject:
@@ -26715,6 +27893,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1254100152}
   m_CullTransparentMesh: 1
+--- !u!4 &1265316844 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+  m_PrefabInstance: {fileID: 506116616705012100}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1273101290
 GameObject:
   m_ObjectHideFlags: 0
@@ -27279,6 +28462,134 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1292162613
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1292162614}
+  - component: {fileID: 1292162615}
+  m_Layer: 0
+  m_Name: SFX
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1292162614
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292162613}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 894212843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1292162615
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1292162613}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
+  m_PlayOnAwake: 0
+  m_Volume: 0.75
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1293024374
 GameObject:
   m_ObjectHideFlags: 0
@@ -29007,6 +30318,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1397487028
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -29651,18 +30974,32 @@ MonoBehaviour:
         m_CallState: 2
   dialog:
     data:
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Hm, Sepertinya dinda tidak bisa membantu kita
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Kita perlu 2 orang lagi
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Ayo minta bantuan anggota lain
       Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
   distance: 0
   animasiObj: {fileID: 0}
 --- !u!1 &1426080964
@@ -29806,7 +31143,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 300, y: 75}
+  m_SizeDelta: {x: 500, y: 75}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1438062964
 MonoBehaviour:
@@ -29979,46 +31316,81 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     data:
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Hallooooo
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
       Nama: Elina
       sentences: Haloooo juga
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Boleh kenalan engga ?
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Kamu Cantik soalnya hehehe
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
       Nama: Elina
       sentences: Boleh dong, kamu juga ganteng
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Perkenalkan, namaku Thomas
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
       Nama: Elina
       sentences: Wiiiih keren nama nya
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
       Nama: Elina
       sentences: Namaku Elina, salam kenal
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Salam Kenal juga
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
       Nama: Elina
       sentences: Mantap
       Kiri: 0
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
   tempAction: Ngobrol
 --- !u!65 &1443636094
 BoxCollider:
@@ -30091,6 +31463,82 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1443636091}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1445474455
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1445474456}
+  - component: {fileID: 1445474458}
+  - component: {fileID: 1445474457}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1445474456
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445474455}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1623065910}
+  m_Father: {fileID: 299548817}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: 0, y: -81}
+  m_SizeDelta: {x: 500, y: 125}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1445474457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445474455}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1445474458
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1445474455}
+  m_CullTransparentMesh: 1
 --- !u!1 &1448394496
 GameObject:
   m_ObjectHideFlags: 0
@@ -30701,6 +32149,7 @@ GameObject:
   - component: {fileID: 1467882414}
   - component: {fileID: 1467882415}
   - component: {fileID: 1467882416}
+  - component: {fileID: 1467882417}
   m_Layer: 7
   m_Name: Kucing
   m_TagString: Untagged
@@ -30837,6 +32286,7 @@ MonoBehaviour:
   namaAction: Elus Kucing
   pointer: {fileID: 744118278}
   value: 0
+  suara: {fileID: 1467882417}
 --- !u!114 &1467882415
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -30897,6 +32347,102 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1.865196, y: 7.74, z: 2.064291}
   m_Center: {x: -0.6877838, y: 0.0000009536743, z: 0.03688566}
+--- !u!82 &1467882417
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1467882408}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: 1ebba4f9f75ba8f46b5a28226dd3343d, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 50
+  Pan2D: 0
+  rolloffMode: 1
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1474374581
 GameObject:
   m_ObjectHideFlags: 0
@@ -31697,8 +33243,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 20
-  m_fontSizeBase: 20
+  m_fontSize: 15
+  m_fontSizeBase: 15
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 5
@@ -34580,6 +36126,140 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 1
   m_ShadowAngle: 0
+--- !u!1 &1623065907
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1623065910}
+  - component: {fileID: 1623065909}
+  - component: {fileID: 1623065908}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1623065908
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623065907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: 
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 20
+  m_fontSizeBase: 20
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &1623065909
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623065907}
+  m_CullTransparentMesh: 1
+--- !u!224 &1623065910
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1623065907}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1445474456}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1624736048
 GameObject:
   m_ObjectHideFlags: 0
@@ -35740,7 +37420,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: -75}
-  m_SizeDelta: {x: 300, y: 75}
+  m_SizeDelta: {x: 500, y: 75}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1679667546
 MonoBehaviour:
@@ -36396,6 +38076,139 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1730574918}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &1731159785
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1731159786}
+  - component: {fileID: 1731159789}
+  - component: {fileID: 1731159788}
+  - component: {fileID: 1731159787}
+  m_Layer: 5
+  m_Name: Image (2)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1731159786
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731159785}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1218706353}
+  m_Father: {fileID: 1819304463}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 400, y: -132.5}
+  m_SizeDelta: {x: 600, y: 40}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1731159787
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731159785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Navigation:
+    m_Mode: 3
+    m_WrapAround: 0
+    m_SelectOnUp: {fileID: 0}
+    m_SelectOnDown: {fileID: 0}
+    m_SelectOnLeft: {fileID: 0}
+    m_SelectOnRight: {fileID: 0}
+  m_Transition: 1
+  m_Colors:
+    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
+    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
+    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
+    m_ColorMultiplier: 1
+    m_FadeDuration: 0.1
+  m_SpriteState:
+    m_HighlightedSprite: {fileID: 0}
+    m_PressedSprite: {fileID: 0}
+    m_SelectedSprite: {fileID: 0}
+    m_DisabledSprite: {fileID: 0}
+  m_AnimationTriggers:
+    m_NormalTrigger: Normal
+    m_HighlightedTrigger: Highlighted
+    m_PressedTrigger: Pressed
+    m_SelectedTrigger: Selected
+    m_DisabledTrigger: Disabled
+  m_Interactable: 1
+  m_TargetGraphic: {fileID: 1731159788}
+  m_OnClick:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1819304464}
+        m_TargetAssemblyTypeName: Terbaru.QuizNarasi, Assembly-CSharp
+        m_MethodName: jawab
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 2
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &1731159788
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731159785}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1731159789
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1731159785}
+  m_CullTransparentMesh: 1
 --- !u!1 &1731515871
 GameObject:
   m_ObjectHideFlags: 0
@@ -38261,6 +40074,238 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &1819304462
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1819304463}
+  - component: {fileID: 1819304467}
+  - component: {fileID: 1819304466}
+  - component: {fileID: 1819304465}
+  - component: {fileID: 1819304464}
+  m_Layer: 5
+  m_Name: H5_1
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1819304463
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819304462}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 56216203}
+  - {fileID: 1215619956}
+  - {fileID: 1731159786}
+  m_Father: {fileID: 57703305}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 175}
+  m_Pivot: {x: 0.5, y: 1}
+--- !u!114 &1819304464
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819304462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef54ccb3d3438c141ad3da8a85c4c612, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialogs:
+  - data:
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: ff30f23f69d1e34429e2e20b6101ac02, type: 3}
+      Nama: Anna
+      sentences: "Tapi ada benarnya juga sih ide Cici, selain bisa membantu warga
+        desa di sana, ini bisa \r\nmenjadi impact jangka panjang juga untuk kita"
+      Kiri: 1
+    - narasi:
+        narasiText: "Dinda kecewa dengan ucapan Anna, dia merasa anggota tim ini
+          tidak sejalan \r\ndengan prinsipnya. Dinda memutuskan redraw dari tim"
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 0}
+      Nama: Anna
+      sentences: 
+      Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
+  - data:
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: ff30f23f69d1e34429e2e20b6101ac02, type: 3}
+      Nama: Anna
+      sentences: "Tapi Ci, benar kata dinda, kita seharusnya jangan membicarakan
+        ini dulu untuk \r\nsekarang. Itu kan bukan tujuan utama kita"
+      Kiri: 1
+    - narasi:
+        narasiText: "Cici tidak setuju dan kecewa dengan pendapat Anna. Dia merasa
+          angggotanya \r\nakan membuang-buang kesempatan. Cici memutuskan dia batal
+          bergabung dengan program \r\nini"
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 0}
+      Nama: Anna
+      sentences: 
+      Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
+  - data:
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+      Nama: Cici
+      sentences: "Hey sudah sudah, kita paham maksud kalian berdua, tidak ada yang
+        salah. Tapi kita \r"
+      Kiri: 1
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+      Nama: Cici
+      sentences: bisa bicarakn ini nanti ya, untuk sekarang kita lanjutkan dulu diskusinya
+        yah
+      Kiri: 0
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+      Nama: Thomas
+      sentences: "\u201CBetul, Jadi untuk saat ini, kita simpan dulu untuk hal itu
+        dan diskusi akan kita batasi \r\nsampai sini dulu ya."
+      Kiri: 1
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+      Nama: Thomas
+      sentences: "Berkaitan dengan perencanaan desain produk anggaran dan lain-lain
+        akan \r\nkita bahas di pertemuan selanjutnya"
+      Kiri: 1
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+      Nama: Thomas
+      sentences: "Sampai sini apakah ada yang ingin ditanyakan atau ada \r\ntambahan?"
+      Kiri: 1
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 20cac1b1df68a1d4fa7d20ee8c963b5e, type: 3}
+      Nama: Shinta
+      sentences: Untuk pertemuan selanjutnya kapan yah?
+      Kiri: 0
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+      Nama: Thomas
+      sentences: Setiap pertemuan dan informasi lainnya akan kita share di group
+        yah
+      Kiri: 1
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+      Nama: Thomas
+      sentences: "\u201CSip kalau begitu, aku izin menutup diskusi hari ini. Terimakasih
+        atas perhatiannya \r\nteman-teman"
+      Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
+--- !u!114 &1819304465
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819304462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 59f8146938fff824cb5fd77236b75775, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Padding:
+    m_Left: 0
+    m_Right: 0
+    m_Top: 0
+    m_Bottom: 0
+  m_ChildAlignment: 4
+  m_Spacing: 5
+  m_ChildForceExpandWidth: 0
+  m_ChildForceExpandHeight: 0
+  m_ChildControlWidth: 0
+  m_ChildControlHeight: 0
+  m_ChildScaleWidth: 0
+  m_ChildScaleHeight: 0
+  m_ReverseArrangement: 0
+--- !u!114 &1819304466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819304462}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1819304467
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1819304462}
+  m_CullTransparentMesh: 1
 --- !u!1 &1824865876
 GameObject:
   m_ObjectHideFlags: 0
@@ -38775,7 +40820,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1862653488
 RectTransform:
   m_ObjectHideFlags: 0
@@ -38979,7 +41024,6 @@ GameObject:
   - component: {fileID: 1870862602}
   - component: {fileID: 1870862604}
   - component: {fileID: 1870862603}
-  - component: {fileID: 1870862606}
   - component: {fileID: 1870862605}
   m_Layer: 5
   m_Name: Dialog Manager
@@ -39000,15 +41044,15 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 23648513}
-  - {fileID: 2030410311}
-  - {fileID: 2115986980}
+  - {fileID: 299548817}
+  - {fileID: 57703305}
+  - {fileID: 180747790}
   m_Father: {fileID: 1881985659}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 0, y: 75}
-  m_SizeDelta: {x: 0, y: 400}
+  m_AnchoredPosition: {x: 0, y: 50}
+  m_SizeDelta: {x: 0, y: 350}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &1870862603
 MonoBehaviour:
@@ -39023,7 +41067,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.02745098}
+  m_Color: {r: 0, g: 0, b: 0, a: 0.3882353}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -39072,34 +41116,9 @@ MonoBehaviour:
     GambarCharacter:
     - {fileID: 1582021213}
     - {fileID: 706309313}
+  panelNarasi: {fileID: 299548814}
   UnSelect: {r: 0.5647059, g: 0.5647059, b: 0.5647059, a: 1}
   testSpeed: 0.25
---- !u!114 &1870862606
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1870862601}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 30649d3a9faa99c48a7b1166b86bf2a0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Padding:
-    m_Left: 0
-    m_Right: 0
-    m_Top: 0
-    m_Bottom: 0
-  m_ChildAlignment: 7
-  m_Spacing: 0
-  m_ChildForceExpandWidth: 0
-  m_ChildForceExpandHeight: 0
-  m_ChildControlWidth: 0
-  m_ChildControlHeight: 0
-  m_ChildScaleWidth: 0
-  m_ChildScaleHeight: 0
-  m_ReverseArrangement: 0
 --- !u!1 &1871270350
 GameObject:
   m_ObjectHideFlags: 0
@@ -40146,6 +42165,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAbleObject: 0
+  paket: 0
   item:
   - {fileID: 11400000, guid: e1b356b65aeb0544b9b2e33a75956855, type: 2}
   actionQuest: Item
@@ -40497,6 +42517,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   clickAbleObject: 0
+  paket: 1
   item: []
   actionQuest: Ambil
 --- !u!23 &1943761281
@@ -40561,7 +42582,8 @@ Transform:
   m_LocalPosition: {x: -14.82, y: -3.12, z: 9.46}
   m_LocalScale: {x: 116.845215, y: 112.66311, z: 116.845215}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 173444924}
   m_Father: {fileID: 1155742866}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1947909738 stripped
@@ -40881,6 +42903,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 10
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1957246112
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -41101,6 +43135,134 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 13.64, y: 10.8, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1 &1963150688
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1963150689}
+  - component: {fileID: 1963150690}
+  m_Layer: 0
+  m_Name: Backsound
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1963150689
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963150688}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 894212843}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!82 &1963150690
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1963150688}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 8300000, guid: ebd7307d550b92947a00c6ce666c5486, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.75
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &1963415346
 GameObject:
   m_ObjectHideFlags: 0
@@ -41893,6 +44055,141 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2018788639}
   m_CullTransparentMesh: 1
+--- !u!1 &2020800145
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2020800146}
+  - component: {fileID: 2020800148}
+  - component: {fileID: 2020800147}
+  m_Layer: 5
+  m_Name: Text (TMP)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &2020800146
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020800145}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1215619956}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &2020800147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020800145}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_text: Memihak pada Dinda, kita tidak seharusnya memikirkan keuntungan dalam posisi
+    ini
+  m_isRightToLeft: 0
+  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontSharedMaterials: []
+  m_fontMaterial: {fileID: 0}
+  m_fontMaterials: []
+  m_fontColor32:
+    serializedVersion: 2
+    rgba: 4278190080
+  m_fontColor: {r: 0, g: 0, b: 0, a: 1}
+  m_enableVertexGradient: 0
+  m_colorMode: 3
+  m_fontColorGradient:
+    topLeft: {r: 1, g: 1, b: 1, a: 1}
+    topRight: {r: 1, g: 1, b: 1, a: 1}
+    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
+    bottomRight: {r: 1, g: 1, b: 1, a: 1}
+  m_fontColorGradientPreset: {fileID: 0}
+  m_spriteAsset: {fileID: 0}
+  m_tintAllSprites: 0
+  m_StyleSheet: {fileID: 0}
+  m_TextStyleHashCode: -1183493901
+  m_overrideHtmlColors: 0
+  m_faceColor:
+    serializedVersion: 2
+    rgba: 4294967295
+  m_fontSize: 15
+  m_fontSizeBase: 15
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+  m_fontSizeMin: 18
+  m_fontSizeMax: 72
+  m_fontStyle: 0
+  m_HorizontalAlignment: 2
+  m_VerticalAlignment: 512
+  m_textAlignment: 65535
+  m_characterSpacing: 0
+  m_wordSpacing: 0
+  m_lineSpacing: 0
+  m_lineSpacingMax: 0
+  m_paragraphSpacing: 0
+  m_charWidthMaxAdj: 0
+  m_enableWordWrapping: 1
+  m_wordWrappingRatios: 0.4
+  m_overflowMode: 0
+  m_linkedTextComponent: {fileID: 0}
+  parentLinkedComponent: {fileID: 0}
+  m_enableKerning: 1
+  m_enableExtraPadding: 0
+  checkPaddingRequired: 0
+  m_isRichText: 1
+  m_parseCtrlCharacters: 1
+  m_isOrthographic: 1
+  m_isCullingEnabled: 0
+  m_horizontalMapping: 0
+  m_verticalMapping: 0
+  m_uvLineOffset: 0
+  m_geometrySortingOrder: 0
+  m_IsTextObjectScaleStatic: 0
+  m_VertexBufferAutoSizeReduction: 0
+  m_useMaxVisibleDescender: 1
+  m_pageToDisplay: 1
+  m_margin: {x: 0, y: 0, z: 0, w: 0}
+  m_isUsingLegacyAnimationComponent: 0
+  m_isVolumetricText: 0
+  m_hasFontAssetChanged: 0
+  m_baseMaterial: {fileID: 0}
+  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
+--- !u!222 &2020800148
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2020800145}
+  m_CullTransparentMesh: 1
 --- !u!1 &2024021339
 GameObject:
   m_ObjectHideFlags: 0
@@ -42212,19 +44509,19 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2030410310}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1438062963}
   - {fileID: 1679667545}
-  m_Father: {fileID: 1870862602}
+  m_Father: {fileID: 180747790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 400, y: -400}
-  m_SizeDelta: {x: 300, y: 150}
+  m_AnchoredPosition: {x: 400, y: -175}
+  m_SizeDelta: {x: 450, y: 150}
   m_Pivot: {x: 0.5, y: 0}
 --- !u!114 &2030410312
 MonoBehaviour:
@@ -42239,7 +44536,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.0627451}
+  m_Color: {r: 1, g: 1, b: 1, a: 0}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -44235,7 +46532,7 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2115986979}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -44243,11 +46540,11 @@ RectTransform:
   - {fileID: 694357783}
   - {fileID: 706309312}
   - {fileID: 1610841336}
-  m_Father: {fileID: 1870862602}
+  m_Father: {fileID: 180747790}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 550, y: -400}
+  m_AnchoredPosition: {x: 625, y: -175}
   m_SizeDelta: {x: 175, y: 175}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2115986981
@@ -45187,7 +47484,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1968375305695049
 GameObject:
   m_ObjectHideFlags: 0
@@ -47364,9 +49661,9 @@ RectTransform:
   - {fileID: 224020470437193801}
   m_Father: {fileID: 224290437945182463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 90, y: 0}
   m_SizeDelta: {x: 350, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224290437945182463
@@ -47389,7 +49686,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: -135}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224364559251965875
 RectTransform:
@@ -47407,8 +49704,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 162.5, y: -56.853935}
-  m_SizeDelta: {x: 205, y: 0}
+  m_AnchoredPosition: {x: 162.5, y: -57.5}
+  m_SizeDelta: {x: 205, y: 35}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224387844869785177
 RectTransform:
@@ -47425,9 +49722,9 @@ RectTransform:
   - {fileID: 224753466994928909}
   m_Father: {fileID: 224290437945182463}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 44.179993, y: -115}
   m_SizeDelta: {x: 441.64, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224568064745603351
@@ -48461,13 +50758,13 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
+      - m_Target: {fileID: 8087024657332839205}
+        m_TargetAssemblyTypeName: Terbaru.shopManager, Assembly-CSharp
+        m_MethodName: closeShop
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -49290,6 +51587,71 @@ RectTransform:
   m_AnchoredPosition: {x: 55, y: 0}
   m_SizeDelta: {x: 75, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1001 &506116616705012100
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 3415460050475534625}
+    m_Modifications:
+    - target: {fileID: 2404411353111112998, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_WrapMode
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630273941521938466, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_Name
+      value: KGS_1_IDLE_AKTIVITAS1_0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2630273941521938466, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -2.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.8400002
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.22439384
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9035076346156337128, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 0c3e5e9086157534c9a1f2e2a534eff0, type: 3}
 --- !u!212 &517949350654267780
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -61017,6 +63379,7 @@ Transform:
   m_Children:
   - {fileID: 8562120759960198239}
   - {fileID: 7031253057353979881}
+  - {fileID: 1265316844}
   m_Father: {fileID: 7110028976720677180}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &3416821483367911854
@@ -69118,8 +71481,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 392.395, y: -192.81235}
-  m_SizeDelta: {x: 525.81, y: 0}
+  m_AnchoredPosition: {x: 392.395, y: -197.7}
+  m_SizeDelta: {x: 525.81, y: 230}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607115742343521038
 RectTransform:
@@ -69136,9 +71499,9 @@ RectTransform:
   - {fileID: 5607871691398498394}
   m_Father: {fileID: 5607407553978740136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 434.47998, y: -395.4}
   m_SizeDelta: {x: 441.64, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607351594325069306
@@ -69176,9 +71539,9 @@ RectTransform:
   - {fileID: 5608869326125845790}
   m_Father: {fileID: 5607407553978740136}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 419.34998, y: 0}
   m_SizeDelta: {x: 471.9, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607407553978740136
@@ -69201,7 +71564,7 @@ RectTransform:
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: -108.70001, y: 0}
+  m_SizeDelta: {x: -108.70001, y: -54.600037}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &5607871691398498394
 RectTransform:
@@ -70909,22 +73272,39 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     data:
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Selamat pagi pak dosen
       Kiri: 1
-    - GambarKarakter: {fileID: 21300000, guid: 2e5be31f6e9dba94aae117f00ff8e1be, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 2e5be31f6e9dba94aae117f00ff8e1be, type: 3}
       Nama: Dosen
       sentences: Selamat pagi juga thomas
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: 2e5be31f6e9dba94aae117f00ff8e1be, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 2e5be31f6e9dba94aae117f00ff8e1be, type: 3}
       Nama: Dosen
       sentences: Kamu sudah siap untuk quiz ?
       Kiri: 0
-    - GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    - narasi:
+        narasiText: 
+        VO: {fileID: 0}
+      GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
       Nama: Thomas
       sentences: Iya pak, saya siap
       Kiri: 1
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
   extendAction:
     m_PersistentCalls:
       m_Calls:
@@ -72875,7 +75255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &6372022856290933404
 GameObject:
   m_ObjectHideFlags: 0
@@ -73397,6 +75777,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -74376,6 +76768,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -77116,6 +79520,30 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 8087024657332839205}
+        m_TargetAssemblyTypeName: Terbaru.shopManager, Assembly-CSharp
+        m_MethodName: closeShop
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -80308,7 +82736,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7971205510608403672}
   m_HandleRect: {fileID: 6928776770699035145}
   m_Direction: 0
-  m_Value: 1
+  m_Value: 0
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -80583,6 +83011,7 @@ MonoBehaviour:
   parent: {fileID: 3125986654729752201}
   panelKonfirmasi: {fileID: 5383594788849158853}
   textSaldo: {fileID: 8316931043967095733}
+  time: 0
   Paket: {fileID: 1943761278}
 --- !u!114 &8087024657332839206
 MonoBehaviour:
@@ -82858,6 +85287,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 894212851}
+        m_TargetAssemblyTypeName: SoundManager, Assembly-CSharp
+        m_MethodName: uiSFX
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine

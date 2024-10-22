@@ -17,6 +17,8 @@ namespace Terbaru
 
         public Transform engselPintu;
 
+        
+
          
         Vector3 Rotate;
 
@@ -49,9 +51,7 @@ namespace Terbaru
             }
 
             Rotate = new Vector3(0f, rotateBuka, 0f);
-            //Rotate = isClosed ? new Vector3(0f, 0f, 0f) : new Vector3(0f, rotateBuka, 0f);
-
-            //engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => Player.GetComponent<Controller>().currentState(state.Default));
+            SoundManager.instance.sfx(29);
             engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => extendAction?.Invoke());
             
         }
@@ -59,8 +59,10 @@ namespace Terbaru
         public void tutupPintu(){
             
             engselPintu.DOLocalRotate(Vector3.zero, 1.5f)
-            .OnComplete( () =>
-                FindObjectOfType<Controller>().currentState(state.Default))
+            .OnComplete( () => {
+                FindObjectOfType<Controller>().currentState(state.Default);
+                SoundManager.instance.sfx(30);
+                })
                 ;
 
             Trigger.GetComponent<Collider>().enabled = true;

@@ -28,6 +28,7 @@ namespace  Terbaru
         
         public void animasiUI_Ipad()
         {
+            SoundManager.instance.uiSFX(14);
             profil = GameManager.instance.profil;
             ipadUI.gameObject.SetActive(true);
             RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();

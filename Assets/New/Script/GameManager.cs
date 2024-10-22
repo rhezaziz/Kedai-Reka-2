@@ -53,6 +53,8 @@ namespace Terbaru{
         void OnEnable(){
             var player = GameObject.Find("Player").transform.GetChild(0);
 
+            FindObjectOfType<SoundManager>().playSoundAsrama();
+
             player.localPosition = profil.position;
 
             spawnAllNPC();

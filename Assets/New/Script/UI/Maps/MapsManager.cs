@@ -9,6 +9,7 @@ namespace Terbaru{
 
     public class MapsManager : MonoBehaviour
     {
+        public AudioSource ambienceSound;
         #region Komponent Value
         public Material shadow;
         [Header("UI")]
@@ -131,6 +132,8 @@ namespace Terbaru{
             StartCoroutine(Cutscene(Vector3.zero, false)));
             //pintu.tutupPintu();
         }
+
+        Maps tempMaps;
         public void keliling(Maps temp){
             kembali.onClick.RemoveAllListeners();
             //Debug.Log(temp.mapLokasi.name);
@@ -145,7 +148,7 @@ namespace Terbaru{
             float posY = index * -15f;
             float posX = indexMaps * 25f;
             lokasi = temp.mapLokasi.gameObject;
-            
+            tempMaps = temp;
 
             panelMaps.gameObject.SetActive(false);
             panelUtama.gameObject.SetActive(false);
@@ -153,8 +156,7 @@ namespace Terbaru{
 
             //lokasi.gameObject.SetActive(true);
             panelNamaMaps.transform.GetChild(0).GetChild(0).GetChild(0).GetComponentInChildren<TMP_Text>().text = temp.nama;
-
-
+            
             StartCoroutine(Cutscene(new Vector3(posX, posY, -9.5f), true));
             kembali.onClick.AddListener(() => Kembali());
 
@@ -176,6 +178,14 @@ namespace Terbaru{
 
             anim.SetTrigger("Mulai"); // Menutup 100%
             yield return new WaitForSeconds(2f);
+
+            if(value){
+                FindObjectOfType<SoundManager>().stopAudio();
+                
+            }else if(!value){
+                ambienceSound.Stop();
+                FindObjectOfType<SoundManager>().playSoundAsrama();
+            }
             lokasi.SetActive(value);
             CameraUtama.transform.DOLocalMoveZ(-10f, 1f);
             CameraUtama.gameObject.SetActive(!value);
@@ -190,6 +200,13 @@ namespace Terbaru{
 
             anim.SetTrigger("Mulai"); // Membuka 100%
             //camera.transform.DOLocalMoveZ(-10f, 1f);
+
+            if(tempMaps.valueMaps.ambience != null){
+                    Debug.Log("Play Ambience");
+                    ambienceSound.Stop();
+                    ambienceSound.clip = tempMaps.valueMaps.ambience;
+                    ambienceSound.Play();
+            }
             yield return new WaitForSeconds(2f);
 
             //panelUtama.SetActive(true);
@@ -237,6 +254,8 @@ namespace Terbaru{
 
         public string namaTempat;
         public id_Maps id;
+
+        public AudioClip ambience;
 
         public bool active;
         public bool warning;

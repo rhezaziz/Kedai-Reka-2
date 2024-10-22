@@ -17,7 +17,8 @@ namespace MiniGame4_4{
                 prefabPertanyaan.GetComponent<DragObject>().spawn(soals[0]);
                 soals.RemoveAt(0);
             }else{
-                Debug.Log("Selesai");
+                if(testGame)
+                    balikMainMenu();
             }
         }
 
@@ -28,9 +29,16 @@ namespace MiniGame4_4{
             nextPertanyaan();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
             
         }
     }

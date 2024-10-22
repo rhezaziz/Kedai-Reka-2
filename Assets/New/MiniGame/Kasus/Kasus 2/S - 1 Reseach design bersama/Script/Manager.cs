@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.Globalization;
 using DG.Tweening;
+using Terbaru;
 
 
 namespace MiniGame2_3{
@@ -71,11 +72,12 @@ namespace MiniGame2_3{
             checkUang();
         }
 
-
+        int index;
         void checkUang(){
             foreach(var item in items){
                 if(item.hargaBarang > jumlahUang){
                     if(!item.done){
+                        index += 1;
                         GameObject outOfMoney = item.PanelItem.transform.GetChild(0).gameObject;
                         outOfMoney.SetActive(true);
                         item.PanelItem.interactable = false;
@@ -87,7 +89,25 @@ namespace MiniGame2_3{
                     
                     //item.panel. = false;
                 }
+
+                if(index >= items.Count){
+                    if(testGame)
+                        balikMainMenu();
+                }
             }
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
     }
 

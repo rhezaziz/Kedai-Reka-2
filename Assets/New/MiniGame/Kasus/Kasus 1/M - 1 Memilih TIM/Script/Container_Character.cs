@@ -36,6 +36,7 @@ namespace MiniGame1_1{
                 Sifat.text = sifatText(value.sifat[0]);
 
             }
+            character.sprite = value.ImageInSelection;
             Nama.text = value.Nama;
             //this.value = value.sesuai;
             click.onClick.AddListener(() => pilihCharacter(value));

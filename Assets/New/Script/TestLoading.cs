@@ -49,6 +49,8 @@ namespace  Terbaru
                 yield return null;
             }
 
+
+
             // Scene currentScene = SceneManager.GetActiveScene();
 
             // GameObject[] rootObject = currentScene.GetRootGameObjects();
@@ -57,7 +59,7 @@ namespace  Terbaru
             //     obj.SetActive(false);
             // }
 
-            // Destroy(this.gameObject);
+            Destroy(this.gameObject);
 
         }
         public string sceneActive;

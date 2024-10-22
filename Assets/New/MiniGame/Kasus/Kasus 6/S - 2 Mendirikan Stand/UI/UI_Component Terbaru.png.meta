@@ -1,0 +1,888 @@
+fileFormatVersion: 2
+guid: d70306296fb0c6b42820b4c15081e81c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: UI_Component Terbaru_0
+      rect:
+        serializedVersion: 2
+        x: 381
+        y: 1215
+        width: 169
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cd69a9442103b14aafa8a691d4e0952
+      internalID: 827404279
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_1
+      rect:
+        serializedVersion: 2
+        x: 631
+        y: 1216
+        width: 170
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27d54ff5507ef9f4dabdc06ad0998a99
+      internalID: 630378715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_2
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 1218
+        width: 169
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4d286e956083d641b94bd263365ca69
+      internalID: 494531322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_3
+      rect:
+        serializedVersion: 2
+        x: 1063
+        y: 1216
+        width: 169
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03702b938d843304bb2221517be8edc3
+      internalID: -1147814752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_4
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1216
+        width: 169
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e57c2781c9c00e14d8a05992a31c83a5
+      internalID: 1174117417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_5
+      rect:
+        serializedVersion: 2
+        x: 298
+        y: 886
+        width: 1310
+        height: 206
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aed38b4edded6f944a7ca0bc4402895b
+      internalID: 1105853679
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_6
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 1035
+        width: 135
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76753ef2399df4944a38d3107d776814
+      internalID: 1903066987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_7
+      rect:
+        serializedVersion: 2
+        x: 1964
+        y: 1040
+        width: 161
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ac42cf48423ef14ebde40c4327819ca
+      internalID: 1176420364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_8
+      rect:
+        serializedVersion: 2
+        x: 2226
+        y: 1040
+        width: 110
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcb2c1999b05d0c44ab4e0cf4b469dc7
+      internalID: -1862828250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_9
+      rect:
+        serializedVersion: 2
+        x: 2385
+        y: 1053
+        width: 169
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a7f3dd13d109ea449a658ede77a3a84
+      internalID: -1192834063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_10
+      rect:
+        serializedVersion: 2
+        x: 2629
+        y: 1040
+        width: 229
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 588ee0afb249fbf439343dc57732299a
+      internalID: 1401089482
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_11
+      rect:
+        serializedVersion: 2
+        x: 1405
+        y: 678
+        width: 124
+        height: 157
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33240e32cf9475e439eb8ecb896a9334
+      internalID: 2113336916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_12
+      rect:
+        serializedVersion: 2
+        x: 1661
+        y: 733
+        width: 1266
+        height: 163
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab27c57a94c82be4f9c3d859fe2de651
+      internalID: -1843863921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_13
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 559
+        width: 163
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d4c3498951605e4e95f25015f92a6e1
+      internalID: 618561265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_14
+      rect:
+        serializedVersion: 2
+        x: 475
+        y: 560
+        width: 364
+        height: 136
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d49fb7793fbfa44faefc89b2ebaeeb9
+      internalID: -287271261
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_15
+      rect:
+        serializedVersion: 2
+        x: 976
+        y: 644
+        width: 4
+        height: 22
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81e4f74eea4bdb04e877625acc4786a1
+      internalID: 1845776412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_16
+      rect:
+        serializedVersion: 2
+        x: 999
+        y: 559
+        width: 330
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd8830125622caa43aae800337463a27
+      internalID: 4007434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_17
+      rect:
+        serializedVersion: 2
+        x: 1564
+        y: 511
+        width: 181
+        height: 159
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 605172ac73f63d540886406654ce1855
+      internalID: -2058239708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_18
+      rect:
+        serializedVersion: 2
+        x: 356
+        y: 356
+        width: 170
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59bbd73812714fa419601ff4024eb651
+      internalID: -1430188595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_19
+      rect:
+        serializedVersion: 2
+        x: 607
+        y: 359
+        width: 169
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 79d3f2f314e9fdb4d8607dbd93997cf3
+      internalID: 1860782234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_20
+      rect:
+        serializedVersion: 2
+        x: 839
+        y: 361
+        width: 169
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fce6e2b9c290994682dedda3b776dd0
+      internalID: 1063688410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_21
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 359
+        width: 170
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e740f71d7db6ba849975f2b958eccec0
+      internalID: 183678993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_22
+      rect:
+        serializedVersion: 2
+        x: 1299
+        y: 359
+        width: 170
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d59965555e0afcc4588bff226ca8900b
+      internalID: -1378031917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_23
+      rect:
+        serializedVersion: 2
+        x: 1681
+        y: 301
+        width: 135
+        height: 151
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acd82f7dc75da764cbc47ffb0fb57a77
+      internalID: 337474082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_24
+      rect:
+        serializedVersion: 2
+        x: 1926
+        y: 306
+        width: 161
+        height: 142
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 319df768e1475894b8d7da8af4d91381
+      internalID: -1717405815
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_25
+      rect:
+        serializedVersion: 2
+        x: 2188
+        y: 304
+        width: 110
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d38ad06a662a7b4b9a67b61e4e07c06
+      internalID: 12349735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_26
+      rect:
+        serializedVersion: 2
+        x: 2348
+        y: 314
+        width: 169
+        height: 123
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 939ecaf653c73e8418eb55a6c847450e
+      internalID: -1404293295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_27
+      rect:
+        serializedVersion: 2
+        x: 2591
+        y: 304
+        width: 229
+        height: 138
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c01606bc339dd43409b71ce676940549
+      internalID: -602239056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_28
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 151
+        width: 184
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67e5ed06119688841a7d3db7e48d7130
+      internalID: 1243750228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_29
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 161
+        width: 343
+        height: 134
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92ba83352cd14ab4c83f130852602b8f
+      internalID: 1028912030
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_30
+      rect:
+        serializedVersion: 2
+        x: 789
+        y: 156
+        width: 183
+        height: 160
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 018805662cace6d49b688a6d7420f498
+      internalID: -1118233104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_31
+      rect:
+        serializedVersion: 2
+        x: 992
+        y: 164
+        width: 329
+        height: 130
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 54f8cf77e1b38344dbc97634bbd8a398
+      internalID: -1642017939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_32
+      rect:
+        serializedVersion: 2
+        x: 1429
+        y: 152
+        width: 115
+        height: 156
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d3bff9382d584b47a95c106555fe142
+      internalID: -1146664674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: UI_Component Terbaru_33
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 532
+        width: 548
+        height: 77
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0400f68a0693d8d48bf0847a3f9be57c
+      internalID: -2087765813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      UI_Component Terbaru_0: 827404279
+      UI_Component Terbaru_1: 630378715
+      UI_Component Terbaru_10: 1401089482
+      UI_Component Terbaru_11: 2113336916
+      UI_Component Terbaru_12: -1843863921
+      UI_Component Terbaru_13: 618561265
+      UI_Component Terbaru_14: -287271261
+      UI_Component Terbaru_15: 1845776412
+      UI_Component Terbaru_16: 4007434
+      UI_Component Terbaru_17: -2058239708
+      UI_Component Terbaru_18: -1430188595
+      UI_Component Terbaru_19: 1860782234
+      UI_Component Terbaru_2: 494531322
+      UI_Component Terbaru_20: 1063688410
+      UI_Component Terbaru_21: 183678993
+      UI_Component Terbaru_22: -1378031917
+      UI_Component Terbaru_23: 337474082
+      UI_Component Terbaru_24: -1717405815
+      UI_Component Terbaru_25: 12349735
+      UI_Component Terbaru_26: -1404293295
+      UI_Component Terbaru_27: -602239056
+      UI_Component Terbaru_28: 1243750228
+      UI_Component Terbaru_29: 1028912030
+      UI_Component Terbaru_3: -1147814752
+      UI_Component Terbaru_30: -1118233104
+      UI_Component Terbaru_31: -1642017939
+      UI_Component Terbaru_32: -1146664674
+      UI_Component Terbaru_33: -2087765813
+      UI_Component Terbaru_4: 1174117417
+      UI_Component Terbaru_5: 1105853679
+      UI_Component Terbaru_6: 1903066987
+      UI_Component Terbaru_7: 1176420364
+      UI_Component Terbaru_8: -1862828250
+      UI_Component Terbaru_9: -1192834063
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

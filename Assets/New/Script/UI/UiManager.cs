@@ -117,7 +117,7 @@ namespace Terbaru
             string _action = isActive ? "Mulai" : "Reverse";
 
             var anim = ChinematicPanel.GetComponent<Animator>();
-            Debug.Log("chinematic");
+            //Debug.Log("chinematic");
             anim.SetTrigger(_action);
         }
 

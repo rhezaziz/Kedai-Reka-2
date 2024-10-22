@@ -4,15 +4,23 @@ using DG.Tweening;
 using UnityEngine;
 
 
-namespace  Terbaru
+namespace  MiniGame5_1
 { 
     public class Tap_Hold : MonoBehaviour
     {
         public UnityEngine.UI.Image value;
-        public Transform foto;
+        public UnityEngine.UI.Image foto;
         public Transform dialog1, dialog2;
         private float timer;
         bool finished = false;
+
+
+
+        [Header("UI Reting")]
+        public Transform CanvasrRating;
+        public UnityEngine.UI.Image rating;
+        public float ratingValue;
+         
 
         private Tweener tweener;
 
@@ -20,8 +28,11 @@ namespace  Terbaru
         Animator anim;
 
         void Start(){
-            timer = Random.Range(10f, 20f);
+            timer = Random.Range(5f, 10f);
             anim = GetComponent<Animator>();
+            ratingValue = Random.Range(.1f, 1f);
+
+            timer = timer * ratingValue;
             //value = transform.Find("Value").gameObject.GetComponent<UnityEngine.UI.Image>();
             
 
@@ -31,7 +42,7 @@ namespace  Terbaru
                 return;
             temp = DOTween.Sequence();
             anim.SetBool("Rotate", true);
-            temp.Append(value.DOFillAmount(1f, timer).OnComplete(() => selesai()));
+            temp.Append(value.DOFillAmount(ratingValue, timer).OnComplete(() => selesai()));
             temp.Insert(timer / 8f, dialog1.DOScale(Vector3.one / 2f,  .5f));
             temp.Insert(timer / 8f + 4f, dialog2.DOScale(Vector3.one / 2f,  .5f));
             temp.Insert(timer / 8f + 6f, dialog1.DOScale(Vector3.zero,  .5f));
@@ -66,6 +77,13 @@ namespace  Terbaru
             dialog1.localScale = Vector3.zero;
             dialog2.localScale = Vector3.zero;
             anim.SetBool("Rotate", false);
+            FindObjectOfType<Manager>().selesai(foto, ratingValue);
+
+            CanvasrRating.DOScaleX(1.5f, 1.5f).OnComplete(() =>{
+                CanvasrRating.DOScaleX(1f, .5f).OnComplete(() => {
+                    rating.DOFillAmount(ratingValue,1f);
+                });
+            });
 
         }
 
@@ -80,7 +98,6 @@ namespace  Terbaru
                 
                 yield return new WaitForSeconds(1);
             }
-
         }
-    }   
+    }
 }

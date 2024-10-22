@@ -27,17 +27,18 @@ namespace MiniGame4_1{
             if(clicked)
                 return;
             
-            if(value){
-                correctSelected();
-            }else{
-                wrongSelected();
-            }
-            clicked = true;
+            FindObjectOfType<Manager>().itemOnClick(GetComponent<SpriteRenderer>());
+            // if(value){
+            //     correctSelected();
+            // }else{
+            //     wrongSelected();
+            // }
+            // clicked = true;
             
         }
 
         void correctSelected(){
-            StartCoroutine(animasHiddenObject());
+            //StartCoroutine(animasHiddenObject());
         }
 
         public void setItemsValue(Transform posText){

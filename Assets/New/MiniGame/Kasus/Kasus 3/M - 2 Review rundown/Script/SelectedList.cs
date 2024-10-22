@@ -20,6 +20,7 @@ namespace MiniGame3_2{
             selected = true;
             GetComponent<UnityEngine.UI.Button>().enabled = false;
             StartCoroutine(animasiGaris());
+            panelValue.transform.localScale = new Vector3(.8f, .8f, .8f);
             panelValue.sprite = null;
             panelValue.color = Color.black;
         }

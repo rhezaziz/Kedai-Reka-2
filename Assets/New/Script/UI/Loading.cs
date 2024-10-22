@@ -17,8 +17,6 @@ namespace Terbaru{
 
             async.allowSceneActivation = false;
 
-            //SceneManager.sceneLoaded += UnloadScene;
-
             StartCoroutine(LoadNewScene(async));
         }
         void UnloadScene(Scene scene, LoadSceneMode loadSceneMode)

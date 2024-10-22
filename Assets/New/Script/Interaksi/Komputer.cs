@@ -33,6 +33,7 @@ namespace Terbaru
         public void action(Transform player)
         {
             UiManager.instance.displayRekrut(player.GetComponent<Controller>().profil);
+            SoundManager.instance.sfx(34);
         }
 
         public void btnActive(GameObject btn, bool interactable){

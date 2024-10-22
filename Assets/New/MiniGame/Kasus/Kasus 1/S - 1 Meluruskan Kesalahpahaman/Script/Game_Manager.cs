@@ -25,7 +25,10 @@ namespace MiniGame1_5{
             initPanelQuiz();
         }
         public void checkAction(){
-            QuestManager.instance.CheckAction(action);
+            if(testGame)
+                balikMainMenu();
+            else
+                QuestManager.instance.CheckAction(action);
             Debug.Log(action);
         }
 
@@ -54,6 +57,19 @@ namespace MiniGame1_5{
             }
 
             checkAction();
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
     }
 }

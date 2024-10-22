@@ -22,6 +22,8 @@ namespace Terbaru{
 
         public TMP_Text textSaldo;
 
+        public float time;
+
         public GameObject Paket;
 
         void Awake(){
@@ -32,6 +34,7 @@ namespace Terbaru{
         void initShop()
         {
             profil =  GameManager.instance.profil;
+            itemTerbeli = false;
 
             
             //textSaldo.text = "Saldo : "+ "Rp" + string.Format("{0:n}",profil.Saldo);
@@ -56,6 +59,8 @@ namespace Terbaru{
             }
         }
 
+        bool itemTerbeli;
+
         public void buyItem(Items item, Button btnBeli)
         {
             int harga = item.Harga;
@@ -63,12 +68,9 @@ namespace Terbaru{
             
             if(saldo >= harga)
             {
+                itemTerbeli = true;
                 Debug.Log(Paket);
-                if(!Paket.activeInHierarchy){
-                    Debug.Log("Non Activa");
-                    Paket.SetActive(true);
-                    Paket.GetComponent<GrabableItem>().item.Clear();
-                }
+                
                 Debug.Log("Active");
                 profil.Saldo -= harga;
                 item.isShop = false;
@@ -83,6 +85,24 @@ namespace Terbaru{
             {
                 panelKonfirmasi.SetActive(true);
             }
+        }
+
+        public void closeShop(){
+            if(itemTerbeli)
+                StartCoroutine(paketData());
+        }
+
+
+        IEnumerator paketData(){
+            yield return new WaitForSeconds(time);
+            if(!Paket.activeInHierarchy){
+                Debug.Log("Non Activa");
+                Paket.SetActive(true);
+                Paket.GetComponent<GrabableItem>().item.Clear();
+            }
+
+            SoundManager.instance.sfx(0);
+            itemTerbeli = false;
         }
 
 

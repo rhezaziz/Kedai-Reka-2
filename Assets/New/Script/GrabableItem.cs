@@ -8,6 +8,7 @@ namespace Terbaru{
     public class GrabableItem : MonoBehaviour, Interaction
     {
         public bool clickAbleObject;
+        public bool paket;
         public List<Items> item;
         public string actionQuest;
 
@@ -23,7 +24,9 @@ namespace Terbaru{
                 string action = $"{actionQuest} {i.namaItem}";
                 QuestManager.instance.CheckAction(action);
             }
-             
+
+            AudioClip clip = paket ? SoundManager.instance.InvorenmentClip[5] : SoundManager.instance.sfxUIClip[7];
+            SoundManager.instance.sfx(clip);
             //
             gameObject.SetActive(false);
             //Destroy(this);

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -19,7 +20,7 @@ namespace MiniGame3_2{
         public Color Terpilih;
 
         void Start(){
-            jumlahText.text = $"Jumlah : {currentJumlah} / {jumlah}";
+            jumlahText.text = $"{currentJumlah}/{jumlah}";
         }
 
         List<bool> values = new List<bool>();
@@ -64,7 +65,22 @@ namespace MiniGame3_2{
                 indikatorValue.color = Color.white;
                 indikatorValue.sprite = sprite;
                 yield return new WaitForSeconds(1f);
+                if(testGame)
+                    balikMainMenu();
             }
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
     }
 }

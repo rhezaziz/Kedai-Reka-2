@@ -83,6 +83,7 @@ namespace Terbaru{
             
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
             Invoke("startAction",1f);
+            FindObjectOfType<DialogManager>().closeDialog();
             //gameObject.SetActive(false);
         }
 

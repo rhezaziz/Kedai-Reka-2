@@ -1,4 +1,4 @@
-using UnityEngine;
+ using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/CharacterInfo", order = 1)]

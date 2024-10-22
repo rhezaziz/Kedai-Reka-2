@@ -56,6 +56,8 @@ namespace Terbaru{
             Player.GetComponent<Controller>().currentState(state.Default);
             UiManager.instance.panelUtama.SetActive(true);
             FindObjectOfType<QuestManager>().CheckAction(tempAction);
+
+            FindObjectOfType<DialogManager>().closeDialog();
         }
     }
 }

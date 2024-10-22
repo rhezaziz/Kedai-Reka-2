@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObject/SideQuest", order = 1)]
 public class Quest : ScriptableObject
 {
+    public ID_Quiz iD_Quiz;
     public int index;
     public int Reward;
     public Kemampuan[] skills;

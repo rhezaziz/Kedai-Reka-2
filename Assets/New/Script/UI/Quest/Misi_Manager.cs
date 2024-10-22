@@ -28,6 +28,7 @@ namespace Terbaru{
 
         #region  Tutorial
         void initQuestTutorial(){
+            
             for(int i = 0; i < parent.childCount; i++)
             {
                 Container_Quest container = parent.GetChild(i).GetComponent<Container_Quest>();
@@ -63,15 +64,16 @@ namespace Terbaru{
         #endregion
         void initQuestList()
         {
+            Quest[] temp = QuestManager.instance.initListQuest();
             for(int i = 0; i < parent.childCount; i++)
             {
                 Container_Quest container = parent.GetChild(i).GetComponent<Container_Quest>();
-                Quest temp = QuestManager.instance.getQuest(i);
-                if (!temp.isDone)
+                //Quest temp = QuestManager.instance.getQuest(i);
+                if (temp[i] != null)
                 {
                     container.gameObject.SetActive(true);
 
-                    container.initContent(temp, i);
+                    container.initContent(temp[i], i);
                 }
                 else
                 {

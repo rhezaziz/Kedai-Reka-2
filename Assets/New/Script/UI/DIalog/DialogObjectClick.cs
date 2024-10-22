@@ -26,6 +26,7 @@ namespace Terbaru{
             extendAction?.Invoke();
             //Mulai Quiz
             //Debug.Log("Selesai Dialog, Saat nya Quiz");
+            FindObjectOfType<DialogManager>().closeDialog();
         }
     }
 }

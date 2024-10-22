@@ -28,6 +28,7 @@ public class swipeUI : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
             lockScreen.SetActive(false);
             MainMenu.SetActive(true);
             slide.value = 0;
+            SoundManager.instance.uiSFX(12);
             //Debug.Log("Selesai");
         }
     }

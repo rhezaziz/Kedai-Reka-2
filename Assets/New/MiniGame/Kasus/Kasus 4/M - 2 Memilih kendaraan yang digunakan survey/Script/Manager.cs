@@ -6,16 +6,22 @@ using UnityEngine;
 namespace MiniGame4_2{
     public class Manager : MonoBehaviour
     {
-        // Start is called before the first frame update
-        void Start()
-        {
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
             
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+        public void gameOver(){
+            if(testGame)
+                balikMainMenu();
         }
     }
 }

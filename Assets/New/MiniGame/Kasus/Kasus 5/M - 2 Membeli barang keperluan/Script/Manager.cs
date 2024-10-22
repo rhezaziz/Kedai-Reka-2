@@ -20,11 +20,7 @@ namespace MiniGame5_2{
             initKonten();
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
+        
 
         public void initKonten(){
             for(int i = 0; i < itemsOnRak.Count; i++){
@@ -65,8 +61,22 @@ namespace MiniGame5_2{
 
         void gameOver(){
             if(items.Count <= 0){
-                Debug.Log("GameOver");
+                if(testGame)
+                    balikMainMenu();
             }
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
     }
 

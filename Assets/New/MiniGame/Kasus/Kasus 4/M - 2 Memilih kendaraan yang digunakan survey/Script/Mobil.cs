@@ -33,6 +33,8 @@ namespace MiniGame4_2{
 
         void jalan(){
             anim.SetTrigger("Mobil");
+
+            FindObjectOfType<Manager>().gameOver();
         }
     }
 }

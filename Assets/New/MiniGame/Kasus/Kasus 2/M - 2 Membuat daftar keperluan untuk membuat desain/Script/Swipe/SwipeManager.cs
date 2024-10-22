@@ -2,6 +2,7 @@ using DG.Tweening;
 using food;
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 
 namespace MiniGame2_2{
@@ -162,6 +163,8 @@ namespace MiniGame2_2{
 
         void Selesai()
         {
+            if(testGame)
+                balikMainMenu();
             Debug.Log("Selesai");
             //panelGame.SetActive(false);
             //FindObjectOfType<Dialog_Sekretaris>().done = true;
@@ -169,6 +172,19 @@ namespace MiniGame2_2{
             //Dialog dialog = FindObjectOfType<Dialog_Sekretaris>().Setelah_Ambil_Berkas();
 
             //FindObjectOfType<DialogManager>().StartDialog(dialog);
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
 
         void checkJumlah()

@@ -10,7 +10,10 @@ namespace MiniGame2_1{
     {
         public string action;
         public void checkAction(){
-            FindObjectOfType<QuestManager>().CheckAction(action);
+            if(testGame)
+                FindObjectOfType<QuestManager>().CheckAction(action);
+            else
+                balikMainMenu();
         }
 
         public void checkJawaban(bool jawaban){
@@ -19,6 +22,19 @@ namespace MiniGame2_1{
                 //Benar
 
             checkAction();
+        }
+
+        public bool testGame = true;
+        void balikMainMenu(){
+            FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        }
+
+        void Update(){
+            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+                testGame = false;
+                balikMainMenu();
+            }
+            
         }
     }
 }
