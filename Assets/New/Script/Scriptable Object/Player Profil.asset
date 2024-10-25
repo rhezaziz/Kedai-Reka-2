@@ -15,7 +15,7 @@ MonoBehaviour:
   NamaKarakter: Reeee
   position: {x: -175, y: 5, z: -130}
   jmlHari: 1
-  Energy: 6
+  Energy: 3
   Saldo: 230500
   item:
   - {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}

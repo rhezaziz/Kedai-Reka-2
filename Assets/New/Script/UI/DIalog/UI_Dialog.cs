@@ -84,7 +84,7 @@ namespace Terbaru{
             namaCharacter.gameObject.SetActive(true);
 
             activeSprite.sprite = data.GambarKarakter;
-            namaCharacter.text = data.Nama;
+            namaCharacter.text = data.Nama.ToString();
 
             activeSprite.color = Color.white;
             unActiveSprite.color = UnSelect;

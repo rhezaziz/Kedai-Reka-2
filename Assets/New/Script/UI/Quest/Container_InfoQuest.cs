@@ -29,6 +29,8 @@ namespace Terbaru{
         List<Kemampuan> allSkill = new List<Kemampuan>();
         public playerProfil player;
         Quest quest;
+
+        public questSelected select;
         public void initKonten(Quest _quest)
         {
             NPC.Clear();
@@ -36,6 +38,9 @@ namespace Terbaru{
             initBarang();
             spawnListKarakter();
             initListSkill();
+            select.itemOn = false;
+            select.item = null;
+            //select.namaPilihan[0].
         }
 
         void initBarang()
@@ -49,12 +54,13 @@ namespace Terbaru{
             {
                 itemPanel.SetActive(true);
                 Image barang = itemPanel.transform.GetChild(0).GetChild(0).GetChild(0).GetComponent<Image>();
-
+                select.item = item;
                 if (item.isInventory)
                 {
                     barang.enabled = true;
                     barang.sprite = item.gambarItem;
                     barang.material = null;
+
                 }
                 else
                 {
@@ -115,6 +121,7 @@ namespace Terbaru{
             karakter[karakter[0] == null ? 0 : 1] = characters;
             cKarakter[cKarakter[0] == null ? 0 : 1] = _Karakter;
             NPC.Add(characters.objectNPC);
+            select.namaPilihan[karakter[0] == null ? 0 : 1] = characters.nama;
             selectedCharacter(selected - 1);
             updateListSkill();
             updateProfil();
@@ -280,5 +287,13 @@ namespace Terbaru{
             Mulai.onClick.RemoveAllListeners();
             selected = 0;
         }
+    }
+
+    [System.Serializable]
+    public class questSelected{
+        public Nama[] namaPilihan;
+        public bool itemOn;
+        public Items item;
+
     }
 }

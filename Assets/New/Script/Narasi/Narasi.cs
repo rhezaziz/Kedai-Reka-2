@@ -12,7 +12,7 @@ namespace Terbaru{
         Dialog tempDialog;
 
         public void startDialog(){
-            tempDialog = dialog.dialogs;
+            tempDialog = dialog.narasi;
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
             FindObjectOfType<Controller>().currentState(state.Interaction); 
                       
@@ -81,17 +81,5 @@ namespace Terbaru{
     }
 
 
-    [System.Serializable]
-    public class NarasiDialog{
-        public Dialog dialogs;
-
-    }
-
-    [System.Serializable]
-    public class NarasiData{
-        
-        [TextArea(5,10)]
-        public string narasiText;
-        public AudioClip VO;
-    }
+    
 }

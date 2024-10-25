@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Ayu
   m_EditorClassIdentifier: 
   index: 0
+  nama: 6
   skills: 090000000a0000000b000000
   coba:
   - A
   - B
   - C
-  selected: 0
+  selected: 1
   Posisi: {x: 155, y: 5, z: 16}
   objectNPC: {fileID: 5721962290040933313, guid: c280ae27d311eb44f83f6aa16e442f62, type: 3}
   hobbyCharacter: Bernyanyi

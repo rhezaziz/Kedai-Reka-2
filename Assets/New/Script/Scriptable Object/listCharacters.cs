@@ -1,4 +1,5 @@
- using UnityEngine;
+using Terbaru;
+using UnityEngine;
 
 
 [CreateAssetMenu(fileName = "Data", menuName = "ScriptableObjects/CharacterInfo", order = 1)]
@@ -6,6 +7,7 @@ public class listCharacters : ScriptableObject
 {
 
     public int index;
+    public Nama nama;
     public Kemampuan[] skills;
     public string[] coba = new string[]
     {
@@ -28,4 +30,6 @@ public class listCharacters : ScriptableObject
     public bool characterLock;
     public string info;
     public int cost;
+
+    public Sprite icon;
 }

@@ -61,12 +61,12 @@ namespace Terbaru{
             //Debug.Log("Mulai Dialog");
             uiDialog.gameObject.SetActive(true);
             uiDialog.startDialog();
-            jumlahDialog = dialog.data.Length;
+            jumlahDialog = dialog.dialogObject.data.Length;
             sentences.Clear();
             done = true;
             
 
-            foreach(var tempData in dialog.data)
+            foreach(var tempData in dialog.dialogObject.data)
             {
                 sentences.Enqueue(tempData);
             }
@@ -99,7 +99,7 @@ namespace Terbaru{
                 DisplayVO(sentence);
                 
                 StopAllCoroutines();
-                btnNextDialog.interactable = false;
+                btnNextDialog.gameObject.SetActive(false);
                 float delay = 0.1f;
                 if(sentence.narasi.VO != null){
                     
@@ -115,7 +115,7 @@ namespace Terbaru{
                 dialogText = uiDialog.tempText;
 
                 StopAllCoroutines();
-                btnNextDialog.interactable = false;
+                btnNextDialog.gameObject.SetActive(false);
                 StartCoroutine(TypeSentence(sentence.sentences));
                 narasiObj.SetActive(false);
             
@@ -137,7 +137,7 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(.5f);
             done = true;
-            btnNextDialog.interactable = true;
+            btnNextDialog.gameObject.SetActive(true);
         }
 
         IEnumerator TypeSentenceNarasi(string sentence, float delay)
@@ -152,7 +152,7 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(.5f);
             done = true;
-            btnNextDialog.interactable = true;
+            btnNextDialog.gameObject.SetActive(true);
         }
 
         public void EndDialog()
@@ -166,7 +166,7 @@ namespace Terbaru{
         public void closeDialog(){
             uiDialog.gameObject.SetActive(false);
             done = true;
-            btnNextDialog.interactable = true;
+            btnNextDialog.gameObject.SetActive(true);
 
             //Debug.Log("Close Dialog Manager");
         }

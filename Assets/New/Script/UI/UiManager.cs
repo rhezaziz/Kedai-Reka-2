@@ -149,7 +149,7 @@ namespace Terbaru
             anim.SetTrigger("Mulai");
             yield return new WaitForSeconds(2f);
             
-            QuestManager.instance.StartProcessQuest(quest);
+            //QuestManager.instance.StartProcessQuest(quest);
             foreach(var NPC in NPCs)
                 NPC.SetActive(false);
 

@@ -1,7 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using MiniGame4_1;
-using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Terbaru{
@@ -12,6 +10,8 @@ namespace Terbaru{
         public List<Day> days = new List<Day>();
 
         public UnityEngine.Video.VideoClip clipsTidur;
+
+        public List<int> GantiQuestList = new List<int>();
 
         public int day = 0;
         void Start(){
@@ -39,6 +39,13 @@ namespace Terbaru{
             if(days[day].itemSpawn.Count >= 1){
                 foreach(var item in days[day].itemSpawn){
                     item.item.SetActive(true);
+                }
+            }
+
+            foreach(var time in GantiQuestList){
+                if(time == day){
+                    QuestManager.instance.CurrentQuest = 1;
+                    return;
                 }
             }
         }

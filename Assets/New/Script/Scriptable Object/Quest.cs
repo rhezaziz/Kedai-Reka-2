@@ -10,6 +10,7 @@ public class Quest : ScriptableObject
     public int index;
     public int Reward;
     public Kemampuan[] skills;
+    public Nama[] nama;
    // public string[] skills;
     public string judulMisi;
     public Items item;
@@ -22,5 +23,7 @@ public class Quest : ScriptableObject
     public string sceneGame;
     public bool firstChangeScene;
     public int level;
+
+    public int pointBonus;
     public bool isDone;
 }

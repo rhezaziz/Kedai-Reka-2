@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: 12
   m_EditorClassIdentifier: 
   index: 0
+  nama: 12
   skills: 0f0000001000000011000000
   coba:
   - A
@@ -36,6 +37,6 @@ MonoBehaviour:
   imageCharacter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
   imageInfoCharacter: {fileID: 21300000, guid: d40440ccc209d1a44908830ffc6055b8, type: 3}
   isLockSkill: 1
-  characterLock: 0
+  characterLock: 1
   info: 
   cost: 30000

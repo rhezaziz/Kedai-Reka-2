@@ -13,12 +13,13 @@ MonoBehaviour:
   m_Name: Anna
   m_EditorClassIdentifier: 
   index: 0
+  nama: 5
   skills: 060000000700000008000000
   coba:
   - A
   - B
   - C
-  selected: 0
+  selected: 1
   Posisi: {x: 60, y: 5, z: 7}
   objectNPC: {fileID: 930147155628118611, guid: e61059886f127da42a112203dd1d7c5e, type: 3}
   hobbyCharacter: Membuat Aplkasi

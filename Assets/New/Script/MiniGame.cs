@@ -15,6 +15,10 @@ namespace Terbaru{
             StartCoroutine(mulaiMiniGame(namaScene));
         }
 
+        public void kembaliMiniGame(string nama){
+            StartCoroutine(kembaliQuest(nama));
+        }
+
         public void pindahScene(string namaScene){
 
             sceneActive = namaScene;
@@ -44,7 +48,7 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(1f);
             DeactivateObjectsInPreviousScene();
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.Chinematic(false);
 
         
         }
@@ -83,7 +87,26 @@ namespace Terbaru{
         }
 
 
+        IEnumerator kembaliQuest(string value){
+            UiManager.instance.Chinematic(true);
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
+            yield return new WaitForSeconds(1f);
+            
+            UiManager.instance.Chinematic(true);
+            yield return new WaitForSeconds(3f);
 
+            Scene scene = SceneManager.GetSceneByName("Asrama BackUp");
+            SceneManager.UnloadSceneAsync(value);
+            SceneManager.SetActiveScene(scene);
+            
+            ActivateObjectsInPreviousScene();
+            
+            //yield return new WaitForSeconds(1f);
+
+            yield return new WaitForSeconds(2f);
+            UiManager.instance.Chinematic(true);
+            QuestManager.instance.CheckAction("Kembali");
+        }
 
         IEnumerator kembali(string value){
             UiManager.instance.Chinematic(true);

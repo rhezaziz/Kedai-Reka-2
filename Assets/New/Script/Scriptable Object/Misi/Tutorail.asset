@@ -23,4 +23,5 @@ MonoBehaviour:
   sceneGame: 
   firstChangeScene: 0
   level: 0
-  isDone: 1
+  pointBonus: 0
+  isDone: 0

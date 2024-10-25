@@ -8,7 +8,7 @@ namespace MiniGame1_1{
 
     public class Manager : MonoBehaviour
     {
-        
+        public Quest quest;
         public int jumlahCharacter;
         public GameObject prefabs;
         public Transform parent;
@@ -19,7 +19,7 @@ namespace MiniGame1_1{
 
         bool selesai;
 
-        string action = "Memilih TIM Anggran";
+        public string action = "Memilih TIM Anggran";
 
         public List<data> datas = new List<data>();
         // Start is called before the first frame update
@@ -28,6 +28,10 @@ namespace MiniGame1_1{
         public List<GameObject> indikatorSeleted = new List<GameObject>();
 
         List<GameObject> listPanel = new List<GameObject>();  
+
+        public void Mulai(){
+
+        }
         void startInit(int value){
             selesai = false;
             temp = datas;
@@ -91,6 +95,7 @@ namespace MiniGame1_1{
         }
 
         public Sprite getSprite(bool value){
+            quest.pointBonus += value ? 500 : 0;
             return value ? Benar : Salah;
         }
 
@@ -158,7 +163,7 @@ namespace MiniGame1_1{
         }
 
         void Start(){
-            mulaiGame();
+            //mulaiGame();
         }
 
         public void mulaiGame()

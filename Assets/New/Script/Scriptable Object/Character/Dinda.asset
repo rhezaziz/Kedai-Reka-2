@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Dinda
   m_EditorClassIdentifier: 
   index: 0
+  nama: 8
   skills: 0f0000001000000011000000
   coba:
   - A

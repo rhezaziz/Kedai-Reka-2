@@ -39,12 +39,27 @@ namespace  Terbaru
         }
 
         void initQuest(){
-            for(int i = 0; i < questList.Length; i++){
-                Quest temp = QuestManager.instance.getQuest(i);
+            int lenght = QuestManager.instance.lenghtQuest();
+
+            lenght = lenght > questList.Length ? 3 : lenght;
+            Quest[] temp = QuestManager.instance.initListQuest();
+            for(int i = 0; i < lenght; i++){
+                //Quest temp = QuestManager.instance.getQuest(i);
                 
                 TMP_Text textQuest = questList[i].transform.GetChild(0).GetComponent<TMP_Text>();
-                questList[i].SetActive(!temp.isDone);
-                textQuest.text = temp.isDone ? "" : temp.judulMisi;
+                //questList[i].SetActive(!temp.isDone);
+                //textQuest.text = temp.isDone ? "" : temp.judulMisi;
+
+                if (temp[i] != null)
+                {
+                    questList[i].gameObject.SetActive(true);
+                    textQuest.text = temp[i].judulMisi;
+                    //container.initContent(temp[i], i);
+                }
+                else
+                {
+                    questList[i].gameObject.SetActive(false);
+                }
             }
         }
     }   

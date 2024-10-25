@@ -15,10 +15,26 @@ namespace Terbaru{
         public listQuest currentQuest;
         public bool isActive = false;
         public List<GameObject> NPCs = new List<GameObject>();
+
+        public Result_Quest result;
         //public int index;
 
         void Awake(){
             instance = this;
+        }
+
+
+        public int StateQuest;
+
+
+        public int CurrentQuest{
+            get {
+                return StateQuest;
+            }
+            set{
+                
+                StateQuest += value;    
+            }
         }
 
 #region  List Quest
@@ -27,15 +43,16 @@ namespace Terbaru{
             isActive = true;
             Debug.Log("Start Quest");
             FindObjectOfType<SoundManager>().playSoundQuest();
-            int hari = FindObjectOfType<Controller>().profil.GetHari() /  7;
-            foreach(var _quest in daily[hari].quest){
+//            int hari = FindObjectOfType<Controller>().profil.GetHari() /  7;
+            foreach(var _quest in daily[CurrentQuest].quest){
                 if(_quest.quest == quest){
                     index = _quest.Index;
                     currentQuest = _quest;
                     break;
                 }
             }
-            //Debug.Log($"Start Process Quest {index}"); 
+            
+            Debug.Log($"Start Process Quest {index}"); 
             StartProcess(index);
 
             HelperProcess(index);
@@ -49,7 +66,7 @@ namespace Terbaru{
             };
 
             List<Quest> lisTQuest = new List<Quest>();
-            int hari = FindObjectOfType<Controller>().profil.GetHari() /  7;
+            int hari = CurrentQuest;
             for(int a = 0; a < temp.Length; a++){
                 foreach(var _daily in daily[hari].quest){
                     if(!_daily.quest.isDone && !lisTQuest.Contains(_daily.quest)){
@@ -73,17 +90,22 @@ namespace Terbaru{
             //         }
             //     }
             //}
-            Debug.Log($"1 {temp[0].iD_Quiz} - 1 {temp[1].iD_Quiz} - 1 {temp[2].iD_Quiz}");
+            //Debug.Log($"1 {temp[0].iD_Quiz} - 1 {temp[1].iD_Quiz} - 1 {temp[2].iD_Quiz}");
             return temp;
             
         }
 
         public Quest getQuest(int index){
             //Debug.Log(index);
-            int hari = FindObjectOfType<Controller>().profil.GetHari() / 7;
+            int hari = CurrentQuest;
             //int temp = indexs[hari].indexQuest[index];
             //Debug.Log(quests[temp].quest.judulMisi);
             return daily[hari].quest[index].quest; 
+        }
+
+        public int lenghtQuest(){
+            int hari = CurrentQuest;
+            return daily[hari].quest.Length; 
         }
 
 
@@ -142,18 +164,19 @@ namespace Terbaru{
                     }
                 }
             }
-            Debug.Log("Selesai Quest");
+            //Debug.Log("Selesai Quest");
             currentQuest.quest.isDone = true;
 
-            playerProfil.Saldo += currentQuest.quest.Reward;
+            //playerProfil.Saldo += currentQuest.quest.Reward;
 
-            UiManager.instance.UpdateSaldo(playerProfil.Saldo);
+            //UiManager.instance.UpdateSaldo(playerProfil.Saldo);
+            result.result(currentQuest);
             isActive = false;
             FindObjectOfType<SoundManager>().playSoundAsrama();
         }
 
 #endregion
-    
+     
 #region Quest
         public void StartQuest(listQuest quest){
             //int index = 0;

@@ -1,0 +1,484 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5a01442c9b62aac43954bbb29e7204f9, type: 3}
+  m_Name: Narasi 1
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: Suatu pagi di asrama kampus, Thomas dan Elena berencana untuk mengumpulkan
+        tim program pengabdian untuk mengadakan diskusi pertama mereka terkait program
+        yang telah direncanakan.
+      VO: {fileID: 8300000, guid: ba7a8e03397638c41adc01152b3fa40a, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Melalui group whatsapp, mereka membuat pengumuman bahwa akan diadakannya
+        diskusi hari ini pada jam 2 sore nanti di ruang sekretariat kampus
+      VO: {fileID: 8300000, guid: 41f2d573649b6be42bc115ed5b531e61, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Halo semua, sebelumnya terimakasih banyak kalian sudah bersedia meluangkan
+      waktu untuk diskusi pertama kita
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: hari ini mengenai program yang mungkin sudah dijelaskan oleh Angel
+      secara singkat yah
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: hari ini mengenai program yang mungkin sudah dijelaskan oleh Angel
+      secara singkat yah
+    Kiri: 1
+  - narasi:
+      narasiText: Lalu MC 2 menghitung jumlah yang datang. Dan semua anggota sudah
+        lengkap.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: 
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Yasudah kalau begitu kita langsung mulai saja diskusinya. Nanti yang
+      bersedia untuk menjadi notaris boleh minta tolong
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: untuk mencatat keseluruhan hasil diskusi dan akan kita share ke group
+      sebagai laporan harian
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    Nama: 1
+    sentences: Kalau begitu aku saja. Aku kebetulan terbiasa di kesekretariatan
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Oh iya betul juga! kamu kan sekretaris Dema yah
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Okay kalau begitu Elena yang akan mencatat hasil diskusi hari ini.
+      Jadi kita mulai saja yah diskusi hari ini
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Seperti yang tadi sudah aku sampaikan, mungkin teman-teman sekalian
+      sudah punya gambaran singkat mengenai program ini
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Jadi, program  ini sederhananya adalah sebuah program pengabdian kepada
+      masyarakat dalam bentuk kerja nyata
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: untuk membantu penyelesaian masalah yang baru baru ini kita temukan
+      di NTT
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Nah untuk sekarang akan aku berikan brief singkatnya terlebih dahulu
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Dari sumber informasi yang kami terima, kami mendapat informasi bahwa
+      telah terjadi krisis air bersih di salah satu desa di NTT
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Menindaklanjuti hal tersebut, aku dan Elena berinisiatif untuk membuat
+      program pengabdian di sana
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Selain untuk membantu masalah di desa tersebut, ini juga dapat menjadi
+      kesempatan bagi kita untuk membuktikan kredibilitas kita sebagai agent of change
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: "Nah disamping itu, teman-teman mungkin sudah tahu bahwa jadwal dimulainya
+      \r\npengerjaan Kompetisi Jurnal sudah dimulai"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Sehingga, bisa dikatakan ini adalah kesempatan baik bagi teman-teman
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: yang mungkin saja berminat untuk mengangkat program yang akan kita
+      lakukan ini sebagai studi lapangan kalian
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: Oh iya! Benar juga. Sejujurnya tadi aku hampir ingin redraw dari keikutsertaan
+      program ini karena aku harus fokus ke persiapan pengerjaan jurnal ku
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    Nama: 1
+    sentences: Aku izin menambahkan ya, memang selain untuk sekedar program pengabdian,
+      kita berancana untuk mengangkat kasus ini sebagai objek studi lapangan
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    Nama: 1
+    sentences: kita melihat tema yang ditentukan untuk kompetisi jurnal tersebut
+      selaras dengan program kita
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    Nama: 1
+    sentences: "Nantinya laporan \r\r                              terakhir akan
+      kita jadikan sumber data untuk Jurnal kita. Singkatnya membidik 3 target dengan
+      satu batu"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: Wahh betul-betul. Asik banget nih, sudah membantu desa disana, bisa
+      kita jadikan jurnal
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: plus ini bisa jadi ajang pembuktian kredibilitas kita. Keren banget!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Nah betul banget tuh, maka dari itulah, kita gak mungkin dong ngajak
+      kalian untuk berpartisipasi kedalam hal yang tidak beneficial
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Oke, untuk penjelasan mengenai program dan tujuan kita, apakah sudah
+      cukup jelas? Atau ada yang perlu ditanyakan?
+    Kiri: 1
+  - narasi:
+      narasiText: (No respons)
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Oke, untuk penjelasan mengenai program dan tujuan kita, apakah sudah
+      cukup jelas? Atau ada yang perlu ditanyakan?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Oke, sepertinya sudah cukup jelas yah. Kalau begitu langsung kita
+      lanjut saja ke pembahasan selanjutnya mengenai struktur tim
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Bagaimana pun kita membutuhkan orang yang akan pemimpin program ini
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Notaris dan yang akan menghandle kesekretariatan juga pemegang dan
+      pengatur anggaran baik untuk tim dan program secara keseluruhan.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Pertama, silahkan ajukan diri bagi kalian yang merasa capable untuk
+      mengisi tiga posisi tersebut
+    Kiri: 1
+  - narasi:
+      narasiText: 'Elena mengangkat tangan '
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: 
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}
+    Nama: 1
+    sentences: Aku mau mengajukan diri sebagai sekretaris, karena seperti yang sebelunya
+      aku bilang, aku punya lumayan banyak pengalaman di kesekretariatan
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Nah, boleh juga tuh. Jadi karena Elena ini pernah menjabat sebagai
+      sekretaris DEMA, sepertinya Elena adalah kandidat paling cocok untuk posisi
+      ini, bagaimana teman-teman?
+    Kiri: 1
+  - narasi:
+      narasiText: '(setuju semua) '
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: 
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Okay, sekretaris sudah ditentukan, selemat mengemban tanggung jawab
+      ya, Elena. Sekarang tinggal Ketua dan Bendahara.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0e962dbec8334de4c8d05147d538b65e, type: 3}
+    Nama: 4
+    sentences: Aku izin menyarankan, melihat dari cara Thomas memimpin jalannya diskusi,
+      menurutku Thomas cocok untuk menjadi ketua tim kita.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Baik, melihat teman-teman memberikan aku kepercayaan untuk Mengambil
+      tanggung jawab ini
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: " aku akan terima dan berusaha untuk menjalankan tanggung jawab ini
+      \r\ndengan baik"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Terimakasih atas kepercayaannya. Nah sekarang tinggal bendaharanya,
+      siapa yang bersedia?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: ff30f23f69d1e34429e2e20b6101ac02, type: 3}
+    Nama: 5
+    sentences: Kalau boleh, aku ingin mengajukan diri sebagai bendahara. Aku punya
+      beberapa pengalaman dalam mengatur anggaran di HMJ.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: ff30f23f69d1e34429e2e20b6101ac02, type: 3}
+    Nama: 5
+    sentences: Aku rasa pengalaman aku bisa membantu dalam program ini
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Wah boleh juga, kalau begitu Anna yang akan menjadi bendahara dalam
+      program ini ya. Apakah semua setuju?
+    Kiri: 1
+  - narasi:
+      narasiText: '(setuju) '
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Wah boleh juga, kalau begitu Anna yang akan menjadi bendahara dalam
+      program ini ya. Apakah semua setuju?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Nah, sekarang masuk ke rencana kegiatannya
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Pada program ini kita berencana untuk membuat suatu produk yang dapat
+      kita gunakan untuk setidaknya sedikit membantu penanggulangan krisis air bersih
+      disana
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Sebagai informasi, sumber air disana didominasi oleh sungai-sungai
+      di sekitar desa
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Maka dari itu kita harus mendiskusikan produk yang fungsinya untuk
+      memanfaatkan air sungai disana menjadi air bersih layak pakai
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 20cac1b1df68a1d4fa7d20ee8c963b5e, type: 3}
+    Nama: 11
+    sentences: Jadi goal programnya kita adalah penanggulangan krisis air bersih
+      melalui produk ini?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Iya betul. Kurang lebih seperti itu
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+    Nama: 7
+    sentences: Wah kalau gitu bisa tuh kalau berhasil kita buat produksi skala besar
+      terus kita jual deh
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: Yeh, nanti dulu. Tujuan kita kan untuk membantu, bukan cari untung
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+    Nama: 7
+    sentences: Ya nggak apa-apa dong, sambil menyelam minum air
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+    Nama: 7
+    sentences: Lagi pula, maksud aku itu kan nanti, setelah beres kegiatan kita bisa
+      produksi ulang untuk dijual
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0144986d9be5ec24db1bff9ee0a4c804, type: 3}
+    Nama: 7
+    sentences: Lagi pula, maksud aku itu kan nanti, setelah beres kegiatan kita bisa
+      produksi ulang untuk dijual
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: Ya aku paham, tapi-
+    Kiri: 1
+  - narasi:
+      narasiText: (Anna cemas melihat debat 2 temannya, apa yang harus anna lakukan?)
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
+    Nama: 8
+    sentences: 
+    Kiri: 1

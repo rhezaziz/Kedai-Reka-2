@@ -13,6 +13,7 @@ MonoBehaviour:
   m_Name: Yosep
   m_EditorClassIdentifier: 
   index: 0
+  nama: 12
   skills: 0f0000001000000011000000
   coba:
   - A
