@@ -16,11 +16,13 @@ MonoBehaviour:
   index: 0
   Reward: 5000
   skills: 000000000000000000000000
+  nama: 0c00000004000000
   judulMisi: 'Memperbaiki laptop '
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2
   sceneGame: Kasus2_4
-  firstChangeScene: 1
+  firstChangeScene: 0
   level: 0
+  pointBonus: 0
   isDone: 0

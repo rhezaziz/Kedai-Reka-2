@@ -16,6 +16,7 @@ MonoBehaviour:
   index: 0
   Reward: 6000
   skills: 000000000000000000000000
+  nama: 08000000050000000900000003000000
   judulMisi: Mempromosikan produk
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
@@ -23,4 +24,5 @@ MonoBehaviour:
   sceneGame: Kasus6_3
   firstChangeScene: 1
   level: 0
+  pointBonus: 0
   isDone: 0

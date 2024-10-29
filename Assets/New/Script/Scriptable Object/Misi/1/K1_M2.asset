@@ -16,11 +16,13 @@ MonoBehaviour:
   index: 0
   Reward: 3000
   skills: 000000000200000006000000
+  nama: 0b00000005000000
   judulMisi: Memilih bendahara
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 77a92f9ab87129c46b0609c914b01d24, type: 2}
   Deskripsi: 2
   jmlEnergy: 2
-  sceneGame: Kasus1_1
+  sceneGame: Kasus1_2
   firstChangeScene: 1
   level: 0
-  isDone: 0
+  pointBonus: 125
+  isDone: 1

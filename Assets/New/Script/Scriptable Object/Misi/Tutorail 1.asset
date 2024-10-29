@@ -16,12 +16,13 @@ MonoBehaviour:
   index: 0
   Reward: 10000
   skills: 000000000000000000000000
+  nama: 
   judulMisi: Menjawab Quiz
-  item: {fileID: 0}
+  item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Jawab Quiz
   jmlEnergy: 2
-  sceneGame: 
-  firstChangeScene: 0
+  sceneGame: Quiz
+  firstChangeScene: 1
   level: 0
   pointBonus: 0
   isDone: 0

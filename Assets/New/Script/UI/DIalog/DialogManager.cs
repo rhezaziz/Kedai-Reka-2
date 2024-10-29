@@ -128,10 +128,11 @@ namespace Terbaru{
         {
             dialogText.text = "";
             done = false;
+            SoundManager.instance.sfx(27);
             foreach(char letter in sentence.ToCharArray())
             {
                 dialogText.text += letter;
-                SoundManager.instance.sfx(27);
+                
                 yield return null;
             }
 

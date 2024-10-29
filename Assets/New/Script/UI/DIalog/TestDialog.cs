@@ -11,9 +11,36 @@ namespace Terbaru{
 
         NPC_Controller controller;
 
-        GameObject Player;
+        //GameObject Player;
         public string tempAction;
         public void isTutorial(bool temp){
+        }
+
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
+
+        public void changeInteractable(bool value){
+            interactable = value;
+            // return interactable;
+        }
+
+        public GameObject Player;
+        public GameObject point;
+        public float distancePlayer;
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.transform.position);
+
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
         }
 
         public void action(Transform player){
@@ -32,6 +59,8 @@ namespace Terbaru{
 
         public void btnActive(GameObject btn, bool interactable){
             btn.SetActive(interactable);
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Ngobrol";
         }
 
@@ -48,6 +77,8 @@ namespace Terbaru{
 
             FindObjectOfType<DialogManager>().StartDialog(dialog); 
         }
+
+        
 
         public void endDialog(){
             UiManager.instance.Chinematic(false);

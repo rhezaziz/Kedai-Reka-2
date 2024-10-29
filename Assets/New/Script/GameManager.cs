@@ -35,13 +35,15 @@ namespace Terbaru{
         }
 
         void checkTutorial(){
-            if(!isTutorial)
-                return;
-            
             foreach(var interact in interactions){
-                interact.GetComponent<Interaction>().isTutorial(!isTutorial);
+                //interact.GetComponent<Interaction>().isTutorial(!isTutorial);
+                interact.GetComponent<Interaction>().changeInteractable(!isTutorial);
             }
-            FindObjectOfType<Movement>().move = false;
+            // if(!isTutorial)
+            //     return;
+            
+            
+            FindObjectOfType<Movement>().move = !isTutorial;
             controllerUI.SetActive(!isTutorial);
             UIAwal.SetActive(isTutorial);
             infoUI.SetActive(!isTutorial);

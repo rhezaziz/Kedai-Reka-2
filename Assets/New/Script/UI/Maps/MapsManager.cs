@@ -18,10 +18,12 @@ namespace Terbaru{
         public Pintu pintu;
         
         public TMP_Text judul;
+        public bool onAnimation;
         public List<infoMaps> maps = new List<infoMaps>();
         int index = 0;
 
         public Button kembali;
+        public GameObject mapButton;
 
         [Header("Chinematic")]
         public GameObject Chinematic;
@@ -35,6 +37,8 @@ namespace Terbaru{
         public class actionMaps : UnityEngine.Events.UnityEvent<int>{ }
 
         public Button NextBtn, PrevBtn;
+
+        public float testY;
         #endregion
         void Start(){
             //listMaps();
@@ -63,7 +67,7 @@ namespace Terbaru{
                 for(int j = 0; j < maps.Count; j++){
                     for(int x = 0; x < maps[j].maps.Count; x++){
                         if(maps[j].maps[x].valueMaps.id == IDs[i]){
-                            Debug.Log(maps[j].maps[x].nama);
+                            //Debug.Log(maps[j].maps[x].nama);
                             maps[j].maps[x].valueMaps.active = true;
                             break;
                         }
@@ -73,21 +77,57 @@ namespace Terbaru{
             listMaps();
         }
 
-        public void afterQuiz(List<id_Maps> IDs){
-            IDs.Remove(id_Maps.Lt2_Kelas);
-            int jmlId = IDs.Count;
-            
+        List<id_Maps> tempOpenMaps;
+        public void openMaps(List<id_Maps> Ids){
+            tempOpenMaps = new List<id_Maps>();
+            tempOpenMaps = Ids;
+
+            kembali.interactable = false;
+            mapButton.SetActive(true);
+
+            updateDayKonten(Ids);
+        }
+
+        public void closeMaps(){
+            int jmlId = tempOpenMaps.Count;
             for(int i = 0; i < jmlId; i++){
                 for(int j = 0; j < maps.Count; j++){
                     for(int x = 0; x < maps[j].maps.Count; x++){
-                        if(maps[j].maps[x].valueMaps.id == IDs[i]){
-                            Debug.Log(maps[j].maps[x].nama);
-                            maps[j].maps[x].valueMaps.active = true;
+                        if(maps[j].maps[x].valueMaps.id == tempOpenMaps[i]){
+                            //Debug.Log(maps[j].maps[x].nama);
+                            maps[j].maps[x].valueMaps.active = false;
                             break;
                         }
                     }
                 }
             }
+
+            kembali.interactable = true;
+            mapButton.SetActive(false);
+            listMaps();
+            tempOpenMaps.Clear();
+        }
+
+        public void afterQuiz(List<id_Maps> IDs){
+            IDs.Remove(id_Maps.Lt2_Kelas);
+            foreach(var x in maps[2].maps){
+                if(id_Maps.Lt2_Kelas == x.valueMaps.id){
+                    x.valueMaps.active = false;
+                }
+            }
+
+            listMaps();
+            // for(int i = 0; i < jmlId; i++){
+            //     for(int j = 0; j < maps.Count; j++){
+            //         for(int x = 0; x < maps[j].maps.Count; x++){
+            //             if(maps[j].maps[x].valueMaps.id == IDs[i]){
+            //                 //Debug.Log(maps[j].maps[x].nama);
+            //                 maps[j].maps[x].valueMaps.active = true;
+            //                 break;
+            //             }
+            //         }
+            //     }
+            // }
             listMaps();
         }
         public void updateDayKonten(ListMapsValue updateMaps){
@@ -127,14 +167,16 @@ namespace Terbaru{
         
 
         public void Kembali(){
-    
-            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(-500f, 1f).OnComplete(() =>
+            kembali.interactable = false;
+            onAnimation = true;
+            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(testY, 1f).OnComplete(() =>
             StartCoroutine(Cutscene(Vector3.zero, false)));
             //pintu.tutupPintu();
         }
 
         Maps tempMaps;
         public void keliling(Maps temp){
+            onAnimation = true;
             kembali.onClick.RemoveAllListeners();
             //Debug.Log(temp.mapLokasi.name);
             int indexMaps = 0;
@@ -193,16 +235,17 @@ namespace Terbaru{
             
             panelUtama.SetActive(!value);
             
+            
             if(!value)
                 pintu.tutupPintu();
 
             cameraKeliling.transform.localPosition = posisi;
 
-            anim.SetTrigger("Mulai"); // Membuka 100%
+            anim.SetTrigger("Reverse"); // Membuka 100%
             //camera.transform.DOLocalMoveZ(-10f, 1f);
 
             if(tempMaps.valueMaps.ambience != null){
-                    Debug.Log("Play Ambience");
+                    //Debug.Log("Play Ambience");
                     ambienceSound.Stop();
                     ambienceSound.clip = tempMaps.valueMaps.ambience;
                     ambienceSound.Play();
@@ -212,9 +255,10 @@ namespace Terbaru{
             //panelUtama.SetActive(true);
             Chinematic.SetActive(false);
             panelNamaMaps.SetActive(value);
-            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(-250f, 1f);
-
+            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(150f, 1f);
+            kembali.interactable = !mapButton.activeInHierarchy;
             yield return new WaitForSeconds(1f);
+            onAnimation = false;
             
             //FindObjectOfType<Controller>().currentState(value ? state.Interaction : state.Default);
             

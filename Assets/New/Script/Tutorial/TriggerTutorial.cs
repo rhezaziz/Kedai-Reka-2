@@ -8,10 +8,15 @@ namespace Terbaru{
 
     public class TriggerTutorial : MonoBehaviour
     {
+        void Start(){
+            isTutorial = GameManager.instance.isTutorial;
+        }
+
+        public bool isTutorial;
         public UnityEvent action = new UnityEvent();
 
         void OnTriggerEnter(Collider col){
-            if(col.CompareTag("Player")){
+            if(col.CompareTag("Player") && isTutorial){
                 Debug.Log("Kena");
                 action?.Invoke();
                 

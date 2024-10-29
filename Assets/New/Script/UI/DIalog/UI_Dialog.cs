@@ -10,7 +10,8 @@ namespace Terbaru{
     public class UI_Dialog : MonoBehaviour
     {
         // Start is called before the first frame update
-        public Sprite dialogKanan, dialogKiri;
+        public Sprite dialogKanan, dialogKiri, polosKana, polosKiri;
+
         public UiComponent components;
 
         public GameObject panelNarasi;
@@ -66,6 +67,8 @@ namespace Terbaru{
                 ui.color = UnSelect;
             }
         }
+
+        bool kiri;
         public void displayBallonDialog(int value, dataDialog data){
             SoundManager.instance.uiSFX(3);
             int index = value  % 2;
@@ -82,7 +85,8 @@ namespace Terbaru{
 
             activeSprite.gameObject.SetActive(true);
             namaCharacter.gameObject.SetActive(true);
-
+            bool haveSprite = data.GambarKarakter != null;
+            activeSprite.enabled = haveSprite;
             activeSprite.sprite = data.GambarKarakter;
             namaCharacter.text = data.Nama.ToString();
 
@@ -105,8 +109,9 @@ namespace Terbaru{
             panelAtas.transform.DOLocalMoveY(Atas.y, testSpeed);
             panelAtas.transform.DOScale(new Vector3 (0.9f, 0.9f, 1f), testSpeed).OnComplete(()=>
                 panelAtas.transform.SetAsFirstSibling());
-
+            panelAtas.sprite = kiri ? polosKiri : polosKana;
             panelBawah.gameObject.SetActive(true);
+            kiri = data.Kiri;
             panelBawah.sprite = data.Kiri ? dialogKiri : dialogKanan;
         }
 

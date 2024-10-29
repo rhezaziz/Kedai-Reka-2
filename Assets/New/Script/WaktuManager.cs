@@ -12,6 +12,7 @@ namespace Terbaru{
         // Start is called before the first frame update
         public Light[] lampu;
         public waktu thisWaktu;
+        public UnityEngine.UI.Image ImageTime;
 
         public List<dataWaktu> waktuData = new List<dataWaktu>();
 
@@ -43,6 +44,7 @@ namespace Terbaru{
             waktu tempWaktu = (waktu)value;
             thisWaktu = tempWaktu;
             Color color = _waktu(tempWaktu).warnaCahaya;
+            ImageTime.sprite = _waktu(tempWaktu).spriteTime; 
             //sun.color = color;
             float intent = _waktu(tempWaktu).getIntent();
             foreach(var light in lampu){
@@ -63,6 +65,7 @@ namespace Terbaru{
     public class dataWaktu{
         public Color warnaCahaya;
         public waktu waktu;
+        public Sprite spriteTime;
 
         public float maxIntent;
         public float minIntent;

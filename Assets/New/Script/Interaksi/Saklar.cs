@@ -18,6 +18,33 @@ namespace Terbaru{
         Transform player;
 
         public string namaAnimasiPlayer;
+
+        public Transform Player;
+        public GameObject point;
+        public float distancePlayer;
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.position);
+
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
+        }
+
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
+
+        public void changeInteractable(bool value){
+            interactable = value;
+            // return interactable;
+        }
         
         public void action(Transform Player)
         {
@@ -40,13 +67,15 @@ namespace Terbaru{
 
         public void btnActive(GameObject btn, bool interactable){
             btn.SetActive(interactable);
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             string text = isOn ? "Matikan Lampu" : "Nyalakan Lampu";
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = text;
         }
 
         public void isTutorial(bool value)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
     }
 }

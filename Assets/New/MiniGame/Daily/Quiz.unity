@@ -2292,7 +2292,8 @@ MonoBehaviour:
   pilihanD: {fileID: 152043653}
   soal: {fileID: 940521235}
   data: {fileID: 11400000, guid: 5b58f412a1b41354e9dc745c012eb779, type: 2}
-  action: Mini Game
+  action: Quiz
+  testGame: 0
 --- !u!4 &1540675327
 Transform:
   m_ObjectHideFlags: 0

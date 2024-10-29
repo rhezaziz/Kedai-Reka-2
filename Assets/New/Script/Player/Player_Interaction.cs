@@ -44,16 +44,27 @@ namespace Terbaru
             ObjectGame.GetComponent<Interaction>().action(transform);
         }
 
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
+
+        public bool changeInteractable(bool value){
+            interactable = value;
+            return interactable;
+        }
+
         public void onInteraction(bool interact, GameObject other){
             interactButton.GetComponent<UnityEngine.UI.Button>().onClick.RemoveAllListeners();
-            if(other != null){
+            if(other != null && other.GetComponent<Interaction>().Interactable()){
+                //Debug.Log($"{other.name}{other.GetComponent<Interaction>().Interactable()}");
                 other.GetComponent<Interaction>().btnActive(interactButton, interact);
 
                 interactButton.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() => interaksiAction(other));
                 return;
             }
-
             interactButton.SetActive(interact);
+            //interactButton.SetActive(interact && other.GetComponent<Interaction>().Interactable());
         }
 
         public void ChangeAnimation(string boolean, string trigger)

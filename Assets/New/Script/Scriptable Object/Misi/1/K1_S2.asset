@@ -16,6 +16,7 @@ MonoBehaviour:
   index: 0
   Reward: 5000
   skills: 000000000600000002000000
+  nama: 0800000007000000
   judulMisi: Memeriksa kembali anggaran
   item: {fileID: 0}
   Deskripsi: 5
@@ -23,4 +24,5 @@ MonoBehaviour:
   sceneGame: Kasus1_5
   firstChangeScene: 1
   level: 0
+  pointBonus: 0
   isDone: 0

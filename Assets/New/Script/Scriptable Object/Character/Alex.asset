@@ -39,3 +39,4 @@ MonoBehaviour:
   characterLock: 1
   info: 
   cost: 0
+  icon: {fileID: 21300000, guid: 2afa4b6bf1bca064dab28e3875ce75f5, type: 3}

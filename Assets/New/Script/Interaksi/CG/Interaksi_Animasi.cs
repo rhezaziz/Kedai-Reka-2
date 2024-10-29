@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 
 namespace Terbaru{
@@ -21,7 +22,7 @@ namespace Terbaru{
         public AudioSource suara;
 
         public void isTutorial(bool temp){
-            enabled = temp;
+            //enabled = temp;
         }
 
         public void suaraPlay(){
@@ -46,8 +47,32 @@ namespace Terbaru{
         }
 
 
-        void Start(){
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
 
+        public void changeInteractable(bool value){
+            interactable = value;
+            //return interactable;
+        }
+
+        public Transform Player;
+        public GameObject point;
+        public float distancePlayer;
+        
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.position);
+
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
         }
 
 
@@ -69,6 +94,9 @@ namespace Terbaru{
         }
 
         public void btnActive(GameObject btn, bool interactable){
+            suara.PlayOneShot(suara.clip);
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             btn.SetActive(interactable);
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = namaAction;
         }

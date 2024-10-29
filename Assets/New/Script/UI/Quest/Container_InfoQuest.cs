@@ -175,7 +175,7 @@ namespace Terbaru{
                 if (karakter[i] != null)
                 {
                     imageKarakter.gameObject.SetActive(true);
-                    imageKarakter.sprite = karakter[i].imageCharacter;
+                    imageKarakter.sprite = karakter[i].icon;
                     panelNama.gameObject.SetActive(true);
                     panelNama.GetComponentInChildren<TMP_Text>().text = karakter[i].namaCharacter;
                     cancelSelect.SetActive(true);
@@ -228,7 +228,7 @@ namespace Terbaru{
 
             btnClose.gameObject.SetActive(isActive);
             imageCharacter.gameObject.SetActive(isActive);
-            imageCharacter.sprite = isActive ?  karakter[index].imageCharacter : null;
+            imageCharacter.sprite = isActive ?  karakter[index].icon : null;
 
         }
 
@@ -267,11 +267,15 @@ namespace Terbaru{
             selectedCharacter(index);
             cKarakter[index] = null;
             karakter[index] = null;
+
+            
         }
         public void cloaseInfoQuest()
         {
             for(int i = 0; i < cKarakter.Length; i++)
             {
+                if(karakter[i] != null)
+                    karakter[i].selected = false;
                 resetInfoQuest(i);
             //    unSelectedCharacter(i);
             }

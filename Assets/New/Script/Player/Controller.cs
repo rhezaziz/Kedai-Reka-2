@@ -17,6 +17,10 @@ namespace Terbaru
         public List<Mimik> mimik;
         public List<Mimik> mimikPlayer;
 
+        public void setPlayerOnFrontDoor(){
+            transform.localPosition = profil.position;
+        }
+
 
         public void currentState(state current)
         {

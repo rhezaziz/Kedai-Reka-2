@@ -1,0 +1,76 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Tugas Besar - Sebelum Mini Game
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 'Setelah semua persiapan telah selesai, semua anggota berangkat
+        ke tempat tujuan dengan semangat. Sesampainya di desa, mereka
+
+        disambut
+        dengan hangat oleh warga disana.'
+      VO: {fileID: 8300000, guid: 00b4ee28a99e3004caf2a9e46d316ad4, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 'Mereka melakukan penyambutan dan setelahnya mulai berkeliling
+
+        untuk
+        besosialisasi sambil mengecek tempat instalasi filter air lalu
+
+        menutup
+        hari dengan beristirahat di salah satu rumah warga yang
+
+        telah disiapkan
+        untuk mereka tinggal selama program.'
+      VO: {fileID: 8300000, guid: 6e30ee3a9a763674d8e7283d98e9c1de, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 'Hari berikutnya, di mana hari pelaksanaan tiba, semua mahasiswa
+
+        berkumpul
+        dan membagi menjadi beberapa tim untuk instalasi di
+
+        masing-masing
+        area yang sudah mereka tandai sebelumnya.'
+      VO: {fileID: 8300000, guid: 1e063eb2df3e2c541ab4ec4c22ad1124, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 'Warga dan anak-anak senang dengan kedatangan mereka,
+
+        mereka
+        berdatangan untuk membantu atau sekedar menyuguhkan
+
+        cemilan-cemilan
+        bagi para mahasiswa.'
+      VO: {fileID: 8300000, guid: ed847248827e8184d8c748ec457bfe41, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Setelah pemasangan, hari-hari berikutnya mereka mulai memeriksa
+        hasil air dari filter yang mereka buat.
+      VO: {fileID: 8300000, guid: 18f45ade2ca33e945a245c5bf354e4bd, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0

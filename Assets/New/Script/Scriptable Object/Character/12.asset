@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   index: 0
   nama: 12
-  skills: 0f0000001000000011000000
+  skills: 050000000200000011000000
   coba:
   - A
   - B
@@ -40,3 +40,4 @@ MonoBehaviour:
   characterLock: 1
   info: 
   cost: 30000
+  icon: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}

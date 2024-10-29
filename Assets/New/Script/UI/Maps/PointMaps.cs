@@ -32,7 +32,10 @@ namespace Terbaru{
 
             Gambar.material = info.valueMaps.active ? null : shadow;
 
-            btnMap.onClick.AddListener(() => manager.keliling(info));
+            btnMap.onClick.AddListener(() => {
+                manager.keliling(info);
+                QuestManager.instance.CheckActionQuest("Pindah");
+                });
         }
     }
 }

@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using DG.Tweening;
 
 namespace Terbaru{
     public class Result_Quest : MonoBehaviour
@@ -21,6 +21,7 @@ namespace Terbaru{
         public Controller control;
 
         public GameObject objectPanel;
+        public Transform panelResutl;
 
         public GameObject panelItem;
         public UnityEngine.UI.Image gambarItem;
@@ -36,7 +37,9 @@ namespace Terbaru{
             return null;
         }
         public void result(listQuest currentQuest){
+            panelResutl.localScale = Vector2.zero;
             objectPanel.SetActive(true);
+            panelResutl.DOScale(Vector2.one * .9f, 1f);
             klikResult.onClick.RemoveAllListeners();
             //Debug.Log($"{quest.select.namaPilihan[0]} -- {quest.select.namaPilihan[1]} -- {quest.select.itemOn}");
             for(int i = 0; i  < quest.select.namaPilihan.Length; i++){
@@ -45,17 +48,51 @@ namespace Terbaru{
                 uiS[i].namaKarakter.text = temp.ToString();
                 uiS[i].border.sprite = karakterTidakSesuai;
                 currentQuest.quest.pointBonus += 25;
+
                 
-                if(temp == currentQuest.quest.nama[i]){
-                    uiS[i].border.sprite = karakterSesuai;
-                    currentQuest.quest.pointBonus += 25;
-                    break;
+                foreach(var nama in currentQuest.quest.nama){
+                    
+                    if(temp == nama){
+                        
+                        uiS[i].border.sprite = karakterSesuai;
+                        currentQuest.quest.pointBonus += 25;
+                        break;
+                    }
                 }
             }
+
+            if(currentQuest.quest.item != null){
+                gambarItem.sprite = currentQuest.quest.item.gambarItem;
+                gambarItem.color = Color.black;
+                if(quest.select.itemOn){
+                    gambarItem.color = Color.white;
+                }
+            }else{
+                panelItem.SetActive(false);
+            }
+
+            pointBonusText.text = currentQuest.quest.pointBonus.ToString();
+            pointText.text = currentQuest.quest.Reward.ToString();
             klikResult.onClick.AddListener(() => tambahPoint(currentQuest));
         }
 
+        void closePanel(){
+            panelResutl.DOScale(Vector2.one * 1.1f, .25f).OnComplete(() => {
+                panelResutl.DOScale(Vector2.zero, .5f).OnComplete(() => {
+                    
+                });
 
+                //var camera = Camera.main;
+            // float zoom = isActive ? -7f : -10f;
+                //camera.transform.DOLocalMoveZ(-10f, 1f);
+                UiManager.instance.Chinematic(false);
+                objectPanel.SetActive(false);
+                Debug.Log("Zoom Out");
+                FindObjectOfType<UiManager>().panelUtama.SetActive(true);
+                control.currentState(state.Default);
+                control.playerMove.move = true;
+            });
+        }
 
         public void tambahPoint(listQuest currentQuest){
             var playerProfil = GameManager.instance.profil;
@@ -64,12 +101,9 @@ namespace Terbaru{
             playerProfil.Saldo += currentQuest.quest.Reward;
 
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
-            UiManager.instance.Chinematic(true);
-            objectPanel.SetActive(false);
 
-            FindObjectOfType<UiManager>().panelUtama.SetActive(true);
-            control.currentState(state.Default);
-            control.playerMove.move = true;
+            closePanel();
+            
         }
     }
 

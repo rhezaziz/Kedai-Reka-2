@@ -16,6 +16,7 @@ namespace Terbaru{
         public GameObject MoveController;
         public GameObject panelValuePlayer;
         public Button IntearctButton;
+        public Button ipad;
         public QuizManager qm;
 
         [Header("Interact Object")]
@@ -168,6 +169,7 @@ namespace Terbaru{
             FindObjectOfType<Controller>().currentState(state.Default);
             GameObject dindaSpawn = GameManager.instance.npcCharacter(dindaData.objectNPC);
             dindaSpawn.SetActive(true);
+            dinda.GetComponent<Interaction>().changeInteractable(true);
             
             dindaSpawn.transform.SetParent(dinda.transform);
             dindaSpawn.transform.localPosition = Vector3.zero;
@@ -180,9 +182,12 @@ namespace Terbaru{
             //Vector3 posDinda = dindaData.Posisi;
             action.OnAction.AddListener(() =>
             {
+                dinda.GetComponent<Interaction>().changeInteractable(false);
                 actionEnd(dindaSpawn);
                 dinda.SetActive(false);
+                
                 dindaData.characterLock = false;
+                panelQuest.changeInteractable(true);
             });
             //dinda.SetActive(true);
         }
@@ -198,6 +203,7 @@ namespace Terbaru{
             Day1_6();
             dindaData.characterLock = false;
         }
+        
 
         public void initDay1_6(){
             UiManager.instance.panelUtama.SetActive(false);
@@ -221,6 +227,7 @@ namespace Terbaru{
         }
 
         void endDay1_7(){
+            QuestManager.instance.CheckAction("Tidur");
             TutorialEvents.OnTutorialComplete -= endDay1_7;
             UiManager.instance.panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
@@ -235,7 +242,7 @@ namespace Terbaru{
         void initDay2_1(){
             Debug.Log("tes 1 1");
             Invoke("Day2_1", 8f);
-            colDeketKamarPintu.SetActive(true);
+            colDeketKamar.SetActive(false);
             //Day2_1();
             
         }
@@ -247,12 +254,14 @@ namespace Terbaru{
             objDay2_2.SetActive(true);
             PintuKamar.extendAction.RemoveListener(initDay2_1);
             PintuKamar.enabled = false;
+            PintuKamar.changeInteractable(false);
             dindaData.selected = true;
         }
 
         public void Day2_2(){
             objDay2_2.SetActive(false);
             KamarMandi.enabled = true;
+            KamarMandi.changeInteractable(true);
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_2");
             KamarMandi.extendAction.AddListener(initDay2_3);
@@ -261,6 +270,7 @@ namespace Terbaru{
         void initDay2_3(){
             KamarMandi.extendAction.RemoveListener(initDay2_3);
             KamarMandi.enabled = false;
+            KamarMandi.changeInteractable(false);
             Invoke("Day2_3", 5f);
         }
 
@@ -274,7 +284,7 @@ namespace Terbaru{
             objDay2_4.SetActive(false);
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_4");
-            
+            dapur.changeInteractable(true);
             dapur.extendAction.AddListener(Day2_5);
         }
 
@@ -287,11 +297,12 @@ namespace Terbaru{
         }
 
         void Day2_5(){
-
+            dapur.changeInteractable(false);
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_5");
             dapur.extendAction.RemoveListener(Day2_5);
             PintuUtama.enabled = true;
+            PintuUtama.changeInteractable(true);
             PintuUtama.extendAction.AddListener(Day2_6);
 
         }
@@ -300,6 +311,7 @@ namespace Terbaru{
             PintuUtama.enabled = false;
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_6");
+            PintuUtama.changeInteractable(false);
             PintuUtama.extendAction.RemoveListener(Day2_6);
             TutorialEvents.OnTutorialComplete += endDay2_6;
 
@@ -315,7 +327,7 @@ namespace Terbaru{
             TutorialLoader.instance.Load("Day2_7");
             TutorialEvents.OnTutorialComplete += initDay2_8;
             TutorialController.instance.hiddenBtn.onClick.AddListener(()=>
-                dosen.isQuiz = true);
+                dosen.onDialog = true);
         }
         
 
@@ -341,6 +353,7 @@ namespace Terbaru{
         public void Day2_9(){
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_9");
+            colDeketKamarPintu.SetActive(false);
             
         }
 
@@ -351,6 +364,7 @@ namespace Terbaru{
         }
 
         public void Day2_10(){
+            
             IntearctButton.onClick.RemoveListener(Day2_10);
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_10");
@@ -359,6 +373,7 @@ namespace Terbaru{
         public void Day2_11(){
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_11");
+            ipad.gameObject.SetActive(true);
             objPaket.SetActive(true);
         }
 

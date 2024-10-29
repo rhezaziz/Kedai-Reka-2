@@ -16,6 +16,7 @@ MonoBehaviour:
   index: 0
   Reward: 3500
   skills: 000000000000000000000000
+  nama: 0700000003000000
   judulMisi: Review rundown
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
@@ -23,4 +24,5 @@ MonoBehaviour:
   sceneGame: Kasus3_2
   firstChangeScene: 1
   level: 0
+  pointBonus: 0
   isDone: 0

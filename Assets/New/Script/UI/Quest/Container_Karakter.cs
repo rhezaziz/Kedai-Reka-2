@@ -67,7 +67,7 @@ namespace Terbaru{
             pilihBtn.onClick.RemoveAllListeners();
             panelInfoKarakter.SetActive(true);
             skill = null;
-            fotoInfo.sprite = karakter.imageInfoCharacter;
+            fotoInfo.sprite = karakter.icon;
             NamaInfoKarakter.text = karakter.namaCharacter;
             pilihBtn.onClick.AddListener(() => pilih());
             kembaliBtn.onClick.AddListener(() => closeInfo());

@@ -33,8 +33,25 @@ namespace Terbaru{
 
         public bool value;
 
+        public Transform Player;
+        public GameObject point;
+        public float distancePlayer;
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.position);
+
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
+        }
+
         public void isTutorial(bool temp){
-            enabled = temp;
+            //enabled = temp;
         }
 
         
@@ -44,6 +61,16 @@ namespace Terbaru{
         
         void OnEnable(){
             value = true;
+        }
+
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
+
+        public void changeInteractable(bool value){
+            interactable = value;
+            // return interactable;
         }
 
         public void action(Transform Player){
@@ -87,6 +114,8 @@ namespace Terbaru{
         public void btnActive(GameObject btn, bool interactable){
             
             btn.SetActive(interactable);
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             btn.GetComponentInChildren<Text>().text = namaAction;
         }
 

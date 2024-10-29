@@ -22,7 +22,7 @@ namespace MiniGame1_2{
 
         bool selesai;
 
-        string action = "Memilih TIM Anggran";
+        public string action = "Memilih TIM Anggran";
 
         public List<data> datas = new List<data>();
         // Start is called before the first frame update
@@ -50,7 +50,7 @@ namespace MiniGame1_2{
         }
 
         void Start(){
-            mulaiGame();
+            //mulaiGame();
         }
 
         public void mulaiGame()
@@ -95,7 +95,15 @@ namespace MiniGame1_2{
                 panel.notSelected();
             }
 
-            Invoke("animTerpilih", 1.5f);
+            StartCoroutine(end());
+        }
+
+        IEnumerator end(){
+            yield return new WaitForSeconds(1.5f);
+            animTerpilih();
+
+            yield return new WaitForSeconds(1.5f);
+            QuestManager.instance.CheckAction(action);
         }
 
         void animTerpilih(){
@@ -103,6 +111,8 @@ namespace MiniGame1_2{
             foreach(var panel in listPanel){
                 panel.gameObject.SetActive(false);
             }
+
+            //QuestManager.instance.CheckAction(action);
         }
         
     }

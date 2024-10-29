@@ -7,26 +7,47 @@ namespace Terbaru{
     public class Narasi : MonoBehaviour, IDialog
     {
         public NarasiDialog dialog;
+
+        public Camera cameraUtama;
+        public GameObject Sekre;
+
+        public Controller player;
+
+        public List<Kasus> listKasus = new List<Kasus>();
+        public int indexKasus = 0;
         
 
         Dialog tempDialog;
 
-        public void startDialog(){
-            tempDialog = dialog.narasi;
-            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
-            FindObjectOfType<Controller>().currentState(state.Interaction); 
-                      
-            UiManager.instance.Chinematic(true);
-            
-            UiManager.instance.panelUtama.SetActive(false);
+        NarasiDialog getNarasi(Dialog temp){
+            foreach(var narasi in listKasus[indexKasus].dataNarasi){
+                if(narasi.narasi == temp){
+                    return narasi;
+                }
+            }
 
-            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
-           
+            return null;
         }
 
         
-        public void startDialog(Dialog dialog){
-            tempDialog = dialog;
+
+        public void startDialog(){
+            tempDialog = listKasus[indexKasus].dataNarasi[0].narasi;
+            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
+            FindObjectOfType<Controller>().currentState(state.Interaction); 
+                      
+            UiManager.instance.Chinematic(true);
+            
+            UiManager.instance.panelUtama.SetActive(false);
+            
+           StartCoroutine(mulai());
+           
+        }
+
+        public void startNarasi(Dialog temp){
+            
+            dialog = getNarasi(temp);
+            //tempDialog = dialog;
 
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
             FindObjectOfType<Controller>().currentState(state.Interaction); 
@@ -34,13 +55,75 @@ namespace Terbaru{
             UiManager.instance.Chinematic(true);
             
             UiManager.instance.panelUtama.SetActive(false);
+            
+            //FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog.narasi);
+        }
 
+        public void startNarasi(int temp){
+            
+            tempDialog = listKasus[indexKasus].dataNarasi[temp].narasi;
+            //tempDialog = dialog;
+
+            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
+            //FindObjectOfType<Controller>().currentState(state.Interaction); 
+                      
+            //UiManager.instance.Chinematic(true);
+            
+            //UiManager.instance.panelUtama.SetActive(false);
+            
+            //FindObjectOfType<DialogManager>().StartDialog(tempDialog);
             FindObjectOfType<DialogManager>().StartDialog(tempDialog);
         }
 
+        IEnumerator mulai(){
+            UiManager.instance.Chinematic(true);
+
+            yield return new WaitForSeconds(3f);
+
+            UiManager.instance.Chinematic(true);
+
+            yield return new WaitForSeconds(2f);
+            cameraUtama.gameObject.SetActive(false);
+            Sekre.SetActive(true);
+            UiManager.instance.Chinematic(true);
+
+            yield return new WaitForSeconds(1f);
+            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            
+        }
+
+        IEnumerator kembali(){
+            FindObjectOfType<DialogManager>().closeDialog();
+            yield return new WaitForSeconds(1f);
+            UiManager.instance.Chinematic(false);
+
+            yield return new WaitForSeconds(2f);
+            Sekre.SetActive(false);
+            cameraUtama.gameObject.SetActive(true);
+            player.setPlayerOnFrontDoor();
+
+            yield return new WaitForSeconds(1f);
+            closeDialog();
+            // UiManager.instance.Chinematic(false);
+
+            // yield return new WaitForSeconds(1f);
+            
+            // // UiManager.instance.Chinematic(true);
+
+            // yield return new WaitForSeconds(1f);
+            //  FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            
+        }
+
+        
+
+        
+        
+
         public void nextDialog(Dialog dialog){
             tempDialog = dialog;
-            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog);
         }
 
         public void endDialog(){
@@ -50,13 +133,21 @@ namespace Terbaru{
                 QuestManager.instance.StartQuest(quest);
                 Debug.Log("End Dialog Have Quest");
                 return;
-            }else{
-                closeDialog();
+            } else if(tempDialog.events.GetPersistentEventCount() > 0){
+                Debug.Log("Invoke");
+                tempDialog.events?.Invoke();
+            }
+            
+            else
+            
+            {
+                StartCoroutine(kembali());
             }
             
         }
 
-        void closeDialog(){
+        public void closeDialog(){
+            //FindObjectOfType<DialogManager>().closeDialog();
             //Debug.Log("Close Dialog");
             UiManager.instance.Chinematic(false);
             
@@ -80,6 +171,10 @@ namespace Terbaru{
         }
     }
 
-
+    [System.Serializable]
+    public class Kasus{
+        public int indexKasus;
+        public List<NarasiDialog> dataNarasi;
+    }
     
 }

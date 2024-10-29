@@ -16,6 +16,7 @@ MonoBehaviour:
   index: 0
   Reward: 5500
   skills: 000000000000000000000000
+  nama: 0300000007000000
   judulMisi: Menyiapkan takaran yang akan dipakai
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
@@ -23,4 +24,5 @@ MonoBehaviour:
   sceneGame: Kasus5_6
   firstChangeScene: 1
   level: 0
+  pointBonus: 0
   isDone: 0

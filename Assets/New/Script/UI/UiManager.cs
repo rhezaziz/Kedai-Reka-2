@@ -44,7 +44,7 @@ namespace Terbaru
 
         public void UpdateSaldo(int saldo){
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-            Saldo.text = "Rp" + saldo.ToString("n0", info);
+            Saldo.text = "" + saldo.ToString("n0", info);
         }
 
         public void updateEnergy(int value){
@@ -121,6 +121,15 @@ namespace Terbaru
             anim.SetTrigger(_action);
         }
 
+        public void chinematicDialog(bool isActive){
+             var camera = Camera.main;
+            string _action = isActive ? "Mulai" : "Reverse";
+
+            var anim = ChinematicPanel.GetComponent<Animator>();
+            //Debug.Log("chinematic");
+            anim.SetTrigger(_action);
+        }
+
         public void Chinematic(bool isActive, float positionY){
             var camera = Camera.main;
             float zoom = isActive ? -7f : -10f;
@@ -149,7 +158,7 @@ namespace Terbaru
             anim.SetTrigger("Mulai");
             yield return new WaitForSeconds(2f);
             
-            //QuestManager.instance.StartProcessQuest(quest);
+            QuestManager.instance.StartProcessQuest(quest);
             foreach(var NPC in NPCs)
                 NPC.SetActive(false);
 
@@ -158,10 +167,12 @@ namespace Terbaru
             yield return new WaitForSeconds(1f);
 
             panelUtama.SetActive(true);
-            //ChinematicPanel.SetActive(false);
+            ChinematicPanel.SetActive(false);
             //FindObjectOfType<Movement>().move = true;
             FindObjectOfType<Controller>().currentState(state.Default);
         }
+
+
 
 
         IEnumerator CutsceneMiniGame(List<GameObject> NPCs){

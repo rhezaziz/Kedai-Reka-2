@@ -16,17 +16,33 @@ namespace Terbaru{
 
         public UnityEvent unityAction;
 
-        
-        // Start is called before the first frame update
-        void Start()
-        {
-            
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
+        public void changeInteractable(bool value){
+            interactable = value;
+            // return interactable;
+        }
+
+        
+        // Start is called before the first frame update
+        public Transform Player;
+        public GameObject point;
+        public float distancePlayer;
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.position);
+
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
         }
 
         public Dialog dialog;
@@ -51,6 +67,8 @@ namespace Terbaru{
         public void btnActive(GameObject btn, bool interactable)
         {
             btn.SetActive(interactable);
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Sapu";
             var button = btn.GetComponent<UnityEngine.UI.Button>();
             button.onClick.AddListener(() =>{
@@ -65,7 +83,7 @@ namespace Terbaru{
 
         public void isTutorial(bool value)
         {
-            throw new System.NotImplementedException();
+            //throw new System.NotImplementedException();
         }
     }
 }

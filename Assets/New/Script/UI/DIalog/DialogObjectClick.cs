@@ -8,21 +8,31 @@ namespace Terbaru{
     {
         public Dialog dialog;
         public UnityEvent extendAction;
-        public bool isQuiz = true;
+        public bool onDialog = true;
+        public GameObject Indikator;
         void OnMouseDown(){
             Debug.Log("Klik");
-            if(!isQuiz)
+            if(!onDialog || FindObjectOfType<MapsManager>().onAnimation)
                 return;
             startDialog();
         }
         public void startDialog(){
-            isQuiz = false;
+            onDialog = false;
+            UiManager.instance.chinematicDialog(true);
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject;
             FindObjectOfType<DialogManager>().StartDialog(dialog);
+            
 
         }
 
+        public void interactNPC(bool value){
+            onDialog = value;
+            Indikator.SetActive(value);
+        }
+
         public void endDialog(){
+            UiManager.instance.chinematicDialog(false);
+            interactNPC(false);
             extendAction?.Invoke();
             //Mulai Quiz
             //Debug.Log("Selesai Dialog, Saat nya Quiz");

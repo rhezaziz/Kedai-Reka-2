@@ -13,7 +13,7 @@ namespace Terbaru{
         public bool value;
 
         public void isTutorial(bool temp){
-            enabled = temp;
+            //enabled = temp;
         }
 
 
@@ -27,8 +27,31 @@ namespace Terbaru{
         }
 
 
-        void Start(){
+        public Transform Player;
+        public GameObject point;
+        public float distancePlayer;
+        public void checkDistance(){
+            float distance = Vector3.Distance(transform.position, Player.position);
 
+            if(distancePlayer >= distance){
+                point.gameObject.SetActive(true);
+            }else{
+                point.gameObject.SetActive(false);
+            } 
+        }
+
+        void Update(){
+            checkDistance();
+        }
+
+        bool interactable;
+        public bool Interactable(){
+            return interactable;
+        }
+
+        public void changeInteractable(bool value){
+            interactable = value;
+            // return interactable;
         }
         public GameObject quest;
         public void action(Transform player){
@@ -44,7 +67,8 @@ namespace Terbaru{
 
         public void btnActive(GameObject btn, bool interactable){
             bool isActive = interactable && !QuestManager.instance.isActive;
-
+            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            
             btn.SetActive(isActive);
             btn.GetComponentInChildren<UnityEngine.UI.Text>().text = "Lihat Tugas";
 
