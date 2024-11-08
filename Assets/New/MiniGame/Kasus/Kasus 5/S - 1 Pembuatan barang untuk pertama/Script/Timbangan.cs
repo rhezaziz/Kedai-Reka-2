@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
+using TMPro;
 
 namespace MiniGame5_4{
     public class Timbangan : MonoBehaviour
@@ -12,17 +13,19 @@ namespace MiniGame5_4{
 
         public Transform jarum;
 
+        public TMP_Text textTakaran;
+
         // Start is called before the first frame update
         
         public void tambahTakaran(float isi){
             int endIndex = isiValue.Count - 1;
-
+            StartCoroutine(munculText(isi));
             if(value >= isiValue[endIndex].takaran){
                 return;
             }
 
             value += isi;
-
+            FindObjectOfType<Manager>().setCurrentTakaran((int)isi);
             foreach(var check in isiValue){
                 if(check.takaran == value){
                     isiTakaran.sprite = check.gambar;
@@ -30,9 +33,24 @@ namespace MiniGame5_4{
                     return;
                 }
             }
-
-            
         }
+
+        IEnumerator munculText(float isi){
+            textTakaran.text = $"+{(int)isi} Gram";
+            textTakaran.DOColor(new Color(1f,1f,1f,1f),.5f);
+
+            yield return new WaitForSeconds(1.5f);
+            textTakaran.DOColor(new Color(1f,1f,1f,0f),.5f);
+
+        }
+
+
+        public void resetIsi(){
+            isiTakaran.sprite = null;
+            value = 0;
+        }
+
+
         void Start()
         {
             

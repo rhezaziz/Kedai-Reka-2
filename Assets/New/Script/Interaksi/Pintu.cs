@@ -11,6 +11,7 @@ namespace Terbaru
     public class Pintu : MonoBehaviour, Interaction
     {
         public UnityEvent extendAction;
+        public UnityEvent ExtraAction;
         public Vector3 PosUI;
         public Transform spawn;
         public GameObject Trigger;
@@ -74,7 +75,10 @@ namespace Terbaru
 
             Rotate = new Vector3(0f, rotateBuka, 0f);
             SoundManager.instance.sfx(29);
-            engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => extendAction?.Invoke());
+            engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => {
+                extendAction?.Invoke();
+                ExtraAction?.Invoke();
+                });
             
         }
 

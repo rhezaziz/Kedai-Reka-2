@@ -33,23 +33,30 @@ namespace MiniGame2_2{
 
         public TMPro.TMP_Text jumlahText;
 
+        public GameObject resultPanel;
+        public TMPro.TMP_Text hasil;
+        public UnityEngine.UI.Button resultBtn;
 
         private void Awake()
         {
             instance = this;
             //file = new List<Throw>();
-            StartGame();
+            //StartGame();
         }
 
         private void Start()
         {
             jumlahText.text = $"Jumlah : {barangInList.Count}";
             jumlahDimasukkan = barangInList.Count;
+            total = jumlahDimasukkan;
         //  CountUI.action += StartGame;
         }
 
+        int totalBarang;
+
         public void updateJumlah(GameObject value){
-            GameObject tmpText = tempBarang(value).listText;
+            var b = tempBarang(value);
+            GameObject tmpText = b != null ? b.listText : null;
             checkBarang(tmpText);
             //bool benar = tmpText != null;
 
@@ -62,12 +69,14 @@ namespace MiniGame2_2{
 
             if(jumlahDimasukkan <= 0){
                 jumlahDimasukkan = 0;
-                Invoke("Selesai", 2f);
-
+                //Invoke("Selesai", 2f);
+                
                 foreach(var col in file){
                     col.GetComponent<Collider2D>().enabled = false;
 
                 }
+
+                StartCoroutine(result());
             }
 
         }
@@ -84,7 +93,7 @@ namespace MiniGame2_2{
 
         
 
-        private void StartGame()
+        public void StartGame()
         {
             for(int i = 0; i < barangInList.Count; i++){
                 GameObject textList = Instantiate(text);
@@ -94,6 +103,10 @@ namespace MiniGame2_2{
                 barangInList[i].listText = textList;
                 textList.transform.localPosition = Vector3.zero;
                 textList.transform.localScale = Vector3.one;
+            }
+
+            foreach(var item in file){
+                item.GetComponent<Collider2D>().enabled = true;
             }
 
             //
@@ -160,12 +173,35 @@ namespace MiniGame2_2{
             checkJumlah();
             Debug.Log("Benar : " + jmlBenar + "| Salah : " + jmlSalah);
         }
+        public string Action;
+        IEnumerator result(){
+            yield return new WaitForSeconds(2f);
+            resultPanel.SetActive(true);
+            resultPanel.transform.GetChild(0).DOScale(Vector3.one * .7f, 1f);
+            hasil.text = $"0/{total}";
+            yield return new WaitForSeconds(1f);
 
-        void Selesai()
+            int count = 100;
+            while(count > 0){
+                int tempInt = Random.Range(0, total);
+                hasil.text = $"{tempInt}/{total}";
+                count -= 1;
+                yield return new WaitForSeconds(5 / 100);
+            }
+
+            hasil.text = $"{jmlBenar}/{total}";
+            int point = jmlBenar * 50;
+            QuestManager.instance.currentQuest.quest.pointBonus += point;
+
+            yield return new WaitForSeconds(1f);
+
+            resultBtn.interactable = true;
+            //QuestManager.instance.CheckAction(Action);
+        }
+
+        public void Selesai()
         {
-            if(testGame)
-                balikMainMenu();
-            Debug.Log("Selesai");
+            QuestManager.instance.CheckAction(Action);
             //panelGame.SetActive(false);
             //FindObjectOfType<Dialog_Sekretaris>().done = true;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
 using UnityEngine;
-
+using Terbaru;
 
 namespace MiniGame5_1{
     public class Manager : MonoBehaviour
@@ -14,12 +14,24 @@ namespace MiniGame5_1{
         
 
         float jumlahRating;
+        public List<Collider2D> cols = new List<Collider2D>();
 
 
         [Header("UI rating"  )]
         public GameObject panelRating;
         public UnityEngine.UI.Image ratingUi;
         public GameObject btnKembali;
+
+        public void startGame(){
+            foreach(var col in cols){
+                col.enabled = true;
+            }
+        }
+        public string action;
+        public void checkAction(){
+            QuestManager.instance.currentQuest.quest.pointBonus += (4 * 50);
+            QuestManager.instance.CheckAction(action);
+        }
         public void selesai(UnityEngine.UI.Image sprite, float rating){
             jumlahRating += rating;
             sprite.material = grey;
@@ -41,25 +53,6 @@ namespace MiniGame5_1{
             btnKembali.SetActive(true);
         }
         // Start is called before the first frame update
-        void Start()
-        {
-            btnKembali.GetComponent<UnityEngine.UI.Button>().onClick.AddListener(() =>{
-                if(testGame)
-                    balikMainMenu();
-            });
-        }
-
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+    
     }
 }

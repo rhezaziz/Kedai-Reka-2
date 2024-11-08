@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace Terbaru{
 
@@ -13,6 +14,8 @@ namespace Terbaru{
 
         public List<int> GantiQuestList = new List<int>();
 
+        public List<dayQuest> quests = new List<dayQuest>();
+
         public int day = 0;
         void Start(){
             maps.updateDayKonten(days[0].mapsId);
@@ -20,8 +23,10 @@ namespace Terbaru{
 
         public void updateDay(){
             //FindObjectOfType<WaktuManager>().currentTime(0);
+            initContentQuest(false);
             FindObjectOfType<VideoManager>().action(clipsTidur);
             StartCoroutine(delayExecute());
+            FindObjectOfType<WaktuManager>().changeInteraction();
         }
 
 
@@ -42,16 +47,40 @@ namespace Terbaru{
                 }
             }
 
+            if(days[Mathf.Clamp(day - 1, 0, 30)].itemSpawn.Count >= 1){
+                foreach(var item in days[day].itemSpawn){
+                    item.item.SetActive(false);
+                }
+            }
+
+            initContentQuest(true);
+
             foreach(var time in GantiQuestList){
                 if(time == day){
                     QuestManager.instance.CurrentQuest = 1;
                     return;
                 }
             }
+
+            
         }
 
         public void updateMaps(){
             maps.afterQuiz(days[day].mapsId);
+        }
+
+        public void initContentQuest(bool thisDay){
+            foreach(var quest in quests){
+                int tempDay = thisDay ? day : day - 1;
+
+                if(quest.day == Mathf.Clamp(tempDay, 0, 30)){
+                    foreach(var item in quest.interact){
+                        item.GetComponent<Interaction>().changeInteractable(thisDay);
+                    }
+
+                    if(thisDay) quest.events?.Invoke();
+                }
+            }
         }
     }
 
@@ -65,5 +94,13 @@ namespace Terbaru{
     public class spawnItem{
         public GameObject item;
         //public Transform posisiItem;
+    }
+
+    [System.Serializable]
+    public class dayQuest{
+        public int day;
+        public UnityEvent events;
+
+        public List<GameObject> interact = new List<GameObject>();
     }
 }

@@ -24,7 +24,7 @@ namespace Terbaru{
             panelInfo.SetActive(!info.valueMaps.active || info.valueMaps.warning);
 
             //tnMap.onClick.AddListener((x) => {action(x);});
-
+            //Debug.Log($"{info.nama} : {info.valueMaps.warning}");
             Lock.SetActive(!info.valueMaps.active);
             warning.SetActive(info.valueMaps.warning);
             namaMaps.color = info.valueMaps.active ? Color.black : Color.white;
@@ -33,6 +33,7 @@ namespace Terbaru{
             Gambar.material = info.valueMaps.active ? null : shadow;
 
             btnMap.onClick.AddListener(() => {
+                warning.SetActive(false);
                 manager.keliling(info);
                 QuestManager.instance.CheckActionQuest("Pindah");
                 });

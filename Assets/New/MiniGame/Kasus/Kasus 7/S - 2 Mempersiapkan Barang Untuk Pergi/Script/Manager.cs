@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using DG.Tweening;
+using Terbaru;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
@@ -11,6 +12,7 @@ namespace MiniGame7_4{
 
     public class Manager : MonoBehaviour
     {
+        public string action;
         public List<dataContent> datas = new List<dataContent>();
         List<ui_Component> components = new List<ui_Component>();
         public Color selectedBtn, unSelectedBtn;
@@ -23,10 +25,10 @@ namespace MiniGame7_4{
         public Image background; 
         public Image panelTimer;
         public float timer;
-        void Start()
-        {
-            initStart();
-        }
+        // void Start()
+        // {
+        //     initStart();
+        // }
 
         // Update is called once per frame
         void Update()
@@ -34,7 +36,7 @@ namespace MiniGame7_4{
             
         }
 
-        void initStart(){
+        public void initStart(){
             
             panelTimer.DOFillAmount(0f, timer).OnComplete(() =>{
                 panel.DOPivotY(-.1f, .5f).OnComplete(() =>{
@@ -138,11 +140,12 @@ namespace MiniGame7_4{
                         Image status = second.clickable.transform.GetChild(0).GetComponent<Image>(); 
                         //int index = second.GetHashCode();
                         status.sprite = tempValue;
-
+                        int point = tempValue ? 50 : 0;
+                        QuestManager.instance.currentQuest.quest.pointBonus += point;
                         Transform component = status.transform;
                         component.DOScale(Vector3.one * 1.2f, 1.2f).OnComplete(() =>{
                         component.DOScale(Vector3.one, .2f).OnComplete(()=>{
-
+                            
                         
                             });
                         });
@@ -150,7 +153,8 @@ namespace MiniGame7_4{
                     }
                 }
             }
-            
+            yield return new WaitForSeconds(1f);
+            QuestManager.instance.CheckAction(action);
             // for(int i = 0; i < valueSelected.Count; i++){
             //     // valueSelected[i].clickable.GetComponent<Image>().color = unSelectedBtn;
             //     Sprite tempValue = valueSelected[i].value ? Correct : Wrong;

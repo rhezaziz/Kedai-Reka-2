@@ -39,7 +39,7 @@ namespace Terbaru{
             
             //textSaldo.text = "Saldo : "+ "Rp" + string.Format("{0:n}",profil.Saldo);
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-            textSaldo.text = "Saldo : " + "Rp" + profil.Saldo.ToString("n0", info);
+            textSaldo.text = "Point : "  + profil.Saldo.ToString("n0", info);
 
             foreach(var item in profil.item){
                 if(!item.isShop){
@@ -77,7 +77,7 @@ namespace Terbaru{
                 btnBeli.GetComponent<Image>().enabled = false;
                 btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Habis";
                 NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-                textSaldo.text = "Saldo : " + "Rp" + profil.Saldo.ToString("n0", info);
+                textSaldo.text = "Point : " + profil.Saldo.ToString("n0", info);
                 FindObjectOfType<UiManager>().UpdateSaldo(profil.Saldo);
                 Paket.GetComponent<GrabableItem>().item.Add(item);
             }
@@ -98,6 +98,7 @@ namespace Terbaru{
             if(!Paket.activeInHierarchy){
                 Debug.Log("Non Activa");
                 Paket.SetActive(true);
+                Paket.GetComponent<Interaction>().changeInteractable(true);
                 Paket.GetComponent<GrabableItem>().item.Clear();
             }
 

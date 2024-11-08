@@ -4,11 +4,14 @@ using UnityEngine;
 using System.Globalization;
 using DG.Tweening;
 using Terbaru;
+using UnityEngine.UI;
 
 
 namespace MiniGame2_3{
     public class Manager : MonoBehaviour
     {
+        public Sprite Wrong, Correct;
+        public Button reset, check;
         public int jumlahUang;
         public TMPro.TMP_Text textUang;
         public string action;
@@ -68,8 +71,58 @@ namespace MiniGame2_3{
             jumlahBarangText.text = $"{value.jumlahBarang}";
             
             textUang.text ="Rp" + jumlahUang.ToString("n0", info )+ ",-";
-
+            reset.interactable = true;
             checkUang();
+        }
+
+
+        public void resetGame(){
+            jumlahUang = 200000;
+
+            foreach(var value in items){
+                value.jumlahBarang = -1;
+                updateData(value);
+            }
+
+            reset.interactable = false;
+        }
+
+        public void checkGame(){
+            reset.interactable = false;
+            check.interactable = false;
+            foreach(var item in items){
+                item.panelResult.gameObject.SetActive(true);
+                item.PanelItem.interactable = false;
+            }
+            StartCoroutine(checkResult());
+        }
+
+        IEnumerator checkResult(){
+            foreach(var item in items){
+                item.PanelItem.transform.GetChild(0).gameObject.SetActive(false);
+                item.PanelItem.interactable = false;
+                bool hasil = item.jumlahBarang == item.jumlahSesuai;
+                Sprite tempSprite = hasil ? Correct : Wrong;
+
+                item.panelResult.sprite = tempSprite;
+                int point = hasil ? 50 : 0;
+
+                item.panelResult.DOColor(new Color(1f,1f,1f,1f),1f);
+
+                QuestManager.instance.currentQuest.quest.pointBonus += point;
+
+                yield return new WaitForSeconds(1f);
+            }
+
+            yield return new WaitForSeconds(5f);
+
+            QuestManager.instance.CheckAction(action);
+
+
+
+            
+            
+
         }
 
         int index;
@@ -91,24 +144,13 @@ namespace MiniGame2_3{
                 }
 
                 if(index >= items.Count){
-                    if(testGame)
-                        balikMainMenu();
+                    check.interactable = true;
                 }
             }
         }
 
         public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+        
     }
 
     public enum typeBarang{
@@ -124,7 +166,9 @@ namespace MiniGame2_3{
         public UnityEngine.UI.Button PanelItem;
         public int hargaBarang;
         public int jumlahBarang;
+        public Image panelResult;
         public TMPro.TMP_Text jumlahBarangText;
+        public int jumlahSesuai;
     }
 
     

@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using Terbaru;
+using DG.Tweening;
 
 namespace MiniGame1_5{
     public class Game_Manager : MonoBehaviour
     {
 
         //public static QuizManager instance;
+
+        public bool DailyQuest;
         [Header("UI")]
         public GameObject panelQuiz;
         public GameObject pilihanA;
@@ -17,19 +20,26 @@ namespace MiniGame1_5{
         public GameObject pilihanD;
         public TMP_Text soal;
 
+        public Sprite Wrong, Correct;
+
+        public List<UnityEngine.UI.Button> option = new List<UnityEngine.UI.Button>();
+
         public soalData data;
         public string action;
         //public soalData data;
 
-        void Start(){
-            initPanelQuiz();
+        public void StartGame(){
+            if(data != null)
+                initPanelQuiz();
         }
         public void checkAction(){
-            if(testGame)
-                balikMainMenu();
-            else
+            
+            if(!DailyQuest)
                 QuestManager.instance.CheckAction(action);
-            Debug.Log(action);
+
+            else
+                QuestManager.instance.CheckActionQuest(action);
+            // Debug.Log(action);
         }
 
         void initPanelQuiz(){
@@ -41,35 +51,55 @@ namespace MiniGame1_5{
             pilihanD.transform.GetChild(0).GetChild(1).GetComponent<TMP_Text>().text = data.pilD;
         }
 
-        public void checkJawaban(string value){
+        public void clickUp(UnityEngine.UI.Button btn){
+
+            string jawaban = btn.name;
+
+            btn.transform.DOScale(Vector2.one * .85f, .5f).OnComplete(() =>{
+                btn.transform.DOScale(Vector2.one, .25f).OnComplete(() =>{
+                    checkJawaban(jawaban, btn.transform.parent);
+                });
+            });
+            foreach(var button in option){
+                button.interactable = false;
+            }
+
+            
+        }
+        Sprite spriteTemp;
+        public void checkJawaban(string value, Transform parent){
+
+            
             if(data != null){
                 
                 if(value == data.jawaban){
                     Debug.Log("Benar");
+                    spriteTemp = Correct;
+                    if(!DailyQuest) QuestManager.instance.currentQuest.quest.pointBonus += 50;
                 }
                 else{
+                    spriteTemp = Wrong;
                     Debug.Log("Salah");
                 }
 
                 data = null;
-                panelQuiz.SetActive(false);
+                //panelQuiz.SetActive(false);
 
             }
 
-            checkAction();
-        }
+            GameObject resultObj = parent.GetChild(1).gameObject;
+            resultObj.SetActive(true);
+            UnityEngine.UI.Image result = resultObj.GetComponent<UnityEngine.UI.Image>();
+            result.sprite = spriteTemp;
+            //result.DOColor(new Color (1f , 1f, 1f, 1f), 1f);
+            result.DOColor(new Color(1,1,1,1), 1f).OnComplete(() =>{
+                //Debug.Log("Selesai");
+                checkAction();
+            });
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
             
         }
+
+       
     }
 }

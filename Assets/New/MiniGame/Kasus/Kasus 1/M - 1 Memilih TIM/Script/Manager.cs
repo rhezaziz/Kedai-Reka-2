@@ -143,24 +143,11 @@ namespace MiniGame1_1{
             yield return new WaitForSeconds(1f);
             if(selesai){
                 yield return new WaitForSeconds(1f);
-                if(testGame)
-                    balikMainMenu();
-                else
-                    QuestManager.instance.CheckAction(action);
+                
+                QuestManager.instance.CheckAction(action);
             }
         }
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+        
 
         void Start(){
             //mulaiGame();

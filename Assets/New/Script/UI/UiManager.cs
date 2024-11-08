@@ -4,11 +4,13 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
 using DG.Tweening;
+using Unity.VisualScripting;
 
 namespace Terbaru
 {
     public class UiManager : MonoBehaviour
     {
+        public TMPro.TMP_Text bantuan;
         public string test;
         public static UiManager instance;
         public RekrutManager rekrut;
@@ -40,6 +42,15 @@ namespace Terbaru
             UpdateSaldo(profil.Saldo);
             updateEnergy(0);
 
+        }
+
+        public void bantuanText (string text){
+            RectTransform panelText = bantuan.transform.parent.GetComponent<RectTransform>();
+
+            float posY = text != "" ? 0f : 1f;
+
+            panelText.DOPivotY(posY, .5f);
+            bantuan.text = text;
         }
 
         public void UpdateSaldo(int saldo){
@@ -140,7 +151,9 @@ namespace Terbaru
             anim.SetTrigger(_action);
             Vector3 posCamera = new Vector3(camera.transform.localPosition.x, positionY, zoom);
             camera.transform.DOLocalMove(posCamera, 1f);
-            panelUtama.SetActive(!isActive);            
+            panelUtama.SetActive(!isActive);  
+            state temp = isActive ? state.Interaction : state.Default;
+            FindObjectOfType<Controller>().currentState(temp);          
         }
 
         IEnumerator Cutscene(List<GameObject> NPCs, Quest quest){

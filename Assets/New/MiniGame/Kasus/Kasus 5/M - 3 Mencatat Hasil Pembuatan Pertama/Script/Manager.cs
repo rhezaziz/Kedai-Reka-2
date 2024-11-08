@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 
 namespace MiniGame5_3{
@@ -8,6 +9,7 @@ namespace MiniGame5_3{
 
         public float waktu;
         public float seluruhWaktu;
+        public Collider2D keyboard;
         [TextArea(5,10)]
         public string isi;
         private Queue<string> sentences;
@@ -26,6 +28,8 @@ namespace MiniGame5_3{
         // Start is called before the first frame update
         int jumlahDialog;
         float testJumlah;
+
+        public string action;
         void Start()
         {
             sentences = new Queue<string>();
@@ -99,7 +103,11 @@ namespace MiniGame5_3{
             
             typing(false);
             done = true;
+            Invoke("GameOver",2f);
             Debug.Log(done);
+            keyboard.enabled = false;
+            yield return new WaitForSeconds(2f);
+            //GameOver();
             // foreach(char letter in sentence.ToCharArray())
             // {
             //     displayText.text += letter;
@@ -109,6 +117,12 @@ namespace MiniGame5_3{
             // }
 
             
+        }
+
+        void GameOver (){
+            Debug.Log("GameOver");
+            QuestManager.instance.currentQuest.quest.pointBonus += 50;
+            QuestManager.instance.CheckAction(action);
         }
 
         // Update is called once per frame

@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog Cerita 5 - Meeting
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: Hari ini Thomas dan Elena telah merencanakan pertemuan kembali
+        untuk mendiskusikan desain terkait water filter yang akan mereka bawa nantinya
+        ke lokasi program.
+      VO: {fileID: 8300000, guid: d76d032885c642b428e8c28e34297a0f, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Nah temen-temen, aku sudah menerima laporan dari tim survey beberapa
+      hari lalu.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: 'Terima kasih kepada tim survey kemarin! '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Berkat mereka, sekarang kita sudah mulai bisa mendiskusikan perihal
+      produksi filter yang rencananya akan kita buat di pertemuan selanjutnya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Berkat mereka, sekarang kita sudah mulai bisa mendiskusikan perihal
+      produksi filter yang rencananya akan kita buat di pertemuan selanjutnya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Betul temen-temen~
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Jadi, berdasarkan informasi yang kita terima dari tim survey, kurang
+      lebih kita akan memerlukan setidaknya 2 pasang filter air di beberapa titik
+      yang sudah dtentukan.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Selanjutnya kita akan mendiskusikan perihal anggaran yang dibutuhkan
+      untuk produksi ini.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 41cb3f490bd06b94aa51d9ae1d1401d4, type: 3}
+    Nama: 5
+    sentences: Lalu, barang apa saja yang harus kita beli untuk pembutan filter air
+      ini?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Sepengalaman aku di program pecinta alam dulu sih, kurang lebih ada
+      ijuk, pasir halus, arang tempurung kelapa, kerikil dan batu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Dulu kami sih tinggal cari-cari di sekitar kampus saja, harusnya nanti
+      pasti akan mudah ditemui juga di sana.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7de184c1d209a6045a554964ff3a496a, type: 3}
+    Nama: 6
+    sentences: Jadi rasanya gak begitu memakan banyak dana.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: Betul, aku juga pernah coba buat. Menurutku sih tidak sulit, ya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Bagus dong, kalau gitu kita bisa hemat uangnya untuk biaya transport
+      dan biaya selama pengabdian di sana.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Nah betul, Ini bagus, karena kalau bahan-bahannya mudah ditemui, ini
+      bisa memudahkan pembuatan ulangnya di desa sana nanti.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Sip kalau gitu..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 13
+    sentences: Laksanakan!
+    Kiri: 1

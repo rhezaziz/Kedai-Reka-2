@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 3-5 - Meeting Mulai
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Selamat siang teman-teman, terima kasih sudah meluangkan waktu kalian
+      untuk hadir dalam meeting ini.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Kita langsung mulai saja diskusi kali ini yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Pertama kita harus memastikan teman-teman semua tidak ada yang berhalangan
+      untuk minggu akhir di bulan ini hingga satu bulan setelahnya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Aku sih aman.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 68d8c4628cfaa424787afba9451126b5, type: 3}
+    Nama: 11
+    sentences: Aku juga.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Aku free sih.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: Aku juga aman.
+    Kiri: 0
+  - narasi:
+      narasiText: Semua anggota lain mengangguk juga.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 9
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke siap, kalau gitu untuk kesediaan, semua anggota aman yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Nah sekarang tinggal diskusi perencanaan produksi dan pengerjaan proposal.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 49e0e6489fc55be43851f12d0e7432c1, type: 3}
+    Nama: 11
+    sentences: Jadi kita perlu produksi berapa banyak filter air?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Nah untuk pertanyaan itu kita baru akan bisa tahu setelah melakukan
+      survey ke tempat untuk memastikan berapa banyak yang desa tersebut butuhkan.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Betul, nah tapi kita tetap harus setidaknya buat gambaran kasar bagaimana
+      perencanaan produksi kita, rundown dan lain-lain untuk keperluan proposal kita.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Oke, untuk pengerjaan proposal, kita butuh orang yang terbiasa menyusun
+      proposal dan mampu melingkup semua rencana dan tujuan program ini kedalam susunannya
+      dengan baik.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Apakah ada yang bersedia?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: cadde5eeb31fbc64fac02a6e68eed6c7, type: 3}
+    Nama: 8
+    sentences: Aku bisa. Aku terbiasa nulis proposal dan karya ilmiah.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: 'Oh Dinda, mantap nih, Din. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Tapi kita butuh orang untuk bantu Dinda nih, siapa lagi yang  bersedia?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 543c317ff5a8e2d44b6ae332b7359ea4, type: 3}
+    Nama: 9
+    sentences: Aku boleh deh. Aku lumayan sering nulis jurnal dan artikel. Aku bisa
+      bantu-bantu Dinda.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke sip. Berarti untuk yang mengerjakan proposal ada Dinda dan Isy
+      yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Tapi meskipun mereka berdua yang bertanggung jawab, kita juga harus
+      mau bantu kalau mereka berdua butuh bantuan, Oke?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 13
+    sentences: Okeee!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Sekarang tinggal kita diskusikan terkait penggalangan dana nih.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Sebelumnya kan kita sudah diskusikan soal barang apa yang akan kita
+      jual, dan kita sudah memutuskan untuk menjual makanan.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Sekarang, di mana kita akan jual makanannya?
+    Kiri: 1

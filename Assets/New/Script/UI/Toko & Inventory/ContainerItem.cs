@@ -21,7 +21,7 @@ namespace Terbaru{
             gambarItem.sprite = item.gambarItem;
             namaItem.text = item.namaItem;
             gambarItem.name = $"Item {item.namaItem}";
-            hargaItem.text = "Rp" + item.Harga.ToString("n0",info);
+            hargaItem.text = item.Harga.ToString("n0",info);
             btnBeli.name = $"Beli {item.namaItem}";
             if (!item.isShop)
             {

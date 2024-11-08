@@ -19,7 +19,7 @@ namespace  MiniGame5_1
         [Header("UI Reting")]
         public Transform CanvasrRating;
         public UnityEngine.UI.Image rating;
-        public float ratingValue;
+        //public float ratingValue;
          
 
         private Tweener tweener;
@@ -30,9 +30,9 @@ namespace  MiniGame5_1
         void Start(){
             timer = Random.Range(5f, 10f);
             anim = GetComponent<Animator>();
-            ratingValue = Random.Range(.1f, 1f);
+            //ratingValue = Random.Range(.1f, 1f);
 
-            timer = timer * ratingValue;
+            //timer = timer * ratingValue;
             //value = transform.Find("Value").gameObject.GetComponent<UnityEngine.UI.Image>();
             
 
@@ -42,7 +42,7 @@ namespace  MiniGame5_1
                 return;
             temp = DOTween.Sequence();
             anim.SetBool("Rotate", true);
-            temp.Append(value.DOFillAmount(ratingValue, timer).OnComplete(() => selesai()));
+            temp.Append(value.DOFillAmount(1, timer).OnComplete(() => selesai()));
             temp.Insert(timer / 8f, dialog1.DOScale(Vector3.one / 2f,  .5f));
             temp.Insert(timer / 8f + 4f, dialog2.DOScale(Vector3.one / 2f,  .5f));
             temp.Insert(timer / 8f + 6f, dialog1.DOScale(Vector3.zero,  .5f));
@@ -77,11 +77,11 @@ namespace  MiniGame5_1
             dialog1.localScale = Vector3.zero;
             dialog2.localScale = Vector3.zero;
             anim.SetBool("Rotate", false);
-            FindObjectOfType<Manager>().selesai(foto, ratingValue);
+            FindObjectOfType<Manager>().selesai(foto, 1);
 
             CanvasrRating.DOScaleX(1.5f, 1.5f).OnComplete(() =>{
                 CanvasrRating.DOScaleX(1f, .5f).OnComplete(() => {
-                    rating.DOFillAmount(ratingValue,1f);
+                    rating.DOFillAmount(1,1f);
                 });
             });
 

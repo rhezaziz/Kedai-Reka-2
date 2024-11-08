@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using Terbaru;
 
 namespace MiniGame1_4{
     public class Manager : MonoBehaviour
@@ -55,13 +56,13 @@ namespace MiniGame1_4{
 
             
         }
-
+        public string action;
         public void checkResult(){
             check.interactable = false;
             foreach(var i in buttons)
                 i.onSeletect.interactable = false;
             
-            
+            int point = onSelected.value ? 50 : 0;
             var result = onSelected.result.transform;
             onSelected.result.sprite = onSelected.value ? correct : wrong;
 
@@ -70,6 +71,8 @@ namespace MiniGame1_4{
             result.DOScale(Vector2.one * 1.2f, 1f).OnComplete(() =>{
                 result.DOScale(Vector2.one , .35f).OnComplete(() =>{
                     result.DOScale(.85f, .25f).SetEase(Ease.InOutSine).SetLoops(-1, LoopType.Yoyo);
+                    QuestManager.instance.currentQuest.quest.pointBonus += point;
+                    QuestManager.instance.CheckAction(action);
                     // anim.Append(result.DOScale(Vector2.one * .9f, .1f));
                     // anim.Append(result.DOScale(Vector2.one, .1f));
                     // anim.SetLoops(-1);

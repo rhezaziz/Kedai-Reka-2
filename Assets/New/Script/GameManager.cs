@@ -30,7 +30,7 @@ namespace Terbaru{
         void Start(){
             DontDestroyOnLoad(this);
 
-            waktu.currentTime(3);
+            waktu.currentTime(0);
             checkTutorial();
         }
 
@@ -49,7 +49,19 @@ namespace Terbaru{
             infoUI.SetActive(!isTutorial);
             tutorialUI.SetActive(isTutorial);
             tutorialManager.SetActive(isTutorial);
+            if(isTutorial)
+                tutorialManager.transform.GetChild(0).GetComponent<TutorialManager>().initTutorial();
 
+        }
+
+
+        public void tutorialOver(){
+            tutorialUI.SetActive(false);
+            tutorialManager.SetActive(false); 
+
+            foreach(var interact in interactions){
+                interact.GetComponent<Interaction>().changeInteractable(true);
+            }
         }
         
         void OnEnable(){

@@ -4,6 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using DG.Tweening;
+using UnityEngine.Events;
 
 namespace Terbaru{
 
@@ -16,14 +17,15 @@ namespace Terbaru{
         public List<Button> btnMaps = new List<Button>();
 
         public Pintu pintu;
-        
+        public bool onLokasi;
         public TMP_Text judul;
         public bool onAnimation;
         public List<infoMaps> maps = new List<infoMaps>();
         int index = 0;
 
         public Button kembali;
-        public GameObject mapButton;
+        public Button mapButton;
+        public Button closeMapsPanel;
 
         [Header("Chinematic")]
         public GameObject Chinematic;
@@ -45,6 +47,7 @@ namespace Terbaru{
         }
 
         public void listMaps(){
+            int hari = FindObjectOfType<DayManager>().day;
             judul.text = maps[index].namaMaps;
             NextBtn.interactable = index < maps.Count - 1;
             PrevBtn.interactable = index > 0;
@@ -54,11 +57,34 @@ namespace Terbaru{
             }
 
             for(int i = 0; i < maps[index].maps.Count; i++){
+                // var eventMaps = maps[index].maps
+                maps[index].maps[i].valueMaps.warning = haveEvent(maps[index].maps[i]);
+                //Debug.Log($"{maps[index].maps[i].nama} {haveEvent(maps[index].maps[i])}");
+                
+                
                 var btn = btnMaps[i].gameObject;
                 btn.SetActive(true);
                 btn.GetComponent<PointMaps>().initContent(maps[index].maps[i], shadow);
             }
         }
+
+        bool haveEvent(Maps action){
+            
+            int hari = FindObjectOfType<DayManager>().day;
+           
+            
+            foreach(var events in action.events){
+                if(events.day == hari){
+                   
+                    //Debug.Log($"{action.nama} : {events.events.GetPersistentEventCount() > 0 && !events.done}");
+                    return events.events.GetPersistentEventCount() > 0 && !events.done;
+                }
+            }
+            
+            return false;
+        }
+
+        
 
         public void updateDayKonten(List<id_Maps> IDs){
             int jmlId = IDs.Count;
@@ -83,7 +109,7 @@ namespace Terbaru{
             tempOpenMaps = Ids;
 
             kembali.interactable = false;
-            mapButton.SetActive(true);
+            mapButton.GetComponent<Button>().interactable = false;
 
             updateDayKonten(Ids);
         }
@@ -103,7 +129,7 @@ namespace Terbaru{
             }
 
             kembali.interactable = true;
-            mapButton.SetActive(false);
+            mapButton.GetComponent<Button>().interactable = true;
             listMaps();
             tempOpenMaps.Clear();
         }
@@ -115,7 +141,7 @@ namespace Terbaru{
                     x.valueMaps.active = false;
                 }
             }
-
+            FindObjectOfType<WaktuManager>().gantiWaktu(1);
             listMaps();
             // for(int i = 0; i < jmlId; i++){
             //     for(int j = 0; j < maps.Count; j++){
@@ -128,7 +154,7 @@ namespace Terbaru{
             //         }
             //     }
             // }
-            listMaps();
+            //listMaps();
         }
         public void updateDayKonten(ListMapsValue updateMaps){
             List<mapsValue> tempValue = new List<mapsValue>();
@@ -168,16 +194,30 @@ namespace Terbaru{
 
         public void Kembali(){
             kembali.interactable = false;
+            mapButton.GetComponent<Button>().interactable = false;
             onAnimation = true;
+            onLokasi = false;
             panelNamaMaps.transform.GetChild(0).DOLocalMoveY(testY, 1f).OnComplete(() =>
             StartCoroutine(Cutscene(Vector3.zero, false)));
+            closeMapsPanel.onClick.AddListener(() => closeButtonAction(true));
+            closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(false));
+            
             //pintu.tutupPintu();
         }
 
         Maps tempMaps;
+
+        public void closeButtonAction(bool value){
+            state tempState = value ? state.Default : state.Interaction;
+            FindObjectOfType<Controller>().currentState(tempState);
+        }
         public void keliling(Maps temp){
+            
             onAnimation = true;
-            kembali.onClick.RemoveAllListeners();
+            onLokasi = true;
+            closeMapsPanel.onClick.AddListener(() => closeButtonAction(false));
+            closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(true));
+            
             //Debug.Log(temp.mapLokasi.name);
             int indexMaps = 0;
             for(int i = 0; i < maps[index].maps.Count; i++){
@@ -200,7 +240,7 @@ namespace Terbaru{
             panelNamaMaps.transform.GetChild(0).GetChild(0).GetChild(0).GetComponentInChildren<TMP_Text>().text = temp.nama;
             
             StartCoroutine(Cutscene(new Vector3(posX, posY, -9.5f), true));
-            kembali.onClick.AddListener(() => Kembali());
+            //kembali.onClick.AddListener(() => Kembali());
 
         }
 
@@ -252,16 +292,35 @@ namespace Terbaru{
             }
             yield return new WaitForSeconds(2f);
 
+            
+
             //panelUtama.SetActive(true);
-            Chinematic.SetActive(false);
+            //Chinematic.SetActive(false);
             panelNamaMaps.SetActive(value);
             panelNamaMaps.transform.GetChild(0).DOLocalMoveY(150f, 1f);
-            kembali.interactable = !mapButton.activeInHierarchy;
+            //kembali.interactable = !mapButton.activeInHierarchy;
+            //Debug.Log(mapButton.activeInHierarchy);
             yield return new WaitForSeconds(1f);
             onAnimation = false;
             
-            //FindObjectOfType<Controller>().currentState(value ? state.Interaction : state.Default);
+            FindObjectOfType<Controller>().currentState(value ? state.Interaction : state.Default);
             
+            if(onLokasi){
+                int hari = FindObjectOfType<DayManager>().day;
+                foreach(var action in tempMaps.events){
+                    if(action.day == hari && !action.done){
+                        action.done = true;
+                        //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
+                        action.events?.Invoke();
+                        action.events.RemoveAllListeners();
+                    } 
+                }
+
+                
+            }
+
+            QuestManager.instance.CheckActionQuest(tempMaps.nama);
+                
             
             //FindObjectOfType<Movement>().move = true;
         }
@@ -285,6 +344,8 @@ namespace Terbaru{
         
         public Sprite gambarMaps; 
         public Transform mapLokasi;
+
+        public List<dataActionInMaps> events = new List<dataActionInMaps>();
     }
 
     [System.Serializable]
@@ -304,6 +365,15 @@ namespace Terbaru{
         public bool active;
         public bool warning;
 
+        
+
+    }
+
+    [System.Serializable]
+    public class dataActionInMaps{
+        public int day;
+        public UnityEvent events;  
+        public bool done;
     }
 
     public enum id_Maps{

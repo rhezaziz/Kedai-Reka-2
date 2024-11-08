@@ -7,7 +7,7 @@ using UnityEngine.UI;
 namespace MiniGame3_2{
     public class Manager : MonoBehaviour
     {
-
+        public bool isDaily;
         public Text jumlahText;
         public int jumlah;
         int currentJumlah;
@@ -49,7 +49,7 @@ namespace MiniGame3_2{
             StartCoroutine(akhir());
 
         }
-
+        public string action;
         IEnumerator akhir(){
 
             yield return new WaitForSeconds(1f);
@@ -60,27 +60,35 @@ namespace MiniGame3_2{
                     continue;
 
                 var sprite = temp.value ? Benar : Salah;
+                int point = temp.value ? 50 : 0;
+                if(!isDaily) QuestManager.instance.currentQuest.quest.pointBonus += point;
                 var indikatorValue = kegiatan.transform.GetChild(0).GetChild(0).GetComponent<Image>();
 
                 indikatorValue.color = Color.white;
                 indikatorValue.sprite = sprite;
                 yield return new WaitForSeconds(1f);
-                if(testGame)
-                    balikMainMenu();
+                // if(testGame)
+                //     balikMainMenu();
             }
+
+            yield return new WaitForSeconds(1f);
+            if(!isDaily)
+                QuestManager.instance.CheckAction(action);
+            else
+                QuestManager.instance.CheckActionQuest(action);
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
+        // public bool testGame = true;
+        // void balikMainMenu(){
+        //     FindObjectOfType<MainMenu>().PindahScene("New Scene");
+        // }
 
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
+        // void Update(){
+        //     if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+        //         testGame = false;
+        //         balikMainMenu();
+        //     }
             
-        }
+        
     }
 }

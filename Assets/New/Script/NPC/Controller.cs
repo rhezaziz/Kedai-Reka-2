@@ -25,6 +25,7 @@ namespace Terbaru
         public bool interupt = false;
         int jumlahState;
         bool counting;
+        bool onDialog;
 
         WorldPos sorting = new WorldPos();
         float timer;
@@ -138,7 +139,8 @@ namespace Terbaru
                         
                         interupt = true;
                         counting = false;
-                        
+
+                        //Debug.Log(gameObject.name + " : Ngobrol");
                         anim.SetBool("Ngomong", true);
                         return;
                     }
@@ -169,6 +171,7 @@ namespace Terbaru
 
         void resetAnimor()
         {
+            
             foreach (AnimatorControllerParameter parameter in anim.parameters)
             {
                 if (parameter.type == AnimatorControllerParameterType.Bool)

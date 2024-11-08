@@ -87,6 +87,9 @@ namespace Terbaru{
             PanelUtama.SetActive(true);
             
             FindObjectOfType<Controller>().currentState(state.Default);
+            texture.Release();
+            QuestManager.instance.CheckActionQuest(namaAction);
+            //QuestManager.instance.CheckAction(namaAction);
             
             
         }

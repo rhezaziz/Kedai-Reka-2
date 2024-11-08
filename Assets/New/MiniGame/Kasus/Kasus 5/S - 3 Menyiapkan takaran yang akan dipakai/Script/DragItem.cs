@@ -33,14 +33,24 @@ namespace MiniGame5_6{
             transform.position = new Vector3(mousePos.x, mousePos.y, transform.position.z);
         }
 
+        public void Kembali(){
+            place = null;
+            gameObject.SetActive(true);
+            transform.DOMove(posAwal, 1f).OnComplete(()=>{
+                    sprite.sortingOrder = tempSorting;
+            });
+        }
+
 
         void OnMouseUp(){
             
 
             if(place){
-                place.onPlacement();
+                place.onPlacement(this);
+                
                 gameObject.SetActive(false);
                 FindObjectOfType<Manager>().checkJawaban(place.takaran == takaran);
+                place.hasil = place.takaran == takaran;
             }else{
                 transform.DOMove(posAwal, 1f).OnComplete(()=>{
                     sprite.sortingOrder = tempSorting;

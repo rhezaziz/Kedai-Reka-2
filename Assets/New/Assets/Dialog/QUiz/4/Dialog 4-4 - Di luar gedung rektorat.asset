@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 4-4 - Di luar gedung rektorat
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 'Hari survey pun tiba,  semua anggota yang akan berangkat survey
+        berkumpul di depan gedung rektorat. '
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Namun saat mereka hendak berangkat tiba-tiba mobilnya mogok.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Yah.. kenapa nih? Kok gak bisa jalan?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Ngga tau nih, tapi waktu itu Yoseph sempet nyinggung kalau mobilnya
+      emang jarang dipakai sih.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 545c8031816ae354985a026aee593302, type: 3}
+    Nama: 1
+    sentences: Wah.. kita harus gimana dong?
+    Kiri: 0

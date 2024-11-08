@@ -29,6 +29,12 @@ public class RekrutManager : MonoBehaviour
             ClosePanelRekrut.onClick.AddListener(() => FindObjectOfType<Controller>().currentState(state.Default));
         }
 
+        public void rekrutKarakter(listCharacters chara){
+            chara.characterLock = true;
+
+            display(data);
+        }
+
         List<GameObject> listProfil = new List<GameObject>();
         public static Material matTemp;
         public void display(playerProfil profil){
@@ -36,7 +42,7 @@ public class RekrutManager : MonoBehaviour
             data = profil;
             matTemp = mat;
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-            currentPoint.text = "Saldo : "+"Rp" + profil.Saldo.ToString("n0", info);
+            currentPoint.text = "Point : " + profil.Saldo.ToString("n0", info);
             
             if(listProfil.Count == temp.Count){
                 updateListCharacter(temp);
@@ -97,7 +103,7 @@ public class RekrutManager : MonoBehaviour
                 beliProfil.gameObject.SetActive(true);
                 beliProfil.onClick.AddListener(() => rekrut(tempIndex));
                 NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-                beliProfil.transform.GetChild(0).GetComponent<TMP_Text>().text = "Rp" + dataInfo.cost.ToString("n0", info);
+                beliProfil.transform.GetChild(0).GetComponent<TMP_Text>().text = dataInfo.cost.ToString("n0", info);
                 FotoProfil.material = mat;
             }
         }
@@ -126,7 +132,7 @@ public class RekrutManager : MonoBehaviour
             }
             else
             {
-                Debug.Log("Saldo Kurang");
+                Debug.Log("Point Kurang");
             }
         
         }

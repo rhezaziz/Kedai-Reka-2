@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 4-2 - Setelah beli pulsa
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: Setelah menghubungi pihak desa, akhirnya mereka menyetujui tanggal
+        yang telah di tentukan dan survei pun siap dilakukan.
+      VO: {fileID: 8300000, guid: db491edad11ca6c47a3723dc6d7de2ad, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Namun mereka masih perlu menentukan siapa yang akan berangkat ke
+        lokasi survei. Dengan itu, Thomas meminta kembali teman-temannya untuk berkumpul
+        di ruang sekretariat.
+      VO: {fileID: 8300000, guid: 8b88336dffb10954a892afb472897bba, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke temen-temen, kita kan tadi sudah menentukan tanggal surveynya..
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: ..sekarang tinggal menentukan siapa yang bisa pergi di tanggal itu.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Betul, kita hanya perlu perwakilan saja setidaknya tiga sampai empat
+      orang yang bisa kita andalkan untuk tugas ini.
+    Kiri: 0

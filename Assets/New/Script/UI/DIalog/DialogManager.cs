@@ -161,7 +161,7 @@ namespace Terbaru{
             //UiManager.instance.Chinematic(false);
             var objectInteract = FindObjectOfType<Controller>().interaction;
             objectInteract.interactObject.GetComponent<IDialog>().endDialog();
-            Debug.Log("End Dialog Manager");
+            //Debug.Log("End Dialog Manager");
         }
 
         public void closeDialog(){

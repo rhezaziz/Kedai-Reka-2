@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using DG.Tweening;
+using Terbaru;
 
 namespace MiniGame4_1{
     public class Manager : MonoBehaviour
@@ -11,6 +12,8 @@ namespace MiniGame4_1{
         public Image parent;
         public RectTransform itemUI;
         public TMPro.TMP_Text jumlahText;
+
+        public string action;
 
         public void startKonten(){
             var min = itemUI.anchorMin;
@@ -41,7 +44,7 @@ namespace MiniGame4_1{
         // Start is called before the first frame update
         void Start()
         {
-            Invoke("startKonten", 2f);
+           // Invoke("startKonten", 2f);
         }
 
         void jumlahTerpilih(){
@@ -52,11 +55,14 @@ namespace MiniGame4_1{
             jumlahText.text = $"{jml + 1}/{listItem.Count}";
 
             if(jml >= listItem.Count - 1){
+                QuestManager.instance.CheckAction(action);
                 Debug.Log("Selesai");
             }
         }
 
         public void itemOnClick(SpriteRenderer item){
+
+            QuestManager.instance.currentQuest.quest.pointBonus += 50;
             var itemData = getItem(item);
             //Debug.Log(itemData.nama);
             Vector2 dir = itemData.loct.transform.position;

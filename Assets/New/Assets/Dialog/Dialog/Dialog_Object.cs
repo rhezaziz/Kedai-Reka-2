@@ -43,6 +43,8 @@ namespace Terbaru{
 
     [System.Serializable]
     public class NarasiDialog{
+        public bool inAsrama;
+        public bool dialogWithPerempuan;
         public Dialog narasi;
 
     }

@@ -115,4 +115,22 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New/MiniGame/Daily/Siram Tanaman/Siram Tanaman.unity
     guid: 6b119c45173d9224b8f0226452eb5704
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-11/Hari11.unity
+    guid: 4dc29d8fd24723a40bf7df6a7ffa4499
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-6/Hari6.unity
+    guid: 11bfa10505e0305419eabf71bc15d09f
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-10/Hari10.unity
+    guid: 513ab7c19e2de7543ad18cbd7b88ccf7
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-13/Hari13.unity
+    guid: fd8827138673a9d4bb6678c53dc25031
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-19/Hari19.unity
+    guid: e3db5d9026a2562459e500dcae214faa
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-26/Hari26.unity
+    guid: ddcafbeb364c08441884bc089f1f5084
   m_configObjects: {}

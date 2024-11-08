@@ -11,6 +11,8 @@ namespace MiniGame4_3{
         [SerializeField]
         private Transform[] routes;
 
+        public int index;
+
         private int routeToGo;
 
         private float tParam;
@@ -32,6 +34,7 @@ namespace MiniGame4_3{
 
         void OnMouseDown(){
             coroutineAllowed = true;
+            Debug.Log(gameObject.name + " Klik");
             FindObjectOfType<Manager>().onClickCar(gameObject);
         }
 
@@ -69,7 +72,7 @@ namespace MiniGame4_3{
             coroutineAllowed = loop || routeToGo < routes.Length;
 
             if(!coroutineAllowed)
-                FindObjectOfType<Manager>().GameOver();
+                FindObjectOfType<Manager>().GameOver(index);
             if(routeToGo > routes.Length - 1)
             {
                 routeToGo = 0;

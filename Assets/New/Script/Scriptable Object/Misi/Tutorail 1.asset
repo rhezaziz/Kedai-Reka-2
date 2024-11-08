@@ -16,7 +16,7 @@ MonoBehaviour:
   index: 0
   Reward: 10000
   skills: 000000000000000000000000
-  nama: 
+  nama: 0400000003000000
   judulMisi: Menjawab Quiz
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Jawab Quiz
@@ -24,5 +24,5 @@ MonoBehaviour:
   sceneGame: Quiz
   firstChangeScene: 1
   level: 0
-  pointBonus: 0
+  pointBonus: 450
   isDone: 0

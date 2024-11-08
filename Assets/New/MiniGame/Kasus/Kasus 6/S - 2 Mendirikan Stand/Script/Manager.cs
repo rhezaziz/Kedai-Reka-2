@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Terbaru;
 using UnityEngine;
 
 namespace MiniGame6_4{
@@ -8,6 +9,8 @@ namespace MiniGame6_4{
     public class Manager : MonoBehaviour
     {
         //public Player player;
+
+        public string action;
         public List<items> item = new List<items>();
         public List<Barang> barang;
 
@@ -26,6 +29,12 @@ namespace MiniGame6_4{
 
         int Score;
 
+        public void startGame(){
+            foreach(var item in data[0].items){
+                item.GetComponent<Collider2D>().enabled = true;
+            }
+        }
+
         void Start(){
             hiddenObject = data[index].items.Count;
         }
@@ -34,7 +43,7 @@ namespace MiniGame6_4{
         public void checkGame()
         {
             hiddenObject -= 1;
-            Score += 5;
+            Score += 50;
 
             if(hiddenObject <= 0)
             {
@@ -44,10 +53,11 @@ namespace MiniGame6_4{
                     StartCoroutine(gantiBarang());
                 
                 }else{
+                    QuestManager.instance.currentQuest.quest.pointBonus += Score;
+                    QuestManager.instance.CheckAction(action);
                     Debug.Log("Selesai");
                 }
-                if(testGame)
-                    balikMainMenu();
+                
                 // FindObjectOfType<GameOver>().initialGameOver(Score.ToString());
                 // quest.miniGame = true;
                 // quest.onProses = true;
@@ -72,18 +82,7 @@ namespace MiniGame6_4{
         // Start is called before the first frame update
         
         // Update is called once per frame
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+       
 
         public bool isHiddenObject(GameObject objectKlik)
         {

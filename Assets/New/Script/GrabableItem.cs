@@ -26,12 +26,13 @@ namespace Terbaru{
         }
         public void action(Transform Player){
             //var profil = GameManager.instance.profil;
-            Player.GetComponent<Controller>().currentState(state.Default);
+            if(Player != null)
+                Player.GetComponent<Controller>().currentState(state.Default);
             //var temp = profil.item.Contains(item);
             foreach(var i in item){
                 i.isInventory = true;
                 string action = $"{actionQuest} {i.namaItem}";
-                QuestManager.instance.CheckAction(action);
+                QuestManager.instance.CheckActionQuest(actionQuest);
             }
 
             AudioClip clip = paket ? SoundManager.instance.InvorenmentClip[5] : SoundManager.instance.sfxUIClip[7];
@@ -70,7 +71,8 @@ namespace Terbaru{
         }
 
         void Update(){
-            checkDistance();
+            if(!clickAbleObject)
+                checkDistance();
         }
     }
 

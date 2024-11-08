@@ -6,9 +6,13 @@ public class Tumbuhan : MonoBehaviour
 {
     float value = 0;
     public GameObject panelCount;
+    public WaterCan water;
     public UnityEngine.UI.Image valueCount;
     public Color color;
     bool isDono;
+
+    public Sprite[] tumbuh;
+    public int index;
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.CompareTag("Player"))
@@ -38,11 +42,15 @@ public class Tumbuhan : MonoBehaviour
             yield return new WaitForSeconds(0.1f);
             value += 0.01f;
         }
+        value = 0;
+        index += 1;
+        GetComponent<SpriteRenderer>().sprite = tumbuh[index >= tumbuh.Length - 1 ? 2 : index];
         ManagerSiram.instance.scoreGame(gameObject);
         panelCount.SetActive(false);
         waterCan.GetComponent<WaterCan>().DisableSiram();
-        GetComponent<Collider2D>().enabled = false;
-        GetComponent<SpriteRenderer>().color = color; 
+
+        // GetComponent<Collider2D>().enabled = false;
+        //GetComponent<SpriteRenderer>().color = color; 
     }
 
 }

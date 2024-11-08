@@ -5,16 +5,20 @@ using UnityEngine.Events;
 
 
 namespace Terbaru{
-    public class DailyQuest : MonoBehaviour, Interaction
+    public class DailyQuest : MonoBehaviour, Interaction, IDialog
     {
 
         public listQuest quest;
+
+        public bool isObject;
 
         public MiniGame miniGame;
 
         public string sceneName;
 
         public UnityEvent unityAction;
+
+
 
         bool interactable;
         public bool Interactable(){
@@ -31,6 +35,9 @@ namespace Terbaru{
         public Transform Player;
         public GameObject point;
         public float distancePlayer;
+
+        public Dialog awal;
+        public Dialog Akhir;
         public void checkDistance(){
             float distance = Vector3.Distance(transform.position, Player.position);
 
@@ -41,11 +48,21 @@ namespace Terbaru{
             } 
         }
 
-        void Update(){
-            checkDistance();
+        public void mulaiDialogAwal(){
+
         }
 
-        public Dialog dialog;
+        public void mulaiDialogAkhir(){
+
+        }
+
+
+        void Update(){
+            if(isObject)
+                checkDistance();
+        }
+
+        public Dialog[] dialog;
 
         public void action(Transform player){
             FindObjectOfType<QuestManager>().StartQuest(quest);
@@ -84,6 +101,55 @@ namespace Terbaru{
         public void isTutorial(bool value)
         {
             //throw new System.NotImplementedException();
+        }
+
+        public bool pindah;
+
+        public void endDialog()
+        {
+            UiManager.instance.Chinematic(false);
+
+            FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", false);
+            
+            UiManager.instance.panelUtama.SetActive(true);
+            //;
+            
+            FindObjectOfType<Player_Interaction>().interactObject = null;
+            
+            //FindObjectOfType<QuestManager>().CheckAction(tempAction);
+            //Invoke("startAction",1f);
+            FindObjectOfType<DialogManager>().closeDialog();
+
+            QuestManager.instance.CheckActionQuest("Talk");
+
+            //FindObjectOfType<UiManager>().panelUtama.SetActive(true);
+            FindObjectOfType<Controller>().currentState(state.Default);
+            //QuestManager.instance.CheckActionQuest("Talk");
+
+            
+        }
+
+        public void startDialog()
+        {
+            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
+            FindObjectOfType<Controller>().currentState(state.Interaction); 
+                      
+            UiManager.instance.Chinematic(true);
+            
+            UiManager.instance.panelUtama.SetActive(false);
+
+            FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", true);
+
+            
+        }
+
+        public void StartDialogIndex(int index){
+            
+            FindObjectOfType<UiManager>().panelUtama.SetActive(true);
+            FindObjectOfType<Controller>().currentState(state.Default);
+            startDialog();
+            FindObjectOfType<DialogManager>().StartDialog(dialog[index]);
+
         }
     }
 }

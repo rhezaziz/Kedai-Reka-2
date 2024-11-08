@@ -7,6 +7,7 @@ using DG.Tweening;
 using static UnityEngine.Rendering.DebugUI;
 using System.Drawing;
 using EasyTransition;
+using Terbaru;
 
 public class NyapuManager : MonoBehaviour
 {
@@ -45,8 +46,9 @@ public class NyapuManager : MonoBehaviour
         bintang.SetActive(false);
         */
 
-        StartCoroutine(bintang.GetComponent<Star>().changeSkor(position));
-        Invoke("scoreGame", 2f);
+        //StartCoroutine(bintang.GetComponent<Star>().changeSkor(position));
+        //Invoke("scoreGame", 2f);
+        scoreGame();
     }
 
     void scoreGame()
@@ -54,11 +56,12 @@ public class NyapuManager : MonoBehaviour
         skor += 1;
         if(skor >= Noda.Length)
         {
-            GameOver.SetActive(true);
-            Invoke("pindahScene", 1.5f);
+            QuestManager.instance.CheckActionQuest("minigame");
+            //GameOver.SetActive(true);
+            //Invoke("pindahScene", 1.5f);
         }
 
-        textScore.text = skor + "/" + Noda.Length;
+        //textScore.text = skor + "/" + Noda.Length;
     }
     public void updateScore()
     {
@@ -67,9 +70,9 @@ public class NyapuManager : MonoBehaviour
 
     public void pindahScene()
     {
-        PlayerPrefs.SetInt("indexAnimasi", 1);
-        FindObjectOfType<Terbaru.MiniGame>().pindah("Nyapu");
-        FindObjectOfType<Terbaru.QuestManager>().CheckActionQuest("Nyapu");
+        // PlayerPrefs.SetInt("indexAnimasi", 1);
+        // FindObjectOfType<Terbaru.MiniGame>().pindah("Nyapu");
+        // FindObjectOfType<Terbaru.QuestManager>().CheckActionQuest("Nyapu");
     }
 
 

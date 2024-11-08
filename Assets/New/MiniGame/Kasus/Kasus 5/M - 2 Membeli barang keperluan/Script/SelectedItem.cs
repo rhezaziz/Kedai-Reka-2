@@ -21,12 +21,14 @@ namespace MiniGame5_2{
 
         SpriteRenderer Trolli;
         bool onTrolli;
+        float size;
 
         void Awake(){
             posAwal = transform.position;
             col = GetComponent<Collider2D>();
             spriteRender = GetComponent<SpriteRenderer>();
             sorting = spriteRender.sortingOrder;
+            size = transform.localScale.x;
         }
         void Start()
         {
@@ -67,7 +69,7 @@ namespace MiniGame5_2{
         }
 
         void kembali(){
-            transform.DOScale(Vector3.one, 1f);
+            transform.DOScale(Vector3.one * size, 1f);
             transform.DOMove(posAwal, 1f).OnComplete(()
             => {
                 col.enabled = true;

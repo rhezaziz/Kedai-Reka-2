@@ -1,0 +1,98 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 4-5 - Narasi setelah kontak
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 'Setelah memutuskan siapa saja yang akan berangkat untuk survei
+        akhirnya survei pun berlangsung. Sesampainya di desa, kegiatan survey berjalan
+        dengan lancar. '
+      VO: {fileID: 8300000, guid: f7766661802017c4d9c524a3a3e8ecda, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Pihak perwakilan desa mengantar para mahasiswa berkeliling sambil
+        menjelaskan banyak hal pada mereka, termasuk permasalahan krisis air yang
+        belakangan ini terjadi disana.
+      VO: {fileID: 8300000, guid: 681bf1b0ebab1cb4d8dea34a81cd3189, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Selama proses survey berlangsung pun, para warga desa cenderung
+        mudah untuk diajak berinteraksi. Mereka dengan ramah menjawab berbagai pertanyaan
+        yang diajukan para mahasiswa..
+      VO: {fileID: 8300000, guid: d18db5a0341c58a4d82a4743d6e73682, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: ..bahkan beberapa diantara mereka menawarkan para mahasiswa untuk
+        menjadikan rumah mereka sebagai tempat tinggal selama program berlangsung.
+      VO: {fileID: 8300000, guid: 583bd589128e93d4abaa6f651bcecdb3, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Setelah puas dan merasa cukup memahami gambaran keadaan desa tersebut,
+        mereka akhirnya memutuskan untuk mengakhiri survey hari itu dan memutuskan
+        untuk pamit pulang.
+      VO: {fileID: 8300000, guid: 91afe23f45d9d2b4892c2ed1f88d2ad7, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Malamnya, mereka yang mengikuti survey melaporkan hasil survey
+        yang didapat pada ketua tim, Thomas.
+      VO: {fileID: 8300000, guid: 81bdafc15f48a0e47b368ce262ee3b02, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Hasil survei sudah di dapat. Berdasarkan survey hari ini kurang lebih
+      kita memerlukan paling tidak 2 filter di beberapa titik.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Kita bisa memanfaatkan air dari beberapa sumber seperti sungai bahkan
+      air hujan.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: 'Ok, makasih banyak ya El! '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Kalau begitu untuk pertemuan nanti kita tinggal sepakati dana untuk
+      produksi filter airnya nanti.
+    Kiri: 1

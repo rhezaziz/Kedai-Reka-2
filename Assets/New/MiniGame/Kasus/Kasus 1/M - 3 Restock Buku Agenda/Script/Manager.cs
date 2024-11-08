@@ -9,11 +9,22 @@ namespace MiniGame1_3{
     
     public class Manager : MonoBehaviour
     {
+
+        public bool DailyQuest;
         public List<UnityEngine.UI.Button> pilihan;
+
+        public Sprite Wrong, Correct;
+
+        public Quest quest;
 
         public bool test;
 
+        public string action;
+        
+
         public List<dataAnimatedButton> animated = new List<dataAnimatedButton>();
+
+        UnityEngine.UI.Image valueResult;
         public void checkJawaban(bool value){
             // if(!clickedBTN.GetComponent<UnityEngine.UI.Button>().interactable)
             //     return;
@@ -63,6 +74,7 @@ namespace MiniGame1_3{
                          
                 temp.transform.DOScale(new Vector2(.75f, .75f), .5f);
                 pilihan.Remove(temp.GetComponent<UnityEngine.UI.Button>());
+                
 
             }   
             
@@ -74,18 +86,33 @@ namespace MiniGame1_3{
         }
 
         void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
+            // if(Input.GetKeyDown(KeyCode.Escape) && testGame){
+            //     testGame = false;
+            //     balikMainMenu();
+            // }
             
         }
 
         void hasil(bool value){
-            Debug.Log(value);
+            test = false;
+            clickedBTN.interactable = false;
+            Sprite tempSprite = value ? Correct : Wrong;
+            Transform result = clickedBTN.transform.GetChild(0);
+            result.GetComponent<UnityEngine.UI.Image>().sprite = tempSprite;
+            result.DOScale(Vector2.one * 2.2f, 1f).OnComplete(() => {
+                result.DOScale(Vector2.one * 2f, .5f).OnComplete(() =>{
+                    if(!DailyQuest){
+                        QuestManager.instance.CheckAction(action);
+                        quest.pointBonus += value ? 50 : 0;
+                    }else{
+                        QuestManager.instance.CheckActionQuest(action);
+                    }
+                });
+            });
+             
 
-            if(testGame)
-                balikMainMenu();
+            // if(testGame)
+            //     balikMainMenu();
 
         }
 

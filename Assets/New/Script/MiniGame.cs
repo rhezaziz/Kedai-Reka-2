@@ -19,6 +19,10 @@ namespace Terbaru{
             StartCoroutine(kembaliQuest(nama));
         }
 
+        public void pindahDialogToMiniGame(string namaScene){
+            StartCoroutine(mulaiMiniGameFromDialog(namaScene));
+        }
+
         public void pindahScene(string namaScene){
 
             sceneActive = namaScene;
@@ -29,6 +33,29 @@ namespace Terbaru{
             StartCoroutine(kembali(namaScene));
             //SceneManager.sceneLoaded += UnloadScene;
             //SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+        }
+
+        IEnumerator mulaiMiniGameFromDialog(string namaScene){
+            control.currentState(state.Interaction);
+            control.playerMove.move = false;
+            UiManager.instance.Chinematic(true);
+            
+            FindObjectOfType<UiManager>().panelUtama.SetActive(false);
+            yield return new WaitForSeconds(3f);
+            
+            //UiManager.instance.Chinematic(true);
+            
+
+            
+            sceneActive = namaScene;
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+
+            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(3f);
+            DeactivateObjectsInPreviousScene();
+            UiManager.instance.Chinematic(false);
+
+        
         }
 
         IEnumerator mulaiMiniGame(string namaScene){
@@ -131,6 +158,7 @@ namespace Terbaru{
             FindObjectOfType<UiManager>().panelUtama.SetActive(true);
             control.currentState(state.Default);
             control.playerMove.move = true;
+            QuestManager.instance.CheckActionQuest("Kembali");
             Debug.Log("Selesai Quest");
             //
             

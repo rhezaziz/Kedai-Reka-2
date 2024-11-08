@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using EasyTransition;
+using Terbaru;
 
 public class ManagerSiram : MonoBehaviour
 {
@@ -28,8 +29,9 @@ public class ManagerSiram : MonoBehaviour
 
     public void scoreGame(GameObject position)
     {
-        StartCoroutine(bintang.GetComponent<Star>().changeSkor(position));
-        Invoke("setScore",2f);
+        //StartCoroutine(bintang.GetComponent<Star>().changeSkor(position));
+        //Invoke("setScore",2f);
+        setScore();
     }
 
     void setScore()
@@ -37,10 +39,12 @@ public class ManagerSiram : MonoBehaviour
         value += 1;
         if (value >= point.Length)
         {
-            GameOver.SetActive(true);
-            Invoke("pindahScene", 1.5f);
+            Debug.Log("Selesai");
+            QuestManager.instance.CheckActionQuest("minigame");
+            //GameOver.SetActive(true);
+            //Invoke("pindahScene", 1.5f);
         }
-        textScore.text = value + "/"+point.Length;
+        //textScore.text = value + "/"+point.Length;
     }
 
     public void pindahScene()

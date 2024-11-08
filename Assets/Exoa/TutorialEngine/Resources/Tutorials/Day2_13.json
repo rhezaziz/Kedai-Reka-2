@@ -1,5 +1,5 @@
 {"tutorial_steps":[{"target_obj":"","text":"Jika kamu setelah membeli item, ambil item pada kotak ini","isClickable":true,"isReplacingNextButton":true},
-    {"target_obj":"","text":"Klik tombol ini untuk mengambil item","isClickable":true,"isReplacingNextButton":true},
+    {"target_obj":"Interaksi Button","text":"Klik tombol ini untuk mengambil item","isClickable":true,"isReplacingNextButton":true},
     {"target_obj":"","text":"Selamat kamu sudah mengambil item","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"","text":"Saat nya kita kembali ke papan tugas","isClickable":true,"isReplacingNextButton":true}
 

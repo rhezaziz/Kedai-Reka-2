@@ -25,6 +25,8 @@ namespace Terbaru{
 
         public GameObject panelItem;
         public UnityEngine.UI.Image gambarItem;
+
+        public Transform Camera;
         public List<UiCharacter> uiS = new List<UiCharacter>();
 
         Sprite getSprite(Nama nama){
@@ -40,7 +42,8 @@ namespace Terbaru{
             panelResutl.localScale = Vector2.zero;
             objectPanel.SetActive(true);
             panelResutl.DOScale(Vector2.one * .9f, 1f);
-            klikResult.onClick.RemoveAllListeners();
+            tempQuest = currentQuest;
+            //klikResult.onClick.RemoveAllListeners();
             //Debug.Log($"{quest.select.namaPilihan[0]} -- {quest.select.namaPilihan[1]} -- {quest.select.itemOn}");
             for(int i = 0; i  < quest.select.namaPilihan.Length; i++){
                 Nama temp = quest.select.namaPilihan[i];
@@ -73,7 +76,7 @@ namespace Terbaru{
 
             pointBonusText.text = currentQuest.quest.pointBonus.ToString();
             pointText.text = currentQuest.quest.Reward.ToString();
-            klikResult.onClick.AddListener(() => tambahPoint(currentQuest));
+            //klikResult.onClick.AddListener(() => tambahPoint(currentQuest));
         }
 
         void closePanel(){
@@ -84,24 +87,25 @@ namespace Terbaru{
 
                 //var camera = Camera.main;
             // float zoom = isActive ? -7f : -10f;
-                //camera.transform.DOLocalMoveZ(-10f, 1f);
-                UiManager.instance.Chinematic(false);
+                UiManager.instance.Chinematic(true);
                 objectPanel.SetActive(false);
                 Debug.Log("Zoom Out");
                 FindObjectOfType<UiManager>().panelUtama.SetActive(true);
                 control.currentState(state.Default);
                 control.playerMove.move = true;
+                Camera.transform.DOLocalMoveZ(-10f, 1f);
+                
             });
         }
-
-        public void tambahPoint(listQuest currentQuest){
+        listQuest tempQuest;
+        public void tambahPoint(){
             var playerProfil = GameManager.instance.profil;
 
             SoundManager.instance.uiSFX(2);
-            playerProfil.Saldo += currentQuest.quest.Reward;
+            playerProfil.Saldo += tempQuest.quest.Reward;
 
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
-
+            tempQuest = null;
             closePanel();
             
         }

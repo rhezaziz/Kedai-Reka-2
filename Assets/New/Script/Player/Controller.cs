@@ -21,6 +21,10 @@ namespace Terbaru
             transform.localPosition = profil.position;
         }
 
+        public void setDefault(){
+            currentState(state.Default);
+        }
+
 
         public void currentState(state current)
         {
@@ -29,13 +33,13 @@ namespace Terbaru
                 case state.Interaction:
                     playerMove.move = false;
                     state = state.Interaction;
-                    Debug.Log("Player Move : "+ playerMove.move);
+                    //Debug.Log("Player Move : "+ playerMove.move);
                     break;
 
                 case state.Default:
                     playerMove.move = true;
                     state = state.Default;
-                    Debug.Log("Player Move : "+ playerMove.move);
+                    //Debug.Log("Player Move : "+ playerMove.move);
                     break;
             }
         }

@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 2-3 - Sesudah Quiz 2
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Sip. Kemasan sudah ditentukan. Untuk tim anggaran mohon untuk memulai
+      kalkulasi dana yang dibutuhkan yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Selanjutnya untuk promosi, untuk tim yang  kita bisa manfaatkan social
+      media dan group kelas, keluarga atau organisasi masing masing.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Terutama untuk yang punya banyak relasi nih. Mohon bantuannya yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Oke Sip. Semoga semuanya berjalan lancar, jualan kita laku dan semoga
+      hasilnya cukup untuk membekali program kita.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 13
+    sentences: Amiinnnn..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Baiklah diskusi hari ini kita tutup. Terima kasih atas waktunya  teman-teman!
+    Kiri: 1

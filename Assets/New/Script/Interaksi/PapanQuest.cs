@@ -58,7 +58,9 @@ namespace Terbaru{
             player.position = new Vector3(Berdiri.position.x, player.position.y, Berdiri.position.z);
             int hari = FindObjectOfType<DayManager>().day;
             if(HariEvent.Contains(hari)){
-                FindObjectOfType<Narasi>().startDialog();
+                int index = HariEvent.IndexOf(hari);
+                Debug.Log(index);
+                FindObjectOfType<Narasi>().haveNarasi(index);
             }else{    
                 FindObjectOfType<Misi_Manager>().initKontenQuest();
                 quest.SetActive(true);

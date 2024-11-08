@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 
 namespace MiniGame3_3{
@@ -46,36 +47,26 @@ namespace MiniGame3_3{
             //     }
              }
         }
-
+        public string action;
         IEnumerator hasil(){
             for(int i = 0; i < pilihan.Count; i++){
 
                 Sprite tempSprite = Salah;
                 if(jawaban[i] == pilihan[i]){
                     tempSprite = Benar;
+                    QuestManager.instance.currentQuest.quest.pointBonus += 50;
                 }
 
                 buttons[i].GetComponent<SelectedUI>().hasilAkhir(tempSprite);
                 yield return new WaitForSeconds(1.75f);
             }
 
-            if(testGame)
-                balikMainMenu();
-
+            
+            yield return new WaitForSeconds(2f);
+            QuestManager.instance.CheckAction(action);
             
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+       
     }
 }

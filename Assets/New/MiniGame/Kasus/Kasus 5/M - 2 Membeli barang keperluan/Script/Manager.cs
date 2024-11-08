@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using DG.Tweening;
+using Terbaru;
 using UnityEngine;
 
 
@@ -13,11 +14,11 @@ namespace MiniGame5_2{
         public GameObject prefabsText;
         public Transform parent;
         public Transform trolli;
-
+        public string action;
 
         void Start()
         {
-            initKonten();
+            //initKonten();
         }
 
         
@@ -46,7 +47,7 @@ namespace MiniGame5_2{
                 );
             }
         }
-
+        int jumlah = 0;
         public void check(itemShop item, GameObject text){
             item.itemOnTrolli.SetActive(true);
             item.itemOnRak.SetActive(false);
@@ -54,6 +55,7 @@ namespace MiniGame5_2{
 
             garis.DOScaleX(1f, 1f);
             items.Remove(item);
+            jumlah += 1;
 
             gameOver();
 
@@ -61,23 +63,17 @@ namespace MiniGame5_2{
 
         void gameOver(){
             if(items.Count <= 0){
-                if(testGame)
-                    balikMainMenu();
+                Invoke("checkAction", 2f);
             }
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
+
+        public void checkAction(){
+            QuestManager.instance.currentQuest.quest.pointBonus += jumlah * 50;
+            QuestManager.instance.CheckAction(action);
         }
 
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+       
     }
 
     [System.Serializable]

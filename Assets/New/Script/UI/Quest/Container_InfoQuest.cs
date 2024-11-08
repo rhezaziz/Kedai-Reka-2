@@ -118,10 +118,12 @@ namespace Terbaru{
                     }
                 }
             }
+            select.namaPilihan[karakter[0] == null ? 0 : 1] = characters.nama; 
             karakter[karakter[0] == null ? 0 : 1] = characters;
             cKarakter[cKarakter[0] == null ? 0 : 1] = _Karakter;
+            
             NPC.Add(characters.objectNPC);
-            select.namaPilihan[karakter[0] == null ? 0 : 1] = characters.nama;
+            
             selectedCharacter(selected - 1);
             updateListSkill();
             updateProfil();
@@ -229,6 +231,7 @@ namespace Terbaru{
             btnClose.gameObject.SetActive(isActive);
             imageCharacter.gameObject.SetActive(isActive);
             imageCharacter.sprite = isActive ?  karakter[index].icon : null;
+            // select.namaPilihan[index] = karakter[index].nama;
 
         }
 

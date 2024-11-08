@@ -16,6 +16,10 @@ namespace Terbaru{
 
         public List<dataWaktu> waktuData = new List<dataWaktu>();
 
+        public Pintu Kamar;
+
+        public List<GameObject> interaksi = new List<GameObject>();
+
 
         dataWaktu _waktu(waktu value){
             foreach(var _time in waktuData){
@@ -27,17 +31,25 @@ namespace Terbaru{
             return null;
         }
 
+        public void changeInteraction(){
+            
+            foreach(var obj in interaksi){
+                obj.GetComponent<Interaction>().changeInteractable(true);
+            }
+        }
+
         public int indexTime(){
             return (int)thisWaktu;
         }
 
         public void gantiWaktu(int value){
             int index = (int)thisWaktu;
-            index += 1;
+            index += value;
             if(index >= System.Enum.GetValues(typeof(waktu)).Length)
                 index = 0;
                 
             currentTime(index);
+            
         }
 
         public void currentTime(int value){
@@ -45,6 +57,8 @@ namespace Terbaru{
             thisWaktu = tempWaktu;
             Color color = _waktu(tempWaktu).warnaCahaya;
             ImageTime.sprite = _waktu(tempWaktu).spriteTime; 
+            bool valueKamar = thisWaktu == waktu.Pagi;
+            Kamar.changeInteractable(!valueKamar);
             //sun.color = color;
             float intent = _waktu(tempWaktu).getIntent();
             foreach(var light in lampu){
@@ -52,6 +66,14 @@ namespace Terbaru{
             }
             //sun.DOColor(color, 2f);
             //sun.DOIntensity(intent, 2f);
+
+            if(thisWaktu == waktu.Malam){
+                foreach(var interact in interaksi){
+                    interact.GetComponent<Interaction>().changeInteractable(false);
+                }
+
+                interaksi[0].GetComponent<Interaction>().changeInteractable(true);
+            }
         }
 
         public void checkTime(){

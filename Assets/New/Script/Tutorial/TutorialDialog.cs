@@ -25,6 +25,9 @@ namespace Terbaru{
         }
 
 
+        
+
+
         public Transform Player;
         public GameObject point;
         public float distancePlayer;
@@ -98,6 +101,19 @@ namespace Terbaru{
            
         }
 
+        public void starDialogWithData(Dialog_Object obj){
+            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
+            FindObjectOfType<Controller>().currentState(state.Interaction); 
+                      
+            UiManager.instance.Chinematic(true);
+            
+            UiManager.instance.panelUtama.SetActive(false);
+
+            FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", true);
+
+            
+        }
+
         public void endDialog(){
             UiManager.instance.Chinematic(false);
 
@@ -111,6 +127,8 @@ namespace Terbaru{
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
             Invoke("startAction",1f);
             FindObjectOfType<DialogManager>().closeDialog();
+
+            QuestManager.instance.CheckActionQuest("Talk");
             //gameObject.SetActive(false);
         }
 

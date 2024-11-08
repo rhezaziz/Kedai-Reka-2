@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - narasi:
-      narasiText: 
+      narasiText: Saat ini dinda sedang sibuk, cari karakter lain
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
     Nama: 0

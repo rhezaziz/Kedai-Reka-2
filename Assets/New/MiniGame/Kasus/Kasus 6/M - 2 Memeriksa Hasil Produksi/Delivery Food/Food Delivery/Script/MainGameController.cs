@@ -86,16 +86,16 @@ public class MainGameController : MonoBehaviour
     //public AudioClip loseSfx;
 
 
-    public void Awake()
-    {
-        Init();
-    }
+    // public void Awake()
+    // {
+    //     Init();
+    // }
 
-
+    public string  action;
     //***************************************************************************//
     // Init everything here.
     //***************************************************************************//
-    void Init()
+    public void Init()
     {
 
         Application.targetFrameRate = 50; //Optional based on the target platform
@@ -165,13 +165,15 @@ public class MainGameController : MonoBehaviour
                 canUseCandy = (PlayerPrefs.GetInt("canUseCandy") == 1) ? true : false;
                 break;
         }
+
+        StartCoroutine(StartGame());
     }
 
 
     //***************************************************************************//
     // Starting delay. Optional.
     //***************************************************************************//
-    IEnumerator Start()
+    IEnumerator StartGame()
     {
         yield return new WaitForSeconds(2);
         canCreateNewCustomer = true;

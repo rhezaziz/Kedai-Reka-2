@@ -13,7 +13,7 @@ namespace  Terbaru
         //[SerializeField] private GameObject LoadingScreen;
 
         [Header("Slider")]
-        public Slider loadingSlader;
+        public Image loadingSlader;
         string namaScene;
 
         void Awake(){
@@ -44,7 +44,7 @@ namespace  Terbaru
             while(!asyncLoad.isDone){
                 float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
             
-                loadingSlader.value = progress;
+                loadingSlader.fillAmount = progress;
                 
                 yield return null;
             }

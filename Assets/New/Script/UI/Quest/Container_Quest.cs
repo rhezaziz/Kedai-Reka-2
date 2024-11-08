@@ -21,7 +21,7 @@ namespace Terbaru{
             index = value;
             judul.text = quest.judulMisi;
             Deskripsi.text = quest.Deskripsi;
-            Reward.text = "Rp" + quest.Reward.ToString("n0", info);
+            Reward.text = quest.Reward.ToString("n0", info);
             button.onClick.AddListener(() => pilihQuest(quest));
         }
 

@@ -1,0 +1,151 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 2-2 - Sesudah Quiz 1 - Pilih RISOL AYAM SUWIR
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke kalau gitu sudah ditentukan yah, kita akan membuat risol ayam
+      suwir.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Untuk saat ini, kita perlu mencari resepnya dulu setelah itu baru
+      bisa kita diskusikan soal anggaran dan harga jualnya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Oh, tapi kita perlu menentukan tim yang dapat membuat risol ayam suwir..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Aku bisa, aku terbiasa memasak dirumah, dan sepertinya membuat risol
+      ayam suwir tidak akan begitu sulit.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Wah oke terima kasih Ayu, bagaimana yang lain?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Kita setidaknya butuh 4 orang untuk membantu karakter 1 membuat risol
+      ayam suwir. Mungkin yang lainnya bisa masuk tim lain nanti.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: Aku sering memasak juga di asrama, walau mungkin tidak begitu jago,
+      tapi aku kayanya bisa bantu-bantu Ayu deh.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 079e26e9058209f48a9aa629a0f1eef2, type: 3}
+    Nama: 5
+    sentences: Aku juga mau bantu! Supaya aku bisa langsung hitung anggarannya nanti.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b090e234a913f694a960fc2e70205a2a, type: 3}
+    Nama: 5
+    sentences: Aku juga boleh deh.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: 'Wah, siap-siap! Kalau begitu untuk tim yang membuat risol ayam suwir
+      sudah fix ya. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Yang lainnya tinggal nanti kita akan bagi-bagi tugas untuk tim desain
+      kemasan produk dan promosi.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: cadde5eeb31fbc64fac02a6e68eed6c7, type: 3}
+    Nama: 8
+    sentences: Aku bisa untuk desain. Aku sering bertanggung jawab menjadi tim media
+      di HMJ.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: cadde5eeb31fbc64fac02a6e68eed6c7, type: 3}
+    Nama: 8
+    sentences: Nanti bisa dibuatkan standing banner untuk promosinya.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Boleh Dinda, Oke kalo gitu Dinda yang akan desain untuk kemasan produk
+      dan banner promosi nanti ya!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Oke, untuk mempermudah tim anggaran dan desain, kita perlu menentukan
+      bahan apa yang kita gunakan untuk kemasan produk?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: d8229cb06e0f285479af59e159c9682e, type: 3}
+    Nama: 7
+    sentences: Biasanya bahan ada bahan plastik dan dus sih.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Kalau gitu kita bisa tentukan diantara itu..
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: "Hmm\u2026 kira-kira bahan mana yang sebaiknya kita pilih?"
+    Kiri: 1

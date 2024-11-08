@@ -170,9 +170,15 @@ namespace Terbaru{
             //playerProfil.Saldo += currentQuest.quest.Reward;
 
             //UiManager.instance.UpdateSaldo(playerProfil.Saldo);
-            result.result(currentQuest);
+            
             isActive = false;
             FindObjectOfType<SoundManager>().playSoundAsrama();
+
+            Invoke("resultUI", 1f);
+        }
+
+        void resultUI(){
+            result.result(currentQuest);
         }
 
 #endregion
@@ -189,7 +195,10 @@ namespace Terbaru{
             //     }
             // }
             //Debug.Log($"Start Process Quest {index}"); 
+            int indexQuest = quest.Index;
             currentQuest = quest;
+            int currentIndex = currentQuest.Index;
+
             StartProcessQuest(0);
 
             HelperProcessQuest(0);
@@ -212,15 +221,18 @@ namespace Terbaru{
         
 
         public void CheckActionQuest(string Action){
-            Debug.Log(Action);
-            Debug.Log(isActive);
+//            Debug.Log(Action);
+            //Debug.Log(isActive);
             if(!isActive)
                 return;
-
+            
             int currentIndex = currentQuest.Index;
             if(currentQuest.proses[currentIndex].Action != Action){
+                Debug.Log("Tidak Sesuai");
                 return;
             }
+
+            Debug.Log("Sesuai "+Action);
             NextProcessQuest();
             CloseProsesQuest(currentIndex);
             
@@ -265,7 +277,10 @@ namespace Terbaru{
             Debug.Log("End");
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
             isActive = false;
+            endQuest?.Invoke();
         }
+
+        public UnityEvent endQuest;
 #endregion
     }
 
