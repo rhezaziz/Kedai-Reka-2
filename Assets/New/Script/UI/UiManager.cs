@@ -60,7 +60,7 @@ namespace Terbaru
 
         public void updateEnergy(int value){
             var profil = GameManager.instance.profil;
-            profil.Energy -= value;
+            Mathf.Clamp(profil.Energy -= value, 0, 3);
             int jmlEnergy = profil.Energy;
             Debug.Log(jmlEnergy);
             for(int i = 0; i < bar.Length; i++){
@@ -213,5 +213,8 @@ namespace Terbaru
             //ChinematicPanel.SetActive(false);
             FindObjectOfType<Movement>().move = true;
         }
+
+
+        
     }
 }

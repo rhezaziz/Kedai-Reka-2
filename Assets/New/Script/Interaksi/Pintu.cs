@@ -55,7 +55,7 @@ namespace Terbaru
             checkDistance();
         }
 
-        bool interactable;
+        public bool interactable;
         public bool Interactable(){
             return interactable;
         }

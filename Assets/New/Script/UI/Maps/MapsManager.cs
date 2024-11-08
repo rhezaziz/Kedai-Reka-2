@@ -197,7 +197,7 @@ namespace Terbaru{
             mapButton.GetComponent<Button>().interactable = false;
             onAnimation = true;
             onLokasi = false;
-            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(testY, 1f).OnComplete(() =>
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, 1f).OnComplete(() =>
             StartCoroutine(Cutscene(Vector3.zero, false)));
             closeMapsPanel.onClick.AddListener(() => closeButtonAction(true));
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(false));
@@ -297,7 +297,7 @@ namespace Terbaru{
             //panelUtama.SetActive(true);
             //Chinematic.SetActive(false);
             panelNamaMaps.SetActive(value);
-            panelNamaMaps.transform.GetChild(0).DOLocalMoveY(150f, 1f);
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(.5f, 1f);
             //kembali.interactable = !mapButton.activeInHierarchy;
             //Debug.Log(mapButton.activeInHierarchy);
             yield return new WaitForSeconds(1f);
