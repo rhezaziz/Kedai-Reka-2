@@ -9,6 +9,8 @@ namespace Terbaru{
 
     public class QuizManager : MonoBehaviour
     {
+        public List<soalData> soalDosen = new List<soalData>();
+
         public static QuizManager instance;
         [Header("UI")]
         public GameObject panelQuiz;

@@ -16,7 +16,7 @@ namespace Terbaru{
             //enabled = temp;
         }
 
-
+        public bool haveNarasi;
 
         void OnDisable(){
             value = false;
@@ -51,13 +51,14 @@ namespace Terbaru{
 
         public void changeInteractable(bool value){
             interactable = value;
+            haveNarasi = value;
             // return interactable;
         }
         public GameObject quest;
         public void action(Transform player){
             player.position = new Vector3(Berdiri.position.x, player.position.y, Berdiri.position.z);
             int hari = FindObjectOfType<DayManager>().day;
-            if(HariEvent.Contains(hari)){
+            if(HariEvent.Contains(hari) && haveNarasi){
                 int index = HariEvent.IndexOf(hari);
                 //Debug.Log(index);
                 FindObjectOfType<Narasi>().haveNarasi(index);
