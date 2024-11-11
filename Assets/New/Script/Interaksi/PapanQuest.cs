@@ -59,8 +59,9 @@ namespace Terbaru{
             int hari = FindObjectOfType<DayManager>().day;
             if(HariEvent.Contains(hari)){
                 int index = HariEvent.IndexOf(hari);
-                Debug.Log(index);
+                //Debug.Log(index);
                 FindObjectOfType<Narasi>().haveNarasi(index);
+                changeInteractable(false);
             }else{    
                 FindObjectOfType<Misi_Manager>().initKontenQuest();
                 quest.SetActive(true);
@@ -68,7 +69,8 @@ namespace Terbaru{
         }
 
         public void btnActive(GameObject btn, bool interactable){
-            bool isActive = interactable && !QuestManager.instance.isActive;
+            bool isActive = interactable && !QuestManager.instance.isActive || 
+                    interactable && Interactable();
             btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
             
             btn.SetActive(isActive);

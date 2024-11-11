@@ -26,6 +26,8 @@ namespace Terbaru{
 
         public GameObject Paket;
 
+        List<itemInfo> items = new List<itemInfo>();
+
         void Awake(){
             instance = this;
         }
@@ -42,20 +44,26 @@ namespace Terbaru{
             textSaldo.text = "Point : "  + profil.Saldo.ToString("n0", info);
 
             foreach(var item in profil.item){
-                if(!item.isShop){
-                    return;
-                }
+                //if(){
+                //    return;
+                //}
 
                 GameObject itemShop = Instantiate(prefbas);
 
                 //itemShop.name = i.ToString();
 
-                itemShop.SetActive(true);
+                itemShop.SetActive(item.isShop);
                 itemShop.transform.SetParent(parent.transform);
                 itemShop.transform.localScale = new Vector2(1f, 1f);
                 itemShop.transform.Rotate(0f, 0f, -90, Space.Self);
                 itemShop.GetComponent<ContainerItem>().ItemInShop(item, info);
-            
+                var temp = new itemInfo
+                (
+                    itemShop,
+                    item
+                );
+                
+                items.Add(temp);
             }
         }
 
@@ -99,11 +107,41 @@ namespace Terbaru{
                 Debug.Log("Non Activa");
                 Paket.SetActive(true);
                 Paket.GetComponent<Interaction>().changeInteractable(true);
-                Paket.GetComponent<GrabableItem>().item.Clear();
+                //Paket.GetComponent<GrabableItem>().item.Clear();
             }
 
             SoundManager.instance.sfx(0);
             itemTerbeli = false;
+        }
+
+        void initItem()
+        {
+            profil = GameManager.instance.profil;
+            itemTerbeli = false;
+
+
+            //textSaldo.text = "Saldo : "+ "Rp" + string.Format("{0:n}",profil.Saldo);
+            NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
+            textSaldo.text = "Point : " + profil.Saldo.ToString("n0", info);
+
+            foreach (var item in items)
+            {
+                //if (!item.itemData.isShop)
+                //{
+                //    return;
+                //}
+
+                GameObject itemShop = item.itemObj;
+
+                //itemShop.name = i.ToString();
+
+                itemShop.SetActive(item.itemData.isShop);
+                //itemShop.transform.SetParent(parent.transform);
+                //itemShop.transform.localScale = new Vector2(1f, 1f);
+                //itemShop.transform.Rotate(0f, 0f, -90, Space.Self);
+                itemShop.GetComponent<ContainerItem>().ItemInShop(item.itemData, info);
+
+            }
         }
 
 
@@ -113,8 +151,25 @@ namespace Terbaru{
 
             if (kosong)
                 initShop();
+            else
+                initItem();
+
         }
-    }    
+    }
+    [System.Serializable]
+    public class itemInfo
+    {
+        public GameObject itemObj;
+        public Items itemData;
+
+        public itemInfo(GameObject itemObj, Items itemData) { 
+            this.itemObj = itemObj;
+            this.itemData = itemData;
+        }
+    }
+    
+
+    
 }
 
 

@@ -25325,7 +25325,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Berdiri: {fileID: 554053163}
-  HariEvent: 05000000090000000d000000100000001400000019000000
+  HariEvent: 000000000100000002000000030000000400000005000000
   value: 0
   Player: {fileID: 6494484127754252006}
   point: {fileID: 1905373538}
@@ -34239,7 +34239,7 @@ MonoBehaviour:
     - item: {fileID: 689225908}
     orang: []
   clipsTidur: {fileID: 32900000, guid: 865f490cb283a85439b4d18907e5a9e0, type: 3}
-  GantiQuestList: 00000000090000000e00000011000000150000001c000000
+  GantiQuestList: 03000000090000000e00000011000000150000001c000000
   quests:
   - day: 3
     events:
@@ -34505,7 +34505,7 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  day: 3
+  day: 0
 --- !u!114 &894212851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -34686,113 +34686,6 @@ MonoBehaviour:
   player: {fileID: 1939524306}
   Perempuan: {fileID: 1628516523}
   listKasus:
-  - indexKasus: 1
-    firstDialogWithDinda: 0
-    dataNarasi:
-    - inAsrama: 0
-      dialogWithPerempuan: 0
-      narasi:
-        dialogObject: {fileID: 11400000, guid: ad7162d06532d3f4ab75ec455b730169, type: 2}
-        quest:
-          id: 0
-          quest: {fileID: 0}
-          Index: 0
-          proses:
-          - Action: Quiz
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindahMiniGame
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 1
-                  m_CallState: 2
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindah
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-          - Action: Kembali
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212852}
-                  m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
-                  m_MethodName: startNarasi
-                  m_Mode: 3
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 1
-                  m_CallState: 2
-        events:
-          m_PersistentCalls:
-            m_Calls: []
-    - inAsrama: 0
-      dialogWithPerempuan: 0
-      narasi:
-        dialogObject: {fileID: 11400000, guid: 2acf050d738a060458c0d1d1a6b73e11, type: 2}
-        quest:
-          id: 0
-          quest: {fileID: 0}
-          Index: 0
-          proses: []
-        events:
-          m_PersistentCalls:
-            m_Calls: []
   - indexKasus: 1
     firstDialogWithDinda: 0
     dataNarasi:
@@ -35271,6 +35164,113 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 1
               m_CallState: 2
+  - indexKasus: 1
+    firstDialogWithDinda: 0
+    dataNarasi:
+    - inAsrama: 0
+      dialogWithPerempuan: 0
+      narasi:
+        dialogObject: {fileID: 11400000, guid: ad7162d06532d3f4ab75ec455b730169, type: 2}
+        quest:
+          id: 0
+          quest: {fileID: 0}
+          Index: 0
+          proses:
+          - Action: Quiz
+            ProcessEventStart:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212847}
+                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+                  m_MethodName: pindahMiniGame
+                  m_Mode: 5
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 0
+                  m_CallState: 2
+                - m_Target: {fileID: 21220967}
+                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+                  m_MethodName: Chinematic
+                  m_Mode: 6
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 1
+                  m_CallState: 2
+            ProcessEventHelper:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEnd:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212847}
+                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+                  m_MethodName: pindah
+                  m_Mode: 5
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 0
+                  m_CallState: 2
+          - Action: Kembali
+            ProcessEventStart:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEventHelper:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEnd:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212852}
+                  m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+                  m_MethodName: startNarasi
+                  m_Mode: 3
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 1
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 0
+                  m_CallState: 2
+                - m_Target: {fileID: 21220967}
+                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+                  m_MethodName: Chinematic
+                  m_Mode: 6
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 1
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 1
+                  m_CallState: 2
+        events:
+          m_PersistentCalls:
+            m_Calls: []
+    - inAsrama: 0
+      dialogWithPerempuan: 0
+      narasi:
+        dialogObject: {fileID: 11400000, guid: 2acf050d738a060458c0d1d1a6b73e11, type: 2}
+        quest:
+          id: 0
+          quest: {fileID: 0}
+          Index: 0
+          proses: []
+        events:
+          m_PersistentCalls:
+            m_Calls: []
   indexKasus: 0
   chinematic: 0
 --- !u!114 &894212853
