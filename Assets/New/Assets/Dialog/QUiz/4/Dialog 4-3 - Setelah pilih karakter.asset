@@ -1,0 +1,226 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 4-3 - Setelah pilih karakter
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Sip. Tim survey sudah terbentuk yah.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 49e0e6489fc55be43851f12d0e7432c1, type: 3}
+    Nama: 11
+    sentences: Tapi temen-temen, gimana cara nanti pergi ke sananya?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Nah ini dia yang mesti kita diskusiin kali ini..
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f74cbe08e2edb474386d4311842663ba, type: 3}
+    Nama: 10
+    sentences: Sewa mobil aja gitu?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: aff6efd0642bb5c43a7e2ac44d687d54, type: 3}
+    Nama: 5
+    sentences: 'Hmm.. bisa sih, ditambah untungnya disini banyak yang bisa nyetir
+      mobil. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 41cb3f490bd06b94aa51d9ae1d1401d4, type: 3}
+    Nama: 5
+    sentences: Cuma bakal mahal gak sih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f74cbe08e2edb474386d4311842663ba, type: 3}
+    Nama: 10
+    sentences: Iya juga yah. Mungkin di sini ada yang punya temen yang bisa sewakan
+      kendaraan?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: Aku ada saran sih.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 608bc00b066f47e48945099de34bbab4, type: 3}
+    Nama: 12
+    sentences: Aku ada mobil yang jarang dipakai dirumah, kalau kalian mau, nanti
+      bisa aku tanyain ke orang tua aku.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: "Wah pas banget dong, boleh Yoseph. \nTerima kasih banyak yaa."
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 246baa85c46d6b348b62ef5b1694d8be, type: 3}
+    Nama: 12
+    sentences: "Nah cuma\u2026 karena mobil itu jarang dipakai jadi aku kurang yakin
+      kondisinya masih prima atau tidak sih\u2026"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke gapapa, aman. Itu nanti bisa kita periksa dulu sebelum berangkat.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: Okedeh, nanti kalau dapet izinnya, aku kasih kunci mobilnya ke kalian
+      yah.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Sip. Terima kasih banyak Yoseph!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Nah sekarang untuk keperluan survey, kalian perlu apa?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Kalau ada biar bisa aku masukkan ke anggaran nanti.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Hmm.. sepertinya tidak ada selain uang untuk bensin?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Jajan? Masa sih kita gak dapat jajan. Betul gak, Lex?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: fcc557f48ba1b8d499017134bea0ca04, type: 3}
+    Nama: 3
+    sentences: Ah... iya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c998566e29096fa4691a6987c266d469, type: 3}
+    Nama: 4
+    sentences: Tuh denger kan, Alex aja setuju!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Iya deh iya... Jadi bensin sama jajan aja yah?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b64c6a34df5e6b49b8f52bf4f051882, type: 3}
+    Nama: 6
+    sentences: Jajan gak usah deh, nanti biar aku masakin bekel untuk semua yang
+      berangkat.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 079e26e9058209f48a9aa629a0f1eef2, type: 3}
+    Nama: 5
+    sentences: Ah yang bener, yu? Wahh ayu baik banget sih~
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Hehehe, santai aja~
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eba4333c896d8794a84b4846edf0b96c, type: 3}
+    Nama: 7
+    sentences: 'Terima kasih Ayuu! '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c8d996400fd8075428b1db25b1e0747f, type: 3}
+    Nama: 7
+    sentences: Oke, kalau begitu berarti bensin aja yang akan masuk anggaran ya!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: 'Sip. Terima kasih semua atas antusias dan inisiatifnya.
+
+'
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Kita doakan surveynya berjalan lancar yah!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 13
+    sentences: Amiinnnnnn
+    Kiri: 0

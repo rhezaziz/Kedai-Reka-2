@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Tugas Besar - Setelah Mini Game
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: Setelah berada di desa tersebut kurang lebih selama satu minggu,
+        tugas mereka pun akhirnya selesai. Instalasi berhasil dan warga desa merasa
+        senang dan gembira dengan kerja keras para mahasiswa.
+      VO: {fileID: 8300000, guid: 57dbd2b1a906c3f49a55fcdca7d1f5bc, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Para mahasiswa pun mulai membimbing para warga dan anak muda terutama
+        Karang Taruna untuk mengetahui bagaimana cara membuat filter air dan merawatnya.
+      VO: {fileID: 8300000, guid: 5a7411b5d656f0f4f86c71b6b6baf92f, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Hari berikutnya tugas mereka selesai. Permasalahan terkait krisis
+        air bersih di desa tersebut berhasil ditanggulangi menggunakan filter air
+        yang digagas oleh tim Thomas.
+      VO: {fileID: 8300000, guid: fc38d8620ba1aa84d81255ce20ea2b6b, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Setelah menghabiskan waktu untuk berkemas. Akhirnya mereka bersiap
+        untuk pamit pulang di siang hari. Mereka berpamitan pada warga desa.
+      VO: {fileID: 8300000, guid: 59c4f66c490cac74cb96669cd272345c, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 'Setelah mereka semua selesai dengan kegiatannya. Mereka semua
+        pulang ke tempat tinggal masing-masing dan mulai membuat laporan hasil kegiatan. '
+      VO: {fileID: 8300000, guid: 69f558d74636d61418802613af985196, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 'Hasil jurnal yang mereka buat berdasarkan data yang didapat dari
+        program tersebut menuai banyak pujian dari berbagai pihak. '
+      VO: {fileID: 8300000, guid: 07d6b73cd77abfb47887b601276421a4, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Tim Thomas mendapat penghargaan atas tindakan terpuji para mahasiswa
+        ini dan dijadikan contoh bagi para mahasiswa lain.
+      VO: {fileID: 8300000, guid: 4111913a93bb7e6429ab7ecba688ff0c, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0

@@ -1,0 +1,136 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1045 &1
+EditorBuildSettings:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Scenes:
+  - enabled: 1
+    path: Assets/New/Scene/New Scene.unity
+    guid: 2ef991398c3b4a149b79b5b0d43a4255
+  - enabled: 1
+    path: Assets/New/Scene/Asrama BackUp.unity
+    guid: 0b41990bf7461e14ca6eafb1b2b2c634
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Quiz.unity
+    guid: 5f177eb9d4b3ea143a367603320afc41
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/M - 1 Memilih TIM/Scene/Kasus1_1.unity
+    guid: d2078729dba0b0e43947dfa1e0ac8b5e
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/M - 2 Memilih bendahara/Scene/Kasus1_2.unity
+    guid: faa4d2d72f72d3c469d10c68232221df
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/M - 3 Restock Buku Agenda/Scene/Kasus1_3.unity
+    guid: aed13d6f82096aa44a8c774fc2460f6f
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/S - 1 Meluruskan Kesalahpahaman/Scene/Kasus1_4.unity
+    guid: 2e750b177eeb1cc4faf07de865724bff
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/S - 2 Memeriksa Kembali Anggaran/Scene/Kasus1_5.unity
+    guid: 353b9fc695e4a3f47a9b1ae593c464fb
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 1/S - 3/Scene/Kasus1_6.unity
+    guid: edc18541c062a5e4495d04979e1ba982
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 2/M - 1 Mendiskusikan desain/Scene/Kasus2_1.unity
+    guid: 5116c5e9cb0f7424fa1e94799f06b523
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 2/M - 2 Membuat daftar keperluan untuk
+      membuat desain/Scene/Kasus2_2.unity
+    guid: 91c57b41183b1e7448dc04c1a66ba3db
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 2/S - 1 Reseach design bersama/Scene/Kasus2_3.unity
+    guid: 86831520bf755e649971b8d306566e08
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 2/S - 2 Memperbaiki laptop/Scene/Kasus2_4.unity
+    guid: 79820affbe6615c4d8851b49a4162f82
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 3/M - 1 Menanyakan Anggota tentang Kesediaan/Scene/Kasus3_1.unity
+    guid: 8e12665577f8dc34697508614b857398
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 3/M - 2 Review rundown/Scene/Kasus3_2.unity
+    guid: 4d419f6e8aa1fca4c8e8afa6962446d5
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 3/S - 1 Proses pengerjaan surat/Scene/Kasus3_3.unity
+    guid: 43210c86b52cb7a45a9f40845d533351
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 4/M - 1 Menyiapkan perlangkapan survei/Scene/Kasus4_1.unity
+    guid: e3d4ed103e3dd78498f2e1085c26a593
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 4/M - 2 Memilih kendaraan yang digunakan
+      survey/Scene/Kasus4_2.unity
+    guid: 92367649883e125419dc04f6e3d17f99
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 4/S - 1 Mencari Lokasi Survey/Scene/Kasus4_3.unity
+    guid: a3dc36ea49cbd6d47ab149b887c2b1f9
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 4/S - 2 Menyiapkan pertanyaan untuk survei/Scene/Kasus4_4.unity
+    guid: 9ae905669d2c1314cb79f8052f44a8b0
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/M - 1 Research mengenai makanan/Scene/Kasus5_1.unity
+    guid: 2748bfc0025631647aee7bab7be68582
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/M - 2 Membeli barang keperluan/Scene/Kasus5_2.unity
+    guid: 5b27301253a8ede4faa25bc9193be822
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/M - 3 Mencatat Hasil Pembuatan Pertama/Scene/Kasus5_3.unity
+    guid: a5b700c9a8a66d7479d30a2f5255b067
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/S - 1 Pembuatan barang untuk pertama/Scene/Kasus5_4.unity
+    guid: 0994e7b5391980849b2a2b67a3184838
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/S - 2 Improve hasil pembuatan pertama/Scene/Kasus5_5.unity
+    guid: 9da5c87deaab18347b109a6ced227721
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 5/S - 3 Menyiapkan takaran yang akan dipakai/Scene/Kasus5_6.unity
+    guid: 5791c0e857a8ca14f9efa20f626e7580
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 6/M - 1 Membuat Packing/Scene/Kasus6_1.unity
+    guid: b8a6635148cf2544bbaece293d1cf7e7
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 6/M - 2 Memeriksa Hasil Produksi/Scene/Kasus6_2.unity
+    guid: 47333842bb5c120439a4d40822c85ca1
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 6/S - 1 Mempromosikan Produk/Scene/Kasus6_3.unity
+    guid: 297c9a33de6923f459dfe76cf12d7c02
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 6/S - 2 Mendirikan Stand/Scene/Kasus6_4.unity
+    guid: 48156cca9ef1bb9449dfee8f0c723c46
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 7/M - 1 Menghitug Hasil Perjualan/Scene/Kasus7_1.unity
+    guid: 334b9175576e8b146a63b2bffd6a9958
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 7/M - 2 Review Rencana Project Akhir/Scene/Kasus7_2.unity
+    guid: 388e96902d4ab4e4ab5b996f742cb722
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 7/S - 1 Membuat Laporan Kegiatan/Scene/Kasus7_3.unity
+    guid: cd2116b8319201741b1eea37c9308330
+  - enabled: 1
+    path: Assets/New/MiniGame/Kasus/Kasus 7/S - 2 Mempersiapkan Barang Untuk Pergi/Scene/Kasus7_4.unity
+    guid: 2583ff9efb9b0de4aa0651b62e534ab8
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Nyapu/Nyapu.unity
+    guid: 39721b2c327fba248a6910bc74748449
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Siram Tanaman/Siram Tanaman.unity
+    guid: 6b119c45173d9224b8f0226452eb5704
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-11/Hari11.unity
+    guid: 4dc29d8fd24723a40bf7df6a7ffa4499
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-6/Hari6.unity
+    guid: 11bfa10505e0305419eabf71bc15d09f
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-10/Hari10.unity
+    guid: 513ab7c19e2de7543ad18cbd7b88ccf7
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-13/Hari13.unity
+    guid: fd8827138673a9d4bb6678c53dc25031
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-19/Hari19.unity
+    guid: e3db5d9026a2562459e500dcae214faa
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Hari ke-26/Hari26.unity
+    guid: ddcafbeb364c08441884bc089f1f5084
+  m_configObjects: {}

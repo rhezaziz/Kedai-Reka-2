@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 3-3 - Elena cari buku Bio
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 'Elena kemudian mengirim text pada temannya untuk bertemu dan meminjam
+        buku biologi. Lalu temannya langsung membalas.
+
+'
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Eh, tumben banget langsung bales nih anak.
+    Kiri: 1
+  - narasi:
+      narasiText: Elena pun membaca text yang diberikan oleh temannya, Putri.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 1
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 15
+    sentences: Halo El, Oh iya ada dan kebetulan aku gak pake dalam waktu dekat ini.
+      Cuma aku baru mau berangkat ke acara makrab.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 15
+    sentences: Paling bukunya aku tinggal di asrama ya. Kamu ambil sendiri aja.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Duh maksud dia dimana yaa..?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Hm.. yaudah deh kita coba cari dulu aja.
+    Kiri: 1

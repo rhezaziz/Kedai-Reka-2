@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog Cerita 3 - Pilihan Alex B
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Hmm.. sepertinya lebih baik jika kita minta tolong saja pada Michael,
+      karena sebagai ketua tim aku tidak bisa semena-mena mengubah jadwal meeting
+      kita.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Dan juga, yang telat nanti kan masih bisa bertanya kepada yang lain
+      jika ada pembahasan yang terlewat.
+    Kiri: 1

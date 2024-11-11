@@ -1,0 +1,110 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog Cerita 5 - Setelah Buat Filter Air
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Wah, kok air yang keluar belum begitu jernih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb27a22009123f24fa2fbbca25995001, type: 3}
+    Nama: 0
+    sentences: Kenapa yah? Apa yang salah yah?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: fcc557f48ba1b8d499017134bea0ca04, type: 3}
+    Nama: 3
+    sentences: Hmm.. kalo dari dugaanku sih ada beberapa kemungkinan.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: fcc557f48ba1b8d499017134bea0ca04, type: 3}
+    Nama: 3
+    sentences: Pertama, mungkin karena bahan-bahannya kurang rapat.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: fcc557f48ba1b8d499017134bea0ca04, type: 3}
+    Nama: 3
+    sentences: karena arang yang kita gunakan bisa saja kurang aktif, bahan yang
+      kita gunakan kurang...
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 47527a960dce9924ab1d04aef796dd85, type: 3}
+    Nama: 3
+    sentences: ..atau memang karena kita belum melakukannya berulang kali, mungkin
+      karena masih percobaan pertama?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 608bc00b066f47e48945099de34bbab4, type: 3}
+    Nama: 12
+    sentences: Woww.. Alex..
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b090e234a913f694a960fc2e70205a2a, type: 3}
+    Nama: 11
+    sentences: Alex keren banget.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: "Ooh\u2026 gitu ya lex. "
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Tapi iya sih, kelihatannya emang bahannya kurang rapat dan.. ditambah
+      kita juga baru percobaan pertama.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 079e26e9058209f48a9aa629a0f1eef2, type: 3}
+    Nama: 5
+    sentences: Wah Alex sekali bicara menggemparkan dunia~!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 29ab033c521c0de44b3c318af4a6716a, type: 3}
+    Nama: 3
+    sentences: "Guys\u2026 udah dong mujinya, malu nih.."
+    Kiri: 0
+  - narasi:
+      narasiText: Akhirnya setelah mengetahui letak kesalahannya, mereka memperbaiki
+        dan berhasil membuat filter air yang sesuai dengan yang mereka rencanakan.
+      VO: {fileID: 8300000, guid: e7f1ff59dbcbef548a7e017fb51b9a6d, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 3
+    sentences: 
+    Kiri: 0

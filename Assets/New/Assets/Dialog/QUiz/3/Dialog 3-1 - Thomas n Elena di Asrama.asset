@@ -1,0 +1,240 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 3-1 - Thomas n Elena di Asrama
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Oh iya Elena, kita lupa menanyakan kesediaan waktu anak-anak untuk
+      program ini.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Kita perlu memastikan di hari pelaksanaan nanti tidak ada yang berhalangan
+      hadir.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 545c8031816ae354985a026aee593302, type: 3}
+    Nama: 1
+    sentences: Wah betul, kita lupa menanyakan itu di rapat sebelumnya!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Kita perlu rapat lagi untuk membahas rincian kegiatan dan..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: ..Oh! Kita perlu orang untuk yang membuat proposal juga nih.
+    Kiri: 0
+  - narasi:
+      narasiText: Elena menanyakan hal tersebut di Group Chat dengan anggota lain,
+        dan para anggota membalas.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Oke, sudah aku kabari nih. Mereka setuju untuk bertemu di sekretariat
+      lagi jam 1 siang nanti.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Siap deh kalo gitu.
+    Kiri: 0
+  - narasi:
+      narasiText: 'Berselang beberapa menit beberapa anggota mengabari bahwa mereka
+        berhalangan untuk hadir siang ini karena terdapat kendala. '
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 1
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: Thomas dan Elena menanyakan kepada mereka kendala apa yang membuat
+        mereka tidak bisa hadir dalam meeting.
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 1
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: db8bbfd5864a5a746bc602a94bb1f6ce, type: 3}
+    Nama: 8
+    sentences: 'Halo Elena, Maaf ya aku mau ngabarin kalau untuk meeting hari ini
+      aku kayanya belum bisa ikut deh. '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: db8bbfd5864a5a746bc602a94bb1f6ce, type: 3}
+    Nama: 8
+    sentences: Aku lupa belum cari buku biologi untuk kelas besok. Maaf yah.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: dd8d794a25d521241b14f5a210ee469c, type: 3}
+    Nama: 10
+    sentences: Elena, maaf banget nih, aku kayanya akan agak telat ikut meeting siang
+      ini..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: dd8d794a25d521241b14f5a210ee469c, type: 3}
+    Nama: 10
+    sentences: Soalnya jam 1:30 aku baru selesai acara keluarga, kemungkinan 1:45
+      baru sampe kampus nih. Maaf Yaahh...
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 5d78e737f54fe9f45b187cca0c538ddb, type: 3}
+    Nama: 3
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 5d78e737f54fe9f45b187cca0c538ddb, type: 3}
+    Nama: 3
+    sentences: 'Elena maaf aku mau ngabarin, motor aku mogok, kayanya aku gak
+
+      bisa
+      ikut hadir meeting untuk hari ini aja. Aku mohon maaf sekali yah,
+
+      Elena.'
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Hmm.. gimana yah? Apa kita reschedule aja jadwalnya?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb27a22009123f24fa2fbbca25995001, type: 3}
+    Nama: 0
+    sentences: Tapi gimana kalau kita reschedule malah lebih banyak anggota yang
+      gak bisa hadir?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 545c8031816ae354985a026aee593302, type: 3}
+    Nama: 1
+    sentences: Ah benar juga...
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Eh bentar deh, kayanya teman aku ada yang punya buku biologi yang
+      Dinda maksud deh.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Wah kalau gitu, bisa gak yah kalau kita pinjemin untuk Dinda?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: "Hm.. aku perlu tanyain ke dia dulu sih. Tapi masalahnya\u2026 dia
+      jarang bales chat aku, jadi aku harus cari langsung di kampus nih."
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Oke kalau gitu kita coba aja yah. Nah untuk Alex dan Michael, gimana
+      yah?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Eh bentar, bukannya rumah Michael dan Alex satu arah yah?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oh iyah! Jarak dari kampus ke rumahnya Alex juga gak gitu jauh sih,
+      apa aku aja yah yang jemput, kurang lebih paling 20 menitan sih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oh iyah! Jarak dari kampus ke rumahnya Alex juga gak gitu jauh sih,
+      apa aku aja yah yang jemput, kurang lebih paling 20 menitan sih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Hm.. kalau kamu yang jemput, Alex bisa datang lebih cepat sih, cuma
+      nanti gak akan ada yang buka rapatnya dong?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Ya.. telat sedikit gak apa-apa dong?
+    Kiri: 1
+  - narasi:
+      narasiText: Dalam situasi seperti ini, sebagai ketua tim, apa yang Thomas harus
+        lakukan?
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0

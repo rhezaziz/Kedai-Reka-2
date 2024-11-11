@@ -1,0 +1,49 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog Cerita 6 - Meet
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: Kini hanya tinggal mehitung hari sebelum hari pelaksanan kegiatan
+        tiba. Semua persiapan berkaitan dengan program sudah hampir rampung. Tinggal
+        merencakan pembuatan filter air sesuai dengan jumlah yang dibutuhkan.
+      VO: {fileID: 8300000, guid: 7bd459973d2b0334aa5b8b788d1b86c5, type: 3}
+    GambarKarakter: {fileID: 0}
+    Nama: 0
+    sentences: 
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Setelah kita lihat hasil filter air yang kita buat beberapa hari lalu,
+      akhirnya sejauh ini  semua berjalan lancar sesuai rencana.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: 'Tinggal sekarang kita produksi lagi sesuai kuantitas yang kita butuhkan
+      untuk kita buat di desa nanti.
+
+'
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Ok siap!
+    Kiri: 0

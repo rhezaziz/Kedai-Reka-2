@@ -1,0 +1,28 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b5cb88f3cebdb04dada5ab78a875a83, type: 3}
+  m_Name: K1_M2
+  m_EditorClassIdentifier: 
+  iD_Quiz: 1
+  index: 0
+  Reward: 3000
+  skills: 000000000200000006000000
+  nama: 0b00000005000000
+  judulMisi: Memilih bendahara
+  item: {fileID: 11400000, guid: 77a92f9ab87129c46b0609c914b01d24, type: 2}
+  Deskripsi: 2
+  jmlEnergy: 2
+  sceneGame: Kasus1_2
+  firstChangeScene: 1
+  level: 0
+  pointBonus: 50
+  isDone: 0

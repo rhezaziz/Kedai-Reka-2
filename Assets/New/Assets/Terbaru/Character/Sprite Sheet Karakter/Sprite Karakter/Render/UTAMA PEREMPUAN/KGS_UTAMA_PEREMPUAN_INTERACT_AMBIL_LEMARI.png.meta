@@ -1,0 +1,536 @@
+fileFormatVersion: 2
+guid: 3d8cf8d249acd9048a809ff365ebda4c
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 425
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da540a6b9ac5ba2428f879c925e650d6
+      internalID: 1514833704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_1
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b4f863f495210d4da63ad1e74b21691
+      internalID: -1966462047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_2
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1bd50d0306d784e40856d2845153f026
+      internalID: 1318079408
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_3
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c26c6f9a69e8a694fa8ad54f5001ff4c
+      internalID: -1417190612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_4
+      rect:
+        serializedVersion: 2
+        x: 6972
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c013c0aef11439649b0db764ce09b20d
+      internalID: -81149206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_5
+      rect:
+        serializedVersion: 2
+        x: 8715
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7149ad568d97da4f9f22ca9ee5c0380
+      internalID: 1138978577
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_6
+      rect:
+        serializedVersion: 2
+        x: 10458
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5d777c4684355f46acd17389a55628a
+      internalID: -363309640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_7
+      rect:
+        serializedVersion: 2
+        x: 12201
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8444c811278c74449b7ab5dd072ebdcf
+      internalID: 1926796639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_8
+      rect:
+        serializedVersion: 2
+        x: 13944
+        y: 3225.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c1656e783c8e135469dea8742655154e
+      internalID: -416281197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4488dedf2893d0418a87ba4348eb6e6
+      internalID: -1617927168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_10
+      rect:
+        serializedVersion: 2
+        x: 1743
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973d6a3836aaacf4b9065d58fd034b7f
+      internalID: -219904306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_11
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44d9d0c67bfa34e46ba6fd5dafb3b79f
+      internalID: 1324787431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_12
+      rect:
+        serializedVersion: 2
+        x: 5229
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f427552a69cbf345a3d2dc5f9602f17
+      internalID: -1322925079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_13
+      rect:
+        serializedVersion: 2
+        x: 6972
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d21e420ae90b7a5488f889bfb22d79a6
+      internalID: 564670124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_14
+      rect:
+        serializedVersion: 2
+        x: 8715
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7843c8d54065f9a419de8f3de8bf979c
+      internalID: 253201492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_15
+      rect:
+        serializedVersion: 2
+        x: 10458
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f012f507c0e5d5478e010e2151c9111
+      internalID: -1121077964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_16
+      rect:
+        serializedVersion: 2
+        x: 12201
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e967edbe63ae8924396bf94c9d36a316
+      internalID: 741418718
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_17
+      rect:
+        serializedVersion: 2
+        x: 13944
+        y: 0.5
+        width: 1743.6666
+        height: 3225.5
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f34bdef9a9c554441a0f396473a468c0
+      internalID: -817054061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_0: 1514833704
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_1: -1966462047
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_10: -219904306
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_11: 1324787431
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_12: -1322925079
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_13: 564670124
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_14: 253201492
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_15: -1121077964
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_16: 741418718
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_17: -817054061
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_2: 1318079408
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_3: -1417190612
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_4: -81149206
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_5: 1138978577
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_6: -363309640
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_7: 1926796639
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_8: -416281197
+      KGS_UTAMA_PEREMPUAN_INTERACT_AMBIL_LEMARI_9: -1617927168
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
