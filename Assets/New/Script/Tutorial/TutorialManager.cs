@@ -197,6 +197,8 @@ namespace Terbaru{
             
             dindaSpawn.transform.SetParent(dinda.transform);
             dindaSpawn.transform.localPosition = Vector3.zero;
+            dindaSpawn.GetComponent<Interaction>().changeInteractable(false);
+            dindaSpawn.GetComponent<Collider>().enabled = false;
             colDapur.SetActive(false);
             //dindaData.characterLock = false;
             var action = dinda.GetComponent<TutorialDialog>();
@@ -660,6 +662,8 @@ namespace Terbaru{
                 if(parentNPC.transform.GetChild(i).name == "Dinda"){
                     dindaNPC = parentNPC.transform.GetChild(i).gameObject;
                     dindaNPC.SetActive(true);
+                    dindaNPC.GetComponent<Interaction>().changeInteractable(true);
+                    dindaNPC.GetComponent<Collider>().enabled = true;
                     break;
                 }
             }

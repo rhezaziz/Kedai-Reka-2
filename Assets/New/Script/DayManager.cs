@@ -33,6 +33,7 @@ namespace Terbaru{
             
             //StartCoroutine(delayExecute());
             FindObjectOfType<WaktuManager>().changeInteraction();
+            
         }
 
 
@@ -44,7 +45,8 @@ namespace Terbaru{
         void changeTime(){
             day += 1;
             FindObjectOfType<UiManager>().updateEnergy(-3);
-            
+            FindObjectOfType<QuizManager>().setSoal(day);
+
             FindObjectOfType<WaktuManager>().currentTime(0);
             maps.updateDayKonten(days[day].mapsId);
             if(days[day].itemSpawn.Count >= 1){

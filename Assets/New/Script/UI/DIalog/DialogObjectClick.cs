@@ -25,16 +25,24 @@ namespace Terbaru{
         }
 
         public void canDialog(bool value){
-            Indikator.SetActive(value);
+            if(Indikator)
+                Indikator.SetActive(value);
             onDialog = value;
         }
 
         public void interactNPC(bool value){
             onDialog = value;
-            Indikator.SetActive(value);
+            if(Indikator)
+                Indikator.SetActive(value);
         }
 
         public void endDialog(){
+
+            if (dialog.quest.proses.Length > 0)
+            {
+                QuestManager.instance.StartQuest(dialog.quest);
+            }
+
             UiManager.instance.chinematicDialog(false);
             interactNPC(false);
             extendAction?.Invoke();
