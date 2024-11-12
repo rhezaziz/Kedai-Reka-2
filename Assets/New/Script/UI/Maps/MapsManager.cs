@@ -231,10 +231,17 @@ namespace Terbaru{
             float posX = indexMaps * 25f;
             lokasi = temp.mapLokasi.gameObject;
             tempMaps = temp;
-
             panelMaps.gameObject.SetActive(false);
             panelUtama.gameObject.SetActive(false);
             Chinematic.gameObject.SetActive(true);
+            mapButton.interactable = false;
+            kembali.interactable = false;
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0, .5f).OnComplete(() => {
+                
+                mapButton.interactable = true;
+                kembali.interactable = true;
+            });
+            
 
             //lokasi.gameObject.SetActive(true);
             panelNamaMaps.transform.GetChild(0).GetChild(0).GetChild(0).GetComponentInChildren<TMP_Text>().text = temp.nama;
@@ -297,9 +304,11 @@ namespace Terbaru{
             //panelUtama.SetActive(true);
             //Chinematic.SetActive(false);
             panelNamaMaps.SetActive(value);
-            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(.5f, 1f);
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(1f, 1f);
+            //panelMaps.gameObject.SetActive(true);
             //kembali.interactable = !mapButton.activeInHierarchy;
             //Debug.Log(mapButton.activeInHierarchy);
+            //panelMaps.DOPivotY(1f, .5f);
             yield return new WaitForSeconds(1f);
             onAnimation = false;
             
@@ -310,7 +319,7 @@ namespace Terbaru{
                 foreach(var action in tempMaps.events){
                     if(action.day == hari && !action.done){
                         action.done = true;
-                        //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
+                        Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
                         action.events?.Invoke();
                         action.events.RemoveAllListeners();
                     } 

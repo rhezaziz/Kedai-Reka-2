@@ -13,6 +13,7 @@ namespace Terbaru{
         public UI_Dialog uiDialog;
 
         public GameObject narasiObj;
+        public GameObject panelDialog;
         public TMPro.TMP_Text narasiText;
         bool done = true;
 
@@ -33,6 +34,7 @@ namespace Terbaru{
             dialogText = narasiText;
             
             uiDialog.VOActive();
+            panelDialog.gameObject.SetActive(false);
             
 
         }
@@ -56,7 +58,7 @@ namespace Terbaru{
 
         public void StartDialog(Dialog dialog)
         {
-
+            panelDialog.SetActive(true);
             testDialog = dialog;
             //Debug.Log("Mulai Dialog");
             uiDialog.gameObject.SetActive(true);

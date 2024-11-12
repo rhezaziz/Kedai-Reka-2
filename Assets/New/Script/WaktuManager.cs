@@ -67,7 +67,7 @@ namespace Terbaru{
             //sun.DOColor(color, 2f);
             //sun.DOIntensity(intent, 2f);
 
-            if(thisWaktu == waktu.Malam){
+            if(thisWaktu == waktu.Malam && !GameManager.instance.isTutorial){
                 foreach(var interact in interaksi){
                     interact.GetComponent<Interaction>().changeInteractable(false);
                 }

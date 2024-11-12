@@ -17,6 +17,10 @@ namespace Terbaru{
         public List<dayQuest> quests = new List<dayQuest>();
 
         public int day = 0;
+
+        public int currectDay(){
+            return day;
+        }
         void Start(){
             maps.updateDayKonten(days[0].mapsId);
         }
@@ -25,8 +29,11 @@ namespace Terbaru{
             //FindObjectOfType<WaktuManager>().currentTime(0);
             initContentQuest(false);
             FindObjectOfType<VideoManager>().action(clipsTidur);
-            StartCoroutine(delayExecute());
+            Invoke("changeTime",4);
+            
+            //StartCoroutine(delayExecute());
             FindObjectOfType<WaktuManager>().changeInteraction();
+            
         }
 
 
@@ -38,12 +45,17 @@ namespace Terbaru{
         void changeTime(){
             day += 1;
             FindObjectOfType<UiManager>().updateEnergy(-3);
-            
+            FindObjectOfType<QuizManager>().setSoal(day);
+
             FindObjectOfType<WaktuManager>().currentTime(0);
             maps.updateDayKonten(days[day].mapsId);
             if(days[day].itemSpawn.Count >= 1){
                 foreach(var item in days[day].itemSpawn){
                     item.item.SetActive(true);
+                }
+
+                foreach(var person in days[day].orang){
+                    person.interactNPC(true);
                 }
             }
 
@@ -61,8 +73,6 @@ namespace Terbaru{
                     return;
                 }
             }
-
-            
         }
 
         public void updateMaps(){
@@ -88,6 +98,7 @@ namespace Terbaru{
     public class Day{
         public List<id_Maps> mapsId;
         public List<spawnItem> itemSpawn;
+        public List<DialogObjectClick> orang;
     }
 
     [System.Serializable]

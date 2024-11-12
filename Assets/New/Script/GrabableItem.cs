@@ -26,19 +26,22 @@ namespace Terbaru{
         }
         public void action(Transform Player){
             //var profil = GameManager.instance.profil;
+            //Debug.Log("Action");
             if(Player != null)
                 Player.GetComponent<Controller>().currentState(state.Default);
             //var temp = profil.item.Contains(item);
             foreach(var i in item){
+                Debug.Log(i.namaItem);
                 i.isInventory = true;
                 string action = $"{actionQuest} {i.namaItem}";
                 QuestManager.instance.CheckActionQuest(actionQuest);
             }
-
+            //Debug.Log("false");
             AudioClip clip = paket ? SoundManager.instance.InvorenmentClip[5] : SoundManager.instance.sfxUIClip[7];
             SoundManager.instance.sfx(clip);
             //
             gameObject.SetActive(false);
+            item.Clear();
             //Destroy(this);
         }
 

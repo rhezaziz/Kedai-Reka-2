@@ -204,21 +204,24 @@ namespace Terbaru{
 
         public void endDialog(){
 
-            if(narasiDialog.dialogWithPerempuan){
-                FindObjectOfType<DialogManager>().closeDialog();
-
-                PerempuanNgomong(false);
-                UiManager.instance.Chinematic(false, 1.75f);
-                Perempuan.SetActive(false);
-                
-                // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
-                player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
-                //player.currentState(state.Default);
-            }
+            
 
 
             if(tempDialog.quest.proses.Length == 0 && tempDialog.events.GetPersistentEventCount() == 0)
             {
+                if (narasiDialog.dialogWithPerempuan)
+                {
+                    //FindObjectOfType<DialogManager>().closeDialog();
+
+                    PerempuanNgomong(false);
+                    UiManager.instance.Chinematic(false, 1.75f);
+                    Perempuan.SetActive(false);
+
+                    // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
+                    player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
+                    //player.currentState(state.Default);
+                }
+
                 Debug.Log("Kembali");
                 if(!narasiDialog.inAsrama){
                     StartCoroutine(kembali());
@@ -237,10 +240,24 @@ namespace Terbaru{
                 listQuest quest = tempDialog.quest;
                 QuestManager.instance.StartQuest(quest);
                 chinematic = false;
-                
+
+                if (narasiDialog.dialogWithPerempuan)
+                {
+                    //FindObjectOfType<DialogManager>().closeDialog();
+
+                    PerempuanNgomong(false);
+                    UiManager.instance.Chinematic(false, 1.75f);
+                    Perempuan.SetActive(false);
+
+                    // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
+                    player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
+                    //player.currentState(state.Default);
+                }
+
                 //return;
             } else if(tempDialog.events.GetPersistentEventCount() > 0){
                 Debug.Log("Invoke");
+                FindObjectOfType<DialogManager>().panelDialog.SetActive(false);
                 tempDialog.events?.Invoke();
                 return;
             }
@@ -254,6 +271,8 @@ namespace Terbaru{
 
         public void closeDialog(){
             //FindObjectOfType<DialogManager>().closeDialog();
+
+
             //Debug.Log("Close Dialog");
             chinematic = false;
             UiManager.instance.Chinematic(false);
@@ -263,7 +282,7 @@ namespace Terbaru{
             
             FindObjectOfType<Player_Interaction>().interactObject = null;
             
-            FindObjectOfType<QuestManager>().CheckAction("Narasi");
+            QuestManager.instance.CheckAction("Narasi");
             Invoke("startAction",1f);
 
             FindObjectOfType<DialogManager>().closeDialog();

@@ -197,6 +197,8 @@ namespace Terbaru{
             
             dindaSpawn.transform.SetParent(dinda.transform);
             dindaSpawn.transform.localPosition = Vector3.zero;
+            dindaSpawn.GetComponent<Interaction>().changeInteractable(false);
+            dindaSpawn.GetComponent<Collider>().enabled = false;
             colDapur.SetActive(false);
             //dindaData.characterLock = false;
             var action = dinda.GetComponent<TutorialDialog>();
@@ -441,7 +443,7 @@ namespace Terbaru{
             komputer.changeInteractable(false);
             ipad.interactable = false;
             TutorialLoader.instance.Load("Day2_13");
-            
+            UiManager.instance.bantuanText("Kembali Ke papan Kasus");
             iQuest.changeInteractable(true);
             objDay2_12.SetActive(true);
             resultButton.onClick.AddListener(() => {
@@ -453,7 +455,7 @@ namespace Terbaru{
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_12");
             closePanelQuest.interactable = false;
-            UiManager.instance.bantuanText("Kembali Ke papan Kasus");
+            
             //iQuest.enabled = true;
             //objDay2_12.SetActive(true);
             
@@ -660,6 +662,8 @@ namespace Terbaru{
                 if(parentNPC.transform.GetChild(i).name == "Dinda"){
                     dindaNPC = parentNPC.transform.GetChild(i).gameObject;
                     dindaNPC.SetActive(true);
+                    dindaNPC.GetComponent<Interaction>().changeInteractable(true);
+                    dindaNPC.GetComponent<Collider>().enabled = true;
                     break;
                 }
             }

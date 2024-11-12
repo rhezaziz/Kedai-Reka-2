@@ -25,4 +25,4 @@ MonoBehaviour:
   firstChangeScene: 1
   level: 0
   pointBonus: 50
-  isDone: 1
+  isDone: 0
