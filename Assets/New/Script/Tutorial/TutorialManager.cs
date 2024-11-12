@@ -443,7 +443,7 @@ namespace Terbaru{
             komputer.changeInteractable(false);
             ipad.interactable = false;
             TutorialLoader.instance.Load("Day2_13");
-            
+            UiManager.instance.bantuanText("Kembali Ke papan Kasus");
             iQuest.changeInteractable(true);
             objDay2_12.SetActive(true);
             resultButton.onClick.AddListener(() => {
@@ -455,7 +455,7 @@ namespace Terbaru{
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_12");
             closePanelQuest.interactable = false;
-            UiManager.instance.bantuanText("Kembali Ke papan Kasus");
+            
             //iQuest.enabled = true;
             //objDay2_12.SetActive(true);
             

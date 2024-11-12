@@ -1898,13 +1898,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4d5ba73c440b870449f433d58106ec97, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soalDosen: []
+  soalDosen:
+  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  soalMingguan: []
+  komputer: {fileID: 0}
+  wrong: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
+  correct: {fileID: 21300000, guid: c395e26af7c056f41907e0dca8401f43, type: 3}
   panelQuiz: {fileID: 1381668949}
   pilihanA: {fileID: 2024021339}
   pilihanB: {fileID: 1957945373}
   pilihanC: {fileID: 213637107}
   pilihanD: {fileID: 152043653}
   soal: {fileID: 940521235}
+  panelResult: {fileID: 581407189}
+  Result: {fileID: 1037991759}
 --- !u!114 &21220971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -14188,6 +14200,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1311035662}
+  - {fileID: 581407187}
   m_Father: {fileID: 1381668950}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
@@ -16024,7 +16037,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &437847156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -21961,6 +21974,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 577381198}
   m_CullTransparentMesh: 1
+--- !u!1 &581407186
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 581407187}
+  - component: {fileID: 581407188}
+  - component: {fileID: 581407189}
+  m_Layer: 5
+  m_Name: Image (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &581407187
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581407186}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1037991761}
+  m_Father: {fileID: 380785496}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: -10, y: -10}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &581407188
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581407186}
+  m_CullTransparentMesh: 1
+--- !u!114 &581407189
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 581407186}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 0}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1 &582722779
 GameObject:
   m_ObjectHideFlags: 0
@@ -25326,7 +25415,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Berdiri: {fileID: 554053163}
-  HariEvent: 000000000100000002000000030000000400000005000000
+  HariEvent: 05000000090000000d000000100000001400000019000000
   value: 0
   haveNarasi: 0
   Player: {fileID: 6494484127754252006}
@@ -32775,7 +32864,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
-  isTutorial: 0
+  isTutorial: 1
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -34508,7 +34597,7 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  day: 5
+  day: 0
 --- !u!114 &894212851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39600,6 +39689,81 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1029793378}
   m_CullTransparentMesh: 1
+--- !u!1 &1037991758
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1037991761}
+  - component: {fileID: 1037991760}
+  - component: {fileID: 1037991759}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1037991759
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037991758}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1037991760
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037991758}
+  m_CullTransparentMesh: 1
+--- !u!224 &1037991761
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1037991758}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 1
+  m_Children: []
+  m_Father: {fileID: 581407187}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 150, y: 150}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1042316765
 GameObject:
   m_ObjectHideFlags: 0
@@ -102866,16 +103030,16 @@ MonoBehaviour:
       - m_Target: {fileID: 21220970}
         m_TargetAssemblyTypeName: Terbaru.QuizManager, Assembly-CSharp
         m_MethodName: initSoal
-        m_Mode: 2
+        m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: dd260fdf636bef744b45a69f77da443f, type: 2}
-          m_ObjectArgumentAssemblyTypeName: soalData, Assembly-CSharp
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-  onDialog: 1
+  onDialog: 0
   Indikator: {fileID: 2036658442}
 --- !u!65 &5879554810139688282
 BoxCollider:
