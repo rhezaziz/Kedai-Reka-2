@@ -55,13 +55,13 @@ namespace Terbaru
             checkDistance();
         }
 
-        public bool interactable;
+        public bool interact;
         public bool Interactable(){
-            return interactable;
+            return interact;
         }
 
         public void changeInteractable(bool value){
-            interactable = value;
+            interact = value;
             // return interactable;
         }
         public void action(Transform Player)

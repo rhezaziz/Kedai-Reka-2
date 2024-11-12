@@ -16022,7 +16022,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &437847156
 RectTransform:
   m_ObjectHideFlags: 0
@@ -32738,7 +32738,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &894212843
 Transform:
   m_ObjectHideFlags: 0
@@ -32771,7 +32771,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
-  isTutorial: 0
+  isTutorial: 1
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
