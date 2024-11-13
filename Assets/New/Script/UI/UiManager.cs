@@ -60,8 +60,8 @@ namespace Terbaru
 
         public void updateEnergy(int value){
             var profil = GameManager.instance.profil;
-            Mathf.Clamp(profil.Energy -= value, 0, 3);
-            int jmlEnergy = profil.Energy;
+            
+            int jmlEnergy = Mathf.Clamp(profil.Energy -= value, 0, 3);
             Debug.Log(jmlEnergy);
             for(int i = 0; i < bar.Length; i++){
                 bar[i].gameObject.SetActive(i < jmlEnergy);
