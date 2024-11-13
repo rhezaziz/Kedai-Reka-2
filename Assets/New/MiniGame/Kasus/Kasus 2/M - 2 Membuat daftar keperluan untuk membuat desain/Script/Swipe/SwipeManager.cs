@@ -210,18 +210,7 @@ namespace MiniGame2_2{
             //FindObjectOfType<DialogManager>().StartDialog(dialog);
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+        
 
         void checkJumlah()
         {

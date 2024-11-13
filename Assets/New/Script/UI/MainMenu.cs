@@ -34,7 +34,10 @@ namespace Terbaru{
         // Start is called before the first frame update
         void Start()
         {
-            DontDestroyOnLoad(gameObject);
+            //DontDestroyOnLoad(gameObject);
+
+            PlayerPrefs.SetFloat("Music", 1f);
+            PlayerPrefs.SetFloat("Effect", 1f);
         }
 
         // Update is called once per frame

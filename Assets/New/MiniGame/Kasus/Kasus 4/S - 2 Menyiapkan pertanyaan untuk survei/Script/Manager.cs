@@ -16,9 +16,6 @@ namespace MiniGame4_4{
             if(soals.Count > 0){
                 prefabPertanyaan.GetComponent<DragObject>().spawn(soals[0]);
                 soals.RemoveAt(0);
-            }else{
-                if(testGame)
-                    balikMainMenu();
             }
         }
 
@@ -29,18 +26,7 @@ namespace MiniGame4_4{
             nextPertanyaan();
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
-            
-        }
+       
     }
 
     [System.Serializable]

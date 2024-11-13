@@ -16,10 +16,16 @@ public class SoundManager : MonoBehaviour
     public AudioClip[] InvorenmentClip;
     public AudioClip[] sfxUIClip;
 
-    void Awake(){
-        if(instance == null){
+    void Awake() {
+        if (instance == null) {
             instance = this;
         }
+    }
+
+    void Start()
+    {
+        BacksoundSource.volume = PlayerPrefs.GetFloat("Music");
+        effectSource.volume = PlayerPrefs.GetFloat("Effect");
     }
     public void playSoundQuest(){
         BacksoundSource.Stop();
@@ -53,11 +59,6 @@ public class SoundManager : MonoBehaviour
         effectSource.Stop();   
     }
 
-
-    void Start()
-    {
-        
-    }
 
     // Update is called once per frame
     void Update()

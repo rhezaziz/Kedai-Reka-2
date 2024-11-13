@@ -80,10 +80,7 @@ namespace MiniGame1_3{
             
         }
 
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
+        
 
         void Update(){
             // if(Input.GetKeyDown(KeyCode.Escape) && testGame){

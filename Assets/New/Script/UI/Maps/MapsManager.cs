@@ -48,9 +48,9 @@ namespace Terbaru{
 
         public void listMaps(){
             int hari = FindObjectOfType<DayManager>().day;
-            judul.text = maps[index].namaMaps;
-            NextBtn.interactable = index < maps.Count - 1;
-            PrevBtn.interactable = index > 0;
+            //judul.text = maps[index].namaMaps;
+            //NextBtn.interactable = index < maps.Count - 1;
+            //PrevBtn.interactable = index > 0;
 
             foreach(var map in btnMaps){
                 map.gameObject.SetActive(false);
@@ -173,7 +173,19 @@ namespace Terbaru{
 
             listMaps();
         }
-    #region UI
+        #region UI
+        public List<GameObject> objGantis;
+        public GameObject objTemp;
+        public void changeMapsList(int value)
+        {
+            objTemp.SetActive(false);
+            objTemp = objGantis[value];
+            objTemp.SetActive(true);
+
+            index = value;
+            //NextBtn.interactable = index == maps.Count - 1;
+            listMaps();
+        }
         public void next(){
             index = index + 1 > maps.Count - 1 ? 0 : index + 1;
             //NextBtn.interactable = index == maps.Count - 1;

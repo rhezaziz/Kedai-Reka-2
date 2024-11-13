@@ -189,10 +189,10 @@ TextureImporter:
       name: ui_elements_3
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1500
+        x: 20
+        y: 1525
         width: 50
-        height: 100
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -210,9 +210,9 @@ TextureImporter:
       name: ui_elements_4
       rect:
         serializedVersion: 2
-        x: 50
+        x: 75
         y: 1500
-        width: 650
+        width: 632
         height: 100
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -231,10 +231,10 @@ TextureImporter:
       name: ui_elements_5
       rect:
         serializedVersion: 2
-        x: 700
-        y: 1500
-        width: 100
-        height: 100
+        x: 725
+        y: 1525
+        width: 50
+        height: 50
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -929,7 +929,7 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -950,7 +950,7 @@ TextureImporter:
         width: 200
         height: 200
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
