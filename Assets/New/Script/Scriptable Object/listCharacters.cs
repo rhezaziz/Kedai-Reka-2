@@ -30,6 +30,7 @@ public class listCharacters : ScriptableObject
     public bool characterLock;
     public string info;
     public int cost;
+    public Sprite iconKarakterinKasus;
 
     public Sprite icon;
 }

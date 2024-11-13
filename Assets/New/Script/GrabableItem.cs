@@ -33,6 +33,7 @@ namespace Terbaru{
             foreach(var i in item){
                 Debug.Log(i.namaItem);
                 i.isInventory = true;
+                i.Terbeli = false;
                 string action = $"{actionQuest} {i.namaItem}";
                 QuestManager.instance.CheckActionQuest(actionQuest);
             }

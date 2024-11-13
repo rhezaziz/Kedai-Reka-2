@@ -40,4 +40,5 @@ MonoBehaviour:
   characterLock: 1
   info: 
   cost: 30000
+  iconKarakterinKasus: {fileID: 21300000, guid: fcf8ed5264cd3b14898e318e0a2f98df, type: 3}
   icon: {fileID: 21300000, guid: bc1a0467d0a654848a8107259f2ab302, type: 3}

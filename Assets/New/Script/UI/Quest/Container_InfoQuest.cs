@@ -125,7 +125,7 @@ namespace Terbaru{
             NPC.Add(characters.objectNPC);
             
             selectedCharacter(selected - 1);
-            updateListSkill();
+            //updateListSkill();
             updateProfil();
             int jumlahSelected = 0;
             for(int i = 0; i < characterSelected.transform.childCount; i++){
@@ -214,7 +214,7 @@ namespace Terbaru{
             karakter[index] = null;
 
             
-            updateListSkill();
+            //updateListSkill();
             selectedCharacter(index);
         }
 
@@ -230,11 +230,11 @@ namespace Terbaru{
 
             btnClose.gameObject.SetActive(isActive);
             imageCharacter.gameObject.SetActive(isActive);
-            imageCharacter.sprite = isActive ?  karakter[index].icon : null;
+            imageCharacter.sprite = isActive ?  karakter[index].iconKarakterinKasus : null;
             // select.namaPilihan[index] = karakter[index].nama;
 
         }
-
+        /*
         void updateListSkill()
         {
             for (int i = 0; i < quest.skills.Length; i++)
@@ -260,6 +260,7 @@ namespace Terbaru{
                 }
             }
         }
+        */
         void resetInfoQuest(int index)
         {
             if (cKarakter[index] != null)
@@ -289,7 +290,7 @@ namespace Terbaru{
             }
             Mulai.gameObject.SetActive(false);
             allSkill.Clear();
-            updateListSkill();
+            //updateListSkill();
             updateProfil();
             Mulai.onClick.RemoveAllListeners();
             selected = 0;

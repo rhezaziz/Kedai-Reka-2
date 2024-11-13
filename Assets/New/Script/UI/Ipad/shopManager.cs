@@ -55,7 +55,7 @@ namespace Terbaru{
                 itemShop.SetActive(item.isShop);
                 itemShop.transform.SetParent(parent.transform);
                 itemShop.transform.localScale = new Vector2(1f, 1f);
-                itemShop.transform.Rotate(0f, 0f, -90, Space.Self);
+                //itemShop.transform.Rotate(0f, 0f, -90, Space.Self);
                 itemShop.GetComponent<ContainerItem>().ItemInShop(item, info);
                 var temp = new itemInfo
                 (
@@ -77,17 +77,19 @@ namespace Terbaru{
             if(saldo >= harga)
             {
                 itemTerbeli = true;
+                item.Terbeli = true;
                 Debug.Log(Paket);
                 
                 Debug.Log("Active");
                 profil.Saldo -= harga;
-                item.isShop = false;
-                btnBeli.GetComponent<Image>().enabled = false;
-                btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Habis";
+                //item.isShop = false;
+                btnBeli.interactable = !item.Terbeli;
+//btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Habis";
                 NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
                 textSaldo.text = "Point : " + profil.Saldo.ToString("n0", info);
                 FindObjectOfType<UiManager>().UpdateSaldo(profil.Saldo);
                 Paket.GetComponent<GrabableItem>().item.Add(item);
+                
             }
             else
             {

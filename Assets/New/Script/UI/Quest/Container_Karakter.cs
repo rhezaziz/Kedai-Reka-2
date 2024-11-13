@@ -41,7 +41,7 @@ namespace Terbaru{
         {
             isLock = karakter.characterLock;
             characterInfo = karakter;
-            fotoKarakter.sprite = karakter.imageCharacter;
+            fotoKarakter.sprite = karakter.iconKarakterinKasus;
             namaKarakter.text = karakter.namaCharacter;
             index = value;
             if (karakter.characterLock)
