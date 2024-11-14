@@ -2307,7 +2307,8 @@ MonoBehaviour:
   prefabsText: {fileID: 1557677740}
   parent: {fileID: 326095196}
   trolli: {fileID: 234246572}
-  action: K5_M2
+  action: minigame
+  isDaily: 1
 --- !u!4 &888922752
 Transform:
   m_ObjectHideFlags: 0

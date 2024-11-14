@@ -152,7 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07a756241455be4492ccd8dc25a7390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDaily: 0
+  isDaily: 1
   jumlahText: {fileID: 5183900955668494951}
   jumlah: 4
   listKegiatan:
@@ -6382,7 +6382,6 @@ MonoBehaviour:
     Pertanyaan: horeeeee
   prefabPertanyaan: {fileID: 1458672090}
   parent: {fileID: 0}
-  testGame: 1
 --- !u!4 &2038432270
 Transform:
   m_ObjectHideFlags: 0

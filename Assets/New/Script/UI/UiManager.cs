@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
 using DG.Tweening;
-using Unity.VisualScripting;
+
 
 namespace Terbaru
 {
@@ -131,6 +131,17 @@ namespace Terbaru
             var anim = ChinematicPanel.GetComponent<Animator>();
             //Debug.Log("chinematic");
             anim.SetTrigger(_action);
+            Debug.Log("With Cam" + _action);
+        }
+
+        public void chinematicWithaouCam(bool isActive)
+        {
+            string _action = isActive ? "Mulai" : "Reverse";
+
+            var anim = ChinematicPanel.GetComponent<Animator>();
+            //Debug.Log("chinematic");
+            anim.SetTrigger(_action);
+            Debug.Log("Without cam" + _action);
         }
 
         public void chinematicDialog(bool isActive){

@@ -81,14 +81,16 @@ namespace Terbaru{
 
         public void initContentQuest(bool thisDay){
             foreach(var quest in quests){
+                
                 int tempDay = thisDay ? day : day - 1;
 
                 if(quest.day == Mathf.Clamp(tempDay, 0, 30)){
                     foreach(var item in quest.interact){
+                        
                         item.GetComponent<Interaction>().changeInteractable(thisDay);
                     }
-
-                    if(thisDay) quest.events?.Invoke();
+                    Debug.Log(quest.nama +" : " + quest.day);
+                    if (thisDay) quest.events?.Invoke();
                 }
             }
         }
@@ -109,6 +111,7 @@ namespace Terbaru{
 
     [System.Serializable]
     public class dayQuest{
+        public string nama;
         public int day;
         public UnityEvent events;
 

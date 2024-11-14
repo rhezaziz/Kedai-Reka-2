@@ -219,6 +219,13 @@ namespace Terbaru{
             
             //pintu.tutupPintu();
         }
+        public void panelMuncul()
+        {
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, .1f).OnComplete(() =>
+            {
+                panelNamaMaps.GetComponent<RectTransform>().DOPivotY(1f, 1f);
+            });
+        }
 
         public void closePanelMaps()
         {
@@ -311,7 +318,7 @@ namespace Terbaru{
                 pintu.tutupPintu();
 
             cameraKeliling.transform.localPosition = posisi;
-
+            Debug.Log("Reverse");
             anim.SetTrigger("Reverse"); // Membuka 100%
             //camera.transform.DOLocalMoveZ(-10f, 1f);
 
@@ -343,7 +350,7 @@ namespace Terbaru{
                 foreach(var action in tempMaps.events){
                     if(action.day == hari && !action.done){
                         action.done = true;
-                        Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
+                        //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
                         action.events?.Invoke();
                         action.events.RemoveAllListeners();
                     } 

@@ -1466,7 +1466,36 @@ MonoBehaviour:
       index: 0
       gambarMaps: {fileID: 21300000, guid: 974e2262d7ae9544296d08bcb290bd29, type: 3}
       mapLokasi: {fileID: 1943303167}
-      events: []
+      events:
+      - day: 26
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 653235762}
+              m_TargetAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+              m_MethodName: startDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 0
     - nama: Jalan Kota
       valueMaps:
         namaTempat: 
@@ -1611,7 +1640,60 @@ MonoBehaviour:
       index: 0
       gambarMaps: {fileID: 21300000, guid: 3d0ad7ee6563b9b4bbd26da5015e00a0, type: 3}
       mapLokasi: {fileID: 829596086366988462}
-      events: []
+      events:
+      - day: 13
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 6098048322286900086}
+              m_TargetAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+              m_MethodName: startDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 6357229089591636911}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 5891375170500462505}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 0
     - nama: Toilet
       valueMaps:
         namaTempat: 
@@ -1635,7 +1717,60 @@ MonoBehaviour:
       index: 0
       gambarMaps: {fileID: 21300000, guid: 378984d56b8b77e4f96d15ea1dd32429, type: 3}
       mapLokasi: {fileID: 6953435039546080366}
-      events: []
+      events:
+      - day: 19
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 7484486225611822385}
+              m_TargetAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+              m_MethodName: startDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 7528746564703590282}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 7220626189229036213}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 0
     - nama: Kelas
       valueMaps:
         namaTempat: 
@@ -1705,7 +1840,7 @@ MonoBehaviour:
                 m_BoolArgument: 1
               m_CallState: 2
         done: 0
-      - day: 10
+      - day: 11
         events:
           m_PersistentCalls:
             m_Calls:
@@ -1733,7 +1868,43 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-        done: 0
+            - m_Target: {fileID: 5879554810139688282}
+              m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 8320672869303921761}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 7895061637168231206}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 1
     - nama: Lift
       valueMaps:
         namaTempat: 
@@ -1755,7 +1926,72 @@ MonoBehaviour:
       index: 0
       gambarMaps: {fileID: 21300000, guid: f0c0cb91e7a54a6418efd71786d5aa13, type: 3}
       mapLokasi: {fileID: 4082261861180657958}
-      events: []
+      events:
+      - day: 6
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 8039191822350086027}
+              m_TargetAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+              m_MethodName: startDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 8574217742683823568}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 4943553659236134490}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 6890110736551636418}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 0
     - nama: Ruang Dosen
       valueMaps:
         namaTempat: 
@@ -1912,6 +2148,30 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
   - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
   - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
   - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
   soalMingguan: []
   komputer: {fileID: 0}
@@ -2286,7 +2546,7 @@ MonoBehaviour:
       events:
         m_PersistentCalls:
           m_Calls: []
-  NPCparent: {fileID: 0}
+  NPCparent: {fileID: 714537092}
   npcs: []
 --- !u!1 &21958926
 GameObject:
@@ -26569,6 +26829,7 @@ GameObject:
   m_Component:
   - component: {fileID: 653235760}
   - component: {fileID: 653235761}
+  - component: {fileID: 653235762}
   m_Layer: 0
   m_Name: BG_MISC_APOTEK
   m_TagString: Untagged
@@ -26645,6 +26906,149 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &653235762
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 653235759}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b859443be9d574a9e3bf93aeac2ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses:
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari26
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMaps
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari26
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 5879554810139688282}
+              m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 8320672869303921761}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari26
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindah
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari26
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  extendAction:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialog: 1
+  Indikator: {fileID: 0}
 --- !u!1 &653352467
 GameObject:
   m_ObjectHideFlags: 0
@@ -37570,7 +37974,8 @@ MonoBehaviour:
   clipsTidur: {fileID: 32900000, guid: 865f490cb283a85439b4d18907e5a9e0, type: 3}
   GantiQuestList: 03000000090000000e00000011000000150000001c000000
   quests:
-  - day: 3
+  - nama: Nyapu
+    day: 3
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37600,7 +38005,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  - day: 3
+  - nama: Siram Tanaman
+    day: 3
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37630,7 +38036,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
-  - day: 7
+  - nama: Nyapu
+    day: 7
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37660,7 +38067,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  - day: 8
+  - nama: Siram Tanaman
+    day: 8
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37678,7 +38086,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
-  - day: 9
+  - nama: Alex Dialog
+    day: 9
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37694,9 +38103,9 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
-    interact:
-    - {fileID: 0}
-  - day: 14
+    interact: []
+  - nama: Siram Tanaman
+    day: 14
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37714,7 +38123,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
-  - day: 15
+  - nama: Nyapu
+    day: 15
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37744,7 +38154,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  - day: 21
+  - nama: Nyapu
+    day: 21
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37774,7 +38185,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  - day: 28
+  - nama: Nyapu
+    day: 28
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37804,7 +38216,8 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  - day: 22
+  - nama: Nyapu
+    day: 22
     events:
       m_PersistentCalls:
         m_Calls:
@@ -37834,7 +38247,7 @@ MonoBehaviour:
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
-  day: 0
+  day: 2
 --- !u!114 &894212851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -38469,6 +38882,113 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 1
               m_CallState: 2
+  - indexKasus: 1
+    firstDialogWithDinda: 0
+    dataNarasi:
+    - inAsrama: 0
+      dialogWithPerempuan: 0
+      narasi:
+        dialogObject: {fileID: 11400000, guid: ad7162d06532d3f4ab75ec455b730169, type: 2}
+        quest:
+          id: 0
+          quest: {fileID: 0}
+          Index: 0
+          proses:
+          - Action: Quiz
+            ProcessEventStart:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212847}
+                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+                  m_MethodName: pindahMiniGame
+                  m_Mode: 5
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 0
+                  m_CallState: 2
+                - m_Target: {fileID: 21220967}
+                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+                  m_MethodName: Chinematic
+                  m_Mode: 6
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 1
+                  m_CallState: 2
+            ProcessEventHelper:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEnd:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212847}
+                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+                  m_MethodName: pindah
+                  m_Mode: 5
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: Quiz
+                    m_BoolArgument: 0
+                  m_CallState: 2
+          - Action: Kembali
+            ProcessEventStart:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEventHelper:
+              m_PersistentCalls:
+                m_Calls: []
+            ProcessEnd:
+              m_PersistentCalls:
+                m_Calls:
+                - m_Target: {fileID: 894212852}
+                  m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+                  m_MethodName: startNarasi
+                  m_Mode: 3
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 1
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 0
+                  m_CallState: 2
+                - m_Target: {fileID: 21220967}
+                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+                  m_MethodName: Chinematic
+                  m_Mode: 6
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 1
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 1
+                  m_CallState: 2
+        events:
+          m_PersistentCalls:
+            m_Calls: []
+    - inAsrama: 0
+      dialogWithPerempuan: 0
+      narasi:
+        dialogObject: {fileID: 11400000, guid: 2acf050d738a060458c0d1d1a6b73e11, type: 2}
+        quest:
+          id: 0
+          quest: {fileID: 0}
+          Index: 0
+          proses: []
+        events:
+          m_PersistentCalls:
+            m_Calls: []
   - indexKasus: 1
     firstDialogWithDinda: 0
     dataNarasi:
@@ -45409,6 +45929,12 @@ MonoBehaviour:
   - nama: Tutorial
     id_maps: 080000000e000000130000001200000008000000
     npcs: []
+  - nama: K5_S2
+    id_maps: 080000000d0000000a000000
+    npcs:
+    - {fileID: 7735016429653402016}
+    - {fileID: 5747307098070697956}
+    - {fileID: 6357229089591636912}
   map: {fileID: 21220969}
 --- !u!1 &1116589070
 GameObject:
@@ -99061,6 +99587,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7484486225611822384}
   - component: {fileID: 1760882289347700472}
+  - component: {fileID: 7484486225611822385}
   m_Layer: 0
   m_Name: BG_LT2_AULA
   m_TagString: Untagged
@@ -111385,6 +111912,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2159602911637958780}
   - component: {fileID: 4747263999986104404}
+  - component: {fileID: 6098048322286900086}
   m_Layer: 0
   m_Name: BG_LT1_PERPUSTAKAAN
   m_TagString: Untagged
@@ -111392,6 +111920,103 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &6098048322286900086
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6098048322286900085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b859443be9d574a9e3bf93aeac2ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses:
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari13
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMaps
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari13
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 6357229089591636911}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 5891375170500462505}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  extendAction:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialog: 1
+  Indikator: {fileID: 0}
 --- !u!222 &6109063983504953410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -118174,6 +118799,103 @@ Transform:
   - {fileID: 8246059585963869479}
   m_Father: {fileID: 6953435039546080366}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7484486225611822385
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3167658215572188743}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b859443be9d574a9e3bf93aeac2ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses:
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari19
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMaps
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari19
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 7528746564703590282}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 7220626189229036213}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  extendAction:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialog: 1
+  Indikator: {fileID: 0}
 --- !u!1 &7488118467440952001
 GameObject:
   m_ObjectHideFlags: 0
@@ -118415,19 +119137,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
       Index: 0
       proses:
-      - Action: Quiz
+      - Action: minigame
         ProcessEventStart:
           m_PersistentCalls:
             m_Calls:
             - m_Target: {fileID: 894212847}
               m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: pindahMiniGame
+              m_MethodName: pindahDialogToMiniGame
               m_Mode: 5
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -118445,7 +119167,7 @@ MonoBehaviour:
             m_Calls:
             - m_Target: {fileID: 894212847}
               m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: pindah
+              m_MethodName: pindahMaps
               m_Mode: 5
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -118458,6 +119180,42 @@ MonoBehaviour:
             - m_Target: {fileID: 165267570}
               m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
               m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 5879554810139688282}
+              m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 8320672869303921761}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 7895061637168231206}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
               m_Mode: 6
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -121352,6 +122110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4189791278608624707}
   - component: {fileID: 733463030800204661}
+  - component: {fileID: 8039191822350086027}
   m_Layer: 0
   m_Name: BG_LT2_LORONG_2
   m_TagString: Untagged
@@ -121359,6 +122118,115 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &8039191822350086027
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8039191822350086026}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b859443be9d574a9e3bf93aeac2ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses:
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari6
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMaps
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Hari6
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 8574217742683823568}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 4943553659236134490}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 6890110736551636418}
+              m_TargetAssemblyTypeName: UnityEngine.Behaviour, UnityEngine
+              m_MethodName: set_enabled
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  extendAction:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialog: 1
+  Indikator: {fileID: 0}
 --- !u!1 &8039271733699573006
 GameObject:
   m_ObjectHideFlags: 0
