@@ -37,7 +37,7 @@ MonoBehaviour:
   imageCharacter: {fileID: 21300000, guid: 8db6e32f33c2000498349271fbdadfb2, type: 3}
   imageInfoCharacter: {fileID: 21300000, guid: 896121678c87100449f8dc471391f581, type: 3}
   isLockSkill: 1
-  characterLock: 1
+  characterLock: 0
   info: 
   cost: 30000
   iconKarakterinKasus: {fileID: 21300000, guid: 4b7f54a904a70ef4d8ff8f95e7257ff0, type: 3}

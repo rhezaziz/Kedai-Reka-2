@@ -1,8 +1,11 @@
 {"tutorial_steps":[{"target_obj":"","text":"Kita harus ke kelas untuk quiz","isClickable":false,"isReplacingNextButton":false},
 {"target_obj":"","text":"Kelas kita ada di lantai 2, Ini Tempat Bebas","isClickable":false,"isReplacingNextButton":false},
-{"target_obj":"Tombol Atas","text":"Klik ini untuk pindah ke atas","isClickable":true,"isReplacingNextButton":true},
-{"target_obj":"","text":"Kelas kita ada di lantai 2, Ini lantai 1","isClickable":false,"isReplacingNextButton":false},
-{"target_obj":"Tombol Atas","text":"Ayo kita pindah ke atas lagi","isClickable":true,"isReplacingNextButton":true},
+    {
+        "target_obj": "Lantai 2 Btn",
+        "text": "Ayo kita pindah ke lantai 2",
+        "isClickable": true,
+        "isReplacingNextButton": true
+    },
 {"target_obj":"","text":"Kita sudah ada di lantai 2","isClickable":false,"isReplacingNextButton":false},
 {"target_obj":"Maps2","text":"Klik ini untuk pindah ke kelas","isClickable":true,"isReplacingNextButton":true}
 ]}

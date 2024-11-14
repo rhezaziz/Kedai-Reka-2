@@ -141,7 +141,7 @@ namespace Terbaru{
                     x.valueMaps.active = false;
                 }
             }
-            FindObjectOfType<WaktuManager>().gantiWaktu(1);
+            //FindObjectOfType<WaktuManager>().gantiWaktu(1);
             listMaps();
             // for(int i = 0; i < jmlId; i++){
             //     for(int j = 0; j < maps.Count; j++){
@@ -207,6 +207,9 @@ namespace Terbaru{
         public void Kembali(){
             kembali.interactable = false;
             mapButton.GetComponent<Button>().interactable = false;
+
+            closeMapsPanel.onClick.AddListener(closePanelMaps);
+
             onAnimation = true;
             onLokasi = false;
             panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, 1f).OnComplete(() =>
@@ -215,6 +218,12 @@ namespace Terbaru{
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(false));
             
             //pintu.tutupPintu();
+        }
+
+        public void closePanelMaps()
+        {
+            state tempState = !onLokasi ? state.Default : state.Interaction;
+            FindObjectOfType<Controller>().currentState(tempState);
         }
 
         Maps tempMaps;
@@ -227,6 +236,9 @@ namespace Terbaru{
             
             onAnimation = true;
             onLokasi = true;
+
+            closeMapsPanel.onClick.RemoveListener(closePanelMaps);
+
             closeMapsPanel.onClick.AddListener(() => closeButtonAction(false));
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(true));
             

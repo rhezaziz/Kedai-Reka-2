@@ -28003,6 +28003,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d520b0c3d05a5524bbfe78fd8b025b76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 0}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      Index: 0
+      proses: []
+    events:
+      m_PersistentCalls:
+        m_Calls: []
   Berdiri: {fileID: 554053163}
   HariEvent: 05000000090000000d000000100000001400000019000000
   value: 0
@@ -32520,6 +32530,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 21220969}
+        m_TargetAssemblyTypeName: Terbaru.MapsManager, Assembly-CSharp
+        m_MethodName: closePanelMaps
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &803560994
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -33432,18 +33454,6 @@ MonoBehaviour:
   extendAction:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 21220967}
-        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-        m_MethodName: updateEnergy
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: -1
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
       - m_Target: {fileID: 894212849}
         m_TargetAssemblyTypeName: Terbaru.WaktuManager, Assembly-CSharp
         m_MethodName: gantiWaktu
@@ -36025,7 +36035,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
-  isTutorial: 1
+  isTutorial: 0
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -36053,6 +36063,217 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   daily:
+  - quest:
+    - id: 6
+      quest: {fileID: 11400000, guid: b8df816f10b45d948b4aca2a39f3404c, type: 2}
+      Index: 0
+      proses:
+      - Action: K2_M1
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: kembaliMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_1
+                m_BoolArgument: 0
+              m_CallState: 2
+      - Action: Kembali
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+    - id: 7
+      quest: {fileID: 11400000, guid: 61f60d6703f8d7841b59f34b49e7d465, type: 2}
+      Index: 0
+      proses:
+      - Action: K2_M2
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: kembaliMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_2
+                m_BoolArgument: 0
+              m_CallState: 2
+      - Action: Kembali
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+    - id: 8
+      quest: {fileID: 11400000, guid: 561ed726d8eaff14bb18503673e49c03, type: 2}
+      Index: 0
+      proses:
+      - Action: K2_S1
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_4
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: kembaliMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_4
+                m_BoolArgument: 0
+              m_CallState: 2
+      - Action: Kembali
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+    - id: 9
+      quest: {fileID: 11400000, guid: dcf519e24e0c47c42a83168a450952a2, type: 2}
+      Index: 0
+      proses:
+      - Action: Dialog
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1114839722}
+              m_TargetAssemblyTypeName: Terbaru.RPG_Manager, Assembly-CSharp
+              m_MethodName: initRPG
+              m_Mode: 3
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+      - Action: Dialog
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+      - Action: Dialog
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
+      - Action: K2_S2
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_4
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: kembaliMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Kasus2_4
+                m_BoolArgument: 0
+              m_CallState: 2
+      - Action: Kembali
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls: []
   - quest:
     - id: 0
       quest: {fileID: 11400000, guid: 5d0c5c84762b7c74488752c70f774b1e, type: 2}
@@ -36403,151 +36624,6 @@ MonoBehaviour:
                 m_IntArgument: 0
                 m_FloatArgument: 0
                 m_StringArgument: Kasus1_6
-                m_BoolArgument: 0
-              m_CallState: 2
-      - Action: Kembali
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls: []
-  - quest:
-    - id: 6
-      quest: {fileID: 11400000, guid: b8df816f10b45d948b4aca2a39f3404c, type: 2}
-      Index: 0
-      proses:
-      - Action: K2_M1
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 894212847}
-              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: kembaliMiniGame
-              m_Mode: 5
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: Kasus2_1
-                m_BoolArgument: 0
-              m_CallState: 2
-      - Action: Kembali
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls: []
-    - id: 7
-      quest: {fileID: 11400000, guid: 61f60d6703f8d7841b59f34b49e7d465, type: 2}
-      Index: 0
-      proses:
-      - Action: K2_M2
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 894212847}
-              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: kembaliMiniGame
-              m_Mode: 5
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: Kasus2_2
-                m_BoolArgument: 0
-              m_CallState: 2
-      - Action: Kembali
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls: []
-    - id: 8
-      quest: {fileID: 11400000, guid: 561ed726d8eaff14bb18503673e49c03, type: 2}
-      Index: 0
-      proses:
-      - Action: K2_S1
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 894212847}
-              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: kembaliMiniGame
-              m_Mode: 5
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: Kasus2_4
-                m_BoolArgument: 0
-              m_CallState: 2
-      - Action: Kembali
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls: []
-    - id: 9
-      quest: {fileID: 11400000, guid: dcf519e24e0c47c42a83168a450952a2, type: 2}
-      Index: 0
-      proses:
-      - Action: K2_S2
-        ProcessEventStart:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEventHelper:
-          m_PersistentCalls:
-            m_Calls: []
-        ProcessEnd:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 894212847}
-              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: kembaliMiniGame
-              m_Mode: 5
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: Kasus2_3
                 m_BoolArgument: 0
               m_CallState: 2
       - Action: Kembali
@@ -51873,7 +51949,7 @@ GameObject:
   - component: {fileID: 1322570283}
   - component: {fileID: 1322570280}
   m_Layer: 5
-  m_Name: Maps 1 (1)
+  m_Name: Maps2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -58698,7 +58774,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 2
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1488554086
 Transform:
   m_ObjectHideFlags: 0
@@ -58834,7 +58910,7 @@ MonoBehaviour:
         m_PersistentCalls:
           m_Calls: []
   isObject: 1
-  miniGame: {fileID: 0}
+  miniGame: {fileID: 894212847}
   sceneName: 
   unityAction:
     m_PersistentCalls:
@@ -116551,7 +116627,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 43ea1e2446027504caa79c9d770b31ce, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -118478,7 +118554,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -121757,7 +121833,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 249f1b4f1d25eee43806e1f547350f34, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}

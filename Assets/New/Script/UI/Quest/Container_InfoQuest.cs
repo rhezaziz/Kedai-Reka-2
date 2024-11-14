@@ -159,7 +159,7 @@ namespace Terbaru{
             GameObject.Find("pilih karakter").SetActive(false);
             GameObject.Find("Quest Panel").SetActive(false);
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
-            UiManager.instance.updateEnergy(quest.jmlEnergy);
+            //UiManager.instance.updateEnergy(quest.jmlEnergy);
             GameManager.instance.readyMission(NPC, quest);
             //NPC.Clear();
             
@@ -177,9 +177,9 @@ namespace Terbaru{
                 if (karakter[i] != null)
                 {
                     imageKarakter.gameObject.SetActive(true);
-                    imageKarakter.sprite = karakter[i].icon;
-                    panelNama.gameObject.SetActive(true);
-                    panelNama.GetComponentInChildren<TMP_Text>().text = karakter[i].namaCharacter;
+                    imageKarakter.sprite = karakter[i].iconKarakterinKasus;
+                    //panelNama.gameObject.SetActive(true);
+                    //panelNama.GetComponentInChildren<TMP_Text>().text = karakter[i].namaCharacter;
                     cancelSelect.SetActive(true);
                     karakter[i].selected = true;
                 }
