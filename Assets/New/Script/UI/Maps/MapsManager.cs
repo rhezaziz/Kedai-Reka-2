@@ -359,6 +359,8 @@ namespace Terbaru{
                 
             }
 
+            if (value) FindObjectOfType<WaktuManager>().gantiWaktu(1);
+
             QuestManager.instance.CheckActionQuest(tempMaps.nama);
                 
             
