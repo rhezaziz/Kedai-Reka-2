@@ -168,7 +168,7 @@ public class RekrutManager : MonoBehaviour
             //Button btnOK = popUp.transform.GetChild(0).GetChild(1).GetChild(0).GetComponent<Button>();
             //TMP_Text textPopUp = popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>();
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
-            string hargaText = "Rp" + temp.cost.ToString("n0", info);
+            string hargaText = temp.cost.ToString("n0", info);
 
             textpopUp.text = "Apa anda yakin rekrut karakter ?";
             btnKembali.gameObject.SetActive(true);

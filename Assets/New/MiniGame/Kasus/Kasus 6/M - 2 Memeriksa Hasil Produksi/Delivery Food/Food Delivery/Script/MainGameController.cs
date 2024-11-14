@@ -179,10 +179,7 @@ public class MainGameController : MonoBehaviour
         canCreateNewCustomer = true;
     }
 
-    public bool testGame = true;
-    void balikMainMenu(){
-        FindObjectOfType<Terbaru.MainMenu>().PindahScene("New Scene");
-    }
+    
 
 
     //***************************************************************************//
@@ -190,10 +187,7 @@ public class MainGameController : MonoBehaviour
     //***************************************************************************//
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
+        
         //no more ingredient can be picked
         if (deliveryQueueItems >= maxSlotState)
             deliveryQueueIsFull = true;

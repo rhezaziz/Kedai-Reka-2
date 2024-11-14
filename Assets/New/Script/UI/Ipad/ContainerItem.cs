@@ -17,23 +17,36 @@ namespace Terbaru{
         public TMP_Text hargaItem;
         public Button btnBeli;
 
-        public void ItemInShop(Items item, NumberFormatInfo info){
+        public Sprite Beli, punya;
+
+        public void ItemInShop(Items item, NumberFormatInfo info)
+        {
             gambarItem.sprite = item.gambarItem;
             namaItem.text = item.namaItem;
             gambarItem.name = $"Item {item.namaItem}";
-            hargaItem.text = item.Harga.ToString("n0",info);
+            hargaItem.text = item.Harga.ToString("n0", info);
             btnBeli.name = $"Beli {item.namaItem}";
-            if (!item.isShop)
+            btnBeli.interactable = true;
+            if (item.isInventory)
             {
-                btnBeli.interactable = false;
-                btnBeli.GetComponent<Image>().enabled = false;
-                btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Punya";
+                btnBeli.enabled = false;
+                //btnBeli.GetComponent<Butto>().enabled = false;
+                btnBeli.GetComponent<Image>().sprite = punya;
+                //btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Punya";
             }
-            else
+            else if (item.Terbeli)
             {
-                
-                btnBeli.GetComponent<Image>().enabled = true;
-                btnBeli.interactable = true;
+                btnBeli.enabled = false;
+                btnBeli.interactable = false;
+                //btnBeli.GetComponent<Butto>().enabled = false;
+                //btnBeli.GetComponent<Image>().sprite = punya;
+                //btnBeli.transform.GetChild(0).GetComponent<TMP_Text>().text = "Punya";
+            }
+            else if (!item.isInventory && !item.Terbeli)
+            {
+                //btnBeli.GetComponent<Image>().enabled = true;
+                btnBeli.enabled = true;
+                btnBeli.GetComponent<Image>().sprite = Beli;
                 btnBeli.onClick.AddListener(() => shopManager.instance.buyItem(item, btnBeli));
             }
         }

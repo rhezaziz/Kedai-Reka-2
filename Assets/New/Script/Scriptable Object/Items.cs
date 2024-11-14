@@ -19,6 +19,7 @@ public class Items : ScriptableObject
     public bool isInventory;
 
     public int Harga;
+    public bool Terbeli;
 
 
 

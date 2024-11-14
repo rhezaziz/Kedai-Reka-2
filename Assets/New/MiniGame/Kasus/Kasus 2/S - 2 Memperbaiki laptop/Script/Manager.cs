@@ -17,22 +17,10 @@ namespace MiniGame2_4{
                 Debug.Log("Salah");
             }
 
-            if(testGame)
-                balikMainMenu();
-        }
-
-        public bool testGame = true;
-        void balikMainMenu(){
-            FindObjectOfType<MainMenu>().PindahScene("New Scene");
-        }
-
-        void Update(){
-            if(Input.GetKeyDown(KeyCode.Escape) && testGame){
-                testGame = false;
-                balikMainMenu();
-            }
             
         }
+
+        
     }
 
 }

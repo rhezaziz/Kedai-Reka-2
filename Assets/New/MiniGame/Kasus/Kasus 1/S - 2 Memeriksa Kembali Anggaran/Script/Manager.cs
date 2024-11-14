@@ -9,7 +9,7 @@ using Terbaru;
 namespace MiniGame1_4{
     public class Manager : MonoBehaviour
     {
-        public Button check;
+        public Button check, resetBtn;
 
         [System.Serializable]
         public class dataButton{
@@ -19,12 +19,79 @@ namespace MiniGame1_4{
             public Image result;
         }
 
+        public List<Clicked> clicks = new List<Clicked>();
+        public List<Clicked> clicked = new List<Clicked>();
+
         public Sprite wrong, correct;
 
 
         public List<dataButton> buttons = new List<dataButton>();
 
         dataButton onSelected;
+        bool checkJml = true;
+
+        void Update()
+        {
+            if (clicked.Count > 0 && checkJml)
+            {
+                resetBtn.interactable = true;
+                checkJml = false;
+            }
+        }
+
+        public void startGame()
+        {
+            resetGame();
+        }
+        public void checkHasil()
+        {
+            check.interactable = false;
+            resetBtn.interactable = false;
+            foreach (var click in clicks)
+            {
+                click.thisObj.interactable = false;
+
+            }
+            StartCoroutine(animCheckHasil());
+        }
+
+        IEnumerator animCheckHasil()
+        {
+            foreach (var click in clicks)
+            {
+                bool value = click.value;
+                bool onSelected = clicked.Contains(click);
+
+                bool hasil = value && !onSelected || !value && onSelected;
+                Sprite temp = hasil ? correct : wrong;
+                click.checkObj(temp);
+
+                int point = hasil ? 50 : 0;
+
+                QuestManager.instance.currentQuest.quest.pointBonus += point;
+                
+
+                yield return new WaitForSeconds(1f);
+            }
+
+            yield return new WaitForSeconds(1f);
+            QuestManager.instance.CheckAction(action);
+        }
+
+
+        public void resetGame()
+        {
+            checkJml = true;
+            check.interactable = true;
+            resetBtn.interactable = false;
+            foreach (var click in clicks)
+            {
+                click.resetObj();
+            }
+            clicked.Clear();
+        }
+
+        #region old Version
         public void select(int value){
             int temp = value == 0 ? 1 : 0;
             onSelected = buttons[value];
@@ -80,5 +147,7 @@ namespace MiniGame1_4{
             });
 
         }
+
+        #endregion
     }
 }

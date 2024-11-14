@@ -61,10 +61,14 @@ namespace MiniGame4_3
                     QuestManager.instance.currentQuest.quest.pointBonus += point;
                     QuestManager.instance.CheckAction(action);
                 }
-                    
+
 
                 else
+                {
+                    Debug.Log("Quest Action ");
                     QuestManager.instance.CheckActionQuest(action);
+                }
+                    
             });
         }
 

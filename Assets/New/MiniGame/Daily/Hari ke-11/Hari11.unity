@@ -2101,7 +2101,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 1916702306, guid: 3dbbe43b2c7a59b468b5a88e51895932, type: 3}
+  m_Sprite: {fileID: 2093653825, guid: 6ce0c8d1a105e6949990673b1e48fdf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -2576,7 +2576,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 1174480894, guid: 3dbbe43b2c7a59b468b5a88e51895932, type: 3}
+  m_Sprite: {fileID: -1719446023, guid: 6ce0c8d1a105e6949990673b1e48fdf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -3100,6 +3100,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wrong: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
   Correct: {fileID: 21300000, guid: c395e26af7c056f41907e0dca8401f43, type: 3}
+  DailyQuest: 1
   datas:
   - Mobil: {fileID: 1180159056}
     tempat: {fileID: 1030886123}
@@ -4436,7 +4437,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 2
-  m_Sprite: {fileID: 2115074750, guid: 3dbbe43b2c7a59b468b5a88e51895932, type: 3}
+  m_Sprite: {fileID: 2006964051, guid: 6ce0c8d1a105e6949990673b1e48fdf1, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

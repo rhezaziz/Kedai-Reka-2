@@ -33,7 +33,7 @@ namespace Terbaru{
                 temp.GetComponent<ContainerItem>().ItemInInventory(item);
                 temp.transform.SetParent(parent);
                 temp.transform.localScale = new Vector2(1f, 1f);
-                temp.transform.Rotate(0f, 0f, -90, Space.Self);
+                //temp.transform.Rotate(0f, 0f, -90, Space.Self);
                 container.Add(temp);
             }
         }
