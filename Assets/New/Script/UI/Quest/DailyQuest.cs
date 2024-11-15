@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -37,6 +38,7 @@ namespace Terbaru{
         public float distancePlayer;
 
         public Dialog awal;
+        public Dialog tidakAdaItem;
         public Dialog Akhir;
         public void checkDistance(){
             float distance = Vector3.Distance(transform.position, Player.position);
@@ -64,7 +66,19 @@ namespace Terbaru{
 
         public Dialog[] dialog;
 
+        public Items item;
         public void action(Transform player){
+            if (item)
+            {
+                if (!GameManager.instance.haveItem(item))
+                {
+                    startDialog();
+                    FindObjectOfType<DialogManager>().StartDialog(tidakAdaItem);
+                    return;
+                }
+                
+            }
+            
             FindObjectOfType<QuestManager>().StartQuest(quest);
             //miniGame.pindahMiniGame(sceneName);
 

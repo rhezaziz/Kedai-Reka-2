@@ -349,10 +349,10 @@ namespace Terbaru{
                 int hari = FindObjectOfType<DayManager>().day;
                 foreach(var action in tempMaps.events){
                     if(action.day == hari && !action.done){
-                        action.done = true;
+                        action.done = !action.loop;
                         //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
                         action.events?.Invoke();
-                        action.events.RemoveAllListeners();
+                        //action.events.RemoveAllListeners();
                     } 
                 }
 
@@ -416,6 +416,7 @@ namespace Terbaru{
         public int day;
         public UnityEvent events;  
         public bool done;
+        public bool loop;
     }
 
     public enum id_Maps{
