@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using System.Globalization;
 using DG.Tweening;
-using Unity.VisualScripting;
+
 
 namespace Terbaru
 {
@@ -61,10 +61,11 @@ namespace Terbaru
         public void updateEnergy(int value){
             var profil = GameManager.instance.profil;
             
-            int jmlEnergy = Mathf.Clamp(profil.Energy -= value, 0, 3);
+            int jmlEnergy = profil.Energy -= value;
+            profil.Energy = Mathf.Clamp(jmlEnergy, 0, 3);
             Debug.Log(jmlEnergy);
             for(int i = 0; i < bar.Length; i++){
-                bar[i].gameObject.SetActive(i < jmlEnergy);
+                bar[i].gameObject.SetActive(i < profil.Energy);
             }
         }
 
@@ -130,6 +131,17 @@ namespace Terbaru
             var anim = ChinematicPanel.GetComponent<Animator>();
             //Debug.Log("chinematic");
             anim.SetTrigger(_action);
+            Debug.Log("With Cam" + _action);
+        }
+
+        public void chinematicWithaouCam(bool isActive)
+        {
+            string _action = isActive ? "Mulai" : "Reverse";
+
+            var anim = ChinematicPanel.GetComponent<Animator>();
+            //Debug.Log("chinematic");
+            anim.SetTrigger(_action);
+            Debug.Log("Without cam" + _action);
         }
 
         public void chinematicDialog(bool isActive){

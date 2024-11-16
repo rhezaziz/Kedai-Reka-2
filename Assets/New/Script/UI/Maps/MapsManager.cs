@@ -141,7 +141,7 @@ namespace Terbaru{
                     x.valueMaps.active = false;
                 }
             }
-            FindObjectOfType<WaktuManager>().gantiWaktu(1);
+            //FindObjectOfType<WaktuManager>().gantiWaktu(1);
             listMaps();
             // for(int i = 0; i < jmlId; i++){
             //     for(int j = 0; j < maps.Count; j++){
@@ -207,6 +207,9 @@ namespace Terbaru{
         public void Kembali(){
             kembali.interactable = false;
             mapButton.GetComponent<Button>().interactable = false;
+
+            closeMapsPanel.onClick.AddListener(closePanelMaps);
+
             onAnimation = true;
             onLokasi = false;
             panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, 1f).OnComplete(() =>
@@ -215,6 +218,19 @@ namespace Terbaru{
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(false));
             
             //pintu.tutupPintu();
+        }
+        public void panelMuncul()
+        {
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, .1f).OnComplete(() =>
+            {
+                panelNamaMaps.GetComponent<RectTransform>().DOPivotY(1f, 1f);
+            });
+        }
+
+        public void closePanelMaps()
+        {
+            state tempState = !onLokasi ? state.Default : state.Interaction;
+            FindObjectOfType<Controller>().currentState(tempState);
         }
 
         Maps tempMaps;
@@ -227,6 +243,9 @@ namespace Terbaru{
             
             onAnimation = true;
             onLokasi = true;
+
+            closeMapsPanel.onClick.RemoveListener(closePanelMaps);
+
             closeMapsPanel.onClick.AddListener(() => closeButtonAction(false));
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(true));
             
@@ -299,7 +318,7 @@ namespace Terbaru{
                 pintu.tutupPintu();
 
             cameraKeliling.transform.localPosition = posisi;
-
+            Debug.Log("Reverse");
             anim.SetTrigger("Reverse"); // Membuka 100%
             //camera.transform.DOLocalMoveZ(-10f, 1f);
 
@@ -331,7 +350,7 @@ namespace Terbaru{
                 foreach(var action in tempMaps.events){
                     if(action.day == hari && !action.done){
                         action.done = true;
-                        Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
+                        //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
                         action.events?.Invoke();
                         action.events.RemoveAllListeners();
                     } 
@@ -339,6 +358,8 @@ namespace Terbaru{
 
                 
             }
+
+            if (value) FindObjectOfType<WaktuManager>().gantiWaktu(1);
 
             QuestManager.instance.CheckActionQuest(tempMaps.nama);
                 

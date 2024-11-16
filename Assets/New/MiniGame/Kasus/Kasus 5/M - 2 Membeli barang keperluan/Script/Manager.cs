@@ -16,6 +16,8 @@ namespace MiniGame5_2{
         public Transform trolli;
         public string action;
 
+
+        public bool isDaily;
         void Start()
         {
             //initKonten();
@@ -69,8 +71,16 @@ namespace MiniGame5_2{
 
 
         public void checkAction(){
-            QuestManager.instance.currentQuest.quest.pointBonus += jumlah * 50;
-            QuestManager.instance.CheckAction(action);
+            if (!isDaily)
+            {
+                QuestManager.instance.currentQuest.quest.pointBonus += jumlah * 50;
+                QuestManager.instance.CheckAction(action);
+            }
+
+            else
+            {
+                QuestManager.instance.CheckActionQuest(action);
+            }
         }
 
        

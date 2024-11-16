@@ -14,16 +14,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - narasi:
-      narasiText: 'Suatu pagi di depan kampus, Group Chat tampak lebih sibuk dari
-
-        biasanya.
-        Semua anggota banyak berkali-kali menanyakan adakah
-
-        barang lain
-        yang perlu mereka bawa, memastikan apa saja yang
-
-        harus mereka bawa
-        dan saling menanyakan posisi.'
+      narasiText: Suatu pagi di depan kampus, Group Chat tampak lebih sibuk dari
+        biasanya. Semua anggota banyak berkali-kali menanyakan adakah barang lain
+        yang perlu mereka bawa, memastikan apa saja yang harus mereka bawa dan saling
+        menanyakan posisi.
       VO: {fileID: 8300000, guid: 15710b1ac21fa934c8132e9f78484fbf, type: 3}
     GambarKarakter: {fileID: 0}
     Nama: 0

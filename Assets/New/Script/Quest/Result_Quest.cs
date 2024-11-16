@@ -96,6 +96,9 @@ namespace Terbaru{
                 Camera.transform.DOLocalMoveZ(-10f, 1f);
                 
             });
+
+            UiManager.instance.updateEnergy(2);
+            FindObjectOfType<WaktuManager>().gantiWaktu(1);
         }
         listQuest tempQuest;
         public void tambahPoint(){

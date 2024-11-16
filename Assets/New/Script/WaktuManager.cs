@@ -32,7 +32,9 @@ namespace Terbaru{
         }
 
         public void changeInteraction(){
-            
+            if (GameManager.instance.isTutorial)
+                return;
+
             foreach(var obj in interaksi){
                 obj.GetComponent<Interaction>().changeInteractable(true);
             }
@@ -68,6 +70,7 @@ namespace Terbaru{
             //sun.DOIntensity(intent, 2f);
 
             if(thisWaktu == waktu.Malam && !GameManager.instance.isTutorial){
+                Debug.Log("Ganti Interactable");
                 foreach(var interact in interaksi){
                     interact.GetComponent<Interaction>().changeInteractable(false);
                 }
