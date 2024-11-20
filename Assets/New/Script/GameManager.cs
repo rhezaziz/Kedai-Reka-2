@@ -60,7 +60,7 @@ namespace Terbaru{
         public void tutorialOver(){
             tutorialUI.SetActive(false);
             tutorialManager.SetActive(false); 
-
+            isTutorial = false;
             foreach(var interact in interactions){
                 interact.GetComponent<Interaction>().changeInteractable(true);
             }
