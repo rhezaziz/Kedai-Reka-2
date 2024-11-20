@@ -54,6 +54,8 @@ namespace Terbaru{
 
         }
 
+        
+
 
         public void tutorialOver(){
             tutorialUI.SetActive(false);
