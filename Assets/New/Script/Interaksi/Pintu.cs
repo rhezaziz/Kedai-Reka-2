@@ -71,7 +71,7 @@ namespace Terbaru
         public void action(Transform Player)
         {
 
-            if (FindObjectOfType<Controller>().profil.Energy >= 1){
+            if (FindObjectOfType<Controller>().profil.Energy >= 1 || !keluar) {
                 Player.transform.position = new Vector3(spawn.position.x, Player.position.y, spawn.position.z);
 
                 if (Trigger != null)
