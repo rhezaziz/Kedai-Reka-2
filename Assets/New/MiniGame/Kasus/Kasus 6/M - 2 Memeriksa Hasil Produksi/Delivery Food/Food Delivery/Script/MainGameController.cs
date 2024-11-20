@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Terbaru;
 using UnityEngine;
 
 public class MainGameController : MonoBehaviour
@@ -68,6 +69,7 @@ public class MainGameController : MonoBehaviour
     static public int totalMoneyMade;
     //private int totalMoneyLost;
     static public bool gameIsFinished;      //Flag
+    public bool test;
 
     ///////////////////////////////////////
     static public int slotState = 0;                //available slots for product creation (same as delivery queue)
@@ -78,20 +80,30 @@ public class MainGameController : MonoBehaviour
     //****************************
     //public GameObject moneyText;
     //public GameObject missionText;
-    //public GameObject timeText;
+    public GameObject timeText;
 
     //AudioClips
     //public AudioClip timeEndSfx;
     //public AudioClip winSfx;
     //public AudioClip loseSfx;
 
-
+    // UI Game Over Data
+    public int jumlahItem = 0;
+    public int point;
+    public TMPro.TMP_Text jumlahText;
+    public TMPro.TMP_Text pointText;
+    public GameObject PanelGameOver;
+    public UnityEngine.UI.Button btnGameOver;
     // public void Awake()
     // {
     //     Init();
     // }
 
     public string  action;
+
+    void Start(){
+        gameIsFinished = true;
+    }
     //***************************************************************************//
     // Init everything here.
     //***************************************************************************//
@@ -179,6 +191,11 @@ public class MainGameController : MonoBehaviour
         canCreateNewCustomer = true;
     }
 
+    public void Action(){
+        QuestManager.instance.CheckAction(action);
+        QuestManager.instance.currentQuest.quest.pointBonus += point;
+    }
+
     
 
 
@@ -187,7 +204,7 @@ public class MainGameController : MonoBehaviour
     //***************************************************************************//
     void Update()
     {
-        
+        test = gameIsFinished;
         //no more ingredient can be picked
         if (deliveryQueueItems >= maxSlotState)
             deliveryQueueIsFull = true;
@@ -301,11 +318,11 @@ public class MainGameController : MonoBehaviour
         if (gameMode == "FREEPLAY")
         {
 
-            gameTime = (int)Time.timeSinceLevelLoad;
-            seconds = Mathf.CeilToInt(Time.timeSinceLevelLoad) % 60;
-            minutes = Mathf.CeilToInt(Time.timeSinceLevelLoad) / 60;
+            gameTime = (int)(availableTime - Time.timeSinceLevelLoad);
+            seconds = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) % 60;
+            minutes = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) / 60;
             remainingTime = string.Format("{0:00} : {1:00}", minutes, seconds);
-  //          timeText.GetComponent<TextMesh>().text = remainingTime.ToString();
+            timeText.GetComponent<TMPro.TMP_Text>().text = remainingTime.ToString();
 
         }
         else if (gameMode == "CAREER")
@@ -315,15 +332,16 @@ public class MainGameController : MonoBehaviour
             seconds = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) % 60;
             minutes = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) / 60;
             remainingTime = string.Format("{0:00} : {1:00}", minutes, seconds);
-    //        timeText.GetComponent<TextMesh>().text = remainingTime.ToString();
+            timeText.GetComponent<TMPro.TMP_Text>().text = remainingTime.ToString();
         }
 
-        /*
-		if(seconds == 0 && minutes == 0) {
+        
+		if(seconds <= 0 && minutes <= 0 && !gameIsFinished) {
 			gameIsFinished = true;
-			processGameFinish();
+            Debug.Log("Selesai 1");
+			StartCoroutine(processGameFinish());
 		}
-		*/
+		
     }
 
 
@@ -341,11 +359,17 @@ public class MainGameController : MonoBehaviour
     //***************************************************************************//
     IEnumerator processGameFinish()
     {
-
+            Debug.Log("Selesai 2");
       //  playSfx(timeEndSfx);
-
+         PanelGameOver.SetActive(true);
         yield return new WaitForSeconds(1.5f);  //absolutely required.
+       
+        jumlahText.text += " "+jumlahItem;
+        pointText.text += " "+point;
         print("game is finished");
+
+        yield return new WaitForSeconds(1.5f);
+        btnGameOver.interactable = true;
         //tell all customers to leave, if they are still in the shop :)))
         GameObject[] customersInScene = GameObject.FindGameObjectsWithTag("customer");
         if (customersInScene.Length > 0)

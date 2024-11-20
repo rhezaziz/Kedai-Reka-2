@@ -8,7 +8,7 @@ public class listCharacters : ScriptableObject
 
     public int index;
     public Nama nama;
-    public Kemampuan[] skills;
+    public string[] skills;
     public string[] coba = new string[]
     {
         "A",

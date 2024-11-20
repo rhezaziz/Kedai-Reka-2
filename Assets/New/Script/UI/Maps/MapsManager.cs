@@ -141,6 +141,7 @@ namespace Terbaru{
                     x.valueMaps.active = false;
                 }
             }
+            kembali.enabled = true;
             //FindObjectOfType<WaktuManager>().gantiWaktu(1);
             listMaps();
             // for(int i = 0; i < jmlId; i++){
@@ -314,8 +315,12 @@ namespace Terbaru{
             panelUtama.SetActive(!value);
             
             
-            if(!value)
+            if(!value){
+                FindObjectOfType<WaktuManager>().gantiWaktu(1);
                 pintu.tutupPintu();
+                UiManager.instance.updateEnergy(1);
+            }
+                
 
             cameraKeliling.transform.localPosition = posisi;
             Debug.Log("Reverse");
@@ -349,17 +354,17 @@ namespace Terbaru{
                 int hari = FindObjectOfType<DayManager>().day;
                 foreach(var action in tempMaps.events){
                     if(action.day == hari && !action.done){
-                        action.done = true;
+                        action.done = !action.loop;
                         //Debug.Log($"Ada : {action.events.GetPersistentEventCount()}");
                         action.events?.Invoke();
-                        action.events.RemoveAllListeners();
+                        //action.events.RemoveAllListeners();
                     } 
                 }
 
                 
             }
 
-            if (value) FindObjectOfType<WaktuManager>().gantiWaktu(1);
+            //if (value) FindObjectOfType<WaktuManager>().gantiWaktu(1);
 
             QuestManager.instance.CheckActionQuest(tempMaps.nama);
                 
@@ -416,6 +421,7 @@ namespace Terbaru{
         public int day;
         public UnityEvent events;  
         public bool done;
+        public bool loop;
     }
 
     public enum id_Maps{

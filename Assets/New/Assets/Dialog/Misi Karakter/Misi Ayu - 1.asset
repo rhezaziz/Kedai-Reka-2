@@ -1,0 +1,147 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Ayu - 1
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Eh, ada Thomas dan Elena! Sup, guys?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Hai Ayu! Rapi banget, mau ke mana nih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b64c6a34df5e6b49b8f52bf4f051882, type: 3}
+    Nama: 6
+    sentences: Ah masa sih?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Enggak kok cuma mau membereskan taman di pekarangan aja.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: 'Taman? Oh jadi taman depan itu perbuatanmu? '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b64c6a34df5e6b49b8f52bf4f051882, type: 3}
+    Nama: 6
+    sentences: Woiya dong!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: de5e51737e370e9448ee92cfd67339ff, type: 3}
+    Nama: 6
+    sentences: 'Cuma terkadang agak kesal saja sih, banyak orang yang buang sampah
+      sembarangan di sana. '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7de184c1d209a6045a554964ff3a496a, type: 3}
+    Nama: 6
+    sentences: "Jadi bingung harus gimana, enggak enak juga kalau aku harus menasihati
+      orang-orang\u2026"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: "Oh, bagaimana kalau kamu membuat papan bertuliskan \u201CDilarang
+      Buang Sampah Sembarangan\u201D saja di depan tamanmu?"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Kalau kamu mau, nanti kami bisa bantu kok!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b64c6a34df5e6b49b8f52bf4f051882, type: 3}
+    Nama: 6
+    sentences: Wah, kalian serius mau bantu? Terima kasih ya!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7de184c1d209a6045a554964ff3a496a, type: 3}
+    Nama: 6
+    sentences: "Benar juga, kok aku tidak terpikir ya\u2026"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Sepertinya kita juga perlu membersihkan sampah-sampah yang masih ada
+      di sekitar sini.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 9ed8ec97b47f3fc44a8a9c2ee8768537, type: 3}
+    Nama: 6
+    sentences: "Oh ya, aku juga perlu menyiram tanaman nih, tapi aku lupa membawa
+      selangnya\u2026 "
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7de184c1d209a6045a554964ff3a496a, type: 3}
+    Nama: 6
+    sentences: Boleh tolong sekalian, tidak?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Bolehh dong, tunggu yaa!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Sambil menunggu kalian aku akan menambahkan beberapa tanaman dulu
+      deh~
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b64c6a34df5e6b49b8f52bf4f051882, type: 3}
+    Nama: 6
+    sentences: Semangat kalian berdua!
+    Kiri: 0

@@ -9,7 +9,7 @@ public class Quest : ScriptableObject
     public ID_Quiz iD_Quiz;
     public int index;
     public int Reward;
-    public Kemampuan[] skills;
+    public string[] skills;
     public Nama[] nama;
    // public string[] skills;
     public string judulMisi;

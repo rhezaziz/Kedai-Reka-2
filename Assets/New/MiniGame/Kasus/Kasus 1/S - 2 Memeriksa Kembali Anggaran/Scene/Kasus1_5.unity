@@ -1876,7 +1876,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 292.29, y: -112.62999}
+  m_AnchoredPosition: {x: 292.29, y: -112.630005}
   m_SizeDelta: {x: -584.57, y: -225.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &728438398
@@ -4152,7 +4152,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 292.29, y: -112.62999}
+  m_AnchoredPosition: {x: 292.29, y: -112.630005}
   m_SizeDelta: {x: -584.57, y: -225.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1457341378
@@ -6287,6 +6287,10 @@ PrefabInstance:
     - target: {fileID: 5431538645280909171, guid: 63c06c2518e01f44197b72aaaaac92f6, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MiniGame1_4.Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 5782025464503062522, guid: 63c06c2518e01f44197b72aaaaac92f6, type: 3}
+      propertyPath: m_text
+      value: Klik pada barang yang dianggap memiliki total harga yang tidak sesuai!
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

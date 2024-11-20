@@ -579,6 +579,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_text
+      value: Klik pada jawaban yang dianggap paling sesuai!
+      objectReference: {fileID: 0}
     - target: {fileID: 6541338707665930276, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1328,7 +1332,6 @@ MonoBehaviour:
   - {fileID: 206709043}
   - {fileID: 1301250548}
   - {fileID: 256759301}
-  testGame: 0
 --- !u!1 &1808137505
 GameObject:
   m_ObjectHideFlags: 0

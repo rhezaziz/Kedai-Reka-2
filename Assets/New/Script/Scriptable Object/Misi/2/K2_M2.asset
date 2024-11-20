@@ -15,7 +15,7 @@ MonoBehaviour:
   iD_Quiz: 7
   index: 0
   Reward: 3000
-  skills: 000000000000000000000000
+  skills: []
   nama: 0700000008000000
   judulMisi: 'Membuat daftar keperluan untuk membuat desain '
   item: {fileID: 0}
@@ -25,4 +25,4 @@ MonoBehaviour:
   firstChangeScene: 1
   level: 0
   pointBonus: 0
-  isDone: 0
+  isDone: 1

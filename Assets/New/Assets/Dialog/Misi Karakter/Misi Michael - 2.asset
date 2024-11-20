@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Michael - 2
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: "Haah\u2026 akhirnya selesai juga!"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f71c1c38093ef074e967a62c278393f1, type: 3}
+    Nama: 0
+    sentences: Siapa juga nih yang simpen barang sembarangan begini! Merepotkan banget
+      deh..
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Yah gitu deh, tapi makasih banget nih, berkat kalian beresnya jadi
+      bisa lebih cepat!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Thank you ya!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Ah kamu kayak ke siapa saja, bukan apa-apa kok!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 1eb9c3b694e5fc74d83fc302f3f09e03, type: 3}
+    Nama: 10
+    sentences: Tapi aku masih mesti mengantarkan barang ini ke dosenku, setelah ini
+      aku baru bisa ikut kalian, di mana tadi tempatnya?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Di asrama kampus, kami tunggu di sana ya!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Oke, sampai ketemu nanti!
+    Kiri: 0

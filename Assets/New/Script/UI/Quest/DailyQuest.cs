@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -36,8 +37,8 @@ namespace Terbaru{
         public GameObject point;
         public float distancePlayer;
 
-        public Dialog awal;
-        public Dialog Akhir;
+        
+        public Dialog tidakAdaItem;
         public void checkDistance(){
             float distance = Vector3.Distance(transform.position, Player.position);
 
@@ -64,7 +65,19 @@ namespace Terbaru{
 
         public Dialog[] dialog;
 
+        public Items item;
         public void action(Transform player){
+            if (item)
+            {
+                if (!GameManager.instance.haveItem(item))
+                {
+                    startDialog();
+                    FindObjectOfType<DialogManager>().StartDialog(tidakAdaItem);
+                    return;
+                }
+                
+            }
+            
             FindObjectOfType<QuestManager>().StartQuest(quest);
             //miniGame.pindahMiniGame(sceneName);
 
@@ -125,6 +138,8 @@ namespace Terbaru{
             //FindObjectOfType<UiManager>().panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
             //QuestManager.instance.CheckActionQuest("Talk");
+
+            Debug.Log("End Dialog Daily Quest");
 
             
         }

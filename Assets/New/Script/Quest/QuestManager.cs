@@ -197,6 +197,7 @@ namespace Terbaru{
             //Debug.Log($"Start Process Quest {index}"); 
             int indexQuest = quest.Index;
             currentQuest = quest;
+            currentQuest.Index = 0;
             int currentIndex = currentQuest.Index;
 
             StartProcessQuest(0);
@@ -215,8 +216,10 @@ namespace Terbaru{
 
         void StartProcessQuest(int noIndex) => currentQuest.proses[noIndex].ProcessEventStart?.Invoke();
         
-        void CloseProsesQuest(int noIndex) => currentQuest.proses[noIndex].ProcessEnd?.Invoke();
-        
+        void CloseProsesQuest(int noIndex) {
+            Debug.Log("No Index : " + noIndex);
+            currentQuest.proses[noIndex].ProcessEnd?.Invoke();
+        }
         void HelperProcessQuest(int noIndex) => currentQuest.proses[noIndex].ProcessEventHelper?.Invoke();
         
 
@@ -238,16 +241,21 @@ namespace Terbaru{
             
         }
 
+        public void testCloseProsesQuest(){
+            Debug.Log("Close = "+ currentQuest.Index);
+        }
+
         void NextProcessQuest(){
             Debug.Log("Next Quest");
             int tempIndex = currentQuest.Index;
             int jumlahProses = currentQuest.proses.Length - 1;
-            //Debug.Log($"tempIndex {tempIndex} == jumlahProses {jumlahProses}");
+            Debug.Log($"tempIndex {tempIndex} == jumlahProses {jumlahProses}");
             
             if(tempIndex < jumlahProses){
                 
                 currentQuest.Index += 1;
                 StartProcessQuest(currentQuest.Index);
+                Debug.Log(currentQuest.proses[currentQuest.Index].Action);
                 Debug.Log("Start QUest");
                 // StartProcess(currentQuest.Index);
                 // HelperProcess(currentQuest.Index);
@@ -278,6 +286,7 @@ namespace Terbaru{
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
             isActive = false;
             endQuest?.Invoke();
+            
         }
 
         public UnityEvent endQuest;
@@ -290,6 +299,8 @@ namespace Terbaru{
         public UnityEvent ProcessEventStart;
         public UnityEvent ProcessEventHelper;
         public UnityEvent ProcessEnd;
+
+        
             
         }
 
@@ -297,6 +308,7 @@ namespace Terbaru{
         public class listQuest{
             public ID_Quiz id;
             public Quest quest;
+            public bool isRPG;
             public int Index;
             public questProses[] proses;
         }

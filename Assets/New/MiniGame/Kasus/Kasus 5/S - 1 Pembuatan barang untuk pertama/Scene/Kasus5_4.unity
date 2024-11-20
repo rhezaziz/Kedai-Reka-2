@@ -2719,6 +2719,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MiniGame5_4.Manager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 5782025464503062522, guid: 63c06c2518e01f44197b72aaaaac92f6, type: 3}
+      propertyPath: m_text
+      value: Drag tepung ke atas timbangan sesuai dengan takaran yang tertera!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

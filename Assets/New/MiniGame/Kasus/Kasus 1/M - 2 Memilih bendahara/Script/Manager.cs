@@ -124,7 +124,7 @@ namespace MiniGame1_2{
             public Sprite SelectedImage;
             public bool sesuai;
 
-            public List<sifat> sifat = new List<sifat>();   
+            public List<string> sifat = new List<string>();   
         }
 
         public enum sifat{

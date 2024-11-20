@@ -227,6 +227,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_BoolArgument
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_text
+      value: Ambil sapu, lalu dekatkan pada debu
+      objectReference: {fileID: 0}
     - target: {fileID: 6541338707665930276, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -534,7 +538,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 131e74c7bfb4cd84a9f37b19edaebd35, type: 3}
+  m_Sprite: {fileID: 21300000, guid: b157a67cddc8ee14eb94e33a94644d56, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0

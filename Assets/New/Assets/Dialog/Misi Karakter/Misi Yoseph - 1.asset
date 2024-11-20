@@ -1,0 +1,177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Yoseph - 1
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Yo, Yoseph! Lagi nungguin siapa nih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: "Kamu lagi nuggu pacar ya? Hayooo\u2026"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Aminn, amin punya pacar aminn hahaha!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: 'Tapi bukan kok guys, Ini aku lagi nunggu para juniorku, kebetulan
+      mereka baru masuk kampus ini. '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 246baa85c46d6b348b62ef5b1694d8be, type: 3}
+    Nama: 12
+    sentences: "Tapi sudah 5 menit aku nunggu, mereka masih belum datang\u2026"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oh gitu, Kalau kamu mau kita bisa bantu lho.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Wah, Serius nih? Boleh, boleh!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Ini bakal membantu aku banget sih, kebetulan aku perlu menyiapkan
+      beberapa hal buat memandu mereka juga.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Nah pas banget dong, tapi kita ada penawaran nih~
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 608bc00b066f47e48945099de34bbab4, type: 3}
+    Nama: 12
+    sentences: Wah penawaran apa nih?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Iya, jadi gini, Yoseph. Kita ini ada rencana untuk melakukan program
+      pengabdian yang aku jamin kamu gak akan mau lewatkan deh.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: 'Kebetulan, saat ini kita masih dalam proses perekrutan anggota. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Nah, kita berdua ini berharap banget kamu mau join program ini bareng
+      kita.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: "Oh jadi gitu... \n"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: Menarik sih, kebetulan setelah ini aku gak ada kegiatan lain juga.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Mantap deh.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Kalau gitu, sekarang kita berdua akan bantu carikan tiga junior kamu,
+      dan nanti setelahnya kita bisa ada permbicaraan lebih lanjut soal program tadi
+      di asrama, gimana?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Okay, sip kalo gitu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Nah, sekarang ketiga junior itu ciri-cirinya gimana?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c04f34178b54b834da74942b444ba81d, type: 3}
+    Nama: 12
+    sentences: "Junior pertama \u2013 Memakai rompi, berkacamata\nJunior kedua \u2013
+      Sama seperti yang pertama, tapi laki-laki\nJunior ketiga \u2013 Sering selfie
+      ke mana \u2013 mana"
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Sip, sudah kucatat, kami berangkat dulu ya Yoseph!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Okee aku tunggu di sini ya guys!
+    Kiri: 0

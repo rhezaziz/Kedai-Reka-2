@@ -297,6 +297,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
       value: MiniGame4_3.Manager, Assembly-CSharp
       objectReference: {fileID: 0}
+    - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_text
+      value: Klik pada mobil yang dianggap membawa ke lokasi yang benar!
+      objectReference: {fileID: 0}
     - target: {fileID: 6541338707665930276, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -3100,6 +3104,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Wrong: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
   Correct: {fileID: 21300000, guid: c395e26af7c056f41907e0dca8401f43, type: 3}
+  DailyQuest: 0
   datas:
   - Mobil: {fileID: 1180159056}
     tempat: {fileID: 1030886123}

@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Michael - 1
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Wah! Ada dus berjalan! Memang misteri di kampus ini-
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Hey hey ini aku haha!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Oh, Michael, banyak sekali barang bawaanmu, mau ke mana?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: a7151c054458ab74ab948729d758f8a1, type: 3}
+    Nama: 10
+    sentences: Oh ini, dosenku meminta tolong untuk membawakan buku buku lamanya
+      ke gudang dan mencarikan beberapa barang untuk demonstrasi di kelasnya nanti.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: 'Oh gitu. Oh iya, kita kebetulan ada perlu dengan kamu nih. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Tapi sebelum itu, sini kita bantuin dulu deh!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Wah serius nih? Boleh banget dong. Makasih banyak ya!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Santai, monggo.. dipimpin jalannya~
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: a7151c054458ab74ab948729d758f8a1, type: 3}
+    Nama: 10
+    sentences: "Nah\u2026 di sini, seharusnya ini akan cukup memakan waktu untuk
+      mencari barangnya, tapi dengan bantuan kalian berdua bisa bakal lebih cepat
+      nih."
+    Kiri: 0

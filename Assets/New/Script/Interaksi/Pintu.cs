@@ -8,8 +8,9 @@ using UnityEngine.Events;
 namespace Terbaru
 {
 
-    public class Pintu : MonoBehaviour, Interaction
+    public class Pintu : MonoBehaviour, Interaction , IDialog
     {
+         public Dialog dialog;
         public UnityEvent extendAction;
         public UnityEvent ExtraAction;
         public Vector3 PosUI;
@@ -27,6 +28,8 @@ namespace Terbaru
         public float rotateBuka;
 
         public bool value;
+
+        public bool keluar;
 
         public void isTutorial(bool temp){
            // enabled = temp;
@@ -67,19 +70,34 @@ namespace Terbaru
         }
         public void action(Transform Player)
         {
-            Player.transform.position = new Vector3(spawn.position.x, Player.position.y, spawn.position.z);
 
-            if (Trigger != null)
-            {
-                Trigger.GetComponent<Collider>().enabled = false;
+            if (FindObjectOfType<Controller>().profil.Energy >= 1){
+                Player.transform.position = new Vector3(spawn.position.x, Player.position.y, spawn.position.z);
+
+                if (Trigger != null)
+                {
+                    Trigger.GetComponent<Collider>().enabled = false;
+                }
+
+                Rotate = new Vector3(0f, rotateBuka, 0f);
+                SoundManager.instance.sfx(29);
+                engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => {
+                    Debug.Log("Buka");
+                    extendAction?.Invoke();
+                    ExtraAction?.Invoke();
+                    });
             }
+            else
+            
+            {
+                Player.GetComponent<Controller>().currentState(state.Interaction);
+                UiManager.instance.Chinematic(true);
 
-            Rotate = new Vector3(0f, rotateBuka, 0f);
-            SoundManager.instance.sfx(29);
-            engselPintu.DOLocalRotate(Rotate, 1.5f).OnComplete(() => {
-                extendAction?.Invoke();
-                ExtraAction?.Invoke();
-                });
+                UiManager.instance.panelUtama.SetActive(false);
+
+                Invoke("startDialog", 1f);
+            }
+            
             
         }
 
@@ -107,6 +125,27 @@ namespace Terbaru
             float duration = (float)video.video.length;
             Invoke("tutupPintu", duration + 7f);
         }
+
+         public void endDialog()
+        {
+            UiManager.instance.Chinematic(false);
+
+            Player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
+            Player.GetComponent<Controller>().currentState(state.Default);
+            UiManager.instance.panelUtama.SetActive(true);
+            //FindObjectOfType<QuestManager>().CheckAction(tempAction);
+
+            FindObjectOfType<DialogManager>().closeDialog();
+        }
+
+        public void startDialog()
+        {
+
+            Player.GetComponentInChildren<Animator>().SetBool("Ngomong", true);
+
+            FindObjectOfType<DialogManager>().StartDialog(dialog);
+        }
+
     }
 
 }

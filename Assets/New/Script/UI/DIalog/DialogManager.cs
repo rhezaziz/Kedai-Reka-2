@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace Terbaru{
@@ -95,7 +96,8 @@ namespace Terbaru{
             int index = jumlahDialog - sentences.Count;
             
             
-            var sentence = sentences.Dequeue();     
+            var sentence = sentences.Dequeue(); 
+            SoundManager.instance.stopSFX();    
 
             if(sentence.narasi.narasiText != ""){
                 DisplayVO(sentence);
@@ -103,15 +105,20 @@ namespace Terbaru{
                 StopAllCoroutines();
                 btnNextDialog.gameObject.SetActive(false);
                 float delay = 0.1f;
+                float durationVO = .1f;
                 if(sentence.narasi.VO != null){
                     
-                    delay = sentence.narasi.VO.length / CountWords(sentence.narasi.narasiText) ;
+                    durationVO = sentence.narasi.VO.length ;
                     //Debug.Log($"delay : {delay} - VO : {sentence.narasi.VO.length * 60} - Word : {CountWords(sentence.narasi.narasiText)}");
                     SoundManager.instance.sfx(sentence.narasi.VO);
+                }else {
+                    durationVO = 1f;
                 }
-                StartCoroutine(TypeSentenceNarasi(sentence.narasi.narasiText, delay));
+                delay = 2f / CountWords(sentence.narasi.narasiText) ;
+                StartCoroutine(TypeSentenceNarasi(sentence.narasi.narasiText, delay, durationVO));
 
             }else{
+                panelDialog.SetActive(true);
 
                 uiDialog.displayBallonDialog(index, sentence);
                 dialogText = uiDialog.tempText;
@@ -143,7 +150,7 @@ namespace Terbaru{
             btnNextDialog.gameObject.SetActive(true);
         }
 
-        IEnumerator TypeSentenceNarasi(string sentence, float delay)
+        IEnumerator TypeSentenceNarasi(string sentence, float delay, float durationVO)
         {
             dialogText.text = "";
             done = false;
@@ -152,8 +159,8 @@ namespace Terbaru{
                 dialogText.text += letter;
                 yield return new WaitForSeconds(delay);
             }
-
-            yield return new WaitForSeconds(.5f);
+            float tempDelay = Mathf.Clamp(durationVO - 1f, 0, 100);
+            yield return new WaitForSeconds(tempDelay);
             done = true;
             btnNextDialog.gameObject.SetActive(true);
         }

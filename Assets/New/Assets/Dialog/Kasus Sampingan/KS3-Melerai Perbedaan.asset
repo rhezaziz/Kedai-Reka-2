@@ -1,0 +1,66 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: KS3-Melerai Perbedaan
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 3cde8613bfd8aae4d8a919781aff6b87, type: 3}
+    Nama: 1
+    sentences: Eh, sudah, sudah! Jangan bertengkar gini! Ada masalah apa?!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 19
+    sentences: Itu loh! Dia tuh aneh, Ini kan waktu libur, masa mesti serius terus!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 18
+    sentences: Lho, yang aneh itu kamu, ya waktu libur itu mestinya dipakai untuk
+      belajar, untuk tambah ilmu dan mengembangkan kemampuan diri.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 19
+    sentences: Lihat?? Party boomer banget deh, masa sih kamu gak akan sediain waktu
+      luang buat diri sendiri untuk bersantai?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 19
+    sentences: Santai sebentar gak akan bikin kamu jadi kurang pintar kok.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 0}
+    Nama: 18
+    sentences: "Itu namanya gak produktif\u2026 gimana sih.."
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb27a22009123f24fa2fbbca25995001, type: 3}
+    Nama: 0
+    sentences: "\u2026waduh, kita harus bantu meleraikan perdebatan mereka nih!"
+    Kiri: 1

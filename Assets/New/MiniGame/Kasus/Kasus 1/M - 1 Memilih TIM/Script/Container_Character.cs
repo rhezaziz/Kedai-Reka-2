@@ -29,11 +29,11 @@ namespace MiniGame1_1{
             if(jml != 1){
 
                 for(int i = 0; i < jml; i++){
-                    Sifat.text += "<br>" + "-" + sifatText(value.sifat[i]);
+                    Sifat.text += "<br>" + "-" + value.sifat[i];
                 }
 
             }else{
-                Sifat.text = sifatText(value.sifat[0]);
+                Sifat.text = value.sifat[0];
 
             }
             character.sprite = value.ImageInSelection;

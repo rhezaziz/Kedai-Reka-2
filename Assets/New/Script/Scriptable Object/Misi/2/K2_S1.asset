@@ -15,7 +15,7 @@ MonoBehaviour:
   iD_Quiz: 8
   index: 0
   Reward: 5000
-  skills: 000000000000000000000000
+  skills: []
   nama: 0c00000008000000
   judulMisi: 'Research desain bersama '
   item: {fileID: 11400000, guid: 17c4bf8cc02e7814f9ce3ebb87a23ef5, type: 2}

@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5ccd9cc6cfb42a42aaf817272f7679f, type: 3}
+  m_Name: Quiz - KC3
+  m_EditorClassIdentifier: 
+  soal: Dalam situasi seperti ini, sebagai ketua tim, apa yang Thomas harus lakukan?
+  pilA: Jemput Alex. Alex jadi datang lebih cepat tapi rapat mundur 20 menit
+  pilB: Minta tolong pada Michael saja yang kebetulan searah untuk jemput Alex. Rapat
+    akan dimulai sesuai jadwal, tapi akan ada 2 orang yang telat.
+  pilC: 
+  pilD: 
+  jawaban: B

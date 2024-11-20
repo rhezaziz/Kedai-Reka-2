@@ -30,7 +30,7 @@ namespace Terbaru{
         void Start(){
             DontDestroyOnLoad(this);
 
-            waktu.currentTime(0);
+            waktu.currentTime(2);
             checkTutorial();
         }
 
@@ -62,6 +62,10 @@ namespace Terbaru{
             foreach(var interact in interactions){
                 interact.GetComponent<Interaction>().changeInteractable(true);
             }
+            foreach(var item in profil.item)
+            {
+                item.isShop = !item.isSpawn;
+            }
         }
         
         void OnEnable(){
@@ -73,7 +77,39 @@ namespace Terbaru{
 
             spawnAllNPC();
         }
-        
+
+        public void GetItem(Items item)
+        {
+            item.isInventory = true;
+        }
+        public void testItem(itemType type)
+        {
+            foreach (var item in profil.item)
+            {
+                if(item.itemType == type)
+                {
+                    item.isInventory = true;
+                }
+            }
+        }
+
+        public bool haveItem(itemType type)
+        {
+            foreach (var item in profil.item)
+            {
+                if (item.itemType == type)
+                {
+                    return item.isInventory;
+                }
+            }
+            return false;
+        }
+
+        public bool haveItem(Items item)
+        {
+            return item.isInventory;
+        }
+
 
         void spawnAllNPC(){
              

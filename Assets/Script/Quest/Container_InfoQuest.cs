@@ -27,7 +27,7 @@ public class Container_InfoQuest : MonoBehaviour
 
     public Button Mulai;
 
-    List<Kemampuan> allSkill = new List<Kemampuan>();
+    List<string> allSkill = new List<string>();
 
     public playerProfil player;
 
@@ -113,7 +113,7 @@ public class Container_InfoQuest : MonoBehaviour
             {
                 if (quest.skills[i] == characters.skills[j])
                 {
-                    Kemampuan _skill = characters.skills[j];
+                    string _skill = characters.skills[j];
                     allSkill.Add(_skill);
                 }
             }

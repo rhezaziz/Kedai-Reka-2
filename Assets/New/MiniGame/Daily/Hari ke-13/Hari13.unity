@@ -917,7 +917,6 @@ MonoBehaviour:
     size: {x: 0.9, y: 0.9}
   - timer: 0.25
     size: {x: 1, y: 1}
-  testGame: 0
 --- !u!4 &655115288
 Transform:
   m_ObjectHideFlags: 0
@@ -2398,7 +2397,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1116825578511325031, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_text
+      value: Pilih salah satu  buku yang sesuai
       objectReference: {fileID: 0}
     - target: {fileID: 6541338707665930276, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Pivot.x

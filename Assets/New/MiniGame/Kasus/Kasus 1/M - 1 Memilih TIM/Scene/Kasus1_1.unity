@@ -2757,7 +2757,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'Pilih salah satu '
+  m_text: pilih dua kandidat yang paling sesuai untuk tergabung dalam tim anggaran!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -7480,42 +7480,63 @@ MonoBehaviour:
   Salah: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
   action: K1_M1
   datas:
-  - Nama: Alex
+  - Nama: Andi
     ImageInSelection: {fileID: 1023901035, guid: 2dc28535a79349b4fa18236541850701, type: 3}
-    SelectedImage: {fileID: -784973056, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
+    SelectedImage: {fileID: -1247141866, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
     sesuai: 0
-    sifat: 020000000000000003000000
+    sifat:
+    - kolaborasi
+    - mudah bergaul
+    - fotografi
+    - senang menolong
   - Nama: Dinda
     ImageInSelection: {fileID: -367929859, guid: 2dc28535a79349b4fa18236541850701, type: 3}
     SelectedImage: {fileID: -1566870544, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
-    sesuai: 1
-    sifat: 0200000004000000
-  - Nama: Gumilang
-    ImageInSelection: {fileID: 1489360812, guid: 2dc28535a79349b4fa18236541850701, type: 3}
-    SelectedImage: {fileID: -1619569303, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
     sesuai: 0
-    sifat: 030000000100000000000000
-  - Nama: Isy
+    sifat:
+    - Kolaboratif
+    - Kreatif
+    - Ramah
+    - 'pekerja keras '
+  - Nama: Cici
+    ImageInSelection: {fileID: 1489360812, guid: 2dc28535a79349b4fa18236541850701, type: 3}
+    SelectedImage: {fileID: -1322251016, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
+    sesuai: 1
+    sifat:
+    - Manajemen keuangan
+    - Jujur
+    - perfeksionis
+    - sering mencatat
+  - Nama: Michael
     ImageInSelection: {fileID: -1793745158, guid: 2dc28535a79349b4fa18236541850701, type: 3}
     SelectedImage: {fileID: 1066887289, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
     sesuai: 0
-    sifat: 0300000000000000
+    sifat:
+    - media literasi
+    - 'berani tegas '
+    - kemampuan komunikasi
   - Nama: Shinta
     ImageInSelection: {fileID: -1502824808, guid: 2dc28535a79349b4fa18236541850701, type: 3}
     SelectedImage: {fileID: 12446797, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
-    sesuai: 1
-    sifat: 0200000004000000
+    sesuai: 0
+    sifat:
+    - Berpikir Kritis
+    - Adaptif
+    - Inisiatif
+    - berani
   - Nama: Yosep
     ImageInSelection: {fileID: 756435876, guid: 2dc28535a79349b4fa18236541850701, type: 3}
     SelectedImage: {fileID: -2134810174, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
-    sesuai: 0
-    sifat: 0400000000000000
+    sesuai: 1
+    sifat:
+    - Informasi literasi
+    - Jujur
+    - Handal dalam perhitungan
   indikatorSeleted:
   - {fileID: 980831301}
   - {fileID: 82461434}
   jumlahBenar: 0
   jumlahSalah: 0
-  testGame: 0
 --- !u!4 &1849809293
 Transform:
   m_ObjectHideFlags: 0
@@ -7625,6 +7646,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogKanan: {fileID: 21300000, guid: 1f6a9e92f866dd546813d46d360753f4, type: 3}
   dialogKiri: {fileID: 21300000, guid: e8228aa7bf1ed0e42a3111cbc73e3333, type: 3}
+  polosKana: {fileID: 0}
+  polosKiri: {fileID: 0}
   components:
     textNama:
     - {fileID: 1352422299}

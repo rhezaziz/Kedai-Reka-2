@@ -152,6 +152,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07a756241455be4492ccd8dc25a7390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isDaily: 0
   jumlahText: {fileID: 5183900955668494951}
   jumlah: 4
   listKegiatan:
@@ -2954,6 +2955,10 @@ PrefabInstance:
     - target: {fileID: 1116825578511325031, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Name
       value: Image (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_text
+      value: Klik pada pertanyaan yang dianggap tidak relevan
       objectReference: {fileID: 0}
     - target: {fileID: 6541338707665930276, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Pivot.x
@@ -6223,7 +6228,6 @@ MonoBehaviour:
     Pertanyaan: horeeeee
   prefabPertanyaan: {fileID: 1458672090}
   parent: {fileID: 0}
-  testGame: 1
 --- !u!4 &2038432270
 Transform:
   m_ObjectHideFlags: 0

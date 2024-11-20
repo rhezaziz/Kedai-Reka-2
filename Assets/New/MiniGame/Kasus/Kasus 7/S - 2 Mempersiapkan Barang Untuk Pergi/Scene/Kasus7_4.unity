@@ -1775,6 +1775,11 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[2].m_Arguments.m_ObjectArgumentAssemblyTypeName
       value: UnityEngine.Object, UnityEngine
       objectReference: {fileID: 0}
+    - target: {fileID: 5782025464503062522, guid: 63c06c2518e01f44197b72aaaaac92f6, type: 3}
+      propertyPath: m_text
+      value: Berdasarkan list barang bawaan yang ditampilkan, ingat kembali dan klik
+        mana saja barang yang termasuk dalam daftar tersebut!
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

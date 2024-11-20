@@ -39,7 +39,7 @@ public class Tumbuhan : MonoBehaviour
         while(value < 1)
         {
             valueCount.fillAmount = value / 1f;
-            yield return new WaitForSeconds(0.1f);
+            yield return new WaitForSeconds(0.1f /2);
             value += 0.01f;
         }
         value = 0;

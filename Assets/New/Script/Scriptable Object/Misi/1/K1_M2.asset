@@ -15,7 +15,8 @@ MonoBehaviour:
   iD_Quiz: 1
   index: 0
   Reward: 3000
-  skills: 000000000200000006000000
+  skills:
+  - 
   nama: 0b00000005000000
   judulMisi: Memilih bendahara
   item: {fileID: 11400000, guid: 77a92f9ab87129c46b0609c914b01d24, type: 2}

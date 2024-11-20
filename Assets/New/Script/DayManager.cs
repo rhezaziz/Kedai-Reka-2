@@ -16,7 +16,10 @@ namespace Terbaru{
 
         public List<dayQuest> quests = new List<dayQuest>();
 
+        public GameObject Dosen;
+
         public int day = 0;
+        public UnityEngine.UI.Button kembaliMaps;
 
         public int currectDay(){
             return day;
@@ -25,15 +28,23 @@ namespace Terbaru{
             maps.updateDayKonten(days[0].mapsId);
         }
 
+        public void gantiHariTest(TMPro.TMP_InputField hari){
+            FindObjectOfType<Controller>().currentState(state.Interaction);
+            day = int.Parse(hari.text) - 1;
+            updateDay();
+        }
+
         public void updateDay(){
+            kembaliMaps.enabled = false;
             //FindObjectOfType<WaktuManager>().currentTime(0);
             initContentQuest(false);
+            //
             FindObjectOfType<VideoManager>().action(clipsTidur);
             Invoke("changeTime",4);
             
             //StartCoroutine(delayExecute());
             FindObjectOfType<WaktuManager>().changeInteraction();
-            
+            FindObjectOfType<Mingguan>().stopEvent();
         }
 
 
@@ -44,10 +55,12 @@ namespace Terbaru{
 
         void changeTime(){
             day += 1;
+            FindObjectOfType<Mingguan>().startEvent();
             FindObjectOfType<UiManager>().updateEnergy(-3);
             FindObjectOfType<QuizManager>().setSoal(day);
 
             FindObjectOfType<WaktuManager>().currentTime(0);
+            // Dosen.GetComponent<DialogObjectClick>().interactNPC(true);
             maps.updateDayKonten(days[day].mapsId);
             if(days[day].itemSpawn.Count >= 1){
                 foreach(var item in days[day].itemSpawn){
@@ -66,13 +79,18 @@ namespace Terbaru{
             }
 
             initContentQuest(true);
-
-            foreach(var time in GantiQuestList){
-                if(time == day){
-                    QuestManager.instance.CurrentQuest = 1;
+            for(int i = 0; i < GantiQuestList.Count; i++){
+                if(GantiQuestList[i] == day){
+                    QuestManager.instance.StateQuest = i + 1;
                     return;
                 }
             }
+            // foreach(var time in GantiQuestList){
+            //     if(time == day){
+            //         QuestManager.instance.CurrentQuest = 1;
+            //         return;
+            //     }
+            // }
         }
 
         public void updateMaps(){
@@ -89,7 +107,7 @@ namespace Terbaru{
                         
                         item.GetComponent<Interaction>().changeInteractable(thisDay);
                     }
-                    Debug.Log(quest.nama +" : " + quest.day);
+                    //Debug.Log(quest.nama +" : " + quest.day);
                     if (thisDay) quest.events?.Invoke();
                 }
             }

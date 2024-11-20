@@ -39,8 +39,8 @@ namespace MiniGame1_1{
                 GameObject container = Instantiate(prefabs);
                 container.transform.SetParent(parent);
                 container.transform.localScale = Vector2.one;
-                int randomIndex = Random.Range(0, temp.Count - 1);
-                data tempData = temp[randomIndex];
+                //int randomIndex = Random.Range(0, temp.Count - 1);
+                data tempData = temp[i];
                 temp.Remove(tempData);
                 container.SetActive(true);
 
@@ -166,7 +166,7 @@ namespace MiniGame1_1{
             public Sprite SelectedImage;
             public bool sesuai;
 
-            public List<sifat> sifat = new List<sifat>();   
+            public List<string> sifat = new List<string>();   
         }
 
         public enum sifat{

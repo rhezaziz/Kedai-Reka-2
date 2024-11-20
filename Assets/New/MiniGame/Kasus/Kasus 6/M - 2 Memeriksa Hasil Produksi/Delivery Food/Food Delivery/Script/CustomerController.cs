@@ -402,6 +402,8 @@ public class CustomerController : MonoBehaviour
         int[] myOriginalOrder = productIngredientsIDs;
         List<int> myReceivedOrder = _getOrder;
 
+        FindObjectOfType<MainGameController>().jumlahItem += 1;
+
         //check if the two array are the same, meaning that we received what we were looking for.
         //print(myOriginalOrder + " - " + myReceivedOrder);
 
@@ -427,10 +429,16 @@ public class CustomerController : MonoBehaviour
         else    //different array length
             OrderIsIncorrect();
 */
-        if (CheckOrder(myOriginalOrder, myReceivedOrder))
+        if (CheckOrder(myOriginalOrder, myReceivedOrder)){
+            FindObjectOfType<MainGameController>().point += 500;
             orderIsCorrect();
-        else
+        }
+            
+        else{
             OrderIsIncorrect();
+            FindObjectOfType<MainGameController>().point += 150;
+        }
+            
     }
 
     bool CheckOrder(int[] order, List<int> ReceiveOrder)

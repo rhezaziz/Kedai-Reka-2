@@ -10,6 +10,8 @@ namespace Terbaru{
     {
 
         public Material grey;
+
+
         public GameObject itemPanel;
         public GameObject parentListSkill;
         public GameObject parentListKarakter;
@@ -26,7 +28,7 @@ namespace Terbaru{
         };
         int selected;
         public Button Mulai;
-        List<Kemampuan> allSkill = new List<Kemampuan>();
+        List<string> allSkill = new List<string>();
         public playerProfil player;
         Quest quest;
 
@@ -113,7 +115,7 @@ namespace Terbaru{
                 {
                     if (quest.skills[i] == characters.skills[j])
                     {
-                        Kemampuan _skill = characters.skills[j];
+                        string _skill = characters.skills[j];
                         allSkill.Add(_skill);
                     }
                 }
@@ -160,6 +162,7 @@ namespace Terbaru{
             GameObject.Find("Quest Panel").SetActive(false);
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
             //UiManager.instance.updateEnergy(quest.jmlEnergy);
+            FindObjectOfType<PapanQuest>().changeInteractable(false);
             GameManager.instance.readyMission(NPC, quest);
             //NPC.Clear();
             

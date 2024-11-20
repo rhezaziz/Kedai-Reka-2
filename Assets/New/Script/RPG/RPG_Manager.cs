@@ -24,9 +24,13 @@ namespace Terbaru{
         public void initRPG(int index){
             map.openMaps(maps[index].id_maps);
 
-            foreach(var npc in maps[index].npcs){
-                npc.interactNPC(true);
-            }
+            // foreach(var npc in maps[index].npcs){
+            //     npc.interactNPC(true);
+            // }
+        }
+
+        public void initCharacterDialog(DialogObjectClick npc){
+            npc.interactNPC(true);
         }
 
         public void endRPG(int index){

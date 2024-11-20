@@ -32,13 +32,24 @@ namespace Terbaru{
         }
 
         public void action(VideoClip video){
-            testVideo = video;
+            Debug.Log("Play Video");
+            testVideo = video ? video : null;
+            UiManager.instance.ChinematicPanel.SetActive(true);
+            Debug.Log("on Step");
+            texture.Release();
+            texture.Create();
+            StartCoroutine(cutScene(true));
+
+        }
+
+        public void action(){
+            Debug.Log("Play Video");
+            //testVideo = video ? video : null;
             UiManager.instance.ChinematicPanel.SetActive(true);
             
             texture.Release();
             texture.Create();
-            StartCoroutine(cutScene());
-
+            StartCoroutine(cutScene(false));
         }
 
 
@@ -46,8 +57,22 @@ namespace Terbaru{
         //     texture.Release();
         //     texture.Create(); 
         // }
+        void ClearRenderTexture()
+        {
+            // Aktifkan RenderTexture
+            RenderTexture.active = texture;
 
+            // Bersihkan dengan warna hitam atau warna tertentu
+            GL.Clear(true, true, Color.black);
+
+            // Nonaktifkan RenderTexture
+            RenderTexture.active = null;
+        }
         public void playVideo(){
+            //RenderTexture.active = null;
+            
+            video.renderMode = VideoRenderMode.RenderTexture;
+            video.targetTexture = texture; 
             video.clip = testVideo;
 
             video.prepareCompleted += OnVideoPrepared;
@@ -55,9 +80,11 @@ namespace Terbaru{
             video.Prepare();
         }
 
-        IEnumerator cutScene(){
+        IEnumerator cutScene(bool adaVideo){
+            Debug.Log("Cut Scene");
             video.gameObject.SetActive(true);
             video.clip = testVideo;
+            FindObjectOfType<Controller>().currentState(state.Interaction);
             GameObject PanelUtama = UiManager.instance.panelUtama;
             float duration = (float)video.length;
             var camera = Camera.main;
@@ -72,11 +99,13 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(1.25f);
 
-            playVideo();
+            
+            if(adaVideo) playVideo();
 
             yield return new WaitForSeconds(duration + 0.5f);
-            texture.Release();
-            texture.Create(); 
+            ClearRenderTexture();
+            // texture.Release();
+            // texture.Create(); 
             video.gameObject.SetActive(false);
 
             UiManager.instance.Chinematic(false);

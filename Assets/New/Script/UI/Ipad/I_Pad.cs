@@ -34,7 +34,8 @@ namespace  Terbaru
             RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();
             iPad.DOPivotY(0f, 1.5f);
             //iPad.transform.DOScaleY(1f, 1.5f);
-            text_Tanggal.text = $"{profil.jmlHari}/November/2024";
+            int jmlHari = FindObjectOfType<DayManager>().day;
+            text_Tanggal.text = $"{jmlHari}/November/2024";
             initQuest();
         }
 

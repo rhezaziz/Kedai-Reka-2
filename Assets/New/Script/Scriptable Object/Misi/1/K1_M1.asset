@@ -15,14 +15,16 @@ MonoBehaviour:
   iD_Quiz: 0
   index: 0
   Reward: 3000
-  skills: 000000000200000006000000
+  skills:
+  - 'Kepemimpinan '
+  - 'Ramah '
   nama: 0700000003000000
   judulMisi: Memilih tim anggaran
   item: {fileID: 0}
-  Deskripsi: 1
+  Deskripsi: 
   jmlEnergy: 2
   sceneGame: Kasus1_1
   firstChangeScene: 1
   level: 0
   pointBonus: 600
-  isDone: 1
+  isDone: 0

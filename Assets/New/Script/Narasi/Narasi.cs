@@ -54,12 +54,16 @@ namespace Terbaru{
                 UiManager.instance.panelUtama.SetActive(false);
             
             }
+
+            
             chinematic = true;
             if(narasiDialog.dialogWithPerempuan){
                 StartCoroutine(mulaiDialogOnAsrama());
             } else{
                 StartCoroutine(mulai());
             }
+
+            FindObjectOfType<DialogManager>().panelDialog.SetActive(true);
            
         }
 
@@ -88,6 +92,7 @@ namespace Terbaru{
             chinematic = true;
             //FindObjectOfType<DialogManager>().StartDialog(tempDialog);
             // 
+            FindObjectOfType<DialogManager>().panelDialog.SetActive(true);
             if(narasiDialog.inAsrama){
                  if(narasiDialog.dialogWithPerempuan){
                     StartCoroutine(mulaiDialogOnAsrama());
@@ -115,6 +120,7 @@ namespace Terbaru{
             //FindObjectOfType<DialogManager>().StartDialog(tempDialog);
             
             //FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().panelDialog.SetActive(true);
             startNarasi(tempDialog);
         }
 
@@ -177,6 +183,7 @@ namespace Terbaru{
             Sekre.SetActive(false);
             cameraUtama.gameObject.SetActive(true);
             player.setPlayerOnFrontDoor();
+            Debug.Log("Ke Asrama");
 
             yield return new WaitForSeconds(1f);
             closeDialog();
@@ -199,6 +206,12 @@ namespace Terbaru{
         public void nextDialog(Dialog dialog){
             tempDialog = dialog;
             FindObjectOfType<DialogManager>().StartDialog(dialog);
+            chinematic = true;
+        }
+        public void nextDialog(NarasiDialog dialog){
+            tempDialog = dialog.narasi;
+            narasiDialog = dialog;
+            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
             chinematic = true;
         }
 

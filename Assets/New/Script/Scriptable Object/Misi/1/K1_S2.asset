@@ -15,7 +15,7 @@ MonoBehaviour:
   iD_Quiz: 4
   index: 0
   Reward: 5000
-  skills: 000000000600000002000000
+  skills: []
   nama: 0800000007000000
   judulMisi: Memeriksa kembali anggaran
   item: {fileID: 0}
@@ -25,4 +25,4 @@ MonoBehaviour:
   firstChangeScene: 1
   level: 0
   pointBonus: 125
-  isDone: 1
+  isDone: 0

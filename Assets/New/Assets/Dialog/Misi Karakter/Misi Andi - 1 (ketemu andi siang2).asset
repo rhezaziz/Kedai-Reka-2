@@ -1,0 +1,194 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Andi - 1 (ketemu andi siang2)
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: "Wah, berasa seperti nonton konser gratis! \nAlunan gitar kamu emang
+      gak perlu diraguin lagi deh."
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c998566e29096fa4691a6987c266d469, type: 3}
+    Nama: 4
+    sentences: Ah, kamu berlebihan, Thom. Ini cuma latihan kok!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Latihan saja sudah sebagus ini, hebat sih...
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Oh iya, btw kalian ada apa ke sini?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Jadi, sebenernya kita ini mau mengajak kamu untuk bergabung dengan
+      program yang akan kita lakukan.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Ohh.. program itu yah, aku juga sempat dengar anak-anak kampus bicarain
+      soal program itu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: Eh.. Sudah menyebar ternyata ya? Hehe~
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 082ec7a56944ce44ca1f7a09a34a4c1e, type: 3}
+    Nama: 4
+    sentences: Aku sebetulnya bisa sih, tapi ada satu masalah..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 082ec7a56944ce44ca1f7a09a34a4c1e, type: 3}
+    Nama: 4
+    sentences: Aku dan teman-teman band-ku berencana untuk gabung di fesitival bulan
+      depan.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7fe5a8d7cb8992647bb822348b1bcb22, type: 3}
+    Nama: 4
+    sentences: Jadi, sebelum bergabung dengan kalian, aku perlu mengabari mereka
+      dahulu untuk tidak dulu mendaftarkan band kami.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb27a22009123f24fa2fbbca25995001, type: 3}
+    Nama: 0
+    sentences: Ah, kita jadi sungkan, memangnya tidak apa-apa begitu?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Santai aja, kebetulan ada dua festival yang ingin kami ikuti..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 082ec7a56944ce44ca1f7a09a34a4c1e, type: 3}
+    Nama: 4
+    sentences: ..hanya saja, karena kurangnya budget yang kami miliki, kami jadi
+      harus memilih satu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 082ec7a56944ce44ca1f7a09a34a4c1e, type: 3}
+    Nama: 4
+    sentences: ..hanya saja, karena kurangnya budget yang kami miliki, kami jadi
+      harus memilih satu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7fe5a8d7cb8992647bb822348b1bcb22, type: 3}
+    Nama: 4
+    sentences: Ditambah persiapan kami yang belum matang dan program yang kalian
+      tawarkan..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: ..rasanya sekrang kami bisa memutuskan untuk bergabung dengan festival
+      yang kedua saja.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Ah begitu.. nah kalau begitu kita jadi merasa lega hehe.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: Nah tapi balik lagi ke masalah tadi-
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 7fe5a8d7cb8992647bb822348b1bcb22, type: 3}
+    Nama: 4
+    sentences: Karena handphone-ku baterainya sedang habis, aku jadi tidak bisa mengabari
+      mereka nih.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Kalau begitu pakai handphone-ku saja.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 197721b5bdbbc1a4e8273d93f3bfdcc9, type: 3}
+    Nama: 4
+    sentences: 'Inginnya sih begitu, tapi aku kan tidak ingat nomor handphone teman-temanku,
+      jadi cara satu-satunya aku harus isi baterai hpku nih.  '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c998566e29096fa4691a6987c266d469, type: 3}
+    Nama: 4
+    sentences: Dan masalahnya, tas ku ada di kelas, jadi sepertinya nanti saja.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Oke kalau begitu, terima kasih ya!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c998566e29096fa4691a6987c266d469, type: 3}
+    Nama: 4
+    sentences: Santai saja~
+    Kiri: 0

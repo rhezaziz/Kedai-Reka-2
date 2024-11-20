@@ -738,6 +738,7 @@ namespace Terbaru{
             GameManager.instance.tutorialOver();
             UiManager.instance.bantuanText("");
             ipad.interactable = true;
+            dindaData.selected = false;
             Destroy(this.gameObject);
         }
 

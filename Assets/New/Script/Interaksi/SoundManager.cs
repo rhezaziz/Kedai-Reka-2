@@ -47,7 +47,12 @@ public class SoundManager : MonoBehaviour
         effectSource.PlayOneShot(InvorenmentClip[index]);
     }
 
+    public void stopStx(){
+        effectSource.Stop();
+    }
+
     public void sfx(AudioClip clip){
+        effectSource.Stop();
         effectSource.PlayOneShot(clip);
     }
 

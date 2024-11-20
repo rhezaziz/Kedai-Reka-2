@@ -151,12 +151,15 @@ namespace Terbaru{
                 panelResult.gameObject.SetActive(false);
                 temp.Clear();
                 panelQuiz.SetActive(false);
-                FindObjectOfType<WaktuManager>().currentTime(1);
+                // FindObjectOfType<WaktuManager>().currentTime(1);
                 FindObjectOfType<DayManager>().updateMaps();
+                kembaliMaps.interactable = true;
             }
 
 
         }
+
+        public Button kembaliMaps;
 
         void nextSoal()
         {

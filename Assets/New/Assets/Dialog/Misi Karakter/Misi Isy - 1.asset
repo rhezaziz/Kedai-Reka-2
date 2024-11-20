@@ -1,0 +1,133 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Misi Isy - 1
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Halo Isy! Habis olahraga nih?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 543c317ff5a8e2d44b6ae332b7359ea4, type: 3}
+    Nama: 9
+    sentences: "Huff\u2026 Iya, baru selesai banget nih. \nIni lagi mau siap-siap
+      lagi buat kelas berikutnya."
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: "Wah kalau begitu boleh kita minta waktunya sebentar? \nAda yang mau
+      kita bicarain nih."
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6b8074f2bbf0ed147a10b820dbdaaa36, type: 3}
+    Nama: 9
+    sentences: Hm.. boleh, ada apa yah?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: 'Jadi kita ini sedang melakukan proses perekrutan untuk program pengabdian
+      masyarakat yang rencananya akan dilaksanakan bulan depan. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Nah kalau kamu berminat kita akan ada diskusi lebih detailnya nanti
+      di asrama.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: Ohh, boleh!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 4e26bc065867bcf449827c317406dddc, type: 3}
+    Nama: 9
+    sentences: Tapi sayangnya aku perlu menyelesaikan beberapa hal dulu nih..
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Tapi kamu kelihatan kelelahan banget lho, mungkin ada yang bisa kita
+      bantu?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: 'Ah, enggak kok, enggak begitu banyak yang harus aku lakuin. '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 8e63dd3fe2a86d54e9e12ed613641015, type: 3}
+    Nama: 9
+    sentences: 'Aku cuma perlu beli minuman protein di mini market setelah ini, lalu
+      mengumpulkan tugasku ke ruang dosen, dan mengembalikan barbell ini ke gudang! '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 543c317ff5a8e2d44b6ae332b7359ea4, type: 3}
+    Nama: 9
+    sentences: See? No big deal!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb27a22009123f24fa2fbbca25995001, type: 3}
+    Nama: 0
+    sentences: 'Itu sih gak sedikit Isy.. '
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Udah sekarang kamu istirahat dulu aja, biar kita yang bereskan semuanya!
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Betul tuh, pokoknya kamu santai aja disini, oke?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 543c317ff5a8e2d44b6ae332b7359ea4, type: 3}
+    Nama: 9
+    sentences: "Ahahaha\u2026 Oke oke deh, kalau begitu mohon bantuannya ya teman-temann~"
+    Kiri: 0

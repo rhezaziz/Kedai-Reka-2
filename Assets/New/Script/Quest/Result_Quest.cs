@@ -27,6 +27,8 @@ namespace Terbaru{
         public UnityEngine.UI.Image gambarItem;
 
         public Transform Camera;
+
+        public bool isRPG;
         public List<UiCharacter> uiS = new List<UiCharacter>();
 
         Sprite getSprite(Nama nama){
@@ -76,6 +78,7 @@ namespace Terbaru{
 
             pointBonusText.text = currentQuest.quest.pointBonus.ToString();
             pointText.text = currentQuest.quest.Reward.ToString();
+            isRPG = currentQuest.isRPG;
             //klikResult.onClick.AddListener(() => tambahPoint(currentQuest));
         }
 
@@ -90,10 +93,13 @@ namespace Terbaru{
                 UiManager.instance.Chinematic(true);
                 objectPanel.SetActive(false);
                 Debug.Log("Zoom Out");
-                FindObjectOfType<UiManager>().panelUtama.SetActive(true);
-                control.currentState(state.Default);
-                control.playerMove.move = true;
-                Camera.transform.DOLocalMoveZ(-10f, 1f);
+                if(!isRPG){
+                    FindObjectOfType<UiManager>().panelUtama.SetActive(true);
+                    control.currentState(state.Default);
+                    control.playerMove.move = true;
+                    Camera.transform.DOLocalMoveZ(-10f, 1f);
+                }
+                
                 
             });
 

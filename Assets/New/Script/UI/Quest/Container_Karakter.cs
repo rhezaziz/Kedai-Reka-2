@@ -71,9 +71,9 @@ namespace Terbaru{
             NamaInfoKarakter.text = karakter.namaCharacter;
             pilihBtn.onClick.AddListener(() => pilih());
             kembaliBtn.onClick.AddListener(() => closeInfo());
-            for(int i = 0; i < karakter.skillCharacter.Length; i++)
+            for(int i = 0; i < karakter.skills.Length; i++)
             {
-                Kemampuan _skill = karakter.skills[i];
+                string _skill = karakter.skills[i];
                 skill += " - " + _skill.ToString() + "<br>";
             }
             skillKarakter.text = skill;

@@ -63,7 +63,7 @@ public class Container_Karakter : MonoBehaviour
         kembaliBtn.onClick.AddListener(() => closeInfo());
         for(int i = 0; i < karakter.skillCharacter.Length; i++)
         {
-            Kemampuan _skill = karakter.skills[i];
+            string _skill = karakter.skills[i];
             skill += " - " + _skill.ToString() + "<br>";
         }
         skillKarakter.text = skill;
