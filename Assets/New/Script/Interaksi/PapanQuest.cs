@@ -69,7 +69,7 @@ namespace Terbaru{
                     int index = HariEvent.IndexOf(hari);
                     //Debug.Log(index);
                     FindObjectOfType<Narasi>().haveNarasi(index);
-                    changeInteractable(false);
+                    //changeInteractable(false);
                 }
                 else
                 {
