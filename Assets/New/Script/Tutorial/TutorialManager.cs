@@ -652,6 +652,7 @@ namespace Terbaru{
         public GameObject dindaQuest;
         void Day3_8(){
             Debug.Log("Day3_8");
+            PintuKamar.changeInteractable(false);
             UiManager.instance.bantuanText("Cari Dinda");
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day3_8");

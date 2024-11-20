@@ -7509,7 +7509,7 @@ MonoBehaviour:
     - sering mencatat
   - Nama: Michael
     ImageInSelection: {fileID: -1793745158, guid: 2dc28535a79349b4fa18236541850701, type: 3}
-    SelectedImage: {fileID: 1066887289, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
+    SelectedImage: {fileID: -674086167, guid: 0fc64e2d079a84747b0be4bfe09a43a4, type: 3}
     sesuai: 0
     sifat:
     - media literasi

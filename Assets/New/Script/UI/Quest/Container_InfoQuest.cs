@@ -162,7 +162,7 @@ namespace Terbaru{
             GameObject.Find("Quest Panel").SetActive(false);
             FindObjectOfType<Player_Interaction>().onInteraction(false, null);
             //UiManager.instance.updateEnergy(quest.jmlEnergy);
-            //FindObjectOfType<PapanQuest>().changeInteractable(false);
+            FindObjectOfType<PapanQuest>().changeInteractable(false);
             GameManager.instance.readyMission(NPC, quest);
             //NPC.Clear();
             
