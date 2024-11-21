@@ -2516,7 +2516,6 @@ MonoBehaviour:
   soal: {fileID: 940521235}
   panelResult: {fileID: 581407189}
   Result: {fileID: 1037991759}
-  kembaliMaps: {fileID: 165267570}
 --- !u!114 &21220971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -39650,6 +39649,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact:
     - {fileID: 1690657769}
   - nama: Siram Tanaman
@@ -39680,6 +39694,21 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1488554087}
+          m_TargetAssemblyTypeName: Terbaru.DailyQuest, Assembly-CSharp
+          m_MethodName: changeInteractable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
@@ -39712,6 +39741,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact:
     - {fileID: 1690657769}
   - nama: Siram Tanaman
@@ -39730,6 +39774,21 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1488554087}
+          m_TargetAssemblyTypeName: Terbaru.DailyQuest, Assembly-CSharp
+          m_MethodName: changeInteractable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
@@ -39750,6 +39809,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 21220972}
+          m_TargetAssemblyTypeName: Terbaru.NPCDialogManager, Assembly-CSharp
+          m_MethodName: getAlex
+          m_Mode: 3
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact: []
   - nama: Siram Tanaman
     day: 14
@@ -39767,6 +39841,21 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1488554087}
+          m_TargetAssemblyTypeName: Terbaru.DailyQuest, Assembly-CSharp
+          m_MethodName: changeInteractable
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
     interact:
     - {fileID: 1488554085}
@@ -39799,6 +39888,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact:
     - {fileID: 1690657769}
   - nama: Nyapu
@@ -39829,6 +39933,21 @@ MonoBehaviour:
             m_FloatArgument: 0
             m_StringArgument: 
             m_BoolArgument: 1
+          m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
           m_CallState: 2
     interact:
     - {fileID: 1690657769}
@@ -39861,6 +39980,21 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact:
     - {fileID: 1690657769}
   - nama: Nyapu
@@ -39892,11 +40026,25 @@ MonoBehaviour:
             m_StringArgument: 
             m_BoolArgument: 1
           m_CallState: 2
+    eventEnd:
+      m_PersistentCalls:
+        m_Calls:
+        - m_Target: {fileID: 1690657769}
+          m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+          m_MethodName: SetActive
+          m_Mode: 6
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: 
+            m_BoolArgument: 0
+          m_CallState: 2
     interact:
     - {fileID: 1690657769}
   Dosen: {fileID: 0}
   day: 0
-  kembaliMaps: {fileID: 165267570}
 --- !u!114 &894212851
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -65567,7 +65715,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 2.4738922, y: 1.2344217}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -65578,7 +65726,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.3345947, y: 1.080637}
   m_EdgeRadius: 0
 --- !u!1 &1536172354
 GameObject:

@@ -19,7 +19,7 @@ namespace Terbaru{
         public GameObject Dosen;
 
         public int day = 0;
-        public UnityEngine.UI.Button kembaliMaps;
+        //public UnityEngine.UI.Button kembaliMaps;
 
         public int currectDay(){
             return day;
@@ -35,7 +35,7 @@ namespace Terbaru{
         }
 
         public void updateDay(){
-            kembaliMaps.enabled = false;
+            //kembaliMaps.enabled = false;
             //FindObjectOfType<WaktuManager>().currentTime(0);
             initContentQuest(false);
             //
@@ -100,15 +100,17 @@ namespace Terbaru{
         public void initContentQuest(bool thisDay){
             foreach(var quest in quests){
                 
-                int tempDay = thisDay ? day : day - 1;
+                //int tempDay = thisDay ? day : day - 1;
 
-                if(quest.day == Mathf.Clamp(tempDay, 0, 30)){
+                if(quest.day == Mathf.Clamp(day, 0, 30)){
                     foreach(var item in quest.interact){
                         
                         item.GetComponent<Interaction>().changeInteractable(thisDay);
                     }
                     //Debug.Log(quest.nama +" : " + quest.day);
                     if (thisDay) quest.events?.Invoke();
+
+                    else if(!thisDay) quest.eventEnd?.Invoke();
                 }
             }
         }
@@ -132,7 +134,7 @@ namespace Terbaru{
         public string nama;
         public int day;
         public UnityEvent events;
-
+        public UnityEvent eventEnd;
         public List<GameObject> interact = new List<GameObject>();
     }
 }

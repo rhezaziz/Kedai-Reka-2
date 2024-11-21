@@ -153,13 +153,13 @@ namespace Terbaru{
                 panelQuiz.SetActive(false);
                 // FindObjectOfType<WaktuManager>().currentTime(1);
                 FindObjectOfType<DayManager>().updateMaps();
-                kembaliMaps.interactable = true;
+                //kembaliMaps.interactable = true;
             }
 
 
         }
 
-        public Button kembaliMaps;
+        //public Button kembaliMaps;
 
         void nextSoal()
         {
