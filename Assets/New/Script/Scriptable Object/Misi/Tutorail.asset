@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 5
   index: 0
   Reward: 500
-  skills: 000000000000000000000000
+  skills: []
   nama: 0900000001000000
   judulMisi: Istirahat
+  judulMisiName: Kasus Tutorial
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

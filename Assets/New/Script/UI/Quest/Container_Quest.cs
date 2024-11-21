@@ -19,8 +19,8 @@ namespace Terbaru{
         public void initContent(Quest quest, int value)
         {
             index = value;
-            judul.text = quest.judulMisi;
-            Deskripsi.text = quest.Deskripsi;
+            judul.text = quest.judulMisiName;
+            Deskripsi.text = quest.judulMisi;
             Reward.text = quest.Reward.ToString("n0", info);
             button.onClick.AddListener(() => pilihQuest(quest));
         }

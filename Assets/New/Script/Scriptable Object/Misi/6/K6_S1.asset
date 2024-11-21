@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 25
   index: 0
   Reward: 6000
-  skills: 000000000000000000000000
+  skills: []
   nama: 08000000050000000900000003000000
   judulMisi: Mempromosikan produk
+  judulMisiName: Kasus Harian 6
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

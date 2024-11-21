@@ -20,6 +20,7 @@ MonoBehaviour:
   - 'Ramah '
   nama: 0700000003000000
   judulMisi: Memilih tim anggaran
+  judulMisiName: Kasus Harian 1
   item: {fileID: 0}
   Deskripsi: 
   jmlEnergy: 2

@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 13
   index: 0
   Reward: 3500
-  skills: 000000000000000000000000
+  skills: []
   nama: 090000000c000000
   judulMisi: 'Menyiapkan perlangkapan survei '
+  judulMisiName: Kasus Harian 4
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

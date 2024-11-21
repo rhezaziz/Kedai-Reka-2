@@ -39,6 +39,15 @@ namespace Terbaru{
         
         Semua,
         Abdan,
+        Putri,
+        Budi,
+        Siti,
+        Maria,
+        Shelly,
+        Kurir,
+        Apoteker,
+        Satpam,
+        Warga
     }
 
     [System.Serializable]

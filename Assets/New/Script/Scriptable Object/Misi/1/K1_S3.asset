@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 5
   index: 0
   Reward: 5000
-  skills: 000000000600000002000000
+  skills: []
   nama: 080000000300000007000000
   judulMisi: Merencanakan keuangan
+  judulMisiName: Kasus Harian 1
   item: {fileID: 0}
   Deskripsi: 6
   jmlEnergy: 2

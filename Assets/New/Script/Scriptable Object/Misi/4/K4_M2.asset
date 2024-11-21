@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 14
   index: 0
   Reward: 3500
-  skills: 000000000000000000000000
+  skills: []
   nama: 0b00000006000000
   judulMisi: 'Memilih kendaraan yang digunakan survey '
+  judulMisiName: Kasus Harian 4
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

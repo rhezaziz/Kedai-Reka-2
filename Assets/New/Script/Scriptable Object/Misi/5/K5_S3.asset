@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 22
   index: 0
   Reward: 5500
-  skills: 000000000000000000000000
+  skills: []
   nama: 0300000007000000
   judulMisi: Menyiapkan takaran yang akan dipakai
+  judulMisiName: Kasus Harian 5
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

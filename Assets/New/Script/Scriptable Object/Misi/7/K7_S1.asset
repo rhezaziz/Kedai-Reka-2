@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 29
   index: 0
   Reward: 6000
-  skills: 000000000000000000000000
+  skills: []
   nama: 04000000030000000b000000
   judulMisi: 'Membuat laporan kegiatan '
+  judulMisiName: Kasus Harian 7
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

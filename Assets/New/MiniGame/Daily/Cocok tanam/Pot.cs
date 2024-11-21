@@ -34,7 +34,7 @@ namespace minigame{
 
         IEnumerator count(){
             yield return new WaitForSeconds(2f);
-            FindObjectOfType<MiniGame>().kembaliMiniGame("Tanaman");
+            QuestManager.instance.CheckActionQuest(action);
         }
     }
 }

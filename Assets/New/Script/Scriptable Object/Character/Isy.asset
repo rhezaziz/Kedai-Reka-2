@@ -22,7 +22,7 @@ MonoBehaviour:
   - A
   - B
   - C
-  selected: 0
+  selected: 1
   Posisi: {x: 85, y: 4.9, z: -2}
   objectNPC: {fileID: 8361436975469191721, guid: 87fd7a64d1db4fd468d572491520d3c3, type: 3}
   hobbyCharacter: Membantu
@@ -40,7 +40,7 @@ MonoBehaviour:
   imageCharacter: {fileID: 21300000, guid: 4a0e03640f183c74ab6482e16c8ff1e3, type: 3}
   imageInfoCharacter: {fileID: 21300000, guid: a3cea9ed24ec9a74c85cfacb85f29a29, type: 3}
   isLockSkill: 1
-  characterLock: 1
+  characterLock: 0
   info: 
   cost: 0
   iconKarakterinKasus: {fileID: 21300000, guid: d47e92077180dcd4f882bc1e705e6f4f, type: 3}

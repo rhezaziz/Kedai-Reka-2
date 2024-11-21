@@ -18,6 +18,7 @@ MonoBehaviour:
   skills: []
   nama: 0500000003000000
   judulMisi: 'Restock buku agenda '
+  judulMisiName: Kasus Harian 1
   item: {fileID: 11400000, guid: 4a8606e5f8962ca489ce395b712a7521, type: 2}
   Deskripsi: 3
   jmlEnergy: 2

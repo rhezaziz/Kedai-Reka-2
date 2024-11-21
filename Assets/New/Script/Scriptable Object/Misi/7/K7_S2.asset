@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 30
   index: 0
   Reward: 6000
-  skills: 000000000000000000000000
+  skills: []
   nama: 090000000700000005000000
   judulMisi: Mempersiapkan barang untuk pergi
+  judulMisiName: Kasus Harian 7
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

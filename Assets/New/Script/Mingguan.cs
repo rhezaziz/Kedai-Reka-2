@@ -24,6 +24,8 @@ namespace Terbaru {
 
         [Header("Minggu ke 3")]
         public UnityEngine.UI.Button uang;
+        public UnityEngine.UI.Button Character;
+        public listCharacters[] characters;
         public GameObject paneLquiz;
         public VideoClip minggu3;
         public Transform Player;
@@ -40,22 +42,23 @@ namespace Terbaru {
             }
 
             else if(index == 14){
-                // bool haveIt = GameManager.instance.haveItem(itemType.Bibit) &&
-                //             GameManager.instance.haveItem(itemType.Water_can) &&
-                //             GameManager.instance.haveItem(itemType.Pupuk);
+                bool haveIt = GameManager.instance.haveItem(itemType.Bibit) &&
+                            GameManager.instance.haveItem(itemType.Water_can) &&
+                            GameManager.instance.haveItem(itemType.Pupuk);
 
-                // if(haveIt){
-                //     eventsReady[1]?.Invoke();
-                //     //FindObjectOfType<VideoManager>().action(minggu2);
-                //     playDialogMinggu2();
-                // }
+                if (haveIt)
+                {
+                    eventsReady[1]?.Invoke();
+                    //FindObjectOfType<VideoManager>().action(minggu2);
+                    playDialogMinggu2();
+                }
             }
 
             else if(index == 21){
-                // eventsReady[2]?.Invoke();
-                // //FindObjectOfType<VideoManager>().action(minggu3);
-                // playDialogMinggu3();
-                
+                eventsReady[2]?.Invoke();
+                //FindObjectOfType<VideoManager>().action(minggu3);
+                playDialogMinggu3();
+
             }
         }
         public void startEvent(){
@@ -63,16 +66,34 @@ namespace Terbaru {
         }
 
         public void QuizKucing(){
-           Invoke("mulaiQuiz", 6f); 
+           Invoke("mulaiQuiz", 9f); 
         }
 
         public void mulaiQuiz(){
+            
             paneLquiz.SetActive(true);
+            UiManager.instance.Chinematic(true);
             bool haveIt = GameManager.instance.profil.Saldo >= 10000;
             uang.interactable = haveIt;
             uang.onClick.AddListener(() => {
-                UiManager.instance.UpdateSaldo(-10000);
+                int hasil = GameManager.instance.profil.Saldo - 10000;
+                UiManager.instance.UpdateSaldo(hasil);
+                jawabQuiz(false);
             });
+        }
+
+        public void jawabQuiz(bool isChoose)
+        {
+
+            FindObjectOfType<DialogManager>().closeDialog();
+            UiManager.instance.Chinematic(false);
+            if (isChoose)
+            {
+                foreach(var i in characters)
+                {
+                    i.selected = true;
+                }
+            }
         }
 
 

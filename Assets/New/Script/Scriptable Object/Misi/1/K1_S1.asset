@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 3
   index: 0
   Reward: 5000
-  skills: 02000000060000000a000000
+  skills: []
   nama: 0b00000009000000
   judulMisi: Meluruskan kesalahpahaman
+  judulMisiName: Kasus Harian 1
   item: {fileID: 0}
   Deskripsi: 4
   jmlEnergy: 2

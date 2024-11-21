@@ -15,9 +15,10 @@ MonoBehaviour:
   iD_Quiz: 21
   index: 0
   Reward: 5500
-  skills: 000000000000000000000000
+  skills: []
   nama: 080000000c000000
   judulMisi: Improve hasil pembuatan pertama
+  judulMisiName: Kasus Harian 5
   item: {fileID: 0}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2

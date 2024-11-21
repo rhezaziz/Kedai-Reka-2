@@ -19,6 +19,7 @@ MonoBehaviour:
   - 
   nama: 0b00000005000000
   judulMisi: Memilih bendahara
+  judulMisiName: Kasus Harian 1
   item: {fileID: 11400000, guid: 77a92f9ab87129c46b0609c914b01d24, type: 2}
   Deskripsi: 2
   jmlEnergy: 2

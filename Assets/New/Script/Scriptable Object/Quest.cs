@@ -13,6 +13,7 @@ public class Quest : ScriptableObject
     public Nama[] nama;
    // public string[] skills;
     public string judulMisi;
+    public string judulMisiName;
     public Items item;
 
     [TextArea(9, 10)]

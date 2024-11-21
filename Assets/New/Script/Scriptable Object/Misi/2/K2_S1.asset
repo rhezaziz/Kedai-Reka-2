@@ -18,6 +18,7 @@ MonoBehaviour:
   skills: []
   nama: 0c00000008000000
   judulMisi: 'Research desain bersama '
+  judulMisiName: Kasus Harian 2
   item: {fileID: 11400000, guid: 17c4bf8cc02e7814f9ce3ebb87a23ef5, type: 2}
   Deskripsi: Kamu baru nyampe, pergi ke kamarmu untuk istirahat
   jmlEnergy: 2
