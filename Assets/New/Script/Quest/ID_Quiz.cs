@@ -13,7 +13,10 @@ namespace Terbaru{
 
         k6_M1, K6_M2, K6_S1, K6_S2,
 
-        k7_M1, K7_M2, K7_S1, K7_S2
+        k7_M1, K7_M2, K7_S1, K7_S2,
+
+
+        Default
 
     }
 }
