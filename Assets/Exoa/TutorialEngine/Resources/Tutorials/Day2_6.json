@@ -7,5 +7,10 @@
         "isReplacingNextButton": true
     },
 {"target_obj":"","text":"Kita sudah ada di lantai 2","isClickable":false,"isReplacingNextButton":false},
-{"target_obj":"Maps2","text":"Klik ini untuk pindah ke kelas","isClickable":true,"isReplacingNextButton":true}
+    {
+        "target_obj": "Maps 1",
+        "text": "Klik ini untuk pindah ke kelas",
+        "isClickable": true,
+        "isReplacingNextButton": true
+    }
 ]}

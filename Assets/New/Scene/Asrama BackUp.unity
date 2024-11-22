@@ -1630,7 +1630,37 @@ MonoBehaviour:
       index: 0
       gambarMaps: {fileID: 21300000, guid: dc6c884215c0dac4fbe333605cb958c3, type: 3}
       mapLokasi: {fileID: 5843753146016491378}
-      events: []
+      events:
+      - day: 28
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 7023688701332802297}
+              m_TargetAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+              m_MethodName: startDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+        done: 0
+        loop: 0
     - nama: Perpustakaan
       valueMaps:
         namaTempat: 
@@ -2333,17 +2363,6 @@ MonoBehaviour:
       gambarMaps: {fileID: 21300000, guid: d04e2f658042f5a4abb327e37dfc55a1, type: 3}
       mapLokasi: {fileID: 1790545407641550022}
       events: []
-    - nama: Toilet
-      valueMaps:
-        namaTempat: 
-        id: 20
-        ambience: {fileID: 0}
-        active: 0
-        warning: 0
-      index: 0
-      gambarMaps: {fileID: 21300000, guid: d04e2f658042f5a4abb327e37dfc55a1, type: 3}
-      mapLokasi: {fileID: 1790545407641550022}
-      events: []
   - namaMaps: Lantai 3
     maps:
     - nama: Audio Visual
@@ -2401,7 +2420,7 @@ MonoBehaviour:
       gambarMaps: {fileID: 21300000, guid: 4bfbb1b11adb8f64dbf71f8b9cf86c49, type: 3}
       mapLokasi: {fileID: 8990618426221228273}
       events:
-      - day: 6
+      - day: 33
         events:
           m_PersistentCalls:
             m_Calls:
@@ -40105,7 +40124,7 @@ MonoBehaviour:
   - mapsId: 100000000b000000
     itemSpawn: []
     orang: []
-  - mapsId: 1000000019000000
+  - mapsId: 100000001900000011000000
     itemSpawn: []
     orang: []
   - mapsId: 10000000080000001900000011000000
@@ -40178,9 +40197,8 @@ MonoBehaviour:
     itemSpawn:
     - item: {fileID: 689225908}
     orang: []
-  - mapsId: 1000000016000000
-    itemSpawn:
-    - item: {fileID: 689225908}
+  - mapsId: 10000000160000000c000000
+    itemSpawn: []
     orang: []
   - mapsId: 1000000016000000
     itemSpawn: []
@@ -55665,7 +55683,7 @@ GameObject:
   - component: {fileID: 1322570283}
   - component: {fileID: 1322570280}
   m_Layer: 5
-  m_Name: Maps2
+  m_Name: Maps 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -87183,7 +87201,7 @@ GameObject:
   - component: {fileID: 2071024180}
   - component: {fileID: 2071024183}
   m_Layer: 5
-  m_Name: Maps 1
+  m_Name: Maps2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -113262,6 +113280,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2279374473776460386}
   - component: {fileID: 7023688701332802296}
+  - component: {fileID: 7023688701332802297}
   m_Layer: 0
   m_Name: BG_LT1_PEKARANGAN_KAMPUS
   m_TagString: Untagged
@@ -117707,7 +117726,7 @@ MonoBehaviour:
             m_Calls:
             - m_Target: {fileID: 894212847}
               m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-              m_MethodName: pindah
+              m_MethodName: pindahMaps
               m_Mode: 5
               m_Arguments:
                 m_ObjectArgument: {fileID: 0}
@@ -123152,6 +123171,92 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7023688701332802297
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5180009916032913010}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05b859443be9d574a9e3bf93aeac2ba0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: 7149a88c029f805459d278bbc75f8e23, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      isRPG: 0
+      Index: 0
+      proses:
+      - Action: minigame
+        ProcessEventStart:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahDialogToMiniGame
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Minggu 4
+                m_BoolArgument: 0
+              m_CallState: 2
+        ProcessEventHelper:
+          m_PersistentCalls:
+            m_Calls: []
+        ProcessEnd:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212847}
+              m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
+              m_MethodName: pindahMaps
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Minggu 4
+                m_BoolArgument: 0
+              m_CallState: 2
+            - m_Target: {fileID: 165267570}
+              m_TargetAssemblyTypeName: UnityEngine.UI.Selectable, UnityEngine.UI
+              m_MethodName: set_interactable
+              m_Mode: 6
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: Quiz
+                m_BoolArgument: 1
+              m_CallState: 2
+            - m_Target: {fileID: 21220967}
+              m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+              m_MethodName: bantuanText
+              m_Mode: 5
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 1
+              m_CallState: 2
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  extendAction:
+    m_PersistentCalls:
+      m_Calls: []
+  onDialog: 1
+  Indikator: {fileID: 0}
 --- !u!1 &7024963238837222095
 GameObject:
   m_ObjectHideFlags: 0

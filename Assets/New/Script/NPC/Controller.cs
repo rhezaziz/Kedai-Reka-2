@@ -28,6 +28,8 @@ namespace Terbaru
         bool onDialog;
 
         WorldPos sorting = new WorldPos();
+
+        public bool outside;
         float timer;
         private void Awake()
         {
@@ -65,7 +67,7 @@ namespace Terbaru
                 currentCondition(state);
             }
 
-            sprite.sortingOrder = sorting.valueLayer(transform.position.z);
+            if(!outside) sprite.sortingOrder = sorting.valueLayer(transform.position.z);
 
         }
 

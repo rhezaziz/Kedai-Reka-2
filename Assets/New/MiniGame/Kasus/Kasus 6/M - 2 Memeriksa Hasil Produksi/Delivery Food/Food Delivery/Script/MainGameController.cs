@@ -13,6 +13,8 @@ public class MainGameController : MonoBehaviour
 
     // freeplay goal ballance
     public int freeplayGoalBallance = 10000;
+
+    public bool weekly;
     static public int staticFreeplayGoalBallance; //To use freeplayGoalBallance in other classes 
                                                   //without needing the gameObject, while preserving the public type											//of the original variable "endlessGoalBallance"
                                                   //******************//
@@ -192,8 +194,17 @@ public class MainGameController : MonoBehaviour
     }
 
     public void Action(){
-        QuestManager.instance.CheckAction(action);
-        QuestManager.instance.currentQuest.quest.pointBonus += point;
+        if (weekly)
+        {
+
+            QuestManager.instance.CheckAction(action);
+            QuestManager.instance.currentQuest.quest.pointBonus += point;
+        }
+        else
+        {
+            QuestManager.instance.CheckActionQuest(action);
+
+        }
     }
 
     

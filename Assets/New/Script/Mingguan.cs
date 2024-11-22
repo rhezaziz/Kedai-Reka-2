@@ -60,6 +60,15 @@ namespace Terbaru {
                 playDialogMinggu3();
 
             }
+
+            else if (index == 28)
+            {
+                UiManager.instance.bantuanText("Pergi Ke Pekarangan");
+                //eventsReady[2]?.Invoke();
+                ////FindObjectOfType<VideoManager>().action(minggu3);
+                //playDialogMinggu3();
+
+            }
         }
         public void startEvent(){
             Invoke("mulaiEvent", 7f);
