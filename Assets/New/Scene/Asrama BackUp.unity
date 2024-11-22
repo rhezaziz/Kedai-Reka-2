@@ -38455,7 +38455,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
-  isTutorial: 1
+  isTutorial: 0
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -65660,7 +65660,19 @@ MonoBehaviour:
           m_Calls: []
       ProcessEnd:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 21220967}
+            m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+            m_MethodName: bantuanText
+            m_Mode: 5
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - Action: minigame
       ProcessEventStart:
         m_PersistentCalls:
@@ -65716,7 +65728,31 @@ MonoBehaviour:
           m_Calls: []
       ProcessEnd:
         m_PersistentCalls:
-          m_Calls: []
+          m_Calls:
+          - m_Target: {fileID: 1488554085}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 1
+            m_CallState: 2
+          - m_Target: {fileID: 1522715389}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     - Action: Talk
       ProcessEventStart:
         m_PersistentCalls:
@@ -67605,7 +67641,19 @@ MonoBehaviour:
       proses: []
     events:
       m_PersistentCalls:
-        m_Calls: []
+        m_Calls:
+        - m_Target: {fileID: 21220967}
+          m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+          m_MethodName: bantuanText
+          m_Mode: 5
+          m_Arguments:
+            m_ObjectArgument: {fileID: 0}
+            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+            m_IntArgument: 0
+            m_FloatArgument: 0
+            m_StringArgument: Pergi Ke Tanaman
+            m_BoolArgument: 0
+          m_CallState: 2
   eventMinggu2:
     m_PersistentCalls:
       m_Calls:
@@ -67619,6 +67667,18 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 21220967}
+        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+        m_MethodName: bantuanText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: Pergi Ke Tanaman
           m_BoolArgument: 0
         m_CallState: 2
   uang: {fileID: 890237331}

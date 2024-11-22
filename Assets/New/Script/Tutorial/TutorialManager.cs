@@ -92,6 +92,8 @@ namespace Terbaru{
                 i.characterLock = true;
                 i.selected = false;
             }
+
+            ipad.interactable = false;
         }
         public void playDay1_1()
         {

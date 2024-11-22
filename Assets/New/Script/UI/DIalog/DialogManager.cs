@@ -174,6 +174,7 @@ namespace Terbaru{
         }
 
         public void closeDialog(){
+            uiDialog.ResetDialog();
             uiDialog.gameObject.SetActive(false);
             done = true;
             btnNextDialog.gameObject.SetActive(true);

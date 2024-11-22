@@ -18,7 +18,7 @@ MonoBehaviour:
   spawnPoint: []
   gambarItem: {fileID: 21300000, guid: 69af94c0d9c380f4dbbd72ded93ec291, type: 3}
   isSpawn: 0
-  isShop: 1
+  isShop: 0
   isInventory: 1
   Harga: 0
   Terbeli: 0

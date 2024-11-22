@@ -54,8 +54,10 @@ namespace Terbaru{
         }
 
         public void ResetDialog(){
+            Debug.Log("ResetDIalog");
             for(int i = 0; i < components.textNama.Length; i++){
                 components.textNama[i].text = "";
+                components.textNama[i].transform.parent.gameObject.SetActive(false);
                 components.GambarCharacter[i].gameObject.SetActive(false);
                 components.panelDialog[i].gameObject.SetActive(false); 
             }
