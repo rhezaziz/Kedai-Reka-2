@@ -84,7 +84,7 @@ namespace Terbaru{
 
 
             activeSprite.gameObject.SetActive(true);
-            namaCharacter.gameObject.SetActive(true);
+            namaCharacter.transform.parent.gameObject.SetActive(true);
             bool haveSprite = data.GambarKarakter != null;
             activeSprite.enabled = haveSprite;
             activeSprite.sprite = data.GambarKarakter;
