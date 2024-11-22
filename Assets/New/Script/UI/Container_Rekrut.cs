@@ -33,6 +33,7 @@ namespace Terbaru{
                 Rekrut.GetComponent<Button>().interactable = true;
                 Foto.material = RekrutManager.matTemp;
                 Foto.transform.parent.GetComponent<Image>().enabled = true;
+
             
             }
         }

@@ -21,6 +21,7 @@ MonoBehaviour:
   - A
   - B
   - C
+  onComputer: 1
   selected: 0
   Posisi: {x: 150, y: 4.41, z: 0}
   objectNPC: {fileID: 1783441369174612678, guid: f4d2d1e04b68ec342a513e43e9ed4bb0, type: 3}

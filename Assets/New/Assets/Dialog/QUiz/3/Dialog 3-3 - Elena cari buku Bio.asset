@@ -57,7 +57,7 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
     Nama: 1
-    sentences: Duh maksud dia dimana yaa..?
+    sentences: Duh maksud dia di mana yaa..?
     Kiri: 1
   - narasi:
       narasiText: 

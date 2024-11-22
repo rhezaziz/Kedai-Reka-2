@@ -34,6 +34,12 @@ namespace Terbaru{
             checkTutorial();
         }
 
+
+        public void DestroyThisObject()
+        {
+            Destroy(gameObject);
+        }
+
         void checkTutorial(){
             foreach(var interact in interactions){
                 //interact.GetComponent<Interaction>().isTutorial(!isTutorial);

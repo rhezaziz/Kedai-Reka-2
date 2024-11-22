@@ -50,24 +50,33 @@ public class RekrutManager : MonoBehaviour
             }
 
             for(int i = 0; i < temp.Count; i++){
-                GameObject panel = Instantiate(container);
-                listProfil.Add(panel);
-                panel.SetActive(true);
-                panel.name = i.ToString();
+                if (temp[i].onComputer)
+                {
+                    GameObject panel = Instantiate(container);
+                    panel.SetActive(temp[i].onComputer);
+                    listProfil.Add(panel);
+                    panel.SetActive(true);
+                    panel.name = i.ToString();
 
-                var character = panel.GetComponent<Container_Rekrut>();
-                character.initData(temp[i]);
+                    var character = panel.GetComponent<Container_Rekrut>();
+                    character.initData(temp[i]);
+
+                    panel.transform.SetParent(parent);
+                    panel.transform.localScale = Vector2.one;
+                }
                 
-                panel.transform.SetParent(parent);
-                panel.transform.localScale = Vector2.one;
             }
         }
 
         void updateListCharacter(List<listCharacters> characters){
             for(int i = 0; i < characters.Count; i++){
-                var temp = listProfil[i].GetComponent<Container_Rekrut>();
-                if(temp.isLock != characters[i].characterLock){
-                    temp.initData(characters[i]);
+                if (characters[i].onComputer)
+                {
+                    var temp = listProfil[i].GetComponent<Container_Rekrut>();
+                    if (temp.isLock != characters[i].characterLock)
+                    {
+                        temp.initData(characters[i]);
+                    }
                 }
             }
         }

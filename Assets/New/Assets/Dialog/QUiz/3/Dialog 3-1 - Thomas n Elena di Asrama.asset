@@ -125,19 +125,8 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 5d78e737f54fe9f45b187cca0c538ddb, type: 3}
     Nama: 3
-    sentences: 
-    Kiri: 0
-  - narasi:
-      narasiText: 
-      VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: 5d78e737f54fe9f45b187cca0c538ddb, type: 3}
-    Nama: 3
-    sentences: 'Elena maaf aku mau ngabarin, motor aku mogok, kayanya aku gak
-
-      bisa
-      ikut hadir meeting untuk hari ini aja. Aku mohon maaf sekali yah,
-
-      Elena.'
+    sentences: Elena maaf aku mau ngabarin, motor aku mogok, kayanya aku gak bisa
+      ikut hadir meeting untuk hari ini aja. Aku mohon maaf sekali yah, Elena.
     Kiri: 0
   - narasi:
       narasiText: 
@@ -199,14 +188,6 @@ MonoBehaviour:
     Nama: 1
     sentences: Eh bentar, bukannya rumah Michael dan Alex satu arah yah?
     Kiri: 0
-  - narasi:
-      narasiText: 
-      VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
-    Nama: 0
-    sentences: Oh iyah! Jarak dari kampus ke rumahnya Alex juga gak gitu jauh sih,
-      apa aku aja yah yang jemput, kurang lebih paling 20 menitan sih?
-    Kiri: 1
   - narasi:
       narasiText: 
       VO: {fileID: 0}

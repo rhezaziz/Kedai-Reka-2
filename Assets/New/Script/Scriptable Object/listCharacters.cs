@@ -15,6 +15,7 @@ public class listCharacters : ScriptableObject
         "B",
         "C",
     };
+    public bool onComputer;
     public bool selected;
     public Vector3 Posisi;
     public GameObject objectNPC;

@@ -22,6 +22,7 @@ MonoBehaviour:
   - A
   - B
   - C
+  onComputer: 1
   selected: 0
   Posisi: {x: 10, y: 5, z: 7}
   objectNPC: {fileID: 5397218845697537900, guid: 694c579b199f88247bc119fecea39f76, type: 3}
@@ -39,7 +40,7 @@ MonoBehaviour:
   imageCharacter: {fileID: 21300000, guid: 0e962dbec8334de4c8d05147d538b65e, type: 3}
   imageInfoCharacter: {fileID: 21300000, guid: 70a700cf859fa1c49bf36b2b64616999, type: 3}
   isLockSkill: 1
-  characterLock: 0
+  characterLock: 1
   info: 
   cost: 0
   iconKarakterinKasus: {fileID: 21300000, guid: d68693dc248d7ab469cb851f0f1fb1db, type: 3}
