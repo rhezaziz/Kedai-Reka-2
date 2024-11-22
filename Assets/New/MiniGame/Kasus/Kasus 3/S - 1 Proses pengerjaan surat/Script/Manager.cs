@@ -54,7 +54,7 @@ namespace MiniGame3_3{
                 Sprite tempSprite = Salah;
                 if(jawaban[i] == pilihan[i]){
                     tempSprite = Benar;
-                    QuestManager.instance.currentQuest.quest.pointBonus += 50;
+                    //QuestManager.instance.currentQuest.quest.pointBonus += 50;
                 }
 
                 buttons[i].GetComponent<SelectedUI>().hasilAkhir(tempSprite);

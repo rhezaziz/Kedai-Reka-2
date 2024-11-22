@@ -136,8 +136,9 @@ namespace Terbaru{
         public void playDay1_3(){
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day1_3");
-           
-            
+            UiManager.instance.bantuanText("");
+
+
             FindObjectOfType<Movement>().move = false;
             //TutorialEvents.OnTutorialComplete += endDay1_3;
             // TutorialController.instance.hiddenBtn.onClick.AddListener(()=>
@@ -621,6 +622,7 @@ namespace Terbaru{
             TutorialController.IsSkippable = false;
             //objDay3_7.SetActive(true);
             TutorialLoader.instance.Load("Day3_6");
+            UiManager.instance.bantuanText("Kembali Ke Asrama");
             kembali.interactable = true;
             kembali.onClick.AddListener(initDay3_7);
             

@@ -26,6 +26,16 @@ namespace Terbaru
         }
 
 
+        public RuntimeAnimatorController controllerPerempuan;
+        public RuntimeAnimatorController controllerLaki;
+        public void GantiPerempuan(bool value)
+        {
+            RuntimeAnimatorController tempController = value ? controllerPerempuan : controllerLaki;
+
+            transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = tempController;
+        }
+
+
         public void currentState(state current)
         {
             switch(current)

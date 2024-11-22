@@ -137,7 +137,7 @@ GameObject:
   - component: {fileID: 15174349}
   - component: {fileID: 15174348}
   m_Layer: 5
-  m_Name: 4
+  m_Name: 1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -214,7 +214,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d69201b1509066419170bb8c705a6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 4
+  value: 1
   indikator: {fileID: 892181082}
   panelIndikator: {fileID: 915346671}
   hasil: {fileID: 830793167}
@@ -755,7 +755,7 @@ MonoBehaviour:
   pilihan: 
   jawaban: 010000000200000003000000040000000500000006000000
   index: 0
-  action: K3_M1
+  action: K3_S1
 --- !u!4 &230536322
 Transform:
   m_ObjectHideFlags: 0
@@ -3663,7 +3663,7 @@ GameObject:
   - component: {fileID: 1870849284}
   - component: {fileID: 1870849283}
   m_Layer: 5
-  m_Name: 2
+  m_Name: 4
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3740,7 +3740,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d69201b1509066419170bb8c705a6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 2
+  value: 4
   indikator: {fileID: 1630948809}
   panelIndikator: {fileID: 1084776747}
   hasil: {fileID: 1945728628}
@@ -4033,6 +4033,10 @@ PrefabInstance:
     - target: {fileID: 1116825578511325031, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_Name
       value: Image (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1116825578511325031, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3617876097091886220, guid: d0020e85b34e4c64b904a96ebd6bc749, type: 3}
       propertyPath: m_text
@@ -4430,7 +4434,7 @@ GameObject:
   - component: {fileID: 2143560042}
   - component: {fileID: 2143560041}
   m_Layer: 5
-  m_Name: 1
+  m_Name: 2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4507,7 +4511,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7d69201b1509066419170bb8c705a6b2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  value: 1
+  value: 2
   indikator: {fileID: 2072503609}
   panelIndikator: {fileID: 134559573}
   hasil: {fileID: 1195788040}
