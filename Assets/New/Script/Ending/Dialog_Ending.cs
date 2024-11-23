@@ -10,6 +10,8 @@ namespace Terbaru
     {
         public Dialog dialog;
 
+        public DialogManager dialogManager;
+
         public bool ending;
         public void startDialog()
         {
@@ -24,7 +26,7 @@ namespace Terbaru
 
             //GetComponent<NPC_Controller>().currentCondition(animasi.Ngobrol);S
 
-            FindObjectOfType<DialogManager>().StartDialog(dialog, this.gameObject);
+            dialogManager.StartDialog(dialog, this.gameObject);
 
         }
 
@@ -42,7 +44,7 @@ namespace Terbaru
 
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
             //Invoke("startAction", 1f);
-            FindObjectOfType<DialogManager>().closeDialog();
+            dialogManager.closeDialog();
             if (!ending) Manager_Ending.instance.startEnding();
             else if (ending) FindObjectOfType<MiniGame>().pindahDialogToMiniGameKampung("water Purify");
             //gameObject.SetActive(false);

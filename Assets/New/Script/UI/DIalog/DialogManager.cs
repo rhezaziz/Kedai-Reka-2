@@ -60,6 +60,7 @@ namespace Terbaru{
 
         public void StartDialog(Dialog dialog, GameObject interactDialog)
         {
+            //uiDialog.ResetDialog();
             if (interactDialog) dialogOnKampung = interactDialog;
 
             panelDialog.SetActive(true);

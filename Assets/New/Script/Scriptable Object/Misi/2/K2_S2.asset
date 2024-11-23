@@ -25,5 +25,5 @@ MonoBehaviour:
   sceneGame: Kasus2_4
   firstChangeScene: 0
   level: 0
-  pointBonus: 300
+  pointBonus: 0
   isDone: 0

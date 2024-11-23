@@ -167,7 +167,7 @@ MonoBehaviour:
   Benar: {fileID: 2023569943, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   Salah: {fileID: 730298035, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   Terpilih: {r: 0, g: 0, b: 0, a: 1}
-  action: K3_S2
+  action: K3_M2
 --- !u!4 &10543908
 Transform:
   m_ObjectHideFlags: 0

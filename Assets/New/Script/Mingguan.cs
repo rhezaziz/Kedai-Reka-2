@@ -187,11 +187,13 @@ namespace Terbaru {
             UiManager.instance.chinematicDialog(true);
             yield return new WaitForSeconds(1f);
             FindObjectOfType<MiniGame>().pindahKeKampung("Kampung");
-
-            yield return new WaitForSeconds(2f);
-            //FindObjectOfType<Controller>().setPlayerOnFrontDoor();
-            FindObjectOfType<Manager_Ending>().chinematicWithaouCam(false);
+            SoundManager.instance.DestroyIntance();
             yield return new WaitForSeconds(1f);
+            GameManager.instance.DestroyThisObject();
+            // yield return new WaitForSeconds(2f);
+            // //FindObjectOfType<Controller>().setPlayerOnFrontDoor();
+            // FindObjectOfType<Manager_Ending>().chinematicWithaouCam(false);
+            // yield return new WaitForSeconds(1f);
             //playDialogEnd2();
 
         }

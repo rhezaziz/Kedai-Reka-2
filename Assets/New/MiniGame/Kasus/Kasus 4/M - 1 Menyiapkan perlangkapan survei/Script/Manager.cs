@@ -20,11 +20,11 @@ namespace MiniGame4_1{
             var max = itemUI.anchorMax;
 
             foreach(var item in listItem){
-                item.loct.DOColor(new Color(1f,1f,1f,0f),1f);
+                item.loct.DOColor(new Color(1f,1f,1f,0f),2f);
             }
-            itemUI.DOAnchorMin(new Vector2(min.x, 1f), 1f);
-            itemUI.DOAnchorMax(new Vector2(max.x, 1f), 1f);
-            itemUI.DOScale(Vector3.one * 3 / 4, 1f).OnComplete(() =>{
+            itemUI.DOAnchorMin(new Vector2(min.x, 1f), 2f);
+            itemUI.DOAnchorMax(new Vector2(max.x, 1f), 2f);
+            itemUI.DOScale(Vector3.one * 3 / 4, 2f).OnComplete(() =>{
                 Invoke("initKonten", 1f);
             }); 
 

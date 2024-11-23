@@ -39,8 +39,18 @@ public class SoundManager : MonoBehaviour
         BacksoundSource.Play();    
     }
 
+    public void endGame(){
+        BacksoundSource.Stop();
+        BacksoundSource.clip = backsoundClip[3]; 
+        BacksoundSource.Play(); 
+    }
+
     public void stopAudio(){
         BacksoundSource.Stop();
+    }
+
+    public void DestroyIntance(){
+        instance = null;
     }
 
     public void sfx(int index){

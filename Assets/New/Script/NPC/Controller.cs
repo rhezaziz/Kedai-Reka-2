@@ -47,7 +47,7 @@ namespace Terbaru
         }
 
         void mulai(){
-            GetComponent<Rigidbody>().isKinematic = true;
+            if(!outside) GetComponent<Rigidbody>().isKinematic = true;
 
             if(moving)
                 moving.inisiasiDir();
@@ -55,7 +55,7 @@ namespace Terbaru
 
         private void Start()
         {
-            currentCondition(animasi.Idle);
+            currentCondition(state);
             Invoke("mulai", 0.5f);
         }
 

@@ -16,7 +16,7 @@ MonoBehaviour:
   position: {x: -175, y: 5, z: -130}
   jmlHari: 0
   Energy: 3
-  Saldo: 100
+  Saldo: 75100
   item:
   - {fileID: 11400000, guid: fa5369f3dbc1f5940a16aafcbb42ca79, type: 2}
   - {fileID: 11400000, guid: bf96953b23cb7ef478d187e3cd3e431a, type: 2}
@@ -90,7 +90,6 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 1648810aa20e87c4396cedd03e16a2ac, type: 2}
   - {fileID: 11400000, guid: d4921ff6d4768834b8ee38f54a8b6f77, type: 2}
   - {fileID: 11400000, guid: a9cde3d9112f0ac4792efb0ca475d1ac, type: 2}
-  - {fileID: 11400000, guid: 5cc8ee370ab88ce46b2da8ad04a4768a, type: 2}
   - {fileID: 11400000, guid: 0cf3738a0e407414eb617660112f5030, type: 2}
   - {fileID: 11400000, guid: 290d0c28c8f3eb94f8de0188a487be3d, type: 2}
   - {fileID: 11400000, guid: 97872b1351b3112469f83d78db1547ad, type: 2}

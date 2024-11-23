@@ -522,7 +522,7 @@ namespace Terbaru{
             Debug.Log("3_1");
             //PintuKamar.enabled = false;
             PintuKamar.changeInteractable(false);
-            dindaData.selected = false;
+            //dindaData.selected = false;
             KamarMandi.changeInteractable(true);
             KamarMandi.ExtraAction.AddListener(initDay3_2);
         }

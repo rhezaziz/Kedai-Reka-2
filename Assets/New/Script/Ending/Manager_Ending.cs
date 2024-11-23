@@ -15,6 +15,34 @@ namespace Terbaru
 
         public GameObject ChinematicPanel;
 
+        public SoundManager sound;
+
+        public Transform map;
+        public float speed;
+
+        // public void moveMap(){
+        //     map.position = Vector3.Lerp(transform.position, CameraPositionFinish.transform.position, Time.deltaTime * speed);
+        // }
+
+        public void moveCamera()
+        {
+            // A coroutine runs every frame until it stops returning values
+            StartCoroutine(MoveCamera());
+        }
+
+        private IEnumerator MoveCamera()
+        {
+            // check the distance and see if we still need to move towards the destination ​
+            while(Vector3.Distance(transform.position, map.transform.position) > 1.0f){
+
+            
+
+                transform.position = Vector3.Lerp(transform.position, map.transform.position, Time.deltaTime * speed);
+        
+            // Return  nothing meaningful and wait until next frame​
+                yield return null;
+            }
+        }
         private void Awake()
         {
             instance = this;
@@ -24,7 +52,12 @@ namespace Terbaru
 
         IEnumerator Start()
         {
-            yield return new WaitForSeconds(4f);
+            //GameManager.instance.DestroyThisObject();
+            yield return new WaitForSeconds(2f);
+            sound.endGame();
+            yield return new WaitForSeconds(2f);
+            
+//            Chinematic(false);
             //GameManager.instance.DestroyThisObject();
             //QuestManager.instance.StartQuest(quest);
 
@@ -53,7 +86,7 @@ namespace Terbaru
         IEnumerator JedaDialog()
         {
             yield return new WaitForSeconds(1f);
-            //GameManager.instance.DestroyThisObject();
+            
             //QuestManager.instance.StartQuest(quest);
             if (Wargas.Count <= 0)
             {
@@ -93,7 +126,7 @@ namespace Terbaru
             string _action = isActive ? "Mulai" : "Reverse";
 
             var anim = ChinematicPanel.GetComponent<Animator>();
-            //Debug.Log("chinematic");
+            Debug.Log("chinematic" + " "+_action);
             anim.SetTrigger(_action);
         }
 
@@ -102,6 +135,7 @@ namespace Terbaru
             string _action = isActive ? "Mulai" : "Reverse";
 
             var anim = ChinematicPanel.GetComponent<Animator>();
+            //Debug.Log("chinematic without C" + " "+_action);
             //Debug.Log("chinematic");
             anim.SetTrigger(_action);
             Debug.Log("Without cam" + _action);
