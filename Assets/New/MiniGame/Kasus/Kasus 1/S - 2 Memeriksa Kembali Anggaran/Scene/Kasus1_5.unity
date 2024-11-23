@@ -1551,7 +1551,7 @@ MonoBehaviour:
   - {fileID: -2134034201, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   - {fileID: 206752750, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   hasil: {fileID: 1309208852}
-  value: 1
+  value: 0
 --- !u!1 &617507549
 GameObject:
   m_ObjectHideFlags: 0
@@ -3610,7 +3610,7 @@ MonoBehaviour:
   - {fileID: -2134034201, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   - {fileID: 206752750, guid: d0ddf21635dc9fc45991310af8a8acab, type: 3}
   hasil: {fileID: 1323758930}
-  value: 1
+  value: 0
 --- !u!1 &1309208850
 GameObject:
   m_ObjectHideFlags: 0
