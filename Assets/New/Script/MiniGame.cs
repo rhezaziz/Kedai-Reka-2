@@ -23,6 +23,16 @@ namespace Terbaru{
             StartCoroutine(mulaiMiniGameFromDialog(namaScene));
         }
 
+        public void pindahDialogToMiniGameKampung(string namaScene)
+        {
+            StartCoroutine(mulaiMiniGameFromDialogKampung(namaScene));
+        }
+
+        public void pindahKeKampung(string namaScene)
+        {
+            SceneManager.LoadScene(namaScene);
+        }
+
         public void pindahScene(string namaScene){
 
             sceneActive = namaScene;
@@ -62,6 +72,31 @@ namespace Terbaru{
             //UiManager.instance.chinematicWithaouCam(false);
 
             
+
+        }
+        IEnumerator mulaiMiniGameFromDialogKampung(string namaScene)
+        {
+            //    control.currentState(state.Interaction);
+            //    control.playerMove.move = false;
+            Manager_Ending.instance.chinematicWithaouCam(true);
+
+           //indObjectOfType<UiManager>().panelUtama.SetActive(false);
+            yield return new WaitForSeconds(1f);
+
+            //UiManager.instance.Chinematic(true);
+
+
+
+            sceneActive = namaScene;
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+
+            yield return new WaitForSeconds(1f);
+            DeactivateObjectsInPreviousSceneKampung();
+
+            yield return new WaitForSeconds(1.5f);
+            //UiManager.instance.chinematicWithaouCam(false);
+
+
 
         }
 
@@ -106,6 +141,39 @@ namespace Terbaru{
         {
             // Dapatkan scene yang sudah aktif sebelumnya (misalnya scene di index 0)
             Scene previousScene = SceneManager.GetSceneByName("Asrama BackUp");
+
+            if (previousScene.isLoaded)
+            {
+                // Dapatkan semua root gameObject di scene sebelumnya
+                GameObject[] rootObjects = previousScene.GetRootGameObjects();
+
+                // Aktifkan semua root gameObject (atau pilih objek tertentu)
+                foreach (GameObject obj in rootObjects)
+                {
+                    obj.SetActive(true); // Aktifkan objek
+                }
+            }
+        }
+
+        public void DeactivateObjectsInPreviousSceneKampung()
+        {
+            Scene previousScene = SceneManager.GetSceneByName("Kampung");
+
+            if (previousScene.isLoaded)
+            {
+                GameObject[] rootObjects = previousScene.GetRootGameObjects();
+
+                foreach (GameObject obj in rootObjects)
+                {
+                    obj.SetActive(false); // Nonaktifkan objek
+                }
+            }
+        }
+
+        public void ActivateObjectsInPreviousSceneKampung()
+        {
+            // Dapatkan scene yang sudah aktif sebelumnya (misalnya scene di index 0)
+            Scene previousScene = SceneManager.GetSceneByName("Kampung");
 
             if (previousScene.isLoaded)
             {

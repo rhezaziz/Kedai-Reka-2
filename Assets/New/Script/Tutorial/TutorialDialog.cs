@@ -97,7 +97,7 @@ namespace Terbaru{
 
             FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", true);
 
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog, null);
            
         }
 

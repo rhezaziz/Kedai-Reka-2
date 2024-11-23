@@ -691,7 +691,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &57703305
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1353,7 +1353,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 151181313}
   serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -1916,7 +1916,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
+      - m_Target: {fileID: 421960837}
         m_TargetAssemblyTypeName: Terbaru.DialogManager, Assembly-CSharp
         m_MethodName: DisplayNextDialog
         m_Mode: 1
@@ -2226,7 +2226,7 @@ RectTransform:
   - {fileID: 1563321193}
   - {fileID: 1042316766}
   - {fileID: 1543649212}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 421960840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -3131,6 +3131,10 @@ GameObject:
   - component: {fileID: 421960840}
   - component: {fileID: 421960839}
   - component: {fileID: 421960837}
+  - component: {fileID: 421960841}
+  - component: {fileID: 421960842}
+  - component: {fileID: 421960843}
+  - component: {fileID: 421960844}
   m_Layer: 0
   m_Name: Manager
   m_TagString: Untagged
@@ -3169,6 +3173,8 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+  inKampung: 1
+  dialogOnKampung: {fileID: 0}
 --- !u!114 &421960839
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3181,16 +3187,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97473c1ab662f94a8d7f7c3efcc9a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  quest:
-    id: 0
-    quest: {fileID: 0}
-    isRPG: 0
-    Index: 0
-    proses: []
+  dialog: {fileID: 11400000, guid: 988820f11a824e34282f10260cfe4211, type: 2}
   Wargas:
   - {fileID: 1328213233}
   - {fileID: 1973489307}
   - {fileID: 974160829}
+  ChinematicPanel: {fileID: 1563321191}
 --- !u!4 &421960840
 Transform:
   m_ObjectHideFlags: 0
@@ -3203,9 +3205,148 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 1963150689}
+  - {fileID: 1292162614}
+  - {fileID: 287243549}
+  - {fileID: 1881985659}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &421960841
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421960836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6d81b7576a268ad4eb0373fb2b31d3eb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    dialogObject: {fileID: 11400000, guid: ec3b0ac93156ef44cbb24597f5a54222, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      isRPG: 0
+      Index: 0
+      proses: []
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  ending: 0
+--- !u!114 &421960842
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421960836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dd8e329f88039c542adf738eadfd1237, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  BacksoundSource: {fileID: 1963150690}
+  backsoundClip:
+  - {fileID: 8300000, guid: c1f64ae9e01ac6c49a3fdbd5813ebbf4, type: 3}
+  - {fileID: 8300000, guid: fd5d7e4141ebea148b717ea613569bbe, type: 3}
+  - {fileID: 8300000, guid: 99c883a64b8d9664dbf7dcfb5b5d871f, type: 3}
+  - {fileID: 8300000, guid: c912f27a8eed90a4d81affc3788a095a, type: 3}
+  - {fileID: 8300000, guid: 2f1e268398887e8448f4070176867ac6, type: 3}
+  - {fileID: 8300000, guid: 75ae53fae4089d946826c26e9edeede0, type: 3}
+  effectSource: {fileID: 1292162615}
+  InvorenmentClip:
+  - {fileID: 8300000, guid: 9bd7a107c56cc674eba9a61c98d555f4, type: 3}
+  - {fileID: 8300000, guid: 765c22d3013850b4582dd7338e95e784, type: 3}
+  - {fileID: 8300000, guid: d27e42aa38e198b458094345404fb733, type: 3}
+  - {fileID: 8300000, guid: a96df472013e2df4e9518d477d316f65, type: 3}
+  - {fileID: 8300000, guid: d0da0eff4068da04c812c5073dd49b4a, type: 3}
+  - {fileID: 8300000, guid: 79cf4c43420fefe4da5e4192fd3a3f2d, type: 3}
+  - {fileID: 8300000, guid: 99de24b58df71cc498c259b8c8112d28, type: 3}
+  - {fileID: 8300000, guid: 017f523c5250ff24e818fbb7b59381ca, type: 3}
+  - {fileID: 8300000, guid: 8c03cda5e461c28428e44983e5cd7c16, type: 3}
+  - {fileID: 8300000, guid: 6e4317eed4c8b2247a47a603840a47e5, type: 3}
+  - {fileID: 8300000, guid: 553bb52c1e9633e49bda49a801480c62, type: 3}
+  - {fileID: 8300000, guid: 8f03c4b69ce98cc429e0ccd05e0bb7a4, type: 3}
+  - {fileID: 8300000, guid: a59dfe7918b62064495e46b869995c74, type: 3}
+  - {fileID: 8300000, guid: 08fdbfc6f426e2543ac0fee35d6a7c34, type: 3}
+  - {fileID: 8300000, guid: 5d2356bb0ca4e6e4b836db8adfb7b434, type: 3}
+  - {fileID: 8300000, guid: 1ebba4f9f75ba8f46b5a28226dd3343d, type: 3}
+  - {fileID: 8300000, guid: 7b4e01a9a9b7e154a93328708e938f4f, type: 3}
+  - {fileID: 8300000, guid: 0e0963c1d7eb1964da236396155dca1b, type: 3}
+  - {fileID: 8300000, guid: 0db17b3a50e40584ab874e845efd9150, type: 3}
+  - {fileID: 8300000, guid: 7308ff49c2c780a488f7cb6068a97ef1, type: 3}
+  - {fileID: 8300000, guid: 2d066ba2e1b2edb4085230f5120ae067, type: 3}
+  - {fileID: 8300000, guid: 0f8ae8ed8eafdcc45bc43575d0468539, type: 3}
+  - {fileID: 8300000, guid: 555ed8eb49d96d64ead4f006eb085db2, type: 3}
+  - {fileID: 8300000, guid: f59cfef90adf66d4096cce82e6ab5b50, type: 3}
+  - {fileID: 8300000, guid: 0a170d0f85f9aba4588d60f1bc7a94c6, type: 3}
+  - {fileID: 8300000, guid: 43e6d6e83af5e404e8c3a15b6b6a0b82, type: 3}
+  - {fileID: 8300000, guid: d9dd10839468aee47982c67cafefccc4, type: 3}
+  - {fileID: 8300000, guid: 98e8dd6ecd768c24b86605e5174e0197, type: 3}
+  - {fileID: 8300000, guid: 72e9b743a91c44240bfc931f3410565c, type: 3}
+  - {fileID: 8300000, guid: 01c0f15248117374da99546cb202fd04, type: 3}
+  - {fileID: 8300000, guid: 52bfc5b2d3a66434b908fc3ec1cb442d, type: 3}
+  - {fileID: 8300000, guid: 9780d52187749e941b6b55bfe280e9ec, type: 3}
+  - {fileID: 8300000, guid: d3f3ce858931039428cb4de3c273457f, type: 3}
+  - {fileID: 8300000, guid: 9fe16816c41164f4db234e35b21b3019, type: 3}
+  - {fileID: 8300000, guid: c29c965e9d4ae274c94af35d7b82abb3, type: 3}
+  - {fileID: 8300000, guid: f54e0e309a3652e478fc0dd78aaf0057, type: 3}
+  - {fileID: 8300000, guid: e26cd911ccfee1f498e46619f13c26ee, type: 3}
+  - {fileID: 8300000, guid: e385ca6c08a9a484bb63a5272330d447, type: 3}
+  - {fileID: 8300000, guid: c2016d90b412c124da78328d1994420c, type: 3}
+  - {fileID: 8300000, guid: 72726933bc5f6c24691b6eeea5084f70, type: 3}
+  sfxUIClip:
+  - {fileID: 8300000, guid: 2cd7bef2372d7854aa571ca8e69e6285, type: 3}
+  - {fileID: 8300000, guid: 8b891d862f12ae94c8df5337147b58ff, type: 3}
+  - {fileID: 8300000, guid: 067bce330de2f8b4087220b194b0fef1, type: 3}
+  - {fileID: 8300000, guid: b7173d9e649c7b94e81ce3ab9a4a83f5, type: 3}
+  - {fileID: 8300000, guid: 5bdbc51572353624dbd6e4827268329d, type: 3}
+  - {fileID: 8300000, guid: 2a623c17fbab9fa4bb89edd52be9df2b, type: 3}
+  - {fileID: 8300000, guid: 4d667ec53b57c1b49a68741f3877baea, type: 3}
+  - {fileID: 8300000, guid: 60b1db06034fa014dba2e4c47363cb01, type: 3}
+  - {fileID: 8300000, guid: e4094ead01eceb546848774f4bd62037, type: 3}
+  - {fileID: 8300000, guid: 3916af57343c50b4a8545126ea183a77, type: 3}
+  - {fileID: 8300000, guid: fc8ef040a617c0a448b06801fda35cb1, type: 3}
+  - {fileID: 8300000, guid: 9f0c76538ebae584cbecf681a873fd5d, type: 3}
+  - {fileID: 8300000, guid: 2aa28b8fd2b8f8847b2ea83ee054e1bc, type: 3}
+  - {fileID: 8300000, guid: ce42712dc17d5fb4da65e5ed8f9afe2a, type: 3}
+  - {fileID: 8300000, guid: 1116d3229c7e6d6418e283f965201ad5, type: 3}
+  - {fileID: 8300000, guid: 0b6696df13ef874459bb43691276f38b, type: 3}
+  - {fileID: 8300000, guid: 803f24ebb57c0e74ca7e3fef8ae172b7, type: 3}
+--- !u!114 &421960843
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421960836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f57f606e2c697443827fd1962bb69d5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sceneActive: 
+  control: {fileID: 0}
+--- !u!114 &421960844
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 421960836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1c82f7cbd94da46428242304b4006473, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  namaAction: Video
+  testVideo: {fileID: 0}
+  video: {fileID: 1103309652}
+  texture: {fileID: 8400000, guid: 1beb1b7710900f144b14a7588e52bccc, type: 2}
+  value: 0
 --- !u!1 &425378948
 GameObject:
   m_ObjectHideFlags: 0
@@ -6715,7 +6856,7 @@ GameObject:
   - component: {fileID: 974160829}
   - component: {fileID: 974160830}
   m_Layer: 0
-  m_Name: ORANG_MISC_TEMPAT_PROJEK_BESAR_1_ngomong terkekeh_0
+  m_Name: Ibu Baju Merah
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6776,7 +6917,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: -866648175, guid: 12287d1e82408f042b0fe94e7bc393b6, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6801,7 +6942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}
@@ -6813,9 +6954,22 @@ MonoBehaviour:
         m_Calls: []
   extendAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 421960839}
+        m_TargetAssemblyTypeName: Terbaru.Manager_Ending, Assembly-CSharp
+        m_MethodName: tambahMain
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 974160829}
+          m_ObjectArgumentAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 0}
+  warga: 1
 --- !u!61 &974160830
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -8901,7 +9055,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 421960840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1292162615
 AudioSource:
@@ -9162,7 +9316,7 @@ GameObject:
   - component: {fileID: 1328213233}
   - component: {fileID: 1328213234}
   m_Layer: 0
-  m_Name: ORANG_MISC_TEMPAT_PROJEK_BESAR_3
+  m_Name: Orang Duduk
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9248,7 +9402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 858a7d056d163aa45a0122e512649664, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}
@@ -9260,9 +9414,22 @@ MonoBehaviour:
         m_Calls: []
   extendAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 421960839}
+        m_TargetAssemblyTypeName: Terbaru.Manager_Ending, Assembly-CSharp
+        m_MethodName: tambahMain
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1328213233}
+          m_ObjectArgumentAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 0}
+  warga: 1
 --- !u!61 &1328213234
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -13353,7 +13520,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1870862602}
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 421960840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -13891,7 +14058,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 421960840}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1963150690
 AudioSource:
@@ -14002,7 +14169,7 @@ GameObject:
   - component: {fileID: 1973489307}
   - component: {fileID: 1973489308}
   m_Layer: 0
-  m_Name: ORANG_MISC_TEMPAT_PROJEK_BESAR_2_0
+  m_Name: Ibu Kerudung
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -14088,7 +14255,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 439f5c98291db9a49ba67775e5b32581, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}
@@ -14100,9 +14267,22 @@ MonoBehaviour:
         m_Calls: []
   extendAction:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 421960839}
+        m_TargetAssemblyTypeName: Terbaru.Manager_Ending, Assembly-CSharp
+        m_MethodName: tambahMain
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 1973489307}
+          m_ObjectArgumentAssemblyTypeName: Terbaru.DialogObjectClick, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 0}
+  warga: 1
 --- !u!61 &1973489308
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -15337,9 +15517,5 @@ SceneRoots:
   - {fileID: 1798347699}
   - {fileID: 1469949345}
   - {fileID: 425378950}
-  - {fileID: 421960840}
-  - {fileID: 287243549}
-  - {fileID: 1963150689}
-  - {fileID: 1292162614}
-  - {fileID: 1881985659}
   - {fileID: 151181316}
+  - {fileID: 421960840}

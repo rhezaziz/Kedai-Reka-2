@@ -10,17 +10,35 @@ namespace Terbaru{
         public UnityEvent extendAction;
         public bool onDialog = true;
         public GameObject Indikator;
+        public bool warga;
         void OnMouseDown(){
             Debug.Log("Klik");
-            if(!onDialog || FindObjectOfType<MapsManager>().onAnimation)
+            if (!onDialog) {
+                if (warga)
+                    return;
+
+                else if (FindObjectOfType<MapsManager>().onAnimation)
+                {
+                    return;    
+                }
+
                 return;
+                
+
+            }
             startDialog();
         }
         public void startDialog(){
             onDialog = false;
-            UiManager.instance.chinematicDialog(true);
-            FindObjectOfType<Player_Interaction>().interactObject = this.gameObject;
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            if (!warga) UiManager.instance.chinematicDialog(true);
+
+            else if(warga) Manager_Ending.instance.Chinematic(true);
+
+
+            if (!warga) FindObjectOfType<Player_Interaction>().interactObject = this.gameObject;
+            else if (warga) FindObjectOfType<Manager_Ending>().onDialogWarga(this);
+            GameObject temp = warga ? gameObject : null;
+            FindObjectOfType<DialogManager>().StartDialog(dialog, temp);
         
         }
 
@@ -43,7 +61,10 @@ namespace Terbaru{
                 QuestManager.instance.StartQuest(dialog.quest);
             }
 
-            UiManager.instance.chinematicDialog(false);
+            if (!warga) UiManager.instance.chinematicDialog(false);
+
+            else if (warga) Manager_Ending.instance.Chinematic(false);
+
             interactNPC(false);
             extendAction?.Invoke();
             //canDialog(false);

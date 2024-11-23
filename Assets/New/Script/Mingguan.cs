@@ -32,7 +32,14 @@ namespace Terbaru {
         public Dialog dialog2;
         public UnityEvent eventMinggu3;
 
-        
+        [Header("End Game")]
+        public Dialog DialogEnd;
+        public Dialog dialogEnd2;
+        public UnityEvent eventEnd1;
+        public UnityEvent eventEnd2;
+
+
+
 
         public void mulaiEvent(){
             int index = FindObjectOfType<DayManager>().day;
@@ -64,6 +71,16 @@ namespace Terbaru {
             else if (index == 28)
             {
                 UiManager.instance.bantuanText("Pergi Ke Pekarangan");
+                //eventsReady[2]?.Invoke();
+                ////FindObjectOfType<VideoManager>().action(minggu3);
+                //playDialogMinggu3();
+
+            }
+
+            else if (index == 30)
+            {
+                playDialogEnd1();
+               // UiManager.instance.bantuanText("Pergi Ke Pekarangan");
                 //eventsReady[2]?.Invoke();
                 ////FindObjectOfType<VideoManager>().action(minggu3);
                 //playDialogMinggu3();
@@ -122,6 +139,63 @@ namespace Terbaru {
             eventTemp = eventMinggu3;
         }
 
+        void playDialogEnd1()
+        {
+            temp = DialogEnd;
+            //Debug.Log("Minggu 3");
+            startDialog();
+            eventTemp.RemoveAllListeners();
+            //eventTemp = eventMinggu3;
+            eventTemp.AddListener(() =>
+            {
+                StartCoroutine(pindahKeDepanPintu());
+            });
+        }
+
+        IEnumerator pindahKeDepanPintu()
+        {
+            //yield return new WaitForSeconds(1f);
+            UiManager.instance.panelUtama.SetActive(false);
+            Player.GetComponent<Controller>().currentState(state.Interaction);
+            UiManager.instance.chinematicDialog(true);
+            yield return new WaitForSeconds(1f);
+            FindObjectOfType<Controller>().setPlayerOnFrontDoor();
+            UiManager.instance.Chinematic(false);
+            yield return new WaitForSeconds(1f);
+            playDialogEnd2();
+
+        }
+
+        void playDialogEnd2()
+        {
+            temp = dialogEnd2;
+            //Debug.Log("Minggu 3");
+            startDialog();
+            eventTemp.RemoveAllListeners();
+            eventTemp.AddListener(() =>
+            {
+                StartCoroutine(pindahKeKampung());
+            });
+            //eventTemp = eventMinggu3;
+        }
+
+        IEnumerator pindahKeKampung()
+        {
+            //yield return new WaitForSeconds(1f);
+            UiManager.instance.panelUtama.SetActive(false);
+            Player.GetComponent<Controller>().currentState(state.Interaction);
+            UiManager.instance.chinematicDialog(true);
+            yield return new WaitForSeconds(1f);
+            FindObjectOfType<MiniGame>().pindahKeKampung("Kampung");
+
+            yield return new WaitForSeconds(2f);
+            //FindObjectOfType<Controller>().setPlayerOnFrontDoor();
+            FindObjectOfType<Manager_Ending>().chinematicWithaouCam(false);
+            yield return new WaitForSeconds(1f);
+            //playDialogEnd2();
+
+        }
+
         public void stopEvent(){
             int index = (int)FindObjectOfType<DayManager>().day;
 
@@ -152,7 +226,7 @@ namespace Terbaru {
 
             Player.GetComponentInChildren<Animator>().SetBool("Ngomong", true);
 
-            FindObjectOfType<DialogManager>().StartDialog(temp); 
+            FindObjectOfType<DialogManager>().StartDialog(temp, null); 
         }
 
         public void chinematic(){

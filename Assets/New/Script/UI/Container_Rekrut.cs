@@ -24,7 +24,9 @@ namespace Terbaru{
             skill.text = data.skillCharacter[0];
             info.name = $"Info {data.namaCharacter}";
             isLock = data.characterLock;
+            Debug.Log(data.namaCharacter +" : " + data.characterLock);
             if(!data.characterLock){
+                
                 Rekrut.GetComponent<Button>().interactable = false;
                 Foto.material = null;
                 Foto.transform.parent.GetComponent<Image>().enabled = false;

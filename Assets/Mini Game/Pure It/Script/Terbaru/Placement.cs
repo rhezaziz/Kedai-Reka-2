@@ -2,47 +2,50 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Placement : MonoBehaviour
+namespace Terbaru
 {
-    static public List<bool> correct;
-    static public int jumlahTerisi;
-
-    int jumlahMaterial;
-    ManagerPurify manager;
-
-    private void Start()
+    public class Placement : MonoBehaviour
     {
-        manager = FindObjectOfType<ManagerPurify>();
-        jumlahMaterial = FindObjectsOfType<PlacementMaterial>().Length;
-        correct = new List<bool>();
-        StartCoroutine(checkGame());
-    }
+        static public List<bool> correct;
+        static public int jumlahTerisi;
 
+        int jumlahMaterial;
+        ManagerPurify manager;
 
-    IEnumerator checkGame()
-    {
-        while (jumlahTerisi != jumlahMaterial)
+        private void Start()
         {
-            yield return new WaitForSeconds(1f);
-            Debug.Log("Jalan");
-            //Jalan
+            manager = FindObjectOfType<ManagerPurify>();
+            jumlahMaterial = FindObjectsOfType<PlacementMaterial>().Length;
+            correct = new List<bool>();
+            StartCoroutine(checkGame());
         }
-        manager.GameEnd(correctPlace());
-        yield return null;
-    }
-    
-    bool correctPlace()
-    {
-        for(int i = 0; i <  jumlahMaterial; i++)
-        {
-            if (!correct[i])
-                return false;
-        }
-        return true;
-    }
 
-    void checkCorrect()
-    {
-        
+
+        IEnumerator checkGame()
+        {
+            while (jumlahTerisi != jumlahMaterial)
+            {
+                yield return new WaitForSeconds(1f);
+                //Debug.Log("Jalan");
+                //Jalan
+            }
+            manager.GameEnd(correctPlace());
+            yield return null;
+        }
+
+        bool correctPlace()
+        {
+            for (int i = 0; i < jumlahMaterial; i++)
+            {
+                if (!correct[i])
+                    return false;
+            }
+            return true;
+        }
+
+        void checkCorrect()
+        {
+
+        }
     }
 }

@@ -98,7 +98,7 @@ namespace Terbaru{
                     StartCoroutine(mulaiDialogOnAsrama());
                     return;
                  }
-                FindObjectOfType<DialogManager>().StartDialog(dialog.narasi);
+                FindObjectOfType<DialogManager>().StartDialog(dialog.narasi, null);
            } else{
                 StartCoroutine(mulai());
            }
@@ -140,7 +140,7 @@ namespace Terbaru{
             UiManager.instance.Chinematic(true);
 
             yield return new WaitForSeconds(1f);
-            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().StartDialog(tempDialog, null);
             
         }
 
@@ -163,7 +163,7 @@ namespace Terbaru{
             }
 
             yield return new WaitForSeconds(2f);
-            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().StartDialog(tempDialog, null);
         }
 
         IEnumerator kembali(){
@@ -205,13 +205,13 @@ namespace Terbaru{
 
         public void nextDialog(Dialog dialog){
             tempDialog = dialog;
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog, null);
             chinematic = true;
         }
         public void nextDialog(NarasiDialog dialog){
             tempDialog = dialog.narasi;
             narasiDialog = dialog;
-            FindObjectOfType<DialogManager>().StartDialog(tempDialog);
+            FindObjectOfType<DialogManager>().StartDialog(tempDialog, null);
             chinematic = true;
         }
 
@@ -249,6 +249,7 @@ namespace Terbaru{
             
             else if(tempDialog.quest.proses.Length > 0){
                 Debug.Log("End Dialog Have Quest");
+                //FindObjectOfType<DialogManager>()
                 FindObjectOfType<DialogManager>().closeDialog();
                 listQuest quest = tempDialog.quest;
                 QuestManager.instance.StartQuest(quest);
@@ -270,6 +271,7 @@ namespace Terbaru{
                 //return;
             } else if(tempDialog.events.GetPersistentEventCount() > 0){
                 Debug.Log("Invoke");
+
                 FindObjectOfType<DialogManager>().panelDialog.SetActive(false);
                 tempDialog.events?.Invoke();
                 return;

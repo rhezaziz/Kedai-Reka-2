@@ -44,7 +44,7 @@ public class RekrutManager : MonoBehaviour
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
             currentPoint.text = "Point : " + profil.Saldo.ToString("n0", info);
             
-            if(listProfil.Count == temp.Count){
+            if(listProfil.Count == temp.Count - 1){
                 updateListCharacter(temp);
                 return;
             }
@@ -69,7 +69,8 @@ public class RekrutManager : MonoBehaviour
         }
 
         void updateListCharacter(List<listCharacters> characters){
-            for(int i = 0; i < characters.Count; i++){
+            Debug.Log(listProfil.Count);
+            for(int i = 0; i < characters.Count - 1; i++){
                 if (characters[i].onComputer)
                 {
                     var temp = listProfil[i].GetComponent<Container_Rekrut>();

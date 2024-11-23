@@ -57,6 +57,11 @@ namespace Terbaru{
                     fotoKarakter.material = greyMat;
                     return;
                 }
+                else
+                {
+                    selected = false;
+                    InteractKarakter();
+                }
                 btnKarakter.onClick.AddListener(() => infoKarakter(karakter));
             }
         }
@@ -84,6 +89,8 @@ namespace Terbaru{
             fotoKarakter.material = greyMat;
             btnKarakter.interactable = false;
         }
+
+
 
         public void InteractKarakter()
         {

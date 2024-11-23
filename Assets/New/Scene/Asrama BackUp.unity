@@ -18957,6 +18957,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1455532080}
+  warga: 0
 --- !u!95 &427360616
 Animator:
   serializedVersion: 5
@@ -28709,6 +28710,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &653352467
 GameObject:
   m_ObjectHideFlags: 0
@@ -39430,6 +39432,18 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
+            - m_Target: {fileID: 1939524306}
+              m_TargetAssemblyTypeName: Terbaru.Controller, Assembly-CSharp
+              m_MethodName: setPlayerOnFrontDoor
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
         ProcessEventHelper:
           m_PersistentCalls:
             m_Calls:
@@ -40410,6 +40424,8 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
+  inKampung: 0
+  dialogOnKampung: {fileID: 0}
 --- !u!114 &894212847
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -49387,6 +49403,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1522271587}
+  warga: 0
 --- !u!95 &1121816068
 Animator:
   serializedVersion: 5
@@ -54273,6 +54290,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1536172354}
+  warga: 0
 --- !u!61 &1265316848
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -56462,6 +56480,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 573064694}
+  warga: 0
 --- !u!212 &1323942351
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -57968,6 +57987,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1961004795}
+  warga: 0
 --- !u!95 &1355255128
 Animator:
   serializedVersion: 5
@@ -61331,6 +61351,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 326037516}
+  warga: 0
 --- !u!95 &1427240610
 Animator:
   serializedVersion: 5
@@ -68327,6 +68348,34 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+  DialogEnd:
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      isRPG: 0
+      Index: 0
+      proses: []
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  dialogEnd2:
+    dialogObject: {fileID: 11400000, guid: 1177b84f4abdf2f48818ab61916557f7, type: 2}
+    quest:
+      id: 0
+      quest: {fileID: 0}
+      isRPG: 0
+      Index: 0
+      proses: []
+    events:
+      m_PersistentCalls:
+        m_Calls: []
+  eventEnd1:
+    m_PersistentCalls:
+      m_Calls: []
+  eventEnd2:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!1 &1569662618
 GameObject:
   m_ObjectHideFlags: 0
@@ -109984,6 +110033,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 571617380}
+  warga: 0
 --- !u!1 &4248478972762871264
 GameObject:
   m_ObjectHideFlags: 0
@@ -112690,6 +112740,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2049153615}
+  warga: 0
 --- !u!1 &4945506546912249921
 GameObject:
   m_ObjectHideFlags: 0
@@ -113365,6 +113416,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1965227963}
+  warga: 0
 --- !u!61 &5106162085197095992
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -115057,6 +115109,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 1
   Indikator: {fileID: 922577407}
+  warga: 0
 --- !u!224 &5441314269974499378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -115657,6 +115710,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1062670767}
+  warga: 0
 --- !u!61 &5599396341958347500
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -116995,6 +117049,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 803356980}
+  warga: 0
 --- !u!1 &5754749343585214513
 GameObject:
   m_ObjectHideFlags: 0
@@ -117605,6 +117660,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2036658442}
+  warga: 0
 --- !u!65 &5879554810139688282
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -117822,6 +117878,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 653352467}
+  warga: 0
 --- !u!222 &5897863616718944187
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -118316,6 +118373,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &5998275525146768449
 GameObject:
   m_ObjectHideFlags: 0
@@ -118935,6 +118993,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!222 &6109063983504953410
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -119269,7 +119328,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5319020697108122361}
   m_HandleRect: {fileID: 8918904541640005843}
   m_Direction: 2
-  m_Value: 0
+  m_Value: 1
   m_Size: 1
   m_NumberOfSteps: 0
   m_OnValueChanged:
@@ -119723,6 +119782,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 684274510}
+  warga: 0
 --- !u!61 &6323182900213970318
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120088,6 +120148,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2026051430}
+  warga: 0
 --- !u!222 &6357680955983852469
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -120157,6 +120218,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1559662972}
+  warga: 0
 --- !u!61 &6359310154146072260
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120278,6 +120340,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 582722779}
+  warga: 0
 --- !u!61 &6372022856290933406
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120457,6 +120520,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 932194058}
+  warga: 0
 --- !u!61 &6379795297743763289
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -120656,6 +120720,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2108364473}
+  warga: 0
 --- !u!222 &6395063612597791488
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -122581,6 +122646,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1748834539}
+  warga: 0
 --- !u!1 &6793016831917838025
 GameObject:
   m_ObjectHideFlags: 0
@@ -122984,6 +123050,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 923344472}
+  warga: 0
 --- !u!114 &6891977743697498987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -123191,6 +123258,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 155836411}
+  warga: 0
 --- !u!61 &6922103685739117609
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -123819,6 +123887,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &7024963238837222095
 GameObject:
   m_ObjectHideFlags: 0
@@ -124292,6 +124361,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1912972818}
+  warga: 0
 --- !u!1 &7150396351283417558
 GameObject:
   m_ObjectHideFlags: 0
@@ -124708,6 +124778,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 395138726}
+  warga: 0
 --- !u!61 &7205007154640072686
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -124974,6 +125045,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2029744485}
+  warga: 0
 --- !u!61 &7220626189229036213
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -125914,6 +125986,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &7488118467440952001
 GameObject:
   m_ObjectHideFlags: 0
@@ -126252,6 +126325,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &7504490275686880607
 GameObject:
   m_ObjectHideFlags: 0
@@ -126358,6 +126432,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 657713548}
+  warga: 0
 --- !u!61 &7528746564703590282
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -126835,6 +126910,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 554963266}
+  warga: 0
 --- !u!61 &7633618750234615775
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -127423,6 +127499,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 841596102}
+  warga: 0
 --- !u!4 &7746715450057336062
 Transform:
   m_ObjectHideFlags: 0
@@ -127698,6 +127775,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 180759341}
+  warga: 0
 --- !u!61 &7783508711117211382
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -128344,6 +128422,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1586503910}
+  warga: 0
 --- !u!224 &7896020588579615930
 RectTransform:
   m_ObjectHideFlags: 0
@@ -129253,6 +129332,7 @@ MonoBehaviour:
       m_Calls: []
   onDialog: 1
   Indikator: {fileID: 0}
+  warga: 0
 --- !u!1 &8039271733699573006
 GameObject:
   m_ObjectHideFlags: 0
@@ -129754,6 +129834,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1968704383}
+  warga: 0
 --- !u!33 &8088064519595047246
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -130605,6 +130686,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 939993241}
+  warga: 0
 --- !u!222 &8321226376520987045
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -130865,6 +130947,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1761329897}
+  warga: 0
 --- !u!61 &8403864807234810786
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131713,6 +131796,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1675086901}
+  warga: 0
 --- !u!61 &8527891764987051960
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -131921,6 +132005,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1333401498}
+  warga: 0
 --- !u!61 &8562120759960198241
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -132161,6 +132246,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 1233196159}
+  warga: 0
 --- !u!114 &8585788063532766376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133066,6 +133152,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 15620044}
+  warga: 0
 --- !u!114 &8910466003475030793
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -133809,6 +133896,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 74697259}
+  warga: 0
 --- !u!61 &9059134170241689770
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -134523,7 +134611,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 0}
+    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -134550,6 +134638,7 @@ MonoBehaviour:
         m_CallState: 2
   onDialog: 0
   Indikator: {fileID: 2110890920}
+  warga: 0
 --- !u!114 &9222668811963362265
 MonoBehaviour:
   m_ObjectHideFlags: 0

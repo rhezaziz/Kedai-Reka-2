@@ -60,10 +60,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 0e6f6e738f260de4cb235b389f84898b, type: 2}
   - {fileID: 11400000, guid: c65090ba361804b4d9ccefef78eb498c, type: 2}
   - {fileID: 11400000, guid: 83280035b0ab8e04eaf5be888a722a95, type: 2}
-  - {fileID: 11400000, guid: 215e9669009f79b479a7f7968377285f, type: 2}
   - {fileID: 11400000, guid: 4a408199e4d74c9479a7b38d2e26af96, type: 2}
   - {fileID: 11400000, guid: bf1b054f8f3d06d4fafccbff7b13fb1d, type: 2}
   - {fileID: 11400000, guid: fbeabdc41e65dc64cb13b79cfb1a3193, type: 2}
+  - {fileID: 11400000, guid: 215e9669009f79b479a7f7968377285f, type: 2}
   quest:
   - {fileID: 11400000, guid: 4b6872481a829d440a5ef5977bb212b0, type: 2}
   - {fileID: 11400000, guid: 9e26d0f82f5c59542a16313316b3f3ca, type: 2}

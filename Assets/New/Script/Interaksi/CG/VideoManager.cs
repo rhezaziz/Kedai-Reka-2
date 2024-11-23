@@ -64,6 +64,56 @@ namespace Terbaru{
             StartCoroutine(cutSceneOnDialog(true));
         }
 
+        public void actionOnDialogEnd(VideoClip video)
+        {
+            FindObjectOfType<DialogManager>().panelDialog.SetActive(false);
+            FindObjectOfType<DialogManager>().btnNextDialog.gameObject.SetActive(false);
+            testVideo = video ? video : null;
+            Manager_Ending.instance.ChinematicPanel.SetActive(true);
+            texture.Release();
+            texture.Create();
+            StartCoroutine(cutSceneOnDialogEnd(true));
+        }
+        IEnumerator cutSceneOnDialogEnd(bool adaVideo)
+        {
+            video.gameObject.SetActive(true);
+            video.clip = testVideo;
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
+            //GameObject PanelUtama = UiManager.instance.panelUtama;
+            float duration = (float)video.length;
+            var camera = Camera.main;
+            camera.transform.DOLocalMoveZ(-7f, 1f);
+            //PanelUtama.SetActive(false);
+            Manager_Ending.instance.Chinematic(true);
+            //UiManager.instance.Chinematic(true);
+
+            yield return new WaitForSeconds(2f);
+
+            //UiManager.instance.Chinematic(true);
+
+            //yield return new WaitForSeconds(1.25f);
+
+
+            if (adaVideo) playVideo();
+
+            yield return new WaitForSeconds(duration + 0.5f);
+            ClearRenderTexture();
+            // texture.Release();
+            // texture.Create(); 
+            //video.gameObject.SetActive(false);
+
+            //Manager_Ending.instance.Chinematic(false);
+
+            //camera.transform.DOLocalMoveZ(-10f, 1f);
+
+            yield return new WaitForSeconds(2f);
+            //PanelUtama.SetActive(true);
+            video.Pause();
+            //FindObjectOfType<Controller>().currentState(state.Default);
+            //texture.Release();
+            //QuestManager.instance.CheckActionQuest(namaAction);
+        }
+
         IEnumerator cutSceneOnDialog(bool adaVideo)
         {
             video.gameObject.SetActive(true);
@@ -103,6 +153,8 @@ namespace Terbaru{
             texture.Release();
             QuestManager.instance.CheckActionQuest(namaAction);
         }
+
+
 
 
         // void Start(){

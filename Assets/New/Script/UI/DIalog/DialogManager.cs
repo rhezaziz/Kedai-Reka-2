@@ -30,6 +30,7 @@ namespace Terbaru{
             sentences = new Queue<dataDialog>();
         }
 
+
         void DisplayVO(dataDialog data){
             narasiObj.SetActive(true);
             dialogText = narasiText;
@@ -57,8 +58,10 @@ namespace Terbaru{
 
         public Dialog testDialog;
 
-        public void StartDialog(Dialog dialog)
+        public void StartDialog(Dialog dialog, GameObject interactDialog)
         {
+            if (interactDialog) dialogOnKampung = interactDialog;
+
             panelDialog.SetActive(true);
             testDialog = dialog;
             //Debug.Log("Mulai Dialog");
@@ -78,7 +81,7 @@ namespace Terbaru{
         }
 
         public void paksa(){
-            StartDialog(testDialog);
+            StartDialog(testDialog, null);
         }
 
 
@@ -165,11 +168,21 @@ namespace Terbaru{
             btnNextDialog.gameObject.SetActive(true);
         }
 
+        public bool inKampung;
+        public GameObject dialogOnKampung;
         public void EndDialog()
         {
+            if (!inKampung)
+            {
+                var objectInteract = FindObjectOfType<Controller>().interaction;
+                objectInteract.interactObject.GetComponent<IDialog>().endDialog();
+            }
+            else
+            {
+                dialogOnKampung.GetComponent<IDialog>().endDialog();
+                dialogOnKampung = null;
+            }
             //UiManager.instance.Chinematic(false);
-            var objectInteract = FindObjectOfType<Controller>().interaction;
-            objectInteract.interactObject.GetComponent<IDialog>().endDialog();
             //Debug.Log("End Dialog Manager");
         }
 

@@ -72,7 +72,7 @@ namespace Terbaru{
                 if (!GameManager.instance.haveItem(item))
                 {
                     startDialog();
-                    FindObjectOfType<DialogManager>().StartDialog(tidakAdaItem);
+                    FindObjectOfType<DialogManager>().StartDialog(tidakAdaItem, null);
                     return;
                 }
                 
@@ -163,7 +163,7 @@ namespace Terbaru{
             FindObjectOfType<UiManager>().panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
             startDialog();
-            FindObjectOfType<DialogManager>().StartDialog(dialog[index]);
+            FindObjectOfType<DialogManager>().StartDialog(dialog[index], null);
 
         }
     }

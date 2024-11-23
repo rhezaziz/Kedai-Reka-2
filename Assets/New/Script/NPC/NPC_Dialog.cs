@@ -123,7 +123,7 @@ namespace Terbaru{
 
             GetComponent<NPC_Controller>().currentCondition(animasi.Ngobrol);
 
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog, null);
            
         }
 

@@ -143,7 +143,7 @@ namespace Terbaru
 
             Player.GetComponentInChildren<Animator>().SetBool("Ngomong", true);
 
-            FindObjectOfType<DialogManager>().StartDialog(dialog);
+            FindObjectOfType<DialogManager>().StartDialog(dialog, null);
         }
 
     }
