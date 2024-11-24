@@ -42,6 +42,6 @@ MonoBehaviour:
   isLockSkill: 1
   characterLock: 0
   info: 
-  cost: 0
+  cost: 8000
   iconKarakterinKasus: {fileID: 21300000, guid: d68693dc248d7ab469cb851f0f1fb1db, type: 3}
   icon: {fileID: 21300000, guid: 0e962dbec8334de4c8d05147d538b65e, type: 3}

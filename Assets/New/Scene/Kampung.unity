@@ -3459,7 +3459,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: ec3b0ac93156ef44cbb24597f5a54222, type: 2}
+    dialogObject: {fileID: 11400000, guid: a63c4ebfd7a226444b5cad535c547ab7, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -4563,6 +4563,10 @@ PrefabInstance:
     - target: {fileID: 3898002931293327891, guid: e61059886f127da42a112203dd1d7c5e, type: 3}
       propertyPath: m_FlipX
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3898002931293327891, guid: e61059886f127da42a112203dd1d7c5e, type: 3}
+      propertyPath: m_SortingOrder
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3898002931293327891, guid: e61059886f127da42a112203dd1d7c5e, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -9354,6 +9358,7 @@ GameObject:
   - component: {fileID: 1260640289}
   - component: {fileID: 1260640288}
   - component: {fileID: 1260640291}
+  - component: {fileID: 1260640292}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -9479,6 +9484,33 @@ MonoBehaviour:
     m_MipBias: 0
     m_VarianceClampScale: 0.9
     m_ContrastAdaptiveSharpening: 0
+--- !u!50 &1260640292
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1260640287}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1274280564
 GameObject:
   m_ObjectHideFlags: 0
@@ -13788,7 +13820,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1798347699}
   - component: {fileID: 1798347698}
-  - component: {fileID: 1798347701}
   - component: {fileID: 1798347700}
   m_Layer: 0
   m_Name: BG_MISC_TEMPAT_PROJEK_BESAR
@@ -13881,37 +13912,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Kanan: {fileID: 705125205}
   Kiri: {fileID: 1903184936}
-  rg: {fileID: 1798347701}
+  rg: {fileID: 1260640292}
   tambah: 5
-  max: 20
-  min: 0
---- !u!50 &1798347701
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1798347697}
-  m_BodyType: 1
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
+  max: 30
+  min: 10
 --- !u!1 &1801545584
 GameObject:
   m_ObjectHideFlags: 0

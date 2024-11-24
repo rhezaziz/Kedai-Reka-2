@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -26,22 +27,38 @@ namespace  Terbaru
 
         public void loadSceneBtn(){
 
-            StartCoroutine(LoadNewScene(namaScene));
+            StartCoroutine(testNewLoad());
         }
 
         void pindahScene(string sceneName){
             SceneManager.LoadScene(sceneName);
         }
 
+        IEnumerator testNewLoad()
+        {
+            float timer = 5f;
+            while (timer >= 0)
+            {
+                float progress = Mathf.Clamp01(.9f / 0.9f);
+
+                loadingSlader.fillAmount = progress;
+                timer -= .1f;
+                yield return .1f;
+            }
+            FindObjectOfType<MiniGame>().kembaliAsrama("New Scene");
+            Destroy(this.gameObject);
+        }
+
         IEnumerator LoadNewScene(string SceneName){
 
             sceneActive = SceneManager.GetActiveScene().name;
             SceneManager.sceneLoaded += UnloadScene;
-            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+            //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
+            AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName);
 
             //asyncLoad.allowSceneActivation = false;
 
-            while(!asyncLoad.isDone){
+            while (!asyncLoad.isDone){
                 float progress = Mathf.Clamp01(asyncLoad.progress / 0.9f);
             
                 loadingSlader.fillAmount = progress;

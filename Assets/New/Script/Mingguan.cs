@@ -206,11 +206,15 @@ namespace Terbaru {
             }
 
             else if(index == 14){
-                eventOver[0]?.Invoke();
+                eventOver[1]?.Invoke();
             }
 
             else if(index == 21){
-                eventOver[0]?.Invoke();
+                eventOver[2]?.Invoke();
+            }
+            else if (index == 28)
+            {
+                eventOver[3]?.Invoke();
             }
         }
 

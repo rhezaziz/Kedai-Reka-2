@@ -13,6 +13,7 @@ namespace Terbaru{
         public AudioSource ambienceSound;
         #region Komponent Value
         public Material shadow;
+        public List<DialogObjectClick> dialogObjects;
         [Header("UI")]
         public List<Button> btnMaps = new List<Button>();
 
@@ -213,8 +214,8 @@ namespace Terbaru{
 
             onAnimation = true;
             onLokasi = false;
-            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, 1f).OnComplete(() =>
-            StartCoroutine(Cutscene(Vector3.zero, false)));
+            panelNamaMaps.GetComponent<RectTransform>().DOPivotY(0f, 1f);
+            StartCoroutine(Cutscene(Vector3.zero, false));
             closeMapsPanel.onClick.AddListener(() => closeButtonAction(true));
             closeMapsPanel.onClick.RemoveListener(() => closeButtonAction(false));
             
@@ -292,6 +293,11 @@ namespace Terbaru{
             Chinematic.SetActive(true);
             CameraUtama.transform.DOLocalMoveZ(-7f, 1f);
 
+            foreach(var i in dialogObjects)
+            {
+                i.GetComponent<Collider2D>().enabled = false;
+            }
+
             anim.SetTrigger("Mulai"); // Menutup 25%
 
 
@@ -361,7 +367,10 @@ namespace Terbaru{
                     } 
                 }
 
-                
+                foreach (var i in dialogObjects)
+                {
+                    i.GetComponent<Collider2D>().enabled = true;
+                }
             }
 
             //if (value) FindObjectOfType<WaktuManager>().gantiWaktu(1);

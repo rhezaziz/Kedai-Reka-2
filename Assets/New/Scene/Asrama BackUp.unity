@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1290903918}
-  m_IndirectSpecularColor: {r: 0.003680871, g: 0.02526932, b: 0.15498652, a: 1}
+  m_IndirectSpecularColor: {r: 0.00367929, g: 0.025282029, b: 0.15502736, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1438,6 +1438,47 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ambienceSound: {fileID: 754811572}
   shadow: {fileID: 2100000, guid: 1f0711f4ff1719f40a58abf09bb3c0af, type: 2}
+  dialogObjects:
+  - {fileID: 7141882764694106306}
+  - {fileID: 8087549358749855119}
+  - {fileID: 7735016429653402016}
+  - {fileID: 5438642106907724191}
+  - {fileID: 9059134170241689769}
+  - {fileID: 5599396341958347499}
+  - {fileID: 6922103685739117608}
+  - {fileID: 8403864807234810785}
+  - {fileID: 7783508711117211381}
+  - {fileID: 6379795297743763288}
+  - {fileID: 6323182900213970317}
+  - {fileID: 5106162085197095991}
+  - {fileID: 5747307098070697956}
+  - {fileID: 8562120759960198240}
+  - {fileID: 8527891764987051959}
+  - {fileID: 1265316847}
+  - {fileID: 1323942350}
+  - {fileID: 6357229089591636912}
+  - {fileID: 5891375170500462506}
+  - {fileID: 7528746564703590281}
+  - {fileID: 7220626189229036212}
+  - {fileID: 1355255127}
+  - {fileID: 5879554810139688281}
+  - {fileID: 8320672869303921762}
+  - {fileID: 7895061637168231207}
+  - {fileID: 427360615}
+  - {fileID: 7633618750234615774}
+  - {fileID: 8574217742683823569}
+  - {fileID: 4943553659236134491}
+  - {fileID: 6890110736551636419}
+  - {fileID: 1427240609}
+  - {fileID: 6359310154146072259}
+  - {fileID: 8902301726050165415}
+  - {fileID: 6394542235413013130}
+  - {fileID: 9215783423701729170}
+  - {fileID: 6372022856290933405}
+  - {fileID: 7205007154640072685}
+  - {fileID: 6789138925653923072}
+  - {fileID: 1121816067}
+  - {fileID: 4246944350563356287}
   btnMaps:
   - {fileID: 2071024180}
   - {fileID: 1322570283}
@@ -2493,36 +2534,46 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   soalDosen:
-  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 6b6fa59b4bd2041489feb54e62bc661b, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
-  - {fileID: 11400000, guid: 66e64568f9108fe4c8c14458d47fa883, type: 2}
+  - {fileID: 11400000, guid: 1ba315ad8947f124f9504958ea5aefab, type: 2}
+  - {fileID: 11400000, guid: 27c1ff966042f484b8765f5f0fcbbcf8, type: 2}
+  - {fileID: 11400000, guid: fd816bcd7726d1042b116644d9744bd9, type: 2}
+  - {fileID: 11400000, guid: 394a7dee9e981b345a197b42acdae400, type: 2}
+  - {fileID: 11400000, guid: e6335dfc983bd2246924f806fb55dd38, type: 2}
+  - {fileID: 11400000, guid: 6c6cc6d9db8c2814a85522c5b53e1aa7, type: 2}
+  - {fileID: 11400000, guid: 7f93eb51064bd30478b898c66fcdaba4, type: 2}
+  - {fileID: 11400000, guid: d1174712a834bb7419c58aca48f82d49, type: 2}
+  - {fileID: 11400000, guid: 966fe91c09f3fe64fa259f7b25824193, type: 2}
+  - {fileID: 11400000, guid: f082ba41e8fdb604c8c03954f5ffa1cb, type: 2}
+  - {fileID: 11400000, guid: dc007e1d9cadefb498952a3b302e7aad, type: 2}
+  - {fileID: 11400000, guid: bd6177096d6b7c54ebec45b526476225, type: 2}
+  - {fileID: 11400000, guid: 40da1c8493e080f4590f735d7f21475a, type: 2}
+  - {fileID: 11400000, guid: 00e5924056539124f8a87324acf6e987, type: 2}
+  - {fileID: 11400000, guid: c5d56a658f1b4b24782ccd35b02abe62, type: 2}
+  - {fileID: 11400000, guid: c4078846bf146e64aaeab969f248c577, type: 2}
+  - {fileID: 11400000, guid: 1822e26a3827d6542a910336f1c08b52, type: 2}
+  - {fileID: 11400000, guid: 810a6428ed5c3ac499d956a3181618e5, type: 2}
+  - {fileID: 11400000, guid: e4cc022b6be24f048ac1ba183116a290, type: 2}
+  - {fileID: 11400000, guid: 96dfd7c8eb866c841a870786e0de804c, type: 2}
+  - {fileID: 11400000, guid: 1ba315ad8947f124f9504958ea5aefab, type: 2}
+  - {fileID: 11400000, guid: 27c1ff966042f484b8765f5f0fcbbcf8, type: 2}
+  - {fileID: 11400000, guid: fd816bcd7726d1042b116644d9744bd9, type: 2}
+  - {fileID: 11400000, guid: 394a7dee9e981b345a197b42acdae400, type: 2}
+  - {fileID: 11400000, guid: e6335dfc983bd2246924f806fb55dd38, type: 2}
+  - {fileID: 11400000, guid: 6c6cc6d9db8c2814a85522c5b53e1aa7, type: 2}
+  - {fileID: 11400000, guid: 7f93eb51064bd30478b898c66fcdaba4, type: 2}
+  - {fileID: 11400000, guid: d1174712a834bb7419c58aca48f82d49, type: 2}
+  - {fileID: 11400000, guid: 966fe91c09f3fe64fa259f7b25824193, type: 2}
+  - {fileID: 11400000, guid: f082ba41e8fdb604c8c03954f5ffa1cb, type: 2}
+  - {fileID: 11400000, guid: dc007e1d9cadefb498952a3b302e7aad, type: 2}
+  - {fileID: 11400000, guid: bd6177096d6b7c54ebec45b526476225, type: 2}
+  - {fileID: 11400000, guid: 40da1c8493e080f4590f735d7f21475a, type: 2}
+  - {fileID: 11400000, guid: 00e5924056539124f8a87324acf6e987, type: 2}
+  - {fileID: 11400000, guid: c5d56a658f1b4b24782ccd35b02abe62, type: 2}
+  - {fileID: 11400000, guid: c4078846bf146e64aaeab969f248c577, type: 2}
+  - {fileID: 11400000, guid: 1822e26a3827d6542a910336f1c08b52, type: 2}
+  - {fileID: 11400000, guid: 810a6428ed5c3ac499d956a3181618e5, type: 2}
+  - {fileID: 11400000, guid: e4cc022b6be24f048ac1ba183116a290, type: 2}
+  - {fileID: 11400000, guid: 96dfd7c8eb866c841a870786e0de804c, type: 2}
   soalMingguan: []
   komputer: {fileID: 0}
   wrong: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
@@ -2535,6 +2586,7 @@ MonoBehaviour:
   soal: {fileID: 940521235}
   panelResult: {fileID: 581407189}
   Result: {fileID: 1037991759}
+  thisSoal: {fileID: 0}
 --- !u!114 &21220971
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17238,7 +17290,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 5438642106907724190}
+      - m_Target: {fileID: 0}
         m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
         m_MethodName: set_enabled
         m_Mode: 6
@@ -28436,9 +28488,9 @@ RectTransform:
   - {fileID: 1886725236}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 15, y: -10}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &652656207
@@ -28632,7 +28684,7 @@ MonoBehaviour:
                 m_StringArgument: Quiz
                 m_BoolArgument: 1
               m_CallState: 2
-            - m_Target: {fileID: 5879554810139688282}
+            - m_Target: {fileID: 0}
               m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
               m_MethodName: set_enabled
               m_Mode: 6
@@ -38874,8 +38926,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cd5253e014f534b858f405dc704bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  mainMenu: 1
+  obj:
+  - {fileID: 21220965}
+  - {fileID: 1147744896}
+  - {fileID: 383945599}
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
+  panelUtama: {fileID: 1582947453}
   isTutorial: 1
   interactions:
   - {fileID: 438926246}
@@ -41736,90 +41794,22 @@ MonoBehaviour:
           quest: {fileID: 0}
           isRPG: 0
           Index: 0
-          proses:
-          - Action: Quiz
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindahMiniGame
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 1
-                  m_CallState: 2
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindah
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-          - Action: Kembali
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212852}
-                  m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
-                  m_MethodName: startNarasi
-                  m_Mode: 3
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 1
-                  m_CallState: 2
+          proses: []
         events:
           m_PersistentCalls:
-            m_Calls: []
+            m_Calls:
+            - m_Target: {fileID: 894212852}
+              m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+              m_MethodName: startNarasi
+              m_Mode: 3
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 1
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     - inAsrama: 0
       dialogWithPerempuan: 0
       narasi:
@@ -41845,90 +41835,22 @@ MonoBehaviour:
           quest: {fileID: 0}
           isRPG: 0
           Index: 0
-          proses:
-          - Action: Quiz
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindahMiniGame
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 1
-                  m_CallState: 2
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212847}
-                  m_TargetAssemblyTypeName: Terbaru.MiniGame, Assembly-CSharp
-                  m_MethodName: pindah
-                  m_Mode: 5
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 0
-                    m_FloatArgument: 0
-                    m_StringArgument: Quiz
-                    m_BoolArgument: 0
-                  m_CallState: 2
-          - Action: Kembali
-            ProcessEventStart:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEventHelper:
-              m_PersistentCalls:
-                m_Calls: []
-            ProcessEnd:
-              m_PersistentCalls:
-                m_Calls:
-                - m_Target: {fileID: 894212852}
-                  m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
-                  m_MethodName: startNarasi
-                  m_Mode: 3
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 0
-                  m_CallState: 2
-                - m_Target: {fileID: 21220967}
-                  m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
-                  m_MethodName: Chinematic
-                  m_Mode: 6
-                  m_Arguments:
-                    m_ObjectArgument: {fileID: 0}
-                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                    m_IntArgument: 1
-                    m_FloatArgument: 0
-                    m_StringArgument: 
-                    m_BoolArgument: 1
-                  m_CallState: 2
+          proses: []
         events:
           m_PersistentCalls:
-            m_Calls: []
+            m_Calls:
+            - m_Target: {fileID: 894212852}
+              m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+              m_MethodName: startNarasi
+              m_Mode: 3
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 1
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
     - inAsrama: 0
       dialogWithPerempuan: 0
       narasi:
@@ -41951,7 +41873,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 894212841}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 086be258345234a029dca36e7ef25dc1, type: 3}
   m_Name: 
@@ -50560,9 +50482,9 @@ RectTransform:
   - {fileID: 1434420930}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 65, y: -10}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1153271413
@@ -52995,9 +52917,9 @@ RectTransform:
   - {fileID: 1421712803}
   m_Father: {fileID: 139779201}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 40, y: -10}
   m_SizeDelta: {x: 20, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1227785197
@@ -68146,6 +68068,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 21220967}
+        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+        m_MethodName: bantuanText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
   - m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1488554085}
@@ -68164,6 +68098,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 21220967}
+        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+        m_MethodName: bantuanText
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -68202,6 +68148,32 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 21220967}
+        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+        m_MethodName: bantuanText
+        m_Mode: 5
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  - m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 21220967}
+        m_TargetAssemblyTypeName: Terbaru.UiManager, Assembly-CSharp
+        m_MethodName: bantuanText
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -69308,7 +69280,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1582947454
 RectTransform:
   m_ObjectHideFlags: 0
@@ -110391,8 +110363,8 @@ GameObject:
   - component: {fileID: 5879554810139688280}
   - component: {fileID: 5015766473110949460}
   - component: {fileID: 530241709754131568}
-  - component: {fileID: 5879554810139688282}
   - component: {fileID: 5879554810139688281}
+  - component: {fileID: 5879554810139688282}
   m_Layer: 0
   m_Name: Pak Guru
   m_TagString: Untagged
@@ -115027,8 +114999,8 @@ GameObject:
   - component: {fileID: 842710025670892795}
   - component: {fileID: 2679717432387841610}
   - component: {fileID: 187877916983523402}
-  - component: {fileID: 5438642106907724190}
   - component: {fileID: 5438642106907724191}
+  - component: {fileID: 5438642106907724192}
   m_Layer: 7
   m_Name: KGS_11_IDLE_AKTIVITAS1_0
   m_TagString: Untagged
@@ -115036,27 +115008,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
---- !u!65 &5438642106907724190
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5438642106907724189}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 4.417333, y: 7.0584583, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &5438642106907724191
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -115110,6 +115061,51 @@ MonoBehaviour:
   onDialog: 1
   Indikator: {fileID: 922577407}
   warga: 0
+--- !u!61 &5438642106907724192
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5438642106907724189}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.417333, y: 7.0584583}
+    newSize: {x: 12.62583, y: 32.25506}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 4.417333, y: 7.0584583}
+  m_EdgeRadius: 0
 --- !u!224 &5441314269974499378
 RectTransform:
   m_ObjectHideFlags: 0
@@ -117661,13 +117657,15 @@ MonoBehaviour:
   onDialog: 0
   Indikator: {fileID: 2036658442}
   warga: 0
---- !u!65 &5879554810139688282
-BoxCollider:
+--- !u!61 &5879554810139688282
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4398931047034207841}
+  m_Enabled: 1
+  m_Density: 1
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
@@ -117676,12 +117674,34 @@ BoxCollider:
     serializedVersion: 2
     m_Bits: 0
   m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
   m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 1.9440262, y: 5.632727, z: 0.72303176}
-  m_Center: {x: -0.0000022649765, y: 0, z: -0.26151586}
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9440217, y: 5.632727}
+    newSize: {x: 10.69212, y: 30.98}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9440217, y: 5.632727}
+  m_EdgeRadius: 0
 --- !u!114 &5879677227181072467
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -121182,7 +121202,7 @@ Transform:
   m_GameObject: {fileID: 3320934860996001309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -62.32, y: 5.3, z: -129}
+  m_LocalPosition: {x: -175.34, y: 5.3, z: -129}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -126281,7 +126301,7 @@ MonoBehaviour:
                 m_StringArgument: Quiz
                 m_BoolArgument: 1
               m_CallState: 2
-            - m_Target: {fileID: 5879554810139688282}
+            - m_Target: {fileID: 0}
               m_TargetAssemblyTypeName: UnityEngine.Collider, UnityEngine
               m_MethodName: set_enabled
               m_Mode: 6

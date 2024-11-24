@@ -11,6 +11,7 @@ namespace Terbaru{
         public bool onDialog = true;
         public GameObject Indikator;
         public bool warga;
+
         void OnMouseDown(){
             Debug.Log("Klik");
             if (!onDialog) {

@@ -30,6 +30,8 @@ namespace Terbaru{
 
         List<soalData> temp = new List<soalData>();
 
+        public soalData thisSoal;
+
         void Awake() {
             if (instance != null)
                 instance = this;
@@ -47,23 +49,28 @@ namespace Terbaru{
 
         public void initSoalWithData(soalData soal)
         {
-            temp[0] = soal;
+            Debug.Log("Ada");
+            thisSoal = soal;
+            //temp[0] = soal;
             initSoal();
         }
 
         public void setSoal(int index)
         {
-            if (index % 7 != 0)
-                temp.Add(soalDosen[index]);
-            else
-            {
-                foreach (var soal in soalMingguan)
-                {
-                    temp.Add(soal);
-                }
-            }
+            temp.Clear();
+            thisSoal = soalDosen[index];
+            temp.Add(thisSoal);
+            //if (index % 7 != 0)
+            //    temp.Add(soalDosen[index]);
+            //else
+            //{
+            //    foreach (var soal in soalMingguan)
+            //    {
+            //        temp.Add(soal);
+            //    }
+            //}
 
-            if(komputer) komputer.setSoal(index);
+            //if(komputer) komputer.setSoal(index);
         }
 
         public void initSoal()

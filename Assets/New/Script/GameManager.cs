@@ -9,9 +9,14 @@ namespace Terbaru{
     {
         public static GameManager instance;
 
+        public bool mainMenu;
+
+        public List<GameObject> obj = new List<GameObject>();
+
         public WaktuManager waktu;
 
         public playerProfil profil;
+        public GameObject panelUtama;
 
         [Header("Tutorial")]
         public bool isTutorial;
@@ -29,11 +34,27 @@ namespace Terbaru{
         }
         void Start(){
             DontDestroyOnLoad(this);
-
+            
+            
             waktu.currentTime(2);
             checkTutorial();
+            checkMainMenu();
         }
 
+        public void updateMainMenu(bool value)
+        {
+            mainMenu = value;
+            checkMainMenu();
+        }
+
+        public void checkMainMenu()
+        {
+            panelUtama.SetActive(!mainMenu);
+            if (mainMenu)
+            {
+                FindObjectOfType<MiniGame>().openMainMenu("New Scene");
+            }
+        }
 
         public void DestroyThisObject()
         {

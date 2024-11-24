@@ -53,14 +53,14 @@ namespace Terbaru
 
         public void MovePaddleRight()
         {
-            if(transform.position.x <= max)
-                transform.position = (rg.position + new Vector2(tambah, 0) * Time.deltaTime);
+            if(rg.position.x <= max)
+                rg.position = (rg.position + new Vector2(tambah, 0) * Time.deltaTime);
         }
 
         public void MovePaddleLeft()
         {
-            if(transform.position.x >= min)
-                transform.position = (rg.position + new Vector2(-tambah, 0) * Time.deltaTime);
+            if(rg.position.x >= min)
+                rg.position = (rg.position + new Vector2(-tambah, 0) * Time.deltaTime);
         }    
     }    
 }

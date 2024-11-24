@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e5ccd9cc6cfb42a42aaf817272f7679f, type: 3}
   m_Name: Soal 11
   m_EditorClassIdentifier: 
-  soal: Pasar dari Suku Banjat ini melibatkan pedagang yang menjual barang-barang
+  soal: Pasar dari Suku Banjar ini melibatkan pedagang yang menjual barang-barang
     dagangan mereka di atas perahu, dikenal dengan nama...?
   pilA: Pasar Air
   pilB: Pasar Terapung

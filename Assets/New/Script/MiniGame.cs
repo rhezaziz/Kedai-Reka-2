@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace Terbaru{
     public class MiniGame : MonoBehaviour
@@ -73,6 +74,26 @@ namespace Terbaru{
 
             
 
+        }
+
+        public void openMainMenu(string namaScene)
+        {
+            sceneActive = namaScene;
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+            DeactivateObjectsInPreviousScene();
+        }
+
+        public void kembaliAsrama(string namaScene)
+        {
+            Scene scene = SceneManager.GetSceneByName("Asrama BackUp");
+            SceneManager.UnloadSceneAsync(namaScene);
+            SceneManager.SetActiveScene(scene);
+
+            ActivateObjectsInPreviousScene();
+
+
+            //GameManager.instance.mainMenu = false;
+            GameManager.instance.updateMainMenu(false);
         }
         IEnumerator mulaiMiniGameFromDialogKampung(string namaScene)
         {

@@ -51,11 +51,14 @@ namespace MiniGame6_4{
                     
                     index += 1;
                     StartCoroutine(gantiBarang());
-                
-                }else{
+                    hiddenObject = data[index].items.Count;
+
+                }
+                else{
+                    Debug.Log("Selesai");
                     QuestManager.instance.currentQuest.quest.pointBonus += Score;
                     QuestManager.instance.CheckAction(action);
-                    Debug.Log("Selesai");
+                    
                 }
                 
                 // FindObjectOfType<GameOver>().initialGameOver(Score.ToString());
