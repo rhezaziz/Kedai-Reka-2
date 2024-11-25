@@ -54,14 +54,14 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 89d32856a1065c24197003be61b33f94, type: 2}
   character:
   - {fileID: 11400000, guid: 913bdf2a3572d1643a1cd26f4d2d6156, type: 2}
-  - {fileID: 11400000, guid: 01b0b5251e6b0a14abc35c90a1d49612, type: 2}
+  - {fileID: 11400000, guid: bf1b054f8f3d06d4fafccbff7b13fb1d, type: 2}
   - {fileID: 11400000, guid: d44daf6aee98ae849a32ac97741ba763, type: 2}
-  - {fileID: 11400000, guid: 16959af5c1669e6458d732d6a6d6ca00, type: 2}
   - {fileID: 11400000, guid: 0e6f6e738f260de4cb235b389f84898b, type: 2}
+  - {fileID: 11400000, guid: 01b0b5251e6b0a14abc35c90a1d49612, type: 2}
+  - {fileID: 11400000, guid: 16959af5c1669e6458d732d6a6d6ca00, type: 2}
   - {fileID: 11400000, guid: c65090ba361804b4d9ccefef78eb498c, type: 2}
   - {fileID: 11400000, guid: 83280035b0ab8e04eaf5be888a722a95, type: 2}
   - {fileID: 11400000, guid: 4a408199e4d74c9479a7b38d2e26af96, type: 2}
-  - {fileID: 11400000, guid: bf1b054f8f3d06d4fafccbff7b13fb1d, type: 2}
   - {fileID: 11400000, guid: fbeabdc41e65dc64cb13b79cfb1a3193, type: 2}
   - {fileID: 11400000, guid: 215e9669009f79b479a7f7968377285f, type: 2}
   quest:

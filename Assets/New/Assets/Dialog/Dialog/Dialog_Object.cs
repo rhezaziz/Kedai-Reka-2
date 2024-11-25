@@ -47,7 +47,8 @@ namespace Terbaru{
         Kurir,
         Apoteker,
         Satpam,
-        Warga
+        Warga,
+        Mahasiswa
     }
 
     [System.Serializable]

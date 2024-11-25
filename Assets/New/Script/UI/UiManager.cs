@@ -35,13 +35,17 @@ namespace Terbaru
         }
         void Start(){
             //camera = Camera.main;
+            initProfil();
+
+        }
+
+        public void initProfil(){
             var profil = GameManager.instance.profil; 
 
             Nama.text = profil.NamaKarakter;
 
             UpdateSaldo(profil.Saldo);
             updateEnergy(0);
-
         }
 
         public void bantuanText (string text){

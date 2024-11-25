@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 1290903918}
-  m_IndirectSpecularColor: {r: 0.00367929, g: 0.025282029, b: 0.15502736, a: 1}
+  m_IndirectSpecularColor: {r: 0.003680871, g: 0.02526932, b: 0.15498652, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -4034,7 +4034,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 158.4621, y: -341.63928}
+  m_AnchoredPosition: {x: 158.4621, y: -299.13928}
   m_SizeDelta: {x: 50, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &32443135
@@ -6883,7 +6883,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 158.4621, y: -256.63928}
+  m_AnchoredPosition: {x: 158.4621, y: -214.1393}
   m_SizeDelta: {x: 50, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &98167715
@@ -12224,8 +12224,8 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1, y: 10.226759, z: 20.293747}
-  m_Center: {x: 0, y: 2.2408686, z: -8.429649}
+  m_Size: {x: 1.7796125, y: 10.226759, z: 22.114868}
+  m_Center: {x: 1.1162648, y: 2.2408686, z: -7.5190887}
 --- !u!1 &213637107
 GameObject:
   m_ObjectHideFlags: 0
@@ -21784,7 +21784,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAbleObject: 1
   paket: 0
-  item: []
+  item:
+  - {fileID: 11400000, guid: d02c0588bde74514eac71fa52124b6e9, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -27367,9 +27368,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1.32
-  m_Text: Selamat Datang di Gamifikasi Pendidikan Kewarganegaraan Berbasis Keunggulan
-    Etnis Indonesia Timur, Gamifikasi ini bertujuan untuk berkenalan dengan berbagai
-    macam etnis di Indonesia
+  m_Text: Selamat Datang di Gamifikasi Pendidikan Karakter Berbasis Keunggulan Etnis
+    Indonesia Timur, Gamifikasi ini bertujuan untuk berkenalan dengan berbagai macam
+    etnis di Indonesia
 --- !u!222 &624346441
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -30370,7 +30371,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAbleObject: 1
   paket: 0
-  item: []
+  item:
+  - {fileID: 11400000, guid: 76d3e8402a4c95746a37b1a123ecced2, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -47053,7 +47055,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAbleObject: 1
   paket: 0
-  item: []
+  item:
+  - {fileID: 11400000, guid: fdf5e9569a8c0614b84a2afa61363631, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -47341,7 +47344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 158.4621, y: -171.6393}
+  m_AnchoredPosition: {x: 158.4621, y: -129.1393}
   m_SizeDelta: {x: 50, y: 75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1061419109
@@ -60771,7 +60774,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAbleObject: 1
   paket: 0
-  item: []
+  item:
+  - {fileID: 11400000, guid: c3855c9a0bc1d974f99799dd68fa5524, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -66823,7 +66827,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   clickAbleObject: 1
   paket: 0
-  item: []
+  item:
+  - {fileID: 11400000, guid: 89d32856a1065c24197003be61b33f94, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -69662,7 +69667,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1593834887
 RectTransform:
   m_ObjectHideFlags: 0
@@ -94046,25 +94051,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!224 &327365930542382703
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5194761678946632696}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 8918639057161631325}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 1.3275299, y: -21.280067}
-  m_SizeDelta: {x: 562.6919, y: 207.07184}
-  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &328571751985099441
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -105227,9 +105213,9 @@ Transform:
   m_GameObject: {fileID: 1841905746826788154}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.2742004, y: -0.39605665, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalPosition: {x: -3.939, y: -1.06, z: 0}
+  m_LocalScale: {x: 1.2, y: 1.2, z: 1.2}
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 155836412}
   m_Father: {fileID: 8308988169271161118}
@@ -112328,14 +112314,6 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: -0.9066162}
   m_SizeDelta: {x: 2.3528, y: 14.5407}
   m_Pivot: {x: 0, y: 0}
---- !u!222 &4881675624709667525
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5194761678946632696}
-  m_CullTransparentMesh: 1
 --- !u!224 &4895119442854115006
 RectTransform:
   m_ObjectHideFlags: 0
@@ -113932,24 +113910,6 @@ GameObject:
   - component: {fileID: 5891375170500462505}
   m_Layer: 0
   m_Name: ORANG_LT1_PERPUSTAKAAN_1_0 (1)
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!1 &5194761678946632696
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 327365930542382703}
-  - component: {fileID: 4881675624709667525}
-  - component: {fileID: 8452576153315476526}
-  m_Layer: 5
-  m_Name: Tangan (3)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -117629,7 +117589,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 43ea1e2446027504caa79c9d770b31ce, type: 2}
+    dialogObject: {fileID: 11400000, guid: ca68fb56c6085d842a019d14d61b6864, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -119447,7 +119407,7 @@ Transform:
   m_GameObject: {fileID: 3272589788032989680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.4382629, y: -1.4825423, z: 0}
+  m_LocalPosition: {x: 3.57, y: -1.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -124884,7 +124844,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1931023374, guid: f4261e308fdb3154ab70d7041b67712c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -126224,7 +126184,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 4c5001848b39be24088065f54b6c90ff, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19b65583f6efae74290533ace2875938, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -126425,7 +126385,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    dialogObject: {fileID: 11400000, guid: 98e5af698ef634b4b821404aa165367d, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -129827,7 +129787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 249f1b4f1d25eee43806e1f547350f34, type: 2}
+    dialogObject: {fileID: 11400000, guid: a25e296553b3be04eaf577650f4090ec, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -131054,7 +131014,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -2
-  m_Sprite: {fileID: 21300000, guid: 0f660c58d93941842948750aefebf263, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ffd22b855fc7e484aa7feed3a742d0c5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -131301,36 +131261,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3684966383486112139}
   m_Mesh: {fileID: 6255687079079774844, guid: bf41f45a73943ff44a4cef232e2a7839, type: 3}
---- !u!114 &8452576153315476526
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5194761678946632696}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: feef4bc06f8bee143a90fce030fbb985, type: 3}
-  m_Type: 0
-  m_PreserveAspect: 0
-  m_FillCenter: 1
-  m_FillMethod: 4
-  m_FillAmount: 1
-  m_FillClockwise: 1
-  m_FillOrigin: 0
-  m_UseSpriteMesh: 0
-  m_PixelsPerUnitMultiplier: 1
 --- !u!4 &8460807027394806288
 Transform:
   m_ObjectHideFlags: 0
@@ -133210,16 +133140,15 @@ RectTransform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1314246303805332479}
-  m_LocalRotation: {x: 0, y: 0, z: 0.7071068, w: 0.7071068}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 327365930542382703}
   - {fileID: 1461738731096410982}
   - {fileID: 2893613195349802055}
   m_Father: {fileID: 2081305158780030637}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 90}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
@@ -134631,9 +134560,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    dialogObject: {fileID: 11400000, guid: 83361bbaba4fa074f8ba697e4623e56d, type: 2}
     quest:
-      id: 0
+      id: 31
       quest: {fileID: 0}
       isRPG: 0
       Index: 0

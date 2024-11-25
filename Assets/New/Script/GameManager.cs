@@ -43,8 +43,10 @@ namespace Terbaru{
 
         public void updateMainMenu(bool value)
         {
+            UiManager.instance.initProfil();
             mainMenu = value;
             checkMainMenu();
+            SoundManager.instance.playSoundAsrama();
         }
 
         public void checkMainMenu()
@@ -52,6 +54,7 @@ namespace Terbaru{
             panelUtama.SetActive(!mainMenu);
             if (mainMenu)
             {
+                SoundManager.instance.stopAudio();
                 FindObjectOfType<MiniGame>().openMainMenu("New Scene");
             }
         }

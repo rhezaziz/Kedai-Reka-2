@@ -61,6 +61,7 @@ namespace Terbaru{
 
             foreach(var quest in profil.quest){
                 quest.isDone = false;
+                quest.pointBonus = 0;
             }
 
 

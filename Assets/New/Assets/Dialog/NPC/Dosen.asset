@@ -10,20 +10,27 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
-  m_Name: Awal
+  m_Name: Dosen
   m_EditorClassIdentifier: 
   data:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: 4f36101232fc37a4fb3a3000e02acef0, type: 3}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
     Nama: 0
-    sentences: Hai teman-teman, terima kasih sudah mau membantuku ya!
+    sentences: 'Hallo pak '
     Kiri: 1
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2e5be31f6e9dba94aae117f00ff8e1be, type: 3}
+    Nama: 2
+    sentences: Hallo Thomas, Kamu sudah siap quiz
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
     Nama: 0
-    sentences: Mari kita berkeliling asrama dahulu!
+    sentences: Sangat Siap pak
     Kiri: 1

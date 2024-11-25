@@ -10,20 +10,20 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
-  m_Name: Dinda 1
+  m_Name: Dinda Bantuan
   m_EditorClassIdentifier: 
   data:
-  - narasi:
-      narasiText: Saat ini dinda sedang sibuk, cari karakter lain
-      VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
-    Nama: 0
-    sentences: Cobaaaa
-    Kiri: 1
   - narasi:
       narasiText: 
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 38417ef99f685354c9ff64906bd22693, type: 3}
     Nama: 8
-    sentences: AAAAA
+    sentences: Boleh Dinda, tunggu ya!
+    Kiri: 0
+  - narasi:
+      narasiText: Saat ini dinda sedang sibuk, cari karakter lain
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
+    Nama: 0
+    sentences: Thomas, boleh gak tolong ambilkan Duct Tape di Ruang Dosen?
     Kiri: 1

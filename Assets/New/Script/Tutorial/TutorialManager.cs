@@ -106,6 +106,7 @@ namespace Terbaru{
             MoveController.SetActive(true);
             //TutorialController.instance.hiddenBtn.onClick.AddListener()
             panelValuePlayer.SetActive(true);
+            initTutorial();
             
             FindObjectOfType<Movement>().move = true;
         }

@@ -8,7 +8,7 @@
 {"target_obj":"","text":"Kita butuh satu anggota lagi","isClickable":false,"isReplacingNextButton":false},
 {"target_obj":"Keluar info Karakter","text":"klik ini keluar rekrut","isClickable":true,"isReplacingNextButton":true},
 
-{"target_obj":"Info Andi","text":"Klik untuk buka informasi karakter Andi","isClickable":true,"isReplacingNextButton":true},
+{"target_obj":"Info Shinta","text":"Klik untuk buka informasi karakter Andi","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"","text":"ini informasi karakter Andi","isClickable":false,"isReplacingNextButton":false},
 {"target_obj":"Rekrut Karakter","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
 {"target_obj":"Iya Rekrut","text":"klik ini untuk rekrut","isClickable":true,"isReplacingNextButton":true},
