@@ -406,7 +406,7 @@ namespace Terbaru{
             TutorialLoader.instance.Load("Day2_8");
             colDeketKamarPintu.SetActive(false);
             colDeketKamar.SetActive(false);
-            UiManager.instance.bantuanText("Kembali Ke Asrama");
+            UiManager.instance.bantuanText("Pergi ke papan Kasus");
         }
 
         public void Day2_9(){

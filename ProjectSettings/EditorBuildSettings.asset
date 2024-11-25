@@ -6,11 +6,11 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/New/Scene/New Scene.unity
-    guid: 2ef991398c3b4a149b79b5b0d43a4255
-  - enabled: 1
     path: Assets/New/Scene/Asrama BackUp.unity
     guid: 0b41990bf7461e14ca6eafb1b2b2c634
+  - enabled: 1
+    path: Assets/New/Scene/New Scene.unity
+    guid: 2ef991398c3b4a149b79b5b0d43a4255
   - enabled: 1
     path: Assets/New/MiniGame/Daily/Quiz.unity
     guid: 5f177eb9d4b3ea143a367603320afc41
@@ -26,6 +26,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New/MiniGame/Kasus/Kasus 1/S - 1 Meluruskan Kesalahpahaman/Scene/Kasus1_4.unity
     guid: 2e750b177eeb1cc4faf07de865724bff
+  - enabled: 1
+    path: Assets/New/MiniGame/Daily/Minggu 4.unity
+    guid: 7c36716e8fe4a9b46887adbb0c0b91b4
   - enabled: 1
     path: Assets/New/MiniGame/Kasus/Kasus 1/S - 2 Memeriksa Kembali Anggaran/Scene/Kasus1_5.unity
     guid: 353b9fc695e4a3f47a9b1ae593c464fb
@@ -92,6 +95,9 @@ EditorBuildSettings:
     path: Assets/New/MiniGame/Kasus/Kasus 6/M - 2 Memeriksa Hasil Produksi/Scene/Kasus6_2.unity
     guid: 47333842bb5c120439a4d40822c85ca1
   - enabled: 1
+    path: Assets/New/MiniGame/Daily/Cocok tanam/Tanaman.unity
+    guid: a53a0d05e4118f242957b1ef00052c9c
+  - enabled: 1
     path: Assets/New/MiniGame/Kasus/Kasus 6/S - 1 Mempromosikan Produk/Scene/Kasus6_3.unity
     guid: 297c9a33de6923f459dfe76cf12d7c02
   - enabled: 1
@@ -133,4 +139,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/New/MiniGame/Daily/Hari ke-26/Hari26.unity
     guid: ddcafbeb364c08441884bc089f1f5084
+  - enabled: 1
+    path: Assets/New/Scene/Kampung.unity
+    guid: 1cc251f822ebb1e4dbe8dfbd13a7990d
+  - enabled: 1
+    path: Assets/Mini Game/Pure It/water Purify.unity
+    guid: 951fd1ac6444fc4468ac2a9c381b1ce2
   m_configObjects: {}

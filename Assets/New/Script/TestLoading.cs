@@ -45,7 +45,7 @@ namespace  Terbaru
                 timer -= .1f;
                 yield return .1f;
             }
-            FindObjectOfType<MiniGame>().kembaliAsrama("New Scene");
+            kembaliAsrama("New Scene");
             Destroy(this.gameObject);
         }
 
@@ -92,6 +92,38 @@ namespace  Terbaru
             SceneManager.sceneLoaded -= UnloadScene;
             SceneManager.SetActiveScene(scene);
             SceneManager.UnloadSceneAsync(sceneActive);
+        }
+
+
+        public void kembaliAsrama(string namaScene)
+        {
+            Scene scene = SceneManager.GetSceneByName("Asrama BackUp");
+            SceneManager.UnloadSceneAsync(namaScene);
+            SceneManager.SetActiveScene(scene);
+
+            ActivateObjectsInPreviousScene();
+
+
+            //GameManager.instance.mainMenu = false;
+            GameManager.instance.updateMainMenu(false);
+        }
+
+        public void ActivateObjectsInPreviousScene()
+        {
+            // Dapatkan scene yang sudah aktif sebelumnya (misalnya scene di index 0)
+            Scene previousScene = SceneManager.GetSceneByName("Asrama BackUp");
+
+            if (previousScene.isLoaded)
+            {
+                // Dapatkan semua root gameObject di scene sebelumnya
+                GameObject[] rootObjects = previousScene.GetRootGameObjects();
+
+                // Aktifkan semua root gameObject (atau pilih objek tertentu)
+                foreach (GameObject obj in rootObjects)
+                {
+                    obj.SetActive(true); // Aktifkan objek
+                }
+            }
         }
     }   
 }
