@@ -29,7 +29,7 @@ namespace Terbaru{
         }
 
         public void gantiHariTest(TMPro.TMP_InputField hari){
-            FindObjectOfType<Controller>().currentState(state.Interaction);
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
             day = int.Parse(hari.text) - 1;
             updateDay();
         }

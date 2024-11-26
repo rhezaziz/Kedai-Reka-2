@@ -77,9 +77,11 @@ namespace Terbaru{
 
 
         public void action(Transform Player){
-            FindObjectOfType<Controller>().currentState(state.Interaction);
+
+            tutorialState = GameManager.instance.isTutorial;
+           // FindObjectOfType<Controller>().currentState(state.Interaction);
             
-            UiManager.instance.Chinematic(true, -.25f);
+            UiManager.instance.startChinematic(-.25f);
             Player.GetComponentInChildren<SpriteRenderer>().flipX = flipX;
             GetComponent<Collider>().enabled = false;
             float PosX = transform.GetChild(0).position.x;
@@ -102,14 +104,16 @@ namespace Terbaru{
         }
 
         public void AnimasiEnd(){
-            FindObjectOfType<Controller>().currentState(state.Default);
+            //FindObjectOfType<Controller>().currentState(state.Default);
             GetComponent<Collider>().enabled = true;
-            UiManager.instance.Chinematic(false, 1.75f);
+            UiManager.instance.endChinematic(1.75f);
 
             if(tutorialState){
                 tutorialState = false;
                 FindObjectOfType<TutorialManager>().EndAnimation();
             }
+
+            UiManager.instance.ChinematicPanel.endChinematic();
         }
     }
 }

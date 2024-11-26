@@ -121,11 +121,11 @@ namespace Terbaru{
         }
 
         IEnumerator mulaiMiniGame(string namaScene){
-            control.currentState(state.Interaction);
-            control.playerMove.move = false;
-            UiManager.instance.Chinematic(true);
+            //control.currentState(state.Interaction);
+            //control.playerMove.move = false;
+            UiManager.instance.startChinematic();
             
-            FindObjectOfType<UiManager>().panelUtama.SetActive(false);
+            //FindObjectOfType<UiManager>().panelUtama.SetActive(false);
             yield return new WaitForSeconds(3f);
             
             UiManager.instance.Chinematic(true);
@@ -137,8 +137,9 @@ namespace Terbaru{
 
             yield return new WaitForSeconds(1f);
             DeactivateObjectsInPreviousScene();
-            UiManager.instance.Chinematic(false);
-
+            UiManager.instance.endChinematic();
+            yield return new WaitForSeconds(1f);
+            UiManager.instance.ChinematicPanel.endChinematic();
         
         }
 
@@ -210,7 +211,7 @@ namespace Terbaru{
 
 
         IEnumerator kembaliQuest(string value){
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             //FindObjectOfType<Controller>().currentState(state.Interaction);
             yield return new WaitForSeconds(1f);
             
@@ -226,9 +227,14 @@ namespace Terbaru{
             //yield return new WaitForSeconds(1f);
 
             yield return new WaitForSeconds(2f);
-            UiManager.instance.Chinematic(true);
+            //UiManager.instance.Chinematic(true);
+            Debug.Log("kembali Quest");
+            UiManager.instance.endChinematic();
             QuestManager.instance.CheckAction("Kembali");
+            yield return new WaitForSeconds(1f);
+            UiManager.instance.ChinematicPanel.endChinematic();
         }
+
 
         IEnumerator KembaliMaps(string value)
         {

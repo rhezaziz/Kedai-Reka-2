@@ -90,7 +90,7 @@ namespace Terbaru{
 
                 //var camera = Camera.main;
             // float zoom = isActive ? -7f : -10f;
-                UiManager.instance.Chinematic(true);
+                UiManager.instance.endChinematic();
                 objectPanel.SetActive(false);
                 Debug.Log("Zoom Out");
                 if(!isRPG){
@@ -102,7 +102,7 @@ namespace Terbaru{
                 
                 
             });
-
+            UiManager.instance.ChinematicPanel.endChinematic();
             UiManager.instance.updateEnergy(2);
             FindObjectOfType<WaktuManager>().gantiWaktu(1);
         }

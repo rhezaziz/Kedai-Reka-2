@@ -90,10 +90,10 @@ namespace Terbaru
             else
             
             {
-                Player.GetComponent<Controller>().currentState(state.Interaction);
-                UiManager.instance.Chinematic(true);
+                //Player.GetComponent<Controller>().currentState(state.Interaction);
+                UiManager.instance.startChinematic();
 
-                UiManager.instance.panelUtama.SetActive(false);
+                //UiManager.instance.panelUtama.SetActive(false);
 
                 Invoke("startDialog", 1f);
             }
@@ -126,13 +126,13 @@ namespace Terbaru
             Invoke("tutupPintu", duration + 7f);
         }
 
-         public void endDialog()
+        public void endDialog()
         {
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.ChinematicPanel.endChinematic();
 
             Player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
-            Player.GetComponent<Controller>().currentState(state.Default);
-            UiManager.instance.panelUtama.SetActive(true);
+           // Player.GetComponent<Controller>().currentState(state.Default);
+            //UiManager.instance.panelUtama.SetActive(true);
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
 
             FindObjectOfType<DialogManager>().closeDialog();

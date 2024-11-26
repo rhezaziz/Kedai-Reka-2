@@ -74,7 +74,7 @@ namespace Terbaru{
         }
 
         public void action(Transform Player){
-            UiManager.instance.ChinematicPanel.SetActive(true);
+            //UiManager.instance.ChinematicPanel.SetActive(true);
             var Perempuan = Player.GetChild(1).transform;
             Perempuan.gameObject.SetActive(true);
             
@@ -153,7 +153,7 @@ namespace Terbaru{
             camera.transform.DOLocalMoveZ(-7f, 1f);
             PanelUtama.SetActive(false);
 
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
 
             yield return new WaitForSeconds(2f);
 
@@ -168,7 +168,7 @@ namespace Terbaru{
             texture.Create(); 
             video.gameObject.SetActive(false);
 
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
             
             camera.transform.DOLocalMoveZ(-10f, 1f);
 
@@ -176,7 +176,9 @@ namespace Terbaru{
             extendAction?.Invoke();
             PanelUtama.SetActive(true);
             
-            FindObjectOfType<Controller>().currentState(state.Default);
+            //FindObjectOfType<Controller>().currentState(state.Default);
+
+            UiManager.instance.ChinematicPanel.endChinematic();
             
             
         }

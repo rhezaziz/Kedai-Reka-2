@@ -45,9 +45,9 @@ namespace Terbaru{
 
         public void action(Transform player){
             Player = player.gameObject;
-            Player.GetComponent<Controller>().currentState(state.Interaction);            
-            UiManager.instance.Chinematic(true);
-            
+            Player.GetComponent<Controller>().currentState(state.Interaction);
+            //UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             UiManager.instance.panelUtama.SetActive(false);
             
             

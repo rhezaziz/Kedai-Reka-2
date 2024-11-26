@@ -89,9 +89,11 @@ namespace Terbaru{
         public void startDialog(){
              
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
-            FindObjectOfType<Controller>().currentState(state.Interaction); 
+            FindObjectOfType<Controller>().currentState(state.Interaction);
+
+
                       
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             
             UiManager.instance.panelUtama.SetActive(false);
 
@@ -105,7 +107,7 @@ namespace Terbaru{
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
             FindObjectOfType<Controller>().currentState(state.Interaction); 
                       
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             
             UiManager.instance.panelUtama.SetActive(false);
 
@@ -115,8 +117,8 @@ namespace Terbaru{
         }
 
         public void endDialog(){
-            UiManager.instance.Chinematic(false);
-
+            UiManager.instance.ChinematicPanel.endChinematic();
+            
             FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", false);
             
             UiManager.instance.panelUtama.SetActive(true);

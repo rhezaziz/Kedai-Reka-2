@@ -120,7 +120,8 @@ namespace Terbaru{
 
         public void endDialog()
         {
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
+            //UiManager.instance.Chinematic(false);
 
             FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", false);
             
@@ -138,7 +139,7 @@ namespace Terbaru{
             //FindObjectOfType<UiManager>().panelUtama.SetActive(true);
             FindObjectOfType<Controller>().currentState(state.Default);
             //QuestManager.instance.CheckActionQuest("Talk");
-
+            UiManager.instance.ChinematicPanel.endChinematic();
             Debug.Log("End Dialog Daily Quest");
 
             
@@ -147,11 +148,12 @@ namespace Terbaru{
         public void startDialog()
         {
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
-            FindObjectOfType<Controller>().currentState(state.Interaction); 
-                      
-            UiManager.instance.Chinematic(true);
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
+
+            UiManager.instance.startChinematic();
+            //UiManager.instance.Chinematic(true);
             
-            UiManager.instance.panelUtama.SetActive(false);
+            //UiManager.instance.panelUtama.SetActive(false);
 
             FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", true);
 

@@ -155,8 +155,8 @@ namespace Terbaru {
         IEnumerator pindahKeDepanPintu()
         {
             //yield return new WaitForSeconds(1f);
-            UiManager.instance.panelUtama.SetActive(false);
-            Player.GetComponent<Controller>().currentState(state.Interaction);
+            //UiManager.instance.panelUtama.SetActive(false);
+           // Player.GetComponent<Controller>().currentState(state.Interaction);
             UiManager.instance.chinematicDialog(true);
             yield return new WaitForSeconds(1f);
             FindObjectOfType<Controller>().setPlayerOnFrontDoor();
@@ -224,9 +224,9 @@ namespace Terbaru {
             // if(controller){
             //     controller.currentCondition(animasi.Ngobrol);
             // }
-            UiManager.instance.panelUtama.SetActive(false);
-            Player.GetComponent<Controller>().currentState(state.Interaction);
-            UiManager.instance.Chinematic(true);
+            //UiManager.instance.panelUtama.SetActive(false);
+           // Player.GetComponent<Controller>().currentState(state.Interaction);
+            UiManager.instance.startChinematic();
             //Invoke("chinematic", 1f);
             FindObjectOfType<Player_Interaction>().interactObject = gameObject; 
 
@@ -243,13 +243,18 @@ namespace Terbaru {
         
 
         public void endDialog(){
-            //UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
 
             Player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
-            Player.GetComponent<Controller>().currentState(state.Default);
-            UiManager.instance.panelUtama.SetActive(true);
+            //Player.GetComponent<Controller>().currentState(state.Default);
+            //UiManager.instance.panelUtama.SetActive(true);
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
 
+            Invoke("endDialogAction", 1.5f);
+        }
+
+        public void endDialogAction()
+        {
             FindObjectOfType<DialogManager>().closeDialog();
             eventTemp?.Invoke();
         }

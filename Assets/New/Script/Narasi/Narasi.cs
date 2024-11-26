@@ -49,7 +49,7 @@ namespace Terbaru{
             if(!chinematic){
                 FindObjectOfType<Controller>().currentState(state.Interaction); 
                       
-                UiManager.instance.Chinematic(true);
+                UiManager.instance.startChinematic();
             
                 UiManager.instance.panelUtama.SetActive(false);
             
@@ -69,7 +69,7 @@ namespace Terbaru{
 
         public void pindahSekre(){
             StartCoroutine(mulai());
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             
             UiManager.instance.panelUtama.SetActive(false);
         }
@@ -127,7 +127,7 @@ namespace Terbaru{
         IEnumerator mulai(){
             FindObjectOfType<DialogManager>().closeDialog();
             if(!chinematic){
-                UiManager.instance.Chinematic(true);
+                UiManager.instance.startChinematic();
             }
             yield return new WaitForSeconds(2f);
 
@@ -227,7 +227,7 @@ namespace Terbaru{
                     //FindObjectOfType<DialogManager>().closeDialog();
 
                     PerempuanNgomong(false);
-                    UiManager.instance.Chinematic(false, 1.75f);
+                    UiManager.instance.endChinematic(1.75f);
                     Perempuan.SetActive(false);
 
                     // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
@@ -260,7 +260,7 @@ namespace Terbaru{
                     //FindObjectOfType<DialogManager>().closeDialog();
 
                     PerempuanNgomong(false);
-                    UiManager.instance.Chinematic(false, 1.75f);
+                    UiManager.instance.endChinematic(1.75f);
                     Perempuan.SetActive(false);
 
                     // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
@@ -290,7 +290,8 @@ namespace Terbaru{
 
             //Debug.Log("Close Dialog");
             chinematic = false;
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
+            //UiManager.instance.Chinematic(false);
             
             UiManager.instance.panelUtama.SetActive(true);
             //;
@@ -307,6 +308,8 @@ namespace Terbaru{
 
         void startAction(){
             FindObjectOfType<Controller>().currentState(state.Default);
+
+            UiManager.instance.ChinematicPanel.endChinematic();
             //OnAction.Invoke();
             
         }

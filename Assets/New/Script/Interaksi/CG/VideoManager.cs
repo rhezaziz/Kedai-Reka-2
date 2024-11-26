@@ -34,7 +34,7 @@ namespace Terbaru{
         public void action(VideoClip video){
             Debug.Log("Play Video");
             testVideo = video ? video : null;
-            UiManager.instance.ChinematicPanel.SetActive(true);
+            //UiManager.instance.ChinematicPanel.SetActive(true);
             Debug.Log("on Step");
             texture.Release();
             texture.Create();
@@ -45,7 +45,7 @@ namespace Terbaru{
         public void action(){
             Debug.Log("Play Video");
             //testVideo = video ? video : null;
-            UiManager.instance.ChinematicPanel.SetActive(true);
+            //UiManager.instance.ChinematicPanel.SetActive(true);
             
             texture.Release();
             texture.Create();
@@ -57,7 +57,7 @@ namespace Terbaru{
             FindObjectOfType<DialogManager>().panelDialog.SetActive(false);
             FindObjectOfType<DialogManager>().btnNextDialog.gameObject.SetActive(false);
             testVideo = video ? video : null;
-            UiManager.instance.ChinematicPanel.SetActive(true);
+            //UiManager.instance.ChinematicPanel.SetActive(true);
             Debug.Log("on Step");
             texture.Release();
             texture.Create();
@@ -118,14 +118,14 @@ namespace Terbaru{
         {
             video.gameObject.SetActive(true);
             video.clip = testVideo;
-            FindObjectOfType<Controller>().currentState(state.Interaction);
-            GameObject PanelUtama = UiManager.instance.panelUtama;
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
+            //GameObject PanelUtama = UiManager.instance.panelUtama;
             float duration = (float)video.length;
             var camera = Camera.main;
             camera.transform.DOLocalMoveZ(-7f, 1f);
-            PanelUtama.SetActive(false);
+            //PanelUtama.SetActive(false);
 
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
 
             yield return new WaitForSeconds(2f);
 
@@ -142,14 +142,15 @@ namespace Terbaru{
             // texture.Create(); 
             video.gameObject.SetActive(false);
 
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
 
             camera.transform.DOLocalMoveZ(-10f, 1f);
 
             yield return new WaitForSeconds(2f);
-            PanelUtama.SetActive(true);
+            UiManager.instance.ChinematicPanel.endChinematic();
+            //PanelUtama.SetActive(true);
 
-            FindObjectOfType<Controller>().currentState(state.Default);
+            //FindObjectOfType<Controller>().currentState(state.Default);
             texture.Release();
             QuestManager.instance.CheckActionQuest(namaAction);
         }
@@ -188,14 +189,14 @@ namespace Terbaru{
             Debug.Log("Cut Scene");
             video.gameObject.SetActive(true);
             video.clip = testVideo;
-            FindObjectOfType<Controller>().currentState(state.Interaction);
-            GameObject PanelUtama = UiManager.instance.panelUtama;
+            //FindObjectOfType<Controller>().currentState(state.Interaction);
+            //GameObject PanelUtama = UiManager.instance.panelUtama;
             float duration = (float)video.length;
             var camera = Camera.main;
             camera.transform.DOLocalMoveZ(-7f, 1f);
-            PanelUtama.SetActive(false);
+            //PanelUtama.SetActive(false);
 
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
 
             yield return new WaitForSeconds(2f);
 
@@ -212,15 +213,17 @@ namespace Terbaru{
             // texture.Create(); 
             video.gameObject.SetActive(false);
 
-            UiManager.instance.Chinematic(false);
-            
+            UiManager.instance.endChinematic();
+
             camera.transform.DOLocalMoveZ(-10f, 1f);
 
             yield return new WaitForSeconds(2f);
-            PanelUtama.SetActive(true);
-            
-            FindObjectOfType<Controller>().currentState(state.Default);
+            UiManager.instance.ChinematicPanel.endChinematic();
+            //PanelUtama.SetActive(true);
+
+            // FindObjectOfType<Controller>().currentState(state.Default);
             texture.Release();
+            
             QuestManager.instance.CheckActionQuest(namaAction);
             //QuestManager.instance.CheckAction(namaAction);
             
