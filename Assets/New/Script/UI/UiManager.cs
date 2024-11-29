@@ -127,6 +127,8 @@ namespace Terbaru
             Destroy(mark);
         }
 
+
+        #region Chinematic
         public void startChinematic()
         {
             Debug.Log("Start Chinematic");
@@ -222,15 +224,16 @@ namespace Terbaru
             state temp = isActive ? state.Interaction : state.Default;
             FindObjectOfType<Controller>().currentState(temp);
         }
-
+        #endregion
         IEnumerator Cutscene(List<GameObject> NPCs, Quest quest){
             Animator anim = ChinematicPanel.GetComponent<Animator>();
             var camera = Camera.main;
+            startChinematic();
             panelUtama.SetActive(false);
             //ChinematicPanel.SetActive(true);
             camera.transform.DOLocalMoveZ(-7f, 1f);
 
-            anim.SetTrigger("Mulai");
+            //anim.SetTrigger("Mulai");
 
 
             yield return new WaitForSeconds(3f);
@@ -242,14 +245,15 @@ namespace Terbaru
             foreach(var NPC in NPCs)
                 NPC.SetActive(false);
 
-            anim.SetTrigger("Mulai");
+            //anim.SetTrigger("Reverse");
+            endChinematic();
             camera.transform.DOLocalMoveZ(-10f, 1f);
             yield return new WaitForSeconds(1f);
-
-            panelUtama.SetActive(true);
+            ChinematicPanel.endChinematic();
+            //panelUtama.SetActive(true);
             //ChinematicPanel.SetActive(false);
             //FindObjectOfType<Movement>().move = true;
-            FindObjectOfType<Controller>().currentState(state.Default);
+            //FindObjectOfType<Controller>().currentState(state.Default);
         }
 
 

@@ -60,7 +60,7 @@ namespace Terbaru{
             Color color = _waktu(tempWaktu).warnaCahaya;
             ImageTime.sprite = _waktu(tempWaktu).spriteTime; 
             bool valueKamar = thisWaktu == waktu.Pagi;
-            Kamar.changeInteractable(!valueKamar);
+            Kamar.changeInteractable(!valueKamar && !FindObjectOfType<PapanQuest>().haveCerita());
             //sun.color = color;
             float intent = _waktu(tempWaktu).getIntent();
             foreach(var light in lampu){
@@ -74,8 +74,14 @@ namespace Terbaru{
                 foreach(var interact in interaksi){
                     interact.GetComponent<Interaction>().changeInteractable(false);
                 }
-
-                interaksi[0].GetComponent<Interaction>().changeInteractable(true);
+                if (!FindObjectOfType<PapanQuest>().haveCerita())
+                {
+                    interaksi[0].GetComponent<Interaction>().changeInteractable(true);
+                }
+                else
+                {
+                    interaksi[1].GetComponent<Interaction>().changeInteractable(true);
+                }
             }
         }
 

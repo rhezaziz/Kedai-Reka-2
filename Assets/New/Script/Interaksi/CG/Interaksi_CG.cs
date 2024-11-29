@@ -47,7 +47,8 @@ namespace Terbaru{
         }
 
         void Update(){
-            checkDistance();
+            if(Interactable())
+                checkDistance();
         }
 
         public void isTutorial(bool temp){

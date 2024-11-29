@@ -13,6 +13,7 @@ namespace Terbaru{
         public UnityEngine.Video.VideoClip clipsTidur;
 
         public List<int> GantiQuestList = new List<int>();
+        public List<int> HariCerita = new List<int>();
 
         public List<dayQuest> quests = new List<dayQuest>();
 
@@ -55,12 +56,16 @@ namespace Terbaru{
 
         void changeTime(){
             day += 1;
+            UiManager.instance.bantuanText("");
             FindObjectOfType<Mingguan>().startEvent();
             FindObjectOfType<UiManager>().updateEnergy(-3);
             FindObjectOfType<QuizManager>().setSoal(day);
 
             FindObjectOfType<WaktuManager>().currentTime(0);
             // Dosen.GetComponent<DialogObjectClick>().interactNPC(true);
+            if (HariCerita.Contains(day)) {
+                UiManager.instance.bantuanText("Pergi Ke Papan Tugas");
+            }
             maps.updateDayKonten(days[day].mapsId);
             if(days[day].itemSpawn.Count >= 1){
                 foreach(var item in days[day].itemSpawn){
@@ -85,6 +90,8 @@ namespace Terbaru{
                     return;
                 }
             }
+
+            
             // foreach(var time in GantiQuestList){
             //     if(time == day){
             //         QuestManager.instance.CurrentQuest = 1;

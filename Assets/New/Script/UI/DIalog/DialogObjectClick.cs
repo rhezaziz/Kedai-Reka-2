@@ -31,7 +31,7 @@ namespace Terbaru{
         }
         public void startDialog(){
             onDialog = false;
-            if (!warga) UiManager.instance.chinematicDialog(true);
+            if (!warga) UiManager.instance.startChinematicWithoutCam();
 
             else if(warga) Manager_Ending.instance.Chinematic(true);
 
@@ -62,7 +62,7 @@ namespace Terbaru{
                 QuestManager.instance.StartQuest(dialog.quest);
             }
 
-            if (!warga) UiManager.instance.chinematicDialog(false);
+            if (!warga) UiManager.instance.endChinematicWithoutCam();
 
             else if (warga) Manager_Ending.instance.Chinematic(false);
 

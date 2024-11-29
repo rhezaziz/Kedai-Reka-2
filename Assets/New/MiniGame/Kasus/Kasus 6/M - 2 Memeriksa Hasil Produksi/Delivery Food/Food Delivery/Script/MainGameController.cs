@@ -19,7 +19,7 @@ public class MainGameController : MonoBehaviour
                                                   //without needing the gameObject, while preserving the public type											//of the original variable "endlessGoalBallance"
                                                   //******************//
                                                   // Mission Variables (for Career mode) //
-    public int availableTime;               //Seconds
+    public float availableTime;               //Seconds
                                             //******************//
                                             // Common variables
     static public bool canUseCandy;
@@ -224,7 +224,30 @@ public class MainGameController : MonoBehaviour
 
         if (!gameIsFinished)
         {
-            manageClock();
+           // manageClock();
+
+            if (availableTime > 0)
+            {
+                availableTime -= Time.deltaTime;
+            }
+            else
+            {
+                // Jika waktu sudah habis
+                availableTime = 0f;
+                if (!gameIsFinished)
+                {
+                    gameIsFinished = true;
+                    Debug.Log("Selesai 1");
+                    StartCoroutine(processGameFinish());
+                }
+                //CountdownFinished(); // Fungsi untuk aksi setelah hitung mundur selesai
+            }
+
+            // Menampilkan waktu yang tersisa dalam format menit dan detik
+            int minutes = Mathf.FloorToInt(availableTime / 60);  // Menghitung menit
+            int seconds = Mathf.FloorToInt(availableTime % 60);
+            remainingTime = string.Format("{0:00} : {1:00}", minutes, seconds);
+            timeText.GetComponent<TMPro.TMP_Text>().text = remainingTime.ToString();
             //manageGuiTexts();
             StartCoroutine(checkGameWinState());
         }
@@ -329,7 +352,7 @@ public class MainGameController : MonoBehaviour
         if (gameMode == "FREEPLAY")
         {
 
-            gameTime = (int)(availableTime - Time.timeSinceLevelLoad);
+            gameTime = (int)(availableTime - Time.time);
             seconds = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) % 60;
             minutes = Mathf.CeilToInt(availableTime - Time.timeSinceLevelLoad) / 60;
             remainingTime = string.Format("{0:00} : {1:00}", minutes, seconds);

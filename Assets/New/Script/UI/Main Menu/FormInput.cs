@@ -57,7 +57,7 @@ namespace Terbaru{
             profil.jmlHari = 1;
 
             profil.setEnergy(10);
-            profil.Saldo = 10000;
+            profil.Saldo = 1000000;
 
             foreach(var quest in profil.quest){
                 quest.isDone = false;

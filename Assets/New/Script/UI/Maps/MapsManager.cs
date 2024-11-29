@@ -297,8 +297,8 @@ namespace Terbaru{
             {
                 i.GetComponent<Collider2D>().enabled = false;
             }
-
-            anim.SetTrigger("Mulai"); // Menutup 25%
+            UiManager.instance.startChinematic();
+            //anim.SetTrigger("Mulai"); // Menutup 25%
 
 
             yield return new WaitForSeconds(3f);
@@ -330,10 +330,11 @@ namespace Terbaru{
 
             cameraKeliling.transform.localPosition = posisi;
             Debug.Log("Reverse");
-            anim.SetTrigger("Reverse"); // Membuka 100%
+            UiManager.instance.endChinematic();
+            //Chinematic.SetActive(false);
             //camera.transform.DOLocalMoveZ(-10f, 1f);
 
-            if(tempMaps.valueMaps.ambience != null){
+            if (tempMaps.valueMaps.ambience != null){
                     //Debug.Log("Play Ambience");
                     ambienceSound.Stop();
                     ambienceSound.clip = tempMaps.valueMaps.ambience;
@@ -341,7 +342,9 @@ namespace Terbaru{
             }
             yield return new WaitForSeconds(2f);
 
-            
+            if (value) UiManager.instance.ChinematicPanel.endChineamticOtherScene();
+
+            else UiManager.instance.ChinematicPanel.endChinematic();
 
             //panelUtama.SetActive(true);
             //Chinematic.SetActive(false);

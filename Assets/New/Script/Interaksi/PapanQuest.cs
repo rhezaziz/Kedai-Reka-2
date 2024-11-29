@@ -44,7 +44,8 @@ namespace Terbaru{
         }
 
         void Update(){
-            checkDistance();
+            if(Interactable())
+                checkDistance();
         }
 
         bool interactable;
@@ -67,6 +68,7 @@ namespace Terbaru{
                 if (HariEvent.Contains(hari) && haveNarasi)
                 {
                     int index = HariEvent.IndexOf(hari);
+                    UiManager.instance.bantuanText("");
                     //Debug.Log(index);
                     FindObjectOfType<Narasi>().haveNarasi(index);
                     changeInteractable(false);
@@ -87,6 +89,12 @@ namespace Terbaru{
                 Invoke("startDialog", 1f);
             }
             
+        }
+
+        public bool haveCerita()
+        {
+            int hari = FindObjectOfType<DayManager>().day;
+            return HariEvent.Contains(hari) && haveNarasi;
         }
 
         public void btnActive(GameObject btn, bool interactable){

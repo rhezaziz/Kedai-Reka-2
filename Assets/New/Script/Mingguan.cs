@@ -24,7 +24,7 @@ namespace Terbaru {
 
         [Header("Minggu ke 3")]
         public UnityEngine.UI.Button uang;
-        public UnityEngine.UI.Button Character;
+        //public UnityEngine.UI.Button Character;
         public listCharacters[] characters;
         public GameObject paneLquiz;
         public VideoClip minggu3;
@@ -92,13 +92,13 @@ namespace Terbaru {
         }
 
         public void QuizKucing(){
-           Invoke("mulaiQuiz", 9f); 
+           Invoke("mulaiQuiz", 10f); 
         }
 
         public void mulaiQuiz(){
             
             paneLquiz.SetActive(true);
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.startChinematic();
             bool haveIt = GameManager.instance.profil.Saldo >= 10000;
             uang.interactable = haveIt;
             uang.onClick.AddListener(() => {
@@ -112,7 +112,7 @@ namespace Terbaru {
         {
 
             FindObjectOfType<DialogManager>().closeDialog();
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
             if (isChoose)
             {
                 foreach(var i in characters)

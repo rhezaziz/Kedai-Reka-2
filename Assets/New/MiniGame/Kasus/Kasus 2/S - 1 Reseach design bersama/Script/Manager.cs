@@ -7,6 +7,7 @@ using Terbaru;
 using UnityEngine.UI;
 
 
+
 namespace MiniGame2_3{
     public class Manager : MonoBehaviour
     {
@@ -81,6 +82,13 @@ namespace MiniGame2_3{
 
             foreach(var value in items){
                 value.jumlahBarang = -1;
+                GameObject outOfMoney = value.PanelItem.transform.GetChild(0).gameObject;
+                outOfMoney.SetActive(false);
+
+                value.PanelItem.interactable = true;
+                // panel.DOSizeDelta(new Vector2(panel.sizeDelta.x, 60), 1f);
+                // panel.transform.GetChild(0).GetChild(2).gameObject.SetActive(false);
+                value.done = false;
                 updateData(value);
             }
 
@@ -138,6 +146,15 @@ namespace MiniGame2_3{
                         // panel.transform.GetChild(0).GetChild(2).gameObject.SetActive(false);
                         item.done = true;
                     }
+                    //else
+                    //{
+                    //    GameObject outOfMoney = item.PanelItem.transform.GetChild(0).gameObject;
+                    //    outOfMoney.SetActive(false);
+                    //    item.PanelItem.interactable = true;
+                    //    // panel.DOSizeDelta(new Vector2(panel.sizeDelta.x, 60), 1f);
+                    //    // panel.transform.GetChild(0).GetChild(2).gameObject.SetActive(false);
+                    //    item.done = false;
+                    //}
    
                     
                     //item.panel. = false;

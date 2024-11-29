@@ -59,7 +59,7 @@ namespace Terbaru{
 
 
         void Update(){
-            if(isObject)
+            if(isObject && Interactable())
                 checkDistance();
         }
 

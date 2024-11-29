@@ -309,7 +309,7 @@ namespace Terbaru{
         void startAction(){
             FindObjectOfType<Controller>().currentState(state.Default);
 
-            UiManager.instance.ChinematicPanel.endChinematic();
+            UiManager.instance.ChinematicPanel.endChineamticOtherScene();
             //OnAction.Invoke();
             
         }

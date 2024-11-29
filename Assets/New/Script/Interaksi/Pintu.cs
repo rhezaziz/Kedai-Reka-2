@@ -55,7 +55,8 @@ namespace Terbaru
         }
 
         void Update(){
-            checkDistance();
+            if(Interactable())
+                checkDistance();
         }
 
         public bool interactable;

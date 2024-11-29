@@ -117,7 +117,7 @@ namespace Terbaru{
         }
 
         public void endDialog(){
-            UiManager.instance.ChinematicPanel.endChinematic();
+            UiManager.instance.endChinematic();
             
             FindObjectOfType<Controller>().GetComponentInChildren<Animator>().SetBool("Ngomong", false);
             
@@ -135,7 +135,8 @@ namespace Terbaru{
         }
 
         void startAction(){
-            FindObjectOfType<Controller>().currentState(state.Default);
+            UiManager.instance.ChinematicPanel.endChinematic();
+            //FindObjectOfType<Controller>().currentState(state.Default);
             OnAction.Invoke();
             
         }

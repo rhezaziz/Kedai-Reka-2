@@ -41,6 +41,7 @@ namespace Terbaru{
             return null;
         }
         public void result(listQuest currentQuest){
+            UiManager.instance.startChinematic();
             panelResutl.localScale = Vector2.zero;
             objectPanel.SetActive(true);
             panelResutl.DOScale(Vector2.one * .9f, 1f);

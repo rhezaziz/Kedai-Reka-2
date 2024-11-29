@@ -88,6 +88,17 @@ namespace Terbaru
             //StartCoroutine(check());
         }
 
+        public void endChineamticOtherScene()
+        {
+
+            if (full || half)
+            {
+                UiManager.instance.Chinematic(false);
+            }
+
+            gameObject.SetActive(false);
+        }
+
         void check()
         {
             if (full || half)
@@ -95,10 +106,13 @@ namespace Terbaru
                 UiManager.instance.Chinematic(false);
             }
             //yield return new WaitForSeconds(1f);
+            if (!FindObjectOfType<MapsManager>().onLokasi)
+            {
+                FindObjectOfType<Controller>().currentState(state.Interaction);
+                panelUtama.SetActive(true);
+                FindObjectOfType<Controller>().currentState(state.Default);
 
-            FindObjectOfType<Controller>().currentState(state.Interaction);
-            panelUtama.SetActive(true);
-            FindObjectOfType<Controller>().currentState(state.Default);
+            }
 
 
             gameObject.SetActive(false);
