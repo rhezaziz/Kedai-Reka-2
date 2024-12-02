@@ -34,8 +34,8 @@ namespace Terbaru{
         }
         void Start(){
             DontDestroyOnLoad(this);
-            
-            
+
+            FindObjectOfType<Controller>().GantiPerempuan(false);
             waktu.currentTime(2);
             checkTutorial();
             checkMainMenu();
@@ -47,6 +47,16 @@ namespace Terbaru{
             mainMenu = value;
             checkMainMenu();
             SoundManager.instance.playSoundAsrama();
+
+            if(NPCs.Count != 0)
+            {
+                for(int i = 0; i < NPCs.Count; i++)
+                {
+                    bool unlock = profil.character[i].characterLock;
+
+                    NPCs[i].gameObject.SetActive(!unlock);
+                }
+            }
         }
 
         public void checkMainMenu()
@@ -179,6 +189,23 @@ namespace Terbaru{
             }
             setUpPositionNPC(NPC_Quest, quest);
 
+        }
+
+        public void disabledInteractNPC()
+        {
+            foreach (var npc in NPCs)
+            {
+                npc.GetComponent<Interaction>().changeInteractable(false);
+            }
+            interactions[0].GetComponent<Interaction>().changeInteractable(false);
+        }
+
+        public void enabledInteractNPC()
+        {
+            foreach (var npc in NPCs)
+            {
+                npc.GetComponent<Interaction>().changeInteractable(true);
+            }
         }
 
         public void setUpPositionNPC(List<GameObject> NPC, Quest quest){

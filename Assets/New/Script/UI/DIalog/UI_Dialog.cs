@@ -46,6 +46,7 @@ namespace Terbaru{
 
         public void startDialog(){
             Debug.Log("Mulai");
+            ResetDialog();
             for(int i = 0; i < components.textNama.Length; i++){
                 components.textNama[i].text = "";
                 components.GambarCharacter[i].gameObject.SetActive(false);

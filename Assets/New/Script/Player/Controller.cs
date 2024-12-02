@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.Rendering.DebugUI;
 
 namespace Terbaru
 {
@@ -28,12 +29,22 @@ namespace Terbaru
 
         public RuntimeAnimatorController controllerPerempuan;
         public RuntimeAnimatorController controllerLaki;
+
+        public RuntimeAnimatorController tempRunTimeAnimator;
         public void GantiPerempuan(bool value)
         {
             RuntimeAnimatorController tempController = value ? controllerPerempuan : controllerLaki;
-
+            tempRunTimeAnimator = tempController;
             transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = tempController;
         }
+
+        public void changeRunTimeController(bool defaultValue)
+        {
+            RuntimeAnimatorController tempController = defaultValue ? controllerLaki : tempRunTimeAnimator;
+            transform.GetChild(0).GetComponent<Animator>().runtimeAnimatorController = tempController;
+        }
+
+        
 
 
         public void currentState(state current)

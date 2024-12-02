@@ -23,7 +23,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 4f36101232fc37a4fb3a3000e02acef0, type: 3}
     Nama: 0
     sentences: Mari kita berkeliling asrama dahulu!
     Kiri: 1

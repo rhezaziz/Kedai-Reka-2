@@ -174,9 +174,7 @@ public class RekrutManager : MonoBehaviour
             var temp = data.character[tempIndex];
             
             popUp.SetActive(true);
-            //Button btnKembali = popUp.transform.GetChild(0).GetChild(1).GetChild(1).GetComponent<Button>();
-            //Button btnOK = popUp.transform.GetChild(0).GetChild(1).GetChild(0).GetComponent<Button>();
-            //TMP_Text textPopUp = popUp.transform.GetChild(0).GetChild(0).GetComponent<TMP_Text>();
+
             NumberFormatInfo info = new CultureInfo("de-de", false).NumberFormat;
             string hargaText = temp.cost.ToString("n0", info);
 

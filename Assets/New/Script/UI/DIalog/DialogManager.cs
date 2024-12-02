@@ -186,7 +186,12 @@ namespace Terbaru{
             //UiManager.instance.Chinematic(false);
             //Debug.Log("End Dialog Manager");
         }
-
+        public void playEvent()
+        {
+            btnNextDialog.gameObject.SetActive(false);
+            narasiObj.SetActive(false);
+            panelDialog.gameObject.SetActive(false);
+        }
         public void closeDialog(){
             uiDialog.ResetDialog();
             uiDialog.gameObject.SetActive(false);

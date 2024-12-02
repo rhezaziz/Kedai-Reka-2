@@ -110,7 +110,7 @@ namespace Terbaru
                 SoundManager.instance.sfx(30);
                 })
                 ;
-
+            point.gameObject.SetActive(false);
             Trigger.GetComponent<Collider>().enabled = true;
         }
 

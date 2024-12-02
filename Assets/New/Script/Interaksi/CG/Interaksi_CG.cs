@@ -83,6 +83,7 @@ namespace Terbaru{
                 col.enabled = false;
             // Player.GetComponent<Collider>().enabled = false;
             // Player.GetComponent<Rigidbody>().isKinematic = true;
+            Player.GetComponent<Controller>().changeRunTimeController(true);
             Player.GetComponentInChildren<Animator>().SetBool(AnimationAction, true);
             extendAction.AddListener(()=>stopAnimation(Player));
             
@@ -101,6 +102,7 @@ namespace Terbaru{
             //Player.GetComponent<Collider>().enabled = true;
             //Player.GetComponent<Rigidbody>().isKinematic = false;
             var Perempuan = Player.GetChild(1).transform;
+            
             Perempuan.GetComponentInChildren<Animator>().SetBool(AnimationActionPerempuan, false);
             Player.GetComponentInChildren<Animator>().SetBool(AnimationAction, false);
             Perempuan.gameObject.SetActive(false);
@@ -110,6 +112,9 @@ namespace Terbaru{
             if(col) 
                 col.enabled = true;
             extendAction.RemoveListener(() => stopAnimation(Player));
+
+            Player.GetComponent<Controller>().changeRunTimeController(false);
+            point.gameObject.SetActive(false);
         }
 
         public void btnActive(GameObject btn, bool interactable){

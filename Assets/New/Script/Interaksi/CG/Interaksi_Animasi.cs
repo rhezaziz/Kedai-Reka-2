@@ -7,7 +7,7 @@ namespace Terbaru{
 
     public class Interaksi_Animasi : MonoBehaviour, Interaction
     {
-        [SerializeField] bool tutorialState;
+        public bool tutorialState;
         [SerializeField] private string namaAnimasi;
         [SerializeField] private string namaAnimasiPlayer;
 
@@ -78,10 +78,11 @@ namespace Terbaru{
 
         public void action(Transform Player){
 
-            tutorialState = GameManager.instance.isTutorial;
+            //tutorialState = GameManager.instance.isTutorial;
            // FindObjectOfType<Controller>().currentState(state.Interaction);
             
             UiManager.instance.startChinematic(-.25f);
+            Player.GetComponent<Controller>().changeRunTimeController(true);
             Player.GetComponentInChildren<SpriteRenderer>().flipX = flipX;
             GetComponent<Collider>().enabled = false;
             float PosX = transform.GetChild(0).position.x;
@@ -105,7 +106,9 @@ namespace Terbaru{
 
         public void AnimasiEnd(){
             //FindObjectOfType<Controller>().currentState(state.Default);
+            Player.GetComponent<Controller>().changeRunTimeController(false);
             GetComponent<Collider>().enabled = true;
+
             UiManager.instance.endChinematic(1.75f);
 
             if(tutorialState){

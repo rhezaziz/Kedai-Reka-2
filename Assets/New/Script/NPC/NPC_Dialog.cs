@@ -31,7 +31,7 @@ namespace Terbaru{
 
         public void Awake(){
             if(isObject){
-                point = transform.GetChild(1).gameObject;
+                //point = transform.GetChild(1).gameObject;
                 Player = GameObject.FindWithTag("Player").transform;
                 distancePlayer = 10f;
             }
@@ -64,9 +64,10 @@ namespace Terbaru{
         void Update(){
             if(isObject && Interactable()){
                 checkDistance();
-            }else if(!Interactable()){
-                point.gameObject.SetActive(false);
             }
+            //else if(!Interactable()){
+            //    point.gameObject.SetActive(false);
+            //}
                 
         }
 
@@ -115,9 +116,10 @@ namespace Terbaru{
             dialog = FindObjectOfType<NPCDialogManager>().tempDialog(indexDialog(), nama);
 
             FindObjectOfType<Player_Interaction>().interactObject = this.gameObject; 
-            FindObjectOfType<Controller>().currentState(state.Interaction); 
-                      
-            UiManager.instance.Chinematic(true);
+            FindObjectOfType<Controller>().currentState(state.Interaction);
+
+            UiManager.instance.startChinematic();
+            //UiManager.instance.Chinematic(true);
             
             UiManager.instance.panelUtama.SetActive(false);
 
@@ -129,7 +131,7 @@ namespace Terbaru{
 
         public void endDialog(){
             onDialog = false;
-            UiManager.instance.Chinematic(false);
+            UiManager.instance.endChinematic();
             Debug.Log("End");
             GetComponent<NPC_Controller>().currentCondition(animasi.Idle);
             
@@ -147,7 +149,7 @@ namespace Terbaru{
         void startAction(){
             changeInteractable(true);
             FindObjectOfType<Controller>().currentState(state.Default);
-
+            UiManager.instance.ChinematicPanel.endChinematic();
             if(OnAction.GetPersistentEventCount() > 0)
                 OnAction.Invoke();
             else if(dialog.quest.proses.Length != 0){

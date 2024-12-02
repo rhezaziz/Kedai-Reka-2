@@ -94,6 +94,7 @@ namespace Terbaru{
             }
 
             ipad.interactable = false;
+            iKucing.tutorialState = true;
         }
         public void playDay1_1()
         {
@@ -362,7 +363,7 @@ namespace Terbaru{
         void Day2_6(){
             // PintuUtama.enabled = false;
             TutorialController.IsSkippable = false;
-            UiManager.instance.bantuanText("");
+            UiManager.instance.bantuanText("Masuk Ke Kamar");
             TutorialLoader.instance.Load("Day2_6");
             PintuUtama.changeInteractable(false);
             PintuUtama.ExtraAction.RemoveAllListeners();
@@ -406,7 +407,8 @@ namespace Terbaru{
             TutorialLoader.instance.Load("Day2_8");
             colDeketKamarPintu.SetActive(false);
             colDeketKamar.SetActive(false);
-            UiManager.instance.bantuanText("Pergi ke papan Kasus");
+            PintuKamar.changeInteractable(false);
+            UiManager.instance.bantuanText("");
         }
 
         public void Day2_9(){
@@ -414,6 +416,18 @@ namespace Terbaru{
             TutorialLoader.instance.Load("Day2_9");
             colDeketKamarPintu.SetActive(false);
             colDeketKamar.SetActive(false);
+            FindObjectOfType<Controller>().currentState(state.Interaction);
+            TutorialEvents.OnTutorialComplete += endDay2_9;
+
+
+        }
+
+
+        void endDay2_9()
+        {
+            FindObjectOfType<Controller>().currentState(state.Default);
+            TutorialEvents.OnTutorialComplete -= endDay2_9;
+            PintuKamar.changeInteractable(false);
             UiManager.instance.bantuanText("Pergi ke papan Kasus");
         }
 
@@ -459,10 +473,10 @@ namespace Terbaru{
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day2_12");
             closePanelQuest.interactable = false;
-            
+            PintuKamar.changeInteractable(false);
             //iQuest.enabled = true;
             //objDay2_12.SetActive(true);
-            
+
         }
 
         void Day2_14(){
@@ -634,10 +648,10 @@ namespace Terbaru{
             Invoke("Day3_7", 5);
         }
 
-        void Day3_7(){
+        public void Day3_7(){
             Debug.Log("Day3_7");
             UiManager.instance.bantuanText("Kembali Ke papan Kasus");
-            // TutorialEvents.OnTutorialComplete += endDay3_7;
+             TutorialEvents.OnTutorialComplete += endDay3_7;
             //FindObjectOfType<Controller>().currentState(state.Interaction);
             TutorialController.IsSkippable = false;
             TutorialLoader.instance.Load("Day3_7");
@@ -646,14 +660,16 @@ namespace Terbaru{
             objDay2_2.SetActive(false);
             objDay2_4.gameObject.SetActive(false);
             objDay2_8.SetActive(false);
+           
 
         }
 
-        // void endDay3_7(){
-        //     TutorialEvents.OnTutorialComplete -= endDay3_7;
-        //     FindObjectOfType<Controller>().currentState(state.Default);
-            
-        // }
+        void endDay3_7()
+        {
+            TutorialEvents.OnTutorialComplete -= endDay3_7;
+            PintuKamar.changeInteractable(false);
+
+        }
         public GameObject dindaQuest;
         void Day3_8(){
             Debug.Log("Day3_8");
@@ -743,6 +759,7 @@ namespace Terbaru{
             TutorialEvents.OnTutorialComplete -= overTutorial;
             GameManager.instance.tutorialOver();
             UiManager.instance.bantuanText("");
+            PintuKamar.changeInteractable(false);
             ipad.interactable = true;
             dindaData.selected = false;
             Destroy(this.gameObject);

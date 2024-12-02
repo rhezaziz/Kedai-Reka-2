@@ -153,9 +153,12 @@ namespace Terbaru{
 
         IEnumerator mulaiDialogOnAsrama(){
             //UiManager.instance.Chinematic(true);
+            FindObjectOfType<DialogManager>().playEvent();
+            UiManager.instance.ChinematicPanel.endChinematic();
             player.currentState(state.Interaction);
             player.GetComponentInChildren<SpriteRenderer>().flipX = true;
             player.GetComponentInChildren<Animator>().SetBool("Ngomong", true);
+            UiManager.instance.startChinematic();
             UiManager.instance.panelUtama.SetActive(false);
             if(narasiDialog.dialogWithPerempuan){
                 Perempuan.SetActive(true);
@@ -176,6 +179,7 @@ namespace Terbaru{
                 // player.GetComponentInChildren<SpriteRenderer>().flipX = false;
             player.GetComponentInChildren<Animator>().SetBool("Ngomong", false);
             FindObjectOfType<DialogManager>().closeDialog();
+            UiManager.instance.startChinematic();
             yield return new WaitForSeconds(1f);
             UiManager.instance.Chinematic(true);
 
@@ -184,18 +188,20 @@ namespace Terbaru{
             cameraUtama.gameObject.SetActive(true);
             player.setPlayerOnFrontDoor();
             Debug.Log("Ke Asrama");
-
+            UiManager.instance.endChinematic();
             yield return new WaitForSeconds(1f);
+            UiManager.instance.ChinematicPanel.endChinematic();
             closeDialog();
+            FindObjectOfType<WaktuManager>().gantiWaktu(1);
             // UiManager.instance.Chinematic(false);
 
             // yield return new WaitForSeconds(1f);
-            
+
             // // UiManager.instance.Chinematic(true);
 
             // yield return new WaitForSeconds(1f);
             //  FindObjectOfType<DialogManager>().StartDialog(tempDialog);
-            
+
         }
 
         
@@ -272,7 +278,8 @@ namespace Terbaru{
             } else if(tempDialog.events.GetPersistentEventCount() > 0){
                 Debug.Log("Invoke");
 
-                FindObjectOfType<DialogManager>().panelDialog.SetActive(false);
+                FindObjectOfType<DialogManager>().playEvent();
+
                 tempDialog.events?.Invoke();
                 return;
             }

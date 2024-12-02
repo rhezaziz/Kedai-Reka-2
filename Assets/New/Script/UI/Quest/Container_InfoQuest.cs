@@ -164,8 +164,9 @@ namespace Terbaru{
             //UiManager.instance.updateEnergy(quest.jmlEnergy);
             FindObjectOfType<PapanQuest>().changeInteractable(false);
             GameManager.instance.readyMission(NPC, quest);
+            FindObjectOfType<PapanQuest>().point.SetActive(false);
             //NPC.Clear();
-            
+
         }
 
         void updateProfil()

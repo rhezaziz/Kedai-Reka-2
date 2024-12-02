@@ -980,6 +980,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1677285638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &10744600
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11145,6 +11157,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 177816992}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &190200260
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -19595,7 +19619,6 @@ GameObject:
   m_Component:
   - component: {fileID: 462862229}
   - component: {fileID: 462862231}
-  - component: {fileID: 462862230}
   m_Layer: 9
   m_Name: Dinding (2)
   m_TagString: Untagged
@@ -19618,27 +19641,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1495712949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &462862230
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 462862228}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.64, y: 10.8, z: 1.53}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &462862231
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -21434,6 +21436,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 177816992}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -23398,6 +23412,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819304462}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &548902495
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24760,6 +24786,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 396046007}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -30351,6 +30389,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 798346865}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -36498,6 +36548,7 @@ GameObject:
   m_Component:
   - component: {fileID: 853389251}
   - component: {fileID: 853389252}
+  - component: {fileID: 853389253}
   m_Layer: 9
   m_Name: Dinding pintu hall
   m_TagString: Untagged
@@ -36575,6 +36626,27 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!65 &853389253
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 853389250}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 3.133222, y: 10.800001, z: 0.2}
+  m_Center: {x: -5.253394, y: 0, z: 0}
 --- !u!1 &856715160
 GameObject:
   m_ObjectHideFlags: 0
@@ -37959,6 +38031,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1557163139}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &891643928
 GameObject:
   m_ObjectHideFlags: 0
@@ -38091,7 +38175,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cd5253e014f534b858f405dc704bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: 0
+  mainMenu: 1
   obj:
   - {fileID: 21220965}
   - {fileID: 1147744896}
@@ -38099,7 +38183,7 @@ MonoBehaviour:
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
   panelUtama: {fileID: 1582947453}
-  isTutorial: 0
+  isTutorial: 1
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -39769,7 +39853,7 @@ MonoBehaviour:
   - mapsId: 10000000160000000c00000009000000
     itemSpawn: []
     orang: []
-  - mapsId: 100000001600000007000000
+  - mapsId: 1000000016000000070000000f000000
     itemSpawn:
     - item: {fileID: 1422303106}
     orang: []
@@ -39792,7 +39876,7 @@ MonoBehaviour:
     itemSpawn:
     - item: {fileID: 1046698899}
     orang: []
-  - mapsId: 1000000016000000
+  - mapsId: 100000001600000000000000
     itemSpawn: []
     orang: []
   - mapsId: 100000001600000000000000
@@ -39985,7 +40069,7 @@ MonoBehaviour:
     interact:
     - {fileID: 1488554085}
   - nama: Alex Dialog
-    day: 9
+    day: 10
     events:
       m_PersistentCalls:
         m_Calls:
@@ -40664,6 +40748,18 @@ MonoBehaviour:
                     m_StringArgument: 
                     m_BoolArgument: 1
                   m_CallState: 2
+                - m_Target: {fileID: 894212844}
+                  m_TargetAssemblyTypeName: Terbaru.GameManager, Assembly-CSharp
+                  m_MethodName: disabledInteractNPC
+                  m_Mode: 1
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 0
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 1
+                  m_CallState: 2
             ProcessEventHelper:
               m_PersistentCalls:
                 m_Calls:
@@ -40710,6 +40806,18 @@ MonoBehaviour:
                   m_TargetAssemblyTypeName: Terbaru.Controller, Assembly-CSharp
                   m_MethodName: GantiPerempuan
                   m_Mode: 6
+                  m_Arguments:
+                    m_ObjectArgument: {fileID: 0}
+                    m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                    m_IntArgument: 3
+                    m_FloatArgument: 0
+                    m_StringArgument: 
+                    m_BoolArgument: 0
+                  m_CallState: 2
+                - m_Target: {fileID: 894212844}
+                  m_TargetAssemblyTypeName: Terbaru.GameManager, Assembly-CSharp
+                  m_MethodName: enabledInteractNPC
+                  m_Mode: 1
                   m_Arguments:
                     m_ObjectArgument: {fileID: 0}
                     m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -42985,7 +43093,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1421431660}
         m_TargetAssemblyTypeName: Terbaru.TutorialManager, Assembly-CSharp
-        m_MethodName: Day2_8
+        m_MethodName: Day2_9
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -45620,6 +45728,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 675585145}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -49435,6 +49555,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 845372666}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1150371289
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -50513,6 +50645,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 675585145}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -53866,6 +54010,18 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 1
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1677285638}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -58570,6 +58726,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798346865}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1399806704
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -58618,7 +58786,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1402755385}
   - component: {fileID: 1402755387}
-  - component: {fileID: 1402755386}
   m_Layer: 9
   m_Name: Dinding (3)
   m_TagString: Untagged
@@ -58641,27 +58808,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1495712949}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1402755386
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1402755384}
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_IsTrigger: 0
-  m_ProvidesContacts: 0
-  m_Enabled: 1
-  serializedVersion: 3
-  m_Size: {x: 13.64, y: 10.8, z: 1.53}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!212 &1402755387
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -64213,6 +64359,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 396046007}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1509537376
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -67176,10 +67334,10 @@ MonoBehaviour:
       - m_Target: {fileID: 894212848}
         m_TargetAssemblyTypeName: Terbaru.VideoManager, Assembly-CSharp
         m_MethodName: action
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 32900000, guid: 0187bceb73ed3e048a785fee7172f1a4, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -67242,12 +67400,24 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 233705721}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1564082302}
         m_TargetAssemblyTypeName: Terbaru.Mingguan, Assembly-CSharp
         m_MethodName: QuizKucing
         m_Mode: 1
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgument: {fileID: 32900000, guid: 5cbedba4a8f96fe4f9e5aac5b8096fc0, type: 3}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -67257,10 +67427,10 @@ MonoBehaviour:
       - m_Target: {fileID: 894212848}
         m_TargetAssemblyTypeName: Terbaru.VideoManager, Assembly-CSharp
         m_MethodName: action
-        m_Mode: 1
+        m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_ObjectArgument: {fileID: 32900000, guid: 5cbedba4a8f96fe4f9e5aac5b8096fc0, type: 3}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Video.VideoClip, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
@@ -67508,6 +67678,18 @@ MonoBehaviour:
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 57703304}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 1819304462}
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
@@ -72940,7 +73122,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 13.799988, y: 16.31}
+  m_AnchoredPosition: {x: 13.799927, y: 16.31}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0, y: 0.5}
 --- !u!114 &1709623594
@@ -80445,6 +80627,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1557163139}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 1564082302}
         m_TargetAssemblyTypeName: Terbaru.Mingguan, Assembly-CSharp
         m_MethodName: jawabQuiz
@@ -80509,15 +80703,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.33149332
+      value: 0.66298664
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 1.4487108
+      value: 2.8974216
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.x
@@ -81187,6 +81381,7 @@ MonoBehaviour:
   mimikPlayer: []
   controllerPerempuan: {fileID: 9100000, guid: fc9d7a0a564698b4198c132ea7835024, type: 2}
   controllerLaki: {fileID: 9100000, guid: e2087443da4656148bbb9b25d5802885, type: 2}
+  tempRunTimeAnimator: {fileID: 0}
 --- !u!1 &1940092722
 GameObject:
   m_ObjectHideFlags: 0
@@ -84734,6 +84929,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 1819304462}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2026924188
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -87625,6 +87832,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 845372666}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2102518647
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -88494,8 +88713,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: -2.5, y: 0}
+  m_SizeDelta: {x: -45, y: -50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2120035788
 MonoBehaviour:
@@ -88544,10 +88763,10 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 36
+  m_fontSize: 44.75
   m_fontSizeBase: 36
   m_fontWeight: 400
-  m_enableAutoSizing: 0
+  m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

@@ -30,7 +30,8 @@ Transform:
   m_LocalPosition: {x: -0.02, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children: []
+  m_Children:
+  - {fileID: 9141114394985687596}
   m_Father: {fileID: 3720454333258934330}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &467560030741214796
@@ -141,7 +142,6 @@ Transform:
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 4981243569239931332}
-  - {fileID: 9141114394985687596}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!136 &1787897404203770984
@@ -214,6 +214,7 @@ MonoBehaviour:
   canHorizontal: 1
   state: 0
   interupt: 0
+  outside: 0
 --- !u!114 &8687598771176155501
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -280,6 +281,7 @@ MonoBehaviour:
     quest:
       id: 0
       quest: {fileID: 0}
+      isRPG: 0
       Index: 0
       proses: []
     events:
@@ -290,7 +292,7 @@ MonoBehaviour:
   animasiObj: {fileID: 1783441369174612678}
   isObject: 1
   Player: {fileID: 0}
-  point: {fileID: 0}
+  point: {fileID: 8471292549324386454}
   distancePlayer: 10
 --- !u!1001 &4021450592560551603
 PrefabInstance:
@@ -298,7 +300,7 @@ PrefabInstance:
   serializedVersion: 2
   m_Modification:
     serializedVersion: 3
-    m_TransformParent: {fileID: 3720454333258934330}
+    m_TransformParent: {fileID: 4981243569239931332}
     m_Modifications:
     - target: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_Name
@@ -322,7 +324,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0
+      value: 0.02
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.y

@@ -92,7 +92,7 @@ namespace Terbaru {
         }
 
         public void QuizKucing(){
-           Invoke("mulaiQuiz", 10f); 
+           Invoke("mulaiQuiz", 11f); 
         }
 
         public void mulaiQuiz(){
@@ -120,6 +120,7 @@ namespace Terbaru {
                     i.selected = true;
                 }
             }
+            UiManager.instance.ChinematicPanel.endChinematic();
         }
 
 
@@ -249,13 +250,13 @@ namespace Terbaru {
             //Player.GetComponent<Controller>().currentState(state.Default);
             //UiManager.instance.panelUtama.SetActive(true);
             //FindObjectOfType<QuestManager>().CheckAction(tempAction);
-
+            FindObjectOfType<DialogManager>().closeDialog();
             Invoke("endDialogAction", 1.5f);
         }
 
         public void endDialogAction()
         {
-            FindObjectOfType<DialogManager>().closeDialog();
+            
             eventTemp?.Invoke();
         }
     }

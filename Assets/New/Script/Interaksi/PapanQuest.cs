@@ -60,7 +60,7 @@ namespace Terbaru{
         }
         public GameObject quest;
         public void action(Transform player){
-
+            point.gameObject.SetActive(false);
             if (FindObjectOfType<Controller>().profil.Energy >= 2)
             {
                 player.position = new Vector3(Berdiri.position.x, player.position.y, Berdiri.position.z);
