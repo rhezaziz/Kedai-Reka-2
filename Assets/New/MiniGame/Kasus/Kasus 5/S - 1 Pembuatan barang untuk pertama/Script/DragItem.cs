@@ -32,6 +32,7 @@ namespace MiniGame5_4{
         void OnMouseDown(){
             temp = terisi ? Timbangan : Karung;
             GetComponent<SpriteRenderer>().sortingOrder = 6;
+            isi.sortingOrder = 7;
         }   
 
         void OnMouseDrag(){

@@ -5777,7 +5777,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1798347700}
           m_TargetAssemblyTypeName: Terbaru.movementMap, Assembly-CSharp
-          m_MethodName: KiriDown
+          m_MethodName: KananDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -5793,7 +5793,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1798347700}
           m_TargetAssemblyTypeName: Terbaru.movementMap, Assembly-CSharp
-          m_MethodName: KiriUp
+          m_MethodName: KananUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14847,7 +14847,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1798347700}
           m_TargetAssemblyTypeName: Terbaru.movementMap, Assembly-CSharp
-          m_MethodName: KananDown
+          m_MethodName: KiriDown
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}
@@ -14863,7 +14863,7 @@ MonoBehaviour:
         m_Calls:
         - m_Target: {fileID: 1798347700}
           m_TargetAssemblyTypeName: Terbaru.movementMap, Assembly-CSharp
-          m_MethodName: KananUp
+          m_MethodName: KiriUp
           m_Mode: 1
           m_Arguments:
             m_ObjectArgument: {fileID: 0}

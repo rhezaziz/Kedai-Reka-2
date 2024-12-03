@@ -40,6 +40,18 @@ namespace Terbaru{
                 }
             }
         }
+
+        public void getDinda(int index)
+        {
+            for (int i = 0; i < NPCparent.childCount; i++)
+            {
+                if (NPCparent.GetChild(i).name == "Dinda")
+                {
+                    NPCparent.GetChild(i).GetComponent<NPC_Dialog>().SetindexDialog(index);
+                    return;
+                }
+            }
+        }
     }
 
 

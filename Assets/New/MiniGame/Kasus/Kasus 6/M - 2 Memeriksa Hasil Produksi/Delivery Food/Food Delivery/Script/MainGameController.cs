@@ -410,7 +410,8 @@ public class MainGameController : MonoBehaviour
         {
             foreach (var customer in customersInScene)
             {
-                customer.GetComponent<CustomerController>().leave();
+                Destroy(customer);
+                //customer.GetComponent<CustomerController>().leave();
             }
         }
         //did we reached the level goal?

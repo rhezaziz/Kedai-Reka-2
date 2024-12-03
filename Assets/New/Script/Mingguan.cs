@@ -16,6 +16,7 @@ namespace Terbaru {
         public Dialog temp;
         public UnityEvent eventTemp;
         public UnityEvent eventCloseDialog;
+        public UnityEvent kosong;
 
         [Header("Minggu ke 2")]
         public VideoClip minggu2;
@@ -43,8 +44,8 @@ namespace Terbaru {
 
         public void mulaiEvent(){
             int index = FindObjectOfType<DayManager>().day;
-
-            if(index == 7){
+            eventTemp = kosong;
+            if (index == 7){
                 eventsReady[0]?.Invoke();
             }
 
@@ -80,7 +81,8 @@ namespace Terbaru {
             else if (index == 30)
             {
                 playDialogEnd1();
-               // UiManager.instance.bantuanText("Pergi Ke Pekarangan");
+                
+                // UiManager.instance.bantuanText("Pergi Ke Pekarangan");
                 //eventsReady[2]?.Invoke();
                 ////FindObjectOfType<VideoManager>().action(minggu3);
                 //playDialogMinggu3();
@@ -143,9 +145,10 @@ namespace Terbaru {
         void playDialogEnd1()
         {
             temp = DialogEnd;
+            eventTemp.RemoveAllListeners();
             //Debug.Log("Minggu 3");
             startDialog();
-            eventTemp.RemoveAllListeners();
+            //eventTemp.RemoveAllListeners();
             //eventTemp = eventMinggu3;
             eventTemp.AddListener(() =>
             {
@@ -155,14 +158,18 @@ namespace Terbaru {
 
         IEnumerator pindahKeDepanPintu()
         {
-            //yield return new WaitForSeconds(1f);
+            UiManager.instance.startChinematic();
+            yield return new WaitForSeconds(2f);
             //UiManager.instance.panelUtama.SetActive(false);
            // Player.GetComponent<Controller>().currentState(state.Interaction);
             UiManager.instance.chinematicDialog(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
             FindObjectOfType<Controller>().setPlayerOnFrontDoor();
-            UiManager.instance.Chinematic(false);
+            //UiManager.instance.Chinematic(false);
             yield return new WaitForSeconds(1f);
+            UiManager.instance.endChinematic();
+            yield return new WaitForSeconds(1f);
+            UiManager.instance.ChinematicPanel.endChinematic();
             playDialogEnd2();
 
         }
@@ -182,11 +189,12 @@ namespace Terbaru {
 
         IEnumerator pindahKeKampung()
         {
-            //yield return new WaitForSeconds(1f);
+            UiManager.instance.startChinematic();
+            yield return new WaitForSeconds(1f);
             UiManager.instance.panelUtama.SetActive(false);
             Player.GetComponent<Controller>().currentState(state.Interaction);
             UiManager.instance.chinematicDialog(true);
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
             FindObjectOfType<MiniGame>().pindahKeKampung("Kampung");
             SoundManager.instance.DestroyIntance();
             yield return new WaitForSeconds(1f);

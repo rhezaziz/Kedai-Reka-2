@@ -146,6 +146,8 @@ namespace Terbaru{
             video.clip = clips();
 
             video.prepareCompleted += OnVideoPrepared;
+            video.loopPointReached += EndReached;
+            video.prepareCompleted += AdjustAspectRatio;
 
             video.Prepare();
         }
@@ -169,22 +171,22 @@ namespace Terbaru{
 
             playVideo();
 
-            yield return new WaitForSeconds(duration + 0.5f);
-            texture.Release();
-            texture.Create(); 
-            video.gameObject.SetActive(false);
+            //yield return new WaitForSeconds(duration + 0.5f);
+            //texture.Release();
+            //texture.Create(); 
+            //video.gameObject.SetActive(false);
 
-            UiManager.instance.endChinematic();
+            //UiManager.instance.endChinematic();
             
-            camera.transform.DOLocalMoveZ(-10f, 1f);
+            //camera.transform.DOLocalMoveZ(-10f, 1f);
 
-            yield return new WaitForSeconds(2f);
-            extendAction?.Invoke();
-            PanelUtama.SetActive(true);
+            //yield return new WaitForSeconds(2f);
+            //extendAction?.Invoke();
+            //PanelUtama.SetActive(true);
             
-            //FindObjectOfType<Controller>().currentState(state.Default);
+            ////FindObjectOfType<Controller>().currentState(state.Default);
 
-            UiManager.instance.ChinematicPanel.endChinematic();
+            //UiManager.instance.ChinematicPanel.endChinematic();
             
             
         }
@@ -201,8 +203,116 @@ namespace Terbaru{
         //     }
         // }
 
-        void OnVideoPrepared(VideoPlayer vp){
+        //void OnVideoPrepared(VideoPlayer vp){
+        //    vp.Play();
+        //}
+
+        //public void playVideo()
+        //{
+        //    //RenderTexture.active = null;
+
+        //    video.renderMode = VideoRenderMode.RenderTexture;
+        //    video.targetTexture = texture;
+        //    video.clip = testVideo;
+
+        //    video.prepareCompleted += OnVideoPrepared;
+        //    video.loopPointReached += EndReached;
+        //    video.Prepare();
+        //}
+
+        void OnVideoPrepared(VideoPlayer vp)
+        {
             vp.Play();
+            video.prepareCompleted -= OnVideoPrepared;
+
+        }
+
+        void EndReached(VideoPlayer vp)
+        {
+            //panelUI.SetActive(true);
+            Debug.Log("Video Selesai Diputar!");
+            //ClearRenderTexture();
+            video.loopPointReached -= EndReached;
+
+
+
+            
+            texture.Release();
+            texture.Create();
+            video.gameObject.SetActive(false);
+
+            UiManager.instance.endChinematic();
+
+
+          
+            extendAction?.Invoke();
+           
+
+            //FindObjectOfType<Controller>().currentState(state.Default);
+
+            //UiManager.instance.ChinematicPanel.endChinematic();
+            Invoke("disableChinematic", 1.5f);
+
+        }
+
+        void disableChinematic()
+        {
+            UiManager.instance.ChinematicPanel.endChinematic();
+        }
+        //void ClearRenderTexture()
+        //{
+        //    RenderTexture currentRT = RenderTexture.active;
+        //    RenderTexture.active = texture;
+        //    GL.Clear(true, true, Color.clear);
+        //    RenderTexture.active = currentRT;
+        //    //rawImage.texture = null;
+
+        //}
+
+        void AdjustAspectRatio(VideoPlayer vp)
+        {
+            //float videoWitdth = vp.texture.width;
+            //float videoHeight = vp.texture.height;
+
+            //float screenWidhth = Screen.width;
+            //float screenHeight = Screen.height;
+
+            //float videoAspect = videoWitdth / videoHeight;
+            //float ScreenAspect = screenWidhth / screenHeight;
+
+            //if (videoAspect > ScreenAspect)
+            //{
+            //    rawImageTransform.sizeDelta = new Vector2(screenWidhth, screenWidhth / videoAspect);
+            //}
+            //else
+            //{
+            //    rawImageTransform.sizeDelta = new Vector2(screenHeight * videoAspect, screenWidhth);
+
+            //}
+            vp.prepareCompleted -= AdjustAspectRatio;
+            int screenWitdh = Screen.width;
+            int screenHeight = Screen.height;
+
+            if (screenWitdh <= 1280 && screenHeight <= 720)
+            {
+                texture.Release();
+                texture.width = 1280;
+                texture.height = 720;
+            }
+
+            else if (screenWitdh <= 1920 && screenHeight <= 1080)
+            {
+                texture.Release();
+                texture.width = 1920;
+                texture.height = 1080;
+            }
+
+            else
+            {
+                texture.Release();
+                texture.width = 3840;
+                texture.height = 2160;
+            }
         }
 
         IEnumerator checkVideo(){
