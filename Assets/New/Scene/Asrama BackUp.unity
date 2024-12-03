@@ -38267,7 +38267,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cd5253e014f534b858f405dc704bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: 1
+  mainMenu: 0
   obj:
   - {fileID: 21220965}
   - {fileID: 1147744896}
@@ -38275,7 +38275,7 @@ MonoBehaviour:
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
   panelUtama: {fileID: 1582947453}
-  isTutorial: 1
+  isTutorial: 0
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -47810,10 +47810,10 @@ RectTransform:
   m_Children: []
   m_Father: {fileID: 1563321193}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 1, y: 1}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 800, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!328 &1103309652
 VideoPlayer:
@@ -61456,7 +61456,7 @@ Camera:
   m_Enabled: 1
   serializedVersion: 2
   m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_BackGroundColor: {r: 0, g: 0, b: 0, a: 0}
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 1
