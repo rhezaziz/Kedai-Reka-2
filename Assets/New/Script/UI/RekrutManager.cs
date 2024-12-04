@@ -123,6 +123,7 @@ public class RekrutManager : MonoBehaviour
             var temp = data.character[index];
             int saldo = data.Saldo;
             int harga = temp.cost;
+            SoundManager.instance.uiSFX(2);
 
             popUpMuncul(saldo >= harga);
             
@@ -161,7 +162,11 @@ public class RekrutManager : MonoBehaviour
             button.SetActive(false);
             okBtn.transform.GetChild(0).GetComponent<TMP_Text>().text = "OK";
             okBtn.onClick.RemoveAllListeners();
-            okBtn.onClick.AddListener(() => popUp.SetActive(false));
+            okBtn.onClick.AddListener(() =>
+            {
+                SoundManager.instance.sfx(0);
+                popUp.SetActive(false);
+            });
 
             okBtn.onClick.AddListener(() => okBtn.onClick.RemoveAllListeners());
             textpopUp.text = succes ? "Berhasil Rekrut Karakater" : "Saldo Kurang Untuk Rekrut Karakter";
@@ -181,10 +186,17 @@ public class RekrutManager : MonoBehaviour
             textpopUp.text = "Apa anda yakin rekrut karakter ?";
             btnKembali.gameObject.SetActive(true);
             btnKembali.onClick.AddListener(() => okBtn.onClick.RemoveAllListeners());
-            btnKembali.onClick.AddListener(() => popUp.SetActive(false));
+            btnKembali.onClick.AddListener(() =>
+            {
+                SoundManager.instance.uiSFX(2);
+                popUp.SetActive(false);
+            });
             btnKembali.onClick.AddListener(() => btnKembali.onClick.RemoveAllListeners());
             okBtn.transform.GetChild(0).GetComponent<TMP_Text>().text = hargaText;
-            okBtn.onClick.AddListener(() => rekrut(tempIndex));
+            okBtn.onClick.AddListener(() => { 
+                rekrut(tempIndex);
+                SoundManager.instance.uiSFX(2);
+            });
             //btnOK.
         }
 

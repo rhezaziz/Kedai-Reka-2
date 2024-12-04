@@ -152,7 +152,7 @@ namespace Terbaru{
 
         void EndProcess(){
             var playerProfil = GameManager.instance.profil;
-
+            UiManager.instance.ChinematicPanel.endChinematic();
             //Debug.Log("Quest Selesai");
             foreach(var lists in NPCs){
                 lists.gameObject.SetActive(true);
@@ -173,7 +173,7 @@ namespace Terbaru{
             
             isActive = false;
             FindObjectOfType<SoundManager>().playSoundAsrama();
-
+            SoundManager.instance.uiSFX(16);
             Invoke("resultUI", 1f);
         }
 
@@ -285,6 +285,7 @@ namespace Terbaru{
             Debug.Log("End");
             UiManager.instance.UpdateSaldo(playerProfil.Saldo);
             isActive = false;
+            SoundManager.instance.uiSFX(15);
             endQuest?.Invoke();
             
         }

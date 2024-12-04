@@ -12,7 +12,7 @@ namespace Terbaru{
         public string namaAction;
         public VideoClip testVideo;
         public VideoPlayer video;
-
+        
         public RenderTexture texture;
 
 
@@ -34,10 +34,10 @@ namespace Terbaru{
         }
 
         public void action(VideoClip video){
-            Debug.Log("Play Video");
+            //Debug.Log("Play Video");
             testVideo = video ? video : null;
             //UiManager.instance.ChinematicPanel.SetActive(true);
-            Debug.Log("on Step");
+
             texture.Release();
             texture.Create();
             StartCoroutine(cutSceneUpdate(true));
@@ -101,7 +101,7 @@ namespace Terbaru{
             if (adaVideo) playVideo();
 
             yield return new WaitForSeconds(duration + 0.5f);
-            ClearRenderTexture();
+            //ClearRenderTexture();
             // texture.Release();
             // texture.Create(); 
             //video.gameObject.SetActive(false);
@@ -109,10 +109,15 @@ namespace Terbaru{
             //Manager_Ending.instance.Chinematic(false);
 
             //camera.transform.DOLocalMoveZ(-10f, 1f);
-
+            video.gameObject.SetActive(false);
             yield return new WaitForSeconds(2f);
             //PanelUtama.SetActive(true);
-            video.Pause();
+            //video.Pause();
+            //UiManager.instance.startChinematicWithoutCam();
+            //yield return new WaitForSeconds(1f);
+            //UiManager.instance.chinematicWithaouCam(true);
+            //yield return new WaitForSeconds(2f);
+            FindObjectOfType<MiniGame>().pindahMainMenu();
             //FindObjectOfType<Controller>().currentState(state.Default);
             //texture.Release();
             //QuestManager.instance.CheckActionQuest(namaAction);
@@ -213,8 +218,8 @@ namespace Terbaru{
 
         IEnumerator cutSceneUpdate(bool adaVideo)
         {
-            
-            video.gameObject.SetActive(true);
+            ClearRenderTexture();
+            ///video.gameObject.SetActive(true);
             video.clip = testVideo;
             UiManager.instance.startChinematic();
 
@@ -250,17 +255,18 @@ namespace Terbaru{
 
             // Nonaktifkan RenderTexture
             RenderTexture.active = null;
+           
         }
         public void playVideo(){
             //RenderTexture.active = null;
-            
+            video.gameObject.SetActive(true);
             video.renderMode = VideoRenderMode.RenderTexture;
             video.targetTexture = texture; 
             video.clip = testVideo;
 
             video.prepareCompleted += OnVideoPrepared;
             video.loopPointReached += EndReached;
-            video.prepareCompleted += AdjustAspectRatio;
+            //video.prepareCompleted += AdjustAspectRatio;
             video.Prepare();
         }
 
@@ -293,17 +299,9 @@ namespace Terbaru{
 
         void disableChinematic()
         {
+            ClearRenderTexture();
             UiManager.instance.ChinematicPanel.endChinematic();
         }
-        //void ClearRenderTexture()
-        //{
-        //    RenderTexture currentRT = RenderTexture.active;
-        //    RenderTexture.active = texture;
-        //    GL.Clear(true, true, Color.clear);
-        //    RenderTexture.active = currentRT;
-        //    //rawImage.texture = null;
-
-        //}
 
         void AdjustAspectRatio(VideoPlayer vp)
         {
@@ -348,13 +346,6 @@ namespace Terbaru{
                 texture.Release();
                 texture.width = 3840;
                 texture.height = 2160;
-            }
-        }
-
-        IEnumerator checkVideo(){
-            while(CG){
-                
-                yield return null;
             }
         }
     }

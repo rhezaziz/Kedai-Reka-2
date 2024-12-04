@@ -91,6 +91,7 @@ namespace Terbaru{
         }
 
         public void checkJawaban(string value) {
+            SoundManager.instance.uiSFX(2);
             pilihanA.transform.GetChild(0).GetComponent<Button>().interactable = false;
             pilihanB.transform.GetChild(0).GetComponent<Button>().interactable = false;
             pilihanC.transform.GetChild(0).GetComponent<Button>().interactable = false;
@@ -126,10 +127,12 @@ namespace Terbaru{
 
             panelResult.DOColor(new Color(0f, 0f, 0f, .5f), 1f);
             Result.sprite = hasil ? correct : wrong;
+            int indexSound = hasil ? 5 : 9;
 
             Result.transform.DOScale(Vector3.one * 1.2f, .75f).OnComplete(() =>
             {
                 Result.transform.DOScale(Vector3.one, .25f);
+                SoundManager.instance.uiSFX(indexSound);
             });
             yield return new WaitForSeconds(1.25f);
 

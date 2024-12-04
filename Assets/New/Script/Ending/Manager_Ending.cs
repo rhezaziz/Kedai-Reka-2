@@ -141,5 +141,11 @@ namespace Terbaru
             Debug.Log("Without cam" + _action);
         }
 
+
+        public void pindahMainMenu()
+        {
+
+        }
+
     }
 }

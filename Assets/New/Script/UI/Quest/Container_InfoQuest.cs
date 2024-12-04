@@ -155,8 +155,8 @@ namespace Terbaru{
             //     karakter[0].objectNPC,
             //     karakter[1].objectNPC
             // };
-            
 
+            SoundManager.instance.uiSFX(2);
             cloaseInfoQuest();
             GameObject.Find("pilih karakter").SetActive(false);
             GameObject.Find("Quest Panel").SetActive(false);

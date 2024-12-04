@@ -27,6 +27,7 @@ namespace Terbaru{
 
         void pilihQuest(Quest quest)
         {
+            SoundManager.instance.uiSFX(2);
             infoQuest.SetActive(true);
             Container_InfoQuest initInfo = infoQuest.GetComponent<Container_InfoQuest>();
 

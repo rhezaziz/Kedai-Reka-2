@@ -1742,9 +1742,9 @@ MonoBehaviour:
   DailyQuest: 0
   panelQuiz: {fileID: 1381668949}
   pilihanA: {fileID: 2024021339}
-  pilihanB: {fileID: 0}
-  pilihanC: {fileID: 0}
-  pilihanD: {fileID: 0}
+  pilihanB: {fileID: 676202676}
+  pilihanC: {fileID: 129941530}
+  pilihanD: {fileID: 1627987474}
   soal: {fileID: 940521235}
   Wrong: {fileID: 21300000, guid: 9764525c2cfd6c44e83936e1dab40da0, type: 3}
   Correct: {fileID: 21300000, guid: c395e26af7c056f41907e0dca8401f43, type: 3}
@@ -1753,7 +1753,7 @@ MonoBehaviour:
   - {fileID: 27160349}
   - {fileID: 2058861689}
   - {fileID: 1227485697}
-  data: {fileID: 11400000, guid: 2e2b3330cacef56499cf5ba37f2e214f, type: 2}
+  data: {fileID: 11400000, guid: 435f1464db46c5c4abf93bc26a4c9541, type: 2}
   action: K1_S1
 --- !u!4 &1540675327
 Transform:

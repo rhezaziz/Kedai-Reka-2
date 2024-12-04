@@ -110,18 +110,23 @@ namespace Terbaru{
 
 
             sceneActive = namaScene;
-            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Additive);
+            SceneManager.LoadSceneAsync(namaScene, LoadSceneMode.Single);
 
             yield return new WaitForSeconds(1f);
             DeactivateObjectsInPreviousSceneKampung();
 
             yield return new WaitForSeconds(1.5f);
             //UiManager.instance.chinematicWithaouCam(false);
-
-
-
         }
 
+
+        public void pindahMainMenu()
+        {
+            //sceneActive = namaScene;
+            SceneManager.LoadSceneAsync("New Scene", LoadSceneMode.Single);
+            Destroy(gameObject);
+        }
+           
         IEnumerator mulaiMiniGame(string namaScene){
             //control.currentState(state.Interaction);
             //control.playerMove.move = false;
@@ -229,7 +234,7 @@ namespace Terbaru{
             //yield return new WaitForSeconds(1f);
 
             yield return new WaitForSeconds(2f);
-            UiManager.instance.Chinematic(true);
+            UiManager.instance.endChinematic();
             Debug.Log("kembali Quest");
             //UiManager.instance.endChinematic();
             QuestManager.instance.CheckAction("Kembali");

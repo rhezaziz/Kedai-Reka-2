@@ -1,6 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Video;
@@ -28,11 +26,15 @@ namespace Terbaru{
 
         public Transform spanw;
 
+        public AudioClip clip;
+
 
         bool CG;
 
         public bool value;
 
+
+        #region Interaction
         public Transform Player;
         public GameObject point;
         public float distancePlayer;
@@ -75,14 +77,11 @@ namespace Terbaru{
         }
 
         public void action(Transform Player){
-            //UiManager.instance.ChinematicPanel.SetActive(true);
             var Perempuan = Player.GetChild(1).transform;
             Perempuan.gameObject.SetActive(true);
             
             if(col)
                 col.enabled = false;
-            // Player.GetComponent<Collider>().enabled = false;
-            // Player.GetComponent<Rigidbody>().isKinematic = true;
             Player.GetComponent<Controller>().changeRunTimeController(true);
             Player.GetComponentInChildren<Animator>().SetBool(AnimationAction, true);
             extendAction.AddListener(()=>stopAnimation(Player));
@@ -92,15 +91,29 @@ namespace Terbaru{
             Perempuan.position = new Vector3(posPerempuan.position.x, posPerempuan.position.y, posPerempuan.position.z);
             Perempuan.GetComponentInChildren<Animator>().SetBool(AnimationActionPerempuan, true);
 
-
+            
             texture.Release();
             texture.Create();
+
+
             StartCoroutine(cutScene());
+
+            //if(clip) SoundManager.instance.sfx(clip);
         }
 
+        #endregion
+
+
+        //IEnumerator mulaiVideo()
+        //{
+        //    video.clip = clips();
+        //    VideoClip tempClip = clips();
+
+        //    FindObjectOfType<VideoManager>().action(tempClip);
+        //    yield return new WaitForSeconds(1f);
+
+        //}
         void stopAnimation(Transform Player){
-            //Player.GetComponent<Collider>().enabled = true;
-            //Player.GetComponent<Rigidbody>().isKinematic = false;
             var Perempuan = Player.GetChild(1).transform;
             
             Perempuan.GetComponentInChildren<Animator>().SetBool(AnimationActionPerempuan, false);
@@ -120,17 +133,9 @@ namespace Terbaru{
         public void btnActive(GameObject btn, bool interactable){
             
             btn.SetActive(interactable);
-            btn.GetComponent<UnityEngine.UI.Button>().interactable = Interactable();
+            btn.GetComponent<Button>().interactable = Interactable();
             
             btn.GetComponentInChildren<Text>().text = namaAction;
-        }
-
-        
-
-
-        void Start(){
-            texture.Release();
-            texture.Create(); 
         }
 
         VideoClip clips(){
@@ -141,84 +146,49 @@ namespace Terbaru{
             return testVideo[index];
         }
 
-        public void playVideo(){
-            
+        void playInvoke(VideoPlayer vp)
+        {
+            //panelUI.SetActive(true);
+            Debug.Log("Video Selesai Diputar!");
+            //ClearRenderTexture();
+            video.loopPointReached -= playInvoke;
+
+            extendAction?.Invoke();
+
+        }
+
+        public void playVideo()
+        {
+
             video.clip = clips();
 
             video.prepareCompleted += OnVideoPrepared;
             video.loopPointReached += EndReached;
-            video.prepareCompleted += AdjustAspectRatio;
+            //video.prepareCompleted += AdjustAspectRatio;
 
             video.Prepare();
         }
 
-        IEnumerator cutScene(){
-            video.gameObject.SetActive(true);
-            video.clip = clips();
-            GameObject PanelUtama = UiManager.instance.panelUtama;
-            float duration = (float)video.length;
-            var camera = Camera.main;
-            camera.transform.DOLocalMoveZ(-7f, 1f);
-            PanelUtama.SetActive(false);
+        IEnumerator cutScene()
+        {
+            //video.clip = clips();
+            //GameObject PanelUtama = UiManager.instance.panelUtama;
+            //float duration = (float)video.length;
+            //var camera = Camera.main;
+            //camera.transform.DOLocalMoveZ(-7f, 1f);
+            //PanelUtama.SetActive(false);
 
             UiManager.instance.startChinematic();
 
             yield return new WaitForSeconds(2f);
 
             UiManager.instance.Chinematic(true);
+            video.gameObject.SetActive(true);
 
             yield return new WaitForSeconds(1.25f);
 
             playVideo();
-
-            //yield return new WaitForSeconds(duration + 0.5f);
-            //texture.Release();
-            //texture.Create(); 
-            //video.gameObject.SetActive(false);
-
-            //UiManager.instance.endChinematic();
-            
-            //camera.transform.DOLocalMoveZ(-10f, 1f);
-
-            //yield return new WaitForSeconds(2f);
-            //extendAction?.Invoke();
-            //PanelUtama.SetActive(true);
-            
-            ////FindObjectOfType<Controller>().currentState(state.Default);
-
-            //UiManager.instance.ChinematicPanel.endChinematic();
-            
-            
         }
-
-        // void Update(){
-        //     if(video.isPrepared){
-        //         double videoDuration = video.length;
-            
-        //     // Mendapatkan waktu pemutaran saat ini dalam detik
-        //         double currentTime = video.time;
-
-        //         Debug.Log("Video Duration: " + videoDuration + " seconds");
-        //         Debug.Log("Current Video Time: " + currentTime + " seconds");
-        //     }
-        // }
-
-        //void OnVideoPrepared(VideoPlayer vp){
-        //    vp.Play();
-        //}
-
-        //public void playVideo()
-        //{
-        //    //RenderTexture.active = null;
-
-        //    video.renderMode = VideoRenderMode.RenderTexture;
-        //    video.targetTexture = texture;
-        //    video.clip = testVideo;
-
-        //    video.prepareCompleted += OnVideoPrepared;
-        //    video.loopPointReached += EndReached;
-        //    video.Prepare();
-        //}
 
         void OnVideoPrepared(VideoPlayer vp)
         {
@@ -236,7 +206,7 @@ namespace Terbaru{
 
 
 
-            
+
             texture.Release();
             texture.Create();
             video.gameObject.SetActive(false);
@@ -244,9 +214,9 @@ namespace Terbaru{
             UiManager.instance.endChinematic();
 
 
-          
+
             extendAction?.Invoke();
-           
+
 
             //FindObjectOfType<Controller>().currentState(state.Default);
 
@@ -256,71 +226,73 @@ namespace Terbaru{
         }
 
         void disableChinematic()
-        {
-            UiManager.instance.ChinematicPanel.endChinematic();
-        }
-        //void ClearRenderTexture()
+    {
+        ClearRenderTexture();
+        UiManager.instance.ChinematicPanel.endChinematic();
+    }
+    void ClearRenderTexture()
+    {
+        RenderTexture currentRT = RenderTexture.active;
+        RenderTexture.active = texture;
+        GL.Clear(true, true, Color.clear);
+        RenderTexture.active = currentRT;
+        //rawImage.texture = null;
+
+    }
+
+
+    void AdjustAspectRatio(VideoPlayer vp)
+    {
+        //float videoWitdth = vp.texture.width;
+        //float videoHeight = vp.texture.height;
+
+        //float screenWidhth = Screen.width;
+        //float screenHeight = Screen.height;
+
+        //float videoAspect = videoWitdth / videoHeight;
+        //float ScreenAspect = screenWidhth / screenHeight;
+
+        //if (videoAspect > ScreenAspect)
         //{
-        //    RenderTexture currentRT = RenderTexture.active;
-        //    RenderTexture.active = texture;
-        //    GL.Clear(true, true, Color.clear);
-        //    RenderTexture.active = currentRT;
-        //    //rawImage.texture = null;
+        //    rawImageTransform.sizeDelta = new Vector2(screenWidhth, screenWidhth / videoAspect);
+        //}
+        //else
+        //{
+        //    rawImageTransform.sizeDelta = new Vector2(screenHeight * videoAspect, screenWidhth);
 
         //}
+        vp.prepareCompleted -= AdjustAspectRatio;
+        int screenWitdh = Screen.width;
+        int screenHeight = Screen.height;
 
-        void AdjustAspectRatio(VideoPlayer vp)
+        if (screenWitdh <= 1280 && screenHeight <= 720)
         {
-            //float videoWitdth = vp.texture.width;
-            //float videoHeight = vp.texture.height;
-
-            //float screenWidhth = Screen.width;
-            //float screenHeight = Screen.height;
-
-            //float videoAspect = videoWitdth / videoHeight;
-            //float ScreenAspect = screenWidhth / screenHeight;
-
-            //if (videoAspect > ScreenAspect)
-            //{
-            //    rawImageTransform.sizeDelta = new Vector2(screenWidhth, screenWidhth / videoAspect);
-            //}
-            //else
-            //{
-            //    rawImageTransform.sizeDelta = new Vector2(screenHeight * videoAspect, screenWidhth);
-
-            //}
-            vp.prepareCompleted -= AdjustAspectRatio;
-            int screenWitdh = Screen.width;
-            int screenHeight = Screen.height;
-
-            if (screenWitdh <= 1280 && screenHeight <= 720)
-            {
-                texture.Release();
-                texture.width = 1280;
-                texture.height = 720;
-            }
-
-            else if (screenWitdh <= 1920 && screenHeight <= 1080)
-            {
-                texture.Release();
-                texture.width = 1920;
-                texture.height = 1080;
-            }
-
-            else
-            {
-                texture.Release();
-                texture.width = 3840;
-                texture.height = 2160;
-            }
+            texture.Release();
+            texture.width = 1280;
+            texture.height = 720;
         }
 
-        IEnumerator checkVideo(){
-            while(CG){
-                
-                yield return null;
-            }
+        else if (screenWitdh <= 1920 && screenHeight <= 1080)
+        {
+            texture.Release();
+            texture.width = 1920;
+            texture.height = 1080;
+        }
+
+        else
+        {
+            texture.Release();
+            texture.width = 3840;
+            texture.height = 2160;
         }
     }
+
+    //IEnumerator checkVideo(){
+    //    while(CG){
+
+    //        yield return null;
+    //    }
+    //}
+}
 
 }

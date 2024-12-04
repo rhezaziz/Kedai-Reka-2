@@ -12,6 +12,7 @@ namespace Terbaru{
         // Start is called before the first frame update
         public Light[] lampu;
         public waktu thisWaktu;
+        public I_Pad waktuIpad;
         public UnityEngine.UI.Image ImageTime;
 
         public List<dataWaktu> waktuData = new List<dataWaktu>();
@@ -63,6 +64,7 @@ namespace Terbaru{
             Kamar.changeInteractable(!valueKamar && !FindObjectOfType<PapanQuest>().haveCerita());
             //sun.color = color;
             float intent = _waktu(tempWaktu).getIntent();
+            waktuIpad.gantiJam(_waktu(tempWaktu).jam);
             foreach(var light in lampu){
                 light.DOColor(color, 2f);
             }
@@ -97,7 +99,7 @@ namespace Terbaru{
         public Color warnaCahaya;
         public waktu waktu;
         public Sprite spriteTime;
-
+        public string jam;
         public float maxIntent;
         public float minIntent;
 

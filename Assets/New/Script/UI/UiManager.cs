@@ -68,7 +68,8 @@ namespace Terbaru
 
             int jmlEnergy = profil.Energy -= value;
             profil.Energy = Mathf.Clamp(jmlEnergy, 0, 3);
-            Debug.Log(jmlEnergy);
+            //Debug.Log(jmlEnergy);
+            SoundManager.instance.uiSFX(8);
             for (int i = 0; i < bar.Length; i++) {
                 bar[i].gameObject.SetActive(i < profil.Energy);
             }

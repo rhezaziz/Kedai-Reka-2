@@ -68,14 +68,17 @@ namespace Terbaru{
 
         void infoKarakter(listCharacters karakter)
         {
-            
+            SoundManager.instance.uiSFX(2);
             pilihBtn.onClick.RemoveAllListeners();
             panelInfoKarakter.SetActive(true);
             skill = null;
             fotoInfo.sprite = karakter.icon;
             NamaInfoKarakter.text = karakter.namaCharacter;
             pilihBtn.onClick.AddListener(() => pilih());
-            kembaliBtn.onClick.AddListener(() => closeInfo());
+            kembaliBtn.onClick.AddListener(() => {
+                SoundManager.instance.uiSFX(2);
+                closeInfo();
+            });
             for(int i = 0; i < karakter.skills.Length; i++)
             {
                 string _skill = karakter.skills[i];
@@ -104,7 +107,7 @@ namespace Terbaru{
 
         public void pilih()
         {
-
+            SoundManager.instance.uiSFX(2);
             closeInfo();
             selected = true;
             btnKarakter.interactable = false;

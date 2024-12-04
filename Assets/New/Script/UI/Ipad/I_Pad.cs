@@ -20,9 +20,15 @@ namespace  Terbaru
         public void closeIpad(){
             RectTransform iPad = ipadUI.transform.GetChild(0).GetComponent<RectTransform>();
             //FindObjectOfType<swipeUI>().slide.value = 0f;
+            SoundManager.instance.uiSFX(0);
             iPad.DOPivotY(1f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
             //iPad.DOScaleY(0f, 1.5f).OnComplete(() => ipadUI.gameObject.SetActive(false));
 
+        }
+
+        public void gantiJam(string jam)
+        {
+            text_Jam.text = $"{jam}:00"; 
         }
 
         
