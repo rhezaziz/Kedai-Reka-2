@@ -41,7 +41,7 @@ namespace Terbaru
 
         public void place(int value)
         {
-            if (!isEmpty)
+            if (!isEmpty || !isCorrect(value))
                 return;
 
             sprite.sprite = materials[value - 1];

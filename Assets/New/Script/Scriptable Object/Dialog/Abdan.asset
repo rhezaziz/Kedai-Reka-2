@@ -16,7 +16,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: 9d8ab54c47ba5984c82b5628436585a8, type: 3}
+    GambarKarakter: {fileID: 21300000, guid: 60956b11c31d49841bf422bfd95df18f, type: 3}
     Nama: 0
     sentences: Hallo Abdan
     Kiri: 1

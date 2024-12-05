@@ -27,6 +27,13 @@ public class SoundManager : MonoBehaviour
         BacksoundSource.volume = PlayerPrefs.GetFloat("Music");
         effectSource.volume = PlayerPrefs.GetFloat("Effect");
     }
+
+    public void startVolume()
+    {
+
+        BacksoundSource.volume = PlayerPrefs.GetFloat("Music");
+        effectSource.volume = PlayerPrefs.GetFloat("Effect");
+    }
     public void playSoundQuest(){
         BacksoundSource.Stop();
         BacksoundSource.clip = backsoundClip[2]; 
@@ -36,7 +43,8 @@ public class SoundManager : MonoBehaviour
     public void playSoundAsrama(){
         BacksoundSource.Stop();
         BacksoundSource.clip = backsoundClip[1]; 
-        BacksoundSource.Play();    
+        BacksoundSource.Play();
+        startVolume();
     }
 
     public void endGame(){

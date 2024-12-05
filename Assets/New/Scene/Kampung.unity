@@ -3418,7 +3418,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a97473c1ab662f94a8d7f7c3efcc9a72, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  dialog: {fileID: 11400000, guid: 988820f11a824e34282f10260cfe4211, type: 2}
+  dialog: {fileID: 11400000, guid: cc37a705d32a6b54291772ccee1cf0c5, type: 2}
   Wargas:
   - {fileID: 1328213233}
   - {fileID: 1973489307}
@@ -7614,7 +7614,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    dialogObject: {fileID: 11400000, guid: c68eeb81d44dc01408b903f26e8da4d2, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}
@@ -10274,7 +10274,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 858a7d056d163aa45a0122e512649664, type: 2}
+    dialogObject: {fileID: 11400000, guid: dafc324bf4963974096477ca86ee1152, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}
@@ -15654,7 +15654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 439f5c98291db9a49ba67775e5b32581, type: 2}
+    dialogObject: {fileID: 11400000, guid: 66f3b539fdb4fd64d9d8bd424cb3c079, type: 2}
     quest:
       id: 31
       quest: {fileID: 0}

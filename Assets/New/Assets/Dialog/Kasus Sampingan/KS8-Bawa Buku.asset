@@ -23,7 +23,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c60dfebf76b8054ebe8da5a063a6bac, type: 3}
     Nama: 2
     sentences: "Oh, ini mau dibawa ke kelas nih\u2026"
     Kiri: 0
@@ -38,7 +38,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c60dfebf76b8054ebe8da5a063a6bac, type: 3}
     Nama: 2
     sentences: "Boleh\u2026 Terima kasih ya!"
     Kiri: 0

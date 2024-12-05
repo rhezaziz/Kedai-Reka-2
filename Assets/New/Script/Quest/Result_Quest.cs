@@ -44,10 +44,7 @@ namespace Terbaru{
             UiManager.instance.startChinematicWithoutCam();
             panelResutl.localScale = Vector2.zero;
             objectPanel.SetActive(true);
-            panelResutl.DOScale(Vector2.one * .9f, 1f).OnComplete(() =>
-            {
-                SoundManager.instance.uiSFX(5);
-            });
+            panelResutl.DOScale(Vector2.one * .9f, 1f);
             tempQuest = currentQuest;
             //klikResult.onClick.RemoveAllListeners();
             //Debug.Log($"{quest.select.namaPilihan[0]} -- {quest.select.namaPilihan[1]} -- {quest.select.itemOn}");

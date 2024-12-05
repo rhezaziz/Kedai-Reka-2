@@ -14,20 +14,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - narasi:
-      narasiText: Suatu pagi di depan kampus, Group Chat tampak lebih sibuk dari
+      narasiText: Suatu pagi di depan kampus, group chat tampak lebih sibuk dari
         biasanya. Semua anggota banyak berkali-kali menanyakan adakah barang lain
         yang perlu mereka bawa, memastikan apa saja yang harus mereka bawa dan saling
         menanyakan posisi.
-      VO: {fileID: 8300000, guid: 15710b1ac21fa934c8132e9f78484fbf, type: 3}
+      VO: {fileID: 8300000, guid: 884730b9f9402d04a9f5fcc82e139f56, type: 3}
     GambarKarakter: {fileID: 0}
     Nama: 0
     sentences: 
     Kiri: 0
   - narasi:
-      narasiText: 'Thomas kemudian mengirimkan list dari barang-barang yang
-
-        masing-masing
-        harus mereka bawa.'
+      narasiText: Thomas kemudian mengirimkan list dari barang-barang yang masing-masing
+        harus mereka bawa.
       VO: {fileID: 8300000, guid: 5f008302d2dde87409b5dc51e74f99b9, type: 3}
     GambarKarakter: {fileID: 0}
     Nama: 0

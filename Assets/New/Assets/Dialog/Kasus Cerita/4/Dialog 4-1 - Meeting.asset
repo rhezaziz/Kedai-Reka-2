@@ -17,14 +17,14 @@ MonoBehaviour:
       narasiText: 'Pagi ini Thomas kembali membagikan pengumuman di group chat bahwa
         akan diadakan kembali pertemuan untuk mendiskusikan terkait kegiatan survei
         lokasi dimana program akan dilaksanakan. '
-      VO: {fileID: 8300000, guid: 3649277e4b849384b85074f2913d5fd3, type: 3}
+      VO: {fileID: 8300000, guid: 2f3a873d05d1ed6498e7183bc8859361, type: 3}
     GambarKarakter: {fileID: 0}
     Nama: 0
     sentences: 
     Kiri: 0
   - narasi:
       narasiText: "Elena menghubungi pihak desa melalui text.\r"
-      VO: {fileID: 8300000, guid: 3649277e4b849384b85074f2913d5fd3, type: 3}
+      VO: {fileID: 0}
     GambarKarakter: {fileID: 0}
     Nama: 0
     sentences: 

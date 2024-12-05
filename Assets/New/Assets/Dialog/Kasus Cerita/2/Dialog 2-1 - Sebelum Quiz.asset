@@ -1,0 +1,196 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Dialog 2-1 - Sebelum Quiz
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Halo selamat pagi teman-teman. Terima kasih sudah menyempatkan waktu
+      kalian untuk diskusi kali ini.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Untuk mengefisiensikan waktu, kita langsung mulai saja diskusi hari
+      ini. Untuk pembahasannya, kita akan berdiskusi terkait desain produk dan anggarannya.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Pertama, untuk desain produk, kita berencana untuk membuat filter
+      air supaya kita bisa memanfaatkan sumber air sungai di sana.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 19d8f537a8d6e8d4e9068a2f334c3d5c, type: 3}
+    Nama: 0
+    sentences: Nah terkait desain produk ini, rencananya kita akan membuat versi
+      yang mudah dibuat dan ramah di kantong supaya bisa diproduksi ulang oleh masyarakat
+      di sana.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 41cb3f490bd06b94aa51d9ae1d1401d4, type: 3}
+    Nama: 5
+    sentences: Izin bertanya, untuk sumber dana program ini dari mana yah?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 41cb3f490bd06b94aa51d9ae1d1401d4, type: 3}
+    Nama: 5
+    sentences: Apakah melalui penggalangan dana secara langsung, atau lewat penjualan
+      produk tertentu?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Untuk sumber dana program ini, kita berencana untuk melakukan penggalangan
+      dana melalui penjualan produk.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Nah, ini salah satu yang menjadi bahan diskusi kita yaitu produk apa
+      yang akan kita buat yang berpotensi cepat laku terjual?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 0d9bc634ecf763849ad1b7e60d4a1719, type: 3}
+    Nama: 8
+    sentences: Jasa, atau barang?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Kayaknya mendingan barang, semisal makanan?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 74cbb68b9e590e4468ed093b95ea72bb, type: 3}
+    Nama: 6
+    sentences: Sepertinya makanan akan lebih mudah, deh.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: c12acb0a7daac894185877a1cff3c268, type: 3}
+    Nama: 12
+    sentences: Setuju sih, apa lagi di sini kan banyak ciwi-ciwi nih hehehe.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: d192c49cb2cb62d4ab5f0b5261086e47, type: 3}
+    Nama: 8
+    sentences: Yeh, kamu sih mau enaknya aja.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Aku juga setuju makanan sih, kayaknya makanan akan lebih gampang terjual.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: Okay, kalo gitu fixnya makanan yah? Nah sekarang mau makanan apa?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 2c0d9a059b4830146951945d7ca4eb33, type: 3}
+    Nama: 10
+    sentences: Nasi padang!
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 4aa61640619c0ad468dbb120efddfd2e, type: 3}
+    Nama: 9
+    sentences: Ah, yang bener aja kamu, mau nyaingin rumah makan padang depan kampus?
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 006cd724eee81dd4e9c7fdb448368898, type: 3}
+    Nama: 1
+    sentences: Lagi pula kalau Nasi Padang pembuatannya ribet tau. Masa nanti kita
+      harus buat rendang dulu.
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: a7151c054458ab74ab948729d758f8a1, type: 3}
+    Nama: 10
+    sentences: Hehehe ya maaf, bercanda kok bercanda.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 47527a960dce9924ab1d04aef796dd85, type: 3}
+    Nama: 3
+    sentences: Oh aku ada saran. Gimana kalo Rice Bowl atau Risol isi ayam suwir?
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f7616a20b2c191540bb4acf44a93a525, type: 3}
+    Nama: 1
+    sentences: Bisa saja sih, Rice bowl akhir-akhir ini lagi digandrungi mahasiswa
+      nih.
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
+    Nama: 1
+    sentences: "Risol juga bisa, karena pembuatan dan bahannya lebih sederhana, ditambah
+      isian ayam suwir\u2026 duh aku jadi pengen!"
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
+    Nama: 0
+    sentences: 'Nah oke, kalau gitu kita pilih antara Rice Bowl atau Risol ayam suwir
+      saja ya. '
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
+    Nama: 0
+    sentences: Bagaimana? Menurut kalian sebaiknya kita jual rice bowl atau risol
+      isi ayam suwir saja?
+    Kiri: 0

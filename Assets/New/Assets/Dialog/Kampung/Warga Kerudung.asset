@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 220329134ccff0048ade928a2c59c1a5, type: 3}
+  m_Name: Warga Kerudung
+  m_EditorClassIdentifier: 
+  data:
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
+    Nama: 23
+    sentences: 'Tahukah kamu, kalau BATU adalah material yang biasa dipergunakan
+      sebagai alas terakhir dalam filter air?
+
+'
+    Kiri: 1
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 6fd9c73716c7a6b4494fffaf5df9c5e4, type: 3}
+    Nama: 5
+    sentences: Wah, terima kasih banyak infonya, apa ada lagi yang perlu kami perhatikan?
+      (anna senang)
+    Kiri: 0
+  - narasi:
+      narasiText: 
+      VO: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
+    Nama: 23
+    sentences: Masih terkait dengan batu, menurut data, BATU KALI bertindak sebagai
+      material awal sebelum proses penyaringan
+    Kiri: 1

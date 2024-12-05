@@ -23,9 +23,9 @@ MonoBehaviour:
     sentences: 
     Kiri: 0
   - narasi:
-      narasiText: Melalui Group Chat, mereka membuat pengumuman bahwa akan diadakannya
+      narasiText: Melalui group chat, mereka membuat pengumuman bahwa akan diadakannya
         diskusi hari ini pada jam 2 sore nanti di ruang sekretariat kampus.
-      VO: {fileID: 8300000, guid: 9fad2e56c449c674fb659584ae661192, type: 3}
+      VO: {fileID: 8300000, guid: 5d618b6780754d040ba76fef929424d6, type: 3}
     GambarKarakter: {fileID: 0}
     Nama: 8
     sentences: 
@@ -35,8 +35,8 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
     Nama: 0
-    sentences: 'Halo semua, sebelumnya terimakasih banyak kalian sudah bersedia meluangkan
-      waktu untuk diskusi pertama kita. '
+    sentences: 'Halo semua, sebelumnya terima kasih banyak kalian sudah bersedia
+      meluangkan waktu untuk diskusi pertama kita. '
     Kiri: 1
   - narasi:
       narasiText: 
@@ -44,14 +44,14 @@ MonoBehaviour:
     GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
     Nama: 0
     sentences: Hari ini mengenai program yang mungkin sudah dijelaskan oleh Angel
-      secara singkat yah.
+      secara singkat, ya!
     Kiri: 1
   - narasi:
       narasiText: 
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
     Nama: 0
-    sentences: Yasudah kalau begitu kita langsung mulai saja diskusinya.
+    sentences: Ya sudah, kalau begitu kita langsung mulai saja diskusinya.
     Kiri: 1
   - narasi:
       narasiText: 
@@ -97,7 +97,7 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
     Nama: 0
-    sentences: Jadi, program  ini sederhananya adalah sebuah program pengabdian kepada
+    sentences: Jadi, program ini sederhananya adalah sebuah program pengabdian kepada
       masyarakat dalam bentuk kerja nyata untuk membantu penyelesaian masalah yang
       baru-baru ini kita temukan di NTT.
     Kiri: 1
@@ -137,7 +137,7 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: b33b87711f8878c41b3379ee2d1d6ae2, type: 3}
     Nama: 0
-    sentences: Nah disamping itu, teman-teman mungkin sudah tahu bahwa jadwal dimulainya
+    sentences: Nah di samping itu, teman-teman mungkin sudah tahu bahwa jadwal dimulainya
       pengerjaan Kompetisi Jurnal sudah dimulai.
     Kiri: 1
   - narasi:
@@ -155,7 +155,7 @@ MonoBehaviour:
     GambarKarakter: {fileID: 21300000, guid: 7d415ccf4f2828a409c4d5c704280805, type: 3}
     Nama: 8
     sentences: Oh iya! Benar juga. Sejujurnya tadi aku hampir ingin redraw dari keikutsertaan
-      program ini karena aku harus fokus ke persiapan pengerjaan jurnal ku.
+      program ini karena aku harus fokus ke persiapan pengerjaan jurnalku.
     Kiri: 0
   - narasi:
       narasiText: 
@@ -194,7 +194,7 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 7d415ccf4f2828a409c4d5c704280805, type: 3}
     Nama: 8
-    sentences: Wahh betul-betul. Asik banget nih, sudah membantu desa disana, bisa
+    sentences: Wahh betul-betul. Asik banget nih, sudah membantu desa di sana, bisa
       kita jadikan jurnal, plus ini bisa jadi ajang pembuktian kredibilitas kita.
       Keren banget!
     Kiri: 0
@@ -277,7 +277,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
     Nama: 13
     sentences: Setujuu!!
     Kiri: 0
@@ -300,7 +300,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
     Nama: 13
     sentences: Setuju, setuju!
     Kiri: 0
@@ -358,13 +358,13 @@ MonoBehaviour:
       VO: {fileID: 0}
     GambarKarakter: {fileID: 21300000, guid: 496142a4f6d0f2540be891e104413821, type: 3}
     Nama: 0
-    sentences: Wah boleh juga, kalau begitu Anna yang akan menjadi bendahara dalam
+    sentences: Wah boleh juga, kalau begitu Cici yang akan menjadi bendahara dalam
       program ini ya. Apakah semua setuju?
     Kiri: 1
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
     Nama: 13
     sentences: Setuju!
     Kiri: 0

@@ -863,10 +863,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1156114143}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &10744597
 GameObject:
@@ -5475,24 +5472,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 1557403291}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &62937461
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 62937459}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!1 &63590229
 GameObject:
   m_ObjectHideFlags: 0
@@ -10136,6 +10115,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!1 &177816992
 GameObject:
   m_ObjectHideFlags: 0
@@ -10954,29 +10935,13 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.31158727
-      objectReference: {fileID: 0}
-    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.007918349
-      objectReference: {fileID: 0}
-    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.4513999
-      objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.x
       value: 11.36
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.82
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -11010,30 +10975,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_ConstrainProportionsScale
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6790804256696052780, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 82233b1605a393d48b684f90354fa733, type: 2}
-    - target: {fileID: 8652135130390114997, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_StaticEditorFlags
-      value: 2147483647
-      objectReference: {fileID: 0}
-    - target: {fileID: 9213879975723623846, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 0
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 185455515}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!4 &185455513 stripped
 Transform:
@@ -11045,24 +10990,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 185455512}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &185455515
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 185455514}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!1 &185831637
 GameObject:
   m_ObjectHideFlags: 0
@@ -17552,7 +17479,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - dialogObject: {fileID: 11400000, guid: 64a599d3e7da29442bba662da63a7452, type: 2}
+  - dialogObject: {fileID: 11400000, guid: 2eee29c8c16f37642bad27b32d295693, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -22016,24 +21943,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 1189461225}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &501222342
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 501222341}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &501222345 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -23310,10 +23219,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 2141647561}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &546620705
 GameObject:
@@ -36482,10 +36388,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1905373539}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &844270509
 GameObject:
@@ -36616,7 +36519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - dialogObject: {fileID: 11400000, guid: 64a599d3e7da29442bba662da63a7452, type: 2}
+  - dialogObject: {fileID: 11400000, guid: 2eee29c8c16f37642bad27b32d295693, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -37685,10 +37588,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1207787909}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &859066968
 GameObject:
@@ -38940,7 +38840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cd5253e014f534b858f405dc704bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: 0
+  mainMenu: 1
   obj:
   - {fileID: 21220965}
   - {fileID: 1147744896}
@@ -38948,7 +38848,7 @@ MonoBehaviour:
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
   panelUtama: {fileID: 1582947453}
-  isTutorial: 0
+  isTutorial: 1
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -40421,7 +40321,7 @@ MonoBehaviour:
     isRPG: 0
     Index: 0
     proses: []
-  isActive: 1
+  isActive: 0
   NPCs: []
   result: {fileID: 21220971}
   StateQuest: 0
@@ -41278,32 +41178,7 @@ MonoBehaviour:
     - inAsrama: 0
       dialogWithPerempuan: 0
       narasi:
-        dialogObject: {fileID: 11400000, guid: 0645a9cb38287ed4f90792dc98aac5c5, type: 2}
-        quest:
-          id: 0
-          quest: {fileID: 0}
-          isRPG: 0
-          Index: 0
-          proses: []
-        events:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 894212852}
-              m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
-              m_MethodName: startNarasi
-              m_Mode: 3
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 1
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - inAsrama: 1
-      dialogWithPerempuan: 0
-      narasi:
-        dialogObject: {fileID: 11400000, guid: 709cc50887748e54bbfdba63473c653b, type: 2}
+        dialogObject: {fileID: 11400000, guid: ba4b7682a2a14954cb09eeeedaf83b16, type: 2}
         quest:
           id: 0
           quest: {fileID: 0}
@@ -41340,7 +41215,32 @@ MonoBehaviour:
     - inAsrama: 0
       dialogWithPerempuan: 0
       narasi:
-        dialogObject: {fileID: 11400000, guid: cb49dc1faed4cd24082bdb072ab46a85, type: 2}
+        dialogObject: {fileID: 11400000, guid: ba4b7682a2a14954cb09eeeedaf83b16, type: 2}
+        quest:
+          id: 0
+          quest: {fileID: 0}
+          isRPG: 0
+          Index: 0
+          proses: []
+        events:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 894212852}
+              m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+              m_MethodName: startNarasi
+              m_Mode: 3
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 1
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - inAsrama: 0
+      dialogWithPerempuan: 0
+      narasi:
+        dialogObject: {fileID: 11400000, guid: 6a38bb81df07b7f4c8a1feb3b889883d, type: 2}
         quest:
           id: 0
           quest: {fileID: 0}
@@ -44787,8 +44687,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 966099294}
   serializedVersion: 2
-  m_LocalRotation: {x: 0.0010778378, y: -0.00010826342, z: 0.0010447185, w: 0.99999887}
-  m_LocalPosition: {x: 39.995262, y: 3.1265488, z: 8.645325}
+  m_LocalRotation: {x: 0.001077838, y: -0.0001082634, z: 0.001044719, w: 0.9999989}
+  m_LocalPosition: {x: 39.99526, y: 3.126549, z: 8.645325}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -50436,6 +50336,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!1 &1153271411
 GameObject:
   m_ObjectHideFlags: 0
@@ -50571,24 +50473,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 9476177}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1156114143
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1156114142}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &1156114146 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -51648,10 +51532,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 501222342}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &1191141557
 GameObject:
@@ -52465,24 +52346,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 858516904}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1207787909
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1207787907}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!1 &1210261389
 GameObject:
   m_ObjectHideFlags: 0
@@ -56012,6 +55875,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!1 &1322570278
 GameObject:
   m_ObjectHideFlags: 0
@@ -56814,10 +56679,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1418875709}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &1332884908
 GameObject:
@@ -60285,24 +60147,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 1329023515}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1418875709
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1418875708}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &1418875712 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -63002,7 +62846,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.2001905, y: 7.74}
+  m_Size: {x: 4.200191, y: 7.74}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -63017,7 +62861,7 @@ Transform:
   m_GameObject: {fileID: 1467882408}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 12.599998, y: 0.79999924, z: 3.5}
+  m_LocalPosition: {x: 12.6, y: 0.7999992, z: 3.5}
   m_LocalScale: {x: 1.5, y: 1.5, z: 0.75}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -63043,7 +62887,7 @@ BoxCollider:
   m_ProvidesContacts: 0
   m_Enabled: 1
   serializedVersion: 3
-  m_Size: {x: 1.8651959, y: 7.74, z: 2.0642905}
+  m_Size: {x: 1.865196, y: 7.74, z: 2.064291}
   m_Center: {x: -0.6877838, y: 0, z: 0.03688566}
 --- !u!114 &1467882414
 MonoBehaviour:
@@ -64114,6 +63958,18 @@ MonoBehaviour:
             m_TargetAssemblyTypeName: Terbaru.QuestManager, Assembly-CSharp
             m_MethodName: testCloseProsesQuest
             m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+          - m_Target: {fileID: 1317124316}
+            m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+            m_MethodName: SetActive
+            m_Mode: 6
             m_Arguments:
               m_ObjectArgument: {fileID: 0}
               m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -66480,6 +66336,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!1 &1532350124
 GameObject:
   m_ObjectHideFlags: 0
@@ -67096,10 +66954,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1826709762}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &1542825791
 GameObject:
@@ -67749,10 +67604,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 62937461}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!1 &1557674692
 GameObject:
@@ -68240,7 +68092,7 @@ MonoBehaviour:
       m_Calls: []
   minggu2: {fileID: 32900000, guid: 0187bceb73ed3e048a785fee7172f1a4, type: 3}
   dialog1:
-    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    dialogObject: {fileID: 11400000, guid: 5c315c7459ed16b418c2b4af17eb3454, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -68297,7 +68149,7 @@ MonoBehaviour:
   minggu3: {fileID: 32900000, guid: 5cbedba4a8f96fe4f9e5aac5b8096fc0, type: 3}
   Player: {fileID: 6494484127754252006}
   dialog2:
-    dialogObject: {fileID: 11400000, guid: 858a7d056d163aa45a0122e512649664, type: 2}
+    dialogObject: {fileID: 11400000, guid: 265924fee7290f44986f55c3c39748e0, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -77991,7 +77843,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogs:
-  - dialogObject: {fileID: 11400000, guid: 84a113f77e59f654b9aeb50ee24ebe38, type: 2}
+  - dialogObject: {fileID: 11400000, guid: 6f3e5cf4164332f4ba4614fb4061cc58, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -78001,7 +77853,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-  - dialogObject: {fileID: 11400000, guid: b97dfbe7d5799aa489d4950d074f3250, type: 2}
+  - dialogObject: {fileID: 11400000, guid: 8984f2cba8a08264cafbcfb16859c537, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -78011,7 +77863,7 @@ MonoBehaviour:
     events:
       m_PersistentCalls:
         m_Calls: []
-  - dialogObject: {fileID: 11400000, guid: cfd8d155b886f134eb45d0c07d818dc0, type: 2}
+  - dialogObject: {fileID: 11400000, guid: 066c537aeb2a2ce4484e8f2f943edba0, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -78037,7 +77889,7 @@ MonoBehaviour:
   - inAsrama: 0
     dialogWithPerempuan: 0
     narasi:
-      dialogObject: {fileID: 11400000, guid: 84a113f77e59f654b9aeb50ee24ebe38, type: 2}
+      dialogObject: {fileID: 11400000, guid: 6f3e5cf4164332f4ba4614fb4061cc58, type: 2}
       quest:
         id: 0
         quest: {fileID: 0}
@@ -78050,7 +77902,7 @@ MonoBehaviour:
   - inAsrama: 0
     dialogWithPerempuan: 0
     narasi:
-      dialogObject: {fileID: 11400000, guid: b97dfbe7d5799aa489d4950d074f3250, type: 2}
+      dialogObject: {fileID: 11400000, guid: 8984f2cba8a08264cafbcfb16859c537, type: 2}
       quest:
         id: 0
         quest: {fileID: 0}
@@ -78063,7 +77915,7 @@ MonoBehaviour:
   - inAsrama: 0
     dialogWithPerempuan: 0
     narasi:
-      dialogObject: {fileID: 11400000, guid: cfd8d155b886f134eb45d0c07d818dc0, type: 2}
+      dialogObject: {fileID: 11400000, guid: 066c537aeb2a2ce4484e8f2f943edba0, type: 2}
       quest:
         id: 0
         quest: {fileID: 0}
@@ -78233,24 +78085,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 1538655435}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1826709762
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1826709761}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &1826709765 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -81168,24 +81002,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 842493339}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1905373539
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1905373538}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &1905373542 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -81824,6 +81640,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!1 &1918673505
 GameObject:
   m_ObjectHideFlags: 0
@@ -90442,24 +90260,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 539773581}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &2141647561
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2141647560}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
 --- !u!4 &2141647564 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
@@ -117061,6 +116861,8 @@ MonoBehaviour:
   jarak: 0.75
   timer1: 0.5
   timer2: 0.5
+  posAwal: {x: 0, y: 0, z: 0}
+  anim: {fileID: 0}
 --- !u!4 &6357229089591636910
 Transform:
   m_ObjectHideFlags: 0
@@ -120339,7 +120141,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 7149a88c029f805459d278bbc75f8e23, type: 2}
+    dialogObject: {fileID: 11400000, guid: 46a2170166a8f2a428a60042e7f402e0, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}
@@ -125193,7 +124995,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 0d31783edb12e1645b637a27ae1ddc89, type: 2}
+    dialogObject: {fileID: 11400000, guid: dfef35cad548f8c4ab8a4ad0f736432e, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}

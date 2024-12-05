@@ -15217,7 +15217,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialog:
-    dialogObject: {fileID: 11400000, guid: 43ea1e2446027504caa79c9d770b31ce, type: 2}
+    dialogObject: {fileID: 11400000, guid: da70c17f23338f249b45842d6d3ae0d7, type: 2}
     quest:
       id: 0
       quest: {fileID: 0}

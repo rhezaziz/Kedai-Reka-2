@@ -23,14 +23,14 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 73c0d77810447314892ebd33ea6d9594, type: 3}
     Nama: 19
     sentences: Itu loh! Dia tuh aneh, Ini kan waktu libur, masa mesti serius terus!
     Kiri: 0
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 834dd16d25256d240993a3f740ddc58b, type: 3}
     Nama: 18
     sentences: Lho, yang aneh itu kamu, ya waktu libur itu mestinya dipakai untuk
       belajar, untuk tambah ilmu dan mengembangkan kemampuan diri.
@@ -38,7 +38,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 73c0d77810447314892ebd33ea6d9594, type: 3}
     Nama: 19
     sentences: Lihat?? Party boomer banget deh, masa sih kamu gak akan sediain waktu
       luang buat diri sendiri untuk bersantai?
@@ -46,14 +46,14 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 73c0d77810447314892ebd33ea6d9594, type: 3}
     Nama: 19
     sentences: Santai sebentar gak akan bikin kamu jadi kurang pintar kok.
     Kiri: 0
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
+    GambarKarakter: {fileID: 21300000, guid: 834dd16d25256d240993a3f740ddc58b, type: 3}
     Nama: 18
     sentences: "Itu namanya gak produktif\u2026 gimana sih.."
     Kiri: 1

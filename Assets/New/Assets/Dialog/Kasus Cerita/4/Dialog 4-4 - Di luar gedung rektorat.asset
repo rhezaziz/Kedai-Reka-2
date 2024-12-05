@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   data:
   - narasi:
-      narasiText: 'Hari survey pun tiba,  semua anggota yang akan berangkat survey
+      narasiText: 'Hari survey pun tiba, semua anggota yang akan berangkat survey
         berkumpul di depan gedung rektorat. '
       VO: {fileID: 0}
     GambarKarakter: {fileID: 0}

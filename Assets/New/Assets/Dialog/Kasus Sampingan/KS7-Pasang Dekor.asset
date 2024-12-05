@@ -23,8 +23,8 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 0}
-    Nama: 17
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
+    Nama: 16
     sentences: Iya kak, kita sedang merias aula untuk acara besok nih!
     Kiri: 0
   - narasi:
@@ -37,7 +37,7 @@ MonoBehaviour:
   - narasi:
       narasiText: 
       VO: {fileID: 0}
-    GambarKarakter: {fileID: 21300000, guid: f152498a2d05d64468662009422077f8, type: 3}
-    Nama: 17
+    GambarKarakter: {fileID: 21300000, guid: eb201421a46441d43a5931ba4896ff71, type: 3}
+    Nama: 16
     sentences: Boleh banget dong kak, terima kasih ya!
     Kiri: 0
