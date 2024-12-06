@@ -22,12 +22,23 @@ namespace  Terbaru
         }
 
         void Start(){
+            
             Invoke("loadSceneBtn", 2f);
         }
 
         public void loadSceneBtn(){
+            bool selesai = PlayerPrefs.GetInt("Selesai") == 1 ? true : false;
 
-            StartCoroutine(testNewLoad());
+            if (selesai)
+            {
+                StartCoroutine(LoadNewScene(namaScene));
+                
+            }
+            else
+            {
+                StartCoroutine(testNewLoad());
+            }
+            
         }
 
         void pindahScene(string sceneName){
@@ -36,6 +47,7 @@ namespace  Terbaru
 
         IEnumerator testNewLoad()
         {
+            //PlayerPrefs.SetInt("Selesai", 0);
             float timer = 5f;
             while (timer >= 0)
             {
@@ -51,6 +63,7 @@ namespace  Terbaru
 
         IEnumerator LoadNewScene(string SceneName){
 
+            //PlayerPrefs.SetInt("Selesai", 0);
             sceneActive = SceneManager.GetActiveScene().name;
             SceneManager.sceneLoaded += UnloadScene;
             //AsyncOperation asyncLoad = SceneManager.LoadSceneAsync(SceneName, LoadSceneMode.Additive);
@@ -75,6 +88,7 @@ namespace  Terbaru
             // foreach(GameObject obj in rootObject){
             //     obj.SetActive(false);
             // }
+
 
             Destroy(this.gameObject);
 

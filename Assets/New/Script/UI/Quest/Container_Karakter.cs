@@ -68,7 +68,8 @@ namespace Terbaru{
 
         void infoKarakter(listCharacters karakter)
         {
-            SoundManager.instance.uiSFX(2);
+            
+            //SoundManager.instance.uiSFX(2);
             pilihBtn.onClick.RemoveAllListeners();
             panelInfoKarakter.SetActive(true);
             skill = null;

@@ -12,6 +12,7 @@ namespace Terbaru
     {
         public Slider sliderMusic;
         public Slider sliderEffect;
+        
         #region Main Menu
 
         public void startAudioMainMenu()
@@ -85,6 +86,18 @@ namespace Terbaru
 
             Ipad_changeVolumeEffect();
             //PlayerPrefs.SetFloat("Effect", sliderMusic.value);
+        }
+
+        #endregion
+
+
+        #region Ganti Hari
+        public Toggle toggle;
+        public GameObject GantiHariPanel;
+
+        public void gantiHari()
+        {
+            GantiHariPanel.SetActive(toggle.isOn);
         }
 
         #endregion

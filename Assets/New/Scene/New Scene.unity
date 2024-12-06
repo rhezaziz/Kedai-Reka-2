@@ -38407,6 +38407,8 @@ MonoBehaviour:
   sourceMusic: {fileID: 0}
   valueMusic: {fileID: 0}
   valueEffect: {fileID: 0}
+  toggle: {fileID: 0}
+  GantiHariPanel: {fileID: 0}
 --- !u!4 &1941812734
 Transform:
   m_ObjectHideFlags: 0

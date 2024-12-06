@@ -173,7 +173,7 @@ namespace Terbaru{
             
             isActive = false;
             FindObjectOfType<SoundManager>().playSoundAsrama();
-            SoundManager.instance.uiSFX(16);
+            //SoundManager.instance.uiSFX(16);
             Invoke("resultUI", 1f);
         }
 

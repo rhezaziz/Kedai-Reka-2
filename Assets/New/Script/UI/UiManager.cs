@@ -29,6 +29,8 @@ namespace Terbaru
 
         Camera cam;
 
+        
+
         void Awake() {
             instance = this;
 
@@ -39,6 +41,8 @@ namespace Terbaru
             initProfil();
 
         }
+
+        
 
         public void initProfil() {
             var profil = GameManager.instance.profil;

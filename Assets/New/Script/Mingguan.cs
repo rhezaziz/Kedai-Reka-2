@@ -117,10 +117,14 @@ namespace Terbaru {
             UiManager.instance.endChinematic();
             if (isChoose)
             {
+                List<GameObject> obj = new List<GameObject>();
                 foreach(var i in characters)
                 {
+                    obj.Add(i.objectNPC);
                     i.selected = true;
                 }
+
+                GameManager.instance.QuizPilihKarakter(obj);
             }
             UiManager.instance.ChinematicPanel.endChinematic();
         }
@@ -154,6 +158,15 @@ namespace Terbaru {
             {
                 StartCoroutine(pindahKeDepanPintu());
             });
+        }
+
+        public void endMinggu3()
+        {
+            foreach(var i in characters)
+            {
+                i.selected = false;
+                GameManager.instance.npcCharacter(i.objectNPC).SetActive(!i.characterLock);
+            }
         }
 
         IEnumerator pindahKeDepanPintu()

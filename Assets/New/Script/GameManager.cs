@@ -36,6 +36,7 @@ namespace Terbaru{
             DontDestroyOnLoad(this);
 
             FindObjectOfType<Controller>().GantiPerempuan(false);
+            //PlayerPrefs.SetInt("Selesai", 0);
             waktu.currentTime(2);
             checkTutorial();
             checkMainMenu();
@@ -61,12 +62,18 @@ namespace Terbaru{
 
         public void checkMainMenu()
         {
-            panelUtama.SetActive(!mainMenu);
-            if (mainMenu)
+            bool selesai = PlayerPrefs.GetInt("Selesai") == 1 ? true : false;
+            bool temp = !mainMenu || selesai;
+            panelUtama.SetActive(temp);
+            
+            if (mainMenu && !selesai)
             {
+                PlayerPrefs.SetInt("Selesai", 0);
                 SoundManager.instance.stopAudio();
                 FindObjectOfType<MiniGame>().openMainMenu("New Scene");
             }
+
+            PlayerPrefs.SetInt("Selesai", 0);
         }
 
         public void DestroyThisObject()
@@ -179,6 +186,13 @@ namespace Terbaru{
             NPCs[index].SetActive(!profil.character[index].characterLock);
         }
 
+        public void resetNPC()
+        {
+            for (int i = 0; i < profil.character.Count; i++) {
+                updateCharacter(i);
+            }
+        }
+
         public void readyMission(List<GameObject> NPC, Quest quest){
             List<GameObject> NPC_Quest = new List<GameObject>();
             foreach(var npc in NPC){
@@ -189,6 +203,19 @@ namespace Terbaru{
             }
             setUpPositionNPC(NPC_Quest, quest);
 
+        }
+
+        public void QuizPilihKarakter(List<GameObject> NPC)
+        {
+            List<GameObject> NPC_Quest = new List<GameObject>();
+            foreach (var npc in NPC)
+            {
+                foreach (var temp in NPCs)
+                {
+                    if (npc.name == temp.name)
+                        temp.gameObject.SetActive(false);
+                }
+            }
         }
 
         public void disabledInteractNPC()

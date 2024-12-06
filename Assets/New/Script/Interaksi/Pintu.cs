@@ -124,7 +124,7 @@ namespace Terbaru
         public void tutup(){
             var video = FindObjectOfType<VideoManager>();
             float duration = (float)video.video.length;
-            Invoke("tutupPintu", duration + 8.5f);
+            Invoke("tutupPintu", duration + 7.5f);
         }
 
         public void endDialog()

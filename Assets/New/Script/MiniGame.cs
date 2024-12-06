@@ -122,6 +122,7 @@ namespace Terbaru{
 
         public void pindahMainMenu()
         {
+            PlayerPrefs.SetInt("Selesai", 1);
             //sceneActive = namaScene;
             SceneManager.LoadSceneAsync("New Scene", LoadSceneMode.Single);
             Destroy(gameObject);

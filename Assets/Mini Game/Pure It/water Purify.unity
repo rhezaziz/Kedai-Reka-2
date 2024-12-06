@@ -2399,8 +2399,8 @@ MonoBehaviour:
   JumlahBahan: 0
   Awal: {fileID: 2142843333}
   Akhir: {fileID: 28248665}
-  Benar: {fileID: 11400000, guid: 7e33e346b80bf224c8386c624d36c543, type: 2}
-  TidakBenar: {fileID: 11400000, guid: 1177b84f4abdf2f48818ab61916557f7, type: 2}
+  Benar: {fileID: 11400000, guid: 0df8f0146cc94b647beca88ea7e3f846, type: 2}
+  TidakBenar: {fileID: 11400000, guid: 0df8f0146cc94b647beca88ea7e3f846, type: 2}
   Atas: {fileID: 1684985904}
   Bawah: {fileID: 1189246601}
   Penampung: {fileID: 0}
