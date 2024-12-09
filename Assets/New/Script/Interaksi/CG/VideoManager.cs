@@ -34,13 +34,14 @@ namespace Terbaru{
         }
 
         public void action(VideoClip video){
-            //Debug.Log("Play Video");
+            Debug.Log("Play Video");
             testVideo = video ? video : null;
             //UiManager.instance.ChinematicPanel.SetActive(true);
 
             texture.Release();
             texture.Create();
-            StartCoroutine(cutSceneUpdate(true));
+            //StartCoroutine(cutSceneUpdate(true));
+            StartCoroutine(cutScene(true));
 
         }
 
@@ -51,7 +52,8 @@ namespace Terbaru{
             
             texture.Release();
             texture.Create();
-            StartCoroutine(cutSceneUpdate(false));
+            //StartCoroutine(cutSceneUpdate(false));
+            StartCoroutine(cutScene(false));
         }
 
         public void actionOnDialog(VideoClip video)
@@ -80,7 +82,7 @@ namespace Terbaru{
         #region Ienumerator
         IEnumerator cutSceneOnDialogEnd(bool adaVideo)
         {
-            video.gameObject.SetActive(true);
+            //video.gameObject.SetActive(true);
             video.clip = testVideo;
             //FindObjectOfType<Controller>().currentState(state.Interaction);
             //GameObject PanelUtama = UiManager.instance.panelUtama;
@@ -125,7 +127,7 @@ namespace Terbaru{
 
         IEnumerator cutSceneOnDialog(bool adaVideo)
         {
-            video.gameObject.SetActive(true);
+            //video.gameObject.SetActive(true);
             video.clip = testVideo;
             //FindObjectOfType<Controller>().currentState(state.Interaction);
             //GameObject PanelUtama = UiManager.instance.panelUtama;
@@ -168,11 +170,12 @@ namespace Terbaru{
         IEnumerator cutScene(bool adaVideo)
         {
             Debug.Log("Cut Scene");
-            video.gameObject.SetActive(true);
+            
             video.clip = testVideo;
             //FindObjectOfType<Controller>().currentState(state.Interaction);
             //GameObject PanelUtama = UiManager.instance.panelUtama;
-            float duration = (float)video.length;
+            float duration = 1;
+            float tempDuration = (float)video.length;
             var camera = Camera.main;
             camera.transform.DOLocalMoveZ(-7f, 1f);
             //PanelUtama.SetActive(false);
@@ -182,12 +185,15 @@ namespace Terbaru{
             yield return new WaitForSeconds(2f);
 
             UiManager.instance.Chinematic(true);
-
+            //video.gameObject.SetActive(true);
             yield return new WaitForSeconds(1.25f);
 
 
-            if (adaVideo) playVideo();
-
+            if (adaVideo)
+            {
+                duration = tempDuration;
+                playVideo();
+            }
             yield return new WaitForSeconds(duration + 0.5f);
             ClearRenderTexture();
             // texture.Release();
@@ -265,7 +271,7 @@ namespace Terbaru{
             video.clip = testVideo;
 
             video.prepareCompleted += OnVideoPrepared;
-            video.loopPointReached += EndReached;
+            //video.loopPointReached += EndReached;
             //video.prepareCompleted += AdjustAspectRatio;
             video.Prepare();
         }
@@ -292,7 +298,8 @@ namespace Terbaru{
 
             //UiManager.instance.ChinematicPanel.endChinematic();
             texture.Release();
-            Invoke("disableChinematic", 1.5f);
+            //Invoke("disableChinematic", 1.5f);
+            disableChinematic();
             QuestManager.instance.CheckActionQuest(namaAction);
 
         }

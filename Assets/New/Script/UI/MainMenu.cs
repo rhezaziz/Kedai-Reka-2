@@ -41,9 +41,10 @@ namespace Terbaru{
         }
 
         // Update is called once per frame
-        void Update()
+        void OnApplicationQuit()
         {
-            
+            Debug.Log("Game sedang ditutup!");
+            PlayerPrefs.SetInt("Selesai", 0);
         }
     }
 

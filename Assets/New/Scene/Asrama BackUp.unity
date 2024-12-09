@@ -7027,7 +7027,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &104709990
 RectTransform:
   m_ObjectHideFlags: 0
@@ -39016,7 +39016,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d5cd5253e014f534b858f405dc704bff, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mainMenu: 0
+  mainMenu: 1
   obj:
   - {fileID: 21220965}
   - {fileID: 1147744896}
@@ -39024,7 +39024,7 @@ MonoBehaviour:
   waktu: {fileID: 894212849}
   profil: {fileID: 11400000, guid: 822aa8ae462efff4f96257ecdcb49a16, type: 2}
   panelUtama: {fileID: 1582947453}
-  isTutorial: 0
+  isTutorial: 1
   interactions:
   - {fileID: 438926246}
   - {fileID: 687654408}
@@ -67915,23 +67915,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.33384344
+      value: -0.3338435
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.0037706408
+      value: 0.005655962
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.32242846
+      value: 0.4836427
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.23
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.74
+      value: 3.85
       objectReference: {fileID: 0}
     - target: {fileID: 5266065988747525279, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_LocalPosition.z
@@ -67976,6 +67976,34 @@ PrefabInstance:
     - target: {fileID: 6440147196608251888, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_CastShadows
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -7
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6456644526040224366, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 6790804256696052780, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
       propertyPath: m_Materials.Array.data[0]
@@ -72707,7 +72735,7 @@ MonoBehaviour:
   clickAbleObject: 1
   paket: 0
   item:
-  - {fileID: 11400000, guid: 17c4bf8cc02e7814f9ce3ebb87a23ef5, type: 2}
+  - {fileID: 11400000, guid: 794d23f4861fdba49b5778c71b8e8dfb, type: 2}
   actionQuest: Item
   Player: {fileID: 0}
   point: {fileID: 0}
@@ -106338,7 +106366,7 @@ PrefabInstance:
       objectReference: {fileID: 6494484127754252006}
     - target: {fileID: 587099105149876792, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: isObject
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 587099105149876792, guid: 01c06673e27d37c4a9a3580950bc8a7a, type: 3}
       propertyPath: distancePlayer

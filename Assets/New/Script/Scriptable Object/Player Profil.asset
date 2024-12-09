@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 14bbe54c9ebf1a94c8fc8a8f4a6a4181, type: 3}
   m_Name: Player Profil
   m_EditorClassIdentifier: 
-  NamaKarakter: re
+  NamaKarakter: 545
   position: {x: -175, y: 5, z: -130}
   jmlHari: 1
   Energy: 3
-  Saldo: 110500
+  Saldo: 10000
   item:
   - {fileID: 11400000, guid: fa5369f3dbc1f5940a16aafcbb42ca79, type: 2}
   - {fileID: 11400000, guid: bf96953b23cb7ef478d187e3cd3e431a, type: 2}

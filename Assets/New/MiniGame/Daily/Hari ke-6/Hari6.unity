@@ -1752,7 +1752,7 @@ MonoBehaviour:
   - {fileID: 27160349}
   - {fileID: 2058861689}
   - {fileID: 1227485697}
-  data: {fileID: 11400000, guid: 2e2b3330cacef56499cf5ba37f2e214f, type: 2}
+  data: {fileID: 11400000, guid: 7110e84a5303f88409ab455b590ebf95, type: 2}
   action: minigame
 --- !u!4 &1540675327
 Transform:

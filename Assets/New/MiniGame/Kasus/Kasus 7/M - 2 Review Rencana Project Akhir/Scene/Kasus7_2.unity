@@ -244,7 +244,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f07a756241455be4492ccd8dc25a7390, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isDaily: 1
+  isDaily: 0
   jumlahText: {fileID: 1161337027}
   jumlah: 4
   listKegiatan:
