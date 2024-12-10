@@ -118,11 +118,6 @@ namespace Terbaru{
             panelBawah.sprite = data.Kiri ? dialogKiri : dialogKanan;
         }
 
-        // Update is called once per frame
-        void Update()
-        {
-            
-        }
         [System.Serializable]
         public class UiComponent{
             public TMP_Text[] textNama;

@@ -61,17 +61,23 @@ namespace Terbaru{
             {
                 QuestManager.instance.StartQuest(dialog.quest);
             }
+            else if(extendAction.GetPersistentEventCount() <= 0)
+            {
+                if (!warga) UiManager.instance.endChinematicWithoutCam();
 
-            if (!warga) UiManager.instance.endChinematicWithoutCam();
+                else if (warga) Manager_Ending.instance.Chinematic(false);
 
-            else if (warga) Manager_Ending.instance.Chinematic(false);
+                FindObjectOfType<DialogManager>().closeDialog();
+
+            }
+
 
             interactNPC(false);
             extendAction?.Invoke();
             //canDialog(false);
             //Mulai Quiz
             //Debug.Log("Selesai Dialog, Saat nya Quiz");
-            FindObjectOfType<DialogManager>().closeDialog();
+            
         }
     }
 }

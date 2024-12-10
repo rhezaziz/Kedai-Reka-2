@@ -10,6 +10,7 @@ namespace Terbaru{
         public static GameManager instance;
 
         public bool mainMenu;
+        public bool Test;
 
         public List<GameObject> obj = new List<GameObject>();
 
@@ -122,7 +123,7 @@ namespace Terbaru{
 
             FindObjectOfType<SoundManager>().playSoundAsrama();
 
-            player.localPosition = profil.position;
+            if(!Test) player.localPosition = profil.position;
 
             spawnAllNPC();
         }
@@ -262,6 +263,11 @@ namespace Terbaru{
             return null;
         }
         
+        public void rekrutAbdan(listCharacters character)
+        {
+            character.characterLock = false;
+            npcCharacter(character.objectNPC).SetActive(!character.characterLock);
+        }
         public void pindahScene(){
             PlayerPrefs.SetString("Scene", "Asrama");
             SceneManager.LoadScene("Loading");

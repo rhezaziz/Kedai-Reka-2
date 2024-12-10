@@ -17130,7 +17130,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 601.0345, y: -352.5}
+  m_AnchoredPosition: {x: 600, y: -277.5}
   m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &390607532
@@ -17213,10 +17213,10 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 5438642106907724189}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
+      - m_Target: {fileID: 894212846}
+        m_TargetAssemblyTypeName: Terbaru.DialogManager, Assembly-CSharp
+        m_MethodName: closeDialog
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -39017,6 +39017,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mainMenu: 1
+  Test: 0
   obj:
   - {fileID: 21220965}
   - {fileID: 1147744896}
@@ -41688,6 +41689,18 @@ MonoBehaviour:
         events:
           m_PersistentCalls:
             m_Calls:
+            - m_Target: {fileID: 894212852}
+              m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
+              m_MethodName: closeDialog
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 4
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
             - m_Target: {fileID: 894212852}
               m_TargetAssemblyTypeName: Terbaru.Narasi, Assembly-CSharp
               m_MethodName: startNarasi
@@ -45967,8 +45980,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -75}
+  m_SizeDelta: {x: 0, y: -150}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &991265205
 MonoBehaviour:
@@ -63769,7 +63782,6 @@ GameObject:
   - component: {fileID: 1470133300}
   - component: {fileID: 1470133303}
   - component: {fileID: 1470133302}
-  - component: {fileID: 1470133301}
   m_Layer: 5
   m_Name: Image
   m_TagString: Untagged
@@ -63792,91 +63804,11 @@ RectTransform:
   - {fileID: 1839085850}
   m_Father: {fileID: 1768766679}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -25}
-  m_SizeDelta: {x: 900, y: 100}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 0, y: -150}
+  m_SizeDelta: {x: -300, y: 100}
   m_Pivot: {x: 0.5, y: 1}
---- !u!114 &1470133301
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1470133299}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4e29b1a8efbd4b44bb3f3716e73f07ff, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Navigation:
-    m_Mode: 3
-    m_WrapAround: 0
-    m_SelectOnUp: {fileID: 0}
-    m_SelectOnDown: {fileID: 0}
-    m_SelectOnLeft: {fileID: 0}
-    m_SelectOnRight: {fileID: 0}
-  m_Transition: 1
-  m_Colors:
-    m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
-    m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
-    m_ColorMultiplier: 1
-    m_FadeDuration: 0.1
-  m_SpriteState:
-    m_HighlightedSprite: {fileID: 0}
-    m_PressedSprite: {fileID: 0}
-    m_SelectedSprite: {fileID: 0}
-    m_DisabledSprite: {fileID: 0}
-  m_AnimationTriggers:
-    m_NormalTrigger: Normal
-    m_HighlightedTrigger: Highlighted
-    m_PressedTrigger: Pressed
-    m_SelectedTrigger: Selected
-    m_DisabledTrigger: Disabled
-  m_Interactable: 1
-  m_TargetGraphic: {fileID: 1470133302}
-  m_OnClick:
-    m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1768766680}
-        m_TargetAssemblyTypeName: Terbaru.QuizNarasi, Assembly-CSharp
-        m_MethodName: jawab
-        m_Mode: 3
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 1768766678}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
-      - m_Target: {fileID: 2128752721}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: SetActive
-        m_Mode: 6
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1470133302
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -68259,6 +68191,7 @@ MonoBehaviour:
   blank: 0
   half: 0
   panelUtama: {fileID: 1582947453}
+  anim: {fileID: 0}
 --- !u!1 &1564082300
 GameObject:
   m_ObjectHideFlags: 0
@@ -77449,7 +77382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 601.0345, y: -247.5}
+  m_AnchoredPosition: {x: 600, y: -172.5}
   m_SizeDelta: {x: 900, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1803198770
@@ -77496,12 +77429,12 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 1251750978}
-        m_TargetAssemblyTypeName: Terbaru.RekrutManager, Assembly-CSharp
-        m_MethodName: rekrutKarakter
+      - m_Target: {fileID: 894212844}
+        m_TargetAssemblyTypeName: Terbaru.GameManager, Assembly-CSharp
+        m_MethodName: rekrutAbdan
         m_Mode: 2
         m_Arguments:
-          m_ObjectArgument: {fileID: 11400000, guid: 3103ac8b1ebc7b441be8e78078f8f0cb, type: 2}
+          m_ObjectArgument: {fileID: 11400000, guid: 215e9669009f79b479a7f7968377285f, type: 2}
           m_ObjectArgumentAssemblyTypeName: listCharacters, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -77536,6 +77469,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 894212846}
+        m_TargetAssemblyTypeName: Terbaru.DialogManager, Assembly-CSharp
+        m_MethodName: closeDialog
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -82191,10 +82136,7 @@ PrefabInstance:
     - {fileID: 3027150619207360699, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1916612499}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
 --- !u!4 &1916612497 stripped
 Transform:
@@ -82206,26 +82148,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 4782545388936603173, guid: a89c9d6e73673384d97b745ed18ab3b6, type: 3}
   m_PrefabInstance: {fileID: 1916612496}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &1916612499
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1916612498}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ed9bcca65cc6ec74b8115ec2e06b6276, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  isX: 0
-  isY: 1
-  isZ: 0
-  jarak: 0.75
-  timer1: 0.5
-  timer2: 0.5
-  posAwal: {x: 0, y: 0, z: 0}
-  anim: {fileID: 0}
 --- !u!1 &1918673505
 GameObject:
   m_ObjectHideFlags: 0
@@ -118400,7 +118322,7 @@ Transform:
   m_GameObject: {fileID: 3320934860996001309}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -175.34, y: 5.3, z: -129}
+  m_LocalPosition: {x: -172.6, y: 5.3, z: -150.1}
   m_LocalScale: {x: 1.5, y: 1.5, z: 1.5}
   m_ConstrainProportionsScale: 1
   m_Children:

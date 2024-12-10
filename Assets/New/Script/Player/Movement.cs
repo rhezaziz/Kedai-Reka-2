@@ -7,17 +7,15 @@ namespace Terbaru
 {
     public class Movement : MonoBehaviour
     {
-        public float minZ = -150f;
-        public float maxZ = -120f;
+
         Animator anim;
         SpriteRenderer sp;
         Rigidbody rb;
         Vector3 Direction;
         WorldPos sorting = new WorldPos();
-        /*
-    public List<Mimik> mimik; 
-    public List<Mimik> mimikPlayer;*/
-        //Value
+
+        public float minZ = -150f;
+        public float maxZ = -120f;
         public float moveSpeed = 5f;
         public bool move;
         private void Start()

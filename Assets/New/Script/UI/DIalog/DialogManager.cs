@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using System.Text.RegularExpressions;
 using UnityEngine;
 
 namespace Terbaru{
@@ -197,8 +196,8 @@ namespace Terbaru{
             uiDialog.gameObject.SetActive(false);
             done = true;
             btnNextDialog.gameObject.SetActive(true);
-
-            //Debug.Log("Close Dialog Manager");
+            UiManager.instance.ChinematicPanel.endChinematic();
+            Debug.Log("Close Dialog Manager");
         }
     }
 }

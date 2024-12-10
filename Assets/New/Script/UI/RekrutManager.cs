@@ -30,7 +30,7 @@ public class RekrutManager : MonoBehaviour
         }
 
         public void rekrutKarakter(listCharacters chara){
-            chara.characterLock = true;
+            chara.characterLock = false;
 
             display(data);
         }

@@ -28,9 +28,6 @@ namespace Terbaru
         public TMPro.TMP_Text Nama;
 
         Camera cam;
-
-        
-
         void Awake() {
             instance = this;
 
@@ -39,10 +36,7 @@ namespace Terbaru
         void Start() {
             //camera = Camera.main;
             initProfil();
-
         }
-
-        
 
         public void initProfil() {
             var profil = GameManager.instance.profil;
@@ -107,7 +101,8 @@ namespace Terbaru
 
         }
 
-        IEnumerator cutMiniGame(List<GameObject> temp, Quest quest) {
+        IEnumerator cutMiniGame(List<GameObject> temp, Quest quest)
+        {
             FindObjectOfType<MiniGame>().pindahMiniGame(quest.sceneGame);
 
             yield return new WaitForSeconds(4f);
@@ -116,36 +111,19 @@ namespace Terbaru
                 NPC.SetActive(false);
         }
 
-        public void helperQuest(GameObject _object) {
-            GameObject Mark = Instantiate(MarkPrefabs);
-            Mark.transform.SetParent(_object.transform);
-            Mark.name = "Mark";
-
-
-            Mark.transform.localPosition = new Vector3(0f,
-                                            0f,
-                                            0.025f);
-        }
-
-        public void closeHelper(GameObject _object) {
-            GameObject mark = _object.transform.Find("Mark").gameObject;
-            Destroy(mark);
-        }
-
-
         #region Chinematic
         public void startChinematic()
         {
             Debug.Log("Start Chinematic");
             ChinematicPanel.startChinematic();
-            Chinematic(true);
+            //Chinematic(true);
         }
 
         public void startChinematicWithoutCam()
         {
             Debug.Log("Start Chinematic");
-            ChinematicPanel.startChinematic();
-            chinematicWithaouCam(true);
+            ChinematicPanel.startChinematicWithoutCam();
+            //chinematicWithaouCam(true);
         }
 
         public void startChinematic(float positionY)
@@ -289,8 +267,5 @@ namespace Terbaru
             //ChinematicPanel.SetActive(false);
             FindObjectOfType<Movement>().move = true;
         }
-
-
-        
     }
 }
